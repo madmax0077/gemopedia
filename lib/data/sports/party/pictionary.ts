@@ -1,0 +1,138 @@
+import type { Sport } from "@/lib/types";
+
+export const pictionary: Sport = {
+  id: "pictionary",
+  slug: "pictionary",
+  name: "Pictionary",
+  officialName: "Pictionary",
+  aliases: ["Draw Charades"],
+  shortDescription:
+    "Classic party game in which teams take turns drawing pictures to help teammates guess a secret word within 60 seconds, racing across a board to win.",
+  longDescription:
+    "Pictionary is a charades-with-drawing party game invented by Rob Angel in 1985 and first published by Angel Games (later licensed to Hasbro). Teams of 2+ take turns: one 'drawer' pulls a card with a secret word, sees only their team's category (Object, Action, Person/Place/Animal, Difficult, All Play), then has 60 seconds to draw the word for their teammates to guess — without using letters, numbers, or verbal cues. Each successfully-guessed word moves the team's playing piece across a board with different colored squares corresponding to categories. First team to reach 'Finish' by correctly guessing a Difficult category word wins. Pictionary has sold 40+ million copies since 1985 in 45+ languages. Multiple editions exist (Pictionary Junior, Pictionary Man Charades, Adult Party, DVD Version). The 'All Play' square requires both teams to draw simultaneously — whoever's teammate guesses first advances.",
+  category: "party-games", subCategory: "drawing / charades",
+  sportType: "team", indoorOutdoor: "indoor",
+  isProfessional: false, season: "year-round", era: "20th-century", popularity: "global",
+  countryOfOrigin: "US", regionOfOrigin: "USA (Seattle, Washington)",
+  estimatedOrigin: "1985 by Rob Angel in Seattle; published by Angel Games; Hasbro licensee since 1994",
+  players: { min: 4, max: 16, note: "2 teams of ≥2 players each; ideal 6-8 total (3-4 per team)." },
+  field: {
+    surfaceName: "board + drawing pads",
+    dimensions: "Small board ~40×40 cm + drawing pad or dry-erase board per team.",
+    description: "Standard board with playing spaces color-coded to categories; each team has a piece to advance.",
+  },
+  equipment: [
+    { name: "Pictionary board", description: "Small board with 40+ spaces color-coded to 5 categories." },
+    { name: "Deck of word cards (500-1000)", description: "5 words per card, one per category." },
+    { name: "Drawing pads / dry-erase boards", description: "Per team; must be visible to teammates." },
+    { name: "Pens or markers", description: "Different colors optional." },
+    { name: "1-minute sand timer or app", description: "60 seconds per drawing turn." },
+    { name: "Playing pieces (2)", description: "One per team." },
+  ],
+  duration: {
+    approximateMinutes: 45,
+    structure: "30-90 minutes typical. Party version: play until first team reaches Finish.",
+  },
+  objective: "First team to advance to the 'Finish' square by successfully guessing a Difficult category word wins.",
+  matchStructure: "Teams alternate turns: current 'drawer' pulls a card, sees the category square their piece is on, then has 60 seconds to draw the word for teammates to guess. If teammates guess correctly, team rolls die and moves along board. First to Finish by guessing a Difficult square word wins.",
+  basicRules: [
+    { title: "One drawer per turn", body: "Team member draws while others guess; drawer cannot speak, gesture, or use letters/numbers." },
+    { title: "60-second timer", body: "Team has 1 minute to guess from drawing alone." },
+    { title: "Category based on square", body: "Board square color = category (Object, Action, Person/Place/Animal, Difficult, All Play)." },
+    { title: "All Play square", body: "Both teams draw simultaneously; whoever's team guesses first advances." },
+    { title: "Roll die + move", body: "Successful guess = roll die, move piece that many spaces." },
+    { title: "Win at Finish", body: "First team to reach Finish square AND correctly guess a Difficult word wins." },
+  ],
+  advancedRules: [
+    { title: "No letters or numbers", body: "Drawer cannot write any letters, numbers, or use gesturing." },
+    { title: "No sound effects or gestures", body: "Drawing only — no verbal or physical hints." },
+    { title: "Peek rule", body: "Only current drawer sees the word; if another player sees, redraw a new card." },
+    { title: "Timer forfeit", body: "If time runs out with no guess, team stays on current square." },
+    { title: "Category variants (Pictionary Junior)", body: "Simpler words for kids under 8." },
+  ],
+  scoring: {
+    summary: "Race across board — first to Finish wins.",
+    breakdown: [
+      { action: "Correct guess", points: "Roll die + advance that many spaces" },
+      { action: "Wrong guess / timer out", points: "Stay on current square" },
+      { action: "Finish square + Difficult word guessed", points: "Win the game" },
+    ],
+    winCondition: "First team to reach Finish AND correctly guess a Difficult category word wins.",
+  },
+  officiating: {
+    officials: ["Self-refereed", "Timekeeper (rotating between teams)"],
+    summary: "Self-refereed; teams verify no letters/numbers/gestures used.",
+  },
+  governingBodies: [
+    { name: "Hasbro Gaming (publisher)", founded: 1923, headquarters: "Pawtucket, RI, USA", website: "https://www.hasbro.com/en-us/brands/pictionary" },
+    { name: "Mattel (licensee, various editions)", founded: 1945, headquarters: "El Segundo, CA, USA" },
+  ],
+  majorCompetitions: [
+    { name: "Pictionary World Championship", frequency: "sporadic", region: "worldwide (Hasbro-hosted)" },
+    { name: "Guinness Record: Largest Pictionary Game", frequency: "one-off", region: "various" },
+    { name: "Corporate Pictionary Tournaments", frequency: "informal", region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "CA", "AU", "DE", "FR", "IT", "ES", "NL", "PL", "JP", "BR", "MX", "IN", "CN"],
+  famousAthletes: [
+    "Rob Angel (USA) — Inventor 1985; self-published first 1,000 games",
+    "Guinness records for largest games in USA/UK",
+  ],
+  records: [
+    { title: "Most copies sold", holder: "Pictionary", value: "40+ million (2024)", year: 2024 },
+    { title: "Largest simultaneous Pictionary game", holder: "Various Guinness records", value: "500-1,000+ participants", year: 2018 },
+    { title: "Languages published in", holder: "Pictionary", value: "45+", year: 2024 },
+  ],
+  variants: ["pictionary-classic", "pictionary-junior-ages-6-12", "pictionary-man-charades", "pictionary-word-guess", "pictionary-air", "pictionary-adult-party", "pictionary-dvd-electronic"],
+  relatedSports: ["charades", "taboo", "guesstures", "codenames", "concept", "quick-draw"],
+  skills: ["visual thinking (abstract-to-concrete)", "quick sketching under pressure", "team communication (guessing patterns)", "vocabulary (guessers)", "categorical reasoning"],
+  strategies: [
+    { title: "Draw the noun first (Difficult)", body: "For 'lawyer', draw a courtroom + gavel + person in suit — build from context." },
+    { title: "Simple shapes first", body: "Circle for face, rectangles for body — foundation first, then details." },
+    { title: "Use partial hints (dashes)", body: "Some rules allow underscores for word length; use to hint at compound words." },
+    { title: "For actions, draw motion lines", body: "For 'running', draw stick figure with speed lines behind." },
+    { title: "Guessers: shout everything", body: "Team should shout guesses freely — 5-10 guesses per second increases hit chance." },
+    { title: "All Play advantage", body: "In All Play, best drawer on team should draw — winner gets to advance." },
+  ],
+  terminology: [
+    { term: "Drawer", meaning: "Current player who draws while teammates guess." },
+    { term: "Guessers", meaning: "Rest of drawer's team who call out guesses." },
+    { term: "Card", meaning: "Word list card with 5 words in 5 different categories." },
+    { term: "Category", meaning: "Object, Action, Person/Place/Animal, Difficult, or All Play." },
+    { term: "All Play", meaning: "Both teams draw simultaneously; first to guess wins." },
+    { term: "Timer", meaning: "60 seconds for drawer to convey word." },
+    { term: "Finish square", meaning: "Final space to win game; requires Difficult category guess." },
+    { term: "Pictionary Junior", meaning: "Kid-friendly version with easier words (ages 6-12)." },
+    { term: "Pass", meaning: "If drawer can't draw the word, may declare pass and forfeit turn." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play at a family party", body: "Learn rules in 5 min; game teaches through play." },
+      { title: "Small drawings first", body: "Simple stick figures OK; don't overthink." },
+      { title: "Try Pictionary Junior", body: "Age-appropriate for kids 6-12 with easier words." },
+    ] },
+    { level: "intermediate", steps: [
+      { title: "Speed drawing practice", body: "Drills: 30-sec drawings of random objects." },
+      { title: "Vocabulary drills for guessers", body: "Play 'name that category' with visual cues." },
+    ] },
+    { level: "advanced", steps: [
+      { title: "Charades hybrid party", body: "Combine Pictionary with Charades (Taboo, Guesstures) for tournament formats." },
+      { title: "Corporate team-building", body: "Companies host Pictionary tournaments for team-building." },
+    ] },
+  ],
+  faq: [
+    { question: "How many players can play Pictionary?", answer: "Minimum 4 (2 teams of 2). Maximum ~16 (2 teams of 8). Ideal: 6-8 total (3-4 per team) for balance of drawing turns and lively guessing." },
+    { question: "How long is a Pictionary game?", answer: "30-90 min typical. Shorter with fewer players or luckier dice. Party versions can last 2+ hours if everyone gets multiple turns." },
+    { question: "Who invented Pictionary?", answer: "Rob Angel invented it in Seattle in 1985 while working at a restaurant. He self-published the first 1,000 games; Hasbro acquired US rights in 1994. Angel wrote a book 'Game Changer' about its creation." },
+    { question: "Is Pictionary good for kids?", answer: "Yes — Pictionary Junior (ages 6-12) has age-appropriate words. Classic Pictionary suits ages 8+. Great for family games and party settings." },
+    { question: "Can you use letters or numbers?", answer: "No — the drawer must not draw any letters, numbers, or use gestures/sounds. All communication through drawing only." },
+    { question: "What's the trick to winning Pictionary?", answer: "Speed + creative visual thinking. Draw context clues around the target word: for 'lawyer', draw courtroom + gavel + person. For 'freedom', draw broken chains + Statue of Liberty. Simple abstract shapes convey concepts fastest." },
+  ],
+  wikipediaTitle: "Pictionary",
+  sources: [
+    { label: "Wikipedia — Pictionary", url: "https://en.wikipedia.org/wiki/Pictionary", publisher: "Wikipedia" },
+    { label: "Hasbro — Pictionary", url: "https://www.hasbro.com/en-us/brands/pictionary", publisher: "Hasbro" },
+    { label: "BoardGameGeek — Pictionary", url: "https://boardgamegeek.com/boardgame/1201/pictionary", publisher: "BoardGameGeek" },
+  ],
+  lastVerified: "2026-08-24",
+  confidence: "community",
+};

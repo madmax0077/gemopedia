@@ -1,0 +1,136 @@
+import type { Sport } from "@/lib/types";
+
+export const charades: Sport = {
+  id: "charades",
+  slug: "charades",
+  name: "Charades",
+  officialName: "Charades",
+  aliases: ["Acting Charades", "Silent Charades"],
+  shortDescription:
+    "Classic party game in which players silently act out words, phrases, or titles for their team to guess — with strict rules against speaking, sound-making, or drawing.",
+  longDescription:
+    "Charades is a word-guessing party game in which one player silently acts out a word, phrase, movie/book/song/play title, or famous person for their team to guess. It descends from 16th-century French salon games, became a fashionable Victorian-era parlor game in England ('Acting Charades', 1830s+), and evolved into modern silent Charades in the 20th century. Players may use standard gestures (5 fingers = 5 words, tapping wrist = title of movie/song/book, pulling ear = 'sounds like') but cannot speak, mouth words, or make sounds. Games typically use house rules — length (5-15 min per player) and scoring vary. Modern variants include Reverse Charades (team acts, one guesses), Speed Charades (30-sec timer), Group Charades (large parties), and mobile versions like Heads Up! (Ellen DeGeneres) which adapts charades to a phone-held-on-forehead format. Charades has been played casually for 200+ years and remains among the most universal party games worldwide.",
+  category: "party-games", subCategory: "silent acting / guessing",
+  sportType: "team", indoorOutdoor: "indoor",
+  isProfessional: false, season: "year-round", era: "early-modern", popularity: "global",
+  countryOfOrigin: "FR", regionOfOrigin: "France (16th century salons) / England (Victorian acting charades)",
+  estimatedOrigin: "16th-century French salon riddle-game 'Charade'; Victorian Acting Charades 1830s+; modern silent form early 20th century",
+  players: { min: 4, max: 20, note: "2 teams of ≥2 each; up to 5+ teams in party settings." },
+  field: {
+    surfaceName: "any indoor space",
+    dimensions: "Living room / party space; center-stage area for actor and audience.",
+    description: "Any indoor space with room for actor to move + audience space for teammates to observe.",
+  },
+  equipment: [
+    { name: "Pen + paper (or app)", description: "Words written on paper folded and drawn from hat/bowl. Or use Heads Up! or Charades apps." },
+    { name: "Timer (1-3 min)", description: "Sand timer or phone; typically 1-3 minutes per acting turn." },
+    { name: "Scoring pad (optional)", description: "Points for correct guesses in some variants." },
+  ],
+  duration: {
+    approximateMinutes: 45,
+    structure: "30-90 min typical. Per turn: 1-3 min. Party can extend 2+ hours.",
+  },
+  objective: "Correctly guess as many words/phrases/titles as possible; team with most correct guesses wins.",
+  matchStructure: "Teams alternate turns. Actor draws a word/phrase, silently acts out clues; teammates shout guesses; timer runs 1-3 min. Correct guess = point + next player. Team with most points wins (or first to N points).",
+  basicRules: [
+    { title: "No speaking, no sounds, no mouthing", body: "Actor cannot speak, whisper, mouth words, or make any sound." },
+    { title: "No pointing at objects", body: "Cannot point at objects in room; can only pantomime." },
+    { title: "No writing / no drawing", body: "Cannot use pen and paper (that's Pictionary)." },
+    { title: "Standard gestures allowed", body: "5 fingers = 5 words; wrist tap = title of movie/song/book; ear pull = 'sounds like'; pinching fingers = 'small word'." },
+    { title: "Timer per turn", body: "1-3 minutes typical; if time runs out, no point." },
+    { title: "Correct guess = point", body: "Team gets point for each word guessed within time." },
+  ],
+  advancedRules: [
+    { title: "Category signals", body: "Fingers walking = TV show. Book open = book. Crank camera = movie. Sing gesture = song." },
+    { title: "Word-length signals", body: "Show number of fingers = # words. For 3-word phrase, show 3 fingers, then hold up 1/2/3 for word being acted." },
+    { title: "'Sounds like' technique", body: "Ear pull = the next thing you act is what the word sounds like (e.g., act 'sky' for 'sci' in Science)." },
+    { title: "Speed Charades", body: "30-second timer per word; team races through as many as possible." },
+    { title: "Reverse Charades", body: "Whole team acts; 1 person guesses." },
+    { title: "Categories", body: "Common categories: Movie, TV Show, Book, Song, Person, Phrase, Object." },
+  ],
+  scoring: {
+    summary: "Correct guess = 1 point; team with most points wins. Variants vary.",
+    breakdown: [
+      { action: "Correct guess within time", points: "1" },
+      { action: "Time expires", points: "0 (or -1 in some variants)" },
+      { action: "Wrong guess", points: "No penalty; team continues guessing" },
+    ],
+    winCondition: "Most points at end of round(s) or first to agreed target (e.g., 10 points).",
+  },
+  officiating: {
+    officials: ["Self-refereed", "Timekeeper (rotating between teams)"],
+    summary: "Self-refereed; teams enforce no-speaking/no-sound rule.",
+  },
+  governingBodies: [
+    { name: "None (traditional party game)", website: "" },
+  ],
+  majorCompetitions: [
+    { name: "World's Largest Charades Game (Guinness Records)", frequency: "sporadic", region: "various" },
+    { name: "Corporate / team-building Charades", frequency: "informal", region: "worldwide" },
+    { name: "Heads Up! app leaderboards", frequency: "ongoing", region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "FR", "DE", "IT", "ES", "IN", "CA", "AU", "JP", "BR", "MX", "NL", "CN"],
+  famousAthletes: [
+    "Ellen DeGeneres (USA) — Popularised charades via 'Heads Up!' iPhone app on her show",
+    "Traditional Victorian parlor game — no individual champions",
+  ],
+  records: [
+    { title: "Largest simultaneous Charades game (Guinness)", holder: "Various", value: "1,000+ participants", year: 2019 },
+    { title: "Heads Up! app downloads", holder: "Ellen DeGeneres app", value: "50+ million (Google Play + iOS)", year: 2024 },
+  ],
+  variants: ["classic-charades", "speed-charades-30sec", "reverse-charades-team-acts", "movie-charades", "musical-charades", "adult-charades", "heads-up-app-format", "chore-charades", "quotable-charades"],
+  relatedSports: ["pictionary", "taboo", "guesstures", "codenames", "articulate", "heads-up-app", "salad-bowl"],
+  skills: ["expressive miming", "quick concept identification", "team communication signals", "vocabulary breadth", "physical acting/pantomime", "improvisation under pressure"],
+  strategies: [
+    { title: "Establish category first", body: "Use standard signals (crank = movie, book open = book) to narrow focus." },
+    { title: "Show word count", body: "Hold up N fingers = N words in phrase; helps team anticipate." },
+    { title: "Break long words into sounds", body: "For 'Titanic', break into 'tit' (a tit bird?) + 'a' + 'nick'." },
+    { title: "Use approximation", body: "For 'photograph', mime taking a picture with camera." },
+    { title: "Team should shout freely", body: "5-10 guesses per second increases hit chance." },
+    { title: "Save 'sounds like' as last resort", body: "Ear-pull complex signal — use only when direct mime fails." },
+  ],
+  terminology: [
+    { term: "Actor", meaning: "Current player who acts out the word/phrase." },
+    { term: "Guessers", meaning: "Rest of actor's team who shout guesses." },
+    { term: "Word / Phrase", meaning: "Target — single word, short phrase, movie/book/song title, person name." },
+    { term: "5 fingers", meaning: "Signal: '5 words in phrase' (or number of words in phrase)." },
+    { term: "Wrist tap", meaning: "Signal: 'title of movie/song/book'." },
+    { term: "Ear pull", meaning: "Signal: 'sounds like' — next thing acted is what word sounds like." },
+    { term: "Pinch fingers", meaning: "Signal: 'small word' — the/a/of etc." },
+    { term: "Category (movie/book/song/TV)", meaning: "Type of word being acted (crank = movie, etc.)." },
+    { term: "Pass", meaning: "Actor gives up on a word; no point." },
+    { term: "Reverse Charades", meaning: "Team acts; 1 person guesses (opposite of classic)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play at a family/holiday party", body: "Rules learn in 5 min; game teaches through play." },
+      { title: "Start with simple categories", body: "Familiar movies, songs, or common objects for easy hits." },
+      { title: "Learn signal system", body: "5 fingers = # words, crank = movie, book = book, etc." },
+    ] },
+    { level: "intermediate", steps: [
+      { title: "Speed Charades drills", body: "30-sec timer per word forces quick action." },
+      { title: "Try Heads Up! app format", body: "Ellen DeGeneres app; phone on forehead makes it easier." },
+      { title: "Practice with adult words", body: "Movies, celebrities, quotable phrases for advanced levels." },
+    ] },
+    { level: "advanced", steps: [
+      { title: "Reverse Charades team", body: "Whole team acts to 1 guesser — hilarious variant." },
+      { title: "Themed Charades", body: "Movie-Charades, Song-Charades, etc. for parties." },
+      { title: "Corporate team-building tournaments", body: "Multi-round elimination formats." },
+    ] },
+  ],
+  faq: [
+    { question: "How do you play Charades?", answer: "One player draws a word or phrase and silently acts it out. Teammates try to guess within a time limit (usually 1-3 minutes). No speaking, mouthing, or sounds allowed — pantomime only. Correct guess = point." },
+    { question: "What are the hand signals in Charades?", answer: "5 fingers = 5 words. Wrist tap = title of movie/song/book. Ear pull = 'sounds like'. Pinch fingers = 'small word' (the/a/of). Crank camera = movie. Book open = book. Sing gesture = song." },
+    { question: "Where did Charades come from?", answer: "Descends from 16th-century French salon riddle games ('Charade' = word puzzle). Modern silent acting Charades emerged from Victorian-era 'Acting Charades' parlor games in the 1830s-40s in England." },
+    { question: "How long does a Charades game take?", answer: "30-90 minutes typical for a family game. Speed Charades version (30-sec timer per word) is faster. Corporate/party games can extend 2+ hours if all players get multiple turns." },
+    { question: "What's Heads Up! by Ellen DeGeneres?", answer: "A phone app version of Charades launched 2013. Players hold phone on their forehead so category cards face outward; friends give clues (verbal in this variant) and player guesses. 50+ million downloads." },
+    { question: "Is Charades an Olympic sport?", answer: "No — Charades is a traditional party game with no formal championships. It's played casually worldwide as one of the most universal social games." },
+  ],
+  wikipediaTitle: "Charades",
+  sources: [
+    { label: "Wikipedia — Charades", url: "https://en.wikipedia.org/wiki/Charades", publisher: "Wikipedia" },
+    { label: "How to Play Charades — party-game guides", url: "https://www.thegamegal.com/2011/03/03/charades/", publisher: "The Game Gal" },
+  ],
+  lastVerified: "2026-08-24",
+  confidence: "community",
+};

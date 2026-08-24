@@ -1,0 +1,215 @@
+import type { Sport } from "@/lib/types";
+
+export const boxing: Sport = {
+  id: "boxing",
+  slug: "boxing",
+  name: "Boxing",
+  officialName: "Boxing",
+  aliases: ["The Sweet Science", "Pugilism", "Prizefighting"],
+  shortDescription:
+    "Two fighters in a roped square trade punches — win by knockout, technical stoppage or points over 3-12 timed rounds.",
+  longDescription:
+    "Boxing is a combat sport in which two competitors of the same weight class throw punches at each other with gloved fists inside a roped square ring. Bouts run for a fixed number of three-minute rounds — usually 12 in professional world-title fights, 3 to 4 for amateur and Olympic bouts — and a winner is decided by knockout (KO), technical knockout (TKO), disqualification, or judges' scorecards. Modern boxing descends from the London Prize Ring rules (1743) and the Marquess of Queensberry rules (1867), which introduced gloves, three-minute rounds and the 10-count. It has been part of the modern Olympic programme since 1904 (women's boxing since 2012) and is one of the oldest recorded combat sports — pankration and pugilism were contested at the ancient Olympics as early as 688 BCE.",
+
+  category: "combat-sports",
+  subCategory: "striking martial art",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isOlympic: true,
+  isParalympic: false,
+  isProfessional: true,
+  season: "year-round",
+  era: "19th-century",
+  popularity: "global",
+
+  countryOfOrigin: "GB",
+  regionOfOrigin: "England — modern rules; ancient roots in Greece, Egypt and Sumer",
+  estimatedOrigin: "Modern rules: Marquess of Queensberry Rules, 1867",
+
+  players: { min: 2, max: 2, note: "1v1 within weight-class matched pairings; corner team of 3 (trainer, cutman, second)." },
+  field: {
+    surfaceName: "ring",
+    dimensions: "Square ring, 16-24 ft (4.9-7.3 m) per side; standard pro ring is 20 ft. Four ropes strung between four corner posts.",
+    description: "Elevated canvas platform with padded corner posts and four horizontal ropes. Two neutral corners (white) and two fighter corners (red and blue).",
+  },
+  equipment: [
+    { name: "Boxing gloves", description: "Padded leather gloves — 8-10 oz for pro fights, 10-16 oz for amateur/training." },
+    { name: "Hand wraps", description: "Cotton or gauze bandages worn under the gloves to protect the hand and wrist." },
+    { name: "Mouthguard", description: "Custom-fitted rubber shield to protect teeth and reduce concussion risk." },
+    { name: "Boxing shorts", description: "Loose-cut trunks worn above the belt line; punches below the beltline are fouls." },
+    { name: "Boxing boots", description: "Ankle-high, lightweight, non-marking soles for pivoting on canvas." },
+    { name: "Groin protector", description: "Mandatory for both amateur and pro men." },
+    { name: "Headgear", description: "Padded head-guard mandatory for amateur bouts; banned in Olympic men's boxing since 2016.", optional: true },
+  ],
+  duration: {
+    approximateMinutes: 40,
+    structure: "Pro: up to 12 rounds × 3 minutes (world title); most cards are 10 rounds. Amateur/Olympic: 3 rounds × 3 minutes (men and women).",
+    note: "One minute of rest between rounds. No draws in amateur bouts (points must decide).",
+  },
+  objective: "Knock the opponent down for a 10-count, force the referee or ringside doctor to stop the fight, or win more rounds than the opponent on the judges' scorecards.",
+  matchStructure:
+    "Fighters enter the ring, touch gloves, and box for a set number of three-minute rounds separated by one-minute rests. Between rounds, cornermen give instructions and treat cuts. A knockdown starts an eight-count; a fighter who fails to rise by ten, or is judged unable to defend intelligently, loses by KO/TKO. If the bout goes the distance, three ringside judges' scorecards are added and the winner announced.",
+
+  basicRules: [
+    { title: "Legal targets", body: "Punches must land with the knuckle part of the closed glove on the front or sides of the head or the front or sides of the torso above the belt." },
+    { title: "Illegal blows", body: "Hitting below the belt, on the back of the head (rabbit punch), the kidneys, or after the bell rings are fouls — the referee warns, deducts points, or disqualifies." },
+    { title: "The 10-count", body: "A fighter knocked down has 10 seconds to rise unassisted and continue; three knockdowns in a round result in a technical knockout (three-knockdown rule)." },
+    { title: "Standing eight-count", body: "The referee may pause the fight and count over an unhurt fighter to check if they can continue — used in amateur and some pro jurisdictions." },
+    { title: "Clinching", body: "Fighters who tie each other up are separated by the referee. Persistent clinching without punching draws warnings." },
+    { title: "Ten-point must system", body: "Judges score each round on 10 points; the winner of the round gets 10, the loser 9 or fewer. Knockdowns deduct an additional point each." },
+  ],
+  advancedRules: [
+    { title: "Neutral corner rule", body: "After scoring a knockdown, the boxer must go to the farthest neutral corner before the count begins." },
+    { title: "Cut stoppages", body: "The ringside doctor may stop the fight if a cut is worsening or impairing vision, resulting in a TKO win for the opponent." },
+    { title: "Accidental head-butt", body: "If a bout ends prematurely due to an accidental head-butt after four rounds, judges' scorecards decide the winner (technical decision)." },
+  ],
+  scoring: {
+    summary: "10-point must system judged by three ringside officials — round winner gets 10, loser 9 (or 8 with a knockdown, 7 with two).",
+    breakdown: [
+      { action: "Winning a round", points: "10", note: "Loser gets 9 or fewer." },
+      { action: "Knockdown against loser", points: "-1", note: "Deducted from the loser's score for that round." },
+      { action: "Point deduction (foul)", points: "-1 or -2", note: "Referee-imposed penalty." },
+      { action: "Knockout", points: "instant win", note: "Opponent fails 10-count." },
+    ],
+    winCondition: "KO, TKO (referee/doctor stoppage), disqualification, retirement, or points decision (unanimous, split, or majority).",
+  },
+  penalties: [
+    { title: "Point deduction", body: "For low blows, holding, hitting on the break, or hitting after the bell." },
+    { title: "Warning", body: "First infractions typically draw a warning before points are deducted." },
+    { title: "Disqualification", body: "Repeated fouls, deliberate head-butts, or a punch after being told to stop can DQ a fighter (rare)." },
+  ],
+  fouls: [
+    { title: "Low blow", body: "Punch below the belt line — automatic warning and up to 5 minutes recovery time for the injured fighter." },
+    { title: "Rabbit punch", body: "Punch to the back of the head or neck." },
+    { title: "Kidney punch", body: "Punch to the lower back." },
+    { title: "Holding and hitting", body: "Clinching one arm while punching with the other." },
+  ],
+
+  officiating: {
+    officials: ["Referee (in-ring)", "Three judges (ringside)", "Timekeeper", "Ringside physician"],
+    summary: "The referee enforces rules, administers counts, deducts points, and can stop the fight. Three judges score each round independently. The timekeeper controls the round bell.",
+  },
+  governingBodies: [
+    { name: "World Boxing", acronym: "WB", founded: 2023, headquarters: "Lausanne, Switzerland", website: "https://www.worldboxing.org", },
+    { name: "World Boxing Council", acronym: "WBC", founded: 1963, headquarters: "Mexico City, Mexico", website: "https://wbcboxing.com" },
+    { name: "World Boxing Association", acronym: "WBA", founded: 1921, headquarters: "Panama City, Panama", website: "https://www.wbaboxing.com" },
+    { name: "International Boxing Federation", acronym: "IBF", founded: 1983, headquarters: "New Jersey, USA", website: "https://ibf-usba-boxing.com" },
+    { name: "World Boxing Organization", acronym: "WBO", founded: 1988, headquarters: "San Juan, Puerto Rico", website: "https://www.wboboxing.com" },
+  ],
+  majorCompetitions: [
+    { name: "Summer Olympic Games", frequency: "quadrennial", founded: 1904, region: "worldwide", note: "Amateur competition; men since 1904, women since 2012." },
+    { name: "World Boxing Championships", frequency: "biennial", founded: 1974, region: "worldwide" },
+    { name: "The Ring 'Fighter of the Year'", frequency: "annual", founded: 1928, region: "worldwide" },
+    { name: "WBC / WBA / IBF / WBO World Titles", frequency: "ongoing", region: "worldwide", note: "The 'four-belt era' — unifying all four is 'undisputed'." },
+  ],
+  countriesPlayed: ["US", "GB", "MX", "PH", "CU", "KZ", "UA", "IE", "RU", "JP", "PR", "AR", "TH"],
+  famousAthletes: [
+    "Muhammad Ali",
+    "Sugar Ray Robinson",
+    "Joe Louis",
+    "Rocky Marciano",
+    "Mike Tyson",
+    "Manny Pacquiao",
+    "Floyd Mayweather Jr.",
+    "Lennox Lewis",
+    "Roberto Durán",
+    "Vasyl Lomachenko",
+    "Katie Taylor",
+    "Claressa Shields",
+  ],
+  records: [
+    { title: "Most world titles across weight classes", holder: "Manny Pacquiao", value: "8 divisions (flyweight to super welterweight)", year: 2016 },
+    { title: "Longest reigning heavyweight champion", holder: "Joe Louis", value: "11 years, 8 months (1937-1949)", year: 1949 },
+    { title: "Undefeated pro record", holder: "Floyd Mayweather Jr.", value: "50-0", year: 2017 },
+  ],
+
+  variants: ["kickboxing", "muay-thai", "mma"],
+  relatedSports: ["kickboxing", "muay-thai", "mma", "savate"],
+
+  skills: [
+    "hand-eye coordination",
+    "footwork",
+    "head movement",
+    "cardiovascular endurance",
+    "punch power",
+    "ring generalship",
+    "chin (ability to absorb punches)",
+  ],
+  strategies: [
+    { title: "Boxer (outfighter)", body: "Long-range, jab-based style relying on footwork and reach — Ali, Mayweather." },
+    { title: "Slugger", body: "Powerful hooks and crosses, willing to trade — Foreman, Hearns, Wilder." },
+    { title: "Boxer-puncher", body: "Blends technical boxing with knockout power — Louis, Lomachenko, Canelo." },
+    { title: "Swarmer (in-fighter)", body: "Constant pressure at close range — Frazier, Tyson, early-career Duran." },
+  ],
+
+  terminology: [
+    { term: "Jab", meaning: "Straight lead-hand punch used to control distance and set up combinations." },
+    { term: "Cross", meaning: "Straight rear-hand power punch — the '2' in boxing shorthand." },
+    { term: "Hook", meaning: "Semi-circular punch to the side of the head or body, thrown with a bent arm." },
+    { term: "Uppercut", meaning: "Rising punch aimed at the chin, thrown from below." },
+    { term: "Southpaw", meaning: "A left-handed boxer who leads with the right hand and foot." },
+    { term: "Orthodox", meaning: "The standard right-handed stance — lead left, rear right." },
+    { term: "Bob and weave", meaning: "Head movement — bending at the knees and slipping punches side to side." },
+    { term: "TKO", meaning: "Technical knockout — the referee or corner stops the fight without a 10-count." },
+    { term: "The pocket", meaning: "The close-range space where fighters trade punches inside their opponent's reach." },
+    { term: "Rope-a-dope", meaning: "Ali's tactic — leaning on the ropes to absorb punches while the opponent tires." },
+    { term: "Cornerman / cutman", meaning: "Trainer and injury-treatment specialist between rounds." },
+  ],
+
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Stance and guard", body: "Learn orthodox stance, hands up, chin tucked, elbows in.", anchor: "rules" },
+      { title: "The four punches", body: "Jab, cross, hook, uppercut — practise each on pads and heavy bag.", anchor: "terminology" },
+      { title: "Footwork basics", body: "Step-drag movement, pivoting off the lead foot, cutting off the ring.", anchor: "strategies" },
+      { title: "Defence 101", body: "Blocks, parries, slips, rolls — how to make punches miss and glance off." },
+    ] },
+    { level: "intermediate", steps: [
+      { title: "Combinations", body: "String 3-5 punch combinations with defensive footwork between." },
+      { title: "Body punching", body: "Attacking the liver, ribs and solar plexus to slow the opponent." },
+      { title: "Reading distance", body: "Control range with the jab; step in for combinations, step out to reset." },
+      { title: "Sparring", body: "Controlled live practice against progressively skilled partners." },
+    ] },
+    { level: "advanced", steps: [
+      { title: "Ring generalship", body: "Cut off the ring, control tempo, dictate exchanges." },
+      { title: "Feints and setups", body: "Fake one punch to land another; break rhythm with mid-range pauses." },
+      { title: "Fight IQ", body: "Adjusting mid-round to what the opponent shows; picking angles." },
+    ] },
+  ],
+  faq: [
+    { question: "How many weight classes are there in professional boxing?", answer: "Seventeen — from minimumweight (up to 105 lbs / 47.6 kg) to heavyweight (over 200 lbs / 90.7 kg), with cruiserweight, super middleweight and others in between." },
+    { question: "What's the difference between a KO and a TKO?", answer: "A KO is a knockout — the fighter fails to rise before the referee counts to 10. A TKO (technical knockout) is any referee, doctor, or corner stoppage while the fighter is still upright but unable to defend." },
+    { question: "How are pro fights scored?", answer: "Three judges use the 10-point must system: winner of a round gets 10, loser 9 or fewer. Knockdowns cost the loser an extra point each." },
+    { question: "Why do amateur bouts no longer use headgear at the Olympics?", answer: "AIBA (now World Boxing) removed men's headgear in 2016 after data suggested it did not reduce concussion risk and possibly increased head-punch damage. Women still wear headgear." },
+    { question: "What is 'undisputed' champion?", answer: "A boxer holding all four major world title belts (WBC, WBA, IBF, WBO) in the same weight class simultaneously — a very rare achievement." },
+  ],
+
+  wikipediaTitle: "Boxing",
+  sources: [
+    { label: "Wikipedia — Boxing", url: "https://en.wikipedia.org/wiki/Boxing", publisher: "Wikipedia" },
+    { label: "World Boxing Council — Rules", url: "https://wbcboxing.com", publisher: "WBC" },
+    { label: "USA Boxing — Rulebook", url: "https://www.usaboxing.org", publisher: "USA Boxing" },
+  ],
+  lastVerified: "2026-08-24",
+  confidence: "community",
+  sportSpecific: {
+    weightClasses: [
+      "Minimumweight (up to 105 lb / 47.6 kg)",
+      "Light flyweight (108 lb / 49 kg)",
+      "Flyweight (112 lb / 50.8 kg)",
+      "Super flyweight (115 lb / 52.2 kg)",
+      "Bantamweight (118 lb / 53.5 kg)",
+      "Super bantamweight (122 lb / 55.3 kg)",
+      "Featherweight (126 lb / 57.2 kg)",
+      "Super featherweight (130 lb / 59 kg)",
+      "Lightweight (135 lb / 61.2 kg)",
+      "Super lightweight (140 lb / 63.5 kg)",
+      "Welterweight (147 lb / 66.7 kg)",
+      "Super welterweight (154 lb / 69.9 kg)",
+      "Middleweight (160 lb / 72.6 kg)",
+      "Super middleweight (168 lb / 76.2 kg)",
+      "Light heavyweight (175 lb / 79.4 kg)",
+      "Cruiserweight (200 lb / 90.7 kg)",
+      "Heavyweight (over 200 lb / 90.7 kg)",
+    ],
+  },
+};

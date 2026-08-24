@@ -1,18 +1,35 @@
 import type { Sport, SportCategory } from "@/lib/types";
-import { associationFootball } from "./sports/association-football";
-import { australianFootball } from "./sports/australian-rules-football";
-import { basketball } from "./sports/basketball";
-import { buzkashi } from "./sports/buzkashi";
-import { capoeira } from "./sports/capoeira";
-import { chess } from "./sports/chess";
-import { cricket } from "./sports/cricket";
-import { curling } from "./sports/curling";
-import { formula1 } from "./sports/formula-1";
-import { hurling } from "./sports/hurling";
-import { kabaddi } from "./sports/kabaddi";
-import { senegaleseWrestling } from "./sports/senegalese-wrestling";
-import { sepakTakraw } from "./sports/sepak-takraw";
-import { sumo } from "./sports/sumo";
+/* ── Per-category authored games (one folder per category slug) ────────── */
+import { ADVENTURE_SPORTS } from "./sports/adventure";
+import { AIR_SPORTS } from "./sports/air";
+import { AQUATIC_SPORTS } from "./sports/aquatic";
+import { ATHLETICS_SPORTS } from "./sports/athletics";
+import { BALL_SPORTS } from "./sports/ball";
+import { BOARD_GAMES } from "./sports/board";
+import { CARD_GAMES } from "./sports/card";
+import { CASINO_GAMES } from "./sports/casino";
+import { COMBAT_SPORTS } from "./sports/combat";
+import { DICE_GAMES } from "./sports/dice";
+import { EQUESTRIAN_SPORTS } from "./sports/equestrian";
+import { ESCAPE_GAMES } from "./sports/escape";
+import { ESPORTS_SPORTS } from "./sports/esports";
+import { GYMNASTICS_SPORTS } from "./sports/gymnastics";
+import { MIND_SPORTS } from "./sports/mind";
+import { MOTOR_SPORTS } from "./sports/motor";
+import { PARTY_GAMES } from "./sports/party";
+import { PLAYGROUND_GAMES } from "./sports/playground";
+import { PRECISION_SPORTS } from "./sports/precision";
+import { PUZZLE_GAMES } from "./sports/puzzle";
+import { RACKET_PADDLE_SPORTS } from "./sports/racket-paddle";
+import { SKILL_TOYS_GAMES } from "./sports/skill-toys";
+import { STRENGTH_SPORTS } from "./sports/strength";
+import { TABLETOP_RPG_GAMES } from "./sports/tabletop-rpg";
+import { TILE_GAMES } from "./sports/tile";
+import { TRADITIONAL_SPORTS } from "./sports/traditional";
+import { VIDEO_GAMES } from "./sports/video";
+import { WARGAMES_GAMES } from "./sports/wargames";
+import { WINTER_SPORTS } from "./sports/winter";
+/* ── Compact stub packs (temporary — games get promoted to authored files) ── */
 import { SPORT_STUBS } from "./sports/_stubs";
 import { SPORT_STUBS_EXTENDED } from "./sports/_stubs_extended";
 import { SPORT_STUBS_CARDS } from "./sports/_stubs_cards";
@@ -51,23 +68,39 @@ import { SPORT_STUBS_SKILL_TOYS } from "./sports/_stubs_skill_toys";
  */
 /**
  * Fully authored sports come first — they win any slug collision so the
- * stubs never overwrite them.
+ * stubs never overwrite them. Order inside each category array is set by
+ * that category's index.ts.
  */
 const FULL_SPORTS: Sport[] = [
-  associationFootball,
-  australianFootball,
-  basketball,
-  buzkashi,
-  capoeira,
-  chess,
-  cricket,
-  curling,
-  formula1,
-  hurling,
-  kabaddi,
-  senegaleseWrestling,
-  sepakTakraw,
-  sumo,
+  ...BALL_SPORTS,
+  ...RACKET_PADDLE_SPORTS,
+  ...COMBAT_SPORTS,
+  ...ATHLETICS_SPORTS,
+  ...AQUATIC_SPORTS,
+  ...WINTER_SPORTS,
+  ...MOTOR_SPORTS,
+  ...EQUESTRIAN_SPORTS,
+  ...PRECISION_SPORTS,
+  ...STRENGTH_SPORTS,
+  ...GYMNASTICS_SPORTS,
+  ...ADVENTURE_SPORTS,
+  ...MIND_SPORTS,
+  ...TRADITIONAL_SPORTS,
+  ...ESPORTS_SPORTS,
+  ...AIR_SPORTS,
+  ...BOARD_GAMES,
+  ...CARD_GAMES,
+  ...DICE_GAMES,
+  ...TILE_GAMES,
+  ...TABLETOP_RPG_GAMES,
+  ...WARGAMES_GAMES,
+  ...PARTY_GAMES,
+  ...PLAYGROUND_GAMES,
+  ...PUZZLE_GAMES,
+  ...VIDEO_GAMES,
+  ...CASINO_GAMES,
+  ...ESCAPE_GAMES,
+  ...SKILL_TOYS_GAMES,
 ];
 
 const STUB_SPORTS: Sport[] = [

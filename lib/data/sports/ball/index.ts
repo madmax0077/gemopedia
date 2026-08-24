@@ -10,6 +10,7 @@ import { cricket } from "./cricket";
 import { fieldHockey } from "./field-hockey";
 import { handball } from "./handball";
 import { iceHockey } from "./ice-hockey";
+import { netball } from "./netball";
 import { rugbyLeague } from "./rugby-league";
 import { rugbyUnion } from "./rugby-union";
 import { softball } from "./softball";
@@ -31,6 +32,7 @@ export const BALL_SPORTS: Sport[] = [
   fieldHockey,
   handball,
   iceHockey,
+  netball,
   rugbyLeague,
   rugbyUnion,
   softball,

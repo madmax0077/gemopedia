@@ -1,5 +1,6 @@
 import type { Sport } from "@/lib/types";
 
+import { airHockey } from "./air-hockey";
 import { archery } from "./archery";
 import { bocce } from "./bocce";
 import { cornhole } from "./cornhole";
@@ -14,6 +15,7 @@ import { tenPinBowling } from "./ten-pin-bowling";
 
 /** Precision sports — target accuracy under stillness (archery, golf, darts, shooting, cue sports, bowling). */
 export const PRECISION_SPORTS: Sport[] = [
+  airHockey,
   archery,
   bocce,
   cornhole,

@@ -1,6 +1,7 @@
 import type { Sport } from "@/lib/types";
 
 import { canoeing } from "./canoeing";
+import { canoeSprint } from "./canoe-sprint";
 import { diving } from "./diving";
 import { kayaking } from "./kayaking";
 import { rowing } from "./rowing";
@@ -13,6 +14,7 @@ import { waterPolo } from "./water-polo";
 /** Aquatic sports category — swimming, diving, water polo, sailing, surfing and more. */
 export const AQUATIC_SPORTS: Sport[] = [
   canoeing,
+  canoeSprint,
   diving,
   kayaking,
   rowing,

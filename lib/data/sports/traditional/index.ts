@@ -5,6 +5,7 @@ import { hurling } from "./hurling";
 import { kabaddi } from "./kabaddi";
 import { khoKho } from "./kho-kho";
 import { lacrosse } from "./lacrosse";
+import { mancala } from "./mancala";
 import { sepakTakraw } from "./sepak-takraw";
 
 /**
@@ -17,5 +18,6 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   kabaddi,
   khoKho,
   lacrosse,
+  mancala,
   sepakTakraw,
 ];

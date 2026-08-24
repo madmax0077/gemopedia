@@ -5,6 +5,7 @@ import { cornhole } from "./cornhole";
 import { darts } from "./darts";
 import { discGolf } from "./disc-golf";
 import { golf } from "./golf";
+import { petanque } from "./petanque";
 import { pool } from "./pool";
 import { shootingSports } from "./shooting-sports";
 import { snooker } from "./snooker";
@@ -17,6 +18,7 @@ export const PRECISION_SPORTS: Sport[] = [
   darts,
   discGolf,
   golf,
+  petanque,
   pool,
   shootingSports,
   snooker,

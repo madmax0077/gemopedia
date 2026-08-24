@@ -1,4 +1,10 @@
 import type { Sport } from "@/lib/types";
 
-/** Athletics category — track, field, road and combined events. */
-export const ATHLETICS_SPORTS: Sport[] = [];
+import { longJump } from "./long-jump";
+import { marathonRunning } from "./marathon-running";
+
+/** Athletics — track & field events (sprints, distance, jumps, throws, combined). */
+export const ATHLETICS_SPORTS: Sport[] = [
+  longJump,
+  marathonRunning,
+];

@@ -1,6 +1,6 @@
 # Priority queue — deep-fill checklist
 
-Total games: **761**. Fully authored so far: **34**.
+Total games: **761**. Fully authored so far: **54**.
 
 Generated 2026-08-24 by `_gen-priority.mjs`.
 
@@ -14,20 +14,20 @@ Each row shows the target file path. Tick the box when a game has been promoted 
 - `[ ]` — game is still a compact stub, to be promoted
 
 
-## Tier 1 — global popularity (282)
+## Tier 1 — global popularity (287)
 
 - [ ] **Air Hockey** — `lib/data/sports/precision/air-hockey.ts`  
       _precision-sports_ · from `lib/data/sports/_stubs_arcade.ts`
-- [ ] **Alpine Skiing** — `lib/data/sports/winter/alpine-skiing.ts`  
-      _winter-sports_ · from `lib/data/sports/_stubs.ts`
-- [ ] **American Football** — `lib/data/sports/ball/american-football.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Alpine Skiing** — `lib/data/sports/winter/alpine-skiing.ts`  
+      _winter-sports_ · from `lib/data/sports/winter/alpine-skiing.ts`
+- [x] **American Football** — `lib/data/sports/ball/american-football.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/american-football.ts`
 - [ ] **Among Us** — `lib/data/sports/video/among-us.ts`  
       _video-games_ · from `lib/data/sports/_stubs_videogames.ts`
 - [ ] **Apex Legends** — `lib/data/sports/esports/apex-legends.ts`  
       _esports_ · from `lib/data/sports/_stubs_world.ts`
-- [ ] **Archery** — `lib/data/sports/precision/archery.ts`  
-      _precision-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Archery** — `lib/data/sports/precision/archery.ts`  
+      _precision-sports_ · from `lib/data/sports/precision/archery.ts`
 - [ ] **Arm Wrestling** — `lib/data/sports/strength/arm-wrestling.ts`  
       _strength-sports_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Artistic Gymnastics** — `lib/data/sports/gymnastics/artistic-gymnastics.ts`  
@@ -42,14 +42,14 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _racket-paddle-sports_ · from `lib/data/sports/racket-paddle/badminton.ts`
 - [ ] **Bananagrams** — `lib/data/sports/tile/bananagrams.ts`  
       _tile-games_ · from `lib/data/sports/_stubs_tile.ts`
-- [ ] **Baseball** — `lib/data/sports/ball/baseball.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Baseball** — `lib/data/sports/ball/baseball.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/baseball.ts`
 - [x] **Basketball** — `lib/data/sports/ball/basketball.ts`  
       _ball-sports_ · from `lib/data/sports/ball/basketball.ts`
 - [ ] **Battleship** — `lib/data/sports/board/battleship.ts`  
       _board-games_ · from `lib/data/sports/_stubs_boards.ts`
-- [ ] **Beach Volleyball** — `lib/data/sports/ball/beach-volleyball.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Beach Volleyball** — `lib/data/sports/ball/beach-volleyball.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/beach-volleyball.ts`
 - [ ] **Beat Saber** — `lib/data/sports/video/beat-saber.ts`  
       _video-games_ · from `lib/data/sports/_stubs_videogames.ts`
 - [ ] **Bingo** — `lib/data/sports/casino/bingo.ts`  
@@ -178,8 +178,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _dice-games_ · from `lib/data/sports/_stubs_dice.ts`
 - [x] **Field Hockey** — `lib/data/sports/ball/field-hockey.ts`  
       _ball-sports_ · from `lib/data/sports/ball/field-hockey.ts`
-- [ ] **Figure Skating** — `lib/data/sports/winter/figure-skating.ts`  
-      _winter-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Figure Skating** — `lib/data/sports/winter/figure-skating.ts`  
+      _winter-sports_ · from `lib/data/sports/winter/figure-skating.ts`
 - [ ] **Final Fantasy** — `lib/data/sports/video/final-fantasy.ts`  
       _video-games_ · from `lib/data/sports/_stubs_videogames.ts`
 - [ ] **Fingerboarding** — `lib/data/sports/skill-toys/fingerboarding.ts`  
@@ -194,8 +194,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _card-games_ · from `lib/data/sports/_stubs_cards_ext.ts`
 - [ ] **Freerunning** — `lib/data/sports/adventure/freerunning.ts`  
       _adventure-extreme-sports_ · from `lib/data/sports/_stubs_world.ts`
-- [ ] **Freestyle Wrestling** — `lib/data/sports/combat/freestyle-wrestling.ts`  
-      _combat-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Freestyle Wrestling** — `lib/data/sports/combat/freestyle-wrestling.ts`  
+      _combat-sports_ · from `lib/data/sports/combat/freestyle-wrestling.ts`
 - [ ] **Freeze Tag** — `lib/data/sports/playground/freeze-tag.ts`  
       _playground-games_ · from `lib/data/sports/_stubs_playground.ts`
 - [ ] **Futsal** — `lib/data/sports/ball/futsal.ts`  
@@ -226,8 +226,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _video-games_ · from `lib/data/sports/_stubs_videogames.ts`
 - [ ] **Hammer Throw** — `lib/data/sports/athletics/hammer-throw.ts`  
       _athletics_ · from `lib/data/sports/_stubs_world.ts`
-- [ ] **Handball** — `lib/data/sports/ball/handball.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Handball** — `lib/data/sports/ball/handball.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/handball.ts`
 - [ ] **Hangman** — `lib/data/sports/puzzle/hangman.ts`  
       _puzzle-games_ · from `lib/data/sports/_stubs_wordpaper.ts`
 - [ ] **Heads Up!** — `lib/data/sports/party/heads-up.ts`  
@@ -282,8 +282,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _esports_ · from `lib/data/sports/_stubs_extended.ts`
 - [ ] **Liar's Dice** — `lib/data/sports/dice/liars-dice.ts`  
       _dice-games_ · from `lib/data/sports/_stubs_dice.ts`
-- [ ] **Long Jump** — `lib/data/sports/athletics/long-jump.ts`  
-      _athletics_ · from `lib/data/sports/_stubs_world.ts`
+- [x] **Long Jump** — `lib/data/sports/athletics/long-jump.ts`  
+      _athletics_ · from `lib/data/sports/athletics/long-jump.ts`
 - [ ] **Long-Distance Running** — `lib/data/sports/athletics/long-distance-running.ts`  
       _athletics_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Ludo** — `lib/data/sports/board/ludo.ts`  
@@ -298,8 +298,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _tile-games_ · from `lib/data/sports/tile/mahjong.ts`
 - [ ] **Mahjong Solitaire** — `lib/data/sports/tile/mahjong-solitaire.ts`  
       _tile-games_ · from `lib/data/sports/_stubs_tile.ts`
-- [ ] **Marathon** — `lib/data/sports/athletics/marathon-running.ts`  
-      _athletics_ · from `lib/data/sports/_stubs.ts`
+- [x] **Marathon** — `lib/data/sports/athletics/marathon-running.ts`  
+      _athletics_ · from `lib/data/sports/athletics/marathon-running.ts`
 - [ ] **Marbles** — `lib/data/sports/playground/marbles.ts`  
       _playground-games_ · from `lib/data/sports/_stubs_playground.ts`
 - [ ] **Mastermind** — `lib/data/sports/puzzle/mastermind.ts`  
@@ -312,8 +312,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _athletics_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Minecraft** — `lib/data/sports/video/minecraft.ts`  
       _video-games_ · from `lib/data/sports/_stubs_videogames.ts`
-- [ ] **Mixed Martial Arts** — `lib/data/sports/combat/mixed-martial-arts.ts`  
-      _combat-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Mixed Martial Arts** — `lib/data/sports/combat/mixed-martial-arts.ts`  
+      _combat-sports_ · from `lib/data/sports/combat/mixed-martial-arts.ts`
 - [x] **Monopoly** — `lib/data/sports/board/monopoly.ts`  
       _board-games_ · from `lib/data/sports/board/monopoly.ts`
 - [ ] **Mortal Kombat** — `lib/data/sports/video/mortal-kombat.ts`  
@@ -324,8 +324,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _adventure-extreme-sports_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Mouse Trap** — `lib/data/sports/party/mouse-trap.ts`  
       _party-games_ · from `lib/data/sports/_stubs_boards.ts`
-- [ ] **Muay Thai** — `lib/data/sports/combat/muay-thai.ts`  
-      _combat-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Muay Thai** — `lib/data/sports/combat/muay-thai.ts`  
+      _combat-sports_ · from `lib/data/sports/combat/muay-thai.ts`
 - [ ] **Murder Mystery Game** — `lib/data/sports/escape/murder-mystery.ts`  
       _escape-immersive_ · from `lib/data/sports/_stubs_escape.ts`
 - [ ] **Musical Chairs** — `lib/data/sports/party/musical-chairs.ts`  
@@ -356,6 +356,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _tabletop-rpg_ · from `lib/data/sports/_stubs_rpg.ts`
 - [ ] **Pick-up Sticks** — `lib/data/sports/party/pick-up-sticks.ts`  
       _party-games_ · from `lib/data/sports/_stubs_party_ext.ts`
+- [x] **Pickleball** — `lib/data/sports/racket-paddle/pickleball.ts`  
+      _racket-paddle-sports_ · from `lib/data/sports/racket-paddle/pickleball.ts`
 - [ ] **Pictionary** — `lib/data/sports/party/pictionary.ts`  
       _party-games_ · from `lib/data/sports/_stubs_boards.ts`
 - [ ] **Pinball** — `lib/data/sports/video/pinball.ts`  
@@ -398,6 +400,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _aquatic-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Rubik's Cube** — `lib/data/sports/puzzle/rubiks-cube.ts`  
       _puzzle-games_ · from `lib/data/sports/_stubs_puzzles.ts`
+- [x] **Rugby League** — `lib/data/sports/ball/rugby-league.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/rugby-league.ts`
 - [x] **Rugby Union** — `lib/data/sports/ball/rugby-union.ts`  
       _ball-sports_ · from `lib/data/sports/ball/rugby-union.ts`
 - [ ] **Rummikub** — `lib/data/sports/tile/rummikub.ts`  
@@ -436,8 +440,10 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _puzzle-games_ · from `lib/data/sports/_stubs_puzzles.ts`
 - [ ] **Snakes and Ladders** — `lib/data/sports/board/snakes-and-ladders.ts`  
       _board-games_ · from `lib/data/sports/_stubs_boards.ts`
-- [ ] **Snowboarding** — `lib/data/sports/winter/snowboarding.ts`  
-      _winter-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Snowboarding** — `lib/data/sports/winter/snowboarding.ts`  
+      _winter-sports_ · from `lib/data/sports/winter/snowboarding.ts`
+- [x] **Softball** — `lib/data/sports/ball/softball.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/softball.ts`
 - [ ] **Solitaire** — `lib/data/sports/card/solitaire.ts`  
       _card-games_ · from `lib/data/sports/_stubs_cards_ext.ts`
 - [ ] **Sonic the Hedgehog** — `lib/data/sports/video/sonic-the-hedgehog.ts`  
@@ -464,6 +470,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _athletics_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Spyfall** — `lib/data/sports/party/spyfall.ts`  
       _party-games_ · from `lib/data/sports/_stubs_party_ext.ts`
+- [x] **Squash** — `lib/data/sports/racket-paddle/squash.ts`  
+      _racket-paddle-sports_ · from `lib/data/sports/racket-paddle/squash.ts`
 - [ ] **StarCraft II** — `lib/data/sports/esports/starcraft-2.ts`  
       _esports_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Stratego** — `lib/data/sports/board/stratego.ts`  
@@ -478,8 +486,8 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _esports_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Surfing** — `lib/data/sports/aquatic/surfing.ts`  
       _aquatic-sports_ · from `lib/data/sports/_stubs.ts`
-- [ ] **Swimming** — `lib/data/sports/aquatic/swimming.ts`  
-      _aquatic-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Swimming** — `lib/data/sports/aquatic/swimming.ts`  
+      _aquatic-sports_ · from `lib/data/sports/aquatic/swimming.ts`
 - [ ] **Synchronized Diving** — `lib/data/sports/aquatic/synchronized-diving.ts`  
       _aquatic-sports_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Table Football** — `lib/data/sports/ball/table-football.ts`  
@@ -548,14 +556,16 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _card-games_ · from `lib/data/sports/_stubs_cards_ext.ts`
 - [ ] **Valorant** — `lib/data/sports/esports/valorant.ts`  
       _esports_ · from `lib/data/sports/_stubs_extended.ts`
-- [ ] **Volleyball** — `lib/data/sports/ball/volleyball.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
+- [x] **Volleyball** — `lib/data/sports/ball/volleyball.ts`  
+      _ball-sports_ · from `lib/data/sports/ball/volleyball.ts`
 - [ ] **War** — `lib/data/sports/card/war-card-game.ts`  
       _card-games_ · from `lib/data/sports/_stubs_cards_ext.ts`
 - [ ] **Warhammer 40,000** — `lib/data/sports/wargames/warhammer-40k.ts`  
       _wargames_ · from `lib/data/sports/_stubs_wargames.ts`
 - [ ] **Warhammer Age of Sigmar** — `lib/data/sports/wargames/age-of-sigmar.ts`  
       _wargames_ · from `lib/data/sports/_stubs_wargames.ts`
+- [x] **Water Polo** — `lib/data/sports/aquatic/water-polo.ts`  
+      _aquatic-sports_ · from `lib/data/sports/aquatic/water-polo.ts`
 - [ ] **Weightlifting** — `lib/data/sports/strength/weightlifting.ts`  
       _strength-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Werewolf** — `lib/data/sports/party/werewolf.ts`  
@@ -581,7 +591,7 @@ Each row shows the target file path. Tick the box when a game has been promoted 
 - [ ] **Yu-Gi-Oh!** — `lib/data/sports/mind/yu-gi-oh.ts`  
       _mind-sports_ · from `lib/data/sports/_stubs_cards.ts`
 
-## Tier 2 — major popularity (171)
+## Tier 2 — major popularity (166)
 
 - [ ] **Acrobatic Gymnastics** — `lib/data/sports/gymnastics/acrobatic-gymnastics.ts`  
       _gymnastics_ · from `lib/data/sports/_stubs_world.ts`
@@ -791,8 +801,6 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _adventure-extreme-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Pétanque** — `lib/data/sports/precision/petanque.ts`  
       _precision-sports_ · from `lib/data/sports/_stubs_extended.ts`
-- [ ] **Pickleball** — `lib/data/sports/racket-paddle/pickleball.ts`  
-      _racket-paddle-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Pole Sports** — `lib/data/sports/gymnastics/pole-sports.ts`  
       _gymnastics_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Polo** — `lib/data/sports/equestrian/polo.ts`  
@@ -821,8 +829,6 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _ball-sports_ · from `lib/data/sports/_stubs_extended.ts`
 - [ ] **Roundnet** — `lib/data/sports/ball/spikeball.ts`  
       _ball-sports_ · from `lib/data/sports/_stubs_world.ts`
-- [ ] **Rugby League** — `lib/data/sports/ball/rugby-league.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Rugby Sevens** — `lib/data/sports/ball/rugby-sevens.ts`  
       _ball-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Sambo** — `lib/data/sports/combat/sambo.ts`  
@@ -863,8 +869,6 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _winter-sports_ · from `lib/data/sports/_stubs_extended.ts`
 - [ ] **Snowshoeing** — `lib/data/sports/winter/snowshoeing.ts`  
       _winter-sports_ · from `lib/data/sports/_stubs_extended.ts`
-- [ ] **Softball** — `lib/data/sports/ball/softball.ts`  
-      _ball-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Spades** — `lib/data/sports/mind/spades.ts`  
       _mind-sports_ · from `lib/data/sports/_stubs_cards.ts`
 - [ ] **Spearfishing** — `lib/data/sports/aquatic/spearfishing.ts`  
@@ -875,8 +879,6 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _motor-sports_ · from `lib/data/sports/_stubs_extended.ts`
 - [ ] **Sport Climbing** — `lib/data/sports/adventure/sport-climbing.ts`  
       _adventure-extreme-sports_ · from `lib/data/sports/_stubs.ts`
-- [ ] **Squash** — `lib/data/sports/racket-paddle/squash.ts`  
-      _racket-paddle-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Stand-Up Paddleboarding** — `lib/data/sports/aquatic/stand-up-paddleboarding.ts`  
       _aquatic-sports_ · from `lib/data/sports/_stubs_extended.ts`
 - [ ] **Steeplechase** — `lib/data/sports/athletics/steeplechase.ts`  
@@ -907,8 +909,6 @@ Each row shows the target file path. Tick the box when a game has been promoted 
       _athletics_ · from `lib/data/sports/_stubs_extended.ts`
 - [ ] **Wakeboarding** — `lib/data/sports/aquatic/wakeboarding.ts`  
       _aquatic-sports_ · from `lib/data/sports/_stubs_extended.ts`
-- [ ] **Water Polo** — `lib/data/sports/aquatic/water-polo.ts`  
-      _aquatic-sports_ · from `lib/data/sports/_stubs.ts`
 - [ ] **Water Skiing** — `lib/data/sports/aquatic/water-skiing.ts`  
       _aquatic-sports_ · from `lib/data/sports/_stubs_world.ts`
 - [ ] **Wheelchair Basketball** — `lib/data/sports/ball/wheelchair-basketball.ts`  

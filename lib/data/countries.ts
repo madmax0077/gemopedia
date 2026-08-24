@@ -123,6 +123,21 @@ const COUNTRY_LIST: Omit<CountryDef, "flag">[] = [
   { code: "LB", name: "Lebanon", region: "Middle East" },
   { code: "JO", name: "Jordan", region: "Middle East" },
   { code: "KW", name: "Kuwait", region: "Middle East" },
+  { code: "TN", name: "Tunisia", region: "Africa" },
+  { code: "UG", name: "Uganda", region: "Africa" },
+  { code: "ER", name: "Eritrea", region: "Africa" },
+  { code: "ME", name: "Montenegro", region: "Europe" },
+  { code: "MK", name: "North Macedonia", region: "Europe" },
+  { code: "SI", name: "Slovenia", region: "Europe" },
+  { code: "LI", name: "Liechtenstein", region: "Europe" },
+  { code: "TO", name: "Tonga", region: "Oceania" },
+  { code: "PG", name: "Papua New Guinea", region: "Oceania" },
+  { code: "NI", name: "Nicaragua", region: "North America" },
+  { code: "PA", name: "Panama", region: "North America" },
+  { code: "DO", name: "Dominican Republic", region: "North America" },
+  { code: "TW", name: "Taiwan", region: "Asia" },
+  { code: "AZ", name: "Azerbaijan", region: "Asia" },
+  { code: "IL", name: "Israel", region: "Middle East" },
 ];
 
 export const COUNTRIES: CountryDef[] = COUNTRY_LIST.map((c) => ({

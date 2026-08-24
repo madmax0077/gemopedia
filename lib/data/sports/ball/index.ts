@@ -8,12 +8,14 @@ import { basketball } from "./basketball";
 import { beachVolleyball } from "./beach-volleyball";
 import { cricket } from "./cricket";
 import { fieldHockey } from "./field-hockey";
+import { futsal } from "./futsal";
 import { handball } from "./handball";
 import { iceHockey } from "./ice-hockey";
 import { netball } from "./netball";
 import { rugbyLeague } from "./rugby-league";
 import { rugbyUnion } from "./rugby-union";
 import { softball } from "./softball";
+import { ultimateFrisbee } from "./ultimate-frisbee";
 import { volleyball } from "./volleyball";
 
 /**
@@ -30,11 +32,13 @@ export const BALL_SPORTS: Sport[] = [
   beachVolleyball,
   cricket,
   fieldHockey,
+  futsal,
   handball,
   iceHockey,
   netball,
   rugbyLeague,
   rugbyUnion,
   softball,
+  ultimateFrisbee,
   volleyball,
 ];

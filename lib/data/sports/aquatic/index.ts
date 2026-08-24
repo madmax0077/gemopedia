@@ -7,6 +7,7 @@ import { rowing } from "./rowing";
 import { sailing } from "./sailing";
 import { surfing } from "./surfing";
 import { swimming } from "./swimming";
+import { triathlon } from "./triathlon";
 import { waterPolo } from "./water-polo";
 
 /** Aquatic sports category — swimming, diving, water polo, sailing, surfing and more. */
@@ -18,5 +19,6 @@ export const AQUATIC_SPORTS: Sport[] = [
   sailing,
   surfing,
   swimming,
+  triathlon,
   waterPolo,
 ];

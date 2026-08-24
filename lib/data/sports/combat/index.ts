@@ -1,5 +1,6 @@
 import type { Sport } from "@/lib/types";
 
+import { aikido } from "./aikido";
 import { boxing } from "./boxing";
 import { brazilianJiuJitsu } from "./brazilian-jiu-jitsu";
 import { capoeira } from "./capoeira";
@@ -21,6 +22,7 @@ import { wushu } from "./wushu";
  * disciplines. Sourced from `lib/data/sports/combat/*.ts`.
  */
 export const COMBAT_SPORTS: Sport[] = [
+  aikido,
   boxing,
   brazilianJiuJitsu,
   capoeira,

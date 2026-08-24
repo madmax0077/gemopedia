@@ -1,0 +1,202 @@
+import type { Sport } from "@/lib/types";
+
+export const motogp: Sport = {
+  id: "motogp",
+  slug: "motogp",
+  name: "MotoGP",
+  officialName: "FIM MotoGP World Championship",
+  aliases: ["Grand Prix Motorcycle Racing", "MotoGP World Championship"],
+  shortDescription:
+    "Premier class of motorcycle road racing — 1,000 cc four-stroke prototype bikes race on closed circuits worldwide at speeds exceeding 350 km/h.",
+  longDescription:
+    "MotoGP is the premier class of the FIM Grand Prix motorcycle road racing world championship, the pinnacle of two-wheeled motorsport. First contested in 1949, the championship is the oldest motorsport world championship. Manufacturers include Ducati, Aprilia, Honda, Yamaha, and KTM, each fielding specially-designed prototype motorcycles that would never be sold to the public. Modern MotoGP bikes weigh 157 kg, produce 250+ hp, and reach 366 km/h (2022 Mugello record). Riders lean at 60°+ angles, with their knees and elbows sliding along the ground through corners. The season features 20-22 rounds spanning 5 continents from March to November. Each Grand Prix weekend now includes a shorter Saturday Sprint race (half distance, half points) plus the traditional Sunday Grand Prix race. World Championship points are awarded to top 15 finishers; the rider with the most points at year's end is crowned World Champion. MotoGP is complemented by feeder classes Moto2 (765 cc Triumph triples) and Moto3 (250 cc single).",
+
+  category: "motor-sports",
+  subCategory: "motorcycle road racing",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isOlympic: false,
+  isProfessional: true,
+  season: "summer",
+  era: "20th-century",
+  popularity: "global",
+
+  countryOfOrigin: "GB",
+  regionOfOrigin: "Post-war Europe (FIM founded in France)",
+  estimatedOrigin: "First FIM Grand Prix World Championship season: 1949; 500 cc class renamed MotoGP in 2002 with 990 cc four-strokes replacing 500 cc two-strokes",
+
+  players: { min: 22, max: 24, note: "22-24 riders start each Grand Prix (2 teams × 11 factory-supported bikes)." },
+  field: {
+    surfaceName: "MotoGP circuit",
+    dimensions: "3.4-7.0 km closed road circuit; 12-19 turns; typical lap ~1:30-2:00 min. Widths 12-15 m; runoff and airfences at every corner.",
+    description: "Purpose-built FIM Grade A circuits. Iconic tracks: Mugello (Italy), Phillip Island (Australia), Silverstone (UK), Assen (Netherlands), Suzuka (Japan), Circuit of the Americas (USA), Sachsenring (Germany).",
+  },
+  equipment: [
+    { name: "MotoGP prototype bike", description: "1,000 cc four-stroke V4 or inline-4; ~157 kg minimum; 250+ hp; carbon-fibre chassis; ride-height devices; Michelin slick or wet tyres." },
+    { name: "Leathers (racing suit)", description: "Full-body kangaroo/cow-leather suit with hump aero + integrated airbag (Alpinestars Tech-Air or Dainese D-air) — mandatory since 2018." },
+    { name: "Helmet", description: "FIM-homologated full-face carbon-fibre helmet." },
+    { name: "Gloves and boots", description: "Reinforced racing gloves; ankle-height motorcycle boots with sliders." },
+    { name: "Knee/elbow sliders", description: "Replaceable pucks that slide along the tarmac during cornering; measure lean." },
+  ],
+  duration: {
+    approximateMinutes: 45,
+    structure: "Sprint: ~half GP distance (Sat, 30 min). Grand Prix: 20-30 laps, ~40-45 min total. Whole weekend: FP1/2 Fri, FP3 + qualifying Sat, GP Sun.",
+    note: "Bahrain and Qatar Grands Prix are night races under floodlights.",
+  },
+  objective: "Complete the required number of laps in the shortest time — first rider across the line wins. Accumulate the most championship points across all races.",
+  matchStructure:
+    "Free Practice sessions Friday and Saturday morning. Q1 (all riders) → Q2 (top 10) determine grid positions. Sprint race Saturday (half distance, points to top 9). Warm-up Sunday morning. Grand Prix Sunday afternoon (20-30 laps depending on circuit length). Points awarded to top 15 finishers (25 for win, 20 for 2nd, 16 for 3rd, ... 1 for 15th).",
+
+  basicRules: [
+    { title: "Race weekend", body: "Free Practice (FP1/FP2/FP3), Qualifying (Q1 + Q2), Sprint (Sat), Grand Prix (Sun)." },
+    { title: "Grid start", body: "Riders line up in staggered grid based on qualifying times; standing start; 5 red lights out = go." },
+    { title: "Points system", body: "GP: 25-20-16-13-11-10-9-8-7-6-5-4-3-2-1 for top 15. Sprint: 12-9-7-6-5-4-3-2-1 for top 9." },
+    { title: "Long lap penalty", body: "In-race time-loss penalty ~1 second, applied for track-limit violations or contact." },
+    { title: "Track limits", body: "Riders must keep 1 wheel on the track; violating results in lap-time deletion or long-lap penalty in race." },
+    { title: "Flags", body: "Yellow (caution/no overtaking), Red (session stop), White (rain), Chequered (finish), Black + number (disqualification)." },
+    { title: "Riding standards", body: "'Contact is part of racing' but reckless moves are penalised. Race Director reviews all incidents." },
+  ],
+  advancedRules: [
+    { title: "Concessions", body: "Manufacturers with poor results get testing/engine/aero concessions to catch up (Aprilia, KTM historically)." },
+    { title: "Engine allocation", body: "7 engines per rider for the season (2024 rules); each engine has a specified life." },
+    { title: "Tyre allocation", body: "11 slick tyres per weekend from Michelin (M/S/H compound options); wet tyres if declared wet race." },
+    { title: "Flag-to-flag rules", body: "In changing conditions, riders can pit for a bike-swap (from slicks to wets). No tyre-change stops for standard race conditions." },
+    { title: "Ride-height and holeshot devices", body: "Mechanical or electronic devices that lower the front (holeshot, off the line) and rear (during acceleration) to reduce wheelies. Banned mid-race in 2022+." },
+    { title: "Aerodynamics", body: "Winglets, downforce fairings, and holeshot devices give ~40% more front downforce than 2015 spec — critical for corner grip and top speed." },
+    { title: "Concession points", body: "Manufacturers in the lowest tier get extra engines, private testing, and wildcard entries to help them close the performance gap." },
+  ],
+  scoring: {
+    summary: "Championship = sum of all season race points (Sprint + Grand Prix). Riders' + Constructors' Championships.",
+    breakdown: [
+      { action: "Grand Prix 1st", points: "25" },
+      { action: "Grand Prix 2nd", points: "20" },
+      { action: "Grand Prix 3rd", points: "16" },
+      { action: "Grand Prix 15th (last point)", points: "1" },
+      { action: "Sprint 1st", points: "12" },
+      { action: "Sprint 2nd", points: "9" },
+      { action: "Sprint 9th (last point)", points: "1" },
+      { action: "Pole position", points: "0 (statistical only)" },
+      { action: "Fastest lap", points: "0 (statistical only)" },
+    ],
+    winCondition: "Highest cumulative points at end of season wins Riders' World Championship. Total of top-2 bikes per manufacturer wins Constructors'.",
+  },
+
+  officiating: {
+    officials: ["Race Director", "FIM Stewards Panel (3)", "Track Marshals", "Medical Officer"],
+    summary: "Race Director controls the session; FIM Stewards' Panel reviews incidents post-session and applies penalties. Medical Officer clears riders after crashes.",
+    signals: [
+      { name: "Yellow flag", description: "Caution — no overtaking in that sector." },
+      { name: "Red flag", description: "Session stopped immediately; riders return to pits at reduced pace." },
+      { name: "Long lap board", description: "Rider must take the long lap loop within 3 laps." },
+      { name: "White flag", description: "Rain in that sector — flag-to-flag race active." },
+    ],
+  },
+  governingBodies: [
+    { name: "Fédération Internationale de Motocyclisme", acronym: "FIM", founded: 1904, headquarters: "Mies, Switzerland", website: "https://www.fim-live.com/" },
+    { name: "Dorna Sports (commercial rights holder)", founded: 1988, headquarters: "Madrid, Spain", website: "https://www.motogp.com/" },
+  ],
+  majorCompetitions: [
+    { name: "MotoGP World Championship season", frequency: "annual (Mar-Nov)", founded: 1949, region: "worldwide (Europe, Americas, Asia, Australia)" },
+    { name: "Italian GP (Mugello)", frequency: "annual", founded: 1976, region: "Italy" },
+    { name: "Dutch TT (Assen)", frequency: "annual — oldest race", founded: 1925, region: "Netherlands" },
+    { name: "Australian GP (Phillip Island)", frequency: "annual", founded: 1989, region: "Australia" },
+    { name: "British GP (Silverstone)", frequency: "annual", founded: 1977, region: "UK" },
+    { name: "USA GP (Circuit of The Americas)", frequency: "annual", founded: 2013, region: "USA" },
+  ],
+  countriesPlayed: ["IT", "ES", "GB", "FR", "DE", "US", "AU", "JP", "TH", "MY", "IN", "AR", "AT", "NL", "PT", "QA", "BH", "ID"],
+  famousAthletes: [
+    "Valentino Rossi (Italy) — 9× World Champion, 7 in premier class; face of MotoGP 2001-2009",
+    "Giacomo Agostini (Italy) — 15× World Champion (across classes), most all-time",
+    "Marc Márquez (Spain) — 6× MotoGP World Champion (2013-14, 2016-19, 2024)",
+    "Mick Doohan (Australia) — 5× consecutive 500 cc champion 1994-98",
+    "Ángel Nieto (Spain) — 13× World Champion in lower classes",
+    "Jorge Lorenzo (Spain) — 3× MotoGP World Champion (2010, 2012, 2015)",
+    "Casey Stoner (Australia) — 2× MotoGP World Champion (2007 Ducati, 2011 Honda)",
+    "Francesco 'Pecco' Bagnaia (Italy) — 2× MotoGP World Champion (2022, 2023, Ducati)",
+    "Jorge Martín (Spain) — 2024 MotoGP World Champion (Pramac Ducati)",
+    "Kenny Roberts (USA) — 3× consecutive 500 cc champion 1978-80; American pioneer",
+  ],
+  records: [
+    { title: "Most premier-class titles", holder: "Giacomo Agostini (Italy)", value: "8 (500 cc); + 7 350 cc = 15 total", year: 1975 },
+    { title: "Most MotoGP-era titles", holder: "Marc Márquez", value: "6 (2013-14, 2016-19, 2024)", year: 2024 },
+    { title: "MotoGP top speed", holder: "Brad Binder (KTM)", value: "366.1 km/h at Mugello", year: 2023 },
+    { title: "Most consecutive premier-class wins", holder: "Giacomo Agostini / Marc Márquez", value: "10 (Agostini 1968-69; Márquez 2014 season)", year: 2014 },
+    { title: "Youngest MotoGP World Champion", holder: "Marc Márquez", value: "20 years, 266 days (2013)", year: 2013 },
+    { title: "Oldest premier-class winner", holder: "Fergus Anderson", value: "45 years, 205 days (Moto Guzzi, 1953)", year: 1953 },
+  ],
+
+  variants: ["motogp-premier-class", "moto2", "moto3", "motoe-electric", "superbike", "supersport", "isle-of-man-tt"],
+  relatedSports: ["superbike-racing", "formula-1", "isle-of-man-tt", "supercross"],
+
+  skills: [
+    "extreme lean-angle cornering",
+    "throttle and brake modulation",
+    "racecraft (overtaking, defensive)",
+    "physical fitness (neck, arms, core for 45-min racing at 60°+ lean)",
+    "tyre management",
+    "mental focus at 350 km/h",
+    "wet-weather riding",
+  ],
+  strategies: [
+    { title: "Qualifying importance", body: "Pole position wins ~30% of races; front row (top 3) wins ~50%. Track position matters enormously." },
+    { title: "Tyre choice", body: "Soft = fast early laps, cliff late. Hard = slow start, consistent. Weekend weather forecast drives choice." },
+    { title: "Start technique", body: "Perfect launch off the grid uses holeshot device (rear + front lower) for max grip; poor start = ruined race." },
+    { title: "Corner exit priority", body: "The rider with the fastest corner exit wins the straight. Sacrifice entry apex to maximise drive out." },
+    { title: "Race craft", body: "Marc Márquez pioneered late-braking overtakes into corners with knee/elbow on ground; risky but decisive." },
+  ],
+
+  terminology: [
+    { term: "GP", meaning: "Grand Prix — a single race weekend." },
+    { term: "Pole position", meaning: "Fastest qualifier; starts from grid position 1." },
+    { term: "Front row", meaning: "First 3 grid positions." },
+    { term: "Grid", meaning: "Starting arrangement of riders; 3 riders per row." },
+    { term: "Sprint", meaning: "Shorter Saturday race — half distance, half points; introduced 2023." },
+    { term: "Holeshot", meaning: "The first corner exit — leader of the pack from the start." },
+    { term: "Slipstream (draft)", meaning: "Riding in the aerodynamic wake of another bike for higher top speed." },
+    { term: "Highside", meaning: "The most violent MotoGP crash — bike bucks rider over the top." },
+    { term: "Lowside", meaning: "Losing grip and sliding out at low body angle — less dangerous than highside." },
+    { term: "Long lap penalty", meaning: "Time penalty forcing rider through a longer piece of track." },
+    { term: "Slick tyres", meaning: "Grooveless tyres for dry conditions — maximum grip." },
+    { term: "Wet tyres (rain)", meaning: "Grooved tyres for wet conditions — displace water." },
+    { term: "Rider aid electronics", meaning: "Wheelie control, traction control, engine braking maps — user-adjustable in-race." },
+    { term: "Full lean", meaning: "Riders lean bike + body 60-64° from vertical — knee and elbow slide on tarmac." },
+    { term: "Fastest lap", meaning: "Individual quickest lap of the race; awarded separately (no championship points)." },
+  ],
+
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Ride safely on the road first", body: "Get a proper motorcycle licence; ride 10,000+ km on public roads to build handling instinct." },
+      { title: "Track day at a circuit", body: "Book track days on 400-600 cc bikes to learn cornering lines and braking safely." },
+      { title: "Wear full leathers, boots, gloves, helmet", body: "Always." },
+      { title: "Study MotoGP telemetry", body: "Watch OnBoards; read Peter Bom or Peter Clifford analyses to understand racing lines." },
+    ] },
+    { level: "intermediate", steps: [
+      { title: "Amateur road-race series", body: "Enter national club-level road-race series (British Superbikes support classes, Suzuka Endurance, MotoAmerica)." },
+      { title: "Rookies Cup / Talent Cup", body: "European Talent Cup and Red Bull Rookies Cup are pathways to Moto3/Moto2." },
+      { title: "Physical conditioning", body: "Neck strength, cardio 8+ hours/week; MotoGP riders train 20-30 hrs/week off-bike." },
+      { title: "Weight management", body: "Riders are 60-72 kg; combined bike+rider weight has strict limits." },
+    ] },
+    { level: "advanced", steps: [
+      { title: "Moto3 → Moto2 → MotoGP ladder", body: "Progress through Grand Prix classes; typical path 5-8 years from 15 y.o. Rookies Cup rider to MotoGP grid." },
+      { title: "Test rider deals", body: "Manufacturers use test riders (Bradl, Pirro, Miller) as MotoGP factory pipelines." },
+      { title: "Team and manufacturer relationships", body: "Rossi's VR46 Riders Academy has produced Bagnaia, Morbidelli, Bezzecchi." },
+    ] },
+  ],
+  faq: [
+    { question: "What is MotoGP?", answer: "MotoGP is the premier class of the FIM Grand Prix motorcycle world championship — the pinnacle of motorcycle road racing. Riders race 1,000 cc four-stroke prototype bikes at speeds exceeding 350 km/h." },
+    { question: "How fast do MotoGP bikes go?", answer: "The current top speed record is 366.1 km/h (227.5 mph), set by Brad Binder on his KTM at Mugello in 2023." },
+    { question: "Who is the greatest MotoGP rider?", answer: "Statistically Giacomo Agostini (15 titles) leads. In the modern era, Valentino Rossi (9 titles, 7 premier-class) and Marc Márquez (6 MotoGP titles) are the biggest icons." },
+    { question: "What's a Sprint race?", answer: "Introduced in 2023, the Sprint is a shorter Saturday race (~half GP distance) awarding points to top 9. It adds a second race per weekend and provides more strategy/action." },
+    { question: "Why do riders lean so far off the bike?", answer: "Body position off the inside of the bike shifts weight to keep the bike more upright, allowing higher cornering speeds. Modern riders can achieve 60°+ lean angles." },
+    { question: "How is a MotoGP champion decided?", answer: "The rider with the most cumulative points (from all Grand Prix + Sprint races across the season) wins. In 2024 season format, that's 22 rounds × up to 37 combined GP + Sprint points per weekend = ~800 max possible." },
+  ],
+
+  wikipediaTitle: "MotoGP",
+  sources: [
+    { label: "Wikipedia — MotoGP", url: "https://en.wikipedia.org/wiki/MotoGP", publisher: "Wikipedia" },
+    { label: "MotoGP.com (Dorna)", url: "https://www.motogp.com/", publisher: "Dorna Sports" },
+    { label: "FIM MotoGP regulations", url: "https://www.fim-live.com/en/", publisher: "FIM" },
+  ],
+  lastVerified: "2026-08-24",
+  confidence: "community",
+};

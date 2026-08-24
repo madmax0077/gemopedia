@@ -1,0 +1,136 @@
+import type { Sport } from "@/lib/types";
+
+export const musicalChairs: Sport = {
+  id: "musical-chairs",
+  slug: "musical-chairs",
+  name: "Musical Chairs",
+  officialName: "Musical Chairs",
+  aliases: ["Trip to Jerusalem (German 'Reise nach Jerusalem')"],
+  shortDescription:
+    "Universal party elimination game — chairs (1 fewer than players) arranged in circle; music plays as players walk around; when music stops, everyone must sit in a chair; player without chair is eliminated; remove one chair each round until one player remains.",
+  longDescription:
+    "Musical Chairs is a universal party elimination game invented in Victorian England ~1877 (though some accounts trace to Prussia earlier as 'Reise nach Jerusalem' — Journey to Jerusalem). Simple, physical, high-energy game for children's parties, adult icebreakers, PE classes, wedding receptions. 3+ players (best 5-15). Setup: arrange chairs in circle (or straight line) facing OUTWARD; chairs number = players MINUS 1. Music plays; players walk (skip, dance, or march) around the chair circle. When music STOPS suddenly (controlled by DJ/adult), everyone must immediately sit in an available chair. Player who cannot find a chair is ELIMINATED. Remove one chair; music resumes; repeat until only 2 players compete for 1 chair — whoever sits first wins. Skills: listening (for music stops), quick reaction, physical positioning, competitive spatial awareness. Cultural universal — every wedding, kids' birthday, teacher training incorporates Musical Chairs. Variants: (1) Standing musical chairs (no chairs, must freeze); (2) Musical Statues (freeze when music stops); (3) Musical Islands (stand on newspaper 'islands'); (4) Silent Musical Chairs (host claps instead of music); (5) Team Musical Chairs (partners must sit together). Also 'Reverse Musical Chairs' — non-elimination version where music player tries to sit last. Physical safety concerns for older/larger players — can cause falls + collisions; adult supervision important. Estimated 3+ billion people played at some point (universal childhood + party experience).",
+  category: "playground-games", subCategory: "elimination / musical",
+  sportType: "individual", indoorOutdoor: "both",
+  isOlympic: false, isParalympic: false, isProfessional: false, season: "year-round", era: "19th-century", popularity: "global",
+  countryOfOrigin: "GB", regionOfOrigin: "Victorian England ~1877; earlier Prussian version 'Reise nach Jerusalem'",
+  estimatedOrigin: "Victorian England ~1877; earlier Prussian 'Reise nach Jerusalem'; universal global spread through 20th century",
+  players: { min: 3, max: 30, note: "Best 5-15 players; can accommodate larger groups (weddings) with multiple chair circles simultaneously." },
+  field: {
+    surfaceName: "open indoor/outdoor space",
+    dimensions: "Requires floor space for chair circle + walking radius around it; roughly 3×3m minimum for 5 players; scales up with player count.",
+    description: "Indoor: living room, gym, hall, classroom. Outdoor: backyard, park with folding chairs. Chairs in circle facing outward; some clear space around circle for walking.",
+  },
+  equipment: [
+    { name: "Chairs (N-1)", description: "Standard chairs, folding chairs, or benches — one less than number of players. Sturdy enough to sit on suddenly." },
+    { name: "Music player + speakers", description: "Any music source: phone + Bluetooth speaker, radio, boombox, laptop, kids' toy speaker. Songs 2-3 min duration typical." },
+    { name: "Music selector / DJ", description: "One adult or non-playing person controls music start/stop; not a competitor." },
+    { name: "Substitutes for chairs", description: "Cushions, pillows, marked spots on ground (for variants like Musical Islands using newspaper)." },
+    { name: "Prize (optional)", description: "Small prize for winner — candy, sticker, trophy at kids' parties." },
+  ],
+  duration: {
+    approximateMinutes: 10,
+    structure: "5-15 min per round of elimination; typical group of 10 players finishes in 8-12 min. Party integration 15-30 min with multiple rounds.",
+  },
+  objective: "Be the last player remaining by successfully sitting in an available chair each round when the music stops.",
+  matchStructure: "Arrange N-1 chairs in circle (N players). Music starts; players walk around chairs. Music stops abruptly; players scramble for chairs. Player without chair eliminated; remove one more chair. Continue until 1 player remaining (winner). Rounds get faster + more competitive as circle shrinks.",
+  basicRules: [
+    { title: "Chairs number = players - 1", body: "Set up one less chair than the number of players; e.g. 10 players + 9 chairs." },
+    { title: "Chairs face outward in circle", body: "Traditional layout — chairs form circle with seats facing outward so players walking around can see + easily sit." },
+    { title: "Music plays; players walk", body: "Music plays; players walk (or dance/skip) around the chair circle in one direction." },
+    { title: "Music stops → everyone sits", body: "When music stops suddenly, all players scramble to sit in an available chair." },
+    { title: "Player without chair eliminated", body: "One player left standing = eliminated; sits or steps aside as spectator until game ends." },
+    { title: "Remove one chair per round", body: "After each elimination, remove one chair from circle before music restarts." },
+    { title: "Continue until one player remains", body: "Final round: 2 players, 1 chair — whoever sits first wins the game." },
+  ],
+  advancedRules: [
+    { title: "No touching chair before music stops", body: "Players cannot hover over chair or grab back of chair while music plays — must actually be walking." },
+    { title: "First-to-sit-fully rule", body: "In ties, first to be FULLY seated (bottom on chair, not half-standing) wins the chair." },
+    { title: "Musical Statues variant", body: "No chairs — when music stops, players FREEZE. Anyone moving = eliminated." },
+    { title: "Musical Islands variant", body: "Newspaper 'islands' on floor instead of chairs; player without island out; islands shrink each round." },
+    { title: "Silent Musical Chairs", body: "Host claps or bangs a drum instead of music; more control over stops." },
+    { title: "Team / Partner Musical Chairs", body: "Partners must sit TOGETHER on one chair; team without spot eliminated together." },
+    { title: "Reverse Musical Chairs", body: "Non-elimination — chairs number equals players; music player tries to sit last as they take turns." },
+    { title: "Cooperative Musical Chairs (Non-elimination)", body: "Chairs removed but no elimination — players squeeze onto remaining chairs together; hilarious pile-ups." },
+    { title: "Speed variants", body: "Music alternates fast/slow; players walk fast during fast, slow during slow — physical challenge." },
+  ],
+  scoring: {
+    summary: "Elimination-based — no points. Last player remaining wins.",
+    breakdown: [
+      { action: "Sit in chair when music stops", points: "Stay in game" },
+      { action: "Fail to sit (no chair available)", points: "Eliminated" },
+      { action: "Last player remaining", points: "WIN" },
+    ],
+    winCondition: "Be the last player successfully seated when only one chair remains.",
+  },
+  officiating: {
+    officials: ["Music controller (adult DJ)", "Elimination judge (host)", "Referee for disputes (larger events)"],
+    summary: "Music controller decides music stops (should be UNPREDICTABLE); host judges eliminations. Adult supervision essential for safety.",
+  },
+  governingBodies: [
+    { name: "No formal governing body — universal party / children's game", founded: 0, headquarters: "n/a" },
+  ],
+  majorCompetitions: [
+    { name: "No formal tournaments — pure party / children's game", frequency: "n/a", founded: 0, region: "n/a" },
+    { name: "Guinness World Records — Largest Musical Chairs game", frequency: "occasional attempts", founded: 1982, region: "Global" },
+  ],
+  countriesPlayed: ["Global (all countries)"],
+  famousAthletes: [
+    "No named professional players — universal party game",
+    "Various party planners + entertainers who specialize in kids' party games",
+  ],
+  records: [
+    { title: "Guinness World Record — largest Musical Chairs", holder: "Anglo-Chinese School (Singapore)", value: "8,238 participants (1989)", year: 1989 },
+    { title: "Origin year", holder: "Victorian England", value: "~1877 (first documented)", year: 1877 },
+    { title: "Fastest single round (2 players, 1 chair)", holder: "n/a", value: "Under 1 second (reflex sit)", year: 2020 },
+  ],
+  variants: ["classic-Musical-Chairs-elimination", "Musical-Statues-freeze-instead-of-sit", "Musical-Islands-newspaper-spots-shrink", "Silent-Musical-Chairs-clap-instead-of-music", "Team-Musical-Chairs-partners", "Cooperative-Musical-Chairs-pile-up-non-elimination", "Reverse-Musical-Chairs-take-turns", "Reise-nach-Jerusalem-German-variant", "Physical-Exercise-Musical-Chairs-jumping-jacks-during-music"],
+  relatedSports: ["musical-statues", "hot-potato", "duck-duck-goose", "red-light-green-light", "simon-says"],
+  skills: ["quick reaction time", "listening (for music stop)", "spatial awareness (chair positioning)", "physical agility", "competitive positioning", "self-confidence (party performance)"],
+  strategies: [
+    { title: "Walk close to chairs", body: "Stay close to chair backs (but not touching) — shorter distance to sit when music stops." },
+    { title: "Face direction of nearest empty chair", body: "As you walk, keep body oriented so you can quickly turn + sit in nearest chair." },
+    { title: "Predict music stops (don't)", body: "Music should be UNPREDICTABLE; but competitive players watch DJ's cues (some accidentally telegraph)." },
+    { title: "Don't rush past chairs", body: "Slow, measured walking = always near a chair; fast walking = risky far-from-chair moments." },
+    { title: "Endgame focus (2 players, 1 chair)", body: "Circle single chair; watch opponent + DJ; move in same direction as opponent so you're at competitive edge." },
+    { title: "Safety awareness", body: "Don't rush toward chair aggressively — collisions + falls common in Musical Chairs; play safely." },
+  ],
+  terminology: [
+    { term: "Musical Chairs", meaning: "The game itself; also idiom for shuffling positions." },
+    { term: "Elimination", meaning: "Player without chair when music stops = out." },
+    { term: "Round", meaning: "One music cycle; one player eliminated per round." },
+    { term: "Chair scramble", meaning: "Moment when music stops + players rush to sit." },
+    { term: "Reise nach Jerusalem", meaning: "German name — 'Journey to Jerusalem'." },
+    { term: "Musical Statues", meaning: "Related variant with freezing instead of sitting." },
+    { term: "Musical Islands", meaning: "Variant with newspaper spots instead of chairs." },
+    { term: "DJ / Music controller", meaning: "Non-playing person controlling music start/stop." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play at family gatherings", body: "Universal party game; rules explained in 30 seconds; ages 4-adult." },
+      { title: "Try variants (statues, islands)", body: "Same core mechanic with different physical challenges." },
+    ] },
+    { level: "intermediate", steps: [
+      { title: "Party hosting", body: "Learn to run Musical Chairs at kids' parties; music selection + stops timing + safety management." },
+      { title: "Corporate ice-breakers", body: "Adult versions with icebreaker questions on chairs; team-building integration." },
+    ] },
+    { level: "advanced", steps: [
+      { title: "Large-scale event coordination", body: "Weddings, school events with 50-500+ players — multiple chair circles, coordination logistics." },
+      { title: "Charity marathon attempts", body: "Guinness records + fundraiser events; scale to thousands of participants." },
+    ] },
+  ],
+  faq: [
+    { question: "How do you play Musical Chairs?", answer: "Arrange N-1 chairs in circle (one less than number of players), facing outward. Music plays; players walk around the chair circle. When music STOPS suddenly, everyone scrambles to sit in an available chair. The player left standing (no chair) is ELIMINATED. Remove one more chair; music resumes; repeat. Continue until one player remains — that player wins. Very simple, requires only chairs + music + open space." },
+    { question: "Where does Musical Chairs come from?", answer: "Victorian England, ~1877 (first documented). Earlier Prussian version called 'Reise nach Jerusalem' (Journey to Jerusalem) — from historical Crusade contexts referencing traveling to Jerusalem. Became universal Victorian children's party game late 1800s + spread globally through British Empire + missionary school systems. Now played at every children's birthday, wedding reception, corporate event, school assembly worldwide. Truly universal cross-cultural game." },
+    { question: "How many players can play?", answer: "3-30 typical. Best 5-15 players for casual party. LARGE-SCALE possible — Anglo-Chinese School Singapore holds Guinness record with 8,238 participants (1989)! For large groups: multiple parallel chair circles OR very long single circle. Kids' birthday parties: 6-12 kids ideal. Adult parties: 10-20. Wedding receptions: 20-50 (fun bride/groom-vs-guests format popular). Small groups (3-4): quick 2-3 minute games." },
+    { question: "Is Musical Chairs safe?", answer: "Generally safe but requires supervision — main risks: (1) Collisions during chair scramble; especially with adults or aggressive kids. (2) Falls if pushed off chair or missing edge. (3) Chair tips if too many rush same chair. Safety tips: use sturdy chairs (no rolling office chairs), soft floor if possible (carpet vs hardwood), enforce no-pushing rule, remove hazards from area, watch for size/age mismatch (don't mix 4-year-olds with adults). Very rare serious injuries but bruises + scrapes common." },
+    { question: "What variants exist?", answer: "MUSICAL STATUES — no chairs; freeze when music stops; anyone moving = out. MUSICAL ISLANDS — newspaper spots on floor; islands shrink each round. SILENT MUSICAL CHAIRS — clap/drum instead of music. TEAM MUSICAL CHAIRS — partners must sit together. COOPERATIVE (Non-elimination) — everyone stays; squeeze onto fewer chairs together; hilarious pile-ups. REVERSE — take turns as music player. REISE NACH JERUSALEM — German version, same rules. EXERCISE VARIANT — jumping jacks/squats during music. Every party host invents new twists." },
+    { question: "What's the best Musical Chairs strategy?", answer: "For competitive party play: (1) STAY CLOSE TO CHAIRS — shorter distance to sit when music stops. (2) FACE DIRECTION OF NEAREST EMPTY CHAIR — quick pivot to sit. (3) DON'T RUSH PAST CHAIRS — always know your nearest option. (4) ENDGAME (2 players, 1 chair) — circle chair carefully, watch opponent + DJ, react FAST to music stop. (5) SAFETY — don't play too aggressively; a bruise isn't worth winning a chair game! Very quick reactions matter — reflex time <0.3 sec makes big difference." },
+  ],
+  wikipediaTitle: "Musical chairs",
+  sources: [
+    { label: "Wikipedia — Musical chairs", url: "https://en.wikipedia.org/wiki/Musical_chairs", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "community",
+};

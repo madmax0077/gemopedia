@@ -2,15 +2,27 @@ import type { Sport } from "@/lib/types";
 
 import { captureTheFlag } from "./capture-the-flag";
 import { dodgeball } from "./dodgeball";
+import { duckDuckGoose } from "./duck-duck-goose";
 import { hideAndSeek } from "./hide-and-seek";
 import { hopscotch } from "./hopscotch";
+import { jumpRope } from "./jump-rope";
+import { marbles } from "./marbles";
+import { musicalChairs } from "./musical-chairs";
+import { redLightGreenLight } from "./red-light-green-light";
+import { simonSays } from "./simon-says";
 import { tag } from "./tag";
 
-/** Playground games category — Tag, Hide-and-Seek, Hopscotch, Dodgeball, Capture the Flag. */
+/** Playground games category — Tag, Hide-and-Seek, Hopscotch, Dodgeball, Capture the Flag, Simon Says, Musical Chairs, Red Light Green Light, Duck Duck Goose, Marbles, Jump Rope. */
 export const PLAYGROUND_GAMES: Sport[] = [
   captureTheFlag,
   dodgeball,
+  duckDuckGoose,
   hideAndSeek,
   hopscotch,
+  jumpRope,
+  marbles,
+  musicalChairs,
+  redLightGreenLight,
+  simonSays,
   tag,
 ];

@@ -11,9 +11,10 @@ import { luge } from "./luge";
 import { skeleton } from "./skeleton";
 import { skiJumping } from "./ski-jumping";
 import { snowboarding } from "./snowboarding";
+import { snowmobiling } from "./snowmobiling";
 import { speedSkating } from "./speed-skating";
 
-/** Winter sports category — skiing, skating, sledding, snowboarding, ice hockey moved to ball. */
+/** Winter sports category — skiing, skating, sledding, snowboarding, snowmobiling; ice hockey moved to ball. */
 export const WINTER_SPORTS: Sport[] = [
   alpineSkiing,
   biathlon,
@@ -26,5 +27,6 @@ export const WINTER_SPORTS: Sport[] = [
   skeleton,
   skiJumping,
   snowboarding,
+  snowmobiling,
   speedSkating,
 ];

@@ -1,0 +1,137 @@
+import type { Sport } from "@/lib/types";
+
+export const hopscotch: Sport = {
+  id: "hopscotch",
+  slug: "hopscotch",
+  name: "Hopscotch",
+  officialName: "Hopscotch",
+  aliases: ["Sky Blue (India)", "Marelle (French)", "Rayuela (Spanish)", "Sekklés (Greek)"],
+  shortDescription:
+    "Ancient children's game found across world cultures in which players toss a marker (stone/beanbag) into numbered squares chalked on the ground, then hop through the pattern without stepping on lines or the marker.",
+  longDescription:
+    "Hopscotch is a popular children's game found in many cultures worldwide, dating back to the Roman Empire (found chalked on Roman military drill patterns in Britain, 1st century AD). The game is played on a pattern of numbered squares drawn on the ground with chalk (or scratched into dirt). Player throws a marker (stone, beanbag, coin, or button) into square #1, then hops through the pattern skipping the marker square, on one foot except for adjacent squares where both feet touch. Turns back at the end, picks up marker on return trip, and completes the run. Progresses to square #2, then #3, and so on. Player who completes all squares first wins. Regional variants include French Marelle (with heaven/hell), Chinese Tiaofangzi, Indian Sky-Blue / Kith-Kith, Bulgarian Skolky. Hopscotch develops balance, coordination, throwing accuracy, and counting skills in young children. No formal governing body — children's play.",
+  category: "playground-games", subCategory: "individual hopping game",
+  sportType: "individual", indoorOutdoor: "outdoor",
+  isProfessional: false, season: "year-round", era: "ancient", popularity: "global",
+  countryOfOrigin: "IT", regionOfOrigin: "Roman Empire (ancient); global by 20th century",
+  estimatedOrigin: "1st century AD Roman British military patterns; children's game since 17th century Europe; global spread by 19th century",
+  players: { min: 1, max: 6, note: "Best 2-4 players; single-player practice possible." },
+  field: {
+    surfaceName: "chalk-drawn or scratched pattern on ground",
+    dimensions: "Typical pattern ~2m long × 60 cm wide; 8-10 numbered squares.",
+    description: "Numbered squares (usually 1-8 or 1-10) drawn on flat concrete/dirt with chalk or stick. Standard pattern: single squares 1, 2, 3, then two side-by-side 4-5, single 6, two side-by-side 7-8, single 9, and a semicircle 'sky'/'home' at end.",
+  },
+  equipment: [
+    { name: "Chalk", description: "White or colored sidewalk chalk for pavement pattern." },
+    { name: "Marker", description: "Small stone, beanbag, coin, button, or bottle cap for tossing." },
+    { name: "Comfortable shoes (or barefoot)", description: "Any flat-soled shoes; sneakers ideal." },
+  ],
+  duration: {
+    approximateMinutes: 20,
+    structure: "Single game: 10-30 min; each player takes turns.",
+  },
+  objective: "Be first to complete all numbered squares by throwing marker into each in sequence, then hopping through pattern without errors.",
+  matchStructure: "Draw pattern. Player 1 tosses marker into square #1 (must land inside square, no line touch). Player hops through: skips square where marker landed, hops on 1 foot for single squares, both feet for adjacent double squares, turns at end + returns to pick up marker. Successful = advances to square #2 on next turn. Miss (marker lands outside or player steps on line/marker) = turn ends. Next player takes turn. First to complete all squares wins.",
+  basicRules: [
+    { title: "Draw the pattern", body: "Standard: 8-10 squares with mix of single + adjacent doubles + 'home'/'sky' semicircle at end." },
+    { title: "Throw marker into current target square", body: "Must land inside square without touching lines." },
+    { title: "Hop through", body: "One foot on single squares; both feet (one per square) on adjacent double squares. SKIP square with marker." },
+    { title: "Turn + return", body: "At end of pattern (in 'sky'), turn around + hop back to pick up marker en route." },
+    { title: "Missed toss or step = end turn", body: "Marker outside target OR foot on line OR wrong hopping = pass to next player." },
+    { title: "Successful complete = advance", body: "Complete round moves player to next target square (#1 → #2 → #3...)." },
+    { title: "First to complete all squares wins", body: "Some variants: bonus 'sky' square requires eyes-closed hop." },
+  ],
+  advancedRules: [
+    { title: "Regional variants", body: "French Marelle: heaven + hell layout; Chinese Tiaofangzi: 100 numbered squares; Indian Kith-Kith: 10 squares + rest square." },
+    { title: "Reverse hop challenge", body: "Some variants: complete pattern backwards after reaching square 10." },
+    { title: "Chinese 'no-look' rule", body: "Toss without looking; more difficult." },
+    { title: "Handicap for small children", body: "Younger players allowed 2 feet on all squares; larger players 1 foot only." },
+    { title: "'Sky' bonus square", body: "Semicircle at end; landing there can allow extra turn or claim a square as 'yours' (no opponent step there)." },
+    { title: "'Rest' square", body: "Some patterns have safe zone where 2 feet allowed for balance." },
+  ],
+  scoring: {
+    summary: "Race to complete: first player through all squares wins.",
+    breakdown: [
+      { action: "Complete square (marker + hop successfully)", points: "Advance to next square target" },
+      { action: "Missed toss or step on line", points: "Turn passes; retry next round" },
+      { action: "Complete all squares", points: "Win game" },
+    ],
+    winCondition: "First player to successfully complete all squares wins.",
+  },
+  officiating: {
+    officials: ["Self-officiated (children's play)"],
+    summary: "No formal officials. Adults or older children arbitrate line-step disputes.",
+  },
+  governingBodies: [
+    { name: "No formal governing body", founded: 0 },
+    { name: "Traditional children's play — perpetuated by cultural transmission", founded: 0 },
+  ],
+  majorCompetitions: [
+    { name: "None formalized worldwide", frequency: "-", region: "-" },
+    { name: "School PE + informal neighborhood play", frequency: "daily", region: "worldwide" },
+    { name: "Cultural festival demonstrations (India, France, China)", frequency: "annual", region: "regional" },
+  ],
+  countriesPlayed: ["US", "GB", "IT", "FR", "DE", "IN", "CN", "JP", "KR", "BR", "MX", "AR", "ES", "PT", "RU", "TH", "PH", "MA", "EG", "ZA"],
+  famousAthletes: [
+    "Traditional childhood game — no famous players",
+    "Cultural preservation heroes: teachers + parents who teach next generation",
+  ],
+  records: [
+    { title: "Longest chain of hopscotch squares", holder: "Guinness record", value: "1,003 squares (China, 2019)", year: 2019 },
+    { title: "Most people playing simultaneously", holder: "Hopscotch World Record event", value: "1,672 (Portland, USA 2018)", year: 2018 },
+    { title: "Ancient hopscotch patterns", holder: "Roman Forum + military barracks", value: "1st century AD (Britain)", year: 100 },
+  ],
+  variants: ["classic-1-8-english", "marelle-french-with-heaven-hell", "tiaofangzi-chinese-100-squares", "kith-kith-indian", "peever-scottish-slide-stone", "rayuela-spanish-latin-american", "skolky-bulgarian", "sekklés-greek", "hopscotch-tag-hybrid"],
+  relatedSports: ["tag", "hide-and-seek", "jump-rope", "four-square", "duck-duck-goose"],
+  skills: ["balance on one foot", "hop-jump coordination", "throwing accuracy (marker into target)", "counting + sequencing (children's math)", "concentration + focus"],
+  strategies: [
+    { title: "Toss accuracy first", body: "Practice throwing marker into small square before hopping." },
+    { title: "Balance techniques", body: "Focus on core stability; children develop this over months of play." },
+    { title: "Turn efficiency", body: "Pivot at 'sky' end quickly without stepping outside squares." },
+    { title: "Difficult squares", body: "Higher-numbered squares farther away — more toss accuracy needed." },
+  ],
+  terminology: [
+    { term: "Marker / Puck / Piedra / Chalk stone", meaning: "Small object thrown into squares." },
+    { term: "Pattern", meaning: "Numbered squares chalked/drawn on ground." },
+    { term: "Sky / Home / Heaven", meaning: "Semicircle at end of pattern; final square." },
+    { term: "Single square", meaning: "Squares 1, 2, 3, 6, 9 — hop on one foot." },
+    { term: "Double square", meaning: "Adjacent pairs (4-5, 7-8) — one foot per square, both feet down." },
+    { term: "Hell (French)", meaning: "In Marelle: skipped square or opposite side of heaven." },
+    { term: "Turn", meaning: "Pivot at end of pattern (in 'sky') to hop back." },
+    { term: "Missed toss", meaning: "Marker lands outside target or on line = turn ends." },
+    { term: "Foot on line", meaning: "Any part of shoe touching drawn line = out." },
+    { term: "Claim a square", meaning: "In some variants: land marker in specific square = claim it for future turns." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Draw simple 1-6 pattern", body: "Chalk on pavement; teach basic single-square hops." },
+      { title: "Toss accuracy practice", body: "Toss beanbag into square 1 (closest) 10 times." },
+      { title: "First full games", body: "Play with parent or older sibling; forgiving line-step rules." },
+    ] },
+    { level: "intermediate", steps: [
+      { title: "Learn full 1-8 or 1-10 pattern", body: "Add higher-numbered squares farther away." },
+      { title: "Add double squares", body: "Balance both feet in adjacent 4-5 + 7-8 pattern." },
+      { title: "School playground competition", body: "Compete with classmates during recess." },
+    ] },
+    { level: "advanced", steps: [
+      { title: "Regional variant mastery", body: "Learn French Marelle, Chinese Tiaofangzi, Indian Kith-Kith." },
+      { title: "Chalk pattern design", body: "Draw more complex patterns with heaven/hell/rest squares." },
+      { title: "Adult recreation / cultural preservation", body: "Teach next generation; playground revival events." },
+    ] },
+  ],
+  faq: [
+    { question: "How old is hopscotch?", answer: "At least 2,000 years old — Roman military drill patterns from 1st century AD (found chalked in Roman ruins in Britain). Games evolved into children's version by medieval Europe; global by 19th century." },
+    { question: "How do you play hopscotch?", answer: "Draw numbered squares on ground with chalk. Toss marker into square #1. Hop through pattern (1 foot on singles, both feet on doubles) SKIPPING marker square. Turn at end + pick up marker on way back. If successful, next turn advance marker to square #2. First to complete all squares wins." },
+    { question: "What is the standard hopscotch pattern?", answer: "Most common: squares 1, 2, 3 (single), 4-5 (adjacent doubles), 6 (single), 7-8 (adjacent doubles), 9 (single), 10 or 'sky' semicircle at end. Variants have 5-100+ squares." },
+    { question: "Why is hopscotch called that?", answer: "Old English: 'hop' (to jump) + 'scotch' (a line/mark drawn on the ground). Referring to jumping between drawn lines. Term dates to 17th century England." },
+    { question: "Is hopscotch played worldwide?", answer: "Yes — universally played across cultures under different names: France (Marelle), Spain (Rayuela), Germany (Himmelund Hölle), Italy (Campana), Bulgaria (Skolky), Greece (Kutsó), India (Kith-Kith / Sky-Blue), China (Tiaofangzi), Japan (Ishikeri). Names + patterns vary but core game is same." },
+    { question: "What skills does hopscotch develop?", answer: "1) Balance on one foot. 2) Coordination (jump-hop-throw). 3) Counting + number sequence (children's early math). 4) Throwing accuracy. 5) Concentration + patience. 6) Simple gross motor skills. Physical educators + child development experts consider hopscotch a foundational movement skill game." },
+  ],
+  wikipediaTitle: "Hopscotch",
+  sources: [
+    { label: "Wikipedia — Hopscotch", url: "https://en.wikipedia.org/wiki/Hopscotch", publisher: "Wikipedia" },
+    { label: "Historical Roman children's games — British Museum", url: "https://www.britishmuseum.org/", publisher: "British Museum" },
+  ],
+  lastVerified: "2026-08-24",
+  confidence: "community",
+};

@@ -96,3 +96,25 @@ See `ARCHITECTURE.md` §10 for the honest list of what's *deliberately not built
 ## Scaling promise
 
 The whole architecture is designed around one rule: **you can add 10,000 sports without touching any page component.** See `ARCHITECTURE.md` §9 for the migration path from TS files → Postgres → search index → CMS.
+
+## Search-engine indexing
+
+- **Google** — discovers URLs via `app/sitemap.ts`, which is submitted once in Google Search Console.
+- **Bing / Yandex / DuckDuckGo / Seznam / Naver** — pinged instantly via the [IndexNow](https://www.indexnow.org/) protocol.
+
+### IndexNow automation
+
+The site owns an IndexNow key committed at `public/85f339b64ac4ab92a0a387fda539513f.txt`. Whenever content in `app/`, `lib/`, `public/` or `next.config.*` changes on `main`, `.github/workflows/indexnow.yml` waits ~3 minutes for the Vercel deploy to finish and then runs `scripts/notify-indexnow.mjs`, which:
+
+1. Fetches `https://www.gemopedia.online/sitemap.xml`
+2. Extracts every `<loc>` URL
+3. POSTs them in 500-URL chunks to `https://api.indexnow.org/indexnow` (the aggregator that fans out to Bing, Yandex, DuckDuckGo, etc.)
+
+Run it manually too:
+
+```bash
+npm run notify-indexnow                  # push every URL in the sitemap
+ONLY_CHANGED=true npm run notify-indexnow # only URLs with <lastmod> in the last 48h
+```
+
+To rotate the key: pick a new 32-char hex string, rename the `public/<key>.txt` file, then update `INDEXNOW_KEY` in both `scripts/notify-indexnow.mjs` and `.github/workflows/indexnow.yml`.

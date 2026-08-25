@@ -1,0 +1,49 @@
+name: IndexNow — push URLs to Bing / Yandex / DuckDuckGo
+
+on:
+  # Fires on every push to main. We wait a few minutes for Vercel
+  # to deploy, then ping IndexNow with the fresh sitemap URLs.
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "lib/**"
+      - "public/**"
+      - "next.config.*"
+  # Also allow manual runs from the Actions tab.
+  workflow_dispatch:
+    inputs:
+      only_changed:
+        description: 'Only submit URLs whose <lastmod> is within the last 48h'
+        required: false
+        default: 'false'
+
+# Give Vercel a moment to actually finish deploying before we ping.
+# Only one run at a time; if a new push arrives, cancel the pending one.
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Wait for Vercel deploy to finish (3 min)
+        if: github.event_name == 'push'
+        run: sleep 180
+
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ping IndexNow
+        env:
+          SITE_URL: https://www.gemopedia.online
+          INDEXNOW_KEY: 85f339b64ac4ab92a0a387fda539513f
+          ONLY_CHANGED: ${{ github.event.inputs.only_changed || 'false' }}
+        run: node scripts/notify-indexnow.mjs

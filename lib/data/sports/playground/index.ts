@@ -9,10 +9,11 @@ import { jumpRope } from "./jump-rope";
 import { marbles } from "./marbles";
 import { musicalChairs } from "./musical-chairs";
 import { redLightGreenLight } from "./red-light-green-light";
+import { rockPaperScissors } from "./rock-paper-scissors";
 import { simonSays } from "./simon-says";
 import { tag } from "./tag";
 
-/** Playground games category — Tag, Hide-and-Seek, Hopscotch, Dodgeball, Capture the Flag, Simon Says, Musical Chairs, Red Light Green Light, Duck Duck Goose, Marbles, Jump Rope. */
+/** Playground games category — Tag, Hide-and-Seek, Hopscotch, Dodgeball, Capture the Flag, Simon Says, Musical Chairs, Red Light Green Light, Duck Duck Goose, Marbles, Jump Rope, Rock Paper Scissors. */
 export const PLAYGROUND_GAMES: Sport[] = [
   captureTheFlag,
   dodgeball,
@@ -23,6 +24,7 @@ export const PLAYGROUND_GAMES: Sport[] = [
   marbles,
   musicalChairs,
   redLightGreenLight,
+  rockPaperScissors,
   simonSays,
   tag,
 ];

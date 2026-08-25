@@ -1,0 +1,115 @@
+import type { Sport } from "@/lib/types";
+
+export const molkky: Sport = {
+  id: "molkky",
+  slug: "molkky",
+  name: "Mölkky",
+  officialName: "Mölkky",
+  aliases: ["Finnish Skittles", "Molkky"],
+  shortDescription:
+    "Finnish lawn game invented 1996 by Tuoterengas company (Karelian tradition). Players throw wooden PIN (Mölkky) at 12 numbered SKITTLES (Molkkypins). Complex scoring: knock down 1 = its number; knock 2+ = count of pins. First to EXACTLY 50 wins; over 50 = penalty back to 25. Highly strategic — endgame critical. World Championship annually in Finland.",
+  longDescription:
+    "Mölkky (pronounced 'MURL-key') is FINNISH LAWN GAME invented 1996 by TUOTERENGAS COMPANY based on traditional KARELIAN game called 'kyykkä' (Karelian skittles). Rapidly became international lawn game phenomenon. GAMEPLAY: 12 numbered SKITTLES (numbers 1-12) initially arranged in tight formation ~3.5m from throwing line. Players take turns throwing wooden PIN (MÖLKKY, ~15cm cylinder) OVERHAND at skittles. COMPLEX SCORING SYSTEM: (1) Knock down ONE SKITTLE = score its NUMBER. (2) Knock down MULTIPLE SKITTLES = score COUNT of pins knocked (not sum of numbers). (3) After each throw, KNOCKED SKITTLES ARE STOOD UP WHERE THEY FELL (not moved back) — game field spreads out. FIRST TO EXACTLY 50 POINTS WINS. GO OVER 50 = SCORE PENALIZED BACK TO 25. THREE MISSES IN A ROW = ELIMINATION. Strategic endgame critical — players must aim for specific numbers or few pins based on current score. WORLD MÖLKKY CHAMPIONSHIP annually in LAHTI, FINLAND (started 1996). Popular NORDIC + European festival game; growing US + UK following. HIGHLY ACCESSIBLE (all ages) + DEEP (strategic scoring). Considered ONE OF BEST BACKYARD GAMES worldwide.",
+  category: "playground-games",
+  subCategory: "Finnish lawn throwing/skittles game with strategic scoring",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "FI",
+  regionOfOrigin: "Finland (invented 1996 based on Karelian 'kyykkä' tradition)",
+  estimatedOrigin: "1996 (Tuoterengas company, based on Karelian folk game); World Championship 1996",
+  players: { min: 1, max: 12, note: "Individual or team; typically 2-6 players." },
+  field: { surfaceName: "grass or dirt lawn", dimensions: "throwing distance 3.5m; skittles in tight formation initially", description: "Field spreads out during play as knocked skittles stand where they fell." },
+  equipment: [
+    { name: "Mölkky set (12 numbered skittles + throwing pin)", description: "€30-80" },
+    { name: "Traditional Finnish wooden set", description: "€60-150 hand-crafted birch" },
+  ],
+  duration: { approximateMinutes: 20, structure: "Games 10-30 min typical." },
+  objective: "First to EXACTLY 50 points wins.",
+  basicRules: [
+    { title: "12 skittles numbered 1-12 in tight formation ~3.5m from throwing line", body: "Starting arrangement fixed." },
+    { title: "Throw MÖLKKY (wooden pin) OVERHAND at skittles", body: "Underhand illegal in official rules." },
+    { title: "Knock ONE skittle = score its number", body: "e.g., knock #7 = 7 points." },
+    { title: "Knock MULTIPLE skittles = score COUNT (not sum)", body: "e.g., knock 3 skittles = 3 points regardless of numbers." },
+    { title: "Knocked skittles stand up WHERE THEY FELL", body: "Field spreads out; targeting becomes strategic." },
+    { title: "First to EXACTLY 50 points wins", body: "Over 50 = penalty back to 25 points." },
+    { title: "THREE MISSES in row = ELIMINATION", body: "Pressure builds." },
+  ],
+  scoring: {
+    summary: "Race to EXACTLY 50 points. Over 50 = back to 25. 3 misses = elimination.",
+    breakdown: [
+      { action: "Knock 1 skittle", points: "Its number (1-12)" },
+      { action: "Knock 2+ skittles", points: "Count of pins (2-12)" },
+      { action: "Score total exactly 50", points: "WIN" },
+      { action: "Score total exceeds 50", points: "PENALTY — back to 25" },
+      { action: "3 misses in a row", points: "ELIMINATION" },
+    ],
+    winCondition: "Reach exactly 50 points without going over.",
+  },
+  governingBodies: [
+    { name: "Suomen Mölkky-liitto (Finnish Mölkky Federation)", founded: 1996, headquarters: "Lahti, Finland" },
+    { name: "International Mölkky Organization", founded: 2000, headquarters: "Europe" },
+  ],
+  majorCompetitions: [
+    { name: "Mölkky World Championship (Lahti, Finland)", frequency: "annual", founded: 1996, region: "Lahti, Finland" },
+    { name: "European Mölkky Championship", frequency: "annual", founded: 2000, region: "Europe" },
+    { name: "Various national championships (Germany, France, Switzerland, USA)", frequency: "annual", founded: 2005, region: "worldwide" },
+  ],
+  countriesPlayed: ["FI", "SE", "NO", "DK", "DE", "FR", "CH", "US", "UK", "AU", "NZ"],
+  famousAthletes: [
+    "Various Finnish Mölkky World Champions",
+    "Growing international competitive scene",
+  ],
+  variants: [
+    "molkky-standard-12-skittles-race-to-50",
+    "molkky-team-2v2-doubles",
+    "molkky-family-casual-flexible-elimination-rules",
+    "molkky-tournament-strict-3-miss-elimination",
+    "kyykka-Karelian-original-related-game",
+  ],
+  relatedSports: ["kubb", "petanque", "bocce", "horseshoes", "cornhole", "bowling"],
+  skills: ["throwing accuracy", "strategic scoring calculation", "endgame precision", "pressure handling"],
+  strategies: [
+    { title: "Endgame is EVERYTHING — count score constantly", body: "Aim for exact 50; avoid overshoot." },
+    { title: "Early game: knock high-numbered singles for quick points", body: "12, 11, 10 valuable." },
+    { title: "Middle game: strategic pin placement matters", body: "Where skittles fall affects future targeting." },
+    { title: "3-miss elimination pressure — don't take risky throws", body: "Conservative when 2 misses in row." },
+  ],
+  terminology: [
+    { term: "Mölkky", meaning: "The throwing pin + game name (from Karelian 'mölä')." },
+    { term: "Skittles (Molkkypins)", meaning: "12 numbered wooden pins as targets." },
+    { term: "Kyykkä", meaning: "Karelian traditional game — ancestor of Mölkky." },
+    { term: "50", meaning: "Exact target score to win." },
+    { term: "25 penalty", meaning: "Score reduction if going over 50." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Mölkky set (Amazon $40-60 or Finnish traditional $100+)", body: "Standard 12-skittle set with throwing pin." },
+      { title: "Learn overhand throwing technique — pin rotates end-over-end", body: "Illegal to spin horizontally in official rules." },
+      { title: "Practice hitting single skittles at 3.5m", body: "Basic accuracy." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Master strategic scoring — always know exactly what score you need", body: "Endgame critical." },
+      { title: "Team play + tournament rules", body: "2v2 doubles competitive format." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Enter Finnish Mölkky World Championship (Lahti)", body: "Annual August event." },
+      { title: "European + national championships", body: "Growing international scene." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Mölkky?", answer: "FINNISH LAWN GAME invented 1996 based on traditional KARELIAN game 'kyykkä'. Players throw wooden pin (MÖLKKY) at 12 numbered SKITTLES from 3.5m distance. COMPLEX SCORING: knock ONE = its number (1-12); knock MULTIPLE = count of pins (2-12). First to EXACTLY 50 WINS; over 50 = penalty back to 25; 3 misses = elimination. World Championship in Lahti, Finland annually. Highly strategic + accessible. Growing global backyard game phenomenon." },
+    { question: "How is Mölkky different from Kubb?", answer: "BOTH Nordic lawn games with wooden throwing pieces. KUBB (Swedish) uses SIDEARM STICKS to knock down BLOCKS + FINAL KING; sudden victory. MÖLKKY (Finnish) uses OVERHAND PIN to knock down NUMBERED SKITTLES with SCORING race to exact 50. KUBB has spatial strategy (field kubbs); MÖLKKY has numerical strategy (score management). MÖLKKY generally quicker games (20 min vs 30-60 min for Kubb). Both accessible to all ages. Distinct playing feels — Mölkky's exact-50 mechanic + 3-miss elimination create high pressure endgames." },
+    { question: "Is Mölkky at any Olympics?", answer: "NOT OLYMPIC. WORLD MÖLKKY CHAMPIONSHIP held annually in LAHTI, FINLAND. Growing INTERNATIONAL PARTICIPATION — Germany, France, Switzerland, USA, UK, Australia have national scenes. Not currently on IOC recognition path. Cultural + backyard game category rather than professional sport. Comparable to Cornhole (US) which also has organized professional tour without Olympic recognition." },
+  ],
+  wikipediaTitle: "Mölkky",
+  sources: [
+    { label: "Wikipedia — Mölkky", url: "https://en.wikipedia.org/wiki/M%C3%B6lkky", publisher: "Wikipedia" },
+    { label: "Mölkky World Championship (Lahti)", url: "https://www.molkky.fi/", publisher: "Suomen Mölkky-liitto" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

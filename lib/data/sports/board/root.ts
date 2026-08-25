@@ -1,0 +1,118 @@
+import type { Sport } from "@/lib/types";
+
+export const root: Sport = {
+  id: "root",
+  slug: "root",
+  name: "Root",
+  officialName: "Root: A Game of Woodland Might and Right",
+  shortDescription:
+    "Asymmetric wargame with cute forest animals. Designed 2018 Cole Wehrle. Leder Games. 2-4 players, 60-90 min. Each faction plays completely different rules (Marquise de Cat controls territory; Woodland Alliance uses guerrilla revolts; Eyrie birds have programmed decrees; Vagabond adventures solo). Kyle Ferrin's cute art masks brutal wargame. Cult favorite; multiple expansions.",
+  longDescription:
+    "Root is 2018 ASYMMETRIC WOODLAND WARGAME designed by COLE WEHRLE + published by LEDER GAMES (USA). Illustrator KYLE FERRIN's ADORABLE ANIMAL ART masks BRUTAL WARGAME MECHANICS. 2-4 players (best 3-4 base; expansions add to 6). Each faction plays COMPLETELY DIFFERENT RULES: (1) MARQUISE DE CAT — bureaucratic industrialist controlling territories building sawmills + workshops + recruiters. (2) EYRIE DYNASTIES — birds with STRICT PROGRAMMED DECREES (must play cards each round or crash). (3) WOODLAND ALLIANCE — revolutionary underdogs building sympathy + spreading revolts. (4) VAGABOND — LONE ADVENTURER completing quests + questing alone. EXPANSIONS ADD: (5) RIVERFOLK COMPANY (mercantile hippos, RIVER trade). (6) LIZARD CULT (religious lizards). (7) UNDERGROUND DUCHY (mole tunnels). (8) CORVID CONSPIRACY (crow spies). GAMEPLAY: each faction has UNIQUE VICTORY POINT PATH — Cats score by building; Eyrie by decrees; Alliance by sympathy; Vagabond by quests. First to 30 VP wins (or Domination card triggers alternate win). Won GOLDEN GEEK Best Strategy 2018. TOP-20 BGG ranked. Digital version on Steam + iOS. Considered PINNACLE ASYMMETRIC design — comparable to Vast + Sidereal.",
+  category: "board-games",
+  subCategory: "modern hobby / asymmetric wargame / territory control",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Leder Games)",
+  estimatedOrigin: "Kickstarted 2017; released 2018 Leder Games; multiple expansions 2019-2022; digital 2020",
+  players: { min: 2, max: 4, note: "Base game 2-4; expansions add factions for up to 6. Best 3-4 players." },
+  field: { surfaceName: "Woodland map (12 clearings + forests)", dimensions: "single-piece game board", description: "Clearings connected by paths; forests separate clearings; ruins provide items." },
+  equipment: [
+    { name: "Base game (4 factions + map + cards)", description: "€60 retail" },
+    { name: "Faction-specific components", description: "Each faction has unique boards + tokens + rules" },
+    { name: "Shared item deck + dominance cards", description: "Common resources" },
+    { name: "Cute Kyle Ferrin animal art everywhere", description: "Signature aesthetic" },
+  ],
+  duration: { approximateMinutes: 75, structure: "60-90 min after learning; first game 2-3 hours." },
+  objective: "Reach 30 Victory Points via faction-specific scoring; or trigger Dominance win.",
+  basicRules: [
+    { title: "Each faction has completely different rules", body: "Cats build; Eyrie decree; Alliance revolt; Vagabond quest." },
+    { title: "Turn order: Cat → Eyrie → Alliance → Vagabond", body: "Fixed order regardless of players." },
+    { title: "Score VP via faction-specific paths", body: "First to 30 VP wins." },
+    { title: "Combat when factions meet in same clearing", body: "Roll 2 dice; higher = damage inflicted; ambush cards + item effects apply." },
+    { title: "Dominance cards can trigger alternate win", body: "Control 3 of 4 corner clearings same suit = instant win." },
+    { title: "Item deck shared; ruins provide free items", body: "Common resources drive minor economy." },
+  ],
+  scoring: {
+    summary: "Faction-specific VP paths. First to 30 wins. OR Dominance card triggers alternate win (3 corner clearings same suit).",
+    breakdown: [
+      { action: "Cat: build workshop/recruiter/sawmill", points: "VP printed per building spot cleared" },
+      { action: "Eyrie: cards in decree resolved", points: "VP per matching action + roost placement" },
+      { action: "Alliance: place sympathy tokens", points: "1-4 VP per token; more per suit sympathized" },
+      { action: "Vagabond: complete quest cards", points: "1 VP per quest + 1 VP per hit inflicted + hostile faction bonus" },
+      { action: "Dominance win", points: "Instant win if activated + condition met" },
+    ],
+    winCondition: "First to 30 VP OR Dominance card triggered + condition met.",
+  },
+  governingBodies: [
+    { name: "Leder Games (publisher)", founded: 2014, headquarters: "USA (Minnesota)" },
+  ],
+  majorCompetitions: [
+    { name: "Root World Championship (online)", frequency: "annual", founded: 2019, region: "worldwide" },
+    { name: "Golden Geek Best Strategy 2018 (won)", frequency: "annual", founded: 2018, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "PL", "SE", "JP", "AU", "CA"],
+  famousAthletes: [
+    "Cole Wehrle (USA, b. 1985) — Designer; also Pax Pamir, Oath, John Company",
+    "Kyle Ferrin (USA) — Signature illustrator (all Leder Games)",
+    "Patrick Leder (USA) — Leder Games co-founder",
+  ],
+  variants: [
+    "root-base-4-factions-2018",
+    "riverfolk-expansion-mercantile-otters-lizards-2019",
+    "underworld-expansion-mole-duchy-corvid-conspiracy-2020",
+    "marauder-expansion-hundred-crows-lord-of-hundreds-2022",
+    "root-clockwork-expansion-AI-opponents-2020",
+    "root-digital-Steam-iOS",
+    "root-RPG-tabletop-role-playing-adaptation",
+  ],
+  relatedSports: ["twilight-imperium", "risk", "scythe", "vast", "oath"],
+  skills: ["asymmetric faction mastery", "opportunity recognition", "table-talk + diplomacy", "understanding opponents' win conditions"],
+  strategies: [
+    { title: "Learn ALL factions to counter them", body: "Playing 1 well requires understanding 3 others' plans." },
+    { title: "Never let 1 faction snowball", body: "Alliance sympathy + Cat buildings + Vagabond quests all exponential — attack when 1 pulls ahead." },
+    { title: "Vagabond as king-maker", body: "Alliance/hostile with certain factions massively affects Vagabond scoring." },
+  ],
+  terminology: [
+    { term: "Clearing", meaning: "Territory space on map (12 total)." },
+    { term: "Sawmill / Workshop / Recruiter", meaning: "Cat buildings scoring VP when placed." },
+    { term: "Roost", meaning: "Eyrie's core building." },
+    { term: "Sympathy", meaning: "Alliance revolutionary presence tokens." },
+    { term: "Quest", meaning: "Vagabond task cards for VP." },
+    { term: "Decree", meaning: "Eyrie's programmed action list (must resolve or crash)." },
+    { term: "Dominance card", meaning: "Alternate win condition trigger." },
+    { term: "Item", meaning: "Sword/bow/torch/boot/tea/coin/hammer — provides actions + Vagabond track." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Watch faction-specific tutorials on YouTube", body: "'Watch it Played' covers all factions." },
+      { title: "First game 3-4 players", body: "2p possible but less strategic; 3-4p ideal. Expect 2-3 hour first game." },
+      { title: "Play Marquise de Cat OR Alliance first", body: "Simpler than Eyrie or Vagabond." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Play all 4 factions across 5+ games", body: "Understand asymmetry deeply." },
+      { title: "Add Riverfolk expansion", body: "2 new factions + mercantile mechanics." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Root Digital Ranked Play", body: "Global ranking + tournaments." },
+      { title: "Full expansions (6 factions playable)", body: "Deep asymmetric mastery." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Root?", answer: "ASYMMETRIC WOODLAND WARGAME (2018) designed by COLE WEHRLE. 2-4 players play COMPLETELY DIFFERENT FACTIONS: MARQUISE DE CAT (build territory), EYRIE DYNASTIES (programmed decrees), WOODLAND ALLIANCE (guerrilla revolts), VAGABOND (solo adventurer). Cute Kyle Ferrin animal art masks BRUTAL WARGAME. First to 30 VP wins (or Dominance card triggers alternate win). 60-90 min. Cult favorite; TOP-20 BGG. Considered pinnacle asymmetric board game design." },
+    { question: "How is Root different from other wargames?", answer: "TRADITIONAL WARGAMES (Risk, Axis + Allies) = all players play SAME rules with different armies. ROOT = each faction has RADICALLY DIFFERENT RULES — Cats compare to Eyrie is like different game. This creates NEED TO UNDERSTAND all factions to counter them. Requires MORE MENTAL LOAD but creates UNIQUE ASYMMETRIC EXPERIENCE. Sister games: VAST (2016), OATH (2021), SIDEREAL CONFLUENCE (2017)." },
+    { question: "Is Root good for 2 players?", answer: "PLAYABLE but NOT IDEAL. Root shines at 3-4 players where table-talk + alliances + kingmaking create dynamic tension. 2 PLAYER often reduced to direct competition without asymmetric benefits fully expressed. If 2p only: HEAD-TO-HEAD Cat vs Alliance recommended (opposite mechanics). Add CLOCKWORK EXPANSION for AI opponents = simulates 3-4p feel. RIVERFOLK EXPANSION also adds Mechanical Marquise/Eyrie AI. Best experience: 3-4 human players." },
+  ],
+  wikipediaTitle: "Root (board game)",
+  sources: [
+    { label: "Wikipedia — Root", url: "https://en.wikipedia.org/wiki/Root_(board_game)", publisher: "Wikipedia" },
+    { label: "BoardGameGeek — Root", url: "https://boardgamegeek.com/boardgame/237182/root", publisher: "BGG" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

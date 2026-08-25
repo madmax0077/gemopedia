@@ -1,0 +1,118 @@
+import type { Sport } from "@/lib/types";
+
+export const sevenWonders: Sport = {
+  id: "seven-wonders",
+  slug: "seven-wonders",
+  name: "7 Wonders",
+  officialName: "7 Wonders",
+  aliases: ["Seven Wonders"],
+  shortDescription:
+    "Modern card-drafting civilization game. Designed 2010 Antoine Bauza (French designer). Repos Production. 3-7 players, 30 min. Won 30+ awards including Kennerspiel des Jahres 2011 (first ever). Players build one of the 7 Ancient Wonders civilizations across 3 ages via simultaneous card drafting. Duel 2-player version 2015.",
+  longDescription:
+    "7 Wonders is 2010 CARD-DRAFTING BOARD GAME designed by ANTOINE BAUZA (France) + published by REPOS PRODUCTION (Belgium). 3-7 players (VERY UNIQUE: scales beautifully at 7) build 1 of 7 ANCIENT WONDER civilizations (Alexandria, Babylon, Ephesus, Halicarnassus, Olympia, Rhodes, Gizah) across 3 AGES. GAMEPLAY: each age players simultaneously pick 1 card from hand, pass remainder to neighbor (Age 1 + 3 pass LEFT; Age 2 passes RIGHT) — DRAFTING mechanism. Cards represent: RESOURCES (brown/gray), COMMERCIAL (yellow), MILITARY (red), SCIENCE (green), CIVIC (blue), GUILDS (purple, Age 3 only), WONDER STAGES. End of each age: MILITARY BATTLE with neighbors (compare shields; win = VP, lose = -VP). Final scoring: VP from coins/military/wonder/civic/commerce/science (sets of green symbols) + guilds. Winner = highest VP. WON KENNERSPIEL DES JAHRES 2011 — FIRST YEAR AWARD EXISTED. Sold 3M+ copies. EXPANSIONS: LEADERS, CITIES, BABEL, ARMADA. 7 WONDERS DUEL (2015, Bauza + Cathala) — 2-player version with completely different mechanics, also acclaimed. 7 WONDERS SECOND EDITION (2020) — visual overhaul.",
+  category: "board-games",
+  subCategory: "modern hobby / card drafting / civilization",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "FR",
+  regionOfOrigin: "France (designer) / Belgium (publisher)",
+  estimatedOrigin: "Designed 2010 Antoine Bauza; published Repos Production 2010; Kennerspiel des Jahres 2011; 2nd Ed 2020; Duel 2015",
+  players: { min: 3, max: 7, note: "7 Wonders Duel is 2-player variant. Base game 3-7." },
+  field: { surfaceName: "Wonder board + card display", dimensions: "one Wonder board per player + hand of 7 cards per age", description: "Each player has A/B Wonder board with 3-4 wonder stages + played card tableau." },
+  equipment: [
+    { name: "Wonder boards (7 with A + B sides)", description: "€50 retail base game" },
+    { name: "Card deck (~150 cards across 3 ages)", description: "Age 1, Age 2, Age 3 decks" },
+    { name: "Coin tokens + military conflict tokens", description: "Silver 1, gold 3 coins" },
+    { name: "Guild cards (Age 3 only)", description: "Purple; special scoring" },
+  ],
+  duration: { approximateMinutes: 30, structure: "3 ages, 6 rounds each = 18 quick rounds. Simultaneous play. 30 min regardless of player count." },
+  objective: "Build civilization scoring most VP from military + science + civic + wonder + commerce + guild cards.",
+  basicRules: [
+    { title: "3 Ages: I, II, III (7-cards each per player)", body: "Pick 1 card, pass rest to neighbor. Age 1 + 3 pass LEFT; Age 2 passes RIGHT." },
+    { title: "Card types: resources / military / science / civic / commerce / guilds / wonder", body: "Playing card costs coins or resources; sometimes free due to chain-building." },
+    { title: "Wonder stages built by discarding card + paying cost", body: "Each stage gives bonus (VP, coins, resources, free build)." },
+    { title: "End of each age: military resolution", body: "Compare shields with left + right neighbor; winner takes military VP tokens." },
+    { title: "Science sets score exponentially", body: "Each symbol type (compass/tablet/gear): n² + sets of all 3 = 7 VP each." },
+    { title: "Winner = most total VP after Age 3", body: "Sum coins/military/wonder/civic/commerce/science/guilds." },
+  ],
+  scoring: {
+    summary: "VP from coins ÷ 3 + military tokens + wonder stages + civic + commerce + science (exponential) + guilds.",
+    breakdown: [
+      { action: "Coins", points: "1 VP per 3 coins" },
+      { action: "Military win", points: "+1/+3/+5 per age (I/II/III)" },
+      { action: "Military loss", points: "-1 per loss" },
+      { action: "Science", points: "n² per symbol type + 7 per set of 3" },
+      { action: "Civic (blue)", points: "3-8 VP printed on card" },
+      { action: "Guild (purple)", points: "Varies (0-15 VP)" },
+    ],
+    winCondition: "Highest total VP.",
+  },
+  governingBodies: [
+    { name: "Repos Production (publisher)", founded: 2005, headquarters: "Belgium" },
+    { name: "Kennerspiel des Jahres", founded: 2011, headquarters: "Germany" },
+  ],
+  majorCompetitions: [
+    { name: "7 Wonders World Championship (Repos)", frequency: "annual", founded: 2011, region: "worldwide" },
+    { name: "Kennerspiel des Jahres 2011 winner", frequency: "once", founded: 2011, region: "Germany" },
+    { name: "Golden Geek + Dice Tower awards", frequency: "annual", founded: 2010, region: "worldwide" },
+  ],
+  countriesPlayed: ["FR", "BE", "DE", "US", "GB", "IT", "ES", "PL", "JP", "BR"],
+  famousAthletes: [
+    "Antoine Bauza (France, b. 1978) — Designer; also Hanabi, Takenoko, Tokaido",
+    "Bruno Cathala (France) — Co-designer 7 Wonders Duel",
+  ],
+  variants: [
+    "seven-wonders-base-game-3-7-players",
+    "seven-wonders-duel-2-player-2015",
+    "seven-wonders-leaders-expansion-2011",
+    "seven-wonders-cities-expansion-2012",
+    "seven-wonders-babel-expansion-2014",
+    "seven-wonders-armada-expansion-2018-naval",
+    "seven-wonders-second-edition-2020-visual-overhaul",
+  ],
+  relatedSports: ["catan", "carcassonne", "ticket-to-ride", "azul", "wingspan"],
+  skills: ["drafting judgment", "science set optimization", "military awareness (neighbors)", "adaptation to card flow"],
+  strategies: [
+    { title: "Science: commit or ignore", body: "Half-hearted science = low VP. Commit fully for exponential growth or focus elsewhere." },
+    { title: "Watch neighbors' resources", body: "Age 2 commercial cards let you buy from neighbors; know what they have." },
+    { title: "Chain building saves coins", body: "Some cards free if you built prerequisite in previous age." },
+  ],
+  terminology: [
+    { term: "Wonder", meaning: "Ancient civilization player represents; 7 available." },
+    { term: "Age", meaning: "One of 3 rounds; new deck each age." },
+    { term: "Drafting", meaning: "Pick 1 card from hand, pass rest to neighbor." },
+    { term: "Chain building", meaning: "Free build if prerequisite card already owned." },
+    { term: "Guild", meaning: "Purple card (Age 3 only); powerful VP." },
+    { term: "Shield", meaning: "Military symbol; compared with neighbors at age end." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play digital version (Steam or App)", body: "Fast learning + AI opponents." },
+      { title: "Base game 4-5 players", body: "First game 45 min with rule explanation." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Try B-side Wonder boards + full 7 players", body: "Harder + more strategic." },
+      { title: "Add Cities expansion (best first expansion)", body: "New card types + diplomacy." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Compete in World Championships (regional qualifiers)", body: "Repos Production organizes annually." },
+      { title: "Try 7 Wonders Duel for 2-player mastery", body: "Completely different game feel." },
+    ]},
+  ],
+  faq: [
+    { question: "What is 7 Wonders?", answer: "CARD-DRAFTING BOARD GAME (2010) designed by ANTOINE BAUZA — 3-7 players build ANCIENT WONDER civilizations across 3 ages. Each age: pick 1 card from hand, pass rest to neighbor (drafting). Cards represent resources, military, science, civic, commerce, guilds, wonder stages. Score VP from all categories. WON KENNERSPIEL DES JAHRES 2011 (first ever). 30 min gameplay regardless of player count (SIMULTANEOUS play scales beautifully). Sold 3M+ copies. Considered gateway modern hobby game + benchmark for card drafting mechanics." },
+    { question: "What's the difference between 7 Wonders and 7 Wonders Duel?", answer: "7 WONDERS (2010) = 3-7 players, drafting mechanic, 30 min. 7 WONDERS DUEL (2015 by Bauza + Bruno Cathala) = 2 PLAYERS ONLY, COMPLETELY DIFFERENT gameplay — cards laid out in pyramid pattern where players alternate taking from bottom row (revealing cards above). Duel considered ONE OF BEST 2-PLAYER GAMES EVER; wins comparable acclaim. Both use similar CARD TYPES (military, science, civic) + wonders. Different games with shared theme + designer — not variants of each other." },
+    { question: "How long does 7 Wonders take?", answer: "30 MINUTES regardless of player count (2 to 7 players). SIMULTANEOUS SELECTION mechanic means 7 players play as fast as 3. First game 45-60 min with rule teaching. Considered EXTRAORDINARY EFFICIENCY for player scaling — most hobby games slow dramatically with more players. Digital versions (Steam, mobile) ~20 min." },
+  ],
+  wikipediaTitle: "7 Wonders (board game)",
+  sources: [
+    { label: "Wikipedia — 7 Wonders", url: "https://en.wikipedia.org/wiki/7_Wonders_(board_game)", publisher: "Wikipedia" },
+    { label: "BoardGameGeek — 7 Wonders", url: "https://boardgamegeek.com/boardgame/68448/7-wonders", publisher: "BGG" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

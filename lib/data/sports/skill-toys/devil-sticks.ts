@@ -1,0 +1,118 @@
+import type { Sport } from "@/lib/types";
+
+export const devilSticks: Sport = {
+  id: "devil-sticks",
+  slug: "devil-sticks",
+  name: "Devil Sticks",
+  officialName: "Devil Sticks / Flower Sticks",
+  aliases: ["Flower Sticks", "Juggling Sticks", "Lunastix"],
+  shortDescription:
+    "Skill toy — main stick balanced + manipulated with two handsticks. Origins in China (2000+ years ago as 'diabolo' cousin) + Egypt. Traditional wooden variant + modern rubber-tipped 'flower sticks' (safer, easier). Not competitive; flow art + juggling convention performance. Popular in circus + street performance.",
+  longDescription:
+    "Devil Sticks (also FLOWER STICKS, JUGGLING STICKS) is SKILL TOY where practitioner MANIPULATES central STICK using 2 SIDE STICKS (handsticks). Origins in CHINA 2000+ years ago (related to DIABOLO); also documented in ANCIENT EGYPT + WESTERN circus traditions. Modern global popularity through juggling + flow art communities since 1970s+. TYPES: (1) TRADITIONAL DEVIL STICKS = smooth wooden main stick + hardwood handsticks; requires more skill; typically balanced only on top. (2) FLOWER STICKS = rubber tassels/tips on main stick + rubber-coated handsticks; slower + easier; beginner-friendly. (3) FIRE DEVIL STICKS = flaming ends for performance. (4) LED DEVIL STICKS = glow patterns. GAMEPLAY: main stick TAPPED between handsticks to KEEP AIRBORNE via IDLES (basic sustaining bounces). ADVANCED TRICKS: PROPELLER (main stick spins in vertical plane), HELICOPTER (horizontal spin), FLIP (end-over-end rotation), UNDERARM PASS, PASS BETWEEN LEGS, TOSSES + CATCHES with handsticks. NON-COMPETITIVE typically — considered flow art alongside diabolo + poi + hula hoop. STREET PERFORMER staple. FLOWER STICKS considered EASIEST juggling prop for beginners due to slow motion.",
+  category: "skill-toys",
+  subCategory: "flow art / juggling toy with 3 sticks",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: false,
+  season: "year-round",
+  era: "ancient",
+  popularity: "regional",
+  countryOfOrigin: "CN",
+  regionOfOrigin: "China (diabolo relative) + Egypt",
+  estimatedOrigin: "Chinese origins 2000+ years ago; documented ancient Egypt; modern global juggling community adoption 1970s+",
+  players: { min: 1, max: 1, note: "Individual; sometimes performed in synchronized pairs." },
+  field: { surfaceName: "any open space", dimensions: "~2m clearance for stick + arm-span", description: "Any open indoor/outdoor space; fire variants outdoor only." },
+  equipment: [
+    { name: "Traditional devil sticks (wooden)", description: "€20-40" },
+    { name: "Flower sticks (rubber tips)", description: "€25-40; beginner-friendly" },
+    { name: "Fire devil sticks (Kevlar wick tips)", description: "€60-100; performance only" },
+    { name: "LED devil sticks", description: "€40-80" },
+    { name: "Handsticks (2)", description: "Included with set" },
+  ],
+  duration: { approximateMinutes: 30, structure: "Practice sessions 30-90 min; performance 3-5 min." },
+  objective: "Personal skill development + flow art performance; not competitive.",
+  basicRules: [
+    { title: "Main stick manipulated by 2 handsticks", body: "Tap between handsticks to keep airborne (idle)." },
+    { title: "Not competitive typically", body: "No formal rules; personal expression." },
+    { title: "Fire safety mandatory for fire devil sticks", body: "Same safety as fire poi: outdoor, spotter, fire blanket." },
+  ],
+  scoring: {
+    summary: "Not scored. Personal skill progression. Some juggling convention informal contests.",
+    breakdown: [
+      { action: "Skill mastery", points: "Individual progression" },
+      { action: "Juggling convention contests", points: "Judged difficulty + creativity" },
+    ],
+    winCondition: "Not applicable — personal expression + flow.",
+  },
+  governingBodies: [
+    { name: "No official governing body", founded: 0, headquarters: "n/a" },
+    { name: "International Jugglers' Association (IJA)", founded: 1947, headquarters: "USA", website: "https://juggle.org/" },
+    { name: "European Juggling Association (EJA)", founded: 1975, headquarters: "Europe" },
+  ],
+  majorCompetitions: [
+    { name: "IJA Festival competitions (devil sticks category)", frequency: "annual", founded: 1947, region: "USA" },
+    { name: "European Juggling Convention (EJC)", frequency: "annual", founded: 1978, region: "Europe" },
+    { name: "Flow arts + juggling conventions", frequency: "worldwide", founded: 1990, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "CN", "AU", "SE", "BR", "IL", "CA"],
+  famousAthletes: [
+    "Various circus + street performers globally",
+    "Kris Kremo (Switzerland) — Multi-prop juggler including devil sticks",
+    "Chinese acrobatic troupe performers (historic)",
+  ],
+  variants: [
+    "traditional-devil-sticks-wooden-smooth",
+    "flower-sticks-rubber-tips-beginner-friendly",
+    "fire-devil-sticks-Kevlar-flames",
+    "led-devil-sticks-glow-patterns",
+    "silicone-devil-sticks-modern-grip",
+    "chinese-flower-sticks-original-form",
+    "kids-devil-sticks-soft-safer",
+  ],
+  relatedSports: ["diabolo", "juggling", "poi", "yo-yo", "kendama", "staff-spinning"],
+  skills: ["hand-eye coordination", "timing + rhythm", "wrist control", "spatial awareness"],
+  strategies: [
+    { title: "Start with flower sticks (rubber tips)", body: "Much easier learning curve than traditional wooden." },
+    { title: "Master idle first (basic sustaining tap)", body: "Foundation for all advanced tricks." },
+    { title: "Consistent practice > long sessions", body: "10 min daily beats 2 hours weekly." },
+  ],
+  terminology: [
+    { term: "Idle", meaning: "Basic sustaining tap keeping main stick airborne." },
+    { term: "Propeller", meaning: "Main stick spinning in vertical plane." },
+    { term: "Helicopter", meaning: "Main stick spinning in horizontal plane." },
+    { term: "Flip", meaning: "End-over-end rotation of main stick." },
+    { term: "Handstick", meaning: "Side stick manipulating main stick (2 required)." },
+    { term: "Main stick / Baton", meaning: "Central manipulated stick." },
+    { term: "Tick-tock", meaning: "Alternating idle pattern." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy flower sticks ($25) + watch YouTube tutorials", body: "Rubber tips much more forgiving than wooden." },
+      { title: "Master idle (basic sustaining tap)", body: "Foundation skill — practice 10-20 min daily." },
+      { title: "Learn tick-tock alternating pattern", body: "Second-most fundamental skill." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Propeller + helicopter spins", body: "Rotational tricks." },
+      { title: "Flip + basic tosses", body: "Airborne skills." },
+      { title: "Attend local juggling club meetup", body: "Community learning accelerates." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Complex patterns + performance routines", body: "Combine tricks for shows." },
+      { title: "Fire devil sticks (with formal safety training)", body: "Performance art." },
+      { title: "Perform at juggling conventions or circus", body: "Community + professional opportunities." },
+    ]},
+  ],
+  faq: [
+    { question: "What are devil sticks?", answer: "SKILL TOY where practitioner manipulates central STICK using 2 SIDE STICKS (handsticks). Origins in China 2000+ years ago (diabolo cousin) + ancient Egypt. Modern global popularity through juggling community since 1970s. Types: TRADITIONAL DEVIL STICKS (wooden, more skill needed), FLOWER STICKS (rubber tips, beginner-friendly), FIRE devil sticks (performance), LED (glow). Non-competitive — flow art + juggling convention performance. Popular in street performance + circus. Considered EASIEST juggling prop for beginners (flower sticks especially)." },
+    { question: "What's the difference between devil sticks and flower sticks?", answer: "TRADITIONAL DEVIL STICKS = SMOOTH WOODEN main stick + hardwood handsticks; FAST movement, slippery, requires more precise timing. FLOWER STICKS = RUBBER TASSELS/TIPS on main stick + RUBBER-COATED handsticks; SLOWER movement (rubber grips + slows), MUCH EASIER for beginners. Both learn same tricks. FLOWER STICKS RECOMMENDED for anyone starting — devil sticks pure form only after months mastery. Devil sticks purists say wooden more elegant + traditional; flower sticks are democratic entry to art form." },
+    { question: "How long does it take to learn devil sticks?", answer: "BASIC IDLE (sustaining tap): HOURS to few days. TICK-TOCK PATTERN: 1-2 WEEKS practice. CONFIDENT IDLE + basic tricks: 1-2 MONTHS regular practice. PERFORMANCE-READY (10+ tricks): 6-12 MONTHS. Considered FASTER learning than juggling BALLS (much of appeal — quick results). FLOWER STICKS especially forgiving — beginner satisfaction within days. Slow-motion nature of prop makes learning satisfying visually even at beginner skill." },
+  ],
+  wikipediaTitle: "Devil sticks",
+  sources: [
+    { label: "Wikipedia — Devil sticks", url: "https://en.wikipedia.org/wiki/Devil_sticks", publisher: "Wikipedia" },
+    { label: "IJA — Devil sticks category", url: "https://juggle.org/", publisher: "IJA" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

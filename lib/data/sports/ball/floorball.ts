@@ -1,0 +1,118 @@
+import type { Sport } from "@/lib/types";
+
+export const floorball: Sport = {
+  id: "floorball",
+  slug: "floorball",
+  name: "Floorball",
+  officialName: "Floorball / Innebandy / Salibandy / Unihockey",
+  aliases: ["Innebandy (Sweden)", "Salibandy (Finland)", "Unihockey (Switzerland)", "Uni-hoc"],
+  shortDescription:
+    "Indoor team sport similar to hockey — 6-a-side, plastic sticks, light plastic ball with holes. Originated Sweden/Finland/US 1970s. Massive popularity Sweden + Finland (top participation sports). 2 halves × 20 min each. IFF World Championships. Growing global sport; IOC recognized.",
+  longDescription:
+    "Floorball (INNEBANDY in Sweden, SALIBANDY in Finland, UNIHOCKEY in Switzerland) is INDOOR TEAM SPORT similar to hockey. Played with LIGHTWEIGHT PLASTIC STICKS + LIGHT PLASTIC BALL with holes (~23g, 72mm diameter). 6-A-SIDE (5 field + 1 goalie). Originated independently in SWEDEN, FINLAND, US in 1970s; formalized 1980s. MASSIVE POPULARITY in SWEDEN + FINLAND — one of top participation sports; only football (soccer) has more Swedish/Finnish youth players. GAMEPLAY: rectangular COURT 40m × 20m with 4m × 3m nets. 2 HALVES × 20 MIN (stop clock). Players use STICKS to pass, dribble, shoot BALL into opponent's net. Goalies wear PADS but no stick — use hands to block. 5v5 field play (no offside rule in most versions — very fast game). PROFESSIONAL LEAGUES: SUPERLIGAN (Sweden), SM-LIIGA (Finland). WORLD CHAMPIONSHIPS since 1996 (IFF — International Floorball Federation). 2018 World Championships had 100+ million TV viewers. IOC RECOGNIZED sport (2008); potential future Olympic sport. Growing globally — CZECH REPUBLIC, SWITZERLAND, NORWAY, ESTONIA, LATVIA strong; USA + CANADA + AUSTRALIA emerging. Fast, high-scoring (typical scores 5-3, 7-4).",
+  category: "ball-sports",
+  subCategory: "indoor hockey-family field team sport",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: true,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "SE",
+  regionOfOrigin: "Sweden, Finland, US (developed independently 1970s)",
+  estimatedOrigin: "1970s independent development Sweden/Finland/US; International Floorball Federation founded 1986; World Championships since 1996",
+  players: { min: 12, max: 20, note: "6v6 on field (5 outfield + 1 goalie); rosters up to 20." },
+  field: { surfaceName: "indoor court (basketball-sized)", dimensions: "40m × 20m", description: "Rectangular indoor court with 4m × 3m nets, walls/boards around perimeter." },
+  equipment: [
+    { name: "Floorball stick (plastic, lightweight)", description: "€30-150" },
+    { name: "Floorball ball (plastic, ~23g, 72mm, with holes)", description: "€2-5 each" },
+    { name: "Goalie pads (chest, leg, gloves) — no stick", description: "€200-500" },
+    { name: "Court markings + goals + boards", description: "Facility-provided" },
+  ],
+  duration: { approximateMinutes: 60, structure: "2 halves × 20 min (stop clock); or 3 periods × 20 min in IFF international." },
+  objective: "Score more goals than opponent in regulation time.",
+  basicRules: [
+    { title: "6-a-side: 5 outfield players + 1 goalie", body: "Goalie has pads but no stick." },
+    { title: "Score by hitting ball into opponent's net with stick", body: "Both feet + hands illegal to touch ball." },
+    { title: "No offside in most versions (fast game)", body: "Some youth rules use offside." },
+    { title: "Body contact allowed but limited (shoulder-to-shoulder)", body: "No boarding, tripping, hooking." },
+    { title: "Fouls result in free-hits or 2 min/5 min penalties", body: "Man-down power plays similar to ice hockey." },
+    { title: "Standard 2 × 20 min halves (30 min actual clock time typical)", body: "IFF international uses 3 × 20 min." },
+  ],
+  scoring: {
+    summary: "1 goal = 1 point. Team with more goals wins.",
+    breakdown: [
+      { action: "Goal (ball fully crosses goal line)", points: "1 point" },
+      { action: "Assists tracked but not part of team score", points: "0 points" },
+      { action: "Overtime + penalty shots for tied playoffs", points: "Golden goal or shootout" },
+    ],
+    winCondition: "More goals than opponent at end of regulation (or after OT/shootout in playoffs).",
+  },
+  governingBodies: [
+    { name: "International Floorball Federation (IFF)", founded: 1986, headquarters: "Helsinki, Finland", website: "https://floorball.sport/" },
+    { name: "Swedish Floorball Federation (Innebandy)", founded: 1981, headquarters: "Stockholm, Sweden" },
+    { name: "Finnish Floorball Federation (Salibandy)", founded: 1985, headquarters: "Helsinki, Finland" },
+  ],
+  majorCompetitions: [
+    { name: "IFF World Floorball Championships (Men + Women)", frequency: "biennial", founded: 1996, region: "worldwide" },
+    { name: "Superligan (Swedish top league)", frequency: "annual", founded: 1980, region: "Sweden" },
+    { name: "F-liiga / SM-liiga (Finnish top league)", frequency: "annual", founded: 1986, region: "Finland" },
+    { name: "Champions Cup (European club champions)", frequency: "annual", founded: 2011, region: "Europe" },
+  ],
+  countriesPlayed: ["SE", "FI", "CZ", "CH", "NO", "EE", "LV", "SK", "DE", "SG", "JP", "AU", "US", "CA"],
+  famousAthletes: [
+    "Rasmus Enström (Sweden) — Superligan legend",
+    "Mika Kohonen (Finland) — Salibandy star",
+    "Kim Nilsson (Sweden) — Multiple world champion",
+    "Peter Öberg (Sweden) — Legendary center",
+  ],
+  variants: [
+    "floorball-6-vs-6-standard",
+    "floorball-3-vs-3-small-court-variant",
+    "innebandy-Swedish-name",
+    "salibandy-Finnish-name",
+    "unihockey-Swiss-name",
+  ],
+  relatedSports: ["ice-hockey", "field-hockey", "roller-hockey", "unihoc"],
+  skills: ["stick handling", "passing accuracy", "shooting precision", "spatial awareness", "fitness"],
+  strategies: [
+    { title: "Fast transition — no offside enables long passes + fast breaks", body: "Similar to lacrosse tempo." },
+    { title: "Set plays from face-offs + free-hits", body: "Coordinated team offense." },
+    { title: "Goalie communication + positioning", body: "No stick means goalies rely on body positioning." },
+    { title: "Power play + penalty kill units", body: "Special teams important." },
+  ],
+  terminology: [
+    { term: "Innebandy", meaning: "Swedish for floorball (literally 'indoor bandy')." },
+    { term: "Salibandy", meaning: "Finnish name." },
+    { term: "Unihockey", meaning: "Swiss name." },
+    { term: "Face-off", meaning: "Ball drop at center to start play." },
+    { term: "Power play", meaning: "5v4 or 5v3 when opponent has penalty." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Find local floorball club — most active Sweden, Finland, Switzerland, Czech Republic", body: "Growing US/UK clubs in urban areas." },
+      { title: "Buy beginner stick + shoes ($50-100)", body: "Indoor court shoes essential." },
+      { title: "Learn stick handling + basic passing", body: "Similar skill base to hockey." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Join adult recreational leagues", body: "Common in Nordic countries." },
+      { title: "Study game strategy + set plays", body: "Team tactics complex." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Superligan / SM-liiga contract path", body: "Professional Nordic leagues." },
+      { title: "National team + World Championship dream", body: "IFF Worlds every 2 years." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Floorball?", answer: "INDOOR TEAM SPORT similar to hockey — 6-a-side (5 outfield + 1 goalie), played with LIGHTWEIGHT PLASTIC STICKS + LIGHT PLASTIC BALL with holes (23g). Originated SWEDEN, FINLAND, US in 1970s. Called INNEBANDY (Sweden), SALIBANDY (Finland), UNIHOCKEY (Switzerland). Court 40m × 20m; 2 halves × 20 min. Fast, high-scoring, physical but limited contact. Massive popularity Sweden + Finland (top participation sports). IOC RECOGNIZED 2008; potential future Olympic sport. Global growing sport with 100+ million TV viewers for 2018 World Championships." },
+    { question: "How is Floorball different from Ice Hockey?", answer: "FLOORBALL indoor court (40m × 20m); ICE HOCKEY on ICE RINK (60m × 30m). Floorball 6-a-side; Ice Hockey 6-a-side (same count). Floorball uses LIGHTWEIGHT PLASTIC STICK + BALL; Ice Hockey uses WOODEN/COMPOSITE STICK + PUCK. Floorball NO OFFSIDE (most versions); Ice Hockey has offside + icing. Floorball less contact (no boarding); Ice Hockey full contact + fighting culturally accepted. Floorball much CHEAPER to play (no ice cost) — hence Nordic mass participation. Floorball indoor year-round; Ice Hockey seasonal outdoor or indoor rink." },
+    { question: "Is Floorball at the Olympics?", answer: "NOT YET on Olympic program but IOC RECOGNIZED SPORT since 2008. IFF (International Floorball Federation) actively lobbies for inclusion. 2028 Los Angeles Games considered but not selected. Sport has strong Nordic base + growing global participation making Olympic case. Featured at WORLD GAMES (multi-sport for non-Olympic sports). WORLD CHAMPIONSHIPS since 1996 (men) + 1997 (women) held biennially — highest-level competition currently." },
+  ],
+  wikipediaTitle: "Floorball",
+  sources: [
+    { label: "IFF — International Floorball Federation", url: "https://floorball.sport/", publisher: "IFF" },
+    { label: "Wikipedia — Floorball", url: "https://en.wikipedia.org/wiki/Floorball", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

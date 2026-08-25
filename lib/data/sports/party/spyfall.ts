@@ -1,0 +1,108 @@
+import type { Sport } from "@/lib/types";
+
+export const spyfall: Sport = {
+  id: "spyfall",
+  slug: "spyfall",
+  name: "Spyfall",
+  officialName: "Spyfall",
+  aliases: ["Spy Fall"],
+  shortDescription:
+    "Award-winning social deduction party game — Alexandr Ushan, Russia 2014. 3-8 players; secretly assigned same LOCATION card except 1 player (SPY). Players ask each other questions trying to determine spy; spy tries to guess location. 8-minute rounds. Highly praised for creative party game mechanic. Sold 500,000+ copies globally.",
+  longDescription:
+    "Spyfall is AWARD-WINNING SOCIAL DEDUCTION PARTY GAME — designed by ALEXANDR USHAN, published in RUSSIA 2014 (Hobbyworld) + Netherlands 2015 (Cryptozoic Entertainment English release). Won multiple 'Best Party Game' awards + praised by tabletop reviewers as one of best party games ever. GAMEPLAY: 3-8 players. Deck of LOCATION CARDS (30+ locations: hospital, airplane, theater, submarine, restaurant, etc.). At round start: (1) EACH PLAYER SECRETLY RECEIVES a LOCATION CARD showing the LOCATION + player's specific ROLE at that location (e.g., 'THEATER — Musician' or 'HOSPITAL — Nurse'). (2) EXCEPT ONE PLAYER: the SPY. Spy receives card saying 'SPY' — has NO knowledge of location. (3) 8-MINUTE TIMER starts. (4) Players take turns ASKING EACH OTHER QUESTIONS designed to REVEAL knowledge of location without giving it away. Non-spy players want to identify spy; spy wants to figure out location + blend in. (5) At any point during round, ANY PLAYER can ACCUSE another of being spy. If accusation vote unanimous + correct, non-spy players win + accused spy pays. If wrong, everyone loses. (6) When timer ends OR spy is accused correctly, SPY may GUESS the location — if correct, spy wins. Round scoring: SPY wins = 4 pts (correct guess) OR 2 pts (accuse-and-be-wrong); non-spy players win = 1 pt each. GAME OVER at pre-set score threshold. Sold 500,000+ copies globally. Direct sequels: SPYFALL 2 (2017 with up to 12 players + 2 spies), SPYFALL AT SEA (2020 nautical themed). Beloved for CREATIVE PARTY GAME MECHANIC — combines deduction, deception, quick thinking, social reading.",
+  category: "party-games",
+  subCategory: "modern social deduction party game with location-based hidden roles",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "RU",
+  regionOfOrigin: "Russia (Alexandr Ushan, Hobbyworld 2014)",
+  estimatedOrigin: "2014 (Russian release by Hobbyworld); 2015 English release by Cryptozoic; Spyfall 2 in 2017",
+  players: { min: 3, max: 8, note: "Best with 6-8 players; Spyfall 2 supports up to 12." },
+  field: { surfaceName: "any table", dimensions: "any table with card layout", description: "Card game — table space for cards + timer." },
+  equipment: [
+    { name: "Spyfall base game ($20)", description: "Cryptozoic Entertainment publisher" },
+    { name: "8-minute timer (or app/phone)", description: "Included or use phone" },
+    { name: "Spyfall 2 or expansions ($20-30 each)", description: "Optional additional content" },
+  ],
+  duration: { approximateMinutes: 15, structure: "8-minute rounds; typical game 3-5 rounds = 30-60 min." },
+  objective: "As NON-SPY: identify spy. As SPY: guess location or evade detection.",
+  basicRules: [
+    { title: "3-8 players; deck of 30+ LOCATION CARDS", body: "Each location has 8 unique roles printed." },
+    { title: "Everyone secretly gets same LOCATION card + their unique ROLE", body: "EXCEPT one player who gets 'SPY' card." },
+    { title: "8-MINUTE TIMER starts", body: "Timer runs whole round." },
+    { title: "Take turns ASKING QUESTIONS to other players about location knowledge", body: "Non-spies want to expose spy; spy wants to reveal location + blend in." },
+    { title: "Questions must be VAGUE ENOUGH not to reveal location outright", body: "e.g., 'How comfortable are you here?' vs 'What color are the sheets?'" },
+    { title: "ANY PLAYER can ACCUSE another of being spy at any time (requires unanimous vote)", body: "If correct: non-spies win. If wrong: everyone loses that round." },
+    { title: "When timer ends OR spy is accused correctly, SPY may GUESS location", body: "If spy guesses correctly = spy wins." },
+  ],
+  scoring: {
+    summary: "SPY wins: 4 pts (correct guess) or 2 pts (accuse-and-be-wrong). Non-spy players win: 1 pt each.",
+    breakdown: [
+      { action: "Spy guesses location correctly (after being accused)", points: "Spy: 4 pts" },
+      { action: "Spy revealed but doesn't guess (or guesses wrong)", points: "Non-spies: 1 pt each" },
+      { action: "Player wrongly accused of being spy (spy escapes detection)", points: "Spy: 2 pts" },
+      { action: "Game to pre-set score threshold (~10 pts)", points: "Game winner" },
+    ],
+    winCondition: "Highest total across rounds.",
+  },
+  governingBodies: [
+    { name: "Cryptozoic Entertainment (English publisher)", founded: 2010, headquarters: "Lake Forest, California, USA", website: "https://www.cryptozoic.com/" },
+    { name: "Hobbyworld (Russian original publisher)", founded: 2008, headquarters: "Moscow, Russia" },
+  ],
+  majorCompetitions: [
+    { name: "Various tabletop convention events (Gen Con, Origins, PAX)", frequency: "annual", founded: 2015, region: "worldwide" },
+    { name: "No formal competitive circuit", frequency: "n/a", founded: 0, region: "n/a" },
+  ],
+  countriesPlayed: ["Global — popular in board game communities worldwide, especially RU + US + EU"],
+  famousAthletes: ["No competitive scene — social party game only"],
+  variants: [
+    "spyfall-original-3-to-8-players-30-locations",
+    "spyfall-2-2017-4-to-12-players-2-spies-support-larger-groups",
+    "spyfall-at-sea-2020-nautical-themed-locations",
+    "spyfall-time-travel-expansion",
+    "spyfall-in-space-expansion",
+    "app-based-spyfall-online-friend-play",
+  ],
+  relatedSports: ["mafia", "codenames", "cluedo", "resistance", "avalon"],
+  skills: ["quick-thinking questioning", "social deception (spy)", "reading facial + verbal cues", "vague but revealing questioning technique"],
+  strategies: [
+    { title: "Ask VAGUE questions revealing location knowledge without spoiling", body: "e.g., 'Is it dangerous here?' vs 'Is it a warzone?'" },
+    { title: "As SPY: give VAGUE answers reflecting many possible locations", body: "Buy time to figure out actual location." },
+    { title: "PAY ATTENTION to who asks vague questions — could be spy stalling", body: "Non-spy questions typically more specific." },
+    { title: "MEMORIZE 30+ locations in deck", body: "Elite play knows role list per location." },
+    { title: "TIME PRESSURE — spy benefits from timer running out", body: "Non-spies want quick accurate accusation." },
+  ],
+  terminology: [
+    { term: "Spy", meaning: "The player without location knowledge; trying to blend in + guess." },
+    { term: "Location", meaning: "The secret shared context all non-spies know." },
+    { term: "Role", meaning: "Player's specific character at the location (waiter, doctor, pilot, etc.)." },
+    { term: "Accuse", meaning: "Formal group action naming suspected spy." },
+    { term: "First Player card", meaning: "Card designating who asks first question." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Spyfall base game ($20)", body: "Simple to teach — 8-min rounds mean quick iteration." },
+      { title: "Play first game with FEW LOCATIONS to learn dynamics", body: "Start with 5-10 locations." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Play full deck (30+ locations)", body: "Requires memorization." },
+      { title: "Study questioning technique — vague-but-revealing", body: "Balance is key." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Spyfall?", answer: "AWARD-WINNING SOCIAL DEDUCTION PARTY GAME — Alexandr Ushan, Russia 2014. 3-8 players secretly assigned same LOCATION card except ONE PLAYER who is SPY. 8-minute timer; players ask each other questions revealing location knowledge without spoiling it. Non-spies want to identify spy; spy wants to figure out location + blend in. Beloved for CREATIVE mechanic combining deduction, deception, quick thinking. Sold 500,000+ copies globally. Sequels: Spyfall 2 (2017), Spyfall at Sea (2020). Considered one of best modern party games." },
+    { question: "How is Spyfall different from Mafia?", answer: "MAFIA (aka Werewolf, 1986 Russian origin) has PLAYERS ROLE-ASSIGNED with different alignments (mafia, villagers, doctor, detective) trying to identify + eliminate opposite side across MULTIPLE DAY/NIGHT PHASES. Very traditional deduction game. SPYFALL (2014) has 1 SPY vs GROUP-KNOWING players trying to identify spy WITHIN 8-MINUTE TIMER of location-related questioning. Faster + more focused than Mafia. SPYFALL's mechanic of asking vague questions to reveal location without spoiling is UNIQUE + creative. Both social deduction; different pacing + rules. Spyfall better for casual groups + shorter sessions; Mafia better for longer strategy nights." },
+    { question: "Is Spyfall a competitive game?", answer: "NOT COMPETITIVELY organized — no professional Spyfall circuit or Spyfall Championship. Purely social + recreational. However, played at TABLETOP CONVENTIONS (Gen Con, Origins, PAX) sometimes as featured tournament for fun bragging rights. Some board game cafés + hobby stores host casual events. Sold 500,000+ copies makes it POPULAR game but not competitive esport. Modern app versions (Spyfall.app + others) allow online play with distant friends. Considered ONE OF BEST PARTY GAMES — critically acclaimed but sold via retail rather than tournament ecosystem." },
+  ],
+  wikipediaTitle: "Spyfall",
+  sources: [
+    { label: "Wikipedia — Spyfall", url: "https://en.wikipedia.org/wiki/Spyfall_(game)", publisher: "Wikipedia" },
+    { label: "Cryptozoic Entertainment — Spyfall", url: "https://www.cryptozoic.com/", publisher: "Cryptozoic" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

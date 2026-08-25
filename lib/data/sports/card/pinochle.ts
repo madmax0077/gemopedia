@@ -1,0 +1,111 @@
+import type { Sport } from "@/lib/types";
+
+export const pinochle: Sport = {
+  id: "pinochle",
+  slug: "pinochle",
+  name: "Pinochle",
+  officialName: "Pinochle",
+  shortDescription:
+    "Trick-taking card game for 2-4 players using 48-card deck (double 9-A of standard cards). Developed 19th-century USA from German bezique. 2 phases: MELDING (declare card combinations for points) + TRICK-PLAY (like whist). Partnership Pinochle (4 players) most popular. Popular ethnic German-American + American Midwest game.",
+  longDescription:
+    "Pinochle is TRICK-TAKING CARD GAME using 48-CARD PINOCHLE DECK (2 copies of 9, 10, J, Q, K, A in 4 suits = 48). Rank: A (high) → 10 → K → Q → J → 9 (low) — note 10s outrank kings + queens. Developed 19th-century USA from German BEZIQUE (Binokel) game via German immigrants. 2 PHASES: (1) MELDING — after cards dealt, players declare COMBINATIONS in hand: MARRIAGE (K+Q same suit = 20 pts), ROUND-HOUSE (marriages in all 4 suits = 240 pts), PINOCHLE (Jack of Diamonds + Queen of Spades = 40 pts), DOUBLE PINOCHLE (2 of each = 300 pts), ACES AROUND (4 aces different suits = 100 pts), etc. (2) TRICK-PLAY — hands played out following suit + trumping like whist. Points scored for: MELDS + TRICKS TAKEN (Ace, 10, K, Q = 1 pt each; 15 total in trick-play). PARTNERSHIP PINOCHLE (4 players, 2 partnerships) most common variant. Also SINGLE-HAND (2 players) + AUCTION (3-4 players bid for trump). VERY POPULAR in AMERICAN MIDWEST (Wisconsin, Minnesota, Ohio) reflecting GERMAN IMMIGRANT HERITAGE. Cult game — many tournaments + online play at Trickster Cards, VIP Games. RELATED: BEZIQUE (French), BINOKEL (German original), SIXTY-SIX.",
+  category: "card-games",
+  subCategory: "trick-taking card game (48-card double deck)",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "19th-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (German immigrant communities, 19th century) — derived from German Binokel",
+  estimatedOrigin: "Developed 19th century USA from German Bezique/Binokel; popularized by German immigrants; Partnership Pinochle standardized early 20th century",
+  players: { min: 2, max: 4, note: "Partnership Pinochle (4 players, 2 teams) most common; 2-player + 3-player Auction variants exist." },
+  field: { surfaceName: "card table", dimensions: "square/rectangular table for 4 players", description: "Standard 4-seat card table." },
+  equipment: [
+    { name: "48-card Pinochle deck (2 sets of 9-A)", description: "€5-10 special deck OR combine 2 standard decks removing 2-8" },
+    { name: "Score pad + pencil", description: "Track melds + trick points" },
+    { name: "4 chairs / table", description: "Standard card table" },
+  ],
+  duration: { approximateMinutes: 60, structure: "Hands ~15 min each; game to 500 or 1000 points; typically 4-6 hands." },
+  objective: "First team to target score (500 or 1000 points) via combined melding + trick-taking points.",
+  basicRules: [
+    { title: "Deal 12 cards each (4 players)", body: "Turn top card to indicate trump initially (in Standard/Trump variant)." },
+    { title: "MELDING phase: declare combinations", body: "Marriage 20, Pinochle 40, Aces Around 100, etc. Meld points added to score." },
+    { title: "TRICK-PLAY: 12 tricks; follow suit or trump", body: "Must trump if void in suit + opponent winning; play to win if partner not winning." },
+    { title: "Trick-play scoring: A=1, 10=1, K=1, Q=1 per trick", body: "Also 1 pt for taking last trick. Only high cards score." },
+    { title: "In Partnership variant: 2 partnerships", body: "Combined team scores; partners across from each other." },
+    { title: "Game to 500 or 1000 total points", body: "First team to reach target wins; ties = play another hand." },
+  ],
+  scoring: {
+    summary: "Melding points (declared combinations) + Trick-play points (Aces, 10s, Kings, Queens taken + last trick) = total.",
+    breakdown: [
+      { action: "Marriage (K+Q same suit)", points: "20 (or 40 if trump)" },
+      { action: "Pinochle (J♦ + Q♠)", points: "40" },
+      { action: "Double Pinochle", points: "300" },
+      { action: "Aces Around (4 aces different suits)", points: "100" },
+      { action: "Kings Around", points: "80" },
+      { action: "Queens Around", points: "60" },
+      { action: "Jacks Around", points: "40" },
+      { action: "Round-House (marriages in all 4 suits)", points: "240" },
+      { action: "Trick-play (Aces/10s/Ks/Qs)", points: "1 each; 15 total per hand + 1 last trick" },
+    ],
+    winCondition: "First team to 500 or 1000 total points.",
+  },
+  governingBodies: [
+    { name: "American Cardplayer's Society (informal)", founded: 1900, headquarters: "USA" },
+  ],
+  majorCompetitions: [
+    { name: "Various Midwest USA tournaments", frequency: "annual", founded: 1900, region: "USA" },
+    { name: "Trickster Cards Pinochle online tournaments", frequency: "ongoing", founded: 2015, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "DE", "CA", "AT", "PL", "CH"],
+  famousAthletes: ["Historic + ongoing community; no famous individuals globally known"],
+  variants: [
+    "partnership-pinochle-4-players-2-teams-most-common",
+    "auction-pinochle-3-players-bidding",
+    "double-deck-pinochle-80-cards-2-decks",
+    "single-hand-pinochle-2-players",
+    "check-pinochle-hand-limits",
+    "firehouse-pinochle-simplified-rules",
+    "racehorse-pinochle-fast-variant",
+  ],
+  relatedSports: ["bezique", "binokel", "sixty-six", "belote", "skat", "bridge"],
+  skills: ["memorization (48 cards)", "partnership signaling", "meld optimization", "trump timing"],
+  strategies: [
+    { title: "Save critical cards for melds", body: "Don't waste Pinochle jack or queens on trick-play if meld possible." },
+    { title: "Signal partner conventionally", body: "Lead specific suits to communicate hand composition." },
+    { title: "Count cards", body: "Only 48 cards; skilled players track all played." },
+  ],
+  terminology: [
+    { term: "Meld", meaning: "Card combination declared for points." },
+    { term: "Marriage", meaning: "King + Queen same suit (20 pts, or 40 if trump)." },
+    { term: "Pinochle", meaning: "Jack of Diamonds + Queen of Spades (40 pts)." },
+    { term: "Round-House", meaning: "Marriages in all 4 suits (240 pts)." },
+    { term: "Trump", meaning: "Predetermined ranking suit; beats other suits." },
+    { term: "Trick", meaning: "One round of play; each player plays 1 card." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play online (Trickster Cards, VIP Games)", body: "Learn rules against AI + humans." },
+      { title: "Family game night (Midwest tradition)", body: "Ideal way to learn from experienced players." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Master meld combinations + trick-play strategy", body: "50+ possible melds to memorize." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Local tournaments (Wisconsin, Minnesota heavy scene)", body: "Cash prizes + community." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Pinochle?", answer: "TRICK-TAKING CARD GAME (48-card double deck of 9-A) developed 19th-century USA from GERMAN BEZIQUE/BINOKEL by German immigrants. 2 phases: MELDING (declare combinations for points) + TRICK-PLAY (like whist). Partnership Pinochle (4 players, 2 teams) most common. Very popular in AMERICAN MIDWEST (Wisconsin, Minnesota, Ohio) reflecting German heritage. Cult game; still played in family + tournament settings." },
+    { question: "How is Pinochle different from Bridge?", answer: "BRIDGE = 52-card standard deck, complex BIDDING system, contract determined then play. PINOCHLE = 48-card DOUBLE deck (2× 9-A), MELDING phase + TRICK-PLAY (no bidding in Partnership variant). Both trick-taking but different mechanics. PINOCHLE simpler bidding; MORE MEMORIZATION due to double cards. Bridge global; Pinochle regional (USA + German-speaking Europe)." },
+    { question: "What is a Pinochle deck?", answer: "48 CARDS: 2 copies each of 9, 10, Jack, Queen, King, Ace in all 4 suits = 48 total. Rank: A (high) → 10 → K → Q → J → 9 (low) — NOTE 10s OUTRANK KINGS + QUEENS (unusual). Can buy purpose-made deck ($5-10) OR combine 2 standard decks removing all 2s-8s. Some variants use 80-CARD DOUBLE-DECK PINOCHLE (2 pinochle decks combined) for even richer melding." },
+  ],
+  wikipediaTitle: "Pinochle",
+  sources: [
+    { label: "Wikipedia — Pinochle", url: "https://en.wikipedia.org/wiki/Pinochle", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

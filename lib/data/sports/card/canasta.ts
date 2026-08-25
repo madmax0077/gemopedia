@@ -1,0 +1,115 @@
+import type { Sport } from "@/lib/types";
+
+export const canasta: Sport = {
+  id: "canasta",
+  slug: "canasta",
+  name: "Canasta",
+  officialName: "Canasta",
+  shortDescription:
+    "Rummy-family card game invented 1939 by Segundo Santos + Alberto Serrato in Montevideo, Uruguay. Uses 2 standard decks + 4 jokers (108 cards). Players form MELDS (3+ cards same rank) — CANASTA = 7-card meld (500 pts natural, 300 mixed). Massive American craze 1948-1953. Partnership Canasta (4 players) standard. Cult classic; declining but active online.",
+  longDescription:
+    "Canasta is RUMMY-FAMILY CARD GAME invented 1939 by SEGUNDO SANTOS + ALBERTO SERRATO in MONTEVIDEO, URUGUAY at Jockey Club. Named for Spanish 'CANASTA' (BASKET) referring to 7-card meld. Uses 2 STANDARD DECKS + 4 JOKERS = 108 CARDS. Players form MELDS (3+ cards same rank; wild cards allowed). CANASTA = 7-CARD MELD (natural 500 pts; mixed with wilds 300 pts). WILD CARDS: 2s + Jokers. PARTNERSHIP CANASTA (4 players, 2 teams) STANDARD variant. GAMEPLAY: draw + discard + meld (like rummy) but with restrictions: cannot pick up discard pile without matching top card + specific meld requirements; RED 3s automatically melded (100 pts each). GO OUT by melding all cards + closing round. GAME to 5000 points. EXPLODED IN POPULARITY 1948-1953 in USA — biggest card game craze since Contract Bridge. Reached UK, Europe, Australia. Declining since 1970s but active online community + tournaments. VARIANTS: HAND & FOOT (extra 'foot' hand set aside), SAMBA (uses 3 decks + more variants), BOLIVIA, RUMMYPOKER. RECOMMENDED for enthusiast card players + families.",
+  category: "card-games",
+  subCategory: "rummy-family / melding card game",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "UY",
+  regionOfOrigin: "Uruguay (Montevideo Jockey Club, 1939)",
+  estimatedOrigin: "Invented 1939 Uruguay by Santos + Serrato; spread through Argentina + Brazil 1940s; hit USA 1948; massive craze 1948-1953",
+  players: { min: 2, max: 6, note: "Partnership Canasta (4 players, 2 teams) most common; 2-6 possible via variants." },
+  field: { surfaceName: "card table", dimensions: "square/rectangular for 4 players", description: "Standard 4-seat card table." },
+  equipment: [
+    { name: "108-card deck (2 standard + 4 jokers)", description: "€10 or use 2 standard decks + jokers" },
+    { name: "Score pad + pencil", description: "Track meld + canasta scores" },
+    { name: "4 chairs / table", description: "Standard card table" },
+  ],
+  duration: { approximateMinutes: 90, structure: "Hands 30-45 min; game to 5000 points; typically 3-5 hands." },
+  objective: "First team to 5000 points; earned via canastas (7-card melds) + smaller melds + bonuses.",
+  basicRules: [
+    { title: "Each player dealt 11 cards (Partnership Canasta)", body: "Discard pile started; drawing + discarding + melding turns." },
+    { title: "Meld = 3+ cards same rank", body: "Natural (no wild) or mixed (up to 3 wilds per meld; must have 2+ natural)." },
+    { title: "Canasta = 7-card meld", body: "Natural canasta 500 pts; mixed canasta 300 pts. Must have 1+ canasta to go out." },
+    { title: "Red 3s automatically melded", body: "100 pts each; -100 if opponent has all 4." },
+    { title: "Cannot pick up discard pile without matching card", body: "Pile frozen when wild card discarded onto it." },
+    { title: "Go out = meld all cards; game to 5000", body: "500 pt bonus for going out; -100 to opponents' unmelded cards." },
+  ],
+  scoring: {
+    summary: "Complex scoring: melds + canastas + go-out bonus - unmelded card penalties.",
+    breakdown: [
+      { action: "Natural canasta", points: "500" },
+      { action: "Mixed canasta", points: "300" },
+      { action: "Red 3", points: "100 each" },
+      { action: "All 4 red 3s", points: "800" },
+      { action: "Aces / 8s-K", points: "5-10 pts each" },
+      { action: "2s / Jokers (wild)", points: "20 each in meld" },
+      { action: "Going out", points: "500 bonus" },
+      { action: "Unmelded cards", points: "-100 per card left in hand" },
+    ],
+    winCondition: "First team to 5000 points.",
+  },
+  governingBodies: [
+    { name: "No official governing body", founded: 0, headquarters: "n/a" },
+  ],
+  majorCompetitions: [
+    { name: "Canasta clubs + online tournaments", frequency: "ongoing", founded: 1950, region: "worldwide" },
+    { name: "American Canasta Association (informal, historical)", frequency: "historical", founded: 1950, region: "USA" },
+  ],
+  countriesPlayed: ["UY", "AR", "BR", "US", "GB", "AU", "DE", "IT", "ES"],
+  famousAthletes: [
+    "Segundo Santos + Alberto Serrato (Uruguay, 1939) — Inventors",
+    "Josephine Artayeta de Viel (Argentina) — Popularized in USA + Argentina",
+  ],
+  variants: [
+    "partnership-canasta-4-players-2-teams-standard",
+    "hand-and-foot-canasta-extra-foot-hand",
+    "samba-canasta-3-decks-4-jokers-6-decks-total",
+    "bolivian-canasta-4-decks-more-melds",
+    "italian-canasta-different-scoring",
+    "modern-american-canasta-strict-rules",
+    "cuban-canasta-cuban-variant",
+  ],
+  relatedSports: ["rummy", "gin-rummy", "hand-and-foot", "samba", "conquian"],
+  skills: ["memory (108 cards)", "partnership signaling", "meld optimization", "risk vs safety balance"],
+  strategies: [
+    { title: "Prioritize natural canastas (500 vs 300 mixed)", body: "Save wilds for necessity; naturals worth more." },
+    { title: "Freeze discard pile against opponents", body: "Wild card discarded prevents opponents picking up." },
+    { title: "Communicate via meld order + discard signals", body: "Partnership signaling essential." },
+  ],
+  terminology: [
+    { term: "Canasta", meaning: "7-card meld (Spanish for basket)." },
+    { term: "Meld", meaning: "3+ cards of same rank placed together." },
+    { term: "Natural canasta", meaning: "Canasta with no wild cards (500 pts)." },
+    { term: "Mixed canasta", meaning: "Canasta with wild cards (300 pts, max 3 wilds)." },
+    { term: "Freeze the discard pile", meaning: "Wild card discarded prevents pile pickup." },
+    { term: "Wild cards", meaning: "2s + Jokers." },
+    { term: "Red 3s", meaning: "Automatically melded; +100 pts each." },
+    { term: "Going out", meaning: "Melding all cards; 500 pt bonus." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play online (Trickster, VIP Games, Board Game Arena)", body: "Learn against AI + humans." },
+      { title: "Family game — best learned from experienced player", body: "1-2 hours to learn basics." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Try Hand and Foot variant", body: "Popular American variant with extra hand." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Online tournaments + local canasta clubs", body: "Cash prizes on some platforms." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Canasta?", answer: "RUMMY-FAMILY CARD GAME invented 1939 by SEGUNDO SANTOS + ALBERTO SERRATO in MONTEVIDEO, URUGUAY. Uses 108 cards (2 standard decks + 4 jokers). Players form MELDS (3+ cards same rank); CANASTA = 7-card meld (500 pts natural, 300 mixed). Partnership Canasta (4 players, 2 teams) most common. HUGE American craze 1948-1953. Declining but active online. First team to 5000 points wins." },
+    { question: "How is Canasta different from Rummy?", answer: "RUMMY = simpler melds (3+ cards same rank OR runs), single deck, MANY variants. CANASTA = 2 decks + 4 jokers (108 cards), MELDS ONLY (no runs), signature CANASTA (7-card meld), FROZEN DISCARD PILE mechanics, RED 3 BONUSES, WILD CARDS (2s + Jokers). More complex + strategic than basic Rummy. Partnership Canasta is TEAM game (unusual for rummy family)." },
+    { question: "Is Canasta still played?", answer: "YES but DECLINING. Peak 1948-1953 (biggest American card game craze since Contract Bridge). Still active among 60+ generation + online. TRICKSTER CARDS + VIP GAMES + BOARD GAME ARENA host regular play. American CANASTA CLUBS in retirement communities + community centers. Not as popular as poker/bridge but persistent cult following. HAND AND FOOT (variant) especially popular USA family gatherings." },
+  ],
+  wikipediaTitle: "Canasta",
+  sources: [
+    { label: "Wikipedia — Canasta", url: "https://en.wikipedia.org/wiki/Canasta", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

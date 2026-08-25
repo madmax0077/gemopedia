@@ -1,0 +1,117 @@
+import type { Sport } from "@/lib/types";
+
+export const boltAction: Sport = {
+  id: "bolt-action",
+  slug: "bolt-action",
+  name: "Bolt Action",
+  officialName: "Bolt Action",
+  shortDescription:
+    "WWII 28mm miniature wargame. First published 2012 by Warlord Games + Osprey Publishing. Designed by Alessio Cavatore + Rick Priestley (both ex-Games Workshop). Uses ORDER DICE mechanic — one die per unit drawn from bag; introducing tactical uncertainty. Third Edition released 2024. Most popular WWII historical miniature wargame.",
+  longDescription:
+    "Bolt Action is WWII 28MM HISTORICAL MINIATURE WARGAME. First published 2012 by WARLORD GAMES + OSPREY PUBLISHING. Designed by ALESSIO CAVATORE + RICK PRIESTLEY (both formerly Games Workshop; Priestley = 40K co-creator; Cavatore worked on 40K + WFB). GAMEPLAY: SQUAD-BASED SKIRMISH (10-30 miniatures per side). ORDER DICE mechanic = ONE COLORED DIE PER UNIT (one per side) drawn from bag alternately — creates TACTICAL UNCERTAINTY (which unit activates next unknown). Each order: 6 CHOICES — FIRE, ADVANCE, RUN, AMBUSH, DOWN, RALLY. Units gain PIN MARKERS when fired at (accumulating suppression); enough pins = unit inaccurate + can flee. NATIONS: British, US, German, Soviet, Japanese, French, Italian, plus expansions. FORCES: infantry squads + machine guns + artillery + tanks + halftracks. THIRD EDITION 2024 refined system. HUGE VARIETY of THEATER supplements: PACIFIC, EASTERN FRONT, DESERT, WESTERN EUROPE, NORMANDY, BATTLE OF THE BULGE, MARKET GARDEN, ITALY. CAMPAIGN books provide historical scenarios. LARGE COMMUNITY globally; frequent tournaments. Considered MOST POPULAR WWII HISTORICAL MINIATURE WARGAME — beats FLAMES OF WAR (competitor) in North American community. RELATED: BLOOD RED SKIES (WWII air combat), CRUEL SEAS (naval), KONFLIKT '47 (WWII with weird tech).",
+  category: "wargames",
+  subCategory: "WWII 28mm historical miniature wargame",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "UK (Warlord Games, Nottingham)",
+  estimatedOrigin: "1st Edition 2012 Warlord Games/Osprey; 2nd Edition 2016; 3rd Edition 2024",
+  players: { min: 2, max: 4, note: "Typically 2 (1-vs-1); can play 3-4 with allied forces." },
+  field: { surfaceName: "wargame table + terrain", dimensions: "typically 6ft × 4ft table with WWII terrain", description: "Terrain: buildings, hedgerows, forests, hills; typically 3D scale models." },
+  equipment: [
+    { name: "Rulebook", description: "€30-50 3rd Edition" },
+    { name: "28mm plastic + metal miniatures", description: "Warlord Games; €30-60 per 30-mini box" },
+    { name: "Colored order dice (D6, 12+ per side)", description: "€5-10 dice set" },
+    { name: "Measuring tape (inches)", description: "€5" },
+    { name: "Templates: teardrop, HE blast", description: "For artillery/grenades" },
+    { name: "6-8 D6 for combat", description: "Standard dice" },
+    { name: "Terrain: buildings, hedgerows, forests", description: "€50-500 for complete table setup" },
+    { name: "Painted armies (typically 1000 pts)", description: "1000 pts ~30 miniatures + 1-2 tanks" },
+  ],
+  duration: { approximateMinutes: 180, structure: "2-4 hours per game; setup 30-60 min." },
+  objective: "Complete scenario mission (destroy enemy, hold objectives, escape, etc.) using period-appropriate WWII tactics.",
+  basicRules: [
+    { title: "Order dice determine activation order", body: "Each player has colored dice equal to units; drawn alternately from bag." },
+    { title: "6 order choices per activation", body: "FIRE, ADVANCE, RUN, AMBUSH, DOWN, RALLY." },
+    { title: "Shooting: to-hit roll → damage → save", body: "D6 rolls; modifiers for cover, range, veterans." },
+    { title: "Pin markers accumulate from being shot at", body: "Pins reduce combat effectiveness; 12+ pins possible fleeing." },
+    { title: "Tanks + heavy weapons have detailed rules", body: "Armor penetration + damage tables." },
+    { title: "Missions from rulebook or campaigns", body: "Objective + Body Count scenarios common." },
+  ],
+  scoring: {
+    summary: "Scenario-based. Victory Points from objectives held + enemy units destroyed.",
+    breakdown: [
+      { action: "Objective held", points: "1-3 VP" },
+      { action: "Enemy unit destroyed", points: "VP equal to unit cost" },
+      { action: "Scenario-specific bonuses", points: "Varies" },
+    ],
+    winCondition: "Scenario objectives + VP total.",
+  },
+  governingBodies: [
+    { name: "Warlord Games (publisher)", founded: 2007, headquarters: "UK (Nottingham)", website: "https://www.warlordgames.com/" },
+    { name: "Osprey Publishing (co-publisher)", founded: 1969, headquarters: "UK" },
+  ],
+  majorCompetitions: [
+    { name: "Bolt Action UK Nationals", frequency: "annual", founded: 2013, region: "UK" },
+    { name: "Bolt Action World Championship", frequency: "annual", founded: 2018, region: "worldwide" },
+    { name: "Historicon (major convention)", frequency: "annual", founded: 1975, region: "USA" },
+  ],
+  countriesPlayed: ["GB", "US", "DE", "AU", "PL", "NL", "IT", "SE", "CA"],
+  famousAthletes: [
+    "Alessio Cavatore (Italy/UK) — Designer",
+    "Rick Priestley (UK, b. 1960) — Co-designer; also created Warhammer + 40K",
+  ],
+  variants: [
+    "bolt-action-1st-edition-2012",
+    "bolt-action-2nd-edition-2016",
+    "bolt-action-3rd-edition-2024",
+    "blood-red-skies-WWII-air-combat",
+    "cruel-seas-WWII-naval-warfare",
+    "konflikt-47-WWII-with-weird-tech",
+    "campaign-books-Normandy-Bulge-Market-Garden-etc",
+  ],
+  relatedSports: ["warhammer-40000", "flames-of-war", "warhammer-fantasy", "blood-bowl"],
+  skills: ["army list construction (points)", "tactical positioning", "dice management (order dice)", "terrain + line-of-sight awareness"],
+  strategies: [
+    { title: "Army list customization for scenario", body: "Different missions favor different builds." },
+    { title: "Order dice randomization = flexibility premium", body: "Units that can 'wait' (Ambush) are strong." },
+    { title: "Cover + suppression essential", body: "Pin markers > actual damage often — force enemy pinned." },
+  ],
+  terminology: [
+    { term: "Order dice", meaning: "Colored D6 in bag; drawn to activate units." },
+    { term: "Pin marker", meaning: "Suppression counter reducing effectiveness." },
+    { term: "FUBAR", meaning: "Failed order test result — random action." },
+    { term: "Assault", meaning: "Melee combat resolution." },
+    { term: "Cover", meaning: "Terrain protection modifier." },
+    { term: "Recce", meaning: "Reconnaissance units with move-shoot-move ability." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy STARTER SET (2-player, €80-100)", body: "Includes minis + dice + rules for both sides." },
+      { title: "Play at local game store (Warlord retailer network)", body: "Community teaches faster than solo learning." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Build 1000-point army for chosen nation", body: "~30 miniatures + 1-2 tanks; €200-300 investment." },
+      { title: "Attend local Bolt Action tournament", body: "Warlord-affiliated events global." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Multiple nation armies + tournament scene", body: "Master different playstyles." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Bolt Action?", answer: "WWII 28MM HISTORICAL MINIATURE WARGAME (2012) by ALESSIO CAVATORE + RICK PRIESTLEY (both ex-Games Workshop). Published Warlord Games + Osprey. SQUAD-BASED SKIRMISH (10-30 miniatures per side). Signature ORDER DICE mechanic — colored dice drawn from bag alternately for unit activation (tactical uncertainty). Nations: British, US, German, Soviet, Japanese, French, Italian + expansions. 3rd Edition 2024 current. Most popular WWII historical miniature wargame globally." },
+    { question: "How is Bolt Action different from Warhammer 40K?", answer: "BOLT ACTION = HISTORICAL WWII, 28mm scale, INFANTRY-focused (30 mini per side), ORDER DICE random activation. WARHAMMER 40K = SCI-FI FUTURE, 28mm scale, larger armies (30-200 miniatures per side), IGO-UGO turn-based, MORE FANTASTICAL units. Different genres despite same scale + manufacturer connection (both Games Workshop veterans design Bolt Action). Bolt Action MORE APPROACHABLE — fewer miniatures + cheaper start (€150-200 vs €300-500). Historical vs fantasy preference determines choice." },
+    { question: "How much does Bolt Action cost to start?", answer: "€150-250 for STARTER SET (2 armies + dice + rules) OR €300-400 for SINGLE ARMY (1000 pts) + rulebook + dice + templates. TERRAIN can add €100-500 (or use household items initially). PAINTING time-consuming — 30 miniatures require 15-30 hours quality painting (or pay commission $200-500). MODERATELY EXPENSIVE hobby but LESS than Warhammer 40K (€500-1500 typical armies). MOST AFFORDABLE historical wargame at 28mm scale." },
+  ],
+  wikipediaTitle: "Bolt Action (game)",
+  sources: [
+    { label: "Wikipedia — Bolt Action", url: "https://en.wikipedia.org/wiki/Bolt_Action_(game)", publisher: "Wikipedia" },
+    { label: "Warlord Games — Bolt Action", url: "https://www.warlordgames.com/bolt-action/", publisher: "Warlord Games" },
+  ],
+  lastVerified: "2026-08-25",
+  confidence: "verified",
+};

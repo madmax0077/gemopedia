@@ -4,8 +4,10 @@ import { baseJumping } from "./base-jumping";
 import { bmx } from "./bmx";
 import { bmxFreestyle } from "./bmx-freestyle";
 import { bouldering } from "./bouldering";
+import { canyoning } from "./canyoning";
 import { modernPentathlon } from "./modern-pentathlon";
 import { mountainBiking } from "./mountain-biking";
+import { parkour } from "./parkour";
 import { roadCycling } from "./road-cycling";
 import { rockClimbing } from "./rock-climbing";
 import { skateboarding } from "./skateboarding";
@@ -19,8 +21,10 @@ export const ADVENTURE_SPORTS: Sport[] = [
   bmx,
   bmxFreestyle,
   bouldering,
+  canyoning,
   modernPentathlon,
   mountainBiking,
+  parkour,
   roadCycling,
   rockClimbing,
   skateboarding,

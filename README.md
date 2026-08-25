@@ -118,3 +118,23 @@ ONLY_CHANGED=true npm run notify-indexnow # only URLs with <lastmod> in the last
 ```
 
 To rotate the key: pick a new 32-char hex string, rename the `public/<key>.txt` file, then update `INDEXNOW_KEY` in both `scripts/notify-indexnow.mjs` and `.github/workflows/indexnow.yml`.
+
+## Analytics
+
+Two analytics streams run in production:
+
+1. **Vercel Analytics** (`@vercel/analytics/next`) — first-party, cookie-less, always on.
+2. **Google Analytics 4** — added via the official `@next/third-parties/google` wrapper. Only mounts when the `NEXT_PUBLIC_GA_ID` env variable is set, so local dev stays quiet unless you explicitly enable it.
+
+### Enable Google Analytics
+
+1. Create a GA4 property at [analytics.google.com](https://analytics.google.com). Copy the **Measurement ID** (format `G-XXXXXXXXXX`) from the Web data stream.
+2. In Vercel: **Project Settings → Environment Variables → Add**
+   - Name: `NEXT_PUBLIC_GA_ID`
+   - Value: your `G-XXXXXXXXXX`
+   - Environments: check Production, Preview, and Development
+3. Redeploy (Vercel does this automatically after saving env vars, or trigger via **Deployments → ⋯ → Redeploy**).
+4. Locally: copy `.env.local.example` to `.env.local` and paste the same ID.
+5. Verify: open the site in an incognito window, then in GA4 go to **Reports → Realtime** — you should see 1 active user within ~30 seconds.
+
+The `<GoogleAnalytics />` component from `@next/third-parties/google` handles route-change tracking automatically for the App Router, so no extra hooks are needed.

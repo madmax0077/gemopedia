@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { Sport } from "@/lib/types";
 
 /** Base site URL — override with NEXT_PUBLIC_SITE_URL for staging / production. */
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gemopedia.dev";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.gemopedia.online";
 export const SITE_NAME = "Gemopedia";
 export const SITE_TAGLINE = "Every game. Explained.";
 

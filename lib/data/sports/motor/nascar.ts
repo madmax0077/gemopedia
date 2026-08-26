@@ -136,7 +136,7 @@ export const nascar: Sport = {
     { question: "What's the Daytona 500?", answer: "NASCAR's biggest race — the 'Great American Race'. First race of the Cup Series season, 500 miles at Daytona International Speedway." },
     { question: "Do NASCAR cars have brakes?", answer: "Yes — steel discs with 6-piston calipers. Ovals use brakes only for pit-road entry; road courses use them extensively." },
   ],
-  wikipediaTitle: "NASCAR",
+  wikipediaTitle: "NASCAR Cup Series",
   sources: [
     { label: "Wikipedia — NASCAR", url: "https://en.wikipedia.org/wiki/NASCAR", publisher: "Wikipedia" },
     { label: "NASCAR.com", url: "https://www.nascar.com/", publisher: "NASCAR" },

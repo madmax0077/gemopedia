@@ -131,7 +131,7 @@ export const liarsDice: Sport = {
     { question: "What is 'Palifico'?", answer: "When a player is reduced to just 1 die, they may open a 'palifico' round: (1) they bid first, (2) all subsequent bids must be the same face (bidder chooses), (3) aces are NOT wild in this round. This gives desperate players a chance to survive." },
     { question: "What is Perudo?", answer: "Commercial version of Liar's Dice published by Cheatwell Games (UK, 1993) — added specific ruleset + tournament format. Very popular in UK pubs + on European continent. Rules basically same as classic Liar's Dice + wild aces + palifico." },
   ],
-  wikipediaTitle: "Liar's dice",
+  wikipediaTitle: "Perudo",
   sources: [
     { label: "Wikipedia — Liar's dice", url: "https://en.wikipedia.org/wiki/Liar%27s_dice", publisher: "Wikipedia" },
     { label: "Perudo — Cheatwell Games rules", url: "https://www.cheatwellgames.co.uk/perudo/", publisher: "Cheatwell Games" },

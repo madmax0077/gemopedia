@@ -3,6 +3,7 @@ import type { Sport } from "@/lib/types";
 import type { SportHeroImage } from "@/lib/wikiImage";
 import { CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { countryFlag, countryName } from "@/lib/data/countries";
+import { categoryIcon } from "@/lib/icons";
 
 type Props = {
   sport: Sport;
@@ -62,6 +63,30 @@ export function SportCard({ sport, showCategory = true, heroImage }: Props) {
         {/* Bottom fade so chips at the base stay legible over the photo */}
         {heroImage?.src && (
           <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
+        )}
+
+        {/* Fallback illustration when we don't have a Wikipedia photo.
+            A large watermark-style category glyph + the sport's initials keeps
+            the card feeling authored rather than "photo missing". */}
+        {!heroImage?.src && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          >
+            <span className="select-none font-display text-[7rem] leading-none text-white/25 drop-shadow-[0_4px_16px_rgba(0,0,0,0.35)] sm:text-[8rem]">
+              {categoryIcon(cat.icon)}
+            </span>
+          </div>
+        )}
+        {!heroImage?.src && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center pb-10"
+          >
+            <span className="rounded-full border border-white/25 bg-black/25 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/95 backdrop-blur-sm">
+              {sport.name}
+            </span>
+          </div>
         )}
 
         {/* Painterly light + shadow */}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
 import { getSportsByCountry } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
+import { fetchHeroImages } from "@/lib/heroImages";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
 interface RouteParams { params: { code: string } }
@@ -22,13 +23,14 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
   };
 }
 
-export default function CountryPage({ params }: RouteParams) {
+export default async function CountryPage({ params }: RouteParams) {
   const country = COUNTRY_BY_CODE[params.code.toUpperCase()];
   if (!country) return notFound();
 
   const sports = getSportsByCountry(country.code);
   const originating = sports.filter((s) => s.countryOfOrigin === country.code);
   const played = sports.filter((s) => s.countryOfOrigin !== country.code);
+  const heroImages = await fetchHeroImages(sports);
 
   const jsonLd = breadcrumbJsonLd([
     { label: "Gemopedia", href: "/" },
@@ -64,7 +66,7 @@ export default function CountryPage({ params }: RouteParams) {
             </p>
             <div className="mt-4 cards-grid-dense">
               {originating.map((s) => (
-                <SportCard key={s.slug} sport={s} />
+                <SportCard key={s.slug} sport={s} heroImage={heroImages[s.slug]} />
               ))}
             </div>
           </section>
@@ -77,7 +79,7 @@ export default function CountryPage({ params }: RouteParams) {
             </h2>
             <div className="mt-4 cards-grid-dense">
               {played.map((s) => (
-                <SportCard key={s.slug} sport={s} />
+                <SportCard key={s.slug} sport={s} heroImage={heroImages[s.slug]} />
               ))}
             </div>
           </section>

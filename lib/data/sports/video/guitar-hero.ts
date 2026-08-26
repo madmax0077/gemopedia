@@ -133,7 +133,7 @@ export const guitarHero: Sport = {
     { question: "Why did Guitar Hero die?", answer: "MARKET SATURATION — Activision released 6 major titles in 2009 alone (World Tour, Metallica, Aerosmith, Van Halen, GH5, Band Hero). Plastic peripheral fatigue — consumers had piles of guitars/drums in closets. Rock Band split market. RECESSION 2008-10 reduced $100+ discretionary spending. Cancellation announced FEB 2011 after Warriors of Rock underperformed. Attempted revival GUITAR HERO LIVE (2015) sold poorly + failed to compete with mobile music apps + free rhythm games. Genre migrated to VR (Beat Saber, 2018) + mobile (Piano Tiles, Cytus)." },
     { question: "What is 'Through the Fire and Flames'?", answer: "DragonForce power-metal song added to GUITAR HERO III (2007) as HIDDEN FINAL BONUS SONG (unlocked after finishing career). INFAMOUS FOR EXTREME DIFFICULTY — 3670 notes at 200+ BPM sustained solo runs; considered HARDEST SONG in mainstream Guitar Hero for years. First 100% Expert FC by CHRIS CHIKE in Feb 2008 (took months). Now dozens of players have FC'd it. Cultural touchstone: 'You know Guitar Hero?' → 'Yeah, TTFAF is impossible right?' remains gaming meme. Song sales exploded post-GH3 — DragonForce got mainstream rock recognition purely from Guitar Hero inclusion." },
   ],
-  wikipediaTitle: "Guitar Hero",
+  wikipediaTitle: "Guitar Hero (video game)",
   sources: [
     { label: "Wikipedia — Guitar Hero", url: "https://en.wikipedia.org/wiki/Guitar_Hero", publisher: "Wikipedia" },
     { label: "Clone Hero (open-source successor)", url: "https://clonehero.net/", publisher: "Clone Hero community" },

@@ -119,7 +119,7 @@ export const tekken: Sport = {
     { question: "How is Tekken different from Street Fighter?", answer: "TEKKEN is 3D with side-stepping, full 3D character models + arenas. SF is 2D fighting plane (only left/right + jump). TEKKEN uses 4 ATTACK BUTTONS (left/right punch + left/right kick mapped to face buttons). SF uses 6 BUTTONS (3 punch strengths + 3 kick strengths). TEKKEN emphasizes JUGGLE COMBOS + MOVEMENT; SF emphasizes FUNDAMENTALS + FRAME DATA. TEKKEN character rosters 30-40+ (huge); SF rosters typically 20+ initially with DLC. Both have massive competitive scenes. Different playing feels — TEKKEN more athletic/spatial, SF more chess-like." },
     { question: "Why are South Korea + Pakistan dominant in Tekken?", answer: "SOUTH KOREA has DEEP Tekken tradition — arcades culture in 1990s-2000s; still has PC bang (internet cafes) with Tekken cabinets. Multiple generations of Korean pros mentored newcomers. Legendary players like KNEE + JDCR. PAKISTAN emerged as SURPRISING TEKKEN SUPERPOWER — driven by ARSLAN ASH winning EVO 2019 as first Pakistani. Pakistani arcades in Lahore + Islamabad developed extremely competitive local scene. Grassroots pipeline of talent + intense practice culture. Tekken has TRUE global scene with SEA (Philippines), Japan, US strong; South Korea + Pakistan currently share top dogs. Cultural factors: Tekken's mainstream appeal in Asia (unlike US where more niche)." },
   ],
-  wikipediaTitle: "Tekken",
+  wikipediaTitle: "Tekken (video game)",
   sources: [
     { label: "Bandai Namco — Tekken", url: "https://www.tekken.com/", publisher: "Bandai Namco" },
     { label: "Wikipedia — Tekken", url: "https://en.wikipedia.org/wiki/Tekken", publisher: "Wikipedia" },

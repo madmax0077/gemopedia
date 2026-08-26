@@ -138,7 +138,7 @@ export const bullsAndCows: Sport = {
     { question: "Where did Bulls and Cows come from?", answer: "Uncertain — evidence of similar games in 19th-century England as pencil-and-paper amusement; likely earlier in various forms. Digital version coded 1970 for early mainframes as one of first computer games. Commercial 'Mastermind' with colored pegs invented same year by Mordechai Meirowitz (Israel, 1970) — became massively popular globally. In China + Taiwan, called '猜数字' (Cai Shuzi — Guess Number) + widely played as school + family game. Sometimes attributed to ancient Persian/Indian origins but no verified evidence." },
     { question: "Can I play Bulls and Cows solo?", answer: "Yes — many single-player versions: (1) Mobile + browser apps let you play vs computer (computer picks secret, you guess). (2) Programming exercise — write algorithm that solves Bulls & Cows; test on random codes. (3) Self-testing: pick secret, then try to solve it optimally without cheating. (4) Timed challenges — solve as fast as possible or minimum guesses. Solo play useful for learning + practicing without partner. Also common intro-CS assignment (implement Bulls & Cows in any language)." },
   ],
-  wikipediaTitle: "Bulls and cows",
+  wikipediaTitle: "Mastermind (board game)",
   sources: [
     { label: "Wikipedia — Bulls and cows", url: "https://en.wikipedia.org/wiki/Bulls_and_cows", publisher: "Wikipedia" },
     { label: "Wikipedia — Mastermind (board game)", url: "https://en.wikipedia.org/wiki/Mastermind_(board_game)", publisher: "Wikipedia" },

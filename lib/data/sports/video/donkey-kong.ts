@@ -116,7 +116,7 @@ export const donkeyKong: Sport = {
     { question: "How did Donkey Kong launch Nintendo's video game empire?", answer: "Before Donkey Kong (1981), NINTENDO was CARD + TOY company + failed video game supplier. Nintendo's US warehouse had UNSOLD RADAR SCOPE arcade cabinets. Miyamoto was given task of REPURPOSING those cabinets — designed DONKEY KONG using existing hardware. Game became MASSIVE HIT ($100M+ in first 2 years). Nintendo used Donkey Kong profits to invest in HOME CONSOLE market (Famicom/NES 1983-85). Mario (introduced in DK as 'Jumpman') became BEST-SELLING VIDEO GAME CHARACTER EVER via Super Mario Bros. (1985) + subsequent decades. Directly: DONKEY KONG SAVED NINTENDO." },
     { question: "What is the 'Kill Screen' in Donkey Kong?", answer: "LEVEL 22 (M22) contains CODE BUG that gives player only ~4 SECONDS of TIME BONUS at level start. Player dies rapidly. Cannot complete Level 22. This effectively CAPS possible world record scores. Reaching kill screen was long-standing goal — proves player can consistently clear 21 levels. Billy Mitchell claimed FIRST kill screen 1982; Steve Wiebe famously reached it in 2003 (chronicled in KING OF KONG). Modern world records include multiple kill-screen playthroughs pushing score toward theoretical maximum ~1.3M pts. Kill screen is unique cultural marker of elite Donkey Kong play." },
   ],
-  wikipediaTitle: "Donkey Kong (video game)",
+  wikipediaTitle: "Donkey Kong (character)",
   sources: [
     { label: "Wikipedia — Donkey Kong", url: "https://en.wikipedia.org/wiki/Donkey_Kong_(video_game)", publisher: "Wikipedia" },
     { label: "Nintendo — Donkey Kong", url: "https://www.nintendo.com/", publisher: "Nintendo" },

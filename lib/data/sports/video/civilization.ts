@@ -134,7 +134,7 @@ export const civilization: Sport = {
     { question: "How long does one Civ game take?", answer: "STANDARD SPEED + MEDIUM MAP + STANDARD DIFFICULTY = 6-12 HOURS. Quick speed halves; Marathon triples. Multiplayer averages 4-6 hours (players play faster + fewer 'thinking turns'). SOME PLAYERS spend 20-40 hours per game exploring all mechanics — Civ's 'one more turn' addiction is legendary. Reddit + Civfanatics forums have countless 'lost my Saturday to Civ' stories. Save often — game supports save/reload during turns. Multiplayer + PYDT games span WEEKS/MONTHS with 1-2 turns per day between players." },
     { question: "What's the difference between Civ 6 and Civ 7?", answer: "CIV 6 (2016): SINGLE CIVILIZATION played entire game (Rome stays Rome from 4000 BC → 2050 AD). Districts + workers + civic tree + Rise & Fall/Gathering Storm expansions polished over 6 years. Massive mod support. CIV 7 (Feb 2025): NEW AGE SYSTEM — game split into ANTIQUITY / EXPLORATION / MODERN ages; player's CIVILIZATION CHANGES at each age transition (e.g., Rome → Byzantium → America). Historical fluidity but MANY fans HATE losing continuity with 'their' civ. Fresh combat + wonder + technology systems. MIXED CRITICAL RECEPTION — 75-80 Metacritic vs. Civ 6's 88 Metacritic. Still Sid Meier design DNA + Firaxis polish. If new player: start CIV 6 (proven + cheaper); if wanting fresh: CIV 7." },
   ],
-  wikipediaTitle: "Civilization (series)",
+  wikipediaTitle: "Sid Meier's Civilization",
   sources: [
     { label: "Wikipedia — Civilization (series)", url: "https://en.wikipedia.org/wiki/Civilization_(series)", publisher: "Wikipedia" },
     { label: "Firaxis Games official site", url: "https://firaxis.com/", publisher: "Firaxis" },

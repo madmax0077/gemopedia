@@ -1,11 +1,21 @@
 "use client";
 import { useMemo, useState } from "react";
 import type { Sport } from "@/lib/types";
+import type { SportHeroImage } from "@/lib/wikiImage";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { COUNTRIES } from "@/lib/data/countries";
 import { SportCard } from "@/components/SportCard";
 
-type Props = { sports: Sport[] };
+type Props = {
+  sports: Sport[];
+  /**
+   * Optional pre-fetched Wikipedia hero images keyed by sport slug. Passed
+   * down from the server component so every card in the directory can render
+   * a real photo above its category gradient. When absent the cards fall back
+   * to the gradient-only design.
+   */
+  heroImages?: Record<string, SportHeroImage | null>;
+};
 
 /**
  * Filterable sports directory — receives the full pre-loaded list from a
@@ -15,7 +25,7 @@ type Props = { sports: Sport[] };
  * and pagination (see ARCHITECTURE.md §9); for now client-side is fast and
  * SEO-safe because the initial payload already contains everything.
  */
-export function SportsDirectory({ sports }: Props) {
+export function SportsDirectory({ sports, heroImages }: Props) {
   const [q, setQ] = useState("");
   const [category, setCategory] = useState<string>("all");
   const [country, setCountry] = useState<string>("all");
@@ -123,7 +133,7 @@ export function SportsDirectory({ sports }: Props) {
 
       <div className="mt-5 cards-grid">
         {filtered.map((s) => (
-          <SportCard key={s.slug} sport={s} />
+          <SportCard key={s.slug} sport={s} heroImage={heroImages?.[s.slug]} />
         ))}
       </div>
 

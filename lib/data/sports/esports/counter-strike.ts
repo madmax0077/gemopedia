@@ -155,7 +155,7 @@ export const counterStrike: Sport = {
     { question: "How much do pro CS players earn?", answer: "Tier 1 salary: $25k-100k/month + tournament winnings + streaming + sponsorships. Top players (S1mple, ZywOo) reportedly $500k-1M+ per year including transfers. Major prize pools: $1-1.25M split among top 24 teams; winner ~$500k." },
     { question: "What's the difference between CS:GO and CS2?", answer: "CS2 (Sept 2023) is CS:GO upgraded to Source 2 engine — improved graphics, dynamic smokes (physics-reactive), sub-tick netcode, redesigned maps. Same core gameplay + weapons. All CS:GO skins carried over. Free upgrade for all players." },
   ],
-  wikipediaTitle: "Counter-Strike (video game series)",
+  wikipediaTitle: "Counter-Strike 2",
   sources: [
     { label: "Wikipedia — Counter-Strike", url: "https://en.wikipedia.org/wiki/Counter-Strike_(video_game_series)", publisher: "Wikipedia" },
     { label: "Valve — Counter-Strike 2", url: "https://www.counter-strike.net/cs2", publisher: "Valve" },

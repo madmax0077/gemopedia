@@ -143,7 +143,7 @@ export const callOfDuty: Sport = {
     { question: "How much has Call of Duty sold?", answer: "Over 425 million copies across all titles — one of the highest-selling franchises in gaming history alongside Mario, Pokémon, and GTA." },
     { question: "What's next for Call of Duty?", answer: "Black Ops 6 released October 2024. Following Microsoft's acquisition of Activision Blizzard in 2023, CoD titles are now on Xbox Game Pass day one." },
   ],
-  wikipediaTitle: "Call of Duty",
+  wikipediaTitle: "Call of Duty (video game)",
   sources: [
     { label: "Wikipedia — Call of Duty", url: "https://en.wikipedia.org/wiki/Call_of_Duty", publisher: "Wikipedia" },
     { label: "Activision — Call of Duty", url: "https://www.callofduty.com/", publisher: "Activision" },

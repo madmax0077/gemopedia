@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { getSportsByCategory } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
+import { fetchHeroImages } from "@/lib/heroImages";
 import { breadcrumbJsonLd } from "@/lib/seo";
 import type { SportCategory } from "@/lib/types";
 
@@ -23,11 +24,12 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
   };
 }
 
-export default function CategoryPage({ params }: RouteParams) {
+export default async function CategoryPage({ params }: RouteParams) {
   const cat = CATEGORY_BY_SLUG[params.slug as SportCategory];
   if (!cat) return notFound();
 
   const sports = getSportsByCategory(cat.slug);
+  const heroImages = await fetchHeroImages(sports);
 
   const jsonLd = breadcrumbJsonLd([
     { label: "Gemopedia", href: "/" },
@@ -54,7 +56,12 @@ export default function CategoryPage({ params }: RouteParams) {
         </p>
         <div className="mt-4 cards-grid-dense">
           {sports.map((s) => (
-            <SportCard key={s.slug} sport={s} showCategory={false} />
+            <SportCard
+              key={s.slug}
+              sport={s}
+              showCategory={false}
+              heroImage={heroImages[s.slug]}
+            />
           ))}
         </div>
         {sports.length === 0 && (

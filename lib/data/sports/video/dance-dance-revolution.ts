@@ -134,7 +134,7 @@ export const danceDanceRevolution: Sport = {
     { question: "Is DDR a real workout?", answer: "YES — measured by exercise physiologists at 300-500 calories/hour on Expert difficulty. Comparable to JOGGING at 6mph or CYCLING at moderate pace. Heart rate reaches 140-170 BPM during hard songs. West Virginia public schools introduced DDR in PE classes (2006) as part of childhood obesity intervention. Cardiovascular + leg strength + coordination all improve. CAVEATS: knee stress + ankle sprains possible; wear proper shoes; hydrate; warm up. 30-min DDR ≈ 30-min jog — endorsed by AMA + cardio researchers." },
     { question: "DDR vs Pump It Up vs Just Dance — which is best?", answer: "DDR: 4-arrow, tighter timing windows, classic origin, biggest song library, most competitive scene. PUMP IT UP (Andamiro Korea): 5-panel diagonal + up-mid-down layout, more physically demanding + interesting choreography, HUGE in Korea/LATAM/SEA. Both use METAL DANCE PAD + arcade cabinet. JUST DANCE (Ubisoft): full-body motion (Wii/Switch/PS/Xbox with camera); casual party game, not competitive; huge cover-song library. Serious rhythm gamers pick DDR or Pump It Up; casual players pick Just Dance. Beat Saber (VR) is modern high-intensity alternative." },
   ],
-  wikipediaTitle: "Dance Dance Revolution",
+  wikipediaTitle: "Dance Dance Revolution (1998 video game)",
   sources: [
     { label: "Wikipedia — Dance Dance Revolution", url: "https://en.wikipedia.org/wiki/Dance_Dance_Revolution", publisher: "Wikipedia" },
     { label: "Konami DDR official page", url: "https://p.eagate.573.jp/game/ddr/", publisher: "Konami" },

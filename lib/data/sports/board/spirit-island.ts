@@ -113,7 +113,7 @@ export const spiritIsland: Sport = {
     { question: "How is Spirit Island different from Pandemic?", answer: "PANDEMIC = lighter (30-45 min), simpler rules, symmetric roles. SPIRIT ISLAND = heavier (90-180 min), complex power cards, DEEPLY ASYMMETRIC spirits (each plays radically different). PANDEMIC = save the world from disease; SPIRIT ISLAND = defend island from colonizers. Both cooperative + both excellent, but different weights. Start with PANDEMIC if new to cooperative games; move to SPIRIT ISLAND when ready for complexity." },
     { question: "Which Spirit Island expansion should I buy?", answer: "JAGGED EARTH (2019, $60) is CONSENSUS BEST — adds 10 new spirits (doubling base), plus tokens, adversaries, events. Massive value. BRANCH & CLAW (2017, $40) — smaller expansion with events + beasts + 2 new spirits + 2 adversaries. Good but less content. NATURE INCARNATE (2022, $60) — newest; 8 new spirits with unique 'incarna' mechanics; considered advanced. HORIZONS (2022, $40) — INTRO version standalone; NOT expansion. Buying order: base → Jagged Earth → Branch & Claw → Nature Incarnate." },
   ],
-  wikipediaTitle: "Spirit Island",
+  wikipediaTitle: "Spirit Island (board game)",
   sources: [
     { label: "Wikipedia — Spirit Island", url: "https://en.wikipedia.org/wiki/Spirit_Island", publisher: "Wikipedia" },
     { label: "BoardGameGeek — Spirit Island", url: "https://boardgamegeek.com/boardgame/162886/spirit-island", publisher: "BGG" },

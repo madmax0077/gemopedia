@@ -10,8 +10,9 @@ import { rubiksCube } from "./rubiks-cube";
 import { sudoku } from "./sudoku";
 import { tangram } from "./tangram";
 import { towerOfHanoi } from "./tower-of-hanoi";
+import { wordle } from "./wordle";
 
-/** Puzzle games category — Rubik's Cube, Sudoku, Crossword, Jigsaw, Bulls & Cows, Tangram, Nonogram, Tower of Hanoi, Hangman, Mastermind. */
+/** Puzzle games category — Rubik's Cube, Sudoku, Crossword, Jigsaw, Bulls & Cows, Tangram, Nonogram, Tower of Hanoi, Hangman, Mastermind, Wordle. */
 export const PUZZLE_GAMES: Sport[] = [
   bullsAndCows,
   crossword,
@@ -23,4 +24,5 @@ export const PUZZLE_GAMES: Sport[] = [
   sudoku,
   tangram,
   towerOfHanoi,
+  wordle,
 ];

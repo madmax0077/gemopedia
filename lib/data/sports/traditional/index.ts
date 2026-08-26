@@ -1,6 +1,7 @@
 import type { Sport } from "@/lib/types";
 
 import { bao } from "./bao";
+import { buzkashi } from "./buzkashi";
 import { gaelicFootball } from "./gaelic-football";
 import { gilliDanda } from "./gilli-danda";
 import { hurling } from "./hurling";
@@ -23,6 +24,7 @@ import { yutNori } from "./yut-nori";
  */
 export const TRADITIONAL_SPORTS: Sport[] = [
   bao,
+  buzkashi,
   gaelicFootball,
   gilliDanda,
   hurling,

@@ -1,0 +1,112 @@
+import type { Sport } from "@/lib/types";
+
+export const cardsAgainstHumanity: Sport = {
+  id: "cards-against-humanity",
+  slug: "cards-against-humanity",
+  name: "Cards Against Humanity",
+  officialName: "Cards Against Humanity",
+  aliases: ["CAH", "Cards Against Humanity"],
+  shortDescription:
+    "MASSIVELY POPULAR ADULT PARTY GAME (2011) by BEN HANTOOT + MAX TEMKIN + DAVID PINSOF. Fill-in-the-blank card game where players complete BLACK PROMPT CARDS with the FUNNIEST WHITE ANSWER CARDS from their hand — often crude, offensive, or absurd. 4-20+ players (best 4-8). Card Czar rotates + judges best answer. Nicknamed 'A PARTY GAME FOR HORRIBLE PEOPLE.' Considered THE adult party game of the 2010s. 30+ million copies sold globally. Free PDF print-and-play + physical products + digital + expansions. 30-90 min per game.",
+  longDescription:
+    "CARDS AGAINST HUMANITY is a MASSIVELY POPULAR ADULT PARTY GAME (2011) designed by BEN HANTOOT, MAX TEMKIN, DAVID PINSOF (+ 6 other University of Chicago students originally). Fill-in-the-blank card game where players complete BLACK PROMPT CARDS ('_____ is what really killed the dinosaurs' / 'In the new Disney movie, ______ falls in love with ______') with the FUNNIEST WHITE ANSWER CARDS from their hand — often crude, offensive, absurd, dark humor. 4-20+ PLAYERS (best 4-8). CARD CZAR rotates each round + judges the funniest submission; that player wins the black card as a point. First to 5-10 points (varies) wins. Nicknamed 'A PARTY GAME FOR HORRIBLE PEOPLE' — proudly embraces its offensive, taboo-breaking nature. Considered THE ADULT PARTY GAME of the 2010s + cultural phenomenon. 30+ MILLION COPIES SOLD globally. Available as FREE PDF PRINT-AND-PLAY under Creative Commons + PHYSICAL products + DIGITAL (Playing Cards.io free web version, Bad Words, All Bad Cards) + 30+ EXPANSION packs (Red Box, Blue Box, Green Box, Absurd Box, seasonal packs, Fantasy Pack, Sci-Fi Pack, Pride Pack, House of Cards Against Humanity, Family Edition for kids). 30-90 MIN PER GAME. GAMEPLAY: Deal 10 white cards to each player. One player becomes CARD CZAR + draws + reads a BLACK card (prompt). Other players submit 1-2 WHITE cards to complete the prompt (usually anonymously). Card Czar shuffles + reads all submissions aloud + picks the funniest. Winner gets the black card as 1 AWESOME POINT. Rotate Card Czar. First to target (usually 5-10 points) wins. RECEPTION: Cultural phenomenon; 30M+ copies sold; multiple spinoffs (Bad Words, All Bad Cards, etc.); infinite fan-made expansions; considered THE gateway adult party game + benchmark for offensive humor party games. Also KNOWN FOR: political stunts (bought Wisconsin land 'to protect it from Trump wall'), Black Friday anti-consumerism campaigns ('Give Us $5 for Nothing'), 'Chuck Tingle' collaboration, Ted Cruz insult pack. Company remains player-owned + politically active.",
+  category: "party-games",
+  subCategory: "adult party card game / fill-in-the-blank humor / mainstream",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "global",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (University of Chicago students; Ben Hantoot + Max Temkin + David Pinsof + 6 others)",
+  estimatedOrigin: "Designed 2008-2011 University of Chicago students; released 2011 self-published + Creative Commons free PDF",
+  players: { min: 4, max: 20, note: "4-20+ players; BEST AT 4-8 for pacing. 8+ becomes long." },
+  field: {
+    surfaceName: "Table for card play",
+    dimensions: "~90×60cm typical",
+    description: "Central play area for Card Czar's black card + submitted white cards. Each player has 10-card hand.",
+  },
+  equipment: [
+    { name: "Cards Against Humanity Base Set", description: "$25 USD; 500+ cards" },
+    { name: "Multiple expansion packs ($10-15 each)", description: "Red/Blue/Green/Absurd/seasonal boxes" },
+    { name: "Family Edition (2020)", description: "$25; kid-friendly SFW version" },
+    { name: "Free PDF Print-and-Play", description: "Free under Creative Commons; print at home" },
+    { name: "Digital: Playing Cards.io, Bad Words, All Bad Cards", description: "Free web-based online alternatives" },
+    { name: "House rules variants ('Rando Cardrissian', 'Never Have I Ever')", description: "Community house rules" },
+  ],
+  duration: { approximateMinutes: 60, structure: "30-90 min; play to 5-10 points target; adjustable length." },
+  objective: "Win most AWESOME POINTS (black cards) by submitting funniest white card completions to prompts. First to target (5-10) wins.",
+  basicRules: [
+    { title: "Deal 10 white cards; rotate Card Czar", body: "Card Czar reads black card; others submit white." },
+    { title: "Submit 1-2 white cards anonymously to complete black prompt", body: "Try to make Card Czar laugh." },
+    { title: "Card Czar picks funniest; that player wins the black card", body: "1 Awesome Point = 1 black card." },
+    { title: "Refill to 10 white cards + rotate Czar", body: "Continue rounds." },
+    { title: "First to target (5-10 points) wins", body: "Adjustable game length." },
+  ],
+  scoring: {
+    summary: "Win most AWESOME POINTS (black cards); first to target (5-10) wins.",
+    breakdown: [
+      { action: "Card Czar picks your white card", points: "+1 Awesome Point (black card)" },
+      { action: "Reach target points (5-10)", points: "WIN game" },
+    ],
+    winCondition: "First to target Awesome Points (5-10) wins.",
+  },
+  governingBodies: [
+    { name: "Cards Against Humanity LLC (self-published)", founded: 2011, headquarters: "Chicago, USA" },
+  ],
+  majorCompetitions: [
+    { name: "30M+ copies sold globally", frequency: "ongoing", founded: 2011, region: "worldwide" },
+    { name: "Cultural phenomenon 2011-2020s", frequency: "ongoing", founded: 2011, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL", "JP", "BR", "MX", "IN"],
+  famousAthletes: [
+    "Ben Hantoot (USA) — Co-designer",
+    "Max Temkin (USA) — Co-designer",
+    "David Pinsof (USA) — Co-designer",
+    "+ 6 University of Chicago co-founders",
+  ],
+  variants: [
+    "cards-against-humanity-base-2011",
+    "cards-against-humanity-red-box-blue-box-green-box-absurd-box-expansions",
+    "cards-against-humanity-family-edition-2020-kid-friendly",
+    "cards-against-humanity-holiday-packs-seasonal-expansions",
+    "cards-against-humanity-fantasy-pack-sci-fi-pack",
+    "cards-against-humanity-pride-pack-house-of",
+    "cards-against-humanity-free-pdf-print-and-play",
+    "playing-cards-io-web-free-alternative",
+    "bad-words-app-online-alternative",
+  ],
+  relatedSports: ["apples-to-apples", "monikers", "wavelength", "just-one", "codenames"],
+  skills: ["humor sensibility", "audience reading", "card timing", "creative combinations"],
+  strategies: [
+    { title: "Read Card Czar sense of humor", body: "Match their taste: dark/crude/absurd/pun." },
+    { title: "Save wildcards for good prompts", body: "Some cards work with 90% of prompts; hold." },
+    { title: "Multi-card prompts require both funny", body: "Both submissions must land." },
+    { title: "Play the room", body: "Not just Czar; whole group influences reaction." },
+  ],
+  terminology: [
+    { term: "Card Czar", meaning: "Rotating judge each round who picks funniest submission." },
+    { term: "Black card", meaning: "Prompt card read aloud + won as point." },
+    { term: "White card", meaning: "Answer card from hand; submitted to complete prompt." },
+    { term: "Awesome Point", meaning: "Won black card = 1 point." },
+    { term: "Rando Cardrissian (house rule)", meaning: "Random submitted card treated as extra player." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy base set ($25) or print free PDF", body: "5-min learning curve." },
+      { title: "Play with 4-6 friends", body: "Best pacing." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Cards Against Humanity?", answer: "MASSIVELY POPULAR ADULT PARTY GAME (2011). Fill-in-the-blank card game where players complete BLACK PROMPT CARDS with FUNNIEST WHITE ANSWER CARDS. 4-20+ players. Rotating CARD CZAR judges best. 30+ million copies sold. Nicknamed 'A PARTY GAME FOR HORRIBLE PEOPLE.' Considered THE adult party game of the 2010s. Available as free PDF print-and-play under Creative Commons + physical products + digital. 30-90 min per game." },
+  ],
+  wikipediaTitle: "Cards Against Humanity",
+  sources: [
+    { label: "Cards Against Humanity — official", url: "https://www.cardsagainsthumanity.com/", publisher: "CAH LLC" },
+    { label: "BoardGameGeek — Cards Against Humanity", url: "https://boardgamegeek.com/boardgame/50381/cards-against-humanity", publisher: "BGG" },
+    { label: "Wikipedia — Cards Against Humanity", url: "https://en.wikipedia.org/wiki/Cards_Against_Humanity", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

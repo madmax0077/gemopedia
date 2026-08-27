@@ -1,0 +1,122 @@
+import type { Sport } from "@/lib/types";
+
+export const maracaibo: Sport = {
+  id: "maracaibo",
+  slug: "maracaibo",
+  name: "Maracaibo",
+  officialName: "Maracaibo",
+  aliases: ["Maracaibo"],
+  shortDescription:
+    "HEAVY EURO by ALEXANDER PFISTER (2019, Eggertspiele) — SPIRITUAL SUCCESSOR to Great Western Trail with pick-up-and-deliver + deck-building + multi-lap Caribbean sailing route. 1-4 players sail Caribbean seas as 17th-century captains carrying out missions for FRENCH, ENGLISH, or SPANISH nations. Features CAMPAIGN MODE (Storyline) with linked scenarios. HELD BGG top-40; considered another Pfister masterpiece + heavier than GWT. ~2-3 hours.",
+  longDescription:
+    "MARACAIBO is a HEAVY EURO designed by ALEXANDER PFISTER (Germany), published by EGGERTSPIELE (2019). Spiritual successor to GREAT WESTERN TRAIL (2016, same designer) — replaces Kansas-bound cattle drive with CARIBBEAN SAILING ROUTE, adds CAMPAIGN 'STORYLINE' MODE with linked scenarios. 1-4 PLAYERS sail Caribbean seas as 17th-century captains carrying out missions for FRENCH, ENGLISH, or SPANISH colonial nations. Combines PICK-UP-AND-DELIVER (goods between ports) + DECK-BUILDING (buy cards to expand player's action deck) + WORKER-PLACEMENT (port actions) + MULTI-LAP racing (sail Caribbean loop multiple times). Features 3-NATION reputation tracks + Caribbean city battles + expedition adventures. HELD BGG TOP-40 since release (2019-2026); considered another Pfister masterpiece + HEAVIER than GWT. Won Golden Geek Best Strategy Game 2020 nominee + Deutscher Spiele Preis 2020 (top-10). ~2-3 HOURS PLAY TIME. GAMEPLAY: Each player sails Caribbean loop (10-16 spaces around perimeter). Each turn: move ship 1-6 spaces (spend cards to move further), take action at destination. ACTIONS at spaces: buy new cards (deck-building), fight villages (military), gain resources, take assembly points, complete missions. 3 NATION TRACKS (French, English, Spanish) — advance for VP + bonuses. GAME ENDS when time-track reaches end OR someone completes final space X times. CAMPAIGN 'STORYLINE' MODE: 15-EPISODE linked scenarios with permanent character progression (like a light legacy). Non-legacy — no destroyed components. RECEPTION: Golden Geek 2020 nominee; Deutscher Spiele Preis 2020 (top-10); BGG top-40 since release; considered SUPERIOR to GWT by many hardcore fans (deeper, more variable, campaign mode).",
+  category: "board-games",
+  subCategory: "heavy euro / deck-building + worker-placement + pick-up-deliver / Caribbean theme / Alexander Pfister / campaign mode",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany (Eggertspiele; Alexander Pfister designer)",
+  estimatedOrigin: "Designed 2018-2019 Alexander Pfister; released 2019 Eggertspiele",
+  players: { min: 1, max: 4, note: "1-4 players; BEST AT 2-3. Solo excellent. Campaign mode designed for 1-4." },
+  field: {
+    surfaceName: "Caribbean map with 10-16 space loop + personal player boards",
+    dimensions: "~120×90cm playspace",
+    description: "Caribbean map with sailing loop + 3 nation cities + assembly/expedition tracks. Personal player boards + card decks + campaign log book.",
+  },
+  equipment: [
+    { name: "Maracaibo base box", description: "$70 USD; complete package including campaign" },
+    { name: "Maracaibo: The Uprising expansion (2021)", description: "$40; new characters + variants" },
+    { name: "Central Caribbean board", description: "Sailing loop + 3 nation ports" },
+    { name: "Personal player boards", description: "Card deck + resources tracking" },
+    { name: "300+ cards (starter, expedition, mission, character)", description: "Deep card variability" },
+    { name: "3 nation-track markers (French, English, Spanish)", description: "Reputation tracks" },
+    { name: "Campaign storyline log book", description: "15 linked scenarios" },
+    { name: "Wooden ship figures + resource cubes", description: "Standard components" },
+  ],
+  duration: { approximateMinutes: 150, structure: "90-180 min single game; campaign spans 15 sessions over 3-6 months." },
+  objective: "Score most VP end-game (or per scenario in campaign mode) via nation-track positions + missions completed + assembly points + expedition rewards + card deck value.",
+  basicRules: [
+    { title: "Sail 1-6 spaces per turn (cards spent for further moves)", body: "Movement is core resource decision." },
+    { title: "Take action at destination space", body: "Buy cards, fight villages, gain resources, missions, assembly points." },
+    { title: "3 nation tracks (French/English/Spanish) advance for VP", body: "Reputation with colonial powers." },
+    { title: "Deck-building expands action options", body: "Buy new cards from card row." },
+    { title: "Campaign 'Storyline' mode: 15 linked episodes", body: "Character carries forward with progression." },
+    { title: "Game ends when time-track ends or final space reached X times", body: "Multi-lap racing." },
+  ],
+  scoring: {
+    summary: "End-game VP: nation-track positions + missions completed + assembly points + expedition rewards + card deck value + coins.",
+    breakdown: [
+      { action: "Nation-track position", points: "3-15 VP per nation" },
+      { action: "Mission completed", points: "2-8 VP each" },
+      { action: "Assembly point", points: "1 VP per assembly" },
+      { action: "Expedition reward", points: "Varies by expedition" },
+      { action: "Card deck value", points: "1-3 VP per powerful card" },
+    ],
+    winCondition: "Highest VP end-game wins. Campaign mode: cumulative across 15 episodes.",
+  },
+  governingBodies: [
+    { name: "Eggertspiele / Plan B Games (publisher)", founded: 1998, headquarters: "Germany / Canada" },
+    { name: "Alexander Pfister (designer)", founded: 1976, headquarters: "Germany" },
+  ],
+  majorCompetitions: [
+    { name: "Golden Geek Best Strategy Game 2020 nominee", frequency: "annual", founded: 2020, region: "worldwide" },
+    { name: "Deutscher Spiele Preis 2020 (top-10)", frequency: "annual", founded: 2020, region: "Germany" },
+    { name: "BGG top-40 consistently 2019-2026", frequency: "ongoing", founded: 2019, region: "worldwide" },
+  ],
+  countriesPlayed: ["DE", "US", "GB", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL", "JP"],
+  famousAthletes: [
+    "Alexander Pfister (Germany) — Designer; also Great Western Trail, Mombasa, Blackout: Hong Kong",
+    "Fiore GmbH — Illustrators",
+  ],
+  variants: [
+    "maracaibo-base-2019",
+    "maracaibo-the-uprising-expansion-2021",
+    "great-western-trail-2016-predecessor-system",
+  ],
+  relatedSports: ["great-western-trail", "mombasa", "brass-birmingham", "gaia-project", "a-feast-for-odin"],
+  skills: ["deck-building", "route optimization", "long-term planning", "multi-track advancement", "campaign character progression"],
+  strategies: [
+    { title: "Nation focus", body: "Depth on 1-2 nations > shallow on all 3." },
+    { title: "Deck efficiency", body: "Prune starter cards; buy powerful expedition + mission cards." },
+    { title: "Movement math", body: "Free 1-6 spaces; card-spend for further; balance." },
+    { title: "Campaign character growth", body: "Storyline mode: build character deeply across 15 episodes." },
+    { title: "Assembly + expedition balance", body: "Assembly = safe VP; expedition = high-risk high-reward." },
+  ],
+  terminology: [
+    { term: "Sailing loop", meaning: "10-16 space Caribbean perimeter route." },
+    { term: "Nation track", meaning: "3 tracks (French/English/Spanish); advance for VP." },
+    { term: "Mission", meaning: "Card task completed for VP + rewards." },
+    { term: "Expedition", meaning: "Adventure card with risk/reward + narrative." },
+    { term: "Assembly point", meaning: "Neutral scoring space; 1 VP per." },
+    { term: "Storyline (Campaign)", meaning: "15-episode linked scenarios with character progression." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Maracaibo base ($70)", body: "Complete package including campaign." },
+      { title: "Play 2p intro game (non-campaign)", body: "Learn sailing + card actions." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "3-4 player games", body: "Sweet spot; more nation competition." },
+      { title: "Start Storyline campaign", body: "15 linked episodes; character progression." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Uprising expansion", body: "New characters + variants." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Maracaibo?", answer: "HEAVY EURO by Alexander Pfister (2019, Eggertspiele) — spiritual successor to Great Western Trail. 1-4 players sail Caribbean seas as 17th-century captains for FRENCH, ENGLISH, or SPANISH nations. Deck-building + pick-up-and-deliver + multi-lap route. Features 15-EPISODE CAMPAIGN 'STORYLINE' mode. HELD BGG top-40. Considered heavier + more variable than GWT. ~2-3 hours." },
+    { question: "Maracaibo vs Great Western Trail?", answer: "SAME DESIGNER (PFISTER). GWT is TIGHTER + MORE FOCUSED (Kansas-bound cattle drive, sharper decisions). MARACAIBO is DEEPER + MORE VARIABLE (Caribbean loop, 3 nations, campaign mode, more card variety). Most say: GWT is BETTER-DESIGNED tighter puzzle; MARACAIBO offers MORE CONTENT + REPLAYABILITY + narrative campaign. Both are excellent + top-40 BGG. Try GWT first for cleaner intro; Maracaibo for deep content." },
+  ],
+  wikipediaTitle: "Maracaibo (board game)",
+  sources: [
+    { label: "Eggertspiele — Maracaibo", url: "https://eggertspiele.de/en/", publisher: "Eggertspiele" },
+    { label: "BoardGameGeek — Maracaibo", url: "https://boardgamegeek.com/boardgame/276025/maracaibo", publisher: "BGG" },
+    { label: "Wikipedia — Maracaibo", url: "https://en.wikipedia.org/wiki/Maracaibo_(board_game)", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const tzolkinTheMayanCalendar: Sport = {
+  id: "tzolkin-the-mayan-calendar",
+  slug: "tzolkin-the-mayan-calendar",
+  name: "Tzolk'in: The Mayan Calendar",
+  officialName: "Tzolk'in: The Mayan Calendar",
+  aliases: ["Tzolkin", "Tzolk'in"],
+  shortDescription:
+    "INNOVATIVE WORKER-PLACEMENT EURO by DANIELE TASCINI + SIMONE LUCIANI (2012, Czech Games Edition). 2-4 players play Mayan tribes across 26-week ritual year using ROTATING GEAR MECHANISM — workers placed on 6 interlocking gears rotate through action spaces, gaining stronger actions the longer they stay. Considered a MASTERPIECE of physical mechanism design. HELD BGG TOP-50 for 10+ years. Won multiple Golden Geek + Deutscher Spiele Preis nominations. ~90 min.",
+  longDescription:
+    "TZOLK'IN: THE MAYAN CALENDAR is an INNOVATIVE WORKER-PLACEMENT EURO designed by DANIELE TASCINI + SIMONE LUCIANI (Italy), published by CZECH GAMES EDITION (CGE, 2012). 2-4 PLAYERS play MAYAN TRIBES across a 26-week ritual year using a REVOLUTIONARY ROTATING GEAR MECHANISM — workers are placed on 6 INTERLOCKING GEARS that ROTATE through action spaces each round, gaining STRONGER actions the LONGER workers stay on the gear. Considered a MASTERPIECE of PHYSICAL MECHANISM DESIGN + one of the most tactilely satisfying board games ever. HELD BGG TOP-50 for 10+ years (2012-2026); peaked in top-20. Won Golden Geek Best Strategy Game 2013 nominee + Deutscher Spiele Preis 2013 top-10 + International Gamers Award 2013 nominee. ~90 MIN PLAY TIME. GAMEPLAY: 26 WEEKS (rounds). Each round: (1) Rotate MAIN CENTRAL GEAR (Tzolk'in) 1 tick — all 6 outer gears rotate 1 tick as consequence; (2) Player turn: place workers on gear OR take workers off gear to activate their current space. GEAR SPACES: Palenque (resource gathering), Yaxchilán (crafting), Tikal (buildings + monuments), Uxmal (buildings + trades), Chichen Itza (religious sacrifice to gods). Each gear has 5-6 spaces of increasing power as you move outward. Workers gain STRONGER actions the LONGER they stay on the gear. RELIGIOUS TRACKS: 3 gods (Kukulcan, Quetzalcoatl, Chaac) with 6 tracks each; advance via Chichen Itza sacrifices for VP + bonuses. FOOD DAYS occur 4 times per game — must feed all workers or take -3 VP penalty each. END GAME: 4 quarter-turn scoring events + final scoring for monuments + buildings + god track positions + corn/resources. RECEPTION: Golden Geek 2013 nominee; Deutscher Spiele Preis 2013 (7th); BGG top-50 consistently 2012-2026; considered a MASTERPIECE. Expansion: Tribes & Prophecies (2013) adds asymmetric tribes + prophecies.",
+  category: "board-games",
+  subCategory: "heavy euro / worker-placement / rotating gear mechanism / Mayan theme / CGE",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "IT",
+  regionOfOrigin: "Italy (designers) / Czech Republic (Czech Games Edition publisher)",
+  estimatedOrigin: "Designed 2010-2012 Daniele Tascini + Simone Luciani; released 2012 CGE",
+  players: { min: 2, max: 4, note: "2-4 players; BEST AT 3-4. Solo variant added via community rules." },
+  field: {
+    surfaceName: "Central Tzolk'in gear + 6 interlocking outer gears",
+    dimensions: "~90×60cm playspace",
+    description: "Central rotating Tzolk'in gear + 6 outer gears (Palenque, Yaxchilán, Tikal, Uxmal, Chichen Itza + 1 monument). Personal player boards + religious track board.",
+  },
+  equipment: [
+    { name: "Tzolk'in: The Mayan Calendar base box", description: "$70 USD; includes gears + all base content" },
+    { name: "Tzolk'in: Tribes & Prophecies expansion (2013)", description: "$40; asymmetric tribes + prophecies" },
+    { name: "Central Tzolk'in gear + 6 outer gears (physical!)", description: "Tactile mechanism; the visual signature" },
+    { name: "Wooden worker meeples", description: "Placed on gears" },
+    { name: "Corn + resource tokens (wood, stone, gold, crystal)", description: "Feed workers + resources" },
+    { name: "Religious track markers + god cards", description: "3 gods; 6 track positions each" },
+    { name: "Building + monument tiles", description: "Purchased VP tiles" },
+  ],
+  duration: { approximateMinutes: 90, structure: "60-120 min; 4p ~90-120 min; 2p ~60-75 min." },
+  objective: "Score most VP by end of 26 weeks via religious track positions + monuments + buildings + corn/resources + quarterly scoring bonuses.",
+  basicRules: [
+    { title: "26 weeks; rotate central gear each round", body: "All 6 outer gears rotate as consequence." },
+    { title: "Player turn: place workers on gears OR take off to activate", body: "Timing = when to take off for stronger actions." },
+    { title: "Longer stay on gear = stronger action", body: "Delayed gratification core mechanic." },
+    { title: "6 gears: Palenque, Yaxchilán, Tikal, Uxmal, Chichen Itza + monument", body: "Each specialized: resources/crafting/buildings/religion." },
+    { title: "3 religious tracks; advance via Chichen Itza sacrifices", body: "Track positions = VP + bonuses." },
+    { title: "Food days 4x per game: feed workers or -3 VP each", body: "Corn management critical." },
+  ],
+  scoring: {
+    summary: "End-game VP: religious track positions + monuments + buildings + gold/crystal remaining + quarterly scoring bonuses achieved.",
+    breakdown: [
+      { action: "Religious track position", points: "Varies 1-10 VP per god" },
+      { action: "Monument tile purchased", points: "Varies; end-game criteria" },
+      { action: "Building owned", points: "3-8 VP each" },
+      { action: "Gold / crystal end-game", points: "1-2 VP each" },
+      { action: "Quarterly scoring achievements", points: "Awarded at rounds 7, 14, 21, 26" },
+    ],
+    winCondition: "Highest VP after 26 weeks wins.",
+  },
+  governingBodies: [
+    { name: "Czech Games Edition (publisher)", founded: 2007, headquarters: "Czech Republic" },
+    { name: "Daniele Tascini + Simone Luciani (designers)", founded: 2012, headquarters: "Italy" },
+  ],
+  majorCompetitions: [
+    { name: "Golden Geek Best Strategy Game 2013 nominee", frequency: "annual", founded: 2013, region: "worldwide" },
+    { name: "Deutscher Spiele Preis 2013 (7th place)", frequency: "annual", founded: 2013, region: "Germany" },
+    { name: "International Gamers Award 2013 nominee", frequency: "annual", founded: 2013, region: "worldwide" },
+    { name: "BGG top-50 consistently 2012-2026", frequency: "ongoing", founded: 2012, region: "worldwide" },
+  ],
+  countriesPlayed: ["IT", "CZ", "DE", "US", "GB", "FR", "ES", "PL", "AU", "CA", "SE"],
+  famousAthletes: [
+    "Daniele Tascini (Italy) — Co-designer; also Teotihuacan, Marco Polo",
+    "Simone Luciani (Italy) — Co-designer; also Lorenzo il Magnifico, Tzolk'in",
+    "Milan Vavroň (Czech) — Illustrator",
+  ],
+  variants: [
+    "tzolkin-base-2012",
+    "tzolkin-tribes-and-prophecies-expansion-2013",
+  ],
+  relatedSports: ["teotihuacan-city-of-gods", "lorenzo-il-magnifico", "marco-polo-ii", "caverna", "a-feast-for-odin"],
+  skills: ["long-term planning", "timing (when to take off gear)", "resource management", "food/corn balance", "religious track priority"],
+  strategies: [
+    { title: "Timing gear takeoffs", body: "Take off early = weak action; late = strong. Balance corn cost + action value." },
+    { title: "Religious track focus", body: "Advance 1-2 gods deeply for big VP." },
+    { title: "Corn economy", body: "Food days force feeding; -3 VP per unfed = crushing." },
+    { title: "Monument selection", body: "Match monument end-game criteria to your strategy." },
+    { title: "Skip weeks strategically", body: "Some weeks skip your turn for corn payment." },
+  ],
+  terminology: [
+    { term: "Tzolk'in", meaning: "Central rotating gear; represents Mayan ritual calendar." },
+    { term: "Gear (Palenque/Yaxchilán/Tikal/Uxmal/Chichen Itza)", meaning: "6 outer action gears; each specialized theme." },
+    { term: "Food day", meaning: "4x per game forced feeding; -3 VP per unfed worker." },
+    { term: "Religious track", meaning: "3 gods (Kukulcan/Quetzalcoatl/Chaac); advance for VP + bonuses." },
+    { term: "Monument", meaning: "Purchasable end-game scoring tile." },
+    { term: "Quarterly scoring", meaning: "Rounds 7, 14, 21, 26 trigger scoring bonuses." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Tzolk'in base ($70)", body: "Physical gears are the appeal." },
+      { title: "Play 2p first to learn mechanism", body: "Understand gear rotation + food days." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "3-4 player games", body: "More interaction; harder resource competition." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Tribes & Prophecies expansion", body: "Asymmetric tribes add depth." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Tzolk'in?", answer: "INNOVATIVE WORKER-PLACEMENT EURO by Daniele Tascini + Simone Luciani (2012, Czech Games Edition). 2-4 players play Mayan tribes across 26-week ritual year using ROTATING GEAR MECHANISM. Considered a masterpiece of physical mechanism design. HELD BGG top-50 for 10+ years. Won multiple Golden Geek + Deutscher Spiele Preis nominations. ~90 min." },
+  ],
+  wikipediaTitle: "Tzolk'in: The Mayan Calendar",
+  sources: [
+    { label: "Czech Games Edition — Tzolk'in", url: "https://czechgames.com/en/tzolkin/", publisher: "CGE" },
+    { label: "BoardGameGeek — Tzolk'in", url: "https://boardgamegeek.com/boardgame/126163/tzolkin-mayan-calendar", publisher: "BGG" },
+    { label: "Wikipedia — Tzolk'in", url: "https://en.wikipedia.org/wiki/Tzolk%27in:_The_Mayan_Calendar", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

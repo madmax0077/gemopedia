@@ -1,0 +1,118 @@
+import type { Sport } from "@/lib/types";
+
+export const explodingKittens: Sport = {
+  id: "exploding-kittens",
+  slug: "exploding-kittens",
+  name: "Exploding Kittens",
+  officialName: "Exploding Kittens",
+  aliases: ["EK", "Exploding Kittens Card Game"],
+  shortDescription:
+    "VIRAL CARD GAME (2015) by ELAN LEE (Xbox), MATTHEW INMAN (The Oatmeal), SHANE SMALL. RUSSIAN ROULETTE with EXPLOSIVE KITTENS + NyanCat-style humor. 2-5 players draw cards; whoever draws an EXPLODING KITTEN CARD is OUT unless they have a DEFUSE. Set a Kickstarter record: $8.7M raised (2015) — most-backed game project on Kickstarter at that time. Sold 12+ MILLION COPIES globally. Simple, fast, fun. 15 min per game. Multiple expansions + NetflixTV series (2023).",
+  longDescription:
+    "EXPLODING KITTENS is a VIRAL CARD GAME (2015) designed by ELAN LEE (former Xbox live director), MATTHEW INMAN (creator of THE OATMEAL webcomic), + SHANE SMALL. Simple RUSSIAN ROULETTE-STYLE card game with EXPLOSIVE KITTENS + Nyan-Cat-style absurdist humor. 2-5 PLAYERS draw cards from central deck each turn; the deck contains EXPLODING KITTEN CARDS scattered throughout — whoever draws an Exploding Kitten is OUT of the game UNLESS they have a DEFUSE card (laser pointers, catnip sandwiches, belly rubs — hilarious defuse art). Last player standing wins. Set a KICKSTARTER RECORD in 2015: $8.7 MILLION USD RAISED — the MOST-BACKED CARD/BOARD GAME PROJECT on Kickstarter at that time (only later surpassed by mega-projects). Sold 12+ MILLION COPIES globally by 2023 — one of the best-selling card games of all time. Simple, fast, universally accessible. 15 MIN PER GAME. Multiple expansions: (a) Original (2015); (b) Party Pack (2016, up to 10 players); (c) Imploding Kittens (2016, expansion); (d) Streaking Kittens (2018); (e) Barking Kittens (2019); (f) NSFW Adult Edition; (g) Recipes for Disaster (2022, campaign scenarios). NETFLIX ANIMATED TV SERIES (2023) starring Tom Ellis, Lucy Liu, Sasheer Zamata based on the game. GAMEPLAY: Deck contains 56 cards (base game): Exploding Kittens, Defuses, plus action cards (Attack — end your turn without drawing + next player takes 2 turns; Skip — end turn without drawing; Favor — take a card from opponent; See The Future — peek at top 3 cards; Shuffle; Nope — cancel any action; various cat cards that combine for effects). Each turn: play any action cards + then DRAW 1 CARD from deck to end turn. If Exploding Kitten drawn, use Defuse to survive + place kitten anywhere in deck; if no Defuse, you're out. Last player standing wins. RECEPTION: Cultural phenomenon; 12M+ copies sold; NYT bestseller; multiple Kickstarter records; considered THE gateway party card game of the 2010s. Considered by hobby gamers as LIGHT + luck-heavy but PERFECT for non-gamer audiences.",
+  category: "party-games",
+  subCategory: "party card game / Russian roulette theme / mainstream family",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "global",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Elan Lee, Matthew Inman, Shane Small)",
+  estimatedOrigin: "Kickstarted Jan 2015 ($8.7M); released 2015 self-published; ongoing expansions",
+  players: { min: 2, max: 5, note: "2-5 in base; up to 10 with Party Pack expansion." },
+  field: {
+    surfaceName: "Table for card play",
+    dimensions: "~60×60cm typical",
+    description: "Central draw deck + discard pile. Each player has small hand of cards (starts with 5 + 1 Defuse).",
+  },
+  equipment: [
+    { name: "Exploding Kittens base deck (56 cards)", description: "$20 USD; complete game" },
+    { name: "Party Pack (2016)", description: "$30; up to 10 players" },
+    { name: "Imploding Kittens expansion (2016)", description: "$15; new card types" },
+    { name: "Streaking Kittens (2018)", description: "$15" },
+    { name: "Barking Kittens (2019)", description: "$15" },
+    { name: "NSFW Adult Edition", description: "$20; not for kids" },
+    { name: "Recipes for Disaster (2022)", description: "$25; campaign scenarios" },
+  ],
+  duration: { approximateMinutes: 15, structure: "10-20 min per game; quick + light." },
+  objective: "Be the last player NOT to draw an Exploding Kitten without a Defuse. Russian roulette elimination.",
+  basicRules: [
+    { title: "Deal 4 cards + 1 Defuse to each player; add remaining Defuses + Exploding Kittens (1 less than players) to deck; shuffle", body: "Setup for tension." },
+    { title: "Each turn: play any action cards + DRAW 1 CARD from deck", body: "Simple action-then-draw." },
+    { title: "If Exploding Kitten drawn: use Defuse or you're OUT", body: "Elimination game." },
+    { title: "Defuse: place kitten anywhere in deck", body: "Strategic placement." },
+    { title: "Action cards: Attack, Skip, Favor, See The Future, Shuffle, Nope, cat combos", body: "Card play choices." },
+    { title: "Last player standing wins", body: "Elimination game." },
+  ],
+  scoring: {
+    summary: "Elimination game: last player standing wins.",
+    breakdown: [
+      { action: "Player drew Exploding Kitten without Defuse", points: "That player OUT" },
+      { action: "Last player standing", points: "WINS the game" },
+    ],
+    winCondition: "Last player NOT eliminated wins.",
+  },
+  governingBodies: [
+    { name: "Exploding Kittens Inc. (self-published)", founded: 2015, headquarters: "Los Angeles, USA" },
+  ],
+  majorCompetitions: [
+    { name: "Kickstarter record 2015 ($8.7M)", frequency: "once", founded: 2015, region: "worldwide" },
+    { name: "12M+ copies sold globally by 2023", frequency: "ongoing", founded: 2015, region: "worldwide" },
+    { name: "Netflix TV series 2023", frequency: "once", founded: 2023, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL", "JP", "BR", "MX", "IN"],
+  famousAthletes: [
+    "Elan Lee (USA) — Designer; former Xbox Live director",
+    "Matthew Inman (USA) — Designer + illustrator; creator of The Oatmeal webcomic",
+    "Shane Small (USA) — Designer",
+  ],
+  variants: [
+    "exploding-kittens-original-2015",
+    "exploding-kittens-party-pack-2016-up-to-10-players",
+    "exploding-kittens-imploding-kittens-expansion-2016",
+    "exploding-kittens-streaking-kittens-2018",
+    "exploding-kittens-barking-kittens-2019",
+    "exploding-kittens-nsfw-adult-edition",
+    "exploding-kittens-recipes-for-disaster-2022-campaign",
+    "exploding-kittens-netflix-tv-2023",
+  ],
+  relatedSports: ["uno", "love-letter", "coup", "codenames", "the-mind"],
+  skills: ["risk assessment", "card timing", "bluff (Nope card)", "basic probability"],
+  strategies: [
+    { title: "Save Defuse for last resort", body: "Only 1-2 Defuses per player; use wisely." },
+    { title: "Attack cards for offense", body: "Attack forces next player to take 2 turns = higher Kitten risk for them." },
+    { title: "See The Future = safe drawing", body: "Peek before drawing; skip risky." },
+    { title: "Skip for defense", body: "Skip = no draw = no Kitten risk this turn." },
+    { title: "Nope for opponent disruption", body: "Cancel their key cards at critical moment." },
+  ],
+  terminology: [
+    { term: "Exploding Kitten", meaning: "Death card; requires Defuse to survive." },
+    { term: "Defuse", meaning: "Save card; neutralizes Kitten + places it back in deck." },
+    { term: "Nope", meaning: "Cancel opponent's action card." },
+    { term: "Attack", meaning: "End your turn without draw; next player takes 2 turns." },
+    { term: "See The Future", meaning: "Peek at top 3 cards of deck." },
+    { term: "Cat combos", meaning: "Play 2 or 3 matching cat cards for effect (draw, steal, discard)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy base game ($20)", body: "5-min learning curve." },
+      { title: "Read illustrated rules", body: "Rules are funny + minimalist." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Add expansion (Imploding Kittens)", body: "New card types." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Exploding Kittens?", answer: "VIRAL CARD GAME (2015) by Elan Lee + Matthew Inman + Shane Small. Russian roulette with EXPLOSIVE KITTENS + Oatmeal-style humor. 2-5 players draw cards; whoever draws an Exploding Kitten is OUT unless they have a Defuse. Kickstarter record $8.7M. Sold 12M+ copies globally. NETFLIX TV series 2023. Simple + fast (15 min); considered gateway party card game of the 2010s." },
+  ],
+  wikipediaTitle: "Exploding Kittens",
+  sources: [
+    { label: "Exploding Kittens — official", url: "https://www.explodingkittens.com/", publisher: "EK Inc." },
+    { label: "BoardGameGeek — Exploding Kittens", url: "https://boardgamegeek.com/boardgame/172225/exploding-kittens", publisher: "BGG" },
+    { label: "Wikipedia — Exploding Kittens", url: "https://en.wikipedia.org/wiki/Exploding_Kittens", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

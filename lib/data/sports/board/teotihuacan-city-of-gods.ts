@@ -1,0 +1,123 @@
+import type { Sport } from "@/lib/types";
+
+export const teotihuacanCityOfGods: Sport = {
+  id: "teotihuacan-city-of-gods",
+  slug: "teotihuacan-city-of-gods",
+  name: "Teotihuacan: City of Gods",
+  officialName: "Teotihuacan: City of Gods",
+  aliases: ["Teotihuacan"],
+  shortDescription:
+    "HEAVY DICE-WORKER-PLACEMENT EURO by DANIELE TASCINI (2018, Board & Dice) — spiritual successor to Tzolk'in (same designer). 1-4 players build the Mesoamerican city of TEOTIHUACAN using DICE-AS-WORKERS (worker dice grow in value as they age around the central pyramid loop). HELD BGG top-30 since release; considered one of the BEST DICE-EURO games ever. Multiple expansions: LATE PRECLASSIC PERIOD (2019), SHADOW OF XITLE (2020), MYSTERY OF PERIOD (2020). ~2 hours.",
+  longDescription:
+    "TEOTIHUACAN: CITY OF GODS is a HEAVY DICE-WORKER-PLACEMENT EURO designed by DANIELE TASCINI (Italy), published by BOARD & DICE (Poland, 2018). Spiritual successor to TZOLK'IN (2012, same designer) — replaces rotating gears with DICE-AS-WORKERS. 1-4 PLAYERS build the ancient Mesoamerican city of TEOTIHUACAN through 3 ERAS. UNIQUE MECHANIC: workers are DICE that GROW in value as they AGE around the central pyramid loop (starting at value 1, aging up to 5, then RETIRING at 6 for a decoration bonus). Considered one of the BEST DICE-EURO games ever + a masterpiece of dice-worker design. HELD BGG top-30 since release (2018-2026); peaked in top-20. Multiple expansions: LATE PRECLASSIC PERIOD (2019), SHADOW OF XITLE (2020), MYSTERY OF PERIOD (2020, campaign). ~2 HOURS PLAY TIME. GAMEPLAY: 3 ERAS. Each era has income + actions + eclipse (era-ending event scoring). Players roll DICE-WORKERS + place them on 8 action locations around the central pyramid loop. Actions: gather WOOD/STONE/GOLD, build residential districts, discover technologies (5 tracks), advance up the PYRAMID (3-tier construction), worship at TEMPLES (3 gods: Xochipilli, Quetzalcoatl, Tlaloc), decorate MASKS. Each turn: activate 1 die at its current location — pay cocoa (coins) for its cost + gain that location's benefit. After activation, DIE AGES +1 (rotate up). Age 6 die RETIRES + you gain decoration bonus. TEMPLE DEVOTION: worship at temples advances markers on 3 temple tracks. PYRAMID CONSTRUCTION: 3 tiers; each tier adds VP + trigger endgame bonuses. TECHNOLOGY: 5 tracks (worship, resources, construction, decoration, growth) with escalating bonuses. ECLIPSE end-of-era scoring for temple positions + pyramid progression + residential districts. END GAME: sum era scores + final scoring for temples + pyramid + technologies + gold + masks + residential.",
+  category: "board-games",
+  subCategory: "heavy euro / dice-worker-placement / Mesoamerican theme / Daniele Tascini / Board & Dice",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "PL",
+  regionOfOrigin: "Poland (Board & Dice publisher) / Italy (Tascini designer)",
+  estimatedOrigin: "Designed 2017-2018 Daniele Tascini; released 2018 Board & Dice",
+  players: { min: 1, max: 4, note: "1-4 players; BEST AT 3-4. Solo variant excellent." },
+  field: {
+    surfaceName: "Central pyramid + 8 action locations around perimeter loop",
+    dimensions: "~120×90cm playspace",
+    description: "Central pyramid + 8 outer action locations arranged in a loop. Personal player boards + technology tracks + temple boards.",
+  },
+  equipment: [
+    { name: "Teotihuacan: City of Gods base box", description: "$60 USD; supports 1-4 players" },
+    { name: "Late Preclassic Period expansion (2019)", description: "$40; new starting scenarios + tribes" },
+    { name: "Shadow of Xitle expansion (2020)", description: "$40; volcano + new mechanics" },
+    { name: "Mystery of Period expansion (2020)", description: "$50; campaign mode" },
+    { name: "Central pyramid + 8 action location tiles", description: "Modular setup" },
+    { name: "Dice workers (colored per player)", description: "Age from 1 to 6" },
+    { name: "Wooden resources: wood, stone, gold, cocoa", description: "Standard euro resources" },
+    { name: "Mask + decoration + temple markers", description: "Scoring components" },
+  ],
+  duration: { approximateMinutes: 120, structure: "90-150 min; 4p ~2 hours; solo 60 min." },
+  objective: "Score most VP after 3 eras via temple positions + pyramid tiers built + technology advancement + residential districts + masks + gold.",
+  basicRules: [
+    { title: "3 eras; each has income + actions + eclipse scoring", body: "Structured era progression." },
+    { title: "Dice workers age 1 → 6 as they take actions", body: "Older = stronger but also = retirement approaching." },
+    { title: "8 action locations around pyramid loop", body: "Move + activate dice for actions." },
+    { title: "3 temple tracks; worship for advancement", body: "Xochipilli / Quetzalcoatl / Tlaloc." },
+    { title: "3-tier pyramid construction", body: "VP + endgame bonuses per tier." },
+    { title: "5 technology tracks unlock permanent bonuses", body: "Worship/resources/construction/decoration/growth." },
+  ],
+  scoring: {
+    summary: "End-game VP: era eclipse scoring + final temple positions + pyramid tiers + technology tracks + residential districts + masks + gold.",
+    breakdown: [
+      { action: "Temple track position (3 gods)", points: "3-10 VP per god end-game" },
+      { action: "Pyramid tier built", points: "6-15 VP + bonuses" },
+      { action: "Technology track advancement", points: "3-8 VP + permanent bonuses" },
+      { action: "Residential district built", points: "3-5 VP each" },
+      { action: "Mask decorated", points: "2-6 VP each" },
+      { action: "Gold (endgame)", points: "1 VP per 3 gold" },
+    ],
+    winCondition: "Highest VP after 3 eras wins.",
+  },
+  governingBodies: [
+    { name: "Board & Dice (publisher)", founded: 2010, headquarters: "Poland" },
+    { name: "Daniele Tascini (designer)", founded: 1975, headquarters: "Italy" },
+  ],
+  majorCompetitions: [
+    { name: "BGG top-30 consistently 2018-2026", frequency: "ongoing", founded: 2018, region: "worldwide" },
+    { name: "Golden Geek Best Strategy Game 2018 nominee", frequency: "annual", founded: 2018, region: "worldwide" },
+    { name: "Deutscher Spiele Preis 2019 (top-10)", frequency: "annual", founded: 2019, region: "Germany" },
+  ],
+  countriesPlayed: ["PL", "IT", "US", "GB", "DE", "FR", "ES", "AU", "CA", "SE"],
+  famousAthletes: [
+    "Daniele Tascini (Italy) — Designer; also Tzolk'in, Marco Polo, Marco Polo II",
+    "Odysseas Stamoglou (Greece) — Illustrator",
+  ],
+  variants: [
+    "teotihuacan-city-of-gods-base-2018",
+    "teotihuacan-late-preclassic-period-2019",
+    "teotihuacan-shadow-of-xitle-2020",
+    "teotihuacan-mystery-of-period-2020-campaign",
+  ],
+  relatedSports: ["tzolkin-the-mayan-calendar", "lorenzo-il-magnifico", "marco-polo-ii", "gaia-project", "trismegistus"],
+  skills: ["dice management", "long-term planning", "location timing", "temple prioritization", "opportunity-cost evaluation"],
+  strategies: [
+    { title: "Dice aging balance", body: "Retire dice early for decoration bonus OR keep for stronger actions." },
+    { title: "Temple focus", body: "Depth on 1-2 temples > shallow on all 3." },
+    { title: "Pyramid race", body: "First to 3rd tier gains best bonuses." },
+    { title: "Technology synergy", body: "Match tech tracks to your strategy focus." },
+    { title: "Cocoa (money) economy", body: "Cocoa pays for actions; balance income + spending." },
+  ],
+  terminology: [
+    { term: "Dice-worker", meaning: "Colored die with value 1-6; ages by +1 each action; retires at 6." },
+    { term: "Location (8 spots)", meaning: "Action space around pyramid loop." },
+    { term: "Temple (3 gods)", meaning: "Xochipilli/Quetzalcoatl/Tlaloc devotion tracks." },
+    { term: "Pyramid tier", meaning: "3-tier central construction; VP + bonuses." },
+    { term: "Eclipse", meaning: "End-of-era scoring event." },
+    { term: "Cocoa", meaning: "Currency; pays for actions." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Teotihuacan base ($60)", body: "Complete package." },
+      { title: "Solo learn dice-aging + locations", body: "~60 min solo game." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "3-4 player games", body: "Sweet spot player count." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Shadow of Xitle expansion", body: "Volcano adds new pressure." },
+      { title: "Mystery of Period campaign", body: "Linked-scenario play." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Teotihuacan?", answer: "HEAVY DICE-WORKER-PLACEMENT EURO by Daniele Tascini (2018, Board & Dice) — spiritual successor to Tzolk'in (same designer). 1-4 players build the Mesoamerican city of TEOTIHUACAN using DICE-AS-WORKERS (grow in value as they age). HELD BGG top-30 since release. Considered one of the best dice-euro games ever. Multiple expansions available. ~2 hours." },
+  ],
+  wikipediaTitle: "Teotihuacan: City of Gods",
+  sources: [
+    { label: "Board & Dice — Teotihuacan", url: "https://boardanddice.com/games/teotihuacan/", publisher: "Board & Dice" },
+    { label: "BoardGameGeek — Teotihuacan", url: "https://boardgamegeek.com/boardgame/229853/teotihuacan-city-gods", publisher: "BGG" },
+    { label: "Wikipedia — Teotihuacan: City of Gods", url: "https://en.wikipedia.org/wiki/Teotihuacan:_City_of_Gods", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

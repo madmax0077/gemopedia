@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const throughTheAges: Sport = {
+  id: "through-the-ages",
+  slug: "through-the-ages",
+  name: "Through the Ages: A New Story of Civilization",
+  officialName: "Through the Ages: A New Story of Civilization",
+  aliases: ["TtA", "Through the Ages", "Through the Ages NSoC", "TTA NSoC"],
+  shortDescription:
+    "MASSIVE CIVILIZATION-BUILDING CARD DRIVEN EURO by VLAADA CHVÁTIL (2015, Czech Games Edition) — revised 2nd edition of the 2006 original Through the Ages. 2-4 players guide a civilization from ANTIQUITY through 3 AGES to MODERN ERA. Card-driven tech tree + military + economy + culture. HELD BGG #1-#3 for years (2015-2019); considered ONE OF THE GREATEST STRATEGY GAMES EVER MADE. Digital version on Steam + mobile widely acclaimed. 2-4 hours (or 60-90 min with digital app).",
+  longDescription:
+    "THROUGH THE AGES: A NEW STORY OF CIVILIZATION is a MASSIVE CIVILIZATION-BUILDING CARD-DRIVEN EURO designed by VLAADA CHVÁTIL (Czech Republic), published by CZECH GAMES EDITION (CGE, 2015). REVISED 2ND EDITION of the 2006 original THROUGH THE AGES: A STORY OF CIVILIZATION — same core game with refined rules + 2000+ playtested improvements. 2-4 PLAYERS guide a CIVILIZATION from ANTIQUITY (Age A) through 3 AGES (Age I: Medieval; Age II: Renaissance/Industrial; Age III: Modern) using card-driven mechanics. FEATURES: TECH TREE (research technologies to unlock buildings/units), MILITARY (build army + fight wars + territorial aggressions), ECONOMY (food + resources + workers), CULTURE (wonders + leaders + science + culture for endgame VP), COLONIZATION, WORLD EVENTS. HELD BGG #1 SPOT for years (2015-2017); held BGG #1-#3 through 2019; currently top-15. Considered ONE OF THE GREATEST STRATEGY GAMES EVER MADE + Chvátil's masterpiece alongside MAGE KNIGHT + CODENAMES. Digital version by Czech Games Edition on Steam + iOS + Android — WIDELY ACCLAIMED for 60-90 min games (vs 2-4 hour tabletop). 2-4 HOURS TABLETOP PLAY TIME. GAMEPLAY: 3 ages + antiquity setup. Each age has cards row where cards cycle in. Players spend CIVIL ACTIONS to acquire cards + workers/food + upgrade tech + build wonders + hire leaders. MILITARY ACTIONS spent on army + wars + aggressions. TURN: play civil actions → play military actions → resolve events → refresh cards. TECHNOLOGY TREE: upgrade Farms → Irrigation → Agriculture; upgrade Bronze → Iron → Steel → Rifles → Tanks. WONDERS: 20+ (Pyramids, Great Wall, Colossus, Hanging Gardens, Notre Dame, Taj Mahal, Manhattan Project, Space Program, Internet, etc.) — each provides ongoing bonuses. LEADERS: 15+ historical figures (Aristotle, Julius Caesar, Genghis Khan, Christopher Columbus, Napoleon, Lincoln, Gandhi, Churchill, Bill Gates) — each provides unique abilities during their era. RECEPTION: BGG #1 for years; Golden Geek Best Strategy Game 2015; International Gamers Award 2015 nominee; Deutscher Spiele Preis 2015 (top-10); considered the DEFINITIVE tabletop civilization game.",
+  category: "board-games",
+  subCategory: "civilization-builder / card-driven / tech tree + military / Vlaada Chvátil / CGE",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "CZ",
+  regionOfOrigin: "Czech Republic (Czech Games Edition / Vlaada Chvátil)",
+  estimatedOrigin: "Designed 2004-2006 (1st edition Through the Ages); 2013-2015 New Story of Civilization revision; released 2015 CGE",
+  players: { min: 2, max: 4, note: "2-4 players; BEST AT 2-3. 4p adds 4+ hour game time; digital app much faster." },
+  field: {
+    surfaceName: "Personal player boards + shared card row",
+    dimensions: "~120×90cm at 4 players",
+    description: "Each player has personal civilization board (leader/wonders/tech/workers). Shared card row + military track + event deck + world events.",
+  },
+  equipment: [
+    { name: "Through the Ages: A New Story of Civilization base box", description: "$65 USD; refined 2015 edition" },
+    { name: "Through the Ages digital (Steam/iOS/Android)", description: "$10-20; official CGE app; 60-90 min games" },
+    { name: "Personal player boards", description: "Track civilization state" },
+    { name: "300+ cards: tech, military, leaders, wonders, events", description: "Core content" },
+    { name: "Worker/food/resource/military tokens", description: "Included" },
+    { name: "Culture + science tokens", description: "VP + advancement" },
+  ],
+  duration: { approximateMinutes: 180, structure: "2-4 hours tabletop; 60-90 min digital app." },
+  objective: "Score most CULTURE (VP) end-game via wonders + leaders + culture cards + colonies + military strength + territories.",
+  basicRules: [
+    { title: "3 ages + antiquity setup", body: "Progressive tech tree unlocks each age." },
+    { title: "Civil actions (buy cards, workers, build) + Military actions (army, wars)", body: "Balance economy vs military." },
+    { title: "Tech tree: research + upgrade buildings/units", body: "Farms → Agriculture; Bronze → Steel → Rifles." },
+    { title: "Wonders + leaders provide era bonuses", body: "20+ wonders, 15+ leaders." },
+    { title: "Military + wars + aggressions attack opponents", body: "Weak military = lose cards + territory." },
+    { title: "End Age III: score culture", body: "Highest VP wins." },
+  ],
+  scoring: {
+    summary: "End-game VP from culture cards + wonders + leaders + colonies + military + technology + resources.",
+    breakdown: [
+      { action: "Culture card played", points: "3-15 VP each" },
+      { action: "Wonder built", points: "3-8 VP + ongoing bonuses" },
+      { action: "Colony conquered", points: "3-5 VP each" },
+      { action: "Technology advanced", points: "Culture from Age III techs" },
+      { action: "War won", points: "VP + steal opponent's" },
+    ],
+    winCondition: "Highest culture VP end of Age III.",
+  },
+  governingBodies: [
+    { name: "Czech Games Edition (publisher)", founded: 2007, headquarters: "Czech Republic" },
+    { name: "Vlaada Chvátil (designer)", founded: 1970, headquarters: "Czech Republic" },
+  ],
+  majorCompetitions: [
+    { name: "BGG #1 for years (2015-2017)", frequency: "ongoing", founded: 2015, region: "worldwide" },
+    { name: "Golden Geek Best Strategy Game 2015 WINNER", frequency: "annual", founded: 2015, region: "worldwide" },
+    { name: "International Gamers Award 2015 nominee", frequency: "annual", founded: 2015, region: "worldwide" },
+    { name: "Deutscher Spiele Preis 2015 (top-10)", frequency: "annual", founded: 2015, region: "Germany" },
+  ],
+  countriesPlayed: ["CZ", "US", "GB", "DE", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL", "JP"],
+  famousAthletes: [
+    "Vlaada Chvátil (Czech Republic) — Designer; also Mage Knight, Codenames, Galaxy Trucker, Dungeon Lords",
+    "Milan Vavroň (Czech) — Illustrator",
+  ],
+  variants: [
+    "through-the-ages-a-story-of-civilization-2006-original",
+    "through-the-ages-a-new-story-of-civilization-2015-refined",
+    "through-the-ages-digital-cge-app",
+  ],
+  relatedSports: ["twilight-imperium", "civilization", "scythe", "brass-birmingham", "terra-mystica"],
+  skills: ["long-term planning", "civilization strategy", "card-value assessment", "military-economy balance", "tech tree optimization"],
+  strategies: [
+    { title: "Balance culture vs military", body: "Culture-only = weak military = crushed. Military-heavy = missed culture bonuses." },
+    { title: "Wonders + leaders synergy", body: "Match wonder + leader for era-defining bonuses." },
+    { title: "Tech upgrade priority", body: "Farms → Agriculture is essential; military tech follows era." },
+    { title: "Card evaluation", body: "Every card action costs; opportunity cost matters." },
+    { title: "Try digital app first", body: "60-90 min AI games teach strategy fast." },
+  ],
+  terminology: [
+    { term: "Age (A/I/II/III)", meaning: "Progressive tech eras; Age A antiquity, Age III modern." },
+    { term: "Civil action", meaning: "Card economy actions (buy, build, upgrade)." },
+    { term: "Military action", meaning: "Army-building + wars + aggressions." },
+    { term: "Wonder", meaning: "Built construction with ongoing bonuses." },
+    { term: "Leader", meaning: "Historical figure providing era-specific abilities." },
+    { term: "Culture", meaning: "VP currency; endgame scoring." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "PLAY DIGITAL APP FIRST", body: "Steam/mobile version; 60-90 min AI teaches game." },
+      { title: "Buy tabletop after 5+ digital games", body: "Tabletop is 2-4 hours; understand system first." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "2p tabletop games", body: "Learn card interactions." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "3-4p full games", body: "Full civilization competitive experience." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Through the Ages?", answer: "MASSIVE CIVILIZATION-BUILDING CARD-DRIVEN EURO by Vlaada Chvátil (2015, CGE) — 2nd edition of 2006 original. 2-4 players guide civilizations from ANTIQUITY through 3 AGES to MODERN ERA. Card-driven tech tree + military + economy + culture. HELD BGG #1 for years. Considered one of the greatest strategy games ever. Digital version widely acclaimed for 60-90 min games." },
+    { question: "Should I buy tabletop or digital Through the Ages?", answer: "DIGITAL FIRST. The CGE app on Steam/iOS/Android is $10-20 + plays 60-90 min vs tabletop's 2-4 HOURS. Digital handles all bookkeeping + provides excellent AI + tutorial. Buy tabletop AFTER 10+ digital games IF you love the game + want physical experience. Many players stick with digital exclusively." },
+  ],
+  wikipediaTitle: "Through the Ages",
+  sources: [
+    { label: "Czech Games Edition — Through the Ages", url: "https://czechgames.com/en/through-the-ages/", publisher: "CGE" },
+    { label: "BoardGameGeek — Through the Ages", url: "https://boardgamegeek.com/boardgame/182028/through-ages-new-story-civilization", publisher: "BGG" },
+    { label: "Wikipedia — Through the Ages", url: "https://en.wikipedia.org/wiki/Through_the_Ages", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

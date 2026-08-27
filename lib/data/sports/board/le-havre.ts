@@ -1,0 +1,122 @@
+import type { Sport } from "@/lib/types";
+
+export const leHavre: Sport = {
+  id: "le-havre",
+  slug: "le-havre",
+  name: "Le Havre",
+  officialName: "Le Havre",
+  aliases: ["Le Havre"],
+  shortDescription:
+    "HEAVY WORKER-PLACEMENT + ECONOMIC-ENGINE EURO by UWE ROSENBERG (2008, Lookout Games) — his SECOND MAJOR GAME after AGRICOLA (2007). 1-5 players develop the French port city of LE HAVRE from a rowboat-fishing village into an industrial shipping hub. Uses SHARED SUPPLY OFFER (resources accumulate on shared spaces then get taken by first placer) + BUILDING CHAIN economy. HELD BGG TOP-50 for 15+ years; considered ONE OF THE GREATEST HEAVY EUROS OF THE 2000s. ~30 min per player.",
+  longDescription:
+    "LE HAVRE is a HEAVY WORKER-PLACEMENT + ECONOMIC-ENGINE EURO designed by UWE ROSENBERG (Germany), published by LOOKOUT GAMES (2008). Rosenberg's SECOND MAJOR GAME (after AGRICOLA 2007) — established him as the master of heavy euros. 1-5 PLAYERS develop the FRENCH PORT CITY OF LE HAVRE from a rowboat-fishing village into an industrial shipping hub. Features UNIQUE SHARED SUPPLY OFFER MECHANIC — resources accumulate on shared spaces each round; the first player to place there takes ALL of that resource type. Creates dynamic tension around WHEN to grab which resource pile. BUILDING CHAIN: 100+ possible buildings that provide new actions, produce goods, or generate victory points. Players buy/build increasingly complex buildings that fuel each other (fisheries → smokehouses → processed fish → tanneries → leather → ships → shipping profit). HELD BGG TOP-50 for 15+ years (2008-2026); considered ONE OF THE GREATEST HEAVY EUROS OF THE 2000s. Sits alongside AGRICOLA + CAVERNA as ROSENBERG'S HOLY TRINITY. ~30 MIN PER PLAYER (2-3 hours at 4 players). GAMEPLAY: 14 ROUNDS (2P) or 20+ ROUNDS (4-5P). Each round: (1) Ship arrives with resources (advance offer piles); (2) One player takes turn: place worker on offer pile (take resources) OR building (use action); (3) Alternate players; (4) Round end: feed workers (bread + fish + meat + smoke). BUILDINGS BOUGHT via silver or built via resources. Some buildings give SILVER (endgame VP), some give BUILDINGS (VP), some give SHIPS (feed + move goods). END: score buildings + ships + silver.",
+  category: "board-games",
+  subCategory: "heavy euro / worker-placement / economic engine / Uwe Rosenberg / port city theme",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany (Lookout Games / Uwe Rosenberg)",
+  estimatedOrigin: "Designed 2007-2008 Uwe Rosenberg; released 2008 Lookout; multiple expansions since",
+  players: { min: 1, max: 5, note: "1-5 players; BEST AT 2-3. Solo excellent. 4-5p adds interaction + downtime." },
+  field: {
+    surfaceName: "Main board (offer spaces + building row) + personal boards",
+    dimensions: "~90×60cm main board",
+    description: "Central board has 6 resource offer spaces + ship track + building row + supply. Personal player mats for workers + resources + owned buildings.",
+  },
+  equipment: [
+    { name: "Le Havre base box", description: "$60 USD; complete game" },
+    { name: "Le Havre: Le Grand Hameau expansion (2015)", description: "$30; new buildings + variants" },
+    { name: "Central board (offer spaces + ships + buildings)", description: "Main engine" },
+    { name: "100+ building tiles", description: "Diverse chain-economy engine" },
+    { name: "Resource tokens (wood, clay, iron, coal, fish, cattle, grain, etc.)", description: "8 resource types" },
+    { name: "Ship models (rowboat → steamship)", description: "Feed workers + transport goods" },
+    { name: "Silver tokens", description: "Currency + endgame VP" },
+  ],
+  duration: { approximateMinutes: 150, structure: "30 min per player; 2p 90 min; 4p 180 min; 5p 200+ min. Solo 60 min." },
+  objective: "Score most VP by end of game via silver + buildings owned (VP printed) + ships owned.",
+  basicRules: [
+    { title: "Round structure: ship arrives → player takes turn → alternate → feed workers", body: "Simple 4-phase round." },
+    { title: "Take turn: EITHER take offer pile OR enter building (use action)", body: "Choice each turn." },
+    { title: "Offer piles accumulate resources; first placer takes all", body: "Timing critical." },
+    { title: "Build buildings via resources (or buy)", body: "Building chain fuels economy." },
+    { title: "Feed workers each round via food (bread, fish, meat, smoke)", body: "Failure = borrow silver at penalty." },
+    { title: "End game: score silver + buildings + ships", body: "Highest VP wins." },
+  ],
+  scoring: {
+    summary: "End-game VP from silver + buildings owned (VP printed on each) + ships owned + minus loans.",
+    breakdown: [
+      { action: "Silver (silver franc)", points: "1 silver = 1 VP" },
+      { action: "Building owned (VP printed)", points: "5-30 VP per building" },
+      { action: "Ship owned", points: "3-15 VP per ship" },
+      { action: "Loan taken (starvation borrow)", points: "-7 VP per loan" },
+    ],
+    winCondition: "Highest VP end-game wins.",
+  },
+  governingBodies: [
+    { name: "Lookout Games (publisher)", founded: 2000, headquarters: "Germany" },
+    { name: "Mayfair Games (US publisher, original)", founded: 1981, headquarters: "USA" },
+    { name: "Uwe Rosenberg (designer)", founded: 1970, headquarters: "Germany" },
+  ],
+  majorCompetitions: [
+    { name: "BGG top-50 15+ years (2008-2026)", frequency: "ongoing", founded: 2008, region: "worldwide" },
+    { name: "Deutscher Spiele Preis 2009 (5th place)", frequency: "annual", founded: 2009, region: "Germany" },
+    { name: "International Gamers Award 2009 nominee", frequency: "annual", founded: 2009, region: "worldwide" },
+  ],
+  countriesPlayed: ["DE", "US", "GB", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL", "JP"],
+  famousAthletes: [
+    "Uwe Rosenberg (Germany) — Designer; also Agricola, Caverna, Feast for Odin, Fields of Arle",
+    "Klemens Franz (Austria) — Illustrator; signature Rosenberg art style",
+  ],
+  variants: [
+    "le-havre-base-2008",
+    "le-havre-le-grand-hameau-expansion-2015",
+    "le-havre-the-inland-port-2012-2p-standalone",
+    "agricola-2007-earlier-rosenberg",
+    "caverna-2013-later-rosenberg",
+  ],
+  relatedSports: ["agricola", "caverna", "a-feast-for-odin", "fields-of-arle", "ora-et-labora"],
+  skills: ["long-term planning", "resource + supply timing", "building-chain optimization", "action-space contest", "opportunity-cost evaluation"],
+  strategies: [
+    { title: "Building chain focus", body: "Build feeder buildings (bakery, tannery, shipyard) that fuel VP buildings." },
+    { title: "Silver economy", body: "Silver = VP; also buys buildings." },
+    { title: "Offer pile timing", body: "Wait for pile to accumulate; grab when high-value." },
+    { title: "Ship-heavy vs building-heavy", body: "Ships feed + move goods; buildings score directly." },
+    { title: "Avoid loans", body: "-7 VP per loan; feeding priority." },
+  ],
+  terminology: [
+    { term: "Offer pile", meaning: "Shared resource pool; first placer takes all." },
+    { term: "Building", meaning: "Purchasable/buildable action space; grants VP + abilities." },
+    { term: "Ship", meaning: "Transport + feeding; grants VP." },
+    { term: "Silver franc", meaning: "Currency + endgame VP." },
+    { term: "Feeding", meaning: "End-round; feed workers via food or take loan." },
+    { term: "Loan", meaning: "Borrow silver at penalty; -7 VP endgame." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Le Havre base ($60)", body: "Complete package." },
+      { title: "Solo game first (~60 min)", body: "Learn offer + building mechanics." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "2-3 player games", body: "Sweet spot; less downtime." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Le Grand Hameau expansion", body: "New buildings + variants." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Le Havre?", answer: "HEAVY WORKER-PLACEMENT + ECONOMIC-ENGINE EURO by Uwe Rosenberg (2008, Lookout Games) — his SECOND major game after Agricola. 1-5 players develop the French port city of LE HAVRE from a fishing village into an industrial shipping hub. Uses SHARED SUPPLY OFFER + BUILDING CHAIN economy. HELD BGG TOP-50 for 15+ years. Considered one of the greatest heavy euros of the 2000s + part of Rosenberg's Holy Trinity (Agricola + Caverna + Le Havre)." },
+    { question: "Le Havre vs Agricola vs Caverna?", answer: "ROSENBERG'S HOLY TRINITY. AGRICOLA (2007) — card-driven variability, farming, punishing. LE HAVRE (2008) — port-city economic engine, building chains, offer-pile timing. CAVERNA (2013) — dwarf farm+cave, more forgiving no-cards. Most experts rank: AGRICOLA #1 for competitive depth, CAVERNA #1 for accessibility, LE HAVRE #1 for economic engine building. All excellent + timeless." },
+  ],
+  wikipediaTitle: "Le Havre (board game)",
+  sources: [
+    { label: "Lookout Games — Le Havre", url: "https://lookout-spiele.de/en/games/le-havre", publisher: "Lookout" },
+    { label: "BoardGameGeek — Le Havre", url: "https://boardgamegeek.com/boardgame/35677/le-havre", publisher: "BGG" },
+    { label: "Wikipedia — Le Havre", url: "https://en.wikipedia.org/wiki/Le_Havre_(board_game)", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

@@ -1,0 +1,112 @@
+import type { Sport } from "@/lib/types";
+
+export const wavelength: Sport = {
+  id: "wavelength",
+  slug: "wavelength",
+  name: "Wavelength",
+  officialName: "Wavelength",
+  aliases: ["Wavelength"],
+  shortDescription:
+    "PARTY GAME (2019) by WOLFGANG WARSCH, DOMINIK MAYER, ALEX HAGUE, JUSTIN VICKERS. 2-12 players in teams try to READ EACH OTHER'S MINDS on a SPECTRUM SCALE between two opposites (Hot ↔ Cold, Good ↔ Evil, Sport ↔ Art, etc.). One player draws a card with 2 opposites + secretly sees a hidden target zone on the semicircular dial + gives ONE CLUE that lies AT THAT SPECTRUM POINT. Team guesses where to move the pointer. Considered ONE OF THE BEST PARTY GAMES OF THE 2010s + genre-defining psychic-connection game. Held BGG top-30 party. 30-45 min.",
+  longDescription:
+    "WAVELENGTH is a PARTY GAME (2019) designed by WOLFGANG WARSCH (also The Mind, The Quacks of Quedlinburg), DOMINIK MAYER, ALEX HAGUE, JUSTIN VICKERS. Published by CMYK GAMES (USA) + BEZIER GAMES (US distribution). 2-12 PLAYERS in 2 teams try to READ EACH OTHER'S MINDS on a SPECTRUM SCALE between two OPPOSITES (Hot ↔ Cold, Good ↔ Evil, Sport ↔ Art, Fancy ↔ Casual, Weird ↔ Normal, Overrated ↔ Underrated, etc.). One player draws a card with 2 OPPOSITES + secretly sees a HIDDEN TARGET ZONE on the semicircular dial + gives ONE CLUE that lies at THAT SPECTRUM POINT. Team then guesses WHERE ON THE SPECTRUM to move the pointer. Considered ONE OF THE BEST PARTY GAMES OF THE 2010s + a GENRE-DEFINING PSYCHIC-CONNECTION GAME. HELD BGG TOP-30 PARTY since release; considered instant classic. GAMEPLAY: 4-6 rounds typical. Each round: (1) Team A PSYCHIC draws card + reveals its 2 opposites (e.g. Hot ↔ Cold); (2) Psychic secretly sees a TARGET ZONE (small arc on semicircular dial); (3) Psychic gives ONE CLUE that represents that point on the spectrum (e.g. for medium-hot: 'coffee'; for medium-cold: 'refrigerator'); (4) Team A discusses + moves pointer to their guess; (5) TEAM B gets left/right guess (predict if actual target is left or right of Team A's pointer); (6) Score both teams. TARGET ZONE has 4 SCORING BANDS: bullseye (4 points), inner ring (3), outer ring (2), miss (0). Team B either steals (correct left/right) or misses (0). First team to 10 points wins. UNIVERSALLY LOVED for its POSITIVE SOCIAL VIBE — feels like connecting with friends' minds. Also works as SOCIAL for large groups + is one of the FEW party games that scales up to 12 players well. RECEPTION: Golden Geek Best Party Game 2019 nominee; Deutscher Spiele Preis 2020 (top-10); BGG top-30 party consistently; considered a MASTERPIECE + top-tier gift/gateway party game.",
+  category: "party-games",
+  subCategory: "spectrum-scale party / psychic-connection / social party game / CMYK",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (CMYK Games publisher; Alex Hague + Justin Vickers + Wolfgang Warsch + Dominik Mayer designers)",
+  estimatedOrigin: "Designed 2018-2019 Hague + Vickers + Warsch + Mayer; released 2019 CMYK Games",
+  players: { min: 2, max: 12, note: "2-12 players; BEST AT 4-8. Scales to 12 well; solo variant exists." },
+  field: {
+    surfaceName: "Semicircular dial with rotating pointer + target zone slider",
+    dimensions: "~40×20cm dial device",
+    description: "Physical semicircular dial with rotating pointer + hidden target zone slider (behind dial). Card holder + score track.",
+  },
+  equipment: [
+    { name: "Wavelength base box", description: "$35 USD; supports 2-12 players" },
+    { name: "Wavelength: Refresh expansion (2022)", description: "$20; more spectrum cards" },
+    { name: "Physical semicircular dial with pointer + target slider", description: "Central component" },
+    { name: "200+ spectrum cards (2 opposites per card)", description: "Diverse categories" },
+    { name: "Team pawns + score track", description: "Track first-to-10-points" },
+  ],
+  duration: { approximateMinutes: 40, structure: "30-45 min per game; first to 10 points." },
+  objective: "First team to 10 points wins by successfully guessing psychic's hidden target zone on the spectrum dial.",
+  basicRules: [
+    { title: "Team's PSYCHIC draws card + reveals 2 opposites", body: "Card shows spectrum extremes." },
+    { title: "Psychic secretly sees target zone on dial + gives ONE CLUE representing that point", body: "Clue must be at that spot." },
+    { title: "Team discusses + moves pointer to their guess", body: "Group decision-making." },
+    { title: "OPPOSING TEAM guesses left/right of pointer for their score", body: "Second-chance mechanic." },
+    { title: "Target zone reveals; score by proximity (bullseye 4, inner 3, outer 2, miss 0)", body: "Both teams score." },
+    { title: "First team to 10 points wins", body: "4-6 rounds typical." },
+  ],
+  scoring: {
+    summary: "First team to 10 points wins via target zone proximity scoring + opposing team left/right steals.",
+    breakdown: [
+      { action: "Bullseye zone", points: "4 points" },
+      { action: "Inner ring zone", points: "3 points" },
+      { action: "Outer ring zone", points: "2 points" },
+      { action: "Miss", points: "0 points" },
+      { action: "Opposing team correct left/right", points: "1 point (steal)" },
+    ],
+    winCondition: "First team to 10 points wins.",
+  },
+  governingBodies: [
+    { name: "CMYK Games (publisher)", founded: 2019, headquarters: "USA" },
+    { name: "Bezier Games (US distribution)", founded: 2009, headquarters: "USA" },
+    { name: "Alex Hague + Justin Vickers + Wolfgang Warsch + Dominik Mayer (designers)", founded: 2019, headquarters: "USA / Austria / Germany" },
+  ],
+  majorCompetitions: [
+    { name: "Golden Geek Best Party Game 2019 nominee", frequency: "annual", founded: 2019, region: "worldwide" },
+    { name: "Deutscher Spiele Preis 2020 (top-10)", frequency: "annual", founded: 2020, region: "Germany" },
+    { name: "BGG top-30 party consistently 2019-2026", frequency: "ongoing", founded: 2019, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL", "JP"],
+  famousAthletes: [
+    "Wolfgang Warsch (Austria) — Co-designer; also The Mind, The Quacks of Quedlinburg (Kennerspiel 2018)",
+    "Dominik Mayer (Germany) — Co-designer",
+    "Alex Hague (USA) — Co-designer + CMYK founder",
+    "Justin Vickers (USA) — Co-designer + CMYK founder",
+  ],
+  variants: [
+    "wavelength-base-2019",
+    "wavelength-refresh-expansion-2022",
+    "wavelength-solo-variant",
+    "wavelength-social-cooperative-house-rule",
+  ],
+  relatedSports: ["just-one", "decrypto", "codenames", "monikers", "spyfall"],
+  skills: ["shared cultural references", "audience reading", "creative clue-crafting", "team discussion"],
+  strategies: [
+    { title: "Middle-of-spectrum clues", body: "Extreme opposites obvious; middle requires cleverness." },
+    { title: "Read your team's cultural background", body: "Match references to what THIS group knows." },
+    { title: "Left/right steal is free info", body: "Even wrong pointer moves teach next round." },
+    { title: "Avoid extreme clues for near-miss zones", body: "Extreme clues push pointer too far." },
+  ],
+  terminology: [
+    { term: "Psychic", meaning: "Rotating clue-giver each round." },
+    { term: "Spectrum card", meaning: "Card with 2 opposites (e.g. Hot ↔ Cold)." },
+    { term: "Target zone", meaning: "Hidden arc on dial the Psychic must clue toward." },
+    { term: "Dial + Pointer", meaning: "Physical device; team moves pointer to guess." },
+    { term: "Left/Right steal", meaning: "Opposing team guesses if actual target is left/right of first team's pointer." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Wavelength ($35)", body: "5-min learning; instant classic." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Wavelength?", answer: "PARTY GAME (2019) by Wolfgang Warsch + Dominik Mayer + Alex Hague + Justin Vickers. 2-12 players in teams try to read each other's minds on a SPECTRUM SCALE between two opposites. Psychic sees hidden target zone + gives ONE clue at that spectrum point. Team guesses. Considered ONE OF THE BEST PARTY GAMES OF THE 2010s + genre-defining. Held BGG top-30 party. 30-45 min." },
+  ],
+  wikipediaTitle: "Wavelength (game)",
+  sources: [
+    { label: "CMYK Games — Wavelength", url: "https://www.wavelength.zone/", publisher: "CMYK" },
+    { label: "BoardGameGeek — Wavelength", url: "https://boardgamegeek.com/boardgame/262543/wavelength", publisher: "BGG" },
+    { label: "Wikipedia — Wavelength", url: "https://en.wikipedia.org/wiki/Wavelength_(game)", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

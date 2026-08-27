@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const theCrew: Sport = {
+  id: "the-crew",
+  slug: "the-crew",
+  name: "The Crew: The Quest for Planet Nine",
+  officialName: "The Crew: The Quest for Planet Nine",
+  aliases: ["The Crew", "The Crew Planet Nine"],
+  shortDescription:
+    "REVOLUTIONARY COOPERATIVE TRICK-TAKING CARD GAME (2019) by THOMAS SING, published by KOSMOS. 2-5 players work together to complete 50 SCENARIOS (linked mini-missions) as astronauts on a mission to find Planet Nine. Each mission has TASKS — specific cards individual players must win in specific tricks. COMMUNICATION IS RESTRICTED to a single 'communication token' with limited signals. Won KENNERSPIEL DES JAHRES 2020 (German Game of the Year — Enthusiast). Sequel THE CREW: MISSION DEEP SEA (2021) also won Kennerspiel des Jahres 2022. Considered a REVOLUTIONARY design that invented COOP TRICK-TAKING as a genre. 15-30 min per game.",
+  longDescription:
+    "THE CREW: THE QUEST FOR PLANET NINE is a REVOLUTIONARY COOPERATIVE TRICK-TAKING CARD GAME designed by THOMAS SING, published by KOSMOS (Germany, 2019). 2-5 players work together as ASTRONAUTS on a mission to find PLANET NINE (hypothetical 9th planet in our solar system). Considered a REVOLUTIONARY design that INVENTED COOPERATIVE TRICK-TAKING as a legitimate genre — trick-taking games (Hearts, Bridge, Spades) had been COMPETITIVE for centuries; The Crew turned it upside-down. WON KENNERSPIEL DES JAHRES 2020 (German Game of the Year — Enthusiast category, hobby gamer award). Sequel THE CREW: MISSION DEEP SEA (2021) also WON KENNERSPIEL DES JAHRES 2022 (repeat victory extremely rare). GAMEPLAY: Card deck of 40 cards (numbered 1-9 in 4 SUIT colors + 4 rocket TRUMP cards). Play through 50 SCENARIOS in campaign order — each scenario has TASKS (specific cards individual players must WIN in a specific trick). E.g. Mission 1: 'Player A must win the pink 3'. Mission 20: 'Player A wins the green 5 in the first trick; Player B wins the yellow 9 in the last trick'. Mission 50: multiple linked tasks + order requirements. TRICK-TAKING RULES: Standard follow-suit + trump rules (rocket cards trump colors); highest card of led suit or highest rocket wins trick. COOPERATIVE COMMUNICATION restrictions: Each player has ONE COMMUNICATION TOKEN — during game, can once use it to signal ONE card in hand by placing token on it in one of 3 positions (top = my only card of that color, middle = my highest, bottom = my lowest). VERY LIMITED communication forces INFERENCE + tactical trick-play. If any task fails, MISSION FAILS + must retry. 15-30 min per attempt. RECEPTION: Kennerspiel des Jahres 2020; Spiel des Jahres 2020 recommended (rarely happens for Kennerspiel winners); BGG top-200 consistently; Golden Geek Best Card Game 2020; considered a MASTERPIECE of cooperative card game design. SEQUEL THE CREW: MISSION DEEP SEA (2021) — ocean-explorer reskin with variable difficulty tasks + more replayable. Considered EASIER to introduce than Planet Nine's linear 50-mission campaign.",
+  category: "card-games",
+  subCategory: "cooperative trick-taking / campaign / Kennerspiel des Jahres 2020 / Kosmos",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany (Kosmos publisher; Thomas Sing designer)",
+  estimatedOrigin: "Designed 2018 Thomas Sing; released 2019 Kosmos; Kennerspiel des Jahres 2020; sequel 2021",
+  players: { min: 2, max: 5, note: "2-5 players; BEST AT 3-4. 2-player has variant rules (Jarvis helper AI)." },
+  field: {
+    surfaceName: "Table for card play",
+    dimensions: "~60×60cm typical",
+    description: "Each player has 8-13 card hand (depending on player count), communication token, task cards in front. Center = trick play area.",
+  },
+  equipment: [
+    { name: "The Crew: Quest for Planet Nine box", description: "$15 USD; 40 cards + 50 mission book + communication tokens" },
+    { name: "The Crew: Mission Deep Sea (sequel)", description: "$15 USD; variable-difficulty tasks + more replayable" },
+    { name: "40-card deck: numbered 1-9 in 4 colors + 4 rocket trumps", description: "Standard trick-taking deck" },
+    { name: "Task cards (in mission book)", description: "50 mission scenarios in linear order" },
+    { name: "Communication tokens (1 per player)", description: "Single-use signaling per hand" },
+  ],
+  duration: { approximateMinutes: 20, structure: "15-30 min per mission; some fail and retry. Full 50-mission campaign takes ~15-20 hours over sessions." },
+  objective: "Complete ALL TASKS in current mission by winning specific cards in specific tricks. Communication is highly restricted. Fail = replay mission.",
+  basicRules: [
+    { title: "Standard follow-suit trick-taking + rocket trumps", body: "Rockets trump colors; highest card of led suit or rocket wins." },
+    { title: "TASKS: specific cards specific players must win", body: "E.g. 'Player A wins pink 3 in second trick'." },
+    { title: "Communication token: single use per hand", body: "Signal 1 card by token position (top/middle/bottom)." },
+    { title: "All tasks must succeed = mission complete", body: "One task fail = mission failed = retry." },
+    { title: "Play 50 missions in campaign order", body: "Progressive difficulty; unlock story." },
+  ],
+  scoring: {
+    summary: "Binary success per mission. Track progress through 50-mission campaign.",
+    breakdown: [
+      { action: "Mission completed", points: "Advance to next mission" },
+      { action: "Mission failed", points: "Retry same mission" },
+      { action: "Campaign complete (mission 50)", points: "Story resolution" },
+    ],
+    winCondition: "Complete all 50 missions in Quest for Planet Nine campaign.",
+  },
+  governingBodies: [
+    { name: "Kosmos (publisher)", founded: 1822, headquarters: "Stuttgart, Germany" },
+    { name: "Thames & Kosmos (US distributor)", founded: 2001, headquarters: "USA" },
+    { name: "Spiel des Jahres jury", founded: 1978, headquarters: "Germany" },
+  ],
+  majorCompetitions: [
+    { name: "Kennerspiel des Jahres 2020 (WINNER)", frequency: "annual", founded: 2011, region: "Germany" },
+    { name: "Spiel des Jahres 2020 recommended", frequency: "annual", founded: 1978, region: "Germany" },
+    { name: "Kennerspiel des Jahres 2022 sequel win", frequency: "annual", founded: 2011, region: "Germany" },
+    { name: "Golden Geek Best Card Game 2020", frequency: "annual", founded: 2006, region: "worldwide" },
+  ],
+  countriesPlayed: ["DE", "US", "GB", "FR", "IT", "ES", "PL", "AU", "CA", "SE", "NL"],
+  famousAthletes: [
+    "Thomas Sing (Germany) — Designer; also created The Crew: Mission Deep Sea (2021)",
+    "Marco Armbruster + Oliver Freudenreich — Illustrators",
+  ],
+  variants: [
+    "the-crew-quest-for-planet-nine-2019-original",
+    "the-crew-mission-deep-sea-2021-sequel",
+    "50-mission-linear-campaign",
+    "variable-task-difficulty-mode-deep-sea",
+    "jarvis-2-player-solo-variant",
+  ],
+  relatedSports: ["hearts", "spades", "bridge", "whist", "arkham-horror-lcg"],
+  skills: ["trick-taking fundamentals", "cooperative inference", "hand evaluation", "task planning", "silent coordination"],
+  strategies: [
+    { title: "Plan task order early", body: "Some tasks must be completed in specific tricks — plan trick sequence." },
+    { title: "Use communication token wisely", body: "Only 1 signal per hand — save for critical information." },
+    { title: "Trump economy", body: "Rockets are limited; save for winning specific task cards." },
+    { title: "Void-color inference", body: "If player doesn't follow suit, they're void — deduce their hand." },
+    { title: "Retry familiarity", body: "Failed missions become easier on 2nd/3rd attempt with hand knowledge." },
+  ],
+  terminology: [
+    { term: "Task", meaning: "Specific card a specific player must win in a specific trick." },
+    { term: "Communication token", meaning: "Single-use signal per hand; placement encodes info." },
+    { term: "Rocket", meaning: "Trump suit (4 cards) that beat all colors." },
+    { term: "Mission Commander", meaning: "Player who receives rocket 4 (highest trump); starts first trick." },
+    { term: "Void", meaning: "Player has no cards of led suit; can play any card." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy The Crew (~$15)", body: "Cheap entry; complete package." },
+      { title: "Start at Mission 1; play sequentially", body: "Difficulty ramps naturally." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Buy Mission Deep Sea for replayability", body: "Variable-difficulty tasks vs linear Planet Nine." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Play missions 45-50 (endgame)", body: "Multiple linked tasks + order requirements = puzzle." },
+    ]},
+  ],
+  faq: [
+    { question: "What is The Crew?", answer: "REVOLUTIONARY COOPERATIVE TRICK-TAKING CARD GAME by Thomas Sing (2019, Kosmos). 2-5 players work together to complete 50 SCENARIOS as astronauts finding Planet Nine. Each mission has TASKS — specific cards specific players must win in specific tricks. Communication severely restricted (1 signaling token per hand). Won KENNERSPIEL DES JAHRES 2020. Considered revolutionary — invented cooperative trick-taking as a genre. 15-30 min per game. Sequel The Crew: Mission Deep Sea also won Kennerspiel 2022." },
+    { question: "Which Crew game should I buy — Planet Nine or Deep Sea?", answer: "BOTH ARE GREAT. PLANET NINE has 50-MISSION LINEAR CAMPAIGN (novel scenarios, but once completed no reason to replay). DEEP SEA has VARIABLE-DIFFICULTY TASK SYSTEM (mix + match difficulty for infinite replayability). Recommend DEEP SEA for INFINITE PLAY, PLANET NINE for STRUCTURED CAMPAIGN experience. Rules identical between both. Deep Sea is Kennerspiel des Jahres 2022 winner." },
+    { question: "How is The Crew different from Hearts or Spades?", answer: "REVOLUTIONARY DIFFERENCE: The Crew is COOPERATIVE trick-taking; Hearts + Spades are COMPETITIVE. In Hearts, you AVOID winning tricks with hearts; in Spades, you PREDICT + WIN certain tricks. In The Crew, you MUST WIN specific cards in specific tricks — but communication is HEAVILY RESTRICTED (1 signal token per hand). Result: fascinating cooperative puzzle where you use trick-taking mechanics to solve group challenges via inference rather than words. Completely new experience even for veteran trick-taking players." },
+  ],
+  wikipediaTitle: "The Crew: The Quest for Planet Nine",
+  sources: [
+    { label: "Kosmos — The Crew", url: "https://www.kosmos.de/en/product/die-crew", publisher: "Kosmos" },
+    { label: "BoardGameGeek — The Crew", url: "https://boardgamegeek.com/boardgame/284083/crew-quest-planet-nine", publisher: "BGG" },
+    { label: "Wikipedia — The Crew", url: "https://en.wikipedia.org/wiki/The_Crew:_The_Quest_for_Planet_Nine", publisher: "Wikipedia" },
+    { label: "Kennerspiel des Jahres 2020", url: "https://www.spiel-des-jahres.de/en/", publisher: "Spiel des Jahres" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

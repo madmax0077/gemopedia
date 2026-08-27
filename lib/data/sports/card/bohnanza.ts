@@ -1,0 +1,121 @@
+import type { Sport } from "@/lib/types";
+
+export const bohnanza: Sport = {
+  id: "bohnanza",
+  slug: "bohnanza",
+  name: "Bohnanza",
+  officialName: "Bohnanza",
+  aliases: [],
+  shortDescription:
+    "CLASSIC BEAN-TRADING CARD GAME by UWE ROSENBERG (also Agricola, Caverna, A Feast for Odin, Le Havre) + AMIGO Spiel (Germany, 1997). 2-7 players plant + trade + harvest beans in an agrarian trading economy. THE ONLY GAME WHERE HAND ORDER MATTERS — you must play cards in the ORDER you drew them. Iconic TRADING PHASE with negotiation. First real hit of Uwe Rosenberg + established him as top designer. Simple 45-min game + huge replay + gateway trading + euro game staple. Perfect for families + gamers. 5M+ COPIES sold. Multiple expansions.",
+  longDescription:
+    "BOHNANZA is a CLASSIC BEAN-TRADING CARD GAME designed by UWE ROSENBERG (also Agricola 2007, Caverna 2013, A Feast for Odin 2016, Le Havre 2008, Patchwork 2014, and many more heavy-euro classics) + published by AMIGO SPIEL (Germany, 1997). ONE OF THE FIRST HIT games of the modern German designer era + Rosenberg's FIRST MAJOR HIT — established him as top designer. 2-7 PLAYERS plant + trade + harvest 8 types of BEANS (Coffee Beans, Wax Beans, Blue Beans, Chili Beans, Stink Beans, Green Beans, Soy Beans, Red Beans — plus expansion beans) in an agrarian trading economy. Iconic thematic HUMOR + charming Björn Pertoft illustrations. THE ONLY GAME WHERE HAND ORDER MATTERS — you must play cards in the ORDER you drew them. Cards CANNOT be rearranged in hand — this creates constant TRADING pressure to unload useless beans + acquire useful ones. TURN STRUCTURE: (1) PLANT first bean from hand (mandatory); may plant 2nd; (2) DRAW 2 cards + TRADE with other players (negotiation + open trading); (3) HARVEST beans when field ready (each bean has value chart 1-4 coins based on quantity harvested); (4) DRAW 3 new cards to end turn. Each player has 2-3 FIELDS to plant beans; harvest to COINS (VP); first to 20 coins wins or highest at end. NEGOTIATION IS CENTRAL: players trade cards + facilitate each other's harvests + block opponents' harvests. Simple 45-min game + huge replay + gateway euro game staple. Perfect for families + gamers. 5M+ COPIES sold. Multiple EXPANSIONS: Al Cabohne (1999 mafia theme), Bohnaparte (1999 war theme), Ladybohn (2009 women's edition), High Bohn (2000 psychedelic theme), Bohnröschen (2010 fairy tale), plus BOHN TO BE WILD, BOHN CAMILA, 25TH ANNIVERSARY EDITION (2022). Considered a MODERN CLASSIC + gateway trading/negotiation game + Uwe Rosenberg's masterpiece before his heavy-euro era.",
+  category: "card-games",
+  subCategory: "trading / negotiation / farming / Uwe Rosenberg / Amigo Spiel",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "global",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany (Amigo Spiel)",
+  estimatedOrigin: "1997 original; multiple expansions + 25th Anniversary 2022",
+  players: { min: 2, max: 7, note: "2-7 players; 3-5 ideal for trading interactivity." },
+  field: {
+    surfaceName: "Small tabletop",
+    dimensions: "Small tabletop or coffee table (~40cm × 50cm)",
+    description: "Home tabletop; portable + travel-friendly.",
+  },
+  equipment: [
+    { name: "Bohnanza 25th Anniversary Edition ($20-25 USD)", description: "Current in-print version" },
+    { name: "Bohnanza expansions ($10-20 each)", description: "Al Cabohne, Bohnaparte, Ladybohn, High Bohn, etc." },
+    { name: "Bohnanza app (iOS/Android)", description: "Digital adaptation" },
+  ],
+  duration: { approximateMinutes: 45, structure: "30-60 minutes per game." },
+  objective: "Earn the most coins by planting + harvesting beans. Trading is essential.",
+  basicRules: [
+    { title: "Hand order MATTERS — cannot rearrange", body: "Central Bohnanza rule; must play in draw order." },
+    { title: "Each turn: PLANT first card (mandatory) + optional 2nd → DRAW 2 + TRADE freely → HARVEST → DRAW 3", body: "5-phase turn." },
+    { title: "8 bean types; each has value chart 1-4 coins based on planted quantity", body: "Big harvests worth more per bean." },
+    { title: "Harvest when field ready; not always at max value", body: "Trade-off timing." },
+    { title: "Trade freely with any player (any cards from hand or drawn)", body: "Negotiation core." },
+    { title: "Win at 20 coins (or highest at deck exhaustion)", body: "Fixed goal." },
+  ],
+  scoring: {
+    summary: "Coin-based (VP). Highest coins wins.",
+    breakdown: [
+      { action: "Harvest bean (based on quantity + bean type value chart)", points: "0-4 coins per harvest" },
+      { action: "Buy 3rd field (10 coins)", points: "Optional expansion" },
+      { action: "Reach 20 coins", points: "Trigger game end or automatic win" },
+    ],
+    winCondition: "First to 20 coins wins OR highest coins at deck exhaustion.",
+  },
+  governingBodies: [
+    { name: "AMIGO Spiel (publisher)", founded: 1980, headquarters: "Frankfurt, Germany" },
+    { name: "Rio Grande Games (US publisher)", founded: 1998, headquarters: "USA" },
+  ],
+  majorCompetitions: [
+    { name: "Casual game; family + gamer favorite; no formal comps", frequency: "N/A", founded: 1997, region: "worldwide" },
+    { name: "Uwe Rosenberg fan celebrations at Essen Spiel", frequency: "annual", founded: 1997, region: "Germany" },
+  ],
+  countriesPlayed: ["DE", "US", "GB", "FR", "IT", "ES", "SE", "PL", "AU", "CA", "BR", "JP", "NL"],
+  famousAthletes: [
+    "Uwe Rosenberg (DE) — Designer; hit maker",
+    "Björn Pertoft (SE) — Iconic illustrator",
+  ],
+  variants: [
+    "bohnanza-1997-original",
+    "bohnanza-al-cabohne-1999-mafia-expansion",
+    "bohnanza-bohnaparte-1999-war-expansion",
+    "bohnanza-high-bohn-2000-psychedelic-expansion",
+    "bohnanza-ladybohn-2009-women-edition",
+    "bohnröschen-2010-fairy-tale-expansion",
+    "bohnanza-25th-anniversary-2022",
+    "bohnanza-bohn-camila",
+    "bohnanza-bohn-to-be-wild",
+    "bohnanza-app-digital",
+  ],
+  relatedSports: ["catan", "ticket-to-ride", "carcassonne", "splendor", "dixit"],
+  skills: ["negotiation + trading", "hand management (fixed order)", "resource timing (harvest)", "reading opponent needs", "diplomacy"],
+  strategies: [
+    { title: "Trade constantly; unload useless beans early", body: "Fixed hand order forces trading." },
+    { title: "Big harvests = 3-4 coins per bean vs 0-1 for small", body: "Wait for larger harvests." },
+    { title: "Watch what opponents plant; trade to help THEIR harvests + gain their beans", body: "Win-win trades." },
+    { title: "Buy 3rd field (10 coins) if game supports", body: "More capacity + flexibility." },
+  ],
+  terminology: [
+    { term: "Bean", meaning: "8 types (Coffee, Wax, Blue, Chili, Stink, Green, Soy, Red)." },
+    { term: "Field", meaning: "Player's planting area (2-3 fields per player)." },
+    { term: "Harvest", meaning: "Cash in field for coins based on quantity." },
+    { term: "Trade phase", meaning: "Open negotiation between players." },
+    { term: "Coin", meaning: "VP; from bean harvests." },
+    { term: "Bean market", meaning: "Face-up cards drawn for trading round." },
+    { term: "Chili Bean (worst bean)", meaning: "Requires 3 to harvest 1 coin." },
+    { term: "Coffee Bean (best bean)", meaning: "Fewer needed for coins; premium bean." },
+    { term: "Hand order rule", meaning: "Cards must be played in draw order (unique to Bohnanza)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Bohnanza 25th Anniversary ($20-25)", body: "Current version." },
+      { title: "Play 4-5 player game for full trading", body: "2p is different." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Add expansion (Al Cabohne or Bohnaparte)", body: "Variety." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Play with different player counts", body: "3p vs 7p feel very different." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Bohnanza?", answer: "CLASSIC BEAN-TRADING CARD GAME by UWE ROSENBERG + AMIGO Spiel (Germany, 1997). 2-7 players plant + trade + harvest beans in an agrarian trading economy. THE ONLY GAME WHERE HAND ORDER MATTERS — cards cannot be rearranged; must be played in the order drawn. Iconic TRADING PHASE with open negotiation. First real hit of Uwe Rosenberg + established him as top designer. Simple 45-min game + huge replay + gateway trading + euro game staple. Perfect for families + gamers. 5M+ COPIES sold. Multiple expansions." },
+    { question: "Bohnanza vs other Uwe Rosenberg games (Agricola, Caverna)?", answer: "VERY DIFFERENT GAMES. BOHNANZA (1997): light card + trading, 30-60 min, 2-7 players, gateway. AGRICOLA (2007): heavy worker-placement + farm building, 90-150 min, 1-5 players, engine building. CAVERNA (2013): Agricola successor with cave-building, 90-180 min, 1-7 players. LE HAVRE (2008): heavy euro economic engine, 90-180 min. RECOMMENDATION: BOHNANZA for casual family trading + intro to Rosenberg. AGRICOLA/CAVERNA/LE HAVRE for heavy euro fans. Bohnanza is Rosenberg's most family-friendly + accessible game." },
+  ],
+  wikipediaTitle: "Bohnanza",
+  sources: [
+    { label: "AMIGO — Bohnanza", url: "https://www.amigo-spiele.de/spiel/bohnanza", publisher: "AMIGO Spiel" },
+    { label: "Wikipedia — Bohnanza", url: "https://en.wikipedia.org/wiki/Bohnanza", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

@@ -12,6 +12,7 @@ import { azul } from "./azul";
 import { battleship } from "./battleship";
 import { betrayalAtHouseOnTheHill } from "./betrayal-at-house-on-the-hill";
 import { blokus } from "./blokus";
+import { bloodRage } from "./blood-rage";
 import { brassBirmingham } from "./brass-birmingham";
 import { carcassonne } from "./carcassonne";
 import { catan } from "./catan";
@@ -20,6 +21,7 @@ import { chaturanga } from "./chaturanga";
 import { checkersInternational } from "./checkers-international";
 import { concordia } from "./concordia";
 import { connectFour } from "./connect-four";
+import { cthulhuWars } from "./cthulhu-wars";
 import { diplomacy } from "./diplomacy";
 import { everdell } from "./everdell";
 import { frosthaven } from "./frosthaven";
@@ -31,6 +33,7 @@ import { hex } from "./hex";
 import { hive } from "./hive";
 import { hnefatafl } from "./hnefatafl";
 import { kalah } from "./kalah";
+import { kemet } from "./kemet";
 import { kingOfTokyo } from "./king-of-tokyo";
 import { leHavre } from "./le-havre";
 import { lostRuinsOfArnak } from "./lost-ruins-of-arnak";
@@ -38,6 +41,7 @@ import { ludo } from "./ludo";
 import { maracaibo } from "./maracaibo";
 import { memoir44 } from "./memoir-44";
 import { monopoly } from "./monopoly";
+import { nemesis } from "./nemesis";
 import { nineMensMorris } from "./nine-mens-morris";
 import { onitama } from "./onitama";
 import { pachisi } from "./pachisi";
@@ -47,6 +51,7 @@ import { powerGrid } from "./power-grid";
 import { puertoRico } from "./puerto-rico";
 import { quoridor } from "./quoridor";
 import { reversi } from "./reversi";
+import { risingSun } from "./rising-sun";
 import { risk } from "./risk";
 import { root } from "./root";
 import { royalGameOfUr } from "./royal-game-of-ur";
@@ -57,18 +62,23 @@ import { scythe } from "./scythe";
 import { shatranj } from "./shatranj";
 import { snakesAndLadders } from "./snakes-and-ladders";
 import { sorry } from "./sorry";
+import { spaceAlert } from "./space-alert";
 import { splendor } from "./splendor";
 import { spiritIsland } from "./spirit-island";
 import { stratego } from "./stratego";
 import { tak } from "./tak";
 import { teotihuacanCityOfGods } from "./teotihuacan-city-of-gods";
 import { terraformingMars } from "./terraforming-mars";
+import { terraMystica } from "./terra-mystica";
 import { theGameOfLife } from "./the-game-of-life";
 import { throughTheAges } from "./through-the-ages";
 import { ticketToRide } from "./ticket-to-ride";
 import { twilightImperium } from "./twilight-imperium";
+import { twilightStruggle } from "./twilight-struggle";
 import { tzolkinTheMayanCalendar } from "./tzolkin-the-mayan-calendar";
+import { warOfTheRing } from "./war-of-the-ring";
 import { wingspan } from "./wingspan";
+import { zombicide } from "./zombicide";
 
 /** Board games category — Monopoly, Catan, modern euros, party favorites, horror storytelling, abstract strategy (Hex, Hive, Onitama, Santorini, Quoridor, Abalone, Stratego, International Draughts, Tak, Arimaa), ancient chess ancestors (Chaturanga, Shatranj, Royal Game of Ur, Senet, Pachisi, Hnefatafl, Kalah), heavy classics (Acquire, Diplomacy, Power Grid, Axis & Allies, Memoir '44), top-BGG heavy euros (Brass: Birmingham, Ark Nova, Everdell, Agricola, Puerto Rico, Concordia, Caverna, A Feast for Odin, Le Havre, Great Western Trail, Gaia Project, Tzolk'in, Through the Ages, Teotihuacan, Lost Ruins of Arnak, Maracaibo), and campaign/legacy dungeon-crawlers (Frosthaven, Pandemic Legacy: Season 1, Gloomhaven: Jaws of the Lion). */
 export const BOARD_GAMES: Sport[] = [
@@ -84,6 +94,7 @@ export const BOARD_GAMES: Sport[] = [
   battleship,
   betrayalAtHouseOnTheHill,
   blokus,
+  bloodRage,
   brassBirmingham,
   carcassonne,
   catan,
@@ -92,6 +103,7 @@ export const BOARD_GAMES: Sport[] = [
   checkersInternational,
   concordia,
   connectFour,
+  cthulhuWars,
   diplomacy,
   everdell,
   frosthaven,
@@ -103,6 +115,7 @@ export const BOARD_GAMES: Sport[] = [
   hive,
   hnefatafl,
   kalah,
+  kemet,
   kingOfTokyo,
   leHavre,
   lostRuinsOfArnak,
@@ -110,6 +123,7 @@ export const BOARD_GAMES: Sport[] = [
   maracaibo,
   memoir44,
   monopoly,
+  nemesis,
   nineMensMorris,
   onitama,
   pachisi,
@@ -119,6 +133,7 @@ export const BOARD_GAMES: Sport[] = [
   puertoRico,
   quoridor,
   reversi,
+  risingSun,
   risk,
   root,
   royalGameOfUr,
@@ -129,16 +144,21 @@ export const BOARD_GAMES: Sport[] = [
   shatranj,
   snakesAndLadders,
   sorry,
+  spaceAlert,
   splendor,
   spiritIsland,
   stratego,
   tak,
   teotihuacanCityOfGods,
   terraformingMars,
+  terraMystica,
   theGameOfLife,
   throughTheAges,
   ticketToRide,
   twilightImperium,
+  twilightStruggle,
   tzolkinTheMayanCalendar,
+  warOfTheRing,
   wingspan,
+  zombicide,
 ];

@@ -6,13 +6,20 @@ import { brazilianJiuJitsu } from "./brazilian-jiu-jitsu";
 import { capoeira } from "./capoeira";
 import { fencing } from "./fencing";
 import { freestyleWrestling } from "./freestyle-wrestling";
+import { hema } from "./hema";
 import { judo } from "./judo";
+import { kalaripayattu } from "./kalaripayattu";
 import { karate } from "./karate";
 import { kendo } from "./kendo";
 import { kickboxing } from "./kickboxing";
+import { kravMaga } from "./krav-maga";
+import { kungFu } from "./kung-fu";
 import { mixedMartialArts } from "./mixed-martial-arts";
 import { muayThai } from "./muay-thai";
+import { sambo } from "./sambo";
+import { savate } from "./savate";
 import { senegaleseWrestling } from "./senegalese-wrestling";
+import { silambam } from "./silambam";
 import { sumo } from "./sumo";
 import { taekwondo } from "./taekwondo";
 import { wushu } from "./wushu";
@@ -28,13 +35,20 @@ export const COMBAT_SPORTS: Sport[] = [
   capoeira,
   fencing,
   freestyleWrestling,
+  hema,
   judo,
+  kalaripayattu,
   karate,
   kendo,
   kickboxing,
+  kravMaga,
+  kungFu,
   mixedMartialArts,
   muayThai,
+  sambo,
+  savate,
   senegaleseWrestling,
+  silambam,
   sumo,
   taekwondo,
   wushu,

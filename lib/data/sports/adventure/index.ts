@@ -4,9 +4,11 @@ import { baseJumping } from "./base-jumping";
 import { bmx } from "./bmx";
 import { bmxFreestyle } from "./bmx-freestyle";
 import { bouldering } from "./bouldering";
+import { bungeeJumping } from "./bungee-jumping";
 import { canyoning } from "./canyoning";
 import { modernPentathlon } from "./modern-pentathlon";
 import { mountainBiking } from "./mountain-biking";
+import { orienteering } from "./orienteering";
 import { parkour } from "./parkour";
 import { roadCycling } from "./road-cycling";
 import { rockClimbing } from "./rock-climbing";
@@ -15,15 +17,17 @@ import { skydiving } from "./skydiving";
 import { trackCycling } from "./track-cycling";
 import { wingsuitFlying } from "./wingsuit-flying";
 
-/** Adventure & extreme sports category — climbing, parkour, base jumping, canyoning, BMX, wingsuit. */
+/** Adventure & extreme sports category — climbing, parkour, base jumping, canyoning, BMX, wingsuit, orienteering navigation, bungee jumping. */
 export const ADVENTURE_SPORTS: Sport[] = [
   baseJumping,
   bmx,
   bmxFreestyle,
   bouldering,
+  bungeeJumping,
   canyoning,
   modernPentathlon,
   mountainBiking,
+  orienteering,
   parkour,
   roadCycling,
   rockClimbing,

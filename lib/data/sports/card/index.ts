@@ -2,7 +2,10 @@ import type { Sport } from "@/lib/types";
 
 import { androidNetrunner } from "./android-netrunner";
 import { arkhamHorrorLcg } from "./arkham-horror-lcg";
+import { ascension } from "./ascension";
+import { bang } from "./bang";
 import { belote } from "./belote";
+import { bohnanza } from "./bohnanza";
 import { briscola } from "./briscola";
 import { canasta } from "./canasta";
 import { coup } from "./coup";
@@ -10,17 +13,20 @@ import { crazyEights } from "./crazy-eights";
 import { cribbage } from "./cribbage";
 import { disneyLorcana } from "./disney-lorcana";
 import { dixit } from "./dixit";
+import { dominion } from "./dominion";
 import { durak } from "./durak";
 import { euchre } from "./euchre";
 import { fiveCardDraw } from "./five-card-draw";
 import { fiveHundred } from "./five-hundred";
 import { fleshAndBlood } from "./flesh-and-blood";
+import { fluxx } from "./fluxx";
 import { freecell } from "./freecell";
 import { frenchTarot } from "./french-tarot";
 import { ginRummy } from "./gin-rummy";
 import { goFish } from "./go-fish";
 import { hanafuda } from "./hanafuda";
 import { hearts } from "./hearts";
+import { jaipur } from "./jaipur";
 import { keyforge } from "./keyforge";
 import { klondikeSolitaire } from "./klondike-solitaire";
 import { lordOfTheRingsLcg } from "./lord-of-the-rings-lcg";
@@ -35,13 +41,17 @@ import { pokemonTcg } from "./pokemon-tcg";
 import { scopa } from "./scopa";
 import { sevenCardStud } from "./seven-card-stud";
 import { skat } from "./skat";
+import { skullKing } from "./skull-king";
 import { solitaire } from "./solitaire";
 import { spades } from "./spades";
 import { spiderSolitaire } from "./spider-solitaire";
+import { starRealms } from "./star-realms";
 import { starWarsLcg } from "./star-wars-lcg";
+import { sushiGo } from "./sushi-go";
 import { tarot } from "./tarot";
 import { texasHoldem } from "./texas-holdem";
 import { theCrew } from "./the-crew";
+import { timeline } from "./timeline";
 import { uno } from "./uno";
 import { warCardGame } from "./war-card-game";
 import { whist } from "./whist";
@@ -51,7 +61,10 @@ import { yuGiOh } from "./yu-gi-oh";
 export const CARD_GAMES: Sport[] = [
   androidNetrunner,
   arkhamHorrorLcg,
+  ascension,
+  bang,
   belote,
+  bohnanza,
   briscola,
   canasta,
   coup,
@@ -59,17 +72,20 @@ export const CARD_GAMES: Sport[] = [
   cribbage,
   disneyLorcana,
   dixit,
+  dominion,
   durak,
   euchre,
   fiveCardDraw,
   fiveHundred,
   fleshAndBlood,
+  fluxx,
   freecell,
   frenchTarot,
   ginRummy,
   goFish,
   hanafuda,
   hearts,
+  jaipur,
   keyforge,
   klondikeSolitaire,
   lordOfTheRingsLcg,
@@ -84,13 +100,17 @@ export const CARD_GAMES: Sport[] = [
   scopa,
   sevenCardStud,
   skat,
+  skullKing,
   solitaire,
   spades,
   spiderSolitaire,
+  starRealms,
   starWarsLcg,
+  sushiGo,
   tarot,
   texasHoldem,
   theCrew,
+  timeline,
   uno,
   warCardGame,
   whist,

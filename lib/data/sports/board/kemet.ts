@@ -1,0 +1,121 @@
+import type { Sport } from "@/lib/types";
+
+export const kemet: Sport = {
+  id: "kemet",
+  slug: "kemet",
+  name: "Kemet",
+  officialName: "Kemet: Blood and Sand",
+  aliases: ["Kemet", "Kemet: Blood and Sand", "Kemet Ta-Seti expansion"],
+  shortDescription:
+    "FAST AREA-CONTROL WARGAME set in MYTHIC EGYPT, designed by JACQUES BARIOT + GUILLAUME MONTIAGE + published by MATAGOT (France, 2012). Refreshed as KEMET: BLOOD AND SAND (2021 Matagot). 3-5 players lead EGYPTIAN CITY-STATES vying for control via BATTLES, PYRAMIDS, DIVINE INTERVENTIONS. Fast turn-based combat with dice + card play. Signature POWER TILE draft — buy tiles from 3 color pyramids for game-length powers. Signature TOTEMS + MYTHIC MONSTERS (Sphinx, Mummy, Elephant, Scorpion King, etc.). Fast games (90 min) + high player interaction. Considered a MODERN AREA-CONTROL CLASSIC.",
+  longDescription:
+    "KEMET is a FAST AREA-CONTROL WARGAME set in MYTHIC EGYPT. Original design by JACQUES BARIOT + GUILLAUME MONTIAGE + illustrated by CHRISTIAN CHAUSSARD; published by MATAGOT (France, 2012). Refreshed + updated as KEMET: BLOOD AND SAND (2021 Matagot Kickstarter — significant graphic + gameplay refresh; considered definitive version). 3-5 PLAYERS lead EGYPTIAN CITY-STATES vying for control of Egypt via BATTLES, PYRAMIDS, DIVINE INTERVENTIONS. Setting: mythic Ancient Egypt with dieties + monsters. GAMEPLAY: 5 rounds (or first-to-8 VP variant), each round 3 phases: (1) NIGHT (day/night marker + draw cards), (2) DAY (take actions — Recruit, Move, Attack, Buy Power Tile, Level Up Pyramid, Pray for Prayer Points), (3) DUSK (score end-of-turn). SIGNATURE POWER TILE DRAFT: buy tiles from 3 COLOR PYRAMIDS (Red = combat/aggression, White = movement/utility, Blue = economy/defense); pyramids have 3 levels; each level unlocks more powerful tiles. Signature TOTEMS + MYTHIC MONSTERS: buy MYTHIC CREATURES (Sphinx, Mummy, Elephant, Scorpion King, Giant Snake, Phoenix, plus more in expansions) as army units OR summon via power tiles. FAST TURN-BASED COMBAT: attacker vs defender each play a card face-down + reveal; higher attack value + card modifiers wins; loser retreats or dies. Card play is DETERMINISTIC (no dice) — modifiers from tiles + card cost. Deep combat despite quick resolution. 5 ROUNDS or first-to-8 VP wins. VP earned via: winning battles, controlling temples, upgrading pyramids, glory tiles (secret objectives). Fast games (60-120 min) + high player interaction. Considered a MODERN AREA-CONTROL CLASSIC + gateway heavier euro-warhybrid. KEMET: TA-SETI (2015) expansion adds 3-4 more factions + power tiles + monsters. BLOOD AND SAND (2021) is refresh + expansion collection.",
+  category: "board-games",
+  subCategory: "area control / mythic Egypt / fast wargame / Matagot / draft mechanics",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "FR",
+  regionOfOrigin: "France (Matagot Paris)",
+  estimatedOrigin: "2012 original; 2015 Ta-Seti expansion; 2021 Blood and Sand refresh (definitive)",
+  players: { min: 3, max: 5, note: "3-5 players; 4-5 ideal for interaction. Blood and Sand supports 2p variant." },
+  field: {
+    surfaceName: "Standard tabletop",
+    dimensions: "Large board (~60cm × 80cm)",
+    description: "Home tabletop; requires table for map + player boards + tiles + cards.",
+  },
+  equipment: [
+    { name: "Kemet: Blood and Sand ($100 USD, 2021 refresh)", description: "Definitive modern version; retail" },
+    { name: "Kemet: Blood and Sand Kickstarter box ($150-200)", description: "All-in with monsters + upgrades" },
+    { name: "Kemet original + Ta-Seti expansion (out of print, $80+)", description: "Original 2012 game with expansion" },
+  ],
+  duration: { approximateMinutes: 90, structure: "60-120 minutes per game; first game 2 hours." },
+  objective: "First to 8 VP wins immediately (Blood and Sand variant). Alternatively play 5 rounds + highest VP wins.",
+  basicRules: [
+    { title: "Each round: Night (draw cards) → Day (actions) → Dusk (scoring)", body: "Cyclical structure." },
+    { title: "Day actions: Recruit troops, Move troops, Attack, Buy Power Tile, Level Up Pyramid, Pray", body: "Menu of 6 actions." },
+    { title: "Buy Power Tiles from 3 color pyramids (Red/White/Blue) at 3 levels", body: "Personal tech tree." },
+    { title: "Combat: play card face-down; reveal + resolve deterministically", body: "No dice in combat." },
+    { title: "Score VP via battles won, temples held, pyramids leveled, glory tiles", body: "Multiple VP paths." },
+    { title: "First to 8 VP wins (Blood and Sand)", body: "Fast game." },
+  ],
+  scoring: {
+    summary: "VP-based. First to 8 VP wins (or highest after 5 rounds).",
+    breakdown: [
+      { action: "Win battle", points: "1 VP" },
+      { action: "Control temple at Dusk", points: "1-2 VP" },
+      { action: "Fully upgrade pyramid (level 4)", points: "1 VP" },
+      { action: "Secret Glory Tile fulfillment", points: "1-2 VP" },
+      { action: "First to 8 VP wins immediately", points: "Game end" },
+    ],
+    winCondition: "First to 8 VP wins immediately (in Blood and Sand). Original: highest VP after 5 rounds.",
+  },
+  governingBodies: [
+    { name: "Matagot (publisher)", founded: 2003, headquarters: "Paris, France" },
+    { name: "BoardGameGeek (community tracking)", founded: 2000, headquarters: "USA" },
+  ],
+  majorCompetitions: [
+    { name: "Matagot demos + expo tournaments", frequency: "annual", founded: 2013, region: "Europe" },
+    { name: "Essen Spiel + BGG.CON demos", frequency: "annual", founded: 2013, region: "worldwide" },
+  ],
+  countriesPlayed: ["FR", "US", "GB", "DE", "IT", "ES", "SE", "PL", "AU", "CA", "BR", "JP", "NL"],
+  famousAthletes: [
+    "Jacques Bariot + Guillaume Montiage (FR) — Designers",
+    "Christian Chaussard (FR) — Illustrator",
+  ],
+  variants: [
+    "kemet-2012-original",
+    "kemet-ta-seti-2015-expansion",
+    "kemet-book-of-the-dead-2015-mini-expansion",
+    "kemet-seth-2016-mini-expansion",
+    "kemet-blood-and-sand-2021-refresh-definitive",
+    "kemet-blood-and-sand-book-of-the-dead-2021-expansion",
+  ],
+  relatedSports: ["war-of-the-ring", "rising-sun", "blood-rage", "twilight-imperium", "cthulhu-wars"],
+  skills: ["area control planning", "power tile evaluation", "combat card play", "asymmetric strategy", "quick decision-making"],
+  strategies: [
+    { title: "Choose power tile focus: Red aggression vs Blue defense", body: "Commit to strategy." },
+    { title: "Recruit + attack early for VP", body: "Battles are 1 VP each." },
+    { title: "Temples: control temples at Dusk for VP", body: "Consistent VP source." },
+    { title: "Save cards for critical fights", body: "Card management wins combat." },
+    { title: "Path to 8 VP: multiple wins + temples + upgrades", body: "Multiple paths, not single." },
+  ],
+  terminology: [
+    { term: "Pyramid", meaning: "Player-owned tech tree; 3 colors, 4 levels each." },
+    { term: "Power Tile", meaning: "Ability card bought from pyramid; permanent." },
+    { term: "Temple", meaning: "Controllable structure; VP source." },
+    { term: "Divine Intervention", meaning: "One-time powerful ability from cards." },
+    { term: "Glory Tile", meaning: "Secret personal objective for bonus VP." },
+    { term: "Mythic Creature", meaning: "Elite unit (Sphinx, Mummy, Elephant, etc.)." },
+    { term: "Totem", meaning: "Player marker for territory." },
+    { term: "Prayer Point", meaning: "Currency; used to buy tiles + cards." },
+    { term: "Day/Night/Dusk", meaning: "3 phases per round." },
+    { term: "Blood and Sand", meaning: "2021 refresh; definitive version." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Buy Kemet: Blood and Sand ($100)", body: "Definitive version." },
+      { title: "Watch Watch It Played tutorial", body: "Learn combat + pyramid draft." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Play with 4-5 players for full interaction", body: "3p also works." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Add Book of the Dead + expansion content", body: "More monsters + tiles." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Kemet?", answer: "FAST AREA-CONTROL WARGAME set in MYTHIC EGYPT, designed by JACQUES BARIOT + GUILLAUME MONTIAGE + published by MATAGOT (France, 2012). Refreshed as KEMET: BLOOD AND SAND (2021). 3-5 players lead EGYPTIAN CITY-STATES vying for control via BATTLES, PYRAMIDS, DIVINE INTERVENTIONS. Fast turn-based combat with dice + card play. Signature POWER TILE draft. Signature TOTEMS + MYTHIC MONSTERS. Fast games (90 min) + high player interaction. Considered a MODERN AREA-CONTROL CLASSIC + gateway wargame." },
+    { question: "Kemet original vs Blood and Sand?", answer: "BUY BLOOD AND SAND (2021 refresh). Blood and Sand is a full refresh + graphic upgrade + gameplay refinements + includes Ta-Seti expansion factions + upgraded miniatures. Original Kemet (2012) is out of print + collectible; not needed if you have Blood and Sand. Blood and Sand = definitive version. Available for $100 retail; Kickstarter box $150-200 with additional monsters + upgrades." },
+  ],
+  wikipediaTitle: "Kemet (board game)",
+  sources: [
+    { label: "Matagot — Kemet Blood and Sand", url: "https://www.matagot.com/en/games/kemet-blood-and-sand/", publisher: "Matagot" },
+    { label: "BoardGameGeek — Kemet", url: "https://boardgamegeek.com/boardgame/127023/kemet", publisher: "BoardGameGeek" },
+  ],
+  lastVerified: "2026-08-27",
+  confidence: "verified",
+};

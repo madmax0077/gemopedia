@@ -12,6 +12,7 @@ import { euchre } from "./euchre";
 import { fiveCardDraw } from "./five-card-draw";
 import { fleshAndBlood } from "./flesh-and-blood";
 import { freecell } from "./freecell";
+import { frenchTarot } from "./french-tarot";
 import { ginRummy } from "./gin-rummy";
 import { goFish } from "./go-fish";
 import { hanafuda } from "./hanafuda";
@@ -50,6 +51,7 @@ export const CARD_GAMES: Sport[] = [
   fiveCardDraw,
   fleshAndBlood,
   freecell,
+  frenchTarot,
   ginRummy,
   goFish,
   hanafuda,

@@ -29,10 +29,12 @@ import { senet } from "./senet";
 import { sevenWonders } from "./seven-wonders";
 import { scythe } from "./scythe";
 import { snakesAndLadders } from "./snakes-and-ladders";
+import { sorry } from "./sorry";
 import { splendor } from "./splendor";
 import { spiritIsland } from "./spirit-island";
 import { stratego } from "./stratego";
 import { terraformingMars } from "./terraforming-mars";
+import { theGameOfLife } from "./the-game-of-life";
 import { ticketToRide } from "./ticket-to-ride";
 import { twilightImperium } from "./twilight-imperium";
 import { wingspan } from "./wingspan";
@@ -68,10 +70,12 @@ export const BOARD_GAMES: Sport[] = [
   senet,
   sevenWonders,
   snakesAndLadders,
+  sorry,
   splendor,
   spiritIsland,
   stratego,
   terraformingMars,
+  theGameOfLife,
   ticketToRide,
   twilightImperium,
   wingspan,

@@ -13,10 +13,14 @@ import { neverHaveIEver } from "./never-have-i-ever";
 import { operation } from "./operation";
 import { pictionary } from "./pictionary";
 import { spyfall } from "./spyfall";
+import { taboo } from "./taboo";
+import { telephone } from "./telephone";
 import { truthOrDare } from "./truth-or-dare";
+import { twister } from "./twister";
 import { twoTruthsAndALie } from "./two-truths-and-a-lie";
+import { werewolf } from "./werewolf";
 
-/** Party games category — Charades, Codenames, Cluedo, Werewolf/Mafia, Two Truths and a Lie, Pictionary, Truth or Dare, Never Have I Ever, Spyfall, Jenga, Operation, Guess Who?, Mouse Trap, Hot Potato, Heads Up!. */
+/** Party games category — Charades, Codenames, Cluedo, Werewolf/Mafia, Two Truths and a Lie, Pictionary, Truth or Dare, Never Have I Ever, Spyfall, Jenga, Operation, Guess Who?, Mouse Trap, Hot Potato, Heads Up!, Twister, Taboo, Telephone. */
 export const PARTY_GAMES: Sport[] = [
   charades,
   cluedo,
@@ -31,6 +35,10 @@ export const PARTY_GAMES: Sport[] = [
   operation,
   pictionary,
   spyfall,
+  taboo,
+  telephone,
   truthOrDare,
+  twister,
   twoTruthsAndALie,
+  werewolf,
 ];

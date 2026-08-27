@@ -9,10 +9,12 @@ import { euchre } from "./euchre";
 import { fiveCardDraw } from "./five-card-draw";
 import { freecell } from "./freecell";
 import { ginRummy } from "./gin-rummy";
+import { goFish } from "./go-fish";
 import { hanafuda } from "./hanafuda";
 import { hearts } from "./hearts";
 import { klondikeSolitaire } from "./klondike-solitaire";
 import { magicTheGathering } from "./magic-the-gathering";
+import { oldMaid } from "./old-maid";
 import { omahaPoker } from "./omaha-poker";
 import { pinochle } from "./pinochle";
 import { pokemonTcg } from "./pokemon-tcg";
@@ -24,6 +26,7 @@ import { spiderSolitaire } from "./spider-solitaire";
 import { tarot } from "./tarot";
 import { texasHoldem } from "./texas-holdem";
 import { uno } from "./uno";
+import { warCardGame } from "./war-card-game";
 import { whist } from "./whist";
 import { yuGiOh } from "./yu-gi-oh";
 
@@ -38,10 +41,12 @@ export const CARD_GAMES: Sport[] = [
   fiveCardDraw,
   freecell,
   ginRummy,
+  goFish,
   hanafuda,
   hearts,
   klondikeSolitaire,
   magicTheGathering,
+  oldMaid,
   omahaPoker,
   pinochle,
   pokemonTcg,
@@ -53,6 +58,7 @@ export const CARD_GAMES: Sport[] = [
   tarot,
   texasHoldem,
   uno,
+  warCardGame,
   whist,
   yuGiOh,
 ];

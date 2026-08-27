@@ -1,6 +1,7 @@
 import type { Sport } from "@/lib/types";
 
 import { abalone } from "./abalone";
+import { acquire } from "./acquire";
 import { arkhamHorror } from "./arkham-horror";
 import { azul } from "./azul";
 import { battleship } from "./battleship";
@@ -10,6 +11,7 @@ import { carcassonne } from "./carcassonne";
 import { catan } from "./catan";
 import { checkersInternational } from "./checkers-international";
 import { connectFour } from "./connect-four";
+import { diplomacy } from "./diplomacy";
 import { gloomhaven } from "./gloomhaven";
 import { hex } from "./hex";
 import { hive } from "./hive";
@@ -18,6 +20,7 @@ import { ludo } from "./ludo";
 import { monopoly } from "./monopoly";
 import { nineMensMorris } from "./nine-mens-morris";
 import { onitama } from "./onitama";
+import { pachisi } from "./pachisi";
 import { pandemic } from "./pandemic";
 import { quoridor } from "./quoridor";
 import { reversi } from "./reversi";
@@ -39,9 +42,10 @@ import { ticketToRide } from "./ticket-to-ride";
 import { twilightImperium } from "./twilight-imperium";
 import { wingspan } from "./wingspan";
 
-/** Board games category — Monopoly, Catan, Backgammon, Go, Shogi, modern euro classics + party favorites + horror storytelling + abstract strategy (Hex, Hive, Onitama, Santorini, Quoridor, Abalone, Stratego, International Draughts) + ancient (Royal Game of Ur, Senet). */
+/** Board games category — Monopoly, Catan, Backgammon, Go, Shogi, modern euro classics + party favorites + horror storytelling + abstract strategy (Hex, Hive, Onitama, Santorini, Quoridor, Abalone, Stratego, International Draughts) + ancient (Royal Game of Ur, Senet, Pachisi) + heavy classics (Acquire, Diplomacy). */
 export const BOARD_GAMES: Sport[] = [
   abalone,
+  acquire,
   arkhamHorror,
   azul,
   battleship,
@@ -51,6 +55,7 @@ export const BOARD_GAMES: Sport[] = [
   catan,
   checkersInternational,
   connectFour,
+  diplomacy,
   gloomhaven,
   hex,
   hive,
@@ -59,6 +64,7 @@ export const BOARD_GAMES: Sport[] = [
   monopoly,
   nineMensMorris,
   onitama,
+  pachisi,
   pandemic,
   quoridor,
   reversi,

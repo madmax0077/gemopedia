@@ -3,6 +3,7 @@ import type { Sport } from "@/lib/types";
 import { charades } from "./charades";
 import { cluedo } from "./cluedo";
 import { codenames } from "./codenames";
+import { crokinole } from "./crokinole";
 import { guessWho } from "./guess-who";
 import { headsUp } from "./heads-up";
 import { hotPotato } from "./hot-potato";
@@ -20,11 +21,12 @@ import { twister } from "./twister";
 import { twoTruthsAndALie } from "./two-truths-and-a-lie";
 import { werewolf } from "./werewolf";
 
-/** Party games category — Charades, Codenames, Cluedo, Werewolf/Mafia, Two Truths and a Lie, Pictionary, Truth or Dare, Never Have I Ever, Spyfall, Jenga, Operation, Guess Who?, Mouse Trap, Hot Potato, Heads Up!, Twister, Taboo, Telephone. */
+/** Party games category — Charades, Codenames, Cluedo, Werewolf/Mafia, Two Truths and a Lie, Pictionary, Truth or Dare, Never Have I Ever, Spyfall, Jenga, Operation, Guess Who?, Mouse Trap, Hot Potato, Heads Up!, Twister, Taboo, Telephone, Crokinole. */
 export const PARTY_GAMES: Sport[] = [
   charades,
   cluedo,
   codenames,
+  crokinole,
   guessWho,
   headsUp,
   hotPotato,

@@ -3,6 +3,7 @@ import type { Sport } from "@/lib/types";
 import { belote } from "./belote";
 import { briscola } from "./briscola";
 import { canasta } from "./canasta";
+import { coup } from "./coup";
 import { crazyEights } from "./crazy-eights";
 import { cribbage } from "./cribbage";
 import { disneyLorcana } from "./disney-lorcana";
@@ -10,6 +11,7 @@ import { dixit } from "./dixit";
 import { durak } from "./durak";
 import { euchre } from "./euchre";
 import { fiveCardDraw } from "./five-card-draw";
+import { fiveHundred } from "./five-hundred";
 import { fleshAndBlood } from "./flesh-and-blood";
 import { freecell } from "./freecell";
 import { frenchTarot } from "./french-tarot";
@@ -18,6 +20,7 @@ import { goFish } from "./go-fish";
 import { hanafuda } from "./hanafuda";
 import { hearts } from "./hearts";
 import { klondikeSolitaire } from "./klondike-solitaire";
+import { loveLetter } from "./love-letter";
 import { magicTheGathering } from "./magic-the-gathering";
 import { oldMaid } from "./old-maid";
 import { omahaPoker } from "./omaha-poker";
@@ -37,11 +40,12 @@ import { warCardGame } from "./war-card-game";
 import { whist } from "./whist";
 import { yuGiOh } from "./yu-gi-oh";
 
-/** Card games category — Poker (Texas Holdem, Omaha, 7-Card Stud, 5-Card Draw), Bridge, Rummy, UNO, MTG, Pokémon TCG, Yu-Gi-Oh, Disney Lorcana, Flesh and Blood, One Piece TCG, solitaire, and regional classics (Belote, Pinochle, Skat, Tarot, Hanafuda, Canasta, Durak, Briscola, Scopa) + storytelling (Dixit). */
+/** Card games category — Poker (Texas Holdem, Omaha, 7-Card Stud, 5-Card Draw), Bridge, Rummy, UNO, MTG, Pokémon TCG, Yu-Gi-Oh, Disney Lorcana, Flesh and Blood, One Piece TCG, solitaire, and regional classics (Belote, Pinochle, Skat, Tarot, Hanafuda, Canasta, Durak, Briscola, Scopa, French Tarot, Australian 500) + storytelling (Dixit) + microgames + bluffing (Love Letter, Coup). */
 export const CARD_GAMES: Sport[] = [
   belote,
   briscola,
   canasta,
+  coup,
   crazyEights,
   cribbage,
   disneyLorcana,
@@ -49,6 +53,7 @@ export const CARD_GAMES: Sport[] = [
   durak,
   euchre,
   fiveCardDraw,
+  fiveHundred,
   fleshAndBlood,
   freecell,
   frenchTarot,
@@ -57,6 +62,7 @@ export const CARD_GAMES: Sport[] = [
   hanafuda,
   hearts,
   klondikeSolitaire,
+  loveLetter,
   magicTheGathering,
   oldMaid,
   omahaPoker,

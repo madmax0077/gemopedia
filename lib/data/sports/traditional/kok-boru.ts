@@ -1,0 +1,123 @@
+import type { Sport } from "@/lib/types";
+
+export const kokBoru: Sport = {
+  id: "kok-boru",
+  slug: "kok-boru",
+  name: "Kok Boru",
+  officialName: "Kok Boru (Kyrgyz: Көк бөрү — 'Grey Wolf')",
+  aliases: ["Kok-boru", "Ulak Tartysh", "Kyrgyz Kok Boru", "Grey Wolf"],
+  shortDescription:
+    "KYRGYZSTAN'S NATIONAL SPORT — an ancient CENTRAL ASIAN HORSEBACK TEAM SPORT related to but distinct from AFGHANI BUZKASHI. Two teams of 4 mounted riders compete on a rectangular field (~200 m × 70 m) to grab a HEADLESS GOAT (or MODERN LEATHER SUBSTITUTE, ~35 kg) and deposit it into the opposing team's raised STONE GOAL called TAI KAZAN. Requires exceptional HORSEMANSHIP, STRENGTH, TEAMWORK, and courage. Featured centrally at the WORLD NOMAD GAMES (founded 2014 in Cholpon-Ata, Kyrgyzstan). Governed by KYRGYZ KOK BORU FEDERATION. National championship + international with Kazakhstan + Uzbekistan.",
+  longDescription:
+    "KOK BORU (Kyrgyz: Көк бөрү, literally 'GREY WOLF' — reflecting the sport's ancient origins as wolf-hunting on horseback) is KYRGYZSTAN'S NATIONAL SPORT — an ancient CENTRAL ASIAN HORSEBACK TEAM SPORT played on the vast STEPPES for CENTURIES. HISTORY: Documented for over 1000 YEARS across the Central Asian steppes; originated among nomadic Turkic + Mongol peoples as WARRIOR TRAINING + WOLF-HUNTING SIMULATION (grey wolves were both a symbol + a threat to livestock; the sport dramatizes chasing a wolf carcass across the steppe). Formalized during the SOVIET ERA + institutionalized as Kyrgyzstan's national sport post-independence (1991). Related but distinct from AFGHAN BUZKASHI (which is more chaotic + individual-focused) + KAZAKH KOKPAR (very similar rules). GAME MECHANICS: (1) TWO TEAMS OF 4 MOUNTED RIDERS each. (2) FIELD: rectangular, ~200 m long × 70 m wide (SODA — dirt/grass surface). Each end has a raised STONE GOAL called TAI KAZAN ('foal's cauldron') — a circular podium ~1.2 m high × 4 m diameter into which the goat carcass must be deposited. (3) GAME ITEM: originally a headless goat carcass (ULAK — weighing ~30-40 kg with head, hooves, and entrails removed) — MODERN COMPETITIONS often use a LEATHER-FILLED MOLDED REPLICA of similar weight for hygiene + animal-welfare concerns. (4) PLAY: A referee tosses the ulak into the center; riders swarm to grab it — lift it while galloping — evade opponents — carry to opponents' tai kazan + throw it in. TEAMWORK is crucial (blockers protect the carrier; support riders create alleys). (5) MATCH FORMAT: 3 periods × 20 MINUTES each with 10-minute breaks; team with most successful ulak-drops wins. (6) HORSES: specialized KYRGYZ KOKPAR HORSES (short, stocky, powerful) trained specifically for the sport — worth $10,000+ for top competitive horses. RULES + FAIR PLAY: NO STRIKING opponents, NO INJURING horses, NO USING WEAPONS/WHIPS ON OPPONENT'S HORSE (only on your own horse). Riders may push, block, and grab from opponents. Modern professional rules emphasize animal welfare + rider safety. WORLD NOMAD GAMES: Founded 2014 in KYRGYZSTAN (CHOLPON-ATA) as a global celebration of nomadic Central Asian sports — Kok Boru is the CENTERPIECE event. HELD BIENNIALLY; over 40 countries participate now including MONGOLIA, KAZAKHSTAN, RUSSIA, TURKEY, USA (Native American teams). KYRGYZSTAN dominates historically. NATIONAL: Kyrgyz teams from CHUY, OSH, TALAS, ISSYK-KUL, and JALAL-ABAD regions compete; NATIONAL CHAMPIONSHIP annually. GOVERNANCE: KYRGYZ KOK BORU FEDERATION (Кыргыз Көк бөрү Федерациясы); WORLD ETHNOSPORT CONFEDERATION coordinates international events. CULTURAL SIGNIFICANCE: Kok Boru is central to Kyrgyz IDENTITY, HORSE CULTURE, and NOMADIC HERITAGE; performed at WEDDINGS, FUNERALS, NEW YEAR (NOORUZ), and NATIONAL HOLIDAYS. Related sports: BUZKASHI (Afghanistan — more chaotic, individual-focused, larger fields, no formal goal), KOKPAR (Kazakhstan — very similar rules), OGLAK TARTYSH (Uzbekistan, Tajikistan). Featured in the film 'BURIED SEEDS' + BBC + Vice documentaries; hosting the World Nomad Games has raised international profile significantly.",
+  category: "traditional-cultural-sports",
+  subCategory: "equestrian / Central Asian nomadic / Kyrgyz national / horseback team sport",
+  sportType: "team",
+  indoorOutdoor: "outdoor",
+  isProfessional: true,
+  season: "year-round",
+  era: "ancient",
+  popularity: "regional",
+  countryOfOrigin: "KG",
+  regionOfOrigin: "Kyrgyzstan + Central Asian steppes (also Kazakhstan, Uzbekistan, Tajikistan, Xinjiang)",
+  estimatedOrigin: "1000+ years old (Central Asian nomadic origin); modernized 20th c",
+  players: { min: 4, max: 4, note: "Teams of 4 mounted riders each; 8 riders on field total." },
+  field: {
+    surfaceName: "Soda (rectangular dirt/grass field)",
+    dimensions: "~200 m long × 70 m wide with raised tai kazan (stone goal) at each end",
+    description: "Open dirt/grass field with two circular stone podiums (tai kazan) at each end.",
+  },
+  equipment: [
+    { name: "Ulak (headless goat carcass, ~30-40 kg — traditional)", description: "The 'ball' to be carried to opponent's goal" },
+    { name: "Molded leather replica (~35 kg — modern substitute)", description: "Used in most modern professional games for hygiene + welfare" },
+    { name: "Kyrgyz kokpar horse (specialized, stocky, powerful)", description: "Sport-specific breed" },
+    { name: "Traditional Kyrgyz riding gear + protective vest + helmet (modern)", description: "Rider protection" },
+    { name: "Tai Kazan (raised stone goal, ~1.2 m tall × 4 m diameter)", description: "The scoring target" },
+  ],
+  duration: { approximateMinutes: 80, structure: "3 periods × 20 min with 10-min breaks; ~80 min total." },
+  objective: "Grab the ulak and deposit it into opponent's tai kazan; most drops wins.",
+  basicRules: [
+    { title: "4 mounted riders per team", body: "Fixed team size." },
+    { title: "Grab ulak, gallop to opponent's tai kazan, throw it in", body: "Basic play cycle." },
+    { title: "No striking opponents; no injuring horses; no using whip on opponent's horse", body: "Fair play rules." },
+    { title: "3 × 20 min periods with breaks", body: "Modern match format." },
+    { title: "Team with most successful goals (drops) wins", body: "Scoring cumulative." },
+    { title: "Modern rules use leather replica for animal welfare", body: "Cultural adaptation." },
+  ],
+  scoring: {
+    summary: "Each successful ulak-drop into tai kazan = 1 goal; team with more goals at end wins.",
+    breakdown: [
+      { action: "Ulak dropped into opponent's tai kazan", points: "1 goal" },
+      { action: "Rider unhorsed or ulak dropped out of bounds", points: "Restart from center" },
+      { action: "Referee toss at period start", points: "Neutral restart" },
+      { action: "Fouls (whip opponent, dangerous ride)", points: "Warning / penalty / disqualification" },
+    ],
+    winCondition: "More successful ulak-drops at end of 3 periods wins.",
+  },
+  governingBodies: [
+    { name: "Kyrgyz Kok Boru Federation (Кыргыз Көк бөрү Федерациясы)", founded: 1996, headquarters: "Bishkek, Kyrgyzstan" },
+    { name: "World Ethnosport Confederation (organizes World Nomad Games)", founded: 2014, headquarters: "Istanbul, Turkey" },
+  ],
+  majorCompetitions: [
+    { name: "World Nomad Games (Kok Boru)", frequency: "biennial", founded: 2014, region: "Kyrgyzstan (host)" },
+    { name: "Kyrgyz National Championship", frequency: "annual", founded: 1996, region: "Kyrgyzstan" },
+    { name: "President's Cup (Kyrgyzstan)", frequency: "annual", founded: 2005, region: "Bishkek" },
+    { name: "Nooruz (Nowruz) Festival matches", frequency: "annual", founded: 1992, region: "Kyrgyzstan + Central Asia" },
+  ],
+  countriesPlayed: ["KG", "KZ", "UZ", "TJ", "AF", "MN", "CN", "RU", "TR", "US"],
+  famousAthletes: [
+    "Historic Kyrgyz teams from Chuy, Osh, Talas regions",
+    "Team Kyrgyzstan (multi-time World Nomad Games champion)",
+    "Individual star riders featured in documentaries: 'Buried Seeds' etc.",
+    "Kazakh national team (Kokpar) — main rival at international games",
+  ],
+  variants: [
+    "kyrgyz-kok-boru-formal-national-sport",
+    "kazakh-kokpar-very-similar-rules",
+    "afghan-buzkashi-more-chaotic-individual-focused",
+    "uzbek-oglak-tartysh-related-variant",
+    "modern-with-leather-replica-vs-traditional-carcass",
+    "world-nomad-games-international-multi-nation",
+  ],
+  relatedSports: ["buzkashi", "polo", "horse-racing", "chogan", "jereed"],
+  skills: ["horsemanship + galloping control", "one-handed ulak lifting + carrying", "team blocking + support riding", "physical strength (35kg carcass at gallop)", "tactical positioning"],
+  strategies: [
+    { title: "Support riders create alleys for the carrier", body: "Team blocking essential." },
+    { title: "Time attacks to opponents' fatigue moments", body: "Horse + rider endurance matter." },
+    { title: "Elite horses can accelerate quickly to break away", body: "Horse quality is decisive." },
+    { title: "Grip + core strength allow carrying ulak longer", body: "Rider physicality." },
+  ],
+  terminology: [
+    { term: "Kok Boru (Көк бөрү)", meaning: "'Grey Wolf' in Kyrgyz — the sport." },
+    { term: "Ulak", meaning: "The goat carcass (or replica) — the game item." },
+    { term: "Tai Kazan", meaning: "'Foal's cauldron' — the raised stone goal." },
+    { term: "Soda", meaning: "The playing field." },
+    { term: "Kokpar (Kazakh)", meaning: "Kazakhstan's near-identical version." },
+    { term: "Buzkashi (Afghan)", meaning: "The Afghan cousin — more chaotic." },
+    { term: "Nooruz / Nowruz", meaning: "Central Asian New Year (spring) — festival games." },
+    { term: "World Nomad Games", meaning: "Biennial Kyrgyz-hosted international nomadic sports festival." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Start with horsemanship + Kyrgyz riding basics", body: "Foundation." },
+      { title: "Join local Kok Boru club in Chuy, Osh, or Issyk-Kul", body: "Team environment." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Regional Kyrgyz championships", body: "Structured competition." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "National team + World Nomad Games representation", body: "Elite pathway." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Kok Boru?", answer: "KYRGYZSTAN'S NATIONAL SPORT — an ancient CENTRAL ASIAN HORSEBACK TEAM SPORT related to but distinct from AFGHANI BUZKASHI. Two teams of 4 mounted riders compete on a rectangular field (~200 m × 70 m) to grab a HEADLESS GOAT (or MODERN LEATHER SUBSTITUTE, ~35 kg) and deposit it into the opposing team's raised STONE GOAL called TAI KAZAN. Requires exceptional HORSEMANSHIP, STRENGTH, TEAMWORK, and courage. Featured centrally at the WORLD NOMAD GAMES (founded 2014 in Cholpon-Ata, Kyrgyzstan). Governed by KYRGYZ KOK BORU FEDERATION." },
+    { question: "Kok Boru vs Buzkashi vs Kokpar — what's the difference?", answer: "All three are CENTRAL ASIAN HORSEBACK GOAT-CARCASS SPORTS with shared nomadic origins. KOK BORU (Kyrgyzstan) has FORMALIZED RULES: 4v4 teams, 3×20 min periods, raised stone goals (tai kazan), fair-play code, animal welfare emphasis (modern leather replicas). KOKPAR (Kazakhstan) is nearly identical to Kok Boru with minor rule differences. BUZKASHI (Afghanistan) is more TRADITIONAL + CHAOTIC: unlimited players, huge open fields, no formal team boundaries, individual glory-focused with the WINNING RIDER (chapandaz) claiming the honor; matches can last DAYS + involve HUNDREDS of horsemen at grand tournaments. Kok Boru is the most formally-organized + televised of the three." },
+  ],
+  wikipediaTitle: "Kok-boru",
+  sources: [
+    { label: "Wikipedia — Kok-boru", url: "https://en.wikipedia.org/wiki/Kok-boru", publisher: "Wikipedia" },
+    { label: "World Nomad Games — Official", url: "https://worldnomadgames.com/", publisher: "WNG" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

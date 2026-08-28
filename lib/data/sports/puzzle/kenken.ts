@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const kenken: Sport = {
+  id: "kenken",
+  slug: "kenken",
+  name: "KenKen",
+  officialName: "KenKen",
+  aliases: ["KenDoku", "MathDoku", "Calcudoku", "Square Wisdom"],
+  shortDescription:
+    "JAPANESE LOGIC-ARITHMETIC PUZZLE (2004) invented by TETSUYA MIYAMOTO, a Japanese math teacher. Similar to SUDOKU but adds ARITHMETIC constraints: fill an NxN grid with digits 1-N so each row + column has no repeats (Latin square) + the digits within each outlined 'cage' produce a target number via a given operation (+, -, ×, ÷). Common sizes 4x4 to 9x9. Also called MATHDOKU + CALCUDOKU (unlicensed variants). Popular in NEW YORK TIMES + newspapers worldwide since 2009. Widely used in schools as MATH ENRICHMENT. Considered SUDOKU'S SMARTER COUSIN.",
+  longDescription:
+    "KENKEN is a JAPANESE LOGIC-ARITHMETIC PUZZLE invented in 2004 by TETSUYA MIYAMOTO, a Japanese elementary math teacher. Miyamoto created KenKen (Japanese: 賢賢, meaning 'wisdom squared' or 'cleverness cleverness') as a MATH ENRICHMENT TOOL for his students, believing that puzzle-solving builds mathematical intuition. The puzzle became a global phenomenon after being licensed to WILL SHORTZ + THE NEW YORK TIMES in 2009. Similar to SUDOKU (invented as NUMBER PLACE in 1979, popularized worldwide 2005) but adds ARITHMETIC constraints, making it distinctly harder + more math-driven than Sudoku's pure logic. RULES: A KENKEN puzzle is an NxN grid (typically 4x4 for beginner, 6x6 for intermediate, 9x9 for expert). RULES: (1) Fill in digits 1 to N such that each ROW contains each digit exactly once + each COLUMN contains each digit exactly once (a Latin square, same as Sudoku but without 3x3 boxes). (2) The grid is divided into 'CAGES' — outlined groups of 1 or more cells. Each cage displays a TARGET NUMBER + ARITHMETIC OPERATION (e.g., '15+' or '24×' or '3-' or '2÷'). The digits placed in that cage's cells must produce the target via that operation. (3) SINGLE-CELL CAGES simply require the given digit. (4) Digits WITHIN a cage MAY REPEAT unless they'd violate row/column rules. SIZES: 3x3 (trivial), 4x4 (easy), 5x5-6x6 (medium), 7x7-8x8 (hard), 9x9 (very hard). SOLVING TECHNIQUES: Standard Latin-square techniques (Sudoku-like: singles, pairs, hidden pairs) COMBINED with ARITHMETIC ELIMINATION (e.g., '5+' in 2 cells with digits 1-4 means {1,4} or {2,3}; if row also constrains to include a 2, cage must be {2,3}). LICENSING + BRANDING: KENKEN is trademarked; unlicensed variants use names KENDOKU, MATHDOKU, CALCUDOKU. Nextoy LLC holds the KENKEN trademark worldwide. Miyamoto uses royalties to fund the KENKEN MATH FOUNDATION for math education. HISTORY: 2004 Miyamoto invents; 2007 iPhone app; 2008 UK publication (The Times); 2009 New York Times begins publishing daily; 2010+ worldwide newspaper + app distribution. Now published DAILY in dozens of newspapers + hundreds of apps. USED IN SCHOOLS: Widely adopted in K-12 MATH CLASSROOMS worldwide as ENRICHMENT + PROBLEM-SOLVING training. Some math competitions include KenKen rounds. NOTABLE: The name 'KenKen' + branding differ by country (UK's TIMES uses NUMBLES; some European puzzles use CALCUDOKU). Grid varieties include 'NO OP' KENKEN (operation not shown; solver must deduce) + 'MULTI-OP' variants. Difficulty ratings vary by publisher.",
+  category: "puzzle-games",
+  subCategory: "logic-arithmetic puzzle / Latin square / Sudoku variant / math enrichment",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (Tetsuya Miyamoto invented 2004)",
+  estimatedOrigin: "2004 (Miyamoto); worldwide 2009 (NYT + Nextoy licensing)",
+  players: { min: 1, max: 1, note: "Solo puzzle; can be played competitively in timed events." },
+  field: {
+    surfaceName: "NxN grid on paper or digital device",
+    dimensions: "3x3 to 9x9 (typically 4x4 to 6x6 for casual)",
+    description: "Grid divided into outlined cages with target numbers + operations.",
+  },
+  equipment: [
+    { name: "KenKen puzzle books (Nextoy, Sterling, etc.)", description: "$5-15 per book" },
+    { name: "KenKen daily NYT + newspaper apps", description: "Free/paid" },
+    { name: "KenKen mobile apps (iOS/Android)", description: "Free/premium" },
+    { name: "Pencil (for solving)", description: "Erasable candidate notes" },
+  ],
+  duration: { approximateMinutes: 10, structure: "3-5 min easy 4x4; 15-30 min medium 6x6; 45-90 min hard 9x9" },
+  objective: "Fill the NxN grid satisfying Latin-square + cage arithmetic constraints.",
+  basicRules: [
+    { title: "Fill NxN grid with digits 1-N; no repeats in rows or columns", body: "Latin square rule." },
+    { title: "Each cage's digits must produce the target via the given operation", body: "Arithmetic constraint." },
+    { title: "Single-cell cage = enter the given digit", body: "Trivial fillers." },
+    { title: "Digits may repeat within a cage if not violating Latin square", body: "Cage-only restriction." },
+    { title: "Standard sizes: 4x4 (easy) to 9x9 (expert)", body: "Difficulty by grid size." },
+  ],
+  scoring: {
+    summary: "Solo completion; competitive KenKen scored by speed + accuracy.",
+    breakdown: [
+      { action: "Solve puzzle correctly", points: "Puzzle complete" },
+      { action: "Timed competition", points: "Ranked by seconds to solve" },
+      { action: "KenKen International Championship (annual)", points: "Elite competition" },
+    ],
+    winCondition: "Fastest correct solution; or personal completion.",
+  },
+  governingBodies: [
+    { name: "Nextoy LLC (trademark holder + KenKen Foundation)", founded: 2006, headquarters: "USA" },
+    { name: "KenKen Math Foundation", founded: 2010, headquarters: "USA" },
+    { name: "Puzzle publishers worldwide", founded: 2009, headquarters: "Global" },
+  ],
+  majorCompetitions: [
+    { name: "KenKen International Championship (annual)", frequency: "annual", founded: 2010, region: "USA/Global" },
+    { name: "World Puzzle Championship (KenKen round)", frequency: "annual", founded: 1992, region: "Global (WPF)" },
+    { name: "MIT Mystery Hunt (occasional KenKen puzzles)", frequency: "annual", founded: 1981, region: "USA" },
+  ],
+  countriesPlayed: ["JP", "US", "GB", "IN", "DE", "FR", "IT", "ES", "AU", "CA", "BR", "NL", "SE"],
+  famousAthletes: [
+    "Tetsuya Miyamoto (inventor, Japanese math teacher)",
+    "Will Shortz (NYT crossword editor, KenKen advocate)",
+    "Competition solvers: Thomas Snyder (US puzzle champion)",
+    "David Levitt (Nextoy CEO)",
+  ],
+  variants: [
+    "kenken-4x4-beginner",
+    "kenken-6x6-standard",
+    "kenken-9x9-expert",
+    "no-op-kenken-operation-deduced",
+    "calcudoku-generic-name-europe",
+    "mathdoku-generic-name",
+    "kendoku-alternative-brand",
+  ],
+  relatedSports: ["sudoku", "mastermind", "nonogram", "crossword", "wordle"],
+  skills: ["Latin square logic", "mental arithmetic", "cage combination enumeration", "candidate pruning"],
+  strategies: [
+    { title: "Solve unique cages first (single-cell + tight constraints)", body: "Fixed points cascade." },
+    { title: "Enumerate cage possibilities + eliminate row/column violators", body: "Combinatorial reduction." },
+    { title: "Use Sudoku-like techniques (naked pairs, hidden singles)", body: "Latin square heuristics." },
+    { title: "Track candidates in cell corners with pencil", body: "Manage complexity on larger grids." },
+  ],
+  terminology: [
+    { term: "Cage", meaning: "Outlined group of cells with a target + operation." },
+    { term: "Target number", meaning: "Value cage digits must produce via the operation." },
+    { term: "Operation", meaning: "+, -, ×, ÷ shown with target in top-left of cage." },
+    { term: "Latin square", meaning: "Grid with no repeats in row or column." },
+    { term: "No-op KenKen", meaning: "Variant where operation is hidden + must be deduced." },
+    { term: "KenDoku / MathDoku / Calcudoku", meaning: "Alternative names for unlicensed variants." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Start with 4x4 daily puzzles from NYT or apps", body: "3-5 min per puzzle." },
+      { title: "Learn cage-elimination + Latin square basics", body: "Foundational skills." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Move to 6x6 + 7x7; learn combination enumeration", body: "Analytic depth." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "9x9 + no-op variants; competition speed solving", body: "Elite challenge." },
+    ]},
+  ],
+  faq: [
+    { question: "What is KenKen?", answer: "JAPANESE LOGIC-ARITHMETIC PUZZLE (2004) invented by TETSUYA MIYAMOTO, a Japanese math teacher. Similar to SUDOKU but adds ARITHMETIC constraints: fill an NxN grid with digits 1-N so each row + column has no repeats (Latin square) + the digits within each outlined 'cage' produce a target number via a given operation (+, -, ×, ÷). Common sizes 4x4 to 9x9. Also called MATHDOKU + CALCUDOKU (unlicensed variants). Popular in NEW YORK TIMES + newspapers worldwide since 2009. Widely used in schools as MATH ENRICHMENT. Considered SUDOKU'S SMARTER COUSIN." },
+    { question: "KenKen vs Sudoku — which is harder?", answer: "Both use Latin-square logic but differ meaningfully. SUDOKU: Pure LOGIC; digits 1-9 in 9x9 grid with 3x3 box constraint. Requires only pattern recognition + candidate elimination. Widely accessible; solvable in 5-30 min. KENKEN: LOGIC + ARITHMETIC; digits 1-N in NxN grid with cage-arithmetic constraint (no 3x3 box). Requires MATH SKILLS (combination enumeration) in addition to Latin-square logic. Same size KenKen is generally HARDER than same size Sudoku because arithmetic constraints are less easily inferred. But KenKen also has EASIER puzzles at 4x4 that Sudoku doesn't offer. Math-lovers → KenKen preferred; pattern-lovers → Sudoku. Both are excellent daily brain workouts + widely used in education." },
+  ],
+  wikipediaTitle: "KenKen",
+  sources: [
+    { label: "Official KenKen (Nextoy)", url: "https://www.kenkenpuzzle.com/", publisher: "Nextoy LLC" },
+    { label: "Wikipedia — KenKen", url: "https://en.wikipedia.org/wiki/KenKen", publisher: "Wikipedia" },
+    { label: "NYT KenKen", url: "https://www.nytimes.com/puzzles/kenken", publisher: "NYT" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

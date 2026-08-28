@@ -1,0 +1,113 @@
+import type { Sport } from "@/lib/types";
+
+export const qwixx: Sport = {
+  id: "qwixx",
+  slug: "qwixx",
+  name: "Qwixx",
+  officialName: "Qwixx",
+  aliases: ["Qwixx dice game"],
+  shortDescription:
+    "ROLL-AND-WRITE DICE GAME (2012) by STEFFEN BENNDORF, published by NÜRNBERGER-SPIELKARTEN-VERLAG (NSV). 2-5 players share the SAME dice rolls but MARK OFF NUMBERS on their own SCORESHEETS across 4 COLORED ROWS (red + yellow ascending 2-12; green + blue descending 12-2). Marks must go LEFT-TO-RIGHT + increasing. Locks (5+ marks in a row) end the row. 4 penalties = -5 each. Fast, elegant, portable. SPIEL DES JAHRES 2013 NOMINEE. 15-min games. Started the modern ROLL-AND-WRITE GENRE explosion (Welcome to..., Ganz Schön Clever, Cartographers, etc.).",
+  longDescription:
+    "QWIXX is a ROLL-AND-WRITE DICE GAME (2012) designed by STEFFEN BENNDORF, published by NÜRNBERGER-SPIELKARTEN-VERLAG (NSV, Germany). Considered a foundational game of the MODERN ROLL-AND-WRITE GENRE which exploded after 2015 with GANZ SCHÖN CLEVER, WELCOME TO..., CARTOGRAPHERS, THAT'S PRETTY CLEVER, ROLL PLAYER, + many more. Qwixx itself sold OVER 1 MILLION COPIES + spawned multiple sequels + a Spiel des Jahres NOMINATION. GAMEPLAY: 2-5 players. Each player has an IDENTICAL SCORESHEET with 4 COLORED ROWS: RED (numbers 2-12 ascending, left to right), YELLOW (2-12 ascending), GREEN (12-2 descending), BLUE (12-2 descending). The dice pool: 2 WHITE DICE + 4 COLORED DICE (1 each of red, yellow, green, blue). Rolling player rolls all 6 dice per turn. TURN STRUCTURE: (1) SUM OF WHITE DICE (0-2 marks): Every player may cross off the sum of the 2 white dice on ANY of their 4 colored rows (once, in the correct position — left-to-right for red/yellow, right-to-left for green/blue). (2) ACTIVE PLAYER OPTION: The rolling player may additionally cross off 1 number combining any 1 WHITE die + 1 COLORED die on that color's row. So active player may cross up to 2 numbers per turn; non-active players may cross 1 (the white sum). RESTRICTION: Marks MUST be in POSITION (left-to-right for red/yellow ascending 2-12; right-to-left for green/blue descending 12-2). Numbers to the LEFT of your last mark can no longer be crossed. LOCKING A ROW: If you get to the 12 (red/yellow) or 2 (green/blue), AND you have MARKED AT LEAST 5 NUMBERS IN THAT ROW, you may also cross the LOCK icon (right of 12 for R/Y; left of 2 for G/B) — this LOCKS that row for all players + removes that colored die from play. PENALTIES: If the active player CANNOT or CHOOSES NOT to mark any number on their turn, they take a PENALTY (-5 points each). 4th penalty ENDS THE GAME immediately. GAME END: (1) 4th penalty, OR (2) 2 colored rows are LOCKED. FINAL SCORING: Each ROW: sum of the CHECKED-NUMBER COUNT via a scoring table (1 mark = 1 pt, 2 marks = 3 pts, 3 = 6, 4 = 10, 5 = 15, 6 = 21, 7 = 28, 8 = 36, 9 = 45, 10 = 55, 11 marks + lock = 66, 12 = 78). Sum all 4 rows; subtract penalties (-5 each). Highest score wins. GAME LENGTH: 15 MINUTES. WEIGHT: BGG ~1.6/5 — light. RECEPTION: SPIEL DES JAHRES 2013 NOMINEE (German mainstream game of year); PLAY OF THE YEAR various national awards; over 1 MILLION SOLD; consistently BGG top-1000 with high enjoyment. VARIANTS + EXPANSIONS: QWIXX GEMIXXT (2014 mixed-up variant); QWIXX BONUS (2015 additional bonuses); QWIXX MAX (bigger score sheet); QWIXX CONNECTED (2019 digital version). Countless print-and-play scoresheet variants. LEGACY: Qwixx demonstrated that ROLL-AND-WRITE could be DEEP + REPLAYABLE beyond YAHTZEE, spawning the modern genre.",
+  category: "dice-games",
+  subCategory: "roll-and-write / dice / speed dice games / cross-off",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany (NSV publisher); designer Steffen Benndorf",
+  estimatedOrigin: "2012 (NSV)",
+  players: { min: 2, max: 5, note: "2-5 players; scales seamlessly; solo variant exists." },
+  field: {
+    surfaceName: "Table + individual scoresheets",
+    dimensions: "Table for dice + individual A5 scoresheets",
+    description: "Shared dice pool + individual scoresheets per player.",
+  },
+  equipment: [
+    { name: "Qwixx game box ($10)", description: "6 dice + 80 scoresheets + rules" },
+    { name: "6 dice: 2 white + 4 colored (red/yellow/green/blue)", description: "Shared dice pool" },
+    { name: "Individual scoresheets (paper)", description: "One per player per game" },
+    { name: "Pens/pencils", description: "For marking" },
+    { name: "Qwixx variants (Gemixxt, Bonus, Max, Connected)", description: "Additional variants" },
+  ],
+  duration: { approximateMinutes: 15, structure: "15 min per full game" },
+  objective: "Score most points by marking numbers on the 4 colored rows while avoiding penalties.",
+  basicRules: [
+    { title: "Active player rolls 6 dice (2 white + 4 colored)", body: "Standard turn start." },
+    { title: "All players may mark sum of white dice on any colored row", body: "Public roll." },
+    { title: "Active player may additionally mark 1 white+colored die combination", body: "Extra active option." },
+    { title: "Marks must be left-to-right (R/Y) or right-to-left (G/B)", body: "Positional restriction." },
+    { title: "Locking a row (5+ marks + reach edge) removes that color for everyone", body: "Row-locking." },
+    { title: "Game ends: 4 penalties OR 2 rows locked", body: "Two end triggers." },
+    { title: "Score via marking scoring table minus 5 per penalty", body: "Final calculation." },
+  ],
+  scoring: {
+    summary: "Sum of scoring-table values across 4 rows minus 5 per penalty.",
+    breakdown: [
+      { action: "1-12 marks in a row", points: "1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78 points" },
+      { action: "Row lock bonus (5+ marks + edge)", points: "Column count increments" },
+      { action: "Penalty (unable/unwilling to mark)", points: "-5 points each" },
+    ],
+    winCondition: "Highest total score at game end.",
+  },
+  governingBodies: [
+    { name: "NSV (Nürnberger-Spielkarten-Verlag, publisher)", founded: 1948, headquarters: "Germany" },
+    { name: "Steffen Benndorf (designer)", founded: 1974, headquarters: "Germany" },
+    { name: "Multiple international publishers via NSV licensing", founded: 2013, headquarters: "Global" },
+  ],
+  majorCompetitions: [
+    { name: "Spiel des Jahres 2013 NOMINEE", frequency: "annual", founded: 1978, region: "Germany" },
+    { name: "Various national Game of Year nominations 2013+", frequency: "annual", founded: 2013, region: "Global" },
+    { name: "Board Game Arena online play", frequency: "ongoing", founded: 2014, region: "Online" },
+  ],
+  countriesPlayed: ["DE", "AT", "US", "GB", "FR", "IT", "ES", "NL", "SE", "BE", "CH", "JP"],
+  famousAthletes: [
+    "Steffen Benndorf (designer, 2012)",
+    "NSV publishing team",
+    "Roll-and-write community + BGG reviewers",
+  ],
+  variants: [
+    "qwixx-base-2012",
+    "qwixx-gemixxt-2014-mixed-scoresheet",
+    "qwixx-bonus-2015-extra-bonuses",
+    "qwixx-max-larger-sheet",
+    "qwixx-connected-2019-digital",
+    "qwixx-alternate-scoresheets-community",
+  ],
+  relatedSports: ["yahtzee", "ganz-schon-clever", "welcome-to", "cartographers", "farkle"],
+  skills: ["dice probability estimation", "row-locking risk management", "penalty avoidance", "sheet planning"],
+  strategies: [
+    { title: "Don't rush row completion in one color", body: "Balance across all 4." },
+    { title: "Lock a row when 5-6 marks + convenient reach", body: "Denies others + earns bonus." },
+    { title: "Skip early marks strategically to preserve options", body: "Penalties sometimes worth it." },
+    { title: "Track other players' rows for locking threats", body: "Racing dynamic." },
+  ],
+  terminology: [
+    { term: "Qwixx", meaning: "The game (name is invented word)." },
+    { term: "Roll-and-write", meaning: "Genre where dice are rolled + results marked on a sheet." },
+    { term: "Lock", meaning: "Row closure at the edge with 5+ marks; removes color die." },
+    { term: "Penalty", meaning: "-5 point mark for failing to make any mark on your turn." },
+    { term: "Scoring table", meaning: "Exponential scoring by marks in a row (1, 3, 6, 10, 15, 21...)" },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play the base game once with all 4 colors", body: "15 min learn." },
+      { title: "Learn scoring curve to prioritize row depth", body: "Exponential scoring rewards focus." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Qwixx?", answer: "ROLL-AND-WRITE DICE GAME (2012) by STEFFEN BENNDORF, published by NÜRNBERGER-SPIELKARTEN-VERLAG (NSV). 2-5 players share the SAME dice rolls but MARK OFF NUMBERS on their own SCORESHEETS across 4 COLORED ROWS (red + yellow ascending 2-12; green + blue descending 12-2). Marks must go LEFT-TO-RIGHT + increasing. Locks (5+ marks in a row) end the row. 4 penalties = -5 each. Fast, elegant, portable. SPIEL DES JAHRES 2013 NOMINEE. 15-min games. Started the modern ROLL-AND-WRITE GENRE explosion (Welcome to..., Ganz Schön Clever, Cartographers, etc.)." },
+    { question: "Qwixx vs Ganz Schön Clever vs Welcome To — which roll-and-write is best?", answer: "All 3 are excellent modern roll-and-write games. QWIXX (2012): SIMPLEST + FASTEST (15 min); 4 colored rows; foundational genre entry; great gateway. GANZ SCHÖN CLEVER (2018): MEDIUM WEIGHT; more complex chain scoring; ~30 min; wildly popular; digital version excellent. WELCOME TO... (2018): ATMOSPHERIC 1950s suburb theme; more strategic + card-based (not dice); 30 min; deeper spatial planning. Qwixx = pure fast dice; Ganz Schön Clever = deep chain-scoring dice; Welcome To = spatial planning without dice. Beginners → QWIXX; hobbyists → GANZ SCHÖN CLEVER or WELCOME TO. All are portable + high replay." },
+  ],
+  wikipediaTitle: "Qwixx",
+  sources: [
+    { label: "NSV — Qwixx", url: "https://www.nsv.de/", publisher: "NSV" },
+    { label: "BoardGameGeek — Qwixx", url: "https://boardgamegeek.com/boardgame/131260/qwixx", publisher: "BGG" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

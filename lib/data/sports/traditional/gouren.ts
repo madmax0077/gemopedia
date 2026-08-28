@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const gouren: Sport = {
+  id: "gouren",
+  slug: "gouren",
+  name: "Gouren",
+  officialName: "Gouren (Breton wrestling / Lutte bretonne)",
+  aliases: ["Breton Wrestling", "Lutte bretonne", "Gouren-Sonj"],
+  shortDescription:
+    "TRADITIONAL BRETON WRESTLING from BRITTANY (Brittany, western France) — a Celtic folk wrestling style with roots going back over 1000 YEARS in Celtic-speaking regions. Two wrestlers wear a canvas SHIRT called ROCHED + short trousers; grip only the OPPONENT'S SHIRT (belt-and-collar grip) + attempt to throw the opponent so BOTH SHOULDER BLADES touch the ground SIMULTANEOUSLY (called LAMM). Signature is the FAIR-PLAY HANDSHAKE (SERR-FIST) + traditional pre-match SPEECH (KAN AR SERR-FIST). Governed by FÉDÉRATION DE GOUREN (1930); considered Brittany's national sport + part of Celtic League wrestling family (compare Cornish Wrestling, Cumberland Wrestling, Icelandic Glíma).",
+  longDescription:
+    "GOUREN (Breton: 'wrestling') is TRADITIONAL BRETON WRESTLING — the folk wrestling style of BRITTANY (western France), a CELTIC-CULTURAL region with its own Breton language + heritage. HISTORY: A tradition of at least 1000+ YEARS, documented in medieval Breton texts + likely traceable to shared Celtic wrestling practices across the ATLANTIC ARC (Cornwall, Wales, Ireland, Scotland). Formalized in the 14th-15th centuries; a favored sport of Breton nobility + rural folk alike. Almost went EXTINCT in the 19th century amid French modernization, but REVIVED in the early 20th century by CHARLES COTONNEC + others as part of the Breton cultural renaissance; FÉDÉRATION FRANÇAISE DE LUTTE BRETONNE (Federation of Breton Wrestling) formed 1930 (later renamed FÉDÉRATION DE GOUREN). GAME MECHANICS: Two wrestlers face each other on a SAWDUST or GRASS mat; wear traditional canvas SHIRT called ROCHED (thick canvas, reinforced collar/sleeves) + short trousers. Grip is BELT-AND-COLLAR — hands must grip only the OPPONENT'S SHIRT (collar/sleeve/back seams) — no direct body grabs allowed. Match begins with the SERR-FIST — a formal HANDSHAKE ceremony where wrestlers RECITE THE OATH OF FAIR PLAY (KAN AR SERR-FIST) in Breton or French, pledging to respect + honor the opponent. WRESTLING PROPER: Wrestlers attempt to THROW opponent so BOTH SHOULDER BLADES TOUCH THE GROUND SIMULTANEOUSLY — this is called a LAMM (perfect throw, ~4 points). Partial throws (one shoulder or hip touching) score fewer points (KOSTIN 2-3 pts). No striking, no choking, no joint locks — pure throwing sport. TIME LIMIT: Modern rules ~5-6 min per bout. GOVERNING: FÉDÉRATION DE GOUREN based in Landerneau, Brittany; INTERNATIONAL CELTIC WRESTLING FEDERATION (FILC — Fédération Internationale des Luttes Celtiques) unites Breton, Cornish, Icelandic, and other Celtic wrestling styles into a global federation with annual championships. RANKS: Novice → Espoir → Confirmé → Expert → Champion (progressive levels). MAJOR EVENTS: CHAMPIONNAT DE BRETAGNE (annual), CHAMPIONNAT DE FRANCE, TROPHÉE INTERCELTIQUE (with other Celtic nations at LORIENT INTERCELTIC FESTIVAL — Europe's largest Celtic culture festival), FILC INTERNATIONAL CELTIC WRESTLING CHAMPIONSHIP. CULTURAL: Deeply tied to Breton identity + Celtic revival; often performed at PARDONS (Breton religious festivals), FEST-NOZ (traditional dances), + LORIENT INTERCELTIC FESTIVAL. Language of Gouren is BRETON — many technical terms only exist in Breton. Approximately 3000+ registered wrestlers in Brittany + growing among Breton diaspora. Considered part of the CELTIC WRESTLING FAMILY alongside CORNISH WRESTLING, CUMBERLAND-WESTMORLAND WRESTLING, and glíma-related Nordic styles.",
+  category: "traditional-cultural-sports",
+  subCategory: "folk wrestling / Celtic / Breton / French regional",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: false,
+  season: "year-round",
+  era: "medieval",
+  popularity: "regional",
+  countryOfOrigin: "FR",
+  regionOfOrigin: "Brittany (western France) + Breton diaspora + Celtic League",
+  estimatedOrigin: "1000+ years old (documented medieval); revived by Cotonnec + federation 1930",
+  players: { min: 2, max: 2, note: "1v1 individual bouts across age + weight categories." },
+  field: {
+    surfaceName: "Sawdust or grass mat",
+    dimensions: "~7 m diameter circular mat",
+    description: "Traditional sawdust or modern padded mat.",
+  },
+  equipment: [
+    { name: "Roched (traditional Breton canvas wrestling shirt)", description: "Thick canvas with reinforced collar/sleeves" },
+    { name: "Short trousers or shorts", description: "Standard athletic bottom" },
+    { name: "Barefoot or wrestling shoes", description: "Optional" },
+    { name: "Sawdust or mat surface", description: "Traditional or modern venue" },
+  ],
+  duration: { approximateMinutes: 6, structure: "Modern rules: 5-6 min per bout; tournament typically single-elimination." },
+  objective: "Throw opponent so both shoulder blades touch ground simultaneously (Lamm).",
+  basicRules: [
+    { title: "Grip only on opponent's roched shirt (belt-and-collar)", body: "No direct body grabs." },
+    { title: "Lamm (both shoulders down simultaneously) = victory or 4 pts", body: "Perfect throw." },
+    { title: "Kostin (partial shoulder throws) = 2-3 pts", body: "Partial credit for lesser throws." },
+    { title: "No striking, choking, or joint locks", body: "Throws only." },
+    { title: "Match opens with Serr-fist handshake + Kan ar Serr-fist oath", body: "Fair-play ritual." },
+    { title: "Modern rules: 5-6 min time limit; ties can lead to golden score", body: "Modern format." },
+  ],
+  scoring: {
+    summary: "Points per throw (Lamm 4 pts, Kostin 2-3 pts); highest score at time = win.",
+    breakdown: [
+      { action: "Lamm — both shoulders + back touch ground simultaneously", points: "4 pts (or instant win)" },
+      { action: "Kostin — partial shoulder throw with control", points: "2-3 pts" },
+      { action: "Fanfar — throw without full control", points: "1 pt" },
+      { action: "Illegal grip or unsportsmanlike conduct", points: "Warning + point deducted" },
+    ],
+    winCondition: "First to score Lamm (instant), OR highest points at time limit.",
+  },
+  governingBodies: [
+    { name: "Fédération de Gouren", founded: 1930, headquarters: "Landerneau, Brittany, France" },
+    { name: "Fédération Internationale des Luttes Celtiques (FILC)", founded: 1985, headquarters: "Europe" },
+  ],
+  majorCompetitions: [
+    { name: "Championnat de Bretagne", frequency: "annual", founded: 1930, region: "Brittany" },
+    { name: "Championnat de France de Gouren", frequency: "annual", founded: 1935, region: "France" },
+    { name: "Trophée Interceltique (Lorient Festival)", frequency: "annual", founded: 1971, region: "Lorient, Brittany" },
+    { name: "FILC World Celtic Wrestling Championship", frequency: "biennial", founded: 1985, region: "Celtic nations rotating" },
+  ],
+  countriesPlayed: ["FR", "GB", "IE", "IS", "ES", "US", "CA"],
+  famousAthletes: [
+    "Charles Cotonnec (early 20th c) — Revived gouren + founded federation",
+    "Regional Breton champions from Landerneau, Quimper, Rennes lineages",
+    "Multi-generational families preserving tradition in Finistère + Morbihan",
+  ],
+  variants: [
+    "gouren-standard-competition-modern-format",
+    "gouren-sonj-traditional-village-style",
+    "youth-junior-gouren-development",
+    "womens-gouren-mixed-competitions",
+  ],
+  relatedSports: ["cornish-wrestling", "cumberland-wrestling", "glima", "judo", "freestyle-wrestling", "schwingen"],
+  skills: ["shirt grip control (roched)", "throwing technique (lamm)", "off-balancing timing", "fair-play etiquette (Serr-fist)", "Breton oath declamation"],
+  strategies: [
+    { title: "Master collar + sleeve grips on roched shirt", body: "Foundation of throws." },
+    { title: "Set up lamm with feints + off-balance rocking", body: "Perfect throw requires setup." },
+    { title: "Compete at Interceltic to cross-train with Cornish + Cumberland styles", body: "Celtic wrestling family cross-fertilization." },
+    { title: "Serr-fist oath sets tone — honor is central", body: "Cultural not just tactical." },
+  ],
+  terminology: [
+    { term: "Gouren", meaning: "'Wrestling' in Breton — the sport." },
+    { term: "Roched", meaning: "The traditional canvas wrestling shirt." },
+    { term: "Lamm", meaning: "Perfect throw — both shoulders + back simultaneously." },
+    { term: "Kostin", meaning: "Partial shoulder throw (2-3 pts)." },
+    { term: "Fanfar", meaning: "Uncontrolled throw (1 pt)." },
+    { term: "Serr-fist", meaning: "Ceremonial handshake before the bout." },
+    { term: "Kan ar Serr-fist", meaning: "The Breton oath of fair play recited before wrestling." },
+    { term: "Pardon", meaning: "Breton religious festival where gouren often features." },
+    { term: "Fest-Noz", meaning: "Traditional Breton dance evening (gouren sometimes performed)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Join a Breton gouren club (Skol Gouren)", body: "Structured beginner classes." },
+      { title: "Learn Serr-fist ritual + basic roched grips + throws", body: "Foundation." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Compete at cantonal + Championnat de Bretagne level", body: "Regional pathway." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "National + FILC World Celtic Wrestling competitions", body: "Elite pathway." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Gouren?", answer: "TRADITIONAL BRETON WRESTLING from BRITTANY (western France) — a Celtic folk wrestling style with roots going back over 1000 YEARS. Two wrestlers wear a canvas SHIRT called ROCHED + short trousers; grip only the OPPONENT'S SHIRT (belt-and-collar grip) + attempt to throw the opponent so BOTH SHOULDER BLADES touch the ground SIMULTANEOUSLY (called LAMM). Signature is the FAIR-PLAY HANDSHAKE (SERR-FIST) + traditional pre-match SPEECH (KAN AR SERR-FIST). Governed by FÉDÉRATION DE GOUREN (1930); considered Brittany's national sport + part of Celtic League wrestling family alongside Cornish + Cumberland Wrestling." },
+    { question: "How is Gouren related to other Celtic wrestling styles?", answer: "GOUREN is part of the CELTIC WRESTLING FAMILY — a group of related indigenous wrestling styles across Celtic-speaking regions: CORNISH WRESTLING (Cornwall), CUMBERLAND & WESTMORLAND WRESTLING (northern England), COLLAR-AND-ELBOW WRESTLING (Ireland), and BACKHOLD WRESTLING (Scotland). All share DIRECT GRIP ON OPPONENT'S CLOTHING/SHIRT + emphasis on THROWS + fair-play HONOR CODES. FÉDÉRATION INTERNATIONALE DES LUTTES CELTIQUES (FILC, founded 1985) unites these styles into a global federation with cross-competitions at the LORIENT INTERCELTIC FESTIVAL + biennial FILC World Championships. GOUREN is the largest + most-developed of the Celtic wrestling styles with ~3000+ registered Breton wrestlers." },
+  ],
+  wikipediaTitle: "Gouren",
+  sources: [
+    { label: "Fédération de Gouren — Official", url: "https://www.gouren.com/", publisher: "Fédération de Gouren" },
+    { label: "Wikipedia — Gouren", url: "https://en.wikipedia.org/wiki/Gouren", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

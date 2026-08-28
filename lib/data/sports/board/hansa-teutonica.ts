@@ -1,0 +1,123 @@
+import type { Sport } from "@/lib/types";
+
+export const hansaTeutonica: Sport = {
+  id: "hansa-teutonica",
+  slug: "hansa-teutonica",
+  name: "Hansa Teutonica",
+  officialName: "Hansa Teutonica",
+  aliases: ["HT", "Hansa"],
+  shortDescription:
+    "2009 GERMAN-STYLE EURO STRATEGY BOARD GAME by ANDREAS STEDING — set in the MEDIEVAL HANSEATIC LEAGUE (Hanse) of Northern Europe (13th-15th c). 2-5 players compete as MERCHANTS building TRADING NETWORKS across cities of the Hanse (Bremen, Lübeck, Hamburg, Cologne, etc.) via placing MERCHANTS + TRADERS on connection routes. Players ACHIEVE MERCHANT PRESTIGE by claiming EMPTY CITIES, unlocking PLAYER-BOARD UPGRADES (books/keys/coins/moves/liber sophiae), and finally scoring on CITIES + NETWORKS. Award-winning + universally praised for tight decision-making + minimal-luck strategic depth. BGG Top 100 for years.",
+  longDescription:
+    "HANSA TEUTONICA is a 2009 GERMAN-STYLE EURO STRATEGY BOARD GAME designed by ANDREAS STEDING + published by ARGENTUM VERLAG (later Z-Man Games in English) — set in the MEDIEVAL HANSEATIC LEAGUE (Hanse) of Northern Europe (13th-15th centuries). WINNER of the SPIEL DES JAHRES 2010 RECOMMENDED (Empfehlungsliste) + International Gamers Award nominations; widely regarded as one of the FINEST STRATEGIC EUROS OF THE 2000s. OVERVIEW: 2-5 players compete as MERCHANT PRINCES seeking prestige within the HANSE (medieval trading confederation of northern German + Baltic cities). Players build TRADING NETWORKS by placing MERCHANTS + TRADERS on cities + connection routes between them. GAME BOARD: Map of ~25-30 HANSEATIC CITIES connected by ROUTES (each route has 2-4 CIRCLE spaces for placing pieces). Cities include BREMEN, LÜBECK, HAMBURG, COLOGNE, DANZIG, GHENT, RIGA, and dozens more. Certain cities have SPECIAL BONUS ICONS (books, keys, coins, moves, extra actions). CORE MECHANIC: Each turn, players spend 2-5 ACTIONS from: (1) PLACE MERCHANT (put a MEEPLE on a connection route circle). (2) MOVE MERCHANT (relocate). (3) UPGRADE MERCHANT to TRADER (worth more). (4) EXECUTE ROUTE (all pieces on a completed route — score city bonuses, claim empty cities as PRESTIGE COUNTERS). (5) UPGRADE OWN PLAYER BOARD (increase actions/bags/keys/books via 'Aktionen' Actions per turn, 'Privileg' Coin capacity, 'Bücher' Book scoring bonuses, 'Schlüssel' Key = more Kontor slots per city, 'Reisen' more movement). PLAYER-BOARD UPGRADES: Signature HT mechanic; players customize their engine by upgrading these tracks + gaining permanent bonuses. GAME END: Triggered when a player either (a) reaches 20 VP OR (b) claims LAST prestige counter OR (c) fills the LAST city. Then FINAL SCORING: VP from claimed cities + network bonuses + player board Bonus tracks. WINNER: Highest VP. KEY STRATEGIC TENSION: Players must balance IMMEDIATE VP GAINS from claiming cities vs LONG-TERM UPGRADES to their player board that pay off over many rounds. WEIGHT: BGG weight ~3.0/5 — MEDIUM-HEAVY, more accessible than Brass or Age of Steam. GAME LENGTH: 60-90 min. INTERACTIVE: Highly interactive — moving/displacing opponents' merchants is common + tactical; the game rewards RAPID TEMPO + AGGRESSIVE PLAY over quiet accumulation. RANKINGS: BGG Top 100 (peaked ~#50-100); universally praised. EXPANSIONS: BRITANNIA (Standalone, 2012) — reimplementation in Roman Britain; EAST EXPANSION (2011) — enhanced map of Baltic/Russian cities; Big Box Edition (2020, Pegasus Spiele) — collects all in premium package.",
+  category: "board-games",
+  subCategory: "medium-heavy Euro / medieval trading / network + engine building / high interaction",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany (Andreas Steding, Argentum Verlag)",
+  estimatedOrigin: "2009 (Argentum Verlag)",
+  players: { min: 2, max: 5, note: "2-5 players; 4-5 optimal for full interaction; 2P works but less crowded map." },
+  field: {
+    surfaceName: "Northern Europe Hanseatic map",
+    dimensions: "~60 × 45 cm map of Hanseatic League cities + routes",
+    description: "Map with cities + connection routes with 2-4 circle placement spots each.",
+  },
+  equipment: [
+    { name: "Hanseatic map board", description: "Playing surface" },
+    { name: "Merchant + trader meeples (per player color)", description: "Placed on routes" },
+    { name: "Player boards (5 upgrade tracks: books, keys, coins, actions, moves)", description: "Individual engine tracking" },
+    { name: "Prestige counters (cities to claim)", description: "VP tokens" },
+    { name: "Bonus tokens (books, keys, coins earned)", description: "Interim currency" },
+  ],
+  duration: { approximateMinutes: 75, structure: "60-90 min; game triggers when 20 VP reached or prestige counters/cities exhausted." },
+  objective: "Score most VP through claiming cities + upgrading player board + network completion.",
+  basicRules: [
+    { title: "Each turn: 2-5 actions from placement, movement, upgrade, execution", body: "Action count grows via 'Aktionen' upgrade." },
+    { title: "Executing a completed route lets you claim empty cities + score bonuses", body: "Core payoff mechanic." },
+    { title: "Player-board upgrades (5 tracks) provide permanent bonuses", body: "Signature HT engine." },
+    { title: "Opponent merchants can be displaced (bumped) by others", body: "High interaction." },
+    { title: "Game ends when a player hits 20 VP or map cities/prestige tokens exhausted", body: "3 endgame triggers." },
+    { title: "Final scoring: cities + network + upgrade bonuses", body: "Multiple point sources." },
+  ],
+  scoring: {
+    summary: "VP from claimed cities + longest chain bonus + player-board upgrade bonuses.",
+    breakdown: [
+      { action: "Claim empty city (prestige counter)", points: "Immediate + endgame VP" },
+      { action: "Complete route + score cities", points: "Interim resources + VP" },
+      { action: "Books track (endgame VP bonus)", points: "Book × 1-4 VP based on track level" },
+      { action: "Longest network chain", points: "Endgame VP bonus" },
+      { action: "First to 20 VP triggers endgame", points: "Game ends" },
+    ],
+    winCondition: "Highest VP after game end triggered.",
+  },
+  governingBodies: [
+    { name: "Argentum Verlag (original publisher)", founded: 1995, headquarters: "Germany" },
+    { name: "Z-Man Games (English publisher)", founded: 1999, headquarters: "USA/Canada" },
+    { name: "Pegasus Spiele (Big Box republish 2020)", founded: 1988, headquarters: "Germany" },
+    { name: "BoardGameGeek community", founded: 2000, headquarters: "Online" },
+  ],
+  majorCompetitions: [
+    { name: "German + European Hansa Teutonica community tournaments", frequency: "annual", founded: 2011, region: "Europe" },
+    { name: "Online Board Game Arena + Yucata play", frequency: "ongoing", founded: 2012, region: "Online" },
+    { name: "Spiel Essen convention play", frequency: "annual", founded: 2010, region: "Germany" },
+  ],
+  countriesPlayed: ["DE", "US", "GB", "FR", "IT", "NL", "JP", "CA", "AU", "PL"],
+  famousAthletes: [
+    "Andreas Steding — Designer",
+    "European strategy game community strong following",
+    "Content creators: Rahdo, Man vs Meeple, No Pun Included",
+  ],
+  variants: [
+    "hansa-teutonica-original-2009",
+    "east-expansion-2011-baltic-russian-cities",
+    "britannia-standalone-2012-roman-britain-reimplementation",
+    "big-box-edition-2020-pegasus-premium-all-in",
+  ],
+  relatedSports: ["concordia", "brass-birmingham", "age-of-steam", "power-grid", "castles-of-burgundy"],
+  skills: ["action optimization within turn", "route + city timing", "player-board upgrade sequencing", "opponent displacement tactics", "endgame VP counting"],
+  strategies: [
+    { title: "Upgrade player board early — permanent bonuses compound", body: "Engine building rewards patience." },
+    { title: "Race for 'Aktionen' upgrade — more turns > more actions", body: "Action count is decisive." },
+    { title: "Prestige cities are scarce — race for high-value locations", body: "First-mover advantage." },
+    { title: "Displace opponents' merchants aggressively", body: "Interactive play rewards." },
+  ],
+  terminology: [
+    { term: "Hansa Teutonica", meaning: "The game name (Latin for Hanseatic League)." },
+    { term: "Hanse", meaning: "Medieval Hanseatic League — historical setting." },
+    { term: "Merchant / Trader", meaning: "The two piece types (trader worth 2x)." },
+    { term: "Aktionen", meaning: "Actions per turn upgrade track." },
+    { term: "Bücher (Books)", meaning: "Endgame VP bonus track." },
+    { term: "Schlüssel (Keys)", meaning: "Kontor slots per city upgrade." },
+    { term: "Privileg (Coins)", meaning: "Coin capacity upgrade." },
+    { term: "Prestige Counter", meaning: "The claimed-city token = VP." },
+    { term: "Kontor", meaning: "Trading office (city building/slot)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play with 3 players + experienced teacher", body: "Rules easier live than by video." },
+      { title: "Focus on Aktionen + Buch tracks first game", body: "Simplified strategy." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Master player-board upgrade sequencing + displacement tactics", body: "Deeper play." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Try Britannia + East expansion; 4-5 player games with tournament rules", body: "Full depth." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Hansa Teutonica?", answer: "2009 GERMAN-STYLE EURO STRATEGY BOARD GAME by ANDREAS STEDING — set in the MEDIEVAL HANSEATIC LEAGUE (Hanse) of Northern Europe (13th-15th c). 2-5 players compete as MERCHANTS building TRADING NETWORKS across cities of the Hanse (Bremen, Lübeck, Hamburg, Cologne, etc.) via placing MERCHANTS + TRADERS on connection routes. Players ACHIEVE MERCHANT PRESTIGE by claiming EMPTY CITIES, unlocking PLAYER-BOARD UPGRADES (books/keys/coins/moves/liber sophiae), and finally scoring on CITIES + NETWORKS. Award-winning + universally praised for tight decision-making + minimal-luck strategic depth. BGG Top 100 for years." },
+    { question: "Hansa Teutonica vs Concordia — which classic Euro should I play?", answer: "Both are TOP-TIER MEDIUM-HEAVY EUROS + often compared. HANSA TEUTONICA (2009, Steding): High-interaction network + engine-building on Hanseatic map; aggressive displacement of opponents' merchants; 60-90 min; player-board upgrade path is signature; tighter/tenser turn-by-turn decisions. CONCORDIA (2013, Gerdts): Deck-building + placement on ancient Roman map; less directly confrontational; ~90-120 min; hidden VP scoring via card multipliers rewards long-term planning. HT is MORE INTERACTIVE + faster; Concordia is MORE ELEGANT + strategic long-term planning. Both are ~4/5 on BGG top games; owning both is common for Euro fans. If you prefer FIGHT for spaces + aggressive play → HT. If you prefer QUIET long-game optimization → Concordia. Both fantastic + often play same audience." },
+  ],
+  wikipediaTitle: "Hansa Teutonica",
+  sources: [
+    { label: "BoardGameGeek — Hansa Teutonica", url: "https://boardgamegeek.com/boardgame/43015/hansa-teutonica", publisher: "BGG" },
+    { label: "Argentum Verlag", url: "https://argentum-verlag.de/", publisher: "Argentum" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

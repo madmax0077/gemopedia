@@ -1,0 +1,123 @@
+import type { Sport } from "@/lib/types";
+
+export const paxPamir: Sport = {
+  id: "pax-pamir",
+  slug: "pax-pamir",
+  name: "Pax Pamir",
+  officialName: "Pax Pamir: Second Edition",
+  aliases: ["Pax Pamir 2E", "PP2E"],
+  shortDescription:
+    "2019 SECOND EDITION OF POLITICAL STRATEGY BOARD GAME BY COLE WEHRLE (also designer of ROOT + JOHN COMPANY) — set in the 19TH CENTURY GREAT GAME between BRITISH EMPIRE + RUSSIAN EMPIRE + AFGHAN TRIBES over control of AFGHANISTAN + Central Asia. 1-5 players take on AFGHAN CHIEFTAINS who PLEDGE LOYALTY (temporarily) to one of three COALITIONS (British, Russian, or Afghan) + build court through hand-management + card-tableau of PATRIOTS, SPIES, ECONOMIC PIECES on cities across the region. WIN CONDITION: When 'DOMINANCE CHECK' triggers, whichever COALITION has most influence wins — and the player with most PRESTIGE in that coalition wins the game. Ranked BGG Top 100. Considered a masterpiece of ASYMMETRIC POLITICAL DESIGN.",
+  longDescription:
+    "PAX PAMIR: SECOND EDITION is a 2019 REDESIGNED VERSION of the political strategy board game originally published in 2015 (first edition by SIERRA MADRE GAMES) by COLE WEHRLE (American game designer + academic, also creator of ROOT 2018, JOHN COMPANY, PAX RENAISSANCE, ORIFLAMME + others). Published by WEHRLEGIG GAMES (Wehrle's own imprint). SECOND EDITION was a MAJOR REWORK — refined rules, improved components, added player-count support (1-5), new UI, and is considered the DEFINITIVE version. Widely regarded as ONE OF THE FINEST POLITICAL STRATEGY GAMES ever designed + a MASTERPIECE OF WEHRLE'S OEUVRE. SETTING: 19TH CENTURY THE GREAT GAME — the geopolitical rivalry between the BRITISH EMPIRE (from India) + RUSSIAN EMPIRE (from Central Asia) over control of AFGHANISTAN + surrounding Central Asian territories. AFGHANISTAN itself was a buffer state ruled by tribal chieftains + emirs whose loyalties shifted based on foreign influence + local politics; both empires competed for their allegiance. OVERVIEW: 1-5 players play as AFGHAN CHIEFTAINS + POWER BROKERS who navigate this complex geopolitical struggle by PLEDGING LOYALTY to one of THREE COALITIONS: (1) BRITISH COALITION, (2) RUSSIAN COALITION, or (3) AFGHAN COALITION (native independence). Players can CHANGE COALITION LOYALTY as the game progresses (a signature Pax mechanic) — this creates SHIFTING ALLIANCES + betrayals. GAMEPLAY: Each turn, players purchase CARDS from a MARKET ROW using RUPEES (game currency) — cards range from PATRIOT LEADERS to SPIES, TRIBES, ECONOMIC INSTRUMENTS, EVENTS. Cards go into player's COURT (personal tableau). Cards can be PLAYED for various effects: BUILD (place patriot/army/spy/economic pieces on the regional map board), TAX (extract rupees), GIFT (give favors to gain prestige), BETRAY (change coalition loyalty), BATTLE (military conflict on map). MAP: A regional map of Afghanistan + Persian/Central Asian frontier with CITIES + REGIONS where players build political + military influence. COALITION INFLUENCE: The COALITION MAP INFLUENCE is the collective total of all cards' contributions from PLAYERS ALIGNED with that coalition; players want their coalition to be STRONG + themselves to be TOP-RANKED within it. DOMINANCE CHECK: At certain milestones (drawing of DOMINANCE CHECK CARDS shuffled into deck), the current LEADING COALITION scores; players who are ALIGNED with that coalition earn PRESTIGE based on their contribution + rank within the coalition. WIN CONDITION: Highest total PRESTIGE at game end (when 4th Dominance Check resolved or coalition thresholds reached). GAME LENGTH: 60-120 min. WEIGHT: BGG weight ~3.5/5 — medium-heavy Euro/political. INTERACTION: HIGH — betrayal, spies eliminate opponents' pieces, tribes can defect, players actively harm each other's coalitions. Political-theme deep + immersive. SOLO MODE: Included in 2nd Edition — competes vs AI 'automa' agents representing coalition foes. RANKINGS: BGG Top 100 (peaked ~#60-100); universally praised for depth + theme + design elegance. PAX SERIES CONTEXT: PAX PAMIR is part of the PAX SERIES of games (PAX PORFIRIANA, PAX RENAISSANCE, PAX EMANCIPATION, PAX TRANSHUMANITY) all sharing similar shifting-alliance card-play mechanics but different historical settings. Considered by many the BEST OF THE PAX GAMES.",
+  category: "board-games",
+  subCategory: "political strategy / historical / shifting alliances / medium-heavy Euro / asymmetric",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "United States (Cole Wehrle, Wehrlegig Games)",
+  estimatedOrigin: "2015 First Edition; 2019 Second Edition (definitive)",
+  players: { min: 1, max: 5, note: "1-5 players; 3-5 optimal for full political dynamics; 2P + solo have variant rules." },
+  field: {
+    surfaceName: "Afghanistan regional map + coalition influence tracks",
+    dimensions: "Regional map of Afghanistan + Central Asia + coalition tracks + market row",
+    description: "Elegant historical map with cities + tribal regions.",
+  },
+  equipment: [
+    { name: "Regional map board", description: "Playing surface" },
+    { name: "Card deck (patriots, spies, tribes, events)", description: "Court-building foundation" },
+    { name: "Player mats + court tableaux", description: "Individual state tracking" },
+    { name: "Patriot + army + spy + economic pieces (wooden)", description: "Map placement components" },
+    { name: "Rupees (game currency)", description: "Card purchasing" },
+    { name: "Coalition markers + loyalty flags", description: "Alignment tracking" },
+    { name: "Prestige VP markers", description: "Individual scoring" },
+    { name: "Dominance check cards (shuffled into deck)", description: "Scoring triggers" },
+  ],
+  duration: { approximateMinutes: 90, structure: "60-120 min; ends after 4th Dominance Check resolves or coalition thresholds hit." },
+  objective: "Accumulate most Prestige by being top-ranked in the winning coalition at scoring moments.",
+  basicRules: [
+    { title: "Pledge loyalty to one of 3 coalitions (British/Russian/Afghan)", body: "Alignment mechanic." },
+    { title: "Loyalty can change through Betrayal cards + gifts", body: "Signature Pax mechanic." },
+    { title: "Buy cards from market + play them for build/tax/gift/betray/battle effects", body: "Card-driven gameplay." },
+    { title: "Coalition dominance measured on regional map + tribal influence", body: "Collective coalition power." },
+    { title: "Dominance Check cards trigger scoring for current leading coalition", body: "Periodic reset." },
+    { title: "Highest Prestige at game end wins", body: "Personal rank within coalition matters." },
+  ],
+  scoring: {
+    summary: "Prestige earned during Dominance Checks based on coalition alignment + individual contribution rank.",
+    breakdown: [
+      { action: "Dominance Check: player's coalition leads → contributors earn Prestige", points: "3-6 Prestige based on rank" },
+      { action: "Dominance Check: player's coalition doesn't lead → 0 Prestige for that check", points: "Missed opportunity" },
+      { action: "Individual card triggers giving Prestige", points: "1-2 direct Prestige" },
+      { action: "Highest total Prestige at game end wins", points: "Match win" },
+    ],
+    winCondition: "Highest total Prestige after 4th Dominance Check or coalition threshold triggered.",
+  },
+  governingBodies: [
+    { name: "Wehrlegig Games (publisher — Cole Wehrle's imprint)", founded: 2018, headquarters: "Illinois, USA" },
+    { name: "Leder Games (associated distribution for Root + related Wehrle games)", founded: 2015, headquarters: "Minnesota, USA" },
+    { name: "BoardGameGeek community", founded: 2000, headquarters: "Online" },
+  ],
+  majorCompetitions: [
+    { name: "Pax Pamir + Pax series community events", frequency: "periodic", founded: 2016, region: "Global" },
+    { name: "Online Board Game Arena play + convention meetups", frequency: "ongoing", founded: 2020, region: "Online + conventions" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "IT", "PL", "JP", "CA", "AU", "NL"],
+  famousAthletes: [
+    "Cole Wehrle — Designer of Pax Pamir + Root + John Company",
+    "Wehrlegig Games team",
+    "Content creators covering Pax series: Rahdo, The Player's Aid, Space Biff",
+  ],
+  variants: [
+    "pax-pamir-first-edition-2015-sierra-madre",
+    "pax-pamir-second-edition-2019-wehrlegig-definitive",
+    "solo-mode-with-automa-opponents",
+    "pax-series-similar-mechanics-different-settings",
+  ],
+  relatedSports: ["pax-porfiriana", "pax-renaissance", "john-company", "root", "twilight-struggle"],
+  skills: ["coalition timing + loyalty switching", "card evaluation + market timing", "regional map influence building", "opponent modeling + betrayal", "endgame Prestige counting"],
+  strategies: [
+    { title: "Loyalty is temporary — switch when your coalition is losing", body: "Political survival." },
+    { title: "Buy cards that support your current coalition", body: "Coalition alignment matters." },
+    { title: "Betray opponents at key Dominance Check moments", body: "Timing is decisive." },
+    { title: "Race for top rank within winning coalition", body: "Contribution rank scoring." },
+  ],
+  terminology: [
+    { term: "Pax Pamir", meaning: "'Peace of the Pamirs' — the game name, ironic historical reference." },
+    { term: "The Great Game", meaning: "Historical 19th c British-Russian rivalry over Central Asia." },
+    { term: "Coalition", meaning: "British / Russian / Afghan — the 3 political factions." },
+    { term: "Loyalty", meaning: "Player's current coalition alignment (can change)." },
+    { term: "Court", meaning: "Player's personal tableau of purchased cards." },
+    { term: "Dominance Check", meaning: "Scoring trigger; winning coalition contributors earn Prestige." },
+    { term: "Prestige", meaning: "Individual VP earned from Dominance Checks + cards." },
+    { term: "Rupees", meaning: "Game currency for card purchases." },
+    { term: "Betrayal", meaning: "Cards that let you switch coalitions." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Watch a rules teach video (Watch-It-Played)", body: "Complex political mechanics benefit from video." },
+      { title: "Play 3-player game with experienced Wehrle-game teacher", body: "Guided intro." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Explore all coalition strategies + solo mode", body: "Broader understanding." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Master 5-player games + explore other Pax series games", body: "Full engagement." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Pax Pamir?", answer: "2019 SECOND EDITION OF POLITICAL STRATEGY BOARD GAME BY COLE WEHRLE (also designer of ROOT + JOHN COMPANY) — set in the 19TH CENTURY GREAT GAME between BRITISH EMPIRE + RUSSIAN EMPIRE + AFGHAN TRIBES over control of AFGHANISTAN + Central Asia. 1-5 players take on AFGHAN CHIEFTAINS who PLEDGE LOYALTY (temporarily) to one of three COALITIONS (British, Russian, or Afghan) + build court through hand-management + card-tableau of PATRIOTS, SPIES, ECONOMIC PIECES on cities across the region. WIN CONDITION: When 'DOMINANCE CHECK' triggers, whichever COALITION has most influence wins — and the player with most PRESTIGE in that coalition wins the game. Ranked BGG Top 100. Considered a masterpiece of ASYMMETRIC POLITICAL DESIGN." },
+    { question: "Pax Pamir vs Twilight Struggle vs Root — which political game should I play?", answer: "All three are POLITICAL/STRATEGIC MASTERPIECES with different flavors. PAX PAMIR (2019, Wehrle) — 1-5 players, shifting alliances between 3 coalitions in 19th c Afghanistan; 60-120 min; medium-heavy; INDIVIDUAL scoring within coalition matters. TWILIGHT STRUGGLE (2005, Gupta + Matthews) — STRICTLY 2-PLAYER Cold War USA vs USSR; long (3-4 hours); very heavy; card-driven area control; considered the finest 2P historical wargame. ROOT (2018, Wehrle) — 2-4 player asymmetric forest woodland factions (Cats, Birds, Rabbits, Vagabond); 60-90 min; medium-heavy; FACTION ASYMMETRY is the signature. All 3 by different designers with different feels; PAX PAMIR is most POLITICAL/PLAYER-COUNT flexible; TWILIGHT STRUGGLE is definitive 2P Cold War; ROOT is most whimsical + asymmetric. Owning all three is common for the strategy political-game connoisseur." },
+  ],
+  wikipediaTitle: "Pax Pamir",
+  sources: [
+    { label: "BoardGameGeek — Pax Pamir: Second Edition", url: "https://boardgamegeek.com/boardgame/256960/pax-pamir-second-edition", publisher: "BGG" },
+    { label: "Wehrlegig Games", url: "https://wehrlegig.com/", publisher: "Wehrlegig" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

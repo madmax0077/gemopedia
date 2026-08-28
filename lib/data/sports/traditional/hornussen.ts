@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const hornussen: Sport = {
+  id: "hornussen",
+  slug: "hornussen",
+  name: "Hornussen",
+  officialName: "Hornussen",
+  aliases: ["Swiss Farmer's Golf", "Nouss batting"],
+  shortDescription:
+    "TRADITIONAL SWISS RURAL TEAM SPORT often called 'FARMER'S GOLF' — a hybrid of golf, cricket, and baseball unique to Switzerland. One player STRIKES the NOUSS (a 78g rubber-and-metal puck) off a wedge-shaped ramp using a WHIPPING 2.4M LONG FLEXIBLE STICK called STECKEN, launching it 100-300 METERS at speeds up to 300 km/h. Opposing team fielders on a rectangular field try to INTERCEPT with wooden shovels called SCHINDELN before the nouss lands. Points scored based on distance + interceptions. Part of Swiss NATIONAL FESTIVALS (Eidgenössisches Schwing- und Älplerfest); governed by EIDGENÖSSISCHER HORNUSSER VERBAND (1902). ~9,000 registered players.",
+  longDescription:
+    "HORNUSSEN is a TRADITIONAL SWISS RURAL TEAM SPORT that combines elements of GOLF, CRICKET, and BASEBALL — unique to SWITZERLAND, played primarily in the CANTONS OF BERN, SOLOTHURN, AARGAU, LUZERN + neighboring Alpine cantons. Often called 'FARMER'S GOLF' or 'Swiss golf.' HISTORY: Documented as an established rural game by 17TH CENTURY (first written reference 1625); likely originated as a HERDER'S PASTIME on the ALPS during summer grazing. FORMALIZED by EIDGENÖSSISCHER HORNUSSER VERBAND (Federal Hornussen Association) founded 1902 in Lyss. Considered one of the THREE TRADITIONAL SWISS NATIONAL SPORTS alongside SCHWINGEN + STEINSTOSSEN (stone put); all three are contested at the EIDGENÖSSISCHES SCHWING- UND ÄLPLERFEST held every 3 years. GAME MECHANICS: Played by TWO TEAMS OF 18 PLAYERS on a large RECTANGULAR FIELD (~130 m long × 8-14 m wide called RIES). One team STRIKES; other team FIELDS. STRIKING MECHANICS: A HORNUSSER stands at a small elevated WEDGE-SHAPED RAMP called BOCK (~1m tall, angled 45°); the NOUSS (a small puck, ~78g, made of rubber + metal insert, ~30mm diameter × 8mm thick) is placed on the peak of the ramp. Striker uses a STECKEN — a 2.4-METER LONG FLEXIBLE STICK made of ASH with a WHIPPING WOODEN or CARBON HEAD — and WHIPS the nouss off the ramp in a single powerful motion, catapulting it into the air. TOP STRIKES launch the nouss 100-300+ METERS at speeds up to 300 KM/H (186 mph)! The distinctive HORNET-LIKE BUZZING SOUND the nouss makes in flight gave the sport its name ('Hornussen' from Swiss German for 'hornet'). FIELDING: 8+ FIELDERS spread across the RIES with wooden SCHINDELN (large flat wooden 'shingles' or shovels, ~120cm × 60cm) held up like paddles — they try to BLOCK/INTERCEPT the nouss mid-flight or on landing bounce before it can cross the 'GOAL' (the far end of the ries). Fielders MOVE INTO POSITION based on the strike; catching the nouss on the schindel = no points for striker. SCORING: If the nouss reaches the far end of the ries without being intercepted, striker earns 1-4 POINTS based on DISTANCE (marked by transverse lines on the ries — closer = 1 pt, deep = 4 pts). Each team gets 20-40 strikes per match; team with highest total wins. INTERCEPTIONS by fielders NEGATE the strike. GAME LENGTH: ~2-3 hours per match. TOURNAMENTS: EIDGENÖSSISCHES HORNUSSERFEST (Federal Hornussen Festival) held every 3 years — highest-level competition; regional Bernese championships year-round. LEGENDS: Modern top clubs include OBERWANGEN, HÄRKINGEN, HERZOGENBUCHSEE, BOLLIGEN. UNESCO named Hornussen part of Switzerland's INTANGIBLE CULTURAL HERITAGE 2016. Practiced by ~9,000 registered members (mostly older + rural) in ~250 clubs; less globally spread than Schwingen but a beloved Swiss institution.",
+  category: "traditional-cultural-sports",
+  subCategory: "Swiss rural / national sport / bat-and-target hybrid",
+  sportType: "team",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "early-modern",
+  popularity: "regional",
+  countryOfOrigin: "CH",
+  regionOfOrigin: "Switzerland (cantons of Bern, Solothurn, Aargau, Luzern — Central/German Switzerland)",
+  estimatedOrigin: "First documented 1625; likely older; federation founded 1902",
+  players: { min: 18, max: 18, note: "Two teams of 18 players each; typically 8-10 fielders active at once + strikers rotate." },
+  field: {
+    surfaceName: "Ries (elongated rectangular field)",
+    dimensions: "~130 m long × 8-14 m wide; flat grass surface with distance-marker lines",
+    description: "Long narrow grass field with wedge-shaped Bock (striking ramp) at one end.",
+  },
+  equipment: [
+    { name: "Stecken (2.4m flexible ash/carbon striking stick)", description: "The signature whipping bat" },
+    { name: "Nouss (78g rubber-metal puck)", description: "The projectile — hornet-like buzzing in flight" },
+    { name: "Bock (wedge-shaped striking ramp, ~1m)", description: "Nouss placed on peak before strike" },
+    { name: "Schindel (large flat wooden shovel/paddle, ~120×60cm)", description: "Fielder's blocking + catching tool" },
+    { name: "Team uniform + safety helmet (optional for fielders)", description: "Modern safety consideration" },
+  ],
+  duration: { approximateMinutes: 180, structure: "2-3 hours; each team gets 20-40 strikes per match." },
+  objective: "Score most points via distance-based successful strikes past fielders; defend by intercepting.",
+  basicRules: [
+    { title: "One team strikes at a time; other fields", body: "Roles alternate over match." },
+    { title: "Striker whips nouss from Bock ramp with Stecken", body: "Single explosive whipping motion." },
+    { title: "Fielders try to intercept nouss with schindel before it lands past goal line", body: "Aerial or first-bounce catches count." },
+    { title: "Distance-based points (1-4) for successful long strikes", body: "Further = more points." },
+    { title: "Intercepted strikes = 0 points", body: "Defense negates offense entirely." },
+    { title: "Team with highest total after all strikes wins", body: "Cumulative team score." },
+  ],
+  scoring: {
+    summary: "Distance-based points per successful (non-intercepted) strike; team totals accumulate.",
+    breakdown: [
+      { action: "Strike lands past goal line in 1st distance zone", points: "1 pt" },
+      { action: "Strike lands in 2nd distance zone", points: "2 pts" },
+      { action: "Strike lands in 3rd distance zone", points: "3 pts" },
+      { action: "Strike lands in deepest zone", points: "4 pts" },
+      { action: "Fielder intercepts with schindel", points: "0 pts (strike negated)" },
+      { action: "'Nummer' (foul strike)", points: "0 pts + counted as attempt" },
+    ],
+    winCondition: "Team with highest cumulative points at end of match wins.",
+  },
+  governingBodies: [
+    { name: "Eidgenössischer Hornusserverband (EHV)", founded: 1902, headquarters: "Lyss, Switzerland" },
+    { name: "Cantonal associations across Bern, Solothurn, Aargau, Luzern", founded: 1905, headquarters: "Various" },
+  ],
+  majorCompetitions: [
+    { name: "Eidgenössisches Hornusserfest", frequency: "triennial", founded: 1904, region: "Switzerland" },
+    { name: "Kantonalfeste (Cantonal festivals)", frequency: "annual", founded: 1905, region: "Bern, Solothurn, Aargau" },
+    { name: "Schweizermeisterschaft (Swiss Championship)", frequency: "annual", founded: 1950, region: "Switzerland" },
+  ],
+  countriesPlayed: ["CH", "DE", "AT", "US", "CA"],
+  famousAthletes: [
+    "Historic teams: Oberwangen, Bolligen, Härkingen, Herzogenbuchsee",
+    "Individual stars less prominent than team culture — top strikers documented in EHV records",
+  ],
+  variants: [
+    "eidgenossisches-hornussen-elite-tri-annual",
+    "kantonale-hornusserfeste-regional",
+    "junioren-hornussen-youth-development",
+    "damen-hornussen-women-participation-growing",
+  ],
+  relatedSports: ["schwingen", "steinstossen", "cricket", "baseball", "golf"],
+  skills: ["stecken whipping technique", "power generation from body rotation", "schindel timing + positioning", "team coordination in fielding", "reading nouss trajectory in flight"],
+  strategies: [
+    { title: "Master the whipping motion — power comes from body, not arms", body: "Full-body pivot into stecken swing." },
+    { title: "Fielders position based on striker's typical trajectory", body: "Anticipation + fielding IQ." },
+    { title: "Aim strikes at less-covered zones of the ries", body: "Exploit fielding gaps." },
+    { title: "Team defensive shifts during opponent's strike sequences", body: "Adjust to individual striker patterns." },
+  ],
+  terminology: [
+    { term: "Hornussen", meaning: "Swiss German 'hornet-ing' — for the buzzing nouss." },
+    { term: "Nouss", meaning: "The projectile puck (~78g)." },
+    { term: "Stecken", meaning: "The 2.4m flexible striking stick." },
+    { term: "Bock", meaning: "The wedge-shaped striking ramp." },
+    { term: "Ries", meaning: "The rectangular playing field." },
+    { term: "Schindel", meaning: "Large wooden shovel/paddle for fielding." },
+    { term: "Nummer", meaning: "A foul strike (nouss goes out or short)." },
+    { term: "Ausschlag", meaning: "The single striking motion." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Join a Bernese or Solothurn Hornusser Verein (club)", body: "Rare outside Switzerland." },
+      { title: "Learn the stecken whipping technique + fielding positioning", body: "Core skills." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Compete at cantonal festivals", body: "Progressive competition ladder." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Qualify for Eidgenössisches Hornusserfest", body: "Elite national event." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Hornussen?", answer: "TRADITIONAL SWISS RURAL TEAM SPORT often called 'FARMER'S GOLF' — unique to Switzerland. One player STRIKES the NOUSS (a 78g rubber-metal puck) off a wedge-shaped ramp using a WHIPPING 2.4M LONG FLEXIBLE STICK called STECKEN, launching it 100-300 METERS at speeds up to 300 km/h. Opposing team fielders try to INTERCEPT with wooden shovels called SCHINDELN. Points scored based on distance + interceptions. Part of Swiss NATIONAL FESTIVALS; governed by EIDGENÖSSISCHER HORNUSSERVERBAND since 1902. ~9,000 registered players." },
+    { question: "How does the nouss reach 300 km/h?", answer: "The STECKEN is 2.4M LONG + FLEXIBLE — designed so the whipping tip travels FAR faster than the hand holding it (like a fly-fishing rod or golf driver but longer). Combined with the WEDGE-SHAPED BOCK ramp giving initial angle + the compact HARD RUBBER-METAL nouss (only 78g), a well-executed strike launches the nouss at speeds documented up to 300 KM/H (186 mph). This makes it one of the fastest projectiles in team sports; the distinctive HORNET-LIKE BUZZ (hence 'Hornussen') is caused by air rushing over the nouss's metal insert." },
+  ],
+  wikipediaTitle: "Hornussen",
+  sources: [
+    { label: "Eidgenössischer Hornusserverband — Official", url: "https://www.ehv.ch/", publisher: "EHV" },
+    { label: "Wikipedia — Hornussen", url: "https://en.wikipedia.org/wiki/Hornussen", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

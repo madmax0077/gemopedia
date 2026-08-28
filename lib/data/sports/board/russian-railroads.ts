@@ -1,0 +1,123 @@
+import type { Sport } from "@/lib/types";
+
+export const russianRailroads: Sport = {
+  id: "russian-railroads",
+  slug: "russian-railroads",
+  name: "Russian Railroads",
+  officialName: "Russian Railroads",
+  aliases: ["Russian Rails", "RR"],
+  shortDescription:
+    "2013 GERMAN-STYLE EURO STRATEGY WORKER-PLACEMENT GAME by HELMUT OHLEY + LEONHARD 'LOOKOUT' ORGLER (18xx railroad designer) — published by HANS IM GLÜCK. 2-4 players compete as INDUSTRIALISTS in 19TH CENTURY IMPERIAL RUSSIA building THREE PARALLEL RAILROAD LINES: MOSCOW-VLADIVOSTOK (main line), MOSCOW-ST. PETERSBURG, and KIEV. Uses PLAYER BOARD PROGRESSION SYSTEM with rails, trains, engineers, factory bonuses accumulating VP in complex chain reactions. 7 ROUNDS + strong ENGINE BUILDING makes it a HEAVY EURO with satisfying compound growth. Winner of MULTIPLE INTERNATIONAL AWARDS 2013-14. Ranked in BGG Top 100 for years. Expansions: GERMAN RAILROADS + AMERICAN RAILROADS (2014).",
+  longDescription:
+    "RUSSIAN RAILROADS is a 2013 GERMAN-STYLE EURO STRATEGY WORKER-PLACEMENT GAME designed by HELMUT OHLEY (Austrian designer, primarily known for his 18xx games like 1817) + LEONHARD 'LOOKOUT' ORGLER (prolific 18xx designer, also 1849 SICILY, 1867 TERRITORY, 18USA, etc.). Published by HANS IM GLÜCK — the German publisher of CARCASSONNE. NOTABLE for combining 18xx-designer sensibility with HEAVY EURO worker-placement + engine-building. WINNER of Deutscher Spiele Preis 2014 + International Gamers Award 2013 + shortlisted for Kennerspiel des Jahres. Widely regarded as one of the FINEST HEAVY EUROS OF THE 2010s. OVERVIEW: 2-4 players compete as INDUSTRIALISTS in 19TH CENTURY IMPERIAL RUSSIA seeking to build the BEST RAILROAD NETWORK + accumulate the most VP. GAME LENGTH: 7 ROUNDS. CORE MECHANIC: WORKER-PLACEMENT + PLAYER-BOARD PROGRESSION. Each round players take turns PLACING WORKERS on ACTION SPACES on the main game board — spaces let players ADVANCE various trains + tracks on their PERSONAL PLAYER BOARDS. THREE RAILROAD LINES on each player's board: (1) MOSCOW-VLADIVOSTOK (main line, longest, most VP) — advanced by placing black/gray/brown/natural/white/pearl train tokens progressively along the track spaces; each track space passed = increasing VP. (2) MOSCOW-ST. PETERSBURG (secondary line). (3) KIEV LINE (third line). Each line has multiple 'CLASSES' of trains — a player who advances a track color must have unlocked that train class via prior progression. FACTORIES + ENGINEERS: Additional player-board tracks: FACTORY LEVELS (multipliers), ENGINEER CARDS (permanent bonuses), INDUSTRIALIZATION progress. ENGINE BUILDING: Signature RR mechanic — early advances create compound VP over subsequent rounds. Trains advanced early yield ongoing bonuses; late advances yield less compound value. Careful sequencing is crucial. WORKER TYPES: Standard workers + special colored workers unlocked through certain spaces. FINAL SCORING: End-of-game VP from rail line positions + engineer cards + factories + industrialization + Moscow track landmark bonuses (Moscow star spots unlock large bonuses). GAME LENGTH: 90-120 min. WEIGHT: BGG weight ~3.9/5 — HEAVY EURO. Engine-building heavy focus but requires INTERACTION via limited worker-placement spaces. RANKINGS: BGG Top 100 (peaked ~#50-90); universally praised. EXPANSIONS: GERMAN RAILROADS + AMERICAN RAILROADS (2014, sold together) — adds new game boards + rules variations for German + American railroad settings. Companion expansions provide fresh strategic challenges without needing a new game.",
+  category: "board-games",
+  subCategory: "heavy Euro / worker placement / engine building / railroad / track progression",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "AT",
+  regionOfOrigin: "Austria/Germany (Helmut Ohley + Leonhard Orgler); Hans im Glück publisher",
+  estimatedOrigin: "2013 (Hans im Glück)",
+  players: { min: 2, max: 4, note: "2-4 players; 3-4 optimal for tension; 2P has variant rules." },
+  field: {
+    surfaceName: "Central game board + 4 player boards",
+    dimensions: "Large central board with action spaces + 4 personal railroad player boards",
+    description: "Central board with placement spaces; each player has their own 3-line railroad board.",
+  },
+  equipment: [
+    { name: "Central game board (action spaces + phase indicator)", description: "Shared worker placement" },
+    { name: "4 player boards (3 railroad lines each + factory + engineer)", description: "Personal engine tracking" },
+    { name: "Colored train tokens (black, gray, brown, natural, white, pearl)", description: "Track progression" },
+    { name: "Worker meeples (per player color)", description: "Placement tokens" },
+    { name: "Engineer cards (permanent bonuses)", description: "Progression rewards" },
+    { name: "Money + VP markers", description: "Currency + scoring" },
+    { name: "Round marker + first-player token", description: "Round tracking" },
+  ],
+  duration: { approximateMinutes: 105, structure: "90-120 min; 7 rounds; game concludes with final scoring after Round 7." },
+  objective: "Score most Victory Points via railroad progression + factories + engineers + landmarks after 7 rounds.",
+  basicRules: [
+    { title: "7 rounds of worker placement on central board", body: "Fixed round count." },
+    { title: "Each action space advances something on your player board", body: "Board is the engine." },
+    { title: "Trains advance progressively through track spaces earning VP", body: "Signature RR scoring." },
+    { title: "3 railroad lines: Moscow-Vladivostok (main), St. Petersburg, Kiev", body: "Multiple parallel tracks." },
+    { title: "Factory levels + engineer cards + industrialization provide bonuses", body: "Multiple VP sources." },
+    { title: "Early advances compound over subsequent rounds", body: "Engine-building rewards patience." },
+  ],
+  scoring: {
+    summary: "VP from track advancement + factories + engineers + Moscow landmarks + industrialization.",
+    breakdown: [
+      { action: "Advance train along Moscow-Vladivostok track (main)", points: "Progressive VP per space" },
+      { action: "Complete St. Petersburg + Kiev lines", points: "Bonus VP" },
+      { action: "Factory levels", points: "Multipliers for other tracks" },
+      { action: "Engineer cards (permanent bonuses)", points: "Ongoing VP through rounds" },
+      { action: "Moscow star landmarks", points: "Large one-time bonuses" },
+    ],
+    winCondition: "Highest total VP after Round 7 final scoring.",
+  },
+  governingBodies: [
+    { name: "Hans im Glück (publisher)", founded: 1983, headquarters: "Munich, Germany" },
+    { name: "Z-Man Games (English distribution)", founded: 1999, headquarters: "USA/Canada" },
+    { name: "BoardGameGeek community", founded: 2000, headquarters: "Online" },
+  ],
+  majorCompetitions: [
+    { name: "Spiel Essen convention play", frequency: "annual", founded: 2013, region: "Germany" },
+    { name: "BGG community tournaments", frequency: "periodic", founded: 2014, region: "Global" },
+    { name: "Online Board Game Arena", frequency: "ongoing", founded: 2015, region: "Online" },
+  ],
+  countriesPlayed: ["DE", "AT", "US", "GB", "FR", "IT", "JP", "CA", "AU", "NL", "PL"],
+  famousAthletes: [
+    "Helmut Ohley (Austrian designer, 1817 + Russian Railroads co-designer)",
+    "Leonhard 'Lookout' Orgler (prolific 18xx designer)",
+    "Hans im Glück publishing team",
+  ],
+  variants: [
+    "russian-railroads-base-2013",
+    "german-railroads-expansion-2014",
+    "american-railroads-expansion-2014",
+    "gg-expansion-limited-promo",
+  ],
+  relatedSports: ["age-of-steam", "brass-birmingham", "1830-railways", "concordia", "hansa-teutonica"],
+  skills: ["worker placement priorities", "engine-building sequencing", "railroad track advancement timing", "factory + engineer optimization", "endgame VP calculation"],
+  strategies: [
+    { title: "Early Moscow-Vladivostok advances compound heavily", body: "Main line priority." },
+    { title: "Balance track advancement with factory + engineer growth", body: "Multi-source scoring." },
+    { title: "Race for premium worker spaces", body: "Worker placement is limited." },
+    { title: "Industrialization + Moscow landmarks provide late-game bonuses", body: "Endgame optimization." },
+  ],
+  terminology: [
+    { term: "Russian Railroads", meaning: "The game name." },
+    { term: "Moscow-Vladivostok", meaning: "The main (longest) railroad line — highest VP potential." },
+    { term: "Trains (black, gray, brown, natural, white, pearl)", meaning: "Progressive train classes advanced along tracks." },
+    { term: "Factory", meaning: "Player-board scoring multiplier track." },
+    { term: "Engineer", meaning: "Permanent-bonus cards." },
+    { term: "Industrialization", meaning: "Progression track providing endgame VP." },
+    { term: "Moscow star", meaning: "Landmark spot on Moscow-Vladivostok line for large bonuses." },
+    { term: "Worker placement", meaning: "Core action mechanic — place workers on limited spaces." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play with 3 players + experienced teacher", body: "Complex engine-building rules." },
+      { title: "Focus on Moscow-Vladivostok main line first game", body: "Primary scoring path." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Explore all 3 railroad lines + engineer strategies", body: "Deeper play." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "German + American railroads expansions; 4-player games", body: "Full engagement." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Russian Railroads?", answer: "2013 GERMAN-STYLE EURO STRATEGY WORKER-PLACEMENT GAME by HELMUT OHLEY + LEONHARD 'LOOKOUT' ORGLER (18xx railroad designer) — published by HANS IM GLÜCK. 2-4 players compete as INDUSTRIALISTS in 19TH CENTURY IMPERIAL RUSSIA building THREE PARALLEL RAILROAD LINES: MOSCOW-VLADIVOSTOK (main line), MOSCOW-ST. PETERSBURG, and KIEV. Uses PLAYER BOARD PROGRESSION SYSTEM with rails, trains, engineers, factory bonuses accumulating VP in complex chain reactions. 7 ROUNDS + strong ENGINE BUILDING makes it a HEAVY EURO with satisfying compound growth. Winner of MULTIPLE INTERNATIONAL AWARDS 2013-14. Ranked in BGG Top 100 for years. Expansions: GERMAN RAILROADS + AMERICAN RAILROADS." },
+    { question: "Russian Railroads vs Age of Steam vs 1830 — differences?", answer: "All 3 are HEAVY RAILROAD strategy games but differ significantly. RUSSIAN RAILROADS (2013): WORKER PLACEMENT + PLAYER BOARD ENGINE BUILDING; no map; 3 parallel personal railroad lines advance progressively; 90-120 min. AGE OF STEAM (2002, Wallace): CUBE DELIVERY on shared HEX MAP + role selection + brutal loan system; 2-4 hours. 1830 (1986, Tresham): STOCK MARKET + shared corporations + train rusting + BANKRUPTCY elimination; 4-6 hours. RR is MOST EURO-STYLE + ENGINE-DRIVEN with no direct combat/interference; AoS is MID-HEAVY EURO WITH MAP-BASED DELIVERY; 1830 is FINANCIAL SIMULATION WITH BRUTAL PVP. Each teaches different strategic thinking; RR is the most CLEANLY EURO + most accessible for first-time heavy Euro players." },
+  ],
+  wikipediaTitle: "Russian Railroads",
+  sources: [
+    { label: "BoardGameGeek — Russian Railroads", url: "https://boardgamegeek.com/boardgame/144733/russian-railroads", publisher: "BGG" },
+    { label: "Hans im Glück", url: "https://www.hans-im-glueck.de/", publisher: "Hans im Glück" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

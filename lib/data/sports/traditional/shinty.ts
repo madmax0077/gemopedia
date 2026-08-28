@@ -1,0 +1,121 @@
+import type { Sport } from "@/lib/types";
+
+export const shinty: Sport = {
+  id: "shinty",
+  slug: "shinty",
+  name: "Shinty",
+  officialName: "Camanachd (Scottish Gaelic) / Shinty",
+  aliases: ["Camanachd", "Iomain", "Highland Hockey"],
+  shortDescription:
+    "TRADITIONAL SCOTTISH STICK-AND-BALL TEAM SPORT played mostly in the HIGHLANDS + WESTERN ISLES, closely related to IRISH HURLING (shared Gaelic ancestor called CAMÁN over 2000 years ago). Two teams of 12 players use CAMAN (curved wooden stick, ~1m) to hit a small leather ball into opponent's H-shaped goal. Unlike hurling, ball may be played in the AIR + hit with either side of the caman. Governed by the CAMANACHD ASSOCIATION (1893). The CAMANACHD CUP FINAL is the season's biggest event. National sport of the SCOTTISH HIGHLANDS + a symbol of Gaelic culture; shinty-hurling international series held between Scotland + Ireland since 1972.",
+  longDescription:
+    "SHINTY (Scottish Gaelic: CAMANACHD or IOMAIN) is a TRADITIONAL SCOTTISH STICK-AND-BALL TEAM SPORT played primarily in the SCOTTISH HIGHLANDS + WESTERN ISLES + parts of Central Scotland. ORIGINS: Shares a common ancestor with IRISH HURLING — an ancient Gaelic stick-and-ball game called CAMÁN played across Ireland + Scotland for OVER 2000 YEARS, referenced in early Irish mythology (CÚ CHULAINN carried a caman); the two sports diverged over time with Ireland's hurling formalized by the GAA in 1884 + Scotland's shinty formalized by the CAMANACHD ASSOCIATION in 1893 (KINGUSSIE). EQUIPMENT: CAMAN — curved wooden stick ~90-120 cm long, wedge-shaped head; historically made from ash or hazel, now often laminated hickory. BALL is small hard leather (like a hurling sliotar but slightly harder + heavier ~70g). GAME: Two teams of 12 PLAYERS (traditionally 15+ historically) on a pitch typically 140-170 yards long × 70-80 yards wide (larger than football/soccer field). Goals are H-shaped like rugby posts but with a crossbar 3.05 m high; a ball driven UNDER the crossbar between posts = 1 POINT. UNLIKE HURLING: ball may be PLAYED IN THE AIR (aerial play encouraged); caman used with EITHER SIDE (both faces); no hand-catching (you can stop ball with open palm but must play it with caman); no scooping ball off ground with stick (use palm to lift); tackling allowed with caman-to-caman + shoulder-to-shoulder. GAME LENGTH: 2 halves × 45 MINUTES for senior; 40 min juniors; ties can go extra time or replay. GOVERNING BODY: CAMANACHD ASSOCIATION (Comunn na Camanachd) founded 1893, based in Inverness. LEAGUE STRUCTURE: PREMIERSHIP (top tier, 6-8 clubs), National Division, Regional Divisions (South, North 1, North 2, Sutherland Cup). MAJOR EVENTS: CAMANACHD CUP FINAL (contested since 1896) — Scotland's biggest shinty match, historically at KINGUSSIE, INVERNESS, or WEST HIGHLAND venues; MACAULAY CUP (2nd tier cup); MACTAVISH CUP; SUTHERLAND CUP (Junior). STRONGHOLDS: LOCHABER (Fort William, Kingussie, Newtonmore, Kinlochshiel), BADENOCH (Kingussie, Newtonmore), SKYE (Skye Camanachd, Kyles Athletic), LORNE (Oban Camanachd, Ballachulish), GLASGOW-based clubs (Glasgow Mid Argyll). INTERNATIONAL: SHINTY-HURLING INTERNATIONAL SERIES held annually since 1972 between SCOTLAND (shinty rules-adapted) + IRELAND (hurling rules-adapted); uses hybrid rules; Scotland has won ~50% of matches. CULTURAL: Deeply embedded in Highland identity + Gaelic culture; annual GAELIC + SHINTY festivals; historically played on ash-strewn moors + frozen lochs; celebrated in Scottish literature (Neil Gunn, Iain Crichton Smith). Number of registered players ~2,500 today; slowly recovering from 20th-century decline. NEWTONMORE holds record for most Camanachd Cup wins (34+).",
+  category: "traditional-cultural-sports",
+  subCategory: "stick-and-ball / Gaelic / Highland Scottish / Camán family",
+  sportType: "team",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "ancient",
+  popularity: "regional",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "Scottish Highlands + Western Isles (ancient Gaelic origin shared with Ireland)",
+  estimatedOrigin: "Over 2000 years old (shared Camán ancestor); Camanachd Association formalized 1893",
+  players: { min: 12, max: 12, note: "Two teams of 12 players each (goalkeeper + 11 outfield)." },
+  field: {
+    surfaceName: "Grass pitch",
+    dimensions: "140-170 yards long × 70-80 yards wide (larger than soccer pitch)",
+    description: "H-shaped goalposts 3.05m crossbar; large grass field; often in Highland setting.",
+  },
+  equipment: [
+    { name: "Caman (curved wooden stick, ~90-120 cm)", description: "Wedge-shaped head; both faces used" },
+    { name: "Shinty ball (leather, ~70g)", description: "Hard cork/wool core with leather cover" },
+    { name: "Helmet (mandatory since 2015)", description: "For player safety" },
+    { name: "Shinty boots + shin pads", description: "Standard field-sport kit" },
+    { name: "Goalposts (H-shaped, 3.05m crossbar)", description: "Rugby-style posts" },
+  ],
+  duration: { approximateMinutes: 90, structure: "2 halves × 45 min (senior); 15-min half-time; extra time if tied in cup." },
+  objective: "Drive the ball under the crossbar between opponent's goalposts using the caman.",
+  basicRules: [
+    { title: "12 players per side; goalkeeper + 11 outfield", body: "Standard team size." },
+    { title: "Both sides of caman may be used", body: "Distinguishes from hurling." },
+    { title: "Ball may be played in the air with caman", body: "Aerial play encouraged." },
+    { title: "No hand-catching; open-palm stop allowed", body: "Then must strike with caman." },
+    { title: "No scooping ball off ground with caman", body: "Use foot or open palm to lift." },
+    { title: "Caman-on-caman + shoulder-to-shoulder tackles allowed", body: "Physical but not thuggish." },
+  ],
+  scoring: {
+    summary: "1 point per goal (under crossbar between posts); most goals wins.",
+    breakdown: [
+      { action: "Goal (ball under crossbar between posts)", points: "1 pt" },
+      { action: "No above-crossbar points (unlike Gaelic football)", points: "0 pts" },
+      { action: "Own goal", points: "1 pt to opponent" },
+    ],
+    winCondition: "Team with most goals at full-time wins; extra time or replay in cup matches if tied.",
+  },
+  governingBodies: [
+    { name: "Camanachd Association (Comunn na Camanachd)", founded: 1893, headquarters: "Inverness, Scotland" },
+    { name: "Women's Camanachd Association", founded: 2005, headquarters: "Scotland" },
+  ],
+  majorCompetitions: [
+    { name: "Camanachd Cup Final", frequency: "annual", founded: 1896, region: "Scotland" },
+    { name: "Marine Harvest Premiership (top league)", frequency: "annual", founded: 2001, region: "Scotland" },
+    { name: "MacAulay Cup", frequency: "annual", founded: 1946, region: "Scotland" },
+    { name: "MacTavish Cup", frequency: "annual", founded: 1904, region: "North Scotland" },
+    { name: "Shinty–Hurling International Series", frequency: "annual", founded: 1972, region: "Scotland/Ireland" },
+  ],
+  countriesPlayed: ["GB", "IE", "CA", "US", "NZ", "AU"],
+  famousAthletes: [
+    "Ronald Ross (Kingussie) — Legendary all-time top scorer",
+    "Dr Johnnie Cattanach (early 20th c) — Newtonmore legend",
+    "Iain 'Bragger' Nicolson — Skye Camanachd icon",
+    "Danny MacRae — Multi-time Cup winner",
+    "Finlay MacRae (Kingussie) — Modern era star",
+  ],
+  variants: [
+    "premiership-shinty-elite-level",
+    "camanachd-womens-shinty",
+    "shinty-hurling-international-hybrid-rules",
+    "traditional-camán-informal-game",
+  ],
+  relatedSports: ["hurling", "field-hockey", "bandy", "ice-hockey", "lacrosse"],
+  skills: ["caman striking (both faces)", "aerial ball control", "tackling technique", "positioning across large pitch", "goal shooting"],
+  strategies: [
+    { title: "Master aerial play — unique to shinty", body: "Ball control above shoulder-height." },
+    { title: "Use both faces of the caman", body: "Adaptive vs hurling's edge-only." },
+    { title: "Fitness for large pitch dimensions", body: "170-yard pitch demands endurance." },
+    { title: "Defensive shoulder charges + caman blocks", body: "Physical + technical mix." },
+  ],
+  terminology: [
+    { term: "Shinty", meaning: "The sport (English name)." },
+    { term: "Camanachd", meaning: "Scottish Gaelic name for the sport." },
+    { term: "Caman", meaning: "The stick — from Gaelic 'cam' = curved." },
+    { term: "Iomain", meaning: "Another Gaelic term — 'the driving'." },
+    { term: "Buille (buill)", meaning: "A stroke / hit." },
+    { term: "Cluich mòr", meaning: "'Big play' — major move or shot." },
+    { term: "Iomain Cholm-Cille", meaning: "'St Columba's shinty' — traditional Uist New Year game." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Join Highland or Central Belt Scottish shinty club", body: "Most clubs offer beginner training." },
+      { title: "Learn caman grip + basic strikes", body: "Foundation skills." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Play regional divisions + cup competitions", body: "Structured club progression." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Premiership + representative shinty for Scotland (Shinty-Hurling series)", body: "Elite pathway." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Shinty?", answer: "TRADITIONAL SCOTTISH STICK-AND-BALL TEAM SPORT played mostly in the HIGHLANDS + WESTERN ISLES, closely related to IRISH HURLING (shared Gaelic ancestor called CAMÁN over 2000 years ago). Two teams of 12 players use CAMAN (curved wooden stick, ~1m) to hit a small leather ball into opponent's H-shaped goal. Unlike hurling, ball may be played in the AIR + hit with either side of the caman. Governed by the CAMANACHD ASSOCIATION (1893). National sport of the SCOTTISH HIGHLANDS." },
+    { question: "Shinty vs Hurling — what's the difference?", answer: "SAME GAELIC ANCESTOR (Camán) but SHINTY (Scotland) uses BOTH FACES OF CAMAN + encourages AERIAL PLAY + smaller/harder ball + NO HAND CATCHING + goals only under crossbar (1 point each). HURLING (Ireland) uses one edge of hurley + longer stick + softer sliotar + hand-catching allowed + points ABOVE crossbar (1 pt) + goals under (3 pts). Shinty faster + more aerial; hurling more precision-catching. The annual SHINTY-HURLING INTERNATIONAL uses hybrid rules." },
+  ],
+  wikipediaTitle: "Shinty",
+  sources: [
+    { label: "Camanachd Association — Official", url: "https://www.shinty.com/", publisher: "Camanachd Association" },
+    { label: "Wikipedia — Shinty", url: "https://en.wikipedia.org/wiki/Shinty", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

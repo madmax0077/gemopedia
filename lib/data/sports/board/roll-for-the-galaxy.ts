@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const rollForTheGalaxy: Sport = {
+  id: "roll-for-the-galaxy",
+  slug: "roll-for-the-galaxy",
+  name: "Roll for the Galaxy",
+  officialName: "Roll for the Galaxy",
+  aliases: ["RftG (dice version)", "Roll for the Galaxy"],
+  shortDescription:
+    "2014 DICE-BASED CIVILIZATION-BUILDING BOARD GAME by WEI-HWA HUANG + THOMAS LEHMANN — the DICE-BASED SPIN-OFF of Lehmann's classic 2007 CARD GAME RACE FOR THE GALAXY. 2-5 players simultaneously ROLL COLORED DICE representing WORKERS + assign them to 5 phases (Explore, Develop, Settle, Ship/Produce, Consume) to build a personal SPACE EMPIRE of worlds + technologies. Simultaneous play + minute-based turns make it fast, elegant, and strategically deep. Rankings: BGG Top 200. Widely praised as PICK-UP-AND-PLAY BUT DEEP; often called 'the crack cocaine of dice games' for its addictive turn tempo. Expansions: AMBITION (2015), RIVALRY (2017), BLACK GOLD (2019).",
+  longDescription:
+    "ROLL FOR THE GALAXY is a 2014 DICE-BASED CIVILIZATION-BUILDING BOARD GAME designed by WEI-HWA HUANG + THOMAS LEHMANN (Lehmann is also creator of the 2007 CARD GAME RACE FOR THE GALAXY on which Roll is spiritually based) + published by RIO GRANDE GAMES. Roll takes the CORE PHASE-SELECTION MECHANIC of Race + reimagines it with DICE + WORKER PLACEMENT + SIMULTANEOUS PLAY, creating a game that shares thematic DNA but plays completely differently. OVERVIEW: 2-5 players build PERSONAL SPACE EMPIRES by simultaneously rolling their WHITE WORKER DICE + assigning them to the 5 PHASES OF EMPIRE-BUILDING: (1) EXPLORE — roll to discover new WORLD or DEVELOPMENT tiles. (2) DEVELOP — build TECHNOLOGY DEVELOPMENTS (permanent bonus cards). (3) SETTLE — settle new WORLDS (planets with bonuses + VP). (4) SHIP — trade goods for CREDITS. (5) PRODUCE — produce GOODS on your world tiles for later shipping. TURN STRUCTURE: SIMULTANEOUS + FAST — every player rolls their dice pool at once + selects a SINGLE PHASE + assigns dice to it privately behind a screen. All players reveal simultaneously — phases selected by ANY player happen for ALL players (but the SELECTOR gets a BONUS in that phase). Then phases resolve in order (Explore → Develop → Settle → Ship → Produce). DICE MANAGEMENT: Each round rolls fresh dice from your cup; dice come in COLORS with different phase probabilities: WHITE (starting workers, generic), BROWN (settlers, better for Settle), BLUE (traders, better for Ship), GREEN (developers, better for Develop), YELLOW (explorers, better for Explore), RED (production, better for Produce), PURPLE (military — allows conquering military worlds). New dice are ACQUIRED as you settle worlds + build developments. WORLDS + DEVELOPMENTS: Colored TILES randomly discovered + built; provide VP + bonuses + dice types. Some are MILITARY WORLDS requiring military dice to conquer; others are NON-MILITARY. GAME END: Triggered when a player builds their 12TH TILE (world or development) or the VP CHIP SUPPLY runs out. Highest total VP wins (from tile VP values + tile bonuses + shipped goods VP + development bonuses). SPEED: MOST GAMES 45-60 MINUTES — fast for a strategy game due to simultaneous play. WEIGHT: BGG weight ~2.9/5 — MEDIUM. Learning curve is moderate; iconography-heavy but consistent. RANKINGS: BGG Top 200 (peaked ~#150-200); universally praised for pick-up-and-play + strategic depth combination. STRATEGY: Balance the 5 phases + adapt to opponents' selections. Since selected phases benefit EVERYONE, PARASITIC STRATEGY (never selecting, letting others select) is viable but loses selection bonuses. EXPANSIONS: AMBITION (2015 — adds objectives + goals + new tiles), RIVALRY (2017 — adds player factions + special abilities), BLACK GOLD (2019 — adds resource tokens + new phase interactions). The RIVALRY + BLACK GOLD expansions each PLAY WELL STANDALONE with the base game. RELATIONSHIP TO RACE FOR THE GALAXY: Different games sharing the RACE UNIVERSE + PHASE SELECTION concept; Roll uses DICE + SIMULTANEOUS PLAY + WORKER PLACEMENT; Race uses PURE CARD PLAY + PHASE SELECTION. Fans of one often love the other; both are excellent + complementary.",
+  category: "board-games",
+  subCategory: "medium-weight dice civilization / worker placement / simultaneous turns / space theme",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "United States (Wei-Hwa Huang + Thomas Lehmann); Rio Grande Games publisher",
+  estimatedOrigin: "2014 (Rio Grande Games)",
+  players: { min: 2, max: 5, note: "2-5 players; 3-4 optimal; 5 slightly slower but works." },
+  field: {
+    surfaceName: "Individual player screens + tile display",
+    dimensions: "Individual player screens (no shared board); tiles laid in personal tableau",
+    description: "No central board; each player has a personal tableau of worlds + developments.",
+  },
+  equipment: [
+    { name: "Dice pool (5-8 dice per player initially; grows via game)", description: "Simultaneous rolling" },
+    { name: "Dice colors: white, brown, blue, green, yellow, red, purple", description: "Different phase probabilities" },
+    { name: "Player screens (hide dice assignments)", description: "Simultaneous phase selection" },
+    { name: "World + development tile stacks (drawn during Explore)", description: "Empire building materials" },
+    { name: "Credits (currency for ship phase)", description: "Trading currency" },
+    { name: "VP chips + tile VP values", description: "Scoring components" },
+  ],
+  duration: { approximateMinutes: 45, structure: "45-60 min typical; simultaneous play keeps tempo brisk." },
+  objective: "Score most Victory Points via tile VPs + shipped goods + development bonuses.",
+  basicRules: [
+    { title: "All players simultaneously roll dice + secretly assign to a phase", body: "Signature simultaneous mechanic." },
+    { title: "Selected phases happen for all; selector gets bonus", body: "Choose wisely." },
+    { title: "5 phases: Explore, Develop, Settle, Ship, Produce", body: "Standard empire-building sequence." },
+    { title: "Acquire new dice from settling worlds + developments", body: "Dice pool grows over time." },
+    { title: "Game ends when 12th tile placed by any player OR VP chips run out", body: "Definite endgame." },
+    { title: "Highest VP wins (from tiles + shipped goods + bonuses)", body: "Cumulative scoring." },
+  ],
+  scoring: {
+    summary: "VP from tile values + shipped goods + development bonuses; highest total wins.",
+    breakdown: [
+      { action: "Each world/development tile has base VP value", points: "Tile VP" },
+      { action: "Ship goods for VP chips (or credits which convert to VP)", points: "Shipping VP" },
+      { action: "Development bonuses (some multiply tile VPs)", points: "Multiplier bonuses" },
+      { action: "First to 12 tiles or VP chips exhaust triggers end", points: "Game triggers" },
+    ],
+    winCondition: "Highest total VP at game end.",
+  },
+  governingBodies: [
+    { name: "Rio Grande Games (publisher)", founded: 1998, headquarters: "New Mexico, USA" },
+    { name: "BoardGameGeek community", founded: 2000, headquarters: "Online" },
+  ],
+  majorCompetitions: [
+    { name: "Roll for the Galaxy community tournaments (informal)", frequency: "periodic", founded: 2015, region: "Global" },
+    { name: "Online Board Game Arena play", frequency: "ongoing", founded: 2016, region: "Online" },
+  ],
+  countriesPlayed: ["US", "GB", "DE", "FR", "IT", "JP", "CA", "AU", "NL"],
+  famousAthletes: [
+    "Wei-Hwa Huang (co-designer)",
+    "Thomas Lehmann (co-designer + Race for the Galaxy designer)",
+    "Rio Grande Games publishing team",
+    "Content creators: Tom Vasel + Dice Tower reviews",
+  ],
+  variants: [
+    "roll-for-the-galaxy-base-2014-original",
+    "ambition-expansion-2015-objectives-goals",
+    "rivalry-expansion-2017-player-factions",
+    "black-gold-expansion-2019-resource-tokens",
+    "race-for-the-galaxy-2007-card-based-sister-game",
+  ],
+  relatedSports: ["race-for-the-galaxy", "everdell", "wingspan", "terraforming-mars", "concordia"],
+  skills: ["dice pool assessment", "phase selection strategy", "worker + dice management", "tile evaluation (worlds vs developments)", "opponent modeling for phase selection"],
+  strategies: [
+    { title: "Select phases you're set up to exploit most", body: "Selector bonus is real." },
+    { title: "Balance world settlement (VP) with development building (bonuses)", body: "Both scoring paths." },
+    { title: "Diversify dice colors for phase flexibility", body: "Specialization risky." },
+    { title: "Race to 12 tiles or force VP chip exhaustion", body: "Endgame timing." },
+  ],
+  terminology: [
+    { term: "Roll for the Galaxy", meaning: "The game name." },
+    { term: "Dice colors", meaning: "White, brown, blue, green, yellow, red, purple — different probabilities." },
+    { term: "5 phases", meaning: "Explore, Develop, Settle, Ship, Produce — round sequence." },
+    { term: "World / Development", meaning: "The two tile types you build." },
+    { term: "Selector bonus", meaning: "Extra reward for choosing the phase." },
+    { term: "Credits", meaning: "Trading currency from Ship phase." },
+    { term: "Military world", meaning: "Requires purple military dice to settle." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play with 3 players; learn dice icons + phase effects", body: "1-hour intro game." },
+      { title: "Focus on one strategy (military expansion OR production/shipping) first game", body: "Simplify choice space." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Master phase-selection timing + dice diversity", body: "Optimization." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Explore all 3 expansions + 5-player games", body: "Full depth." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Roll for the Galaxy?", answer: "2014 DICE-BASED CIVILIZATION-BUILDING BOARD GAME by WEI-HWA HUANG + THOMAS LEHMANN — the DICE-BASED SPIN-OFF of Lehmann's classic 2007 CARD GAME RACE FOR THE GALAXY. 2-5 players simultaneously ROLL COLORED DICE representing WORKERS + assign them to 5 phases (Explore, Develop, Settle, Ship/Produce, Consume) to build a personal SPACE EMPIRE of worlds + technologies. Simultaneous play + minute-based turns make it fast, elegant, and strategically deep. Rankings: BGG Top 200. Widely praised as PICK-UP-AND-PLAY BUT DEEP; often called 'the crack cocaine of dice games' for its addictive turn tempo. Expansions: AMBITION (2015), RIVALRY (2017), BLACK GOLD (2019)." },
+    { question: "Roll for the Galaxy vs Race for the Galaxy — which should I play?", answer: "Both are excellent + share the RFTG UNIVERSE + PHASE SELECTION but play very differently. ROLL FOR THE GALAXY (2014): DICE-BASED simultaneous play; ~45-60 min; fast tempo; medium-weight; less iconography-dense; excellent gateway to civ-builders; more RANDOMNESS from dice. RACE FOR THE GALAXY (2007): PURE CARD GAME; ~45-60 min; ICONOGRAPHY-HEAVY (huge learning curve); minimal randomness after learning; considered by many the BEST CARD-BASED CIVILIZATION game ever made; long-term more depth potential once iconography mastered. Roll is easier to teach; Race has legendary depth. Many hobbyists own both. Beginners → try Roll first. Veteran card-game strategists → try Race. Both by Thomas Lehmann; both universally acclaimed." },
+  ],
+  wikipediaTitle: "Roll for the Galaxy",
+  sources: [
+    { label: "BoardGameGeek — Roll for the Galaxy", url: "https://boardgamegeek.com/boardgame/132531/roll-galaxy", publisher: "BGG" },
+    { label: "Rio Grande Games", url: "https://riograndegames.com/", publisher: "Rio Grande" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

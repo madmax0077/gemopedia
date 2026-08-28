@@ -1,0 +1,112 @@
+import type { Sport } from "@/lib/types";
+
+export const mysterium: Sport = {
+  id: "mysterium",
+  slug: "mysterium",
+  name: "Mysterium",
+  officialName: "Mysterium",
+  aliases: ["Mysterium: A Psychic Clue Game"],
+  shortDescription:
+    "COOPERATIVE DEDUCTION PARTY GAME (2015) by ORIEL MAXIM + OLEG SIDORENKO, published by LIBELLUD (France). 2-7 players (best at 4-6) work as PSYCHICS + a GHOST GAME MASTER — the Ghost silently communicates clues via BEAUTIFULLY ILLUSTRATED DREAM CARDS to guide the psychics to solve a Cluedo-like murder mystery (suspect + location + weapon). Cooperative, atmospheric, art-driven. 42 min. As d'Or 2016 winner; Kennerspiel des Jahres 2016 nominee. One of the MOST BEAUTIFUL PARTY GAMES EVER MADE.",
+  longDescription:
+    "MYSTERIUM is a COOPERATIVE DEDUCTION PARTY GAME (2015) designed by ORIEL MAXIM + OLEG SIDORENKO, published by LIBELLUD (France, also DIXIT + SEASONS publisher). The game is a REDESIGN of the earlier Ukrainian game TAJEMNICZE DOMOSTWO (2013), refined + polished with LIBELLUD's characteristic ART DIRECTION. Widely praised as one of the MOST VISUALLY STUNNING + ATMOSPHERIC PARTY GAMES OF THE 2010s. GAMEPLAY: 2-7 players (best at 4-6) — one player is the GHOST (silent game master); the rest are PSYCHICS attempting to solve a MURDER MYSTERY set in a haunted mansion where a spirit is trying to communicate. Similar setup to CLUEDO but with atmospheric art + deduction. SETUP: The Ghost secretly assigns each Psychic a unique SUSPECT (character card), a LOCATION card, + a WEAPON card. Each Psychic must identify THEIR ASSIGNED suspect + location + weapon (which the Ghost knows). GAMEPLAY: The Ghost draws a HAND OF ~7 DREAM CARDS (~90 total in the deck) — each is a large, dreamy, evocatively illustrated card. Each round, the Ghost secretly picks 1-3 dream cards + PASSES them to a specific psychic — the cards are supposed to give clues about that psychic's SUSPECT (or later LOCATION or WEAPON). Psychics discuss what the dream cards mean. Each psychic then makes a GUESS from the available suspects. If correct, that psychic advances to the LOCATION phase (next round); wrong = same suspect next round. If all psychics correctly identify their suspects, they proceed to LOCATIONS phase, then WEAPONS phase. TIMER: 7 ROUNDS TOTAL. Once all psychics complete all 3 categories, the game reaches THE FINAL PHASE — the Ghost has identified WHICH of the 7 psychics' complete suspect/location/weapon combinations is the TRUE MURDERER. Psychics vote which combination is the truth; majority (or clairvoyant-weighted) vote correct = cooperative win. GAME LENGTH: ~42 min. WEIGHT: BGG ~1.9/5 — light party game. RECEPTION: AS D'OR 2016 WINNER (French game of year); KENNERSPIEL DES JAHRES 2016 NOMINEE (German advanced game of year); BGG top-300 (peaked ~#100-200); universally acclaimed for ART + IMAGINATION + accessible cooperative gameplay. Perfect for MIXED-EXPERIENCE groups (casual + hobbyist). EXPANSIONS + VARIANTS: MYSTERIUM: HIDDEN SIGNS (2016) — additional dream cards + variants. MYSTERIUM: SECRETS & LIES (2017) — new locations + weapons. MYSTERIUM PARK (2020) — SEQUEL/STANDALONE with amusement-park theme + streamlined ~30-min play. MYSTERIUM: LIBELLUD REPRINT (2023) with updated art. NOTE: Some dream cards deliberately intentionally AMBIGUOUS (a card could mean many things) — this ambiguity IS the game.",
+  category: "party-games",
+  subCategory: "cooperative deduction / atmospheric party / art-driven / dream cards",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "FR",
+  regionOfOrigin: "France (Libellud publisher); Ukrainian designers Oriel Maxim + Oleg Sidorenko",
+  estimatedOrigin: "2015 (Libellud); redesign of Ukrainian Tajemnicze Domostwo (2013)",
+  players: { min: 2, max: 7, note: "2-7 players; best at 4-6. Requires 1 dedicated Ghost player." },
+  field: {
+    surfaceName: "Mansion board + dream card pool",
+    dimensions: "Central mansion display + Ghost's screen + psychic areas",
+    description: "Central board with mystery elements; Ghost has screen with dream card hand; psychics arrange evidence.",
+  },
+  equipment: [
+    { name: "Mysterium base box ($50)", description: "84 dream cards + 100+ suspects/locations/weapons" },
+    { name: "Dream cards (~90 unique illustrated cards)", description: "Ghost's clue tools" },
+    { name: "Suspect cards (~18)", description: "Character options" },
+    { name: "Location + weapon cards (~18 each)", description: "Setting + method options" },
+    { name: "Ghost screen + intuition tokens", description: "Ghost's private area" },
+    { name: "Clairvoyance chips (score/final voting)", description: "Weight later votes" },
+  ],
+  duration: { approximateMinutes: 42, structure: "42 min for 7-round game (7 rounds max)" },
+  objective: "Cooperatively solve the murder mystery (correct suspect + location + weapon per psychic) within 7 rounds.",
+  basicRules: [
+    { title: "One player is Ghost (silent); others are Psychics", body: "Asymmetric roles." },
+    { title: "Ghost secretly assigns suspect/location/weapon to each psychic", body: "Hidden per-psychic mystery." },
+    { title: "Ghost sends 1-3 dream cards per round to each psychic as clues", body: "Silent visual communication." },
+    { title: "Psychics guess their suspect, then location, then weapon", body: "3-phase progression." },
+    { title: "7 rounds total; correct guesses advance to next category", body: "Time pressure." },
+    { title: "Final phase: all psychics vote on the true murderer combination", body: "Cooperative solve." },
+  ],
+  scoring: {
+    summary: "Cooperative team win if all psychics solve their assignments + correct final vote.",
+    breakdown: [
+      { action: "Correct suspect/location/weapon guess", points: "Advance to next category" },
+      { action: "Complete all 3 categories", points: "Enter final vote phase" },
+      { action: "Correct final vote (weighted by clairvoyance)", points: "COOPERATIVE WIN" },
+    ],
+    winCondition: "Team correctly identifies the murderer via final vote within 7 rounds.",
+  },
+  governingBodies: [
+    { name: "Libellud (publisher)", founded: 2009, headquarters: "France" },
+    { name: "Asmodee (distribution)", founded: 1995, headquarters: "France" },
+    { name: "IGT Multi-Man Publishing", founded: 1998, headquarters: "USA" },
+  ],
+  majorCompetitions: [
+    { name: "As d'Or 2016 WINNER (French game of year)", frequency: "annual", founded: 1988, region: "France" },
+    { name: "Kennerspiel des Jahres 2016 NOMINEE", frequency: "annual", founded: 2011, region: "Germany" },
+  ],
+  countriesPlayed: ["FR", "US", "GB", "DE", "IT", "ES", "PL", "UA", "CA", "AU", "BR"],
+  famousAthletes: [
+    "Oriel Maxim (Ukrainian co-designer)",
+    "Oleg Sidorenko (Ukrainian co-designer)",
+    "Libellud publishing team (Régis Bonnessée)",
+  ],
+  variants: [
+    "mysterium-base-2015",
+    "mysterium-hidden-signs-2016",
+    "mysterium-secrets-and-lies-2017",
+    "mysterium-park-2020-standalone-sequel",
+    "tajemnicze-domostwo-2013-ukrainian-original",
+  ],
+  relatedSports: ["dixit", "clue", "cluedo", "shadow-hunters", "sherlock-holmes-consulting-detective"],
+  skills: ["visual interpretation of surreal art", "cooperative deduction", "reading team intuition", "guiding via ambiguous imagery"],
+  strategies: [
+    { title: "Ghost: pick cards with strongest thematic + visual connection", body: "Multiple weak clues > 1 strong clue." },
+    { title: "Psychics: discuss possibilities out loud; groupthink helps", body: "Consensus deduction." },
+    { title: "Consider what OTHER psychics' cards suggest by contrast", body: "Elimination via others' info." },
+    { title: "Final vote: use clairvoyance chips wisely for weighted voting", body: "Higher clairvoyance = more vote weight." },
+  ],
+  terminology: [
+    { term: "Ghost", meaning: "Silent game master player." },
+    { term: "Psychic", meaning: "Player attempting to solve the mystery." },
+    { term: "Dream card", meaning: "Illustrated clue card the Ghost sends." },
+    { term: "Clairvoyance chip", meaning: "Earned by correct guesses; weight votes in final phase." },
+    { term: "Suspect / Location / Weapon", meaning: "The 3 categories each psychic must solve." },
+    { term: "Ghost screen", meaning: "Ghost's private info display." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play with an experienced Ghost first game", body: "Ghost role has learning curve." },
+      { title: "Discuss cards openly; ambiguity is the point", body: "Don't overthink." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Mysterium?", answer: "COOPERATIVE DEDUCTION PARTY GAME (2015) by ORIEL MAXIM + OLEG SIDORENKO, published by LIBELLUD (France). 2-7 players (best at 4-6) work as PSYCHICS + a GHOST GAME MASTER — the Ghost silently communicates clues via BEAUTIFULLY ILLUSTRATED DREAM CARDS to guide the psychics to solve a Cluedo-like murder mystery (suspect + location + weapon). Cooperative, atmospheric, art-driven. 42 min. As d'Or 2016 winner; Kennerspiel des Jahres 2016 nominee. One of the MOST BEAUTIFUL PARTY GAMES EVER MADE." },
+    { question: "Mysterium vs Dixit — which Libellud game should I get?", answer: "Both use Libellud's beautiful dream/art cards but are DIFFERENT genres. DIXIT (2008): COMPETITIVE storytelling + guessing — Storyteller creates a clue matching their secret card; others submit similar cards; guess the storyteller's card. 3-8 players; 30 min; Spiel des Jahres 2010 WINNER; classic gateway game. MYSTERIUM (2015): COOPERATIVE deduction — one Ghost sends dream cards to guide Psychics solving a mystery. 2-7 players; 42 min; As d'Or 2016 winner; cooperative not competitive. Both are STUNNING art-driven games. DIXIT for competitive quick-play parties; MYSTERIUM for cooperative atmospheric deduction. Many hobbyists own both. Beginners → DIXIT for accessibility." },
+  ],
+  wikipediaTitle: "Mysterium (board game)",
+  sources: [
+    { label: "Libellud — Mysterium", url: "https://www.libellud.com/", publisher: "Libellud" },
+    { label: "BoardGameGeek — Mysterium", url: "https://boardgamegeek.com/boardgame/181304/mysterium", publisher: "BGG" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

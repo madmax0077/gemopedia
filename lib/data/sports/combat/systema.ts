@@ -1,0 +1,122 @@
+import type { Sport } from "@/lib/types";
+
+export const systema: Sport = {
+  id: "systema",
+  slug: "systema",
+  name: "Systema",
+  officialName: "Systema (Russian: Система — 'The System') / Russian Martial Art",
+  aliases: ["Russian Systema", "Ryabko-Vasiliev Systema", "Kadochnikov Systema", "Russian Martial Art"],
+  shortDescription:
+    "MODERN RUSSIAN MARTIAL ART with roots in COSSACK COMBAT + SPETSNAZ (Soviet Special Forces) close-quarter training + old Russian pehlvan wrestling. Two main branches: (1) RYABKO-VASILIEV SYSTEMA (popularized globally by MIKHAIL RYABKO + VLADIMIR VASILIEV since 1990s), (2) KADOCHNIKOV SYSTEMA (developed by ALEXEY KADOCHNIKOV in Soviet military). Emphasizes SOFT RELAXED BREATHING, CONTINUOUS MOVEMENT, USE OF OPPONENT'S ENERGY, natural body mechanics, and INTUITION over rigid technique memorization. Includes striking, grappling, weapons defense, ground fighting, and prone fighting. Popular globally for military + civilian self-defense.",
+  longDescription:
+    "SYSTEMA (Russian: Система — 'The System') is a MODERN RUSSIAN MARTIAL ART with historical roots in COSSACK COMBATIVES, OLD RUSSIAN PEHLVAN + BORTBA wrestling, and SOVIET/RUSSIAN SPETSNAZ (Special Forces) CLOSE-QUARTER TRAINING. TWO MAIN BRANCHES emerged in the 1990s after the Soviet Union's dissolution: (1) RYABKO-VASILIEV SYSTEMA — developed by MIKHAIL RYABKO (b. 1961, former Russian Spetsnaz colonel + bodyguard) and popularized globally by his student VLADIMIR VASILIEV (b. 1965, opened first international Systema school in TORONTO, CANADA 1993). Emphasizes SOFT, BREATH-FOCUSED, RELAXATION-BASED combat with roots in ORTHODOX CHRISTIAN + PRE-CHRISTIAN Russian traditions. (2) KADOCHNIKOV SYSTEMA (RUSSIAN MARTIAL ART, RMA) — developed by ALEXEY KADOCHNIKOV (b. 1935, engineering professor + Soviet military combatives instructor). More BIOMECHANICS-focused with emphasis on ANATOMY + PHYSICS OF MOVEMENT; taught in Soviet/Russian military academies since 1970s. Both branches share core principles but differ in emphasis + lineage claims. CORE PRINCIPLES: (1) BREATHING (dyhaniye) — cornerstone; continuous rhythmic breathing regulates fear, tension, movement. (2) RELAXATION — muscular relaxation until moment of impact; opposite of hard-style tension. (3) POSTURE + STRUCTURE — natural alignment; avoid strain. (4) CONTINUOUS MOVEMENT — no stopping, no fixed stances, no rigid stances. Signature training drill: SLOW-MOTION SPARRING — partners attack each other in slow motion allowing exploration of natural response + breathing. TECHNIQUE VOCABULARY: (a) STRIKES — palm strikes, punches, elbows, knees (but no rigid hand-shape memorization). (b) GRAPPLING + TAKEDOWNS — extensive use of leverage + opponent's momentum. (c) GROUND FIGHTING + PRONE COMBAT — signature Systema emphasis on fighting from disadvantageous positions (on back, side, being sat upon). (d) KNIFE + FIREARM DEFENSE — extensive weapons work; Systema is famous for knife-fighting drills. (e) 'BREATHING WORK' + 'PSYCH-OUT' — using breath + expression to unsettle opponent. NO BELTS, NO KATA, NO FORMS in the traditional sense; instead, learning is PRINCIPLE-BASED + INTUITIVE. NO SPORT FORMAT — Systema is exclusively SELF-DEFENSE + military-oriented. Signature training drills include: (1) WALKING WITH BREATHING (rhythmic breath during ordinary walking), (2) PARTNER MASSAGE (learning body mechanics), (3) 'FISHING' DRILL (avoiding partner's touches), (4) PUSHUP + SQUAT with slow controlled breath, (5) ATTACK WHILE LYING DOWN. INSTITUTIONAL USE: Kadochnikov Systema is TAUGHT IN RUSSIAN MILITARY ACADEMIES + used by SPETSNAZ, FSB, and other Russian security services. Ryabko-Vasiliev is popular internationally with military + police + private security. GLOBAL SPREAD: 100+ Ryabko-Vasiliev schools worldwide; taught in ~60 countries; annual seminars in Toronto, Moscow, and other cities. Notable students include military special operators, professional bodyguards, martial artists cross-training. Some CROSSOVER with SAMBO (Russian sport wrestling, related but distinct — Sambo is more competition-focused). CONTROVERSY: Ryabko-Vasiliev Systema has been criticized by some traditional martial artists for its LACK OF LIVE SPARRING + CONTROVERSIAL 'NO-TOUCH KNOCKOUT' DEMONSTRATIONS (which appear unreproducible in resisting-partner contexts). Defenders argue that Systema's soft training preserves practitioners' bodies + that the principles work when needed under stress. Widely respected in some circles as an unconventional but genuine Russian combatives tradition; questioned in others as commercially-driven pseudo-martial-art.",
+  category: "combat-sports",
+  subCategory: "Russian martial art / soft-relaxed combatives / military self-defense / breath-based",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "RU",
+  regionOfOrigin: "Russia (Moscow + Krasnodar) — global via Canada (Vasiliev's Toronto HQ)",
+  estimatedOrigin: "Roots in Soviet Spetsnaz + Cossack combatives; formalized globally 1990s (Vasiliev to Toronto 1993)",
+  players: { min: 2, max: 5, note: "Partner drills primary; multi-attacker scenarios common." },
+  field: {
+    surfaceName: "Padded training space or grass",
+    dimensions: "Standard training hall; Systema often uses harder surfaces than mat-based arts",
+    description: "Studios, gyms, or outdoor grass; less mat-focused than most martial arts.",
+  },
+  equipment: [
+    { name: "Casual athletic clothing (no uniform)", description: "Systema has no gi or dobok" },
+    { name: "Training knives (rubber/aluminum)", description: "Extensive knife-defense work" },
+    { name: "Training firearms (rubber)", description: "Weapon defense drills" },
+    { name: "Wooden sticks", description: "Some weapons work" },
+    { name: "No belts, no rank uniform", description: "Systema deliberately avoids formal ranking" },
+  ],
+  duration: { approximateMinutes: 90, structure: "Practice sessions 60-120 min; seminars can span 2-4 days." },
+  objective: "Develop natural intuitive combatives + self-defense capability through breath, relaxation, movement.",
+  basicRules: [
+    { title: "No belts, no kata, no rigid technique memorization", body: "Principle-based learning." },
+    { title: "Continuous breathing regulates all combat", body: "Foundational principle." },
+    { title: "Muscular relaxation until impact — never tense unnecessarily", body: "Signature Systema approach." },
+    { title: "Practice slow-motion sparring for exploration", body: "Signature Systema drill." },
+    { title: "Includes strikes, grappling, ground, prone, weapons defense", body: "Comprehensive combatives." },
+    { title: "No sport format — self-defense + military only", body: "Deliberately non-competitive." },
+  ],
+  scoring: {
+    summary: "Not competitively scored; measured by principle embodiment + situational effectiveness.",
+    breakdown: [
+      { action: "Demonstration of Systema principles in partner drills", points: "Instructor evaluation" },
+      { action: "Ability to remain relaxed + breathing under attack", points: "Core skill" },
+      { action: "Multi-attacker + weapon defense proficiency", points: "Practical measures" },
+      { action: "Instructor certification for teaching (Ryabko-Vasiliev branch)", points: "Formal recognition" },
+    ],
+    winCondition: "Not a competitive sport; goal is personal combatives capability + calm under pressure.",
+  },
+  governingBodies: [
+    { name: "Systema Vasiliev (International HQ, Toronto)", founded: 1993, headquarters: "Toronto, Canada" },
+    { name: "Ryabko Systema Moscow", founded: 1990, headquarters: "Moscow, Russia" },
+    { name: "Kadochnikov Systema Academy", founded: 1980, headquarters: "Krasnodar, Russia" },
+    { name: "Various regional + national Systema associations", founded: 2000, headquarters: "Various" },
+  ],
+  majorCompetitions: [
+    { name: "Systema Summit (annual seminar in Toronto)", frequency: "annual", founded: 1995, region: "Toronto, Canada" },
+    { name: "International Systema Seminars (Moscow, Berlin, etc.)", frequency: "annual", founded: 2000, region: "Global" },
+  ],
+  countriesPlayed: ["RU", "CA", "US", "GB", "DE", "IT", "FR", "AU", "JP", "BR", "IL", "NL"],
+  famousAthletes: [
+    "Mikhail Ryabko (b. 1961) — Former Spetsnaz colonel, Ryabko Systema founder",
+    "Vladimir Vasiliev (b. 1965) — Ryabko's top student, opened Toronto HQ 1993",
+    "Alexey Kadochnikov (b. 1935) — Founder of Kadochnikov Systema (Russian military)",
+    "Konstantin Komarov — Senior Ryabko-Vasiliev instructor",
+    "Various Spetsnaz + FSB operatives (unnamed for security)",
+  ],
+  variants: [
+    "ryabko-vasiliev-systema-mainstream-global-soft",
+    "kadochnikov-systema-russian-military-biomechanics",
+    "spetsnaz-hand-to-hand-combatives-institutional",
+    "cossack-derived-traditional-russian-old-form",
+  ],
+  relatedSports: ["sambo", "krav-maga", "brazilian-jiu-jitsu", "aikido", "hapkido", "wing-chun"],
+  skills: ["continuous breath control under stress", "muscular relaxation until impact", "natural posture + movement", "ground + prone combat", "weapons defense (knife, firearm)", "intuitive response"],
+  strategies: [
+    { title: "Breathe first, react second", body: "Foundation principle." },
+    { title: "Relax until moment of impact", body: "Efficiency principle." },
+    { title: "Use opponent's momentum — never oppose force", body: "Redirection principle." },
+    { title: "Slow-motion sparring builds real-time intuition", body: "Signature Systema training." },
+  ],
+  terminology: [
+    { term: "Systema (Система)", meaning: "'The System' — the martial art." },
+    { term: "Dyhaniye", meaning: "Breathing — Systema's foundation." },
+    { term: "Ryabko-Vasiliev / Kadochnikov", meaning: "Two main branches." },
+    { term: "Spetsnaz", meaning: "Russian Special Forces — institutional home of Systema." },
+    { term: "Cossack combatives", meaning: "Historical warrior tradition; contributed to Systema roots." },
+    { term: "Sambo", meaning: "Related but distinct Russian sport wrestling art." },
+    { term: "Slow-motion sparring", meaning: "Signature Systema partner drill." },
+    { term: "No-touch knockout", meaning: "Controversial Systema demonstration technique." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Attend a Ryabko-Vasiliev Systema seminar or affiliated school", body: "Toronto HQ + global network." },
+      { title: "Learn breathing + relaxation + basic partner drills", body: "Foundation." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Practice slow-motion sparring + weapons defense + ground work", body: "Comprehensive skill development." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Instructor certification + potentially teach + attend Moscow seminars", body: "Career path." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Systema?", answer: "MODERN RUSSIAN MARTIAL ART with roots in COSSACK COMBAT + SPETSNAZ (Soviet Special Forces) close-quarter training + old Russian pehlvan wrestling. Two main branches: (1) RYABKO-VASILIEV SYSTEMA (popularized globally by MIKHAIL RYABKO + VLADIMIR VASILIEV since 1990s), (2) KADOCHNIKOV SYSTEMA (developed by ALEXEY KADOCHNIKOV in Soviet military). Emphasizes SOFT RELAXED BREATHING, CONTINUOUS MOVEMENT, USE OF OPPONENT'S ENERGY, natural body mechanics, and INTUITION over rigid technique memorization. Includes striking, grappling, weapons defense, ground fighting, and prone fighting. Popular globally for military + civilian self-defense." },
+    { question: "Is Systema legitimate or controversial?", answer: "SYSTEMA IS BOTH RESPECTED + CONTROVERSIAL. RESPECTED: Kadochnikov Systema is officially TAUGHT IN RUSSIAN MILITARY + used by SPETSNAZ/FSB — a strong institutional endorsement. Ryabko-Vasiliev principles (breathing, relaxation, natural movement) have influenced global combatives instruction; the soft-training approach preserves practitioners' bodies. CONTROVERSIAL: Ryabko-Vasiliev branch has been criticized for LACK OF LIVE FULL-RESISTANCE SPARRING (like BJJ or boxing); some 'no-touch knockout' demonstrations appear unreproducible against resisting partners; some critics call it 'compliance-based drill' rather than functional combatives. Kadochnikov Systema is generally viewed as more grounded (biomechanics-based). Overall: Systema's principles are valuable + backed by real Russian military traditions, but individual practitioners' effectiveness varies with quality of instruction + genuine testing under pressure." },
+  ],
+  wikipediaTitle: "Systema",
+  sources: [
+    { label: "Systema Vasiliev (Toronto HQ)", url: "https://www.russianmartialart.com/", publisher: "Vasiliev" },
+    { label: "Wikipedia — Systema", url: "https://en.wikipedia.org/wiki/Systema", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

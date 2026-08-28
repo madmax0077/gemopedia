@@ -1,0 +1,122 @@
+import type { Sport } from "@/lib/types";
+
+export const brassLancashire: Sport = {
+  id: "brass-lancashire",
+  slug: "brass-lancashire",
+  name: "Brass: Lancashire",
+  officialName: "Brass: Lancashire",
+  aliases: ["Brass", "Brass Lancashire", "Age of Industry (spiritual sibling)"],
+  shortDescription:
+    "2007 MARTIN WALLACE HEAVY EURO STRATEGY GAME set in the INDUSTRIAL REVOLUTION in LANCASHIRE, ENGLAND (1770-1870) — the ORIGINAL 'BRASS' game (later reimplemented as BRASS: BIRMINGHAM 2018). Players build INDUSTRIES (cotton mills, coal mines, iron works, ports, shipyards), lay CANALS + RAILROADS, and manage a MARKET ECONOMY across two eras — CANAL ERA (income + cotton export) + RAIL ERA (final scoring). SIGNATURE MECHANICS: DOUBLE-ROLE cards (industry vs network), industry-flip when consumed, era transition wipes canals. Ranked in BGG Top 50; considered one of the finest Euro strategy games ever. Republished by ROXLEY GAMES 2018 with premium components.",
+  longDescription:
+    "BRASS: LANCASHIRE (originally titled just 'BRASS') is a 2007 MARTIN WALLACE HEAVY EURO STRATEGY GAME set in the INDUSTRIAL REVOLUTION in LANCASHIRE, ENGLAND (1770-1870) — a groundbreaking design that redefined the industrial-economic Euro genre. Reimplemented in 2018 as BRASS: BIRMINGHAM by GAVAN BROWN + WALLACE for ROXLEY GAMES (based on the same core mechanics but with Birmingham setting + refined rules), which now sits at #1 or #2 on BOARDGAMEGEEK for years. Original BRASS: LANCASHIRE is still highly regarded + was REPUBLISHED BY ROXLEY GAMES 2018 alongside Birmingham with premium components + rules refinements. OVERVIEW: 2-4 players play as 19th-century INDUSTRIALISTS in Lancashire, building industries + transportation infrastructure to develop the region + score Victory Points. GAME STRUCTURE: TWO ERAS: (1) CANAL ERA — earlier period (1770-1830s); players build canals + establish early industries. (2) RAIL ERA — later period (1830s-1870s); railroads replace canals + more advanced industries dominate. TURN STRUCTURE: Each player takes 2 ACTIONS per turn from: BUILD (place an industry tile), NETWORK (build canal or rail links), DEVELOP (advance industry tile levels), SELL COTTON (score income), LOAN (take money at VP cost), SCOUT (rare exchange of cards). CARD SYSTEM: Every action requires a card representing either a LOCATION (must build there) or INDUSTRY (must build that type anywhere). Signature MULTIROLE mechanic: cards can be used either way. INDUSTRIES: COTTON MILL (main scoring), COAL MINE (fuels other industries), IRON WORKS (rails require iron), PORT (needed for cotton export), SHIPYARD (Rail Era only, huge points). Industries FLIP FACE-UP when consumed (fueled by coal, sold cotton, etc.) — locking in their VP value. ERA TRANSITION: When Canal Era deck exhausts, CANALS ARE WIPED FROM BOARD + only Level-1 industries flip; game restarts with Rail Era. FINAL SCORING: VP from flipped industries + rail network connections + income − loans. WEIGHT: BGG weight ~3.9/5 — heavy but MORE ACCESSIBLE than 18xx or Age of Steam. GAME LENGTH: 2-3 hours. INFLUENCE: Brass established the modern INDUSTRIAL-ECONOMIC Euro genre; Brass: Birmingham (2018 reimplementation) rocketed to #1 on BGG; both are considered MASTERPIECES of the strategy Euro genre. Roxley 2018 edition features PREMIUM COMPONENTS (linen finished cards, detailed miniatures, deluxe player mats). Companion: AGE OF INDUSTRY (2010, Wallace) — spiritual sibling with multiple maps.",
+  category: "board-games",
+  subCategory: "heavy Euro / industrial revolution / economic + network / Wallace design",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "United Kingdom (Martin Wallace); republished by Roxley Games (Canada, 2018)",
+  estimatedOrigin: "2007 original (Warfrog); 2018 Roxley republish (premium)",
+  players: { min: 2, max: 4, note: "2-4 players; 4 is optimal for tension; 2P has variant rules." },
+  field: {
+    surfaceName: "Lancashire map board",
+    dimensions: "Large map board of 19th c Lancashire cities + connections",
+    description: "Board with cities, industry slots, canal + rail link slots, income + VP tracks.",
+  },
+  equipment: [
+    { name: "Lancashire map board", description: "Playing surface" },
+    { name: "Industry tiles (cotton, coal, iron, port, shipyard)", description: "Buildable structures" },
+    { name: "Canal + rail network tiles", description: "Transport infrastructure" },
+    { name: "Location + industry cards", description: "Action-driving deck" },
+    { name: "Money + income + VP markers + loan tokens", description: "Economic tracking" },
+    { name: "Player boards (Roxley edition premium)", description: "Individual state tracking" },
+  ],
+  duration: { approximateMinutes: 150, structure: "2-3 hours; game concludes after Rail Era deck exhausts." },
+  objective: "Score most VP through flipped industries + rail networks after Rail Era.",
+  basicRules: [
+    { title: "2 actions per turn from: build, network, develop, sell cotton, loan, scout", body: "Core action set." },
+    { title: "Cards can be used as location OR industry — multirole", body: "Signature Brass mechanic." },
+    { title: "Industries FLIP when consumed (cotton sold, coal fueled, etc.) — lock in VP", body: "Key scoring event." },
+    { title: "Era transition wipes canals; only Level-1 flip; Rail Era begins", body: "Major mid-game reset." },
+    { title: "Loans give money now at VP cost later", body: "Debt-VP trade-off." },
+    { title: "Final VP = flipped industries + rail connections + income − loans", body: "Endgame formula." },
+  ],
+  scoring: {
+    summary: "VP from flipped industries + rail links + income − loans; highest total wins.",
+    breakdown: [
+      { action: "Level-1 cotton mill flipped", points: "3 VP" },
+      { action: "Level-4 cotton mill flipped", points: "12 VP (approx.)" },
+      { action: "Rail links (each)", points: "Progressive VP based on connections" },
+      { action: "Income level at game end", points: "Converted to VP" },
+      { action: "Loans", points: "−VP penalty" },
+    ],
+    winCondition: "Highest total VP at end of Rail Era.",
+  },
+  governingBodies: [
+    { name: "Roxley Games (current premium publisher)", founded: 2014, headquarters: "Calgary, Canada" },
+    { name: "Warfrog Games (Martin Wallace's original publisher)", founded: 2001, headquarters: "UK" },
+    { name: "BoardGameGeek community", founded: 2000, headquarters: "Online" },
+  ],
+  majorCompetitions: [
+    { name: "Brass Community tournaments (informal)", frequency: "periodic", founded: 2010, region: "Global" },
+    { name: "Online BrassBoard + Board Game Arena play", frequency: "ongoing", founded: 2015, region: "Online" },
+  ],
+  countriesPlayed: ["GB", "US", "DE", "FR", "CA", "IT", "PL", "JP", "AU", "NL"],
+  famousAthletes: [
+    "Martin Wallace (b. 1962) — Designer",
+    "Gavan Brown (Roxley Games) — Co-designer of Birmingham reimplementation",
+    "Prolific Brass players + strategy content creators (BoardGameGeek reviewers)",
+  ],
+  variants: [
+    "brass-lancashire-original-2007-warfrog",
+    "brass-lancashire-2018-roxley-premium-republish",
+    "brass-birmingham-2018-reimplementation-#1-BGG",
+    "age-of-industry-2010-spiritual-sibling-multiple-maps",
+    "brass-online-board-game-arena-digital",
+  ],
+  relatedSports: ["brass-birmingham", "age-of-steam", "1830-railways", "power-grid", "concordia"],
+  skills: ["industry timing + placement", "card management (location vs industry)", "network planning", "loan discipline", "endgame VP optimization"],
+  strategies: [
+    { title: "Flip industries strategically to maximize VP", body: "Timing is decisive." },
+    { title: "Loan early to fuel expansion; pay VP cost later", body: "Debt to grow." },
+    { title: "Control key location cards for placement flexibility", body: "Multirole cards are gold." },
+    { title: "Rail Era shipyards score huge — plan for them", body: "Endgame optimization." },
+  ],
+  terminology: [
+    { term: "Brass", meaning: "The game name — refers to industrial-era metal + music." },
+    { term: "Canal Era / Rail Era", meaning: "Two game phases with different transport." },
+    { term: "Industry tile", meaning: "Cotton mill, coal mine, iron works, port, shipyard." },
+    { term: "Flipping", meaning: "Industry consumed → face-up → VP locked in." },
+    { term: "Network", meaning: "Canal or rail link between cities." },
+    { term: "Multirole card", meaning: "Location OR industry usage — signature Brass." },
+    { term: "Loan", meaning: "Immediate money at VP cost." },
+    { term: "Level 1-4 industries", meaning: "Progressive development tiers." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Watch a rules tutorial video (Watch-It-Played, Rahdo)", body: "Complex rules benefit from video intro." },
+      { title: "Play with experienced group; expect 3-hour first game", body: "Steep but rewarding." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Try Brass: Birmingham reimplementation (#1 BGG)", body: "Similar mechanics, refined." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Master 4-player games + explore Age of Industry maps", body: "Deep engagement with Wallace catalog." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Brass: Lancashire?", answer: "2007 MARTIN WALLACE HEAVY EURO STRATEGY GAME set in the INDUSTRIAL REVOLUTION in LANCASHIRE, ENGLAND (1770-1870) — the ORIGINAL 'BRASS' game (later reimplemented as BRASS: BIRMINGHAM 2018). Players build INDUSTRIES (cotton mills, coal mines, iron works, ports, shipyards), lay CANALS + RAILROADS, and manage a MARKET ECONOMY across two eras — CANAL ERA + RAIL ERA. Signature multirole cards + industry-flip scoring + era-transition wipe make it uniquely tense. Ranked in BGG Top 50; considered one of the finest Euro strategy games ever. Republished by ROXLEY GAMES 2018 with premium components." },
+    { question: "Brass: Lancashire vs Brass: Birmingham — which should I play?", answer: "Both are excellent + both by MARTIN WALLACE (Birmingham refined by GAVAN BROWN + Wallace). BRASS: LANCASHIRE (2007 original) has SIMPLER mechanics + TIGHTER economy + more player-elimination-adjacent tension; classic industrial Lancashire setting. BRASS: BIRMINGHAM (2018 reimplementation) has ADDITIONAL INDUSTRIES (BREWERY, POTTERY, MANUFACTURED GOODS added to Lancashire's set), MORE STRATEGIC DEPTH, refined rules, and BEER-DELIVERY MECHANICS that create even more interaction. BIRMINGHAM is currently ranked #1-2 on BoardGameGeek + generally considered the superior game; LANCASHIRE remains excellent + faster + more streamlined. Try Birmingham if you want depth; Lancashire if you want the classic experience. Both fantastic; owning both is common among Brass fans." },
+  ],
+  wikipediaTitle: "Brass (board game)",
+  sources: [
+    { label: "BoardGameGeek — Brass: Lancashire", url: "https://boardgamegeek.com/boardgame/28720/brass-lancashire", publisher: "BGG" },
+    { label: "Roxley Games", url: "https://roxley.com/", publisher: "Roxley" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

@@ -1,0 +1,122 @@
+import type { Sport } from "@/lib/types";
+
+export const naginatajutsu: Sport = {
+  id: "naginatajutsu",
+  slug: "naginatajutsu",
+  name: "Naginatajutsu",
+  officialName: "Naginatajutsu / Atarashii Naginata (薙刀術 — 'Art of the Glaive')",
+  aliases: ["Naginata", "Atarashii Naginata", "Japanese Glaive Art"],
+  shortDescription:
+    "TRADITIONAL JAPANESE MARTIAL ART using the NAGINATA — a POLE WEAPON with a curved single-edged blade at the end of a 2-2.5 m wooden shaft (essentially a JAPANESE GLAIVE). Originated ~10th c CE for use by warrior monks (SŌHEI) + samurai; became particularly associated with SAMURAI WOMEN (ONNA-BUGEISHA) who defended homes during battles. Modern ATARASHII NAGINATA (New Naginata, codified 1955) is the sport form, practiced with bamboo-blade weapon; competitors wear bogu armor + spar for points on legal target zones. Governed by ALL JAPAN NAGINATA FEDERATION.",
+  longDescription:
+    "NAGINATAJUTSU (薙刀術, 'ART OF THE NAGINATA/GLAIVE') is the TRADITIONAL JAPANESE MARTIAL ART using the NAGINATA — a POLE WEAPON consisting of a CURVED SINGLE-EDGED BLADE (~30-60 cm long) mounted on a WOODEN SHAFT (~2-2.5 m long); essentially the Japanese equivalent of the European GLAIVE or Chinese GUANDAO. HISTORY: Emerged in the HEIAN + KAMAKURA periods (10th-13th c CE) initially as a battlefield weapon of the SŌHEI (WARRIOR MONKS) of BUDDHIST TEMPLES + LATER adopted by SAMURAI. The reach + sweeping cuts of the naginata made it especially effective against CAVALRY. STRONGLY ASSOCIATED with SAMURAI WOMEN (ONNA-BUGEISHA — 'women warriors'): during the SENGOKU period (15th-17th c), samurai wives were expected to defend their homes with the naginata while their husbands went to war; the weapon's reach helped smaller-statured women hold off armored attackers. Famous historical women warriors: TOMOE GOZEN (12th c), NAKANO TAKEKO (led naginata-wielding women's unit at Battle of Aizu 1868). After Meiji Restoration (1868), naginata became a WOMEN'S CULTURAL + PHYSICAL EDUCATION discipline in Japanese girls' schools + remains PREDOMINANTLY FEMALE-PARTICIPATED today (~90% women). MODERN ATARASHII NAGINATA (新しいなぎなた — 'New Naginata') was codified in 1955 by ALL JAPAN NAGINATA FEDERATION (ZEN NIHON NAGINATA RENMEI) as a SPORT form suitable for post-war Japan's physical education programs. EQUIPMENT: (1) SHIAI-YŌ NAGINATA — competition weapon with a REPLACEABLE BAMBOO 'BLADE' (~60 cm) attached to a wooden shaft (~2.1 m total length for adults). (2) BŌGU ARMOR — like kendo's bogu but with additional shin protection (SUNE-ATE): MEN (head/face mask), DO (chest), KOTE (gloves), TARE (waist), SUNE-ATE (shin guards). (3) HAKAMA + KEIKOGI + OBI — traditional attire. TARGET ZONES: MEN (head), KOTE (wrists), DO (torso/chest), TSUKI (throat thrust — advanced only), SUNE (shins — UNIQUE TO NAGINATA, not in kendo). COMPETITION FORMAT: 2-person sparring bouts (SHIAI) — 3-minute rounds; win by 2 clean scored strikes (IPPON) or judges' decision. Also KATA competition (10 SEITEI NAGINATA KATA for grading). KATA include SEITEI NAGINATA KATA (10 modern standardized forms) + TENDO-RYU + JIKISHINKAGE-RYU koryu (traditional schools). RANKS: KYU 6→1 → DAN 1→8. Master titles: RENSHI, KYOSHI, HANSHI. GOVERNING: ALL JAPAN NAGINATA FEDERATION (AJNF, 1955); INTERNATIONAL NAGINATA FEDERATION (INF, 1990); WORLD NAGINATA CHAMPIONSHIPS held every 4 years since 1995. Practiced across Japan (~40,000 registered) + growing globally (Europe strong, US + Canada + Brazil + Australia). Distinguished from HALBERD or POLEARMS by its DISTINCTIVE CURVED-BLADE + LONG-SHAFT balance + specifically-Japanese kata traditions.",
+  category: "combat-sports",
+  subCategory: "Japanese pole weapon / glaive / women's samurai heritage / modern bogu-armored sport",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "medieval",
+  popularity: "regional",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (Buddhist warrior monks 10th c origin; samurai women's heritage)",
+  estimatedOrigin: "10th-13th c CE (Heian/Kamakura periods); modern Atarashii Naginata codified 1955",
+  players: { min: 2, max: 2, note: "1v1 shiai bouts + solo kata performances." },
+  field: {
+    surfaceName: "Naginata dojo or bogu-safe wooden floor",
+    dimensions: "Standard 9-11m square shiai (competition) area",
+    description: "Wooden dojo floor; kendo-like standardized layout.",
+  },
+  equipment: [
+    { name: "Shiai-yō Naginata (bamboo blade + wooden shaft, ~2.1m)", description: "Competition weapon" },
+    { name: "Bogu armor (Men, Do, Kote, Tare, Sune-ate)", description: "Includes shin guards unique to naginata" },
+    { name: "Hakama + Keikogi + Obi", description: "Traditional attire" },
+    { name: "Kata naginata (solid wood or metal blade for kata practice)", description: "For non-sparring forms" },
+  ],
+  duration: { approximateMinutes: 3, structure: "Shiai bouts 3 min; kata performances 2-5 min." },
+  objective: "Score clean strikes on legal bogu targets; win 2 ippon or judges' decision.",
+  basicRules: [
+    { title: "Legal target zones: Men, Kote, Do, Tsuki, Sune", body: "Shin-strike (sune) unique vs kendo." },
+    { title: "Both cutting + thrusting techniques allowed", body: "Blade + tip both weapons." },
+    { title: "Weapon length ~2.1m advantage — controls range", body: "Distinctive naginata reach." },
+    { title: "3-min bouts; 2 ippon to win or judges' decision", body: "Standard shiai format." },
+    { title: "Bogu armor mandatory + sune-ate shin guards", body: "Safety requirement." },
+    { title: "Ranks Kyu 6→1 → Dan 1→8 → master titles", body: "Progression system." },
+  ],
+  scoring: {
+    summary: "Judged ippon (clean valid strike + proper form + zanshin); best of 2 ippon wins.",
+    breakdown: [
+      { action: "Men (head strike) ippon", points: "1 ippon" },
+      { action: "Do (torso strike) ippon", points: "1 ippon" },
+      { action: "Kote (wrist strike) ippon", points: "1 ippon" },
+      { action: "Sune (shin strike) ippon — naginata-specific", points: "1 ippon" },
+      { action: "Tsuki (throat thrust) ippon — advanced only", points: "1 ippon" },
+      { action: "2 ippon wins bout; otherwise judges' hantei", points: "Bout won" },
+    ],
+    winCondition: "First to 2 ippon or judges' decision at time.",
+  },
+  governingBodies: [
+    { name: "All Japan Naginata Federation (AJNF, 全日本なぎなた連盟)", founded: 1955, headquarters: "Tokyo, Japan" },
+    { name: "International Naginata Federation (INF)", founded: 1990, headquarters: "Tokyo" },
+  ],
+  majorCompetitions: [
+    { name: "All-Japan Naginata Championship", frequency: "annual", founded: 1963, region: "Japan" },
+    { name: "World Naginata Championship (INF)", frequency: "quadrennial", founded: 1995, region: "Global (rotating)" },
+    { name: "European Naginata Championship", frequency: "biennial", founded: 1993, region: "Europe" },
+  ],
+  countriesPlayed: ["JP", "US", "GB", "DE", "FR", "IT", "SE", "AU", "BR", "CA", "NL"],
+  famousAthletes: [
+    "Tomoe Gozen (12th c) — Legendary onna-bugeisha naginata warrior",
+    "Nakano Takeko (1847-1868) — Led naginata unit at Battle of Aizu",
+    "Modern AJNF Hanshi 8-Dan masters",
+    "World Championship medalists from Japan, France, Netherlands, USA",
+  ],
+  variants: [
+    "atarashii-naginata-modern-sport-1955-most-practiced",
+    "tendo-ryu-koryu-classical-school",
+    "jikishinkage-ryu-koryu-classical-school",
+    "kata-competition-solo-form",
+    "shiai-sparring-2-person-bogu",
+  ],
+  relatedSports: ["kendo", "iaido", "jodo", "kyudo", "hema-polearm", "chinese-guandao"],
+  skills: ["long-weapon control + range management", "sweeping cuts + thrusts", "shin (sune) strikes", "kata precision", "bogu-armored sparring"],
+  strategies: [
+    { title: "Use length advantage — control opponent's approach", body: "Range game." },
+    { title: "Sune (shin) strikes exploit naginata-specific advantage", body: "No kendo counterpart." },
+    { title: "Sweeping cuts to open kote or men strikes", body: "Combo setups." },
+    { title: "Master both cut + thrust techniques", body: "Blade + tip." },
+  ],
+  terminology: [
+    { term: "Naginata (薙刀)", meaning: "'Reaping blade' — the polearm." },
+    { term: "Atarashii Naginata", meaning: "'New Naginata' — modern sport form since 1955." },
+    { term: "Onna-Bugeisha", meaning: "Samurai women warriors — historically wielded naginata." },
+    { term: "Sōhei", meaning: "Buddhist warrior monks — original users." },
+    { term: "Sune-ate", meaning: "Shin protectors (naginata-specific bogu addition)." },
+    { term: "Sune", meaning: "Shin — unique target zone." },
+    { term: "Shiai / Kata", meaning: "Sparring / solo forms." },
+    { term: "Zanshin", meaning: "Continuing awareness after strike." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Join AJNF-affiliated naginata dojo", body: "Global network." },
+      { title: "Learn basic strikes + kata + bogu use", body: "1-2 years foundation." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Progress Kyu → Dan ranks; compete in regional taikai", body: "Structured pathway." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Dan 4-8 + World Naginata Championships representation + Hanshi title", body: "Lifetime pursuit." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Naginatajutsu?", answer: "TRADITIONAL JAPANESE MARTIAL ART using the NAGINATA — a POLE WEAPON with a curved single-edged blade at the end of a 2-2.5 m wooden shaft (essentially a JAPANESE GLAIVE). Originated ~10th c CE for use by warrior monks (SŌHEI) + samurai; became particularly associated with SAMURAI WOMEN (ONNA-BUGEISHA) who defended homes during battles. Modern ATARASHII NAGINATA (New Naginata, codified 1955) is the sport form, practiced with bamboo-blade weapon; competitors wear bogu armor + spar for points on legal target zones including UNIQUE SUNE (shin) strikes. Governed by ALL JAPAN NAGINATA FEDERATION. Predominantly female-participated (~90%)." },
+    { question: "Why is Naginata associated with women warriors?", answer: "During the SENGOKU period (15th-17th c Japan), samurai men were away at war for years; their WIVES + DAUGHTERS were expected to DEFEND THE HOME from attackers. The naginata's LONG REACH (2m+) allowed smaller-statured women to hold off armored male attackers at a distance — a KEY EQUALIZER. Famous ONNA-BUGEISHA (women warriors) like TOMOE GOZEN + NAKANO TAKEKO wielded naginata in battle. After Meiji era, naginata became a WOMEN'S CULTURAL DISCIPLINE + PHYSICAL EDUCATION subject in Japanese girls' schools. Today ~90% of naginata practitioners are women, though the sport is fully mixed-gender + inclusive." },
+  ],
+  wikipediaTitle: "Naginatajutsu",
+  sources: [
+    { label: "All Japan Naginata Federation", url: "https://naginata.jp/", publisher: "AJNF" },
+    { label: "Wikipedia — Naginatajutsu", url: "https://en.wikipedia.org/wiki/Naginatajutsu", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

@@ -1,0 +1,120 @@
+import type { Sport } from "@/lib/types";
+
+export const pente: Sport = {
+  id: "pente",
+  slug: "pente",
+  name: "Pente",
+  officialName: "Pente",
+  aliases: ["Pente game", "Ninuki-Renju (Japanese variant)"],
+  shortDescription:
+    "ABSTRACT STRATEGY BOARD GAME (1977) invented by GARY GABREL, published by PENTE GAMES / PARKER BROTHERS / HASBRO. 2 players place stones alternately on a 19x19 (or 15x15) Go board with 2 GOALS: (1) Get 5-IN-A-ROW (like GOMOKU) OR (2) CAPTURE 5 PAIRS of opponent's stones by FLANKING them (sandwiching 2 adjacent enemy stones between 2 of yours removes the pair). Blend of Gomoku + capture. Simple rules, deep tactics. Similar to Japanese NINUKI-RENJU. 15-30 min. Sold millions worldwide. Classic 1980s+ family strategy game.",
+  longDescription:
+    "PENTE is an ABSTRACT STRATEGY BOARD GAME invented in 1977 by GARY GABREL (US game designer) in Stillwater, Oklahoma. Originally self-published, then licensed to PENTE GAMES + acquired by PARKER BROTHERS (1984, now HASBRO). The game is a MODERNIZED WESTERN VERSION of the ancient Japanese variant NINUKI-RENJU (which itself is a GOMOKU/RENJU derivative with a capture rule). PENTE became a huge 1980s BEST-SELLER + a staple of American family + strategy game collections. GAMEPLAY: 2 players on a 19x19 GO BOARD (standard) or 15x15 (variant). Players alternate placing stones on intersections. There are 2 WAYS TO WIN: (1) FIVE IN A ROW: Form an unbroken line of 5 stones horizontally, vertically, or diagonally (identical to GOMOKU). (2) CAPTURE 5 PAIRS: When you place a stone that SANDWICHES 2 CONSECUTIVE opponent's stones between 2 of your stones on a line (any direction), those 2 opponent stones are CAPTURED + removed from the board. Capturing 5 pairs (10 stones total) = win. FIRST-MOVE RULE: The first player (usually White) MUST play the FIRST STONE ON THE CENTER of the board. This limits opening advantage. Subsequent moves have no such restriction. TACTICAL DEPTH: The DUAL WIN CONDITIONS create rich strategic tension. Players must defend against 5-in-a-row AND avoid isolated pairs vulnerable to capture. Aggressive pair-hunting can overextend + expose 5-in-a-row lines. Careful positioning + threat-counter-threat is core. GAME LENGTH: 15-30 MIN typical. WEIGHT: BGG ~1.7/5 — simple to learn, deep to master. TOURNAMENT PLAY: Pente is played at MIND SPORTS OLYMPIAD + smaller US strategy game tournaments. INTERNATIONAL FEDERATION: Pente Games Association (informal). RECEPTION: Sold MILLIONS OF COPIES in the 1980s+; classic pop-culture item. Now less commercially prominent but retains cult following + is available on multiple online play platforms (Pente.org, apps). VARIANTS: (1) STANDARD PENTE (19x19 Go board). (2) KERYX / KERYX (5-piece extension). (3) PRO PENTE (banned opening variations to reduce first-player advantage). (4) NINUKI-RENJU (traditional Japanese ancestor). (5) PENTE MOBILE APPS (iOS/Android). (6) 3D PENTE + variants for 3-4 players (rare). HISTORY: 1977 Gabrel invents; 1978-79 self-published in Oklahoma; 1984 Parker Brothers acquires; 1990s+ Hasbro maintains; 2000s+ online platforms + apps continue play. STRATEGY: OPENING (few moves) — establish central influence. MIDGAME — create MULTIPLE THREATS (double threats where opponent can only block one); defend against captures. ENDGAME — decide whether to press for 5-in-a-row or capture win based on board state. Both winning paths are viable + top players use both.",
+  category: "mind-sports",
+  subCategory: "abstract strategy / line-forming + capture / Gomoku variant",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "United States (Gary Gabrel, Stillwater, Oklahoma)",
+  estimatedOrigin: "1977 Gary Gabrel; 1984 Parker Brothers acquisition; based on Japanese Ninuki-Renju",
+  players: { min: 2, max: 2, note: "2 players; variants for 3-4 exist but uncommon." },
+  field: {
+    surfaceName: "19x19 or 15x15 Go board (intersections)",
+    dimensions: "Standard Go board ~45x45cm",
+    description: "Standard Go board with 19x19 or 15x15 intersections; stones placed on intersections.",
+  },
+  equipment: [
+    { name: "Pente board (19x19 or 15x15 Go board) + stones", description: "$15-25" },
+    { name: "Colored stones/pieces (2 colors, ~40-60 each)", description: "Standard Go stones work" },
+    { name: "Pente mobile apps (iOS/Android)", description: "Digital play" },
+    { name: "Pente.org online play", description: "Community platform" },
+  ],
+  duration: { approximateMinutes: 20, structure: "15-30 min typical; expert games 5-15 min" },
+  objective: "Achieve 5-in-a-row OR capture 5 pairs of opponent's stones.",
+  basicRules: [
+    { title: "2 players alternate placing stones on Go-board intersections", body: "Simple placement." },
+    { title: "First move must be on center", body: "Balance rule." },
+    { title: "5-in-a-row (horizontal/vertical/diagonal) wins", body: "Gomoku-style win." },
+    { title: "Flanking 2 opponent stones captures them (removes from board)", body: "Capture rule." },
+    { title: "5 captured pairs (10 stones) also wins", body: "Alternative win path." },
+    { title: "No move restrictions after first move", body: "Free play thereafter." },
+  ],
+  scoring: {
+    summary: "Win by 5-in-a-row OR 5 captured pairs; no numeric scoring.",
+    breakdown: [
+      { action: "5-in-a-row formation", points: "WIN" },
+      { action: "5 pairs captured (10 stones)", points: "WIN" },
+      { action: "Board full without winner (rare)", points: "Draw" },
+    ],
+    winCondition: "First player to achieve either win condition wins.",
+  },
+  governingBodies: [
+    { name: "Hasbro (current trademark holder)", founded: 1923, headquarters: "USA" },
+    { name: "Pente Games Association (informal)", founded: 1980, headquarters: "USA" },
+    { name: "Mind Sports Olympiad (competition venue)", founded: 1997, headquarters: "UK" },
+  ],
+  majorCompetitions: [
+    { name: "US Pente Championship (informal)", frequency: "annual", founded: 1980, region: "USA" },
+    { name: "Mind Sports Olympiad Pente event", frequency: "annual", founded: 1997, region: "UK/Global" },
+    { name: "Pente.org tournaments (online)", frequency: "periodic", founded: 2000, region: "Online" },
+  ],
+  countriesPlayed: ["US", "GB", "JP", "CN", "KR", "CA", "DE", "FR", "AU"],
+  famousAthletes: [
+    "Gary Gabrel (Pente inventor, 1977)",
+    "Rollie Tesh (US Pente champion)",
+    "Tom Braunlich (Pente strategy author)",
+  ],
+  variants: [
+    "pente-19x19-standard",
+    "pente-15x15-variant",
+    "pro-pente-restricted-openings",
+    "keryx-extended-pente",
+    "ninuki-renju-japanese-ancestor",
+    "3d-pente-multi-player-rare",
+  ],
+  relatedSports: ["gomoku", "renju", "go-board-game", "chess", "connect-four"],
+  skills: ["threat + counter-threat calculation", "pattern recognition", "defensive awareness", "sacrifice tactics"],
+  strategies: [
+    { title: "Create DOUBLE THREATS opponent cannot block both", body: "Winning tactical concept." },
+    { title: "Avoid placing 2 adjacent stones vulnerable to flanking", body: "Defensive discipline." },
+    { title: "Central influence dominates early", body: "First stone at center." },
+    { title: "Balance 5-in-a-row threats with capture setups", body: "Dual win pressure." },
+    { title: "Study Pro Pente opening principles", body: "Avoid weak openings." },
+  ],
+  terminology: [
+    { term: "Pente", meaning: "The game (Greek 'πέντε' = five)." },
+    { term: "5-in-a-row", meaning: "Primary win condition (Gomoku-like)." },
+    { term: "Capture / pair", meaning: "Flanking 2 opponent stones with 2 of yours = capture." },
+    { term: "Flanking", meaning: "Sandwiching 2 opponent stones between yours." },
+    { term: "Double threat", meaning: "Creating 2 win threats opponent can't both block." },
+    { term: "Ninuki-Renju", meaning: "Japanese ancestor game with same rules." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play a few casual games learning both win conditions", body: "Balance is key." },
+      { title: "Focus on defense — avoid isolated pairs", body: "Beginners give up captures easily." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Study double-threat tactical patterns", body: "Winning combinations." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Play Pro Pente + tournament games", body: "Elite competitive play." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Pente?", answer: "ABSTRACT STRATEGY BOARD GAME (1977) invented by GARY GABREL, published by PENTE GAMES / PARKER BROTHERS / HASBRO. 2 players place stones alternately on a 19x19 (or 15x15) Go board with 2 GOALS: (1) Get 5-IN-A-ROW (like GOMOKU) OR (2) CAPTURE 5 PAIRS of opponent's stones by FLANKING them (sandwiching 2 adjacent enemy stones between 2 of yours removes the pair). Blend of Gomoku + capture. Simple rules, deep tactics. Similar to Japanese NINUKI-RENJU. 15-30 min. Sold millions worldwide. Classic 1980s+ family strategy game." },
+    { question: "Pente vs Gomoku vs Connect Four — differences?", answer: "All 3 are line-forming abstract strategy games with different depths. CONNECT FOUR (1974): 6x7 vertical grid; 4-in-a-row; gravity-based drops; simple + solved (first player wins with perfect play). GOMOKU (1000+ years old, Japan): 19x19 or 15x15 board; 5-in-a-row; ancient; considered solvable (first player wins with perfect play); heavily studied. PENTE (1977): 19x19 board; 5-in-a-row OR 5 captured pairs; capture rule adds depth; NOT solved; deeper tactical variety than Gomoku. Connect Four = quickest + easiest. Gomoku = elegant + traditional. Pente = deepest of the three via capture mechanic. Kids/casual → Connect Four; abstract-strategy fans → Gomoku or Pente; American classic gamers → Pente." },
+  ],
+  wikipediaTitle: "Pente",
+  sources: [
+    { label: "Wikipedia — Pente", url: "https://en.wikipedia.org/wiki/Pente", publisher: "Wikipedia" },
+    { label: "Pente.org", url: "https://pente.org/", publisher: "Pente Community" },
+    { label: "BoardGameGeek — Pente", url: "https://boardgamegeek.com/boardgame/2118/pente", publisher: "BGG" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

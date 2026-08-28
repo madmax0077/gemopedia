@@ -1,0 +1,116 @@
+import type { Sport } from "@/lib/types";
+
+export const sagrada: Sport = {
+  id: "sagrada",
+  slug: "sagrada",
+  name: "Sagrada",
+  officialName: "Sagrada",
+  aliases: ["Sagrada dice game"],
+  shortDescription:
+    "DICE-DRAFTING PATTERN-BUILDING GAME (2017) by ADRIAN ADAMESCU + DARYL ANDREWS, published by FLOODGATE GAMES. 1-4 players draft translucent COLORED DICE from a shared pool + place them on a personal STAINED-GLASS WINDOW PATTERN CARD following COLOR + VALUE PLACEMENT RULES (no matching colors/values adjacent; must match reserved template cells). 10 ROUNDS + PUBLIC OBJECTIVES + PRIVATE OBJECTIVES + TOOL CARDS. Beautiful production. 30-45 min. BGG Top 200. Multiple expansions: PASSION, LIFE, ARTISANS.",
+  longDescription:
+    "SAGRADA is a DICE-DRAFTING PATTERN-BUILDING GAME (2017) designed by ADRIAN ADAMESCU + DARYL ANDREWS, published by FLOODGATE GAMES (Canada). Themed around building STAINED-GLASS WINDOWS in Barcelona's SAGRADA FAMÍLIA basilica (Antoni Gaudí's famous unfinished cathedral), the game is renowned for its BEAUTIFUL TRANSLUCENT COLORED DICE + elegant puzzle-like gameplay. GAMEPLAY: 1-4 players (best at 2-3; solo variant excellent). Each player receives a personal STAINED-GLASS WINDOW PATTERN CARD showing a 4x5 grid — some cells display COLOR RESTRICTIONS (e.g., red, blue, yellow, green, purple) + others show VALUE RESTRICTIONS (dice showing that specific number 1-6). The DICE POOL consists of ~90 TRANSLUCENT DICE in 5 COLORS (red, yellow, blue, green, purple). GAMEPLAY: 10 ROUNDS. Each round: 2 dice drawn per player from a bag, rolled + placed in a central DRAFT POOL. Turn order: 1-2-3-4-4-3-2-1 (snake draft). Each player picks 1 die from the pool + PLACES it on their window per the following RULES: (1) Match the cell's COLOR OR VALUE restriction (if any); (2) NO 2 ADJACENT dice (orthogonally) may share COLOR or VALUE; (3) The FIRST DIE placed must be on an EDGE (row 1, row 4, column 1, or column 5) — not interior. TOOL CARDS: 3 tool cards shared by all players; each provides a special ability (e.g., re-roll a die, swap dice, place die anywhere ignoring rules). Cost: 1 FAVOR TOKEN first use; 2 tokens each subsequent use. OBJECTIVES: 3 PUBLIC OBJECTIVES shared (visible; score at game end based on pattern rules like 'sum of green dice', 'diagonal color patterns', 'rows without repeated colors'); 1 PRIVATE OBJECTIVE per player (secret; scores sum of specific-color dice). SCORING: PUBLIC OBJECTIVES (sum) + PRIVATE OBJECTIVE (sum) + REMAINING FAVOR TOKENS (1 pt each) - EMPTY CELLS (-1 each). HIGHEST WINS. GAME LENGTH: 30-45 min. WEIGHT: BGG ~2.5/5 — light-medium. RECEPTION: Widely acclaimed for BEAUTIFUL COMPONENT DESIGN + accessible puzzle gameplay. BGG top-200 consistently. Nominated for multiple GAME OF THE YEAR awards (Dice Tower, others). EXPANSIONS: SAGRADA: 5-6 PLAYER EXPANSION (2018 — enables 5-6 player games); SAGRADA: PASSION (2019 — new pattern cards + tools); SAGRADA: LIFE (2019 — new patterns); SAGRADA: ARTISANS (2020 — solo + team variants). All expansions praised. NOTABLE: The DICE COMPONENTS are among the MOST BEAUTIFUL in modern board gaming — translucent colored resin with soft edges + a satisfying tactile feel.",
+  category: "dice-games",
+  subCategory: "dice drafting / pattern building / puzzle / abstract",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "CA",
+  regionOfOrigin: "Canada (Adamescu + Andrews); Floodgate Games (USA) publisher",
+  estimatedOrigin: "2017 (Floodgate Games)",
+  players: { min: 1, max: 4, note: "1-4 base game; solo variant excellent; 5-6 with expansion." },
+  field: {
+    surfaceName: "Personal 4x5 window pattern cards + central draft pool",
+    dimensions: "Individual 4x5 grid cards + central dice pool + tool card display",
+    description: "Personal stained-glass pattern grid + central shared dice pool + tool cards.",
+  },
+  equipment: [
+    { name: "Sagrada base box ($40)", description: "~90 translucent dice + patterns + objectives + tools + tokens" },
+    { name: "~90 translucent colored dice (red/yellow/blue/green/purple)", description: "Beautiful signature dice" },
+    { name: "24 stained-glass window pattern cards", description: "Personal grids" },
+    { name: "12 tool cards, 10 public + 12 private objective cards", description: "Scoring + abilities" },
+    { name: "Favor tokens (currency for tools)", description: "Tool activation" },
+    { name: "Expansions: 5-6 Player, Passion, Life, Artisans", description: "Alternate patterns + variants" },
+  ],
+  duration: { approximateMinutes: 37, structure: "30-45 min for 10-round game" },
+  objective: "Score most points by filling stained-glass window following pattern + adjacency rules + achieving objectives.",
+  basicRules: [
+    { title: "10 rounds of dice drafting; 2 dice per player per round", body: "Snake draft order." },
+    { title: "Each die placed must respect cell color/value AND adjacency rules", body: "No matching color/value orthogonally adjacent." },
+    { title: "First die must be on an edge cell", body: "Structural constraint." },
+    { title: "Tool cards spent via favor tokens for special abilities", body: "Strategic assists." },
+    { title: "3 public + 1 private objective drive scoring", body: "Multiple scoring paths." },
+    { title: "Score = public + private + remaining favors - empty cells", body: "Final calculation." },
+  ],
+  scoring: {
+    summary: "Public + private objectives + remaining favors - empty cell penalties.",
+    breakdown: [
+      { action: "Each public objective (3 shared)", points: "Variable per objective card" },
+      { action: "Private objective (secret per-player)", points: "Sum of specific-color dice values" },
+      { action: "Remaining favor tokens", points: "1 point each" },
+      { action: "Empty cells", points: "-1 point each" },
+    ],
+    winCondition: "Highest total score at game end.",
+  },
+  governingBodies: [
+    { name: "Floodgate Games (publisher)", founded: 2011, headquarters: "USA/Canada" },
+    { name: "BoardGameGeek community", founded: 2000, headquarters: "Online" },
+  ],
+  majorCompetitions: [
+    { name: "Board game convention play (Gen Con, Spiel Essen)", frequency: "annual", founded: 2017, region: "Global" },
+    { name: "Dice Tower Awards (nominations)", frequency: "annual", founded: 2013, region: "USA" },
+    { name: "Online Board Game Arena (Sagrada available)", frequency: "ongoing", founded: 2018, region: "Online" },
+  ],
+  countriesPlayed: ["US", "CA", "GB", "DE", "FR", "IT", "ES", "AU", "JP", "NL"],
+  famousAthletes: [
+    "Adrian Adamescu (Canadian co-designer)",
+    "Daryl Andrews (Canadian co-designer)",
+    "Floodgate Games team",
+  ],
+  variants: [
+    "sagrada-base-2017",
+    "sagrada-5-6-player-expansion-2018",
+    "sagrada-passion-expansion-2019",
+    "sagrada-life-expansion-2019",
+    "sagrada-artisans-solo-team-2020",
+  ],
+  relatedSports: ["azul", "isle-of-cats", "cascadia", "quilt-show", "welcome-to"],
+  skills: ["dice drafting priority", "pattern matching + adjacency planning", "objective optimization", "tool card timing"],
+  strategies: [
+    { title: "Draft dice matching your private objective color first", body: "Private objective scoring." },
+    { title: "Watch for adjacent color/value conflicts", body: "Every placement affects future options." },
+    { title: "Save favor tokens for critical tool uses", body: "Tools + endgame tokens both score." },
+    { title: "Balance public objectives with private", body: "Public visible to all." },
+  ],
+  terminology: [
+    { term: "Sagrada Família", meaning: "Antoni Gaudí's Barcelona basilica; game theme." },
+    { term: "Pattern card", meaning: "Personal 4x5 window grid with color/value restrictions." },
+    { term: "Public objective", meaning: "Shared scoring objective for all players." },
+    { term: "Private objective", meaning: "Secret color-based scoring goal per player." },
+    { term: "Tool card", meaning: "Special ability card usable with favor tokens." },
+    { term: "Favor token", meaning: "Currency for tools + endgame VP." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Play solo first to learn placement rules", body: "Solo mode teaches puzzle." },
+      { title: "Focus on 1 public objective + private", body: "Simplify scoring." },
+    ]},
+    { level: "intermediate", steps: [
+      { title: "Explore tool cards + expansion patterns", body: "Full depth." },
+    ]},
+  ],
+  faq: [
+    { question: "What is Sagrada?", answer: "DICE-DRAFTING PATTERN-BUILDING GAME (2017) by ADRIAN ADAMESCU + DARYL ANDREWS, published by FLOODGATE GAMES. 1-4 players draft translucent COLORED DICE from a shared pool + place them on a personal STAINED-GLASS WINDOW PATTERN CARD following COLOR + VALUE PLACEMENT RULES (no matching colors/values adjacent; must match reserved template cells). 10 ROUNDS + PUBLIC OBJECTIVES + PRIVATE OBJECTIVES + TOOL CARDS. Beautiful production. 30-45 min. BGG Top 200. Multiple expansions: PASSION, LIFE, ARTISANS." },
+    { question: "Sagrada vs Azul — which drafting game is better?", answer: "Both are award-winning drafting games with beautiful components + puzzle-like gameplay. AZUL (2017): TILE DRAFTING with pattern-building on 5x5 grid; simpler pattern rules; 30 min; SPIEL DES JAHRES 2018 WINNER; slightly more strategic. SAGRADA (2017): DICE DRAFTING with color+value adjacency rules; slightly more complex puzzle; more replayable via random dice + objective variety; 30-45 min. Both are excellent 2-4 player games. AZUL has cleaner rules + is EASIER to teach; SAGRADA has DEEPER puzzle + more variety per game via random dice. Azul is more mainstream; Sagrada is more hobbyist. Many people own both. Beginners → AZUL; puzzle-lovers → SAGRADA." },
+  ],
+  wikipediaTitle: "Sagrada (board game)",
+  sources: [
+    { label: "Floodgate Games — Sagrada", url: "https://www.floodgategames.com/sagrada", publisher: "Floodgate" },
+    { label: "BoardGameGeek — Sagrada", url: "https://boardgamegeek.com/boardgame/199561/sagrada", publisher: "BGG" },
+  ],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

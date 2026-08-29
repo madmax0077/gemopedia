@@ -41,6 +41,7 @@ import { ghostOfTsushima } from "./ghost-of-tsushima";
 import { godOfWar } from "./god-of-war";
 import { grandTheftAuto } from "./grand-theft-auto";
 import { grandTheftAutoV } from "./grand-theft-auto-v";
+import { guiltyGear } from "./guilty-gear";
 import { guitarHero } from "./guitar-hero";
 import { hades } from "./hades";
 import { halfLife } from "./half-life";
@@ -51,6 +52,7 @@ import { hollowKnightSilksong } from "./hollow-knight-silksong";
 import { itTakesTwo } from "./it-takes-two";
 import { kerbalSpaceProgram } from "./kerbal-space-program";
 import { kingdomComeDeliverance } from "./kingdom-come-deliverance";
+import { kingOfFighters } from "./king-of-fighters";
 import { kirby } from "./kirby";
 import { lethalCompany } from "./lethal-company";
 import { maddenNfl } from "./madden-nfl";
@@ -81,6 +83,7 @@ import { skyrim } from "./skyrim";
 import { slayTheSpire } from "./slay-the-spire";
 import { sonic } from "./sonic";
 import { sonicTheHedgehog } from "./sonic-the-hedgehog";
+import { soulcalibur } from "./soulcalibur";
 import { spaceInvaders } from "./space-invaders";
 import { stardewValley } from "./stardew-valley";
 import { stellaris } from "./stellaris";
@@ -98,6 +101,7 @@ import { theSims } from "./the-sims";
 import { theWitcher3 } from "./the-witcher-3";
 import { uncharted } from "./uncharted";
 import { vampireSurvivors } from "./vampire-survivors";
+import { virtuaFighter } from "./virtua-fighter";
 import { warframe } from "./warframe";
 import { warzone } from "./warzone";
 import { wiiSports } from "./wii-sports";
@@ -105,7 +109,7 @@ import { worldOfWarcraft } from "./world-of-warcraft";
 import { yakuza } from "./yakuza";
 
 /**
- * Video games with a strong competitive or sporting element.
+ * Video games.
  * Sourced from `lib/data/sports/video/*.ts`.
  */
 export const VIDEO_GAMES: Sport[] = [
@@ -150,6 +154,7 @@ export const VIDEO_GAMES: Sport[] = [
   godOfWar,
   grandTheftAuto,
   grandTheftAutoV,
+  guiltyGear,
   guitarHero,
   hades,
   halfLife,
@@ -160,6 +165,7 @@ export const VIDEO_GAMES: Sport[] = [
   itTakesTwo,
   kerbalSpaceProgram,
   kingdomComeDeliverance,
+  kingOfFighters,
   kirby,
   lethalCompany,
   maddenNfl,
@@ -190,6 +196,7 @@ export const VIDEO_GAMES: Sport[] = [
   slayTheSpire,
   sonic,
   sonicTheHedgehog,
+  soulcalibur,
   spaceInvaders,
   stardewValley,
   stellaris,
@@ -207,6 +214,7 @@ export const VIDEO_GAMES: Sport[] = [
   theWitcher3,
   uncharted,
   vampireSurvivors,
+  virtuaFighter,
   warframe,
   warzone,
   wiiSports,

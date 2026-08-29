@@ -8,6 +8,7 @@ import { bandy } from "./bandy";
 import { baseball } from "./baseball";
 import { baseball5 } from "./baseball5";
 import { basketball } from "./basketball";
+import { basquePelota } from "./basque-pelota";
 import { beachHandball } from "./beach-handball";
 import { beachSoccer } from "./beach-soccer";
 import { beachVolleyball } from "./beach-volleyball";
@@ -17,9 +18,11 @@ import { canadianFootball } from "./canadian-football";
 import { cestaPunta } from "./cesta-punta";
 import { cricket } from "./cricket";
 import { fieldHockey } from "./field-hockey";
+import { fistball } from "./fistball";
 import { flagFootball } from "./flag-football";
 import { floorball } from "./floorball";
 import { futsal } from "./futsal";
+import { gaelicHandball } from "./gaelic-handball";
 import { goalball } from "./goalball";
 import { handball } from "./handball";
 import { hooverball } from "./hooverball";
@@ -39,10 +42,12 @@ import { rugbyUnion } from "./rugby-union";
 import { sittingVolleyball } from "./sitting-volleyball";
 import { softball } from "./softball";
 import { spikeball } from "./spikeball";
+import { stoolball } from "./stoolball";
 import { tagRugby } from "./tag-rugby";
 import { tchoukball } from "./tchoukball";
 import { teqball } from "./teqball";
 import { torball } from "./torball";
+import { touchFootball } from "./touch-football";
 import { touchRugby } from "./touch-rugby";
 import { ultimateFrisbee } from "./ultimate-frisbee";
 import { volleyball } from "./volleyball";
@@ -63,6 +68,7 @@ export const BALL_SPORTS: Sport[] = [
   baseball,
   baseball5,
   basketball,
+  basquePelota,
   beachHandball,
   beachSoccer,
   beachVolleyball,
@@ -72,9 +78,11 @@ export const BALL_SPORTS: Sport[] = [
   cestaPunta,
   cricket,
   fieldHockey,
+  fistball,
   flagFootball,
   floorball,
   futsal,
+  gaelicHandball,
   goalball,
   handball,
   hooverball,
@@ -94,10 +102,12 @@ export const BALL_SPORTS: Sport[] = [
   sittingVolleyball,
   softball,
   spikeball,
+  stoolball,
   tagRugby,
   tchoukball,
   teqball,
   torball,
+  touchFootball,
   touchRugby,
   ultimateFrisbee,
   volleyball,

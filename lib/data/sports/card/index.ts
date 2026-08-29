@@ -1,5 +1,6 @@
 ﻿import type { Sport } from "@/lib/types";
 
+import { allFours } from "./all-fours";
 import { androidNetrunner } from "./android-netrunner";
 import { arkhamHorrorLcg } from "./arkham-horror-lcg";
 import { ascension } from "./ascension";
@@ -35,6 +36,7 @@ import { frenchTarot } from "./french-tarot";
 import { ginRummy } from "./gin-rummy";
 import { goFish } from "./go-fish";
 import { golfCardGame } from "./golf-card-game";
+import { goStop } from "./go-stop";
 import { hanafuda } from "./hanafuda";
 import { handAndFoot } from "./hand-and-foot";
 import { hearts } from "./hearts";
@@ -43,6 +45,7 @@ import { jaipur } from "./jaipur";
 import { jass } from "./jass";
 import { keyforge } from "./keyforge";
 import { klondikeSolitaire } from "./klondike-solitaire";
+import { koiKoi } from "./koi-koi";
 import { lordOfTheRingsLcg } from "./lord-of-the-rings-lcg";
 import { loveLetter } from "./love-letter";
 import { magicTheGathering } from "./magic-the-gathering";
@@ -58,6 +61,7 @@ import { onePieceTcg } from "./one-piece-tcg";
 import { palace } from "./palace";
 import { pinochle } from "./pinochle";
 import { piquet } from "./piquet";
+import { pitch } from "./pitch";
 import { pokemonTcg } from "./pokemon-tcg";
 import { president } from "./president";
 import { razz } from "./razz";
@@ -70,6 +74,7 @@ import { sixNimmt } from "./six-nimmt";
 import { skat } from "./skat";
 import { skullKing } from "./skull-king";
 import { solitaire } from "./solitaire";
+import { soloWhist } from "./solo-whist";
 import { spades } from "./spades";
 import { speedCardGame } from "./speed-card-game";
 import { spiderSolitaire } from "./spider-solitaire";
@@ -86,6 +91,8 @@ import { tichu } from "./tichu";
 import { tienLen } from "./tien-len";
 import { timeline } from "./timeline";
 import { tressette } from "./tressette";
+import { truco } from "./truco";
+import { tute } from "./tute";
 import { uno } from "./uno";
 import { warCardGame } from "./war-card-game";
 import { whist } from "./whist";
@@ -93,10 +100,11 @@ import { wizard } from "./wizard";
 import { yuGiOh } from "./yu-gi-oh";
 
 /**
- * Card games — trick-taking, deck-building, CCG/TCG, solitaire, casino variants.
+ * Card game entries
  * Sourced from `lib/data/sports/card/*.ts`.
  */
 export const CARD_GAMES: Sport[] = [
+  allFours,
   androidNetrunner,
   arkhamHorrorLcg,
   ascension,
@@ -132,6 +140,7 @@ export const CARD_GAMES: Sport[] = [
   ginRummy,
   goFish,
   golfCardGame,
+  goStop,
   hanafuda,
   handAndFoot,
   hearts,
@@ -140,6 +149,7 @@ export const CARD_GAMES: Sport[] = [
   jass,
   keyforge,
   klondikeSolitaire,
+  koiKoi,
   lordOfTheRingsLcg,
   loveLetter,
   magicTheGathering,
@@ -155,6 +165,7 @@ export const CARD_GAMES: Sport[] = [
   palace,
   pinochle,
   piquet,
+  pitch,
   pokemonTcg,
   president,
   razz,
@@ -167,6 +178,7 @@ export const CARD_GAMES: Sport[] = [
   skat,
   skullKing,
   solitaire,
+  soloWhist,
   spades,
   speedCardGame,
   spiderSolitaire,
@@ -183,6 +195,8 @@ export const CARD_GAMES: Sport[] = [
   tienLen,
   timeline,
   tressette,
+  truco,
+  tute,
   uno,
   warCardGame,
   whist,

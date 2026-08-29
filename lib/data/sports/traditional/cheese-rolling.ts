@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const cheeseRolling: Sport = {
+  id: "cheese-rolling",
+  slug: "cheese-rolling",
+  name: "Cheese Rolling",
+  officialName: "Cooper's Hill Cheese-Rolling and Wake",
+  aliases: ["Cooper's Hill Cheese Rolling", "Gloucester Cheese Rolling"],
+  shortDescription:
+    "ENGLISH ANNUAL DOWNHILL RACE at COOPER'S HILL, Gloucestershire (last Monday of May). A 9lb DOUBLE GLOUCESTER CHEESE WHEEL is rolled down a nearly-vertical 200-yard grass hill; competitors CHASE IT DOWN AT FULL SPEED. The cheese reaches ~70 mph — no one catches it. Winner: first person to CROSS THE FINISH LINE at the bottom. Held informally + illegally (officially cancelled 2010 but continues via crowd initiative). Injury-rich event; ambulances routine. Emblematic English eccentric traditional sport.",
+  category: "traditional-cultural-sports",
+  subCategory: "annual folk race / uphill village tradition / injury-heavy",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "early-modern",
+  popularity: "regional",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "Cooper's Hill, Brockworth, Gloucestershire, England",
+  estimatedOrigin: "1826 first documented; possibly Roman/Celtic origin; annual since Victorian era",
+  players: { min: 15, max: 40, note: "Ad-hoc participation; 15-40 racers per heat; 4 heats per festival." },
+  equipment: [
+    { name: "Double Gloucester cheese wheel (9 lb / 4kg)", description: "The prize + the projectile" },
+    { name: "Cooper's Hill (200-yard nearly-vertical grass slope)", description: "The natural venue" },
+    { name: "Old + tough clothing (no PPE mandated)", description: "Personal choice" },
+  ],
+  duration: { approximateMinutes: 1, structure: "Each race lasts <30 seconds; festival is 1-2 hours with 4 heats." },
+  objective: "Cross the finish line at bottom of hill first (cheese never caught).",
+  basicRules: [
+    { title: "Cheese rolled down hill; racers chase at signal", body: "Simple start." },
+    { title: "Cheese reaches ~70 mph; racers try to run/tumble down", body: "Extreme steepness." },
+    { title: "Winner: first person across finish line at bottom", body: "Not first to catch cheese (impossible)." },
+    { title: "Winner keeps the cheese", body: "The prize." },
+    { title: "Multiple heats: men's downhill, women's downhill, uphill race, junior races", body: "Format variety." },
+  ],
+  scoring: {
+    summary: "First across finish line wins cheese; ambulances routinely required.",
+    breakdown: [
+      { action: "First across finish line", points: "Wins cheese + fame" },
+      { action: "Injury / airlift", points: "Common (~5-10 per festival)" },
+    ],
+    winCondition: "First to cross the finish line.",
+  },
+  countriesPlayed: ["GB (Cooper's Hill, Gloucestershire)"],
+  variants: ["cooper-hill-cheese-rolling-main-event", "womens-race", "junior-uphill-race", "informal-copycat-events-worldwide"],
+  relatedSports: ["shrovetide-football", "eton-wall-game", "highland-games", "calcio-storico"],
+  skills: ["fearless downhill running", "controlled falling + tumbling", "pain tolerance"],
+  terminology: [
+    { term: "Cooper's Hill", meaning: "The natural venue in Brockworth, Gloucestershire." },
+    { term: "Double Gloucester", meaning: "The 9lb hard cheese wheel used as prize + projectile." },
+    { term: "Wake", meaning: "'Feast day' — the original festival name (Cooper's Hill Wake)." },
+  ],
+  faq: [
+    { question: "Is Cheese Rolling legal?", answer: "COMPLICATED. In 2010 the ORGANIZED event was cancelled by police + insurance concerns after decades of serious injuries. BUT — the tradition continues each year via CROWD INITIATIVE + a rotating unofficial 'Master of Ceremonies'. Local police + ambulance services now attend but do not stop the event. Legally in a gray zone; enforcement effectively looks the other way." },
+    { question: "Why the cheese?", answer: "The origin is debated. Best theory: MEDIEVAL COMMON LAND GRAZING RIGHTS. Locals rolled a cheese down hill each year to physically demonstrate + preserve their traditional grazing rights on the hill. The tradition survived commemorative practice into 20th c. Alternative: pagan sun-worship + fertility rite. Regardless, the cheese remains a Double Gloucester (Gloucestershire being cheese country)." },
+  ],
+  wikipediaTitle: "Cooper's Hill Cheese-Rolling and Wake",
+  sources: [{ label: "Wikipedia — Cooper's Hill Cheese-Rolling", url: "https://en.wikipedia.org/wiki/Cooper%27s_Hill_Cheese-Rolling_and_Wake", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

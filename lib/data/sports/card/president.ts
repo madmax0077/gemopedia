@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const president: Sport = {
+  id: "president",
+  slug: "president",
+  name: "President",
+  officialName: "President",
+  aliases: ["Asshole", "Scumbag", "A**hole", "Warlords and Peasants", "Landlord", "Dai Hin Min (Japan)", "Da Vifty (China)"],
+  shortDescription:
+    "CLIMBING-STYLE CARD GAME using a standard 52-card deck (or 2 decks for large groups). 4-8 players shed cards by playing SINGLES, PAIRS, TRIPLES, or QUADS of increasing rank. First to shed becomes PRESIDENT next hand; last is the ASSHOLE (aka SCUMBAG) — must give best cards to president. Persistent social hierarchy that inverts + reinforces over multiple hands. Party favorite worldwide. Family relative of Japanese DAI HIN MIN + Chinese DA VIFTY + Vietnamese TIẾN LÊN.",
+  category: "card-games",
+  subCategory: "climbing / shedding / party / social hierarchy",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "major",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "East Asian climbing family (Dai Hin Min); popularized in West as President/Asshole",
+  estimatedOrigin: "Traditional East Asian; Western Americanized versions 1960s+",
+  players: { min: 3, max: 8, note: "Best at 4-7; scales via multiple decks for 8+." },
+  equipment: [
+    { name: "Standard 52-card deck (or 2 decks for 6+ players)", description: "Standard playing cards" },
+    { name: "Optional 2 jokers as high wild cards", description: "House rule" },
+  ],
+  duration: { approximateMinutes: 30, structure: "Multiple hands; role inversion between rounds." },
+  objective: "Be first to shed all cards; ascend the social hierarchy.",
+  basicRules: [
+    { title: "Play SINGLE, PAIR, TRIPLE, or QUAD of same rank higher than previous", body: "Climbing mechanic." },
+    { title: "Match combination type (singles on singles, pairs on pairs, etc.)", body: "Type consistency." },
+    { title: "Pass if you cannot/won't play; skipping cascades", body: "Pass mechanics." },
+    { title: "Everyone passes → last player collects trick + starts new one", body: "Trick reset." },
+    { title: "First to shed = President; last = Asshole", body: "Signature ranking." },
+    { title: "Next hand: Asshole gives 2 best cards to President; President returns any 2", body: "Card exchange preserves hierarchy." },
+  ],
+  scoring: {
+    summary: "Rank-based: 1st = President, 2nd = Vice President, ..., last = Asshole/Scumbag. Multi-hand social dynamic.",
+    breakdown: [
+      { action: "First to shed", points: "President (highest rank next hand)" },
+      { action: "Last player with cards", points: "Asshole (must give best cards to president)" },
+    ],
+    winCondition: "Casual game; no formal endgame — play continues as long as group wishes.",
+  },
+  countriesPlayed: ["JP", "US", "GB", "CN", "VN", "KR", "DE", "FR", "CA", "AU", "MX"],
+  variants: ["asshole-scumbag-us-college", "landlord-dou-dizhu-chinese-variant", "dai-hin-min-japanese-original", "tien-len-vietnamese-cousin", "president-with-jokers-wild"],
+  relatedSports: ["dou-dizhu", "tien-len", "big-two", "uno", "crazy-eights"],
+  skills: ["combo recognition", "card counting", "hand hierarchy prediction", "social gamesmanship"],
+  terminology: [
+    { term: "President", meaning: "1st place; highest social rank next hand." },
+    { term: "Vice President", meaning: "2nd place." },
+    { term: "Asshole / Scumbag", meaning: "Last place; must give best cards to President." },
+    { term: "Bomb", meaning: "4-of-a-kind that can be played out of turn to bust the trick." },
+  ],
+  faq: [
+    { question: "President = Asshole = Scumbag — why so many names?", answer: "The game has been globalized under many names because different regions/circles adopt different terminology. Core rules identical. AMERICAN COLLEGE typically uses ASSHOLE or SCUMBAG (crude); FAMILY-FRIENDLY versions use PRESIDENT; East Asia has its own names (DAI HIN MIN, DA VIFTY, TIẾN LÊN). All refer to the same climbing game family." },
+  ],
+  wikipediaTitle: "President (card game)",
+  sources: [{ label: "Wikipedia — President", url: "https://en.wikipedia.org/wiki/President_(card_game)", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

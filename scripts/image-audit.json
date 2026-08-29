@@ -1,0 +1,3693 @@
+{
+  "withImg": [
+    {
+      "file": "lib/data/sports/gymnastics/acrobatic-gymnastics.ts",
+      "slug": "acrobatic-gymnastics",
+      "name": "Acrobatic Gymnastics",
+      "title": "Acrobatic gymnastics",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Women%27s_Trio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Acrobatic gymnastics"
+    },
+    {
+      "file": "lib/data/sports/air/aerobatics.ts",
+      "slug": "aerobatics",
+      "name": "Aerobatics",
+      "title": "Aerobatics",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Frecce_Tricolori_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Aerobatics"
+    },
+    {
+      "file": "lib/data/sports/combat/aikido.ts",
+      "slug": "aikido",
+      "name": "Aikido",
+      "title": "Aikido",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Shihonage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Aikido"
+    },
+    {
+      "file": "lib/data/sports/precision/air-hockey.ts",
+      "slug": "air-hockey",
+      "name": "Air Hockey",
+      "title": "Air hockey",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/AirHockeyTable.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Air hockey"
+    },
+    {
+      "file": "lib/data/sports/winter/alpine-skiing.ts",
+      "slug": "alpine-skiing",
+      "name": "Alpine Skiing",
+      "title": "Alpine skiing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alpine_skiing_pictogram.svg/330px-Alpine_skiing_pictogram.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Alpine skiing"
+    },
+    {
+      "file": "lib/data/sports/escape/alternate-reality-games.ts",
+      "slug": "alternate-reality-games",
+      "name": "Alternate Reality Games (ARGs)",
+      "title": "Alternate reality game",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/NIN_ARG_24-20-3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Alternate reality game"
+    },
+    {
+      "file": "lib/data/sports/ball/american-football.ts",
+      "slug": "american-football",
+      "name": "American Football",
+      "title": "American football",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Larry_Fitzgerald_catches_TD_at_2009_Pro_Bowl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "American football"
+    },
+    {
+      "file": "lib/data/sports/video/among-us.ts",
+      "slug": "among-us",
+      "name": "Among Us",
+      "title": "Among Us",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Among Us"
+    },
+    {
+      "file": "lib/data/sports/casino/andar-bahar.ts",
+      "slug": "andar-bahar",
+      "name": "Andar Bahar",
+      "title": "Andar Bahar",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/25/Andhar_Bahar_film_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Andhar Bahar"
+    },
+    {
+      "file": "lib/data/sports/video/angry-birds.ts",
+      "slug": "angry-birds",
+      "name": "Angry Birds",
+      "title": "Angry Birds (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/2d/Angry_Birds_promo_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Angry Birds (video game)"
+    },
+    {
+      "file": "lib/data/sports/esports/apex-legends.ts",
+      "slug": "apex-legends",
+      "name": "Apex Legends",
+      "title": "Apex Legends",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Apex Legends"
+    },
+    {
+      "file": "lib/data/sports/precision/archery.ts",
+      "slug": "archery",
+      "name": "Archery",
+      "title": "Archery",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/ArcheryGermanyEarly1980s-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Archery"
+    },
+    {
+      "file": "lib/data/sports/board/arkham-horror.ts",
+      "slug": "arkham-horror",
+      "name": "Arkham Horror",
+      "title": "Arkham Horror",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/e/ed/Arkham_Horror_revised_box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Arkham Horror"
+    },
+    {
+      "file": "lib/data/sports/strength/arm-wrestling.ts",
+      "slug": "arm-wrestling",
+      "name": "Arm Wrestling",
+      "title": "Arm wrestling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Armwrestle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Arm wrestling"
+    },
+    {
+      "file": "lib/data/sports/gymnastics/artistic-gymnastics.ts",
+      "slug": "artistic-gymnastics",
+      "name": "Artistic Gymnastics",
+      "title": "Artistic gymnastics",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Illia_Kovtun_performing_in_the_men%27s_parallel_bars_final_at_Paris_2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Artistic gymnastics"
+    },
+    {
+      "file": "lib/data/sports/aquatic/artistic-swimming.ts",
+      "slug": "artistic-swimming",
+      "name": "Artistic Swimming",
+      "title": "Artistic swimming",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Synchronized_swimming_at_the_2016_Summer_Olympics_-Presentation_of_the_Brazilian_team_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Synchronised swimming"
+    },
+    {
+      "file": "lib/data/sports/video/assassins-creed.ts",
+      "slug": "assassins-creed",
+      "name": "Assassin's Creed",
+      "title": "Assassin's Creed",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Assassin%27s_Creed_Logo.svg/330px-Assassin%27s_Creed_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Assassin's Creed"
+    },
+    {
+      "file": "lib/data/sports/ball/association-football.ts",
+      "slug": "association-football",
+      "name": "Football",
+      "title": "Association football",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Association football"
+    },
+    {
+      "file": "lib/data/sports/ball/australian-rules-football.ts",
+      "slug": "australian-rules-football",
+      "name": "Australian Rules Football",
+      "title": "Australian rules football",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Archie_Smith.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Australian rules football"
+    },
+    {
+      "file": "lib/data/sports/board/azul.ts",
+      "slug": "azul",
+      "name": "Azul",
+      "title": "Azul (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/23/Picture_of_Azul_game_box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Azul (board game)"
+    },
+    {
+      "file": "lib/data/sports/casino/baccarat.ts",
+      "slug": "baccarat",
+      "name": "Baccarat",
+      "title": "Baccarat",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Baccara_Palette.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Baccarat"
+    },
+    {
+      "file": "lib/data/sports/mind/backgammon.ts",
+      "slug": "backgammon",
+      "name": "Backgammon",
+      "title": "Backgammon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Backgammon_lg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Backgammon"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/badminton.ts",
+      "slug": "badminton",
+      "name": "Badminton",
+      "title": "Badminton",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Olympics_2012_Mixed_Doubles_Final.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Badminton"
+    },
+    {
+      "file": "lib/data/sports/ball/bandy.ts",
+      "slug": "bandy",
+      "name": "Bandy",
+      "title": "Bandy",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kareby_IS-AIK%2C_13_mars_2015_32.jpg/3840px-Kareby_IS-AIK%2C_13_mars_2015_32.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Bandy"
+    },
+    {
+      "file": "lib/data/sports/traditional/bao.ts",
+      "slug": "bao",
+      "name": "Bao",
+      "title": "Bao (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bao_players_in_stone_town_zanzibar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Bao (game)"
+    },
+    {
+      "file": "lib/data/sports/adventure/base-jumping.ts",
+      "slug": "base-jumping",
+      "name": "BASE Jumping",
+      "title": "BASE jumping",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Base_jump.webm/1280px--Base_jump.webm.jpg",
+      "pageTitle": "BASE jumping"
+    },
+    {
+      "file": "lib/data/sports/ball/baseball.ts",
+      "slug": "baseball",
+      "name": "Baseball",
+      "title": "Baseball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tommy_Milone_gives_up_a_home_run_to_Mike_Trout_on_May_21%2C_2017.jpg/3840px-Tommy_Milone_gives_up_a_home_run_to_Mike_Trout_on_May_21%2C_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Baseball"
+    },
+    {
+      "file": "lib/data/sports/ball/basketball.ts",
+      "slug": "basketball",
+      "name": "Basketball",
+      "title": "Basketball",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Steph_Curry_%2851915116957%29.jpg/3840px-Steph_Curry_%2851915116957%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Basketball"
+    },
+    {
+      "file": "lib/data/sports/board/battleship.ts",
+      "slug": "battleship",
+      "name": "Battleship",
+      "title": "Battleship (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hra_n%C3%A1mo%C5%99n%C3%AD_bitva_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Battleship (game)"
+    },
+    {
+      "file": "lib/data/sports/ball/beach-volleyball.ts",
+      "slug": "beach-volleyball",
+      "name": "Beach Volleyball",
+      "title": "Beach volleyball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/ECSC_East_Coast_Surfing_Championships_Beach_Volleyball_women_open_finals_Pregowska_pro_FIVB.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Beach volleyball"
+    },
+    {
+      "file": "lib/data/sports/video/beat-saber.ts",
+      "slug": "beat-saber",
+      "name": "Beat Saber",
+      "title": "Beat Saber",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/5/58/Beat_Saber_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Beat Saber"
+    },
+    {
+      "file": "lib/data/sports/card/belote.ts",
+      "slug": "belote",
+      "name": "Belote",
+      "title": "Belote",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/King_and_Queen_of_Clubs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Belote"
+    },
+    {
+      "file": "lib/data/sports/winter/biathlon.ts",
+      "slug": "biathlon",
+      "name": "Biathlon",
+      "title": "Biathlon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Biathlon_Schalke.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Biathlon"
+    },
+    {
+      "file": "lib/data/sports/casino/bingo.ts",
+      "slug": "bingo",
+      "name": "Bingo",
+      "title": "Bingo (British version)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/9x3_bingo_ticket.svg/330px-9x3_bingo_ticket.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Bingo (British version)"
+    },
+    {
+      "file": "lib/data/sports/video/bioshock.ts",
+      "slug": "bioshock",
+      "name": "BioShock",
+      "title": "BioShock",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/6/6d/BioShock_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "BioShock"
+    },
+    {
+      "file": "lib/data/sports/casino/blackjack.ts",
+      "slug": "blackjack",
+      "name": "Blackjack",
+      "title": "Blackjack",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/BlackJackGame.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Blackjack"
+    },
+    {
+      "file": "lib/data/sports/board/blokus.ts",
+      "slug": "blokus",
+      "name": "Blokus",
+      "title": "Blokus",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/a/a8/Blokus_board_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Blokus"
+    },
+    {
+      "file": "lib/data/sports/wargames/blood-bowl.ts",
+      "slug": "blood-bowl",
+      "name": "Blood Bowl",
+      "title": "Blood Bowl",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/e/ed/Blood_Bowl_cover_photo.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Blood Bowl"
+    },
+    {
+      "file": "lib/data/sports/adventure/bmx.ts",
+      "slug": "bmx",
+      "name": "BMX",
+      "title": "BMX",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMX_racing_action_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "BMX"
+    },
+    {
+      "file": "lib/data/sports/adventure/bmx-freestyle.ts",
+      "slug": "bmx-freestyle",
+      "name": "BMX Freestyle",
+      "title": "Freestyle BMX",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cycling_%28BMX_freestyle%29_pictogram.svg/330px-Cycling_%28BMX_freestyle%29_pictogram.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Freestyle BMX"
+    },
+    {
+      "file": "lib/data/sports/winter/bobsleigh.ts",
+      "slug": "bobsleigh",
+      "name": "Bobsleigh",
+      "title": "Bobsleigh",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Two-man_bobsleigh%2C_2014_winter_Olympics%2C_Jamaica.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Bobsleigh"
+    },
+    {
+      "file": "lib/data/sports/precision/bocce.ts",
+      "slug": "bocce",
+      "name": "Bocce",
+      "title": "Bocce",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Steve_Mariucci_Coach_Mooch_Battle_of_the_Bay_Charity_Bocce_2026_05.jpg/3840px-Steve_Mariucci_Coach_Mooch_Battle_of_the_Bay_Charity_Bocce_2026_05.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Bocce"
+    },
+    {
+      "file": "lib/data/sports/aquatic/bodyboarding.ts",
+      "slug": "bodyboarding",
+      "name": "Bodyboarding",
+      "title": "Bodyboarding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Bodyboarding_1_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Bodyboarding"
+    },
+    {
+      "file": "lib/data/sports/strength/bodybuilding.ts",
+      "slug": "bodybuilding",
+      "name": "Bodybuilding",
+      "title": "Bodybuilding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Arnold_Schwarzenegger_1974.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Bodybuilding"
+    },
+    {
+      "file": "lib/data/sports/adventure/bouldering.ts",
+      "slug": "bouldering",
+      "name": "Bouldering",
+      "title": "Bouldering",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Bouldering.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Bouldering"
+    },
+    {
+      "file": "lib/data/sports/combat/boxing.ts",
+      "slug": "boxing",
+      "name": "Boxing",
+      "title": "Boxing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Boxing_Tournament_in_Aid_of_King_George%27s_Fund_For_Sailors_at_the_Royal_Naval_Air_Station%2C_Henstridge%2C_Somerset%2C_July_1945_A29806.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Boxing"
+    },
+    {
+      "file": "lib/data/sports/combat/brazilian-jiu-jitsu.ts",
+      "slug": "brazilian-jiu-jitsu",
+      "name": "Brazilian Jiu-Jitsu",
+      "title": "Brazilian jiu-jitsu",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/GABRIEL_VELLA_vs_ROMINHO_51.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Brazilian jiu-jitsu"
+    },
+    {
+      "file": "lib/data/sports/puzzle/bulls-and-cows.ts",
+      "slug": "bulls-and-cows",
+      "name": "Bulls and Cows",
+      "title": "Mastermind (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mastermind.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mastermind (board game)"
+    },
+    {
+      "file": "lib/data/sports/equestrian/buzkashi.ts",
+      "slug": "buzkashi",
+      "name": "Buzkashi",
+      "title": "Buzkashi",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Afghan_Game_Buzkashi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Buzkashi"
+    },
+    {
+      "file": "lib/data/sports/tabletop-rpg/call-of-cthulhu.ts",
+      "slug": "call-of-cthulhu",
+      "name": "Call of Cthulhu",
+      "title": "Call of Cthulhu (role-playing game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/3/33/Call_of_Cthulhu_RPG_1st_ed_1981.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Call of Cthulhu (role-playing game)"
+    },
+    {
+      "file": "lib/data/sports/video/call-of-duty.ts",
+      "slug": "call-of-duty",
+      "name": "Call of Duty",
+      "title": "Call of Duty (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/7/7c/Call_Of_Duty_%282003%29%2CCover%2CUpdated.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Call of Duty (video game)"
+    },
+    {
+      "file": "lib/data/sports/card/canasta.ts",
+      "slug": "canasta",
+      "name": "Canasta",
+      "title": "Canasta",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Canasta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Canasta"
+    },
+    {
+      "file": "lib/data/sports/video/candy-crush.ts",
+      "slug": "candy-crush",
+      "name": "Candy Crush Saga",
+      "title": "Candy Crush Saga",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/b/bc/Candy_Crush_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Candy Crush Saga"
+    },
+    {
+      "file": "lib/data/sports/video/candy-crush-saga.ts",
+      "slug": "candy-crush-saga",
+      "name": "Candy Crush Saga",
+      "title": "Candy Crush Saga",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/b/bc/Candy_Crush_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Candy Crush Saga"
+    },
+    {
+      "file": "lib/data/sports/aquatic/canoe-sprint.ts",
+      "slug": "canoe-sprint",
+      "name": "Canoe Sprint",
+      "title": "Canoe sprint",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Rio_2016._Canoagem_de_velocidade-Canoe_sprint_%2828860179530%29.jpg/3840px-Rio_2016._Canoagem_de_velocidade-Canoe_sprint_%2828860179530%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Canoe sprint"
+    },
+    {
+      "file": "lib/data/sports/aquatic/canoeing.ts",
+      "slug": "canoeing",
+      "name": "Canoeing",
+      "title": "Canoeing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Finale_C1_200_m_f%C3%A9minin_Jeux_Olympiques_Paris_2024.jpg/3840px-Finale_C1_200_m_f%C3%A9minin_Jeux_Olympiques_Paris_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Canoeing"
+    },
+    {
+      "file": "lib/data/sports/adventure/canyoning.ts",
+      "slug": "canyoning",
+      "name": "Canyoning",
+      "title": "Canyoning",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Bali_canyoning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Canyoning"
+    },
+    {
+      "file": "lib/data/sports/combat/capoeira.ts",
+      "slug": "capoeira",
+      "name": "Capoeira",
+      "title": "Capoeira",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Rugendasroda.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Capoeira"
+    },
+    {
+      "file": "lib/data/sports/playground/capture-the-flag.ts",
+      "slug": "capture-the-flag",
+      "name": "Capture the Flag",
+      "title": "Capture the flag",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Boys_Playing_Capture_the_Flag_%2814980437786%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Capture the flag"
+    },
+    {
+      "file": "lib/data/sports/board/carcassonne.ts",
+      "slug": "carcassonne",
+      "name": "Carcassonne",
+      "title": "Carcassonne (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/5/5e/Carcassonne-game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Carcassonne (board game)"
+    },
+    {
+      "file": "lib/data/sports/board/catan.ts",
+      "slug": "catan",
+      "name": "Catan",
+      "title": "Catan",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/a/a3/Catan-2015-boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Catan"
+    },
+    {
+      "file": "lib/data/sports/party/charades.ts",
+      "slug": "charades",
+      "name": "Charades",
+      "title": "Charades",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Game_of_Charades_-_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Charades"
+    },
+    {
+      "file": "lib/data/sports/gymnastics/cheerleading.ts",
+      "slug": "cheerleading",
+      "name": "Cheerleading",
+      "title": "Cheerleading",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Penn_cheerleaders_formation.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cheerleading"
+    },
+    {
+      "file": "lib/data/sports/mind/chess.ts",
+      "slug": "chess",
+      "name": "Chess",
+      "title": "Chess",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChessSet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Chess"
+    },
+    {
+      "file": "lib/data/sports/video/civilization.ts",
+      "slug": "civilization",
+      "name": "Civilization",
+      "title": "Sid Meier's Civilization",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/e/ec/Civilizationboxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Civilization (video game)"
+    },
+    {
+      "file": "lib/data/sports/party/cluedo.ts",
+      "slug": "cluedo",
+      "name": "Cluedo",
+      "title": "Cluedo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Cluedo_Clue_pack_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cluedo"
+    },
+    {
+      "file": "lib/data/sports/party/codenames.ts",
+      "slug": "codenames",
+      "name": "Codenames",
+      "title": "Codenames (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Codenames_board_game.jpg/3840px-Codenames_board_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Codenames (board game)"
+    },
+    {
+      "file": "lib/data/sports/board/connect-four.ts",
+      "slug": "connect-four",
+      "name": "Connect Four",
+      "title": "Connect Four",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Connect-four.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Connect Four"
+    },
+    {
+      "file": "lib/data/sports/mind/contract-bridge.ts",
+      "slug": "contract-bridge",
+      "name": "Bridge",
+      "title": "Contract bridge",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Bridge-Gro%C3%9Fschlemm.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Contract bridge"
+    },
+    {
+      "file": "lib/data/sports/precision/cornhole.ts",
+      "slug": "cornhole",
+      "name": "Cornhole",
+      "title": "Cornhole",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Cornhole%2C_Homerville.JPG/3840px-Cornhole%2C_Homerville.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Cornhole"
+    },
+    {
+      "file": "lib/data/sports/esports/counter-strike.ts",
+      "slug": "counter-strike",
+      "name": "Counter-Strike",
+      "title": "Counter-Strike 2",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/f/f2/CS2_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Counter-Strike 2"
+    },
+    {
+      "file": "lib/data/sports/dice/craps.ts",
+      "slug": "craps",
+      "name": "Craps",
+      "title": "Craps",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Marines_and_sailors_attended_5th_annual_Casino_Royale_event_130928-M-WI309-003.jpg/3840px-Marines_and_sailors_attended_5th_annual_Casino_Royale_event_130928-M-WI309-003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Craps"
+    },
+    {
+      "file": "lib/data/sports/card/crazy-eights.ts",
+      "slug": "crazy-eights",
+      "name": "Crazy Eights",
+      "title": "Crazy Eights",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Crazy_Eights.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Crazy Eights"
+    },
+    {
+      "file": "lib/data/sports/card/cribbage.ts",
+      "slug": "cribbage",
+      "name": "Cribbage",
+      "title": "Cribbage",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Afternoon_cribbage_on_the_patio._%2850002851016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cribbage"
+    },
+    {
+      "file": "lib/data/sports/ball/cricket.ts",
+      "slug": "cricket",
+      "name": "Cricket",
+      "title": "Cricket",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Pollock_to_Hussey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cricket"
+    },
+    {
+      "file": "lib/data/sports/winter/cross-country-skiing.ts",
+      "slug": "cross-country-skiing",
+      "name": "Cross-Country Skiing",
+      "title": "Cross-country skiing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Trip_to_Skorafjell_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cross-country skiing"
+    },
+    {
+      "file": "lib/data/sports/puzzle/crossword.ts",
+      "slug": "crossword",
+      "name": "Crossword Puzzle",
+      "title": "Crossword",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/CrosswordUSA.svg/960px-CrosswordUSA.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Crossword"
+    },
+    {
+      "file": "lib/data/sports/winter/curling.ts",
+      "slug": "curling",
+      "name": "Curling",
+      "title": "Curling",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Curling%2C_overall_view_of_the_Tim_Hortons_Brier_venue_-_Edmonton%2C_Canada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Curling"
+    },
+    {
+      "file": "lib/data/sports/video/cyberpunk-2077.ts",
+      "slug": "cyberpunk-2077",
+      "name": "Cyberpunk 2077",
+      "title": "Cyberpunk 2077",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cyberpunk 2077"
+    },
+    {
+      "file": "lib/data/sports/tabletop-rpg/cyberpunk-red.ts",
+      "slug": "cyberpunk-red",
+      "name": "Cyberpunk RED",
+      "title": "Cyberpunk (role-playing game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/a/a4/Cyberpunk2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Cyberpunk (role-playing game)"
+    },
+    {
+      "file": "lib/data/sports/video/dance-dance-revolution.ts",
+      "slug": "dance-dance-revolution",
+      "name": "Dance Dance Revolution",
+      "title": "Dance Dance Revolution (1998 video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/b/b4/DDR_1stMIX_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dance Dance Revolution (1998 video game)"
+    },
+    {
+      "file": "lib/data/sports/precision/darts.ts",
+      "slug": "darts",
+      "name": "Darts",
+      "title": "Darts",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Darts_in_a_dartboard.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Darts"
+    },
+    {
+      "file": "lib/data/sports/athletics/decathlon.ts",
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "title": "Decathlon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Men_decathlon_PV_French_Athletics_Championships_2013_t142927.jpg/3840px-Men_decathlon_PV_French_Athletics_Championships_2013_t142927.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Decathlon"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/devil-sticks.ts",
+      "slug": "devil-sticks",
+      "name": "Devil Sticks",
+      "title": "Devil sticks",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Wfm_devil_sticks.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Devil sticks"
+    },
+    {
+      "file": "lib/data/sports/video/diablo.ts",
+      "slug": "diablo",
+      "name": "Diablo",
+      "title": "Diablo (series)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/1/1c/Diablo_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Diablo (series)"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/diabolo.ts",
+      "slug": "diabolo",
+      "name": "Diabolo",
+      "title": "Diabolo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Diabolo_large_and_small.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Diabolo"
+    },
+    {
+      "file": "lib/data/sports/precision/disc-golf.ts",
+      "slug": "disc-golf",
+      "name": "Disc Golf",
+      "title": "Disc golf",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Disc_golf_WTDGC_Varazdin_Croatia_08.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Disc golf"
+    },
+    {
+      "file": "lib/data/sports/athletics/discus-throw.ts",
+      "slug": "discus-throw",
+      "name": "Discus Throw",
+      "title": "Discus throw",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Robert_Harting_%282008%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Discus throw"
+    },
+    {
+      "file": "lib/data/sports/aquatic/diving.ts",
+      "slug": "diving",
+      "name": "Diving",
+      "title": "Diving (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Diving_at_the_2016_Summer_Olympics_%E2%80%93_Men%27s_synchronized_10_metre_platform_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Diving (sport)"
+    },
+    {
+      "file": "lib/data/sports/card/dixit.ts",
+      "slug": "dixit",
+      "name": "Dixit",
+      "title": "Dixit (card game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/7/7b/Dixitgame.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dixit (board game)"
+    },
+    {
+      "file": "lib/data/sports/playground/dodgeball.ts",
+      "slug": "dodgeball",
+      "name": "Dodgeball",
+      "title": "Dodgeball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Dodgeball_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dodgeball"
+    },
+    {
+      "file": "lib/data/sports/tile/dominoes.ts",
+      "slug": "dominoes",
+      "name": "Dominoes",
+      "title": "Dominoes",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dominospiel.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dominoes"
+    },
+    {
+      "file": "lib/data/sports/video/donkey-kong.ts",
+      "slug": "donkey-kong",
+      "name": "Donkey Kong",
+      "title": "Donkey Kong (character)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/d/d4/Donkey_Kong_character.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Donkey Kong (character)"
+    },
+    {
+      "file": "lib/data/sports/video/doom.ts",
+      "slug": "doom",
+      "name": "Doom",
+      "title": "Doom (franchise)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Doom_%E2%80%93_Game%E2%80%99s_logo.svg/1920px-Doom_%E2%80%93_Game%E2%80%99s_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Doom (franchise)"
+    },
+    {
+      "file": "lib/data/sports/esports/dota-2.ts",
+      "slug": "dota-2",
+      "name": "Dota 2",
+      "title": "Dota 2",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dota 2"
+    },
+    {
+      "file": "lib/data/sports/motor/drag-racing.ts",
+      "slug": "drag-racing",
+      "name": "Drag Racing",
+      "title": "Drag racing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Maryland_Army_National_Guard_%283290671976%29.jpg/3840px-Maryland_Army_National_Guard_%283290671976%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Drag racing"
+    },
+    {
+      "file": "lib/data/sports/mind/draughts.ts",
+      "slug": "draughts",
+      "name": "Draughts",
+      "title": "Draughts",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Checkers"
+    },
+    {
+      "file": "lib/data/sports/equestrian/dressage.ts",
+      "slug": "dressage",
+      "name": "Dressage",
+      "title": "Dressage",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Marlies_van_Baalen_with_%22Kigali%22.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dressage"
+    },
+    {
+      "file": "lib/data/sports/playground/duck-duck-goose.ts",
+      "slug": "duck-duck-goose",
+      "name": "Duck Duck Goose",
+      "title": "Duck, duck, goose",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/US_Navy_101206-N-8721D-222_Sonar_Technician_Seaman_Joy_Chase_plays_duck-duck-goose_with_local_school_children_during_a_community_service_project_wi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Duck, duck, goose"
+    },
+    {
+      "file": "lib/data/sports/tabletop-rpg/dungeons-and-dragons.ts",
+      "slug": "dungeons-and-dragons",
+      "name": "Dungeons & Dragons",
+      "title": "Dungeons & Dragons",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/D%26D_Game_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dungeons & Dragons"
+    },
+    {
+      "file": "lib/data/sports/video/ea-fc.ts",
+      "slug": "ea-fc",
+      "name": "EA Sports FC",
+      "title": "EA Sports FC",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/EA_Sports_FC_logo.svg/960px-EA_Sports_FC_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "EA Sports FC"
+    },
+    {
+      "file": "lib/data/sports/video/elden-ring.ts",
+      "slug": "elden-ring",
+      "name": "Elden Ring",
+      "title": "Elden Ring",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Elden Ring"
+    },
+    {
+      "file": "lib/data/sports/equestrian/endurance-riding.ts",
+      "slug": "endurance-riding",
+      "name": "Endurance Riding",
+      "title": "Endurance riding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Endurance_riding_Uzes_2005_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Endurance riding"
+    },
+    {
+      "file": "lib/data/sports/escape/escape-rooms.ts",
+      "slug": "escape-rooms",
+      "name": "Escape Rooms",
+      "title": "Escape room",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tulleys_Farm_Outfitter_Escape_Room.jpg/3840px-Tulleys_Farm_Outfitter_Escape_Room.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Escape room"
+    },
+    {
+      "file": "lib/data/sports/card/euchre.ts",
+      "slug": "euchre",
+      "name": "Euchre",
+      "title": "Euchre",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Euchre.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Euchre"
+    },
+    {
+      "file": "lib/data/sports/equestrian/eventing.ts",
+      "slug": "eventing",
+      "name": "Eventing (3-Day Event)",
+      "title": "Eventing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Badminton_horse_trials_open_ditch_jump.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Eventing"
+    },
+    {
+      "file": "lib/data/sports/dice/farkle.ts",
+      "slug": "farkle",
+      "name": "Farkle",
+      "title": "Farkle",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Farkle_in_a_Dorm_Room.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Farkle"
+    },
+    {
+      "file": "lib/data/sports/combat/fencing.ts",
+      "slug": "fencing",
+      "name": "Fencing",
+      "title": "Fencing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Final_Trophee_Monal_2012_n08.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Fencing"
+    },
+    {
+      "file": "lib/data/sports/ball/field-hockey.ts",
+      "slug": "field-hockey",
+      "name": "Field Hockey",
+      "title": "Field hockey",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Match_Hockey_Grande_Bretagne_x_Espagne_Jeux_Olympiques_2024_Terrain_1_Stade_Yves_Manoir_-_Colombes_%28FR92%29_-_2024-07-27_-_28.jpg/3840px-Match_Hockey_Grande_Bretagne_x_Espagne_Jeux_Olympiques_2024_Terrain_1_Stade_Yves_Manoir_-_Colombes_%28FR92%29_-_2024-07-27_-_28.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Field hockey"
+    },
+    {
+      "file": "lib/data/sports/winter/figure-skating.ts",
+      "slug": "figure-skating",
+      "name": "Figure Skating",
+      "title": "Figure skating",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Team_Helsinki_Rockettes_Free_Skate_at_the_2026_ISU_Synchronized_Skating_World_Championships_02.jpg/3840px-Team_Helsinki_Rockettes_Free_Skate_at_the_2026_ISU_Synchronized_Skating_World_Championships_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Figure skating"
+    },
+    {
+      "file": "lib/data/sports/video/final-fantasy.ts",
+      "slug": "final-fantasy",
+      "name": "Final Fantasy",
+      "title": "Final Fantasy (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/d/d8/FF1_USA_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Final Fantasy (video game)"
+    },
+    {
+      "file": "lib/data/sports/card/five-card-draw.ts",
+      "slug": "five-card-draw",
+      "name": "Five-Card Draw",
+      "title": "Poker",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Poker-Texas-Holdem-multiplayer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Poker"
+    },
+    {
+      "file": "lib/data/sports/ball/floorball.ts",
+      "slug": "floorball",
+      "name": "Floorball",
+      "title": "Floorball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/WFC2018_Czech_Republic_vs_Finland_Adam_Delong_9.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Floorball"
+    },
+    {
+      "file": "lib/data/sports/motor/formula-1.ts",
+      "slug": "formula-1",
+      "name": "Formula 1",
+      "title": "Formula 1",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/2010_Malaysian_GP_opening_lap.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Formula One"
+    },
+    {
+      "file": "lib/data/sports/card/freecell.ts",
+      "slug": "freecell",
+      "name": "FreeCell",
+      "title": "FreeCell",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Freecell_KPatience_Oxygen_White.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "FreeCell"
+    },
+    {
+      "file": "lib/data/sports/winter/freestyle-skiing.ts",
+      "slug": "freestyle-skiing",
+      "name": "Freestyle Skiing",
+      "title": "Freestyle skiing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Freestyle_skiing_pictogram.svg/330px-Freestyle_skiing_pictogram.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Freestyle skiing"
+    },
+    {
+      "file": "lib/data/sports/combat/freestyle-wrestling.ts",
+      "slug": "freestyle-wrestling",
+      "name": "Freestyle Wrestling",
+      "title": "Freestyle wrestling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/FreestyleWrestling4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Freestyle wrestling"
+    },
+    {
+      "file": "lib/data/sports/ball/futsal.ts",
+      "slug": "futsal",
+      "name": "Futsal",
+      "title": "Futsal",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2018-10-18_Futsal_%28Boys_Bronze_medal_match%29_at_2018_Summer_Youth_Olympics_by_Sandro_Halank%E2%80%930035.jpg/3840px-2018-10-18_Futsal_%28Boys_Bronze_medal_match%29_at_2018_Summer_Youth_Olympics_by_Sandro_Halank%E2%80%930035.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Futsal"
+    },
+    {
+      "file": "lib/data/sports/traditional/gaelic-football.ts",
+      "slug": "gaelic-football",
+      "name": "Gaelic Football",
+      "title": "Gaelic football",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Aidan_O%27Mahony_%26_Eoin_Bradley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Gaelic football"
+    },
+    {
+      "file": "lib/data/sports/escape/geocaching.ts",
+      "slug": "geocaching",
+      "name": "Geocaching",
+      "title": "Geocaching",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Geocaching.svg/960px-Geocaching.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Geocaching"
+    },
+    {
+      "file": "lib/data/sports/traditional/gilli-danda.ts",
+      "slug": "gilli-danda",
+      "name": "Gilli Danda",
+      "title": "Gilli danda",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Guli_danda_on_Ganges_Ghats_in_Varanasi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Gillidanda"
+    },
+    {
+      "file": "lib/data/sports/card/gin-rummy.ts",
+      "slug": "gin-rummy",
+      "name": "Gin Rummy",
+      "title": "Gin rummy",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/3_playing_cards.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Gin rummy"
+    },
+    {
+      "file": "lib/data/sports/board/gloomhaven.ts",
+      "slug": "gloomhaven",
+      "name": "Gloomhaven",
+      "title": "Gloomhaven",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/e/ee/Gloomhaven_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Gloomhaven"
+    },
+    {
+      "file": "lib/data/sports/mind/go-board-game.ts",
+      "slug": "go-board-game",
+      "name": "Go",
+      "title": "Go (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/FloorGoban.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Go (game)"
+    },
+    {
+      "file": "lib/data/sports/precision/golf.ts",
+      "slug": "golf",
+      "name": "Golf",
+      "title": "Golf",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golfer_swing.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Golf"
+    },
+    {
+      "file": "lib/data/sports/video/grand-theft-auto-v.ts",
+      "slug": "grand-theft-auto-v",
+      "name": "Grand Theft Auto V",
+      "title": "Grand Theft Auto V",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Grand Theft Auto V"
+    },
+    {
+      "file": "lib/data/sports/party/guess-who.ts",
+      "slug": "guess-who",
+      "name": "Guess Who?",
+      "title": "Guess Who?",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Guess_who_game_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Guess Who?"
+    },
+    {
+      "file": "lib/data/sports/video/guitar-hero.ts",
+      "slug": "guitar-hero",
+      "name": "Guitar Hero",
+      "title": "Guitar Hero (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/2d/Guitarhero-cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Guitar Hero (video game)"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/hacky-sack.ts",
+      "slug": "hacky-sack",
+      "name": "Hacky Sack",
+      "title": "Footbag",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hacky.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hacky sack"
+    },
+    {
+      "file": "lib/data/sports/video/half-life.ts",
+      "slug": "half-life",
+      "name": "Half-Life",
+      "title": "Half-Life (series)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Orange_lambda.svg/250px-Orange_lambda.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Half-Life (series)"
+    },
+    {
+      "file": "lib/data/sports/video/halo.ts",
+      "slug": "halo",
+      "name": "Halo",
+      "title": "Halo: Combat Evolved",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/8/80/Halo_-_Combat_Evolved_%28XBox_version_-_box_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Halo: Combat Evolved"
+    },
+    {
+      "file": "lib/data/sports/card/hanafuda.ts",
+      "slug": "hanafuda",
+      "name": "Hanafuda",
+      "title": "Hanafuda",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hanafuda_Koi-Koi_Setup_1.jpg/3840px-Hanafuda_Koi-Koi_Setup_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Hanafuda"
+    },
+    {
+      "file": "lib/data/sports/ball/handball.ts",
+      "slug": "handball",
+      "name": "Handball",
+      "title": "Handball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/SAP_Arena_Handball_ausverkauft.jpg/3840px-SAP_Arena_Handball_ausverkauft.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Handball"
+    },
+    {
+      "file": "lib/data/sports/air/hang-gliding.ts",
+      "slug": "hang-gliding",
+      "name": "Hang Gliding",
+      "title": "Hang gliding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Hang_gliding_hyner.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hang gliding"
+    },
+    {
+      "file": "lib/data/sports/puzzle/hangman.ts",
+      "slug": "hangman",
+      "name": "Hangman",
+      "title": "Hangman (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hangman_example.svg/960px-Hangman_example.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Hangman (game)"
+    },
+    {
+      "file": "lib/data/sports/esports/hearthstone.ts",
+      "slug": "hearthstone",
+      "name": "Hearthstone",
+      "title": "Hearthstone",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/f/f2/Hearthstone_2016_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hearthstone"
+    },
+    {
+      "file": "lib/data/sports/card/hearts.ts",
+      "slug": "hearts",
+      "name": "Hearts",
+      "title": "Hearts (card game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/English_pattern_cards_-_Suit_of_Hearts_-_IMG_7731.jpg/3840px-English_pattern_cards_-_Suit_of_Hearts_-_IMG_7731.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Hearts (card game)"
+    },
+    {
+      "file": "lib/data/sports/athletics/heptathlon.ts",
+      "slug": "heptathlon",
+      "name": "Heptathlon",
+      "title": "Heptathlon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Women_heptathlon_LJ_French_Athletics_Championships_2013_t144222.jpg/3840px-Women_heptathlon_LJ_French_Athletics_Championships_2013_t144222.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Heptathlon"
+    },
+    {
+      "file": "lib/data/sports/playground/hide-and-seek.ts",
+      "slug": "hide-and-seek",
+      "name": "Hide and Seek",
+      "title": "Hide-and-seek",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Meyerheim_Versteckspiel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hide-and-seek"
+    },
+    {
+      "file": "lib/data/sports/athletics/high-jump.ts",
+      "slug": "high-jump",
+      "name": "High Jump",
+      "title": "High jump",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Nicole_Forrester.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "High jump"
+    },
+    {
+      "file": "lib/data/sports/playground/hopscotch.ts",
+      "slug": "hopscotch",
+      "name": "Hopscotch",
+      "title": "Hopscotch",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Hopscotch_de_Cubanese.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hopscotch"
+    },
+    {
+      "file": "lib/data/sports/equestrian/horse-racing.ts",
+      "slug": "horse-racing",
+      "name": "Horse Racing (Thoroughbred)",
+      "title": "Horse racing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/GGF_Race5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Horse racing"
+    },
+    {
+      "file": "lib/data/sports/air/hot-air-ballooning.ts",
+      "slug": "hot-air-ballooning",
+      "name": "Hot Air Ballooning",
+      "title": "Hot air balloon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2006_Ojiya_balloon_festival_011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hot air balloon"
+    },
+    {
+      "file": "lib/data/sports/athletics/hurdles.ts",
+      "slug": "hurdles",
+      "name": "Hurdles",
+      "title": "Hurdling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Leichtathletik_Gala_Linz_2018_men%C2%B4s_110m_hurdles_Okafor-6401.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hurdling"
+    },
+    {
+      "file": "lib/data/sports/traditional/hurling.ts",
+      "slug": "hurling",
+      "name": "Hurling",
+      "title": "Hurling",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/David_Collins_and_Eoin_Kelly_%28Tipperary%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Hurling"
+    },
+    {
+      "file": "lib/data/sports/ball/ice-hockey.ts",
+      "slug": "ice-hockey",
+      "name": "Ice Hockey",
+      "title": "Ice hockey",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Pittsburgh_Penguins%2C_Washington_Capitals%2C_Bryan_Rust_%2833744033514%29.jpg/3840px-Pittsburgh_Penguins%2C_Washington_Capitals%2C_Bryan_Rust_%2833744033514%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Ice hockey"
+    },
+    {
+      "file": "lib/data/sports/motor/indycar.ts",
+      "slug": "indycar",
+      "name": "IndyCar",
+      "title": "IndyCar Series",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/IndyCar_Series_logo.svg/120px-IndyCar_Series_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "IndyCar Series"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/jai-alai.ts",
+      "slug": "jai-alai",
+      "name": "Jai Alai",
+      "title": "Jai alai",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Jai_alai_players.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Jai alai"
+    },
+    {
+      "file": "lib/data/sports/athletics/javelin-throw.ts",
+      "slug": "javelin-throw",
+      "name": "Javelin Throw",
+      "title": "Javelin throw",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Thomas_R%C3%B6hler_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Javelin throw"
+    },
+    {
+      "file": "lib/data/sports/party/jenga.ts",
+      "slug": "jenga",
+      "name": "Jenga",
+      "title": "Jenga",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Jenga_brand_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Jenga"
+    },
+    {
+      "file": "lib/data/sports/aquatic/jet-ski-racing.ts",
+      "slug": "jet-ski-racing",
+      "name": "Jet Ski Racing",
+      "title": "Personal watercraft",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Couple_of_teenagers_riding_a_jetski_splashing_on_the_Mekong_in_Laos.jpg/3840px-Couple_of_teenagers_riding_a_jetski_splashing_on_the_Mekong_in_Laos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Jet ski"
+    },
+    {
+      "file": "lib/data/sports/traditional/jianzi.ts",
+      "slug": "jianzi",
+      "name": "Jianzi",
+      "title": "Jianzi",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Jianzi_players.jpg/3840px-Jianzi_players.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Jianzi"
+    },
+    {
+      "file": "lib/data/sports/puzzle/jigsaw-puzzle.ts",
+      "slug": "jigsaw-puzzle",
+      "name": "Jigsaw Puzzle",
+      "title": "Jigsaw puzzle",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Jigsaw_puzzle_01_by_Scouten.jpg/3840px-Jigsaw_puzzle_01_by_Scouten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Jigsaw puzzle"
+    },
+    {
+      "file": "lib/data/sports/combat/judo.ts",
+      "slug": "judo",
+      "name": "Judo",
+      "title": "Judo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Jigoro_Kano_and_Kyuzo_Mifune_%28restoration%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Judo"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/juggling.ts",
+      "slug": "juggling",
+      "name": "Juggling",
+      "title": "Juggling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/Afghan_circus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Juggling"
+    },
+    {
+      "file": "lib/data/sports/playground/jump-rope.ts",
+      "slug": "jump-rope",
+      "name": "Jump Rope",
+      "title": "Skipping rope",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ghanaian_kid_%28skipping_rope%29_06_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Skipping rope"
+    },
+    {
+      "file": "lib/data/sports/traditional/kabaddi.ts",
+      "slug": "kabaddi",
+      "name": "Kabaddi",
+      "title": "Kabaddi",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Iran_men%27s_national_kabaddi_team_13970602000432636707284535394012_98208.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kabaddi"
+    },
+    {
+      "file": "lib/data/sports/traditional/kancha.ts",
+      "slug": "kancha",
+      "name": "Kancha",
+      "title": "Marbles",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Marble_collector_-_Flickr_-_smkybear.jpg/3840px-Marble_collector_-_Flickr_-_smkybear.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Marble (toy)"
+    },
+    {
+      "file": "lib/data/sports/combat/karate.ts",
+      "slug": "karate",
+      "name": "Karate",
+      "title": "Karate",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Hanashiro_Chomo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Karate"
+    },
+    {
+      "file": "lib/data/sports/motor/karting.ts",
+      "slug": "karting",
+      "name": "Karting",
+      "title": "Kart racing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%D0%9A%D0%BB%D0%B0%D1%81_60.jpg/3840px-%D0%9A%D0%BB%D0%B0%D1%81_60.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Kart racing"
+    },
+    {
+      "file": "lib/data/sports/aquatic/kayaking.ts",
+      "slug": "kayaking",
+      "name": "Kayaking",
+      "title": "Kayaking",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Woman_kayaking_on_a_turquoise_lake_%2851125937521%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kayaking"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/kendama.ts",
+      "slug": "kendama",
+      "name": "Kendama",
+      "title": "Kendama",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kendama_toy.jpg/1920px-Kendama_toy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Kendama"
+    },
+    {
+      "file": "lib/data/sports/combat/kendo.ts",
+      "slug": "kendo",
+      "name": "Kendo",
+      "title": "Kendo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/2022_All_Japan_Kendo_Championship_Tetsuhiko_Murakami4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kendo"
+    },
+    {
+      "file": "lib/data/sports/casino/keno.ts",
+      "slug": "keno",
+      "name": "Keno",
+      "title": "Keno",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Veikkaus_Keno.jpg/3840px-Veikkaus_Keno.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Keno"
+    },
+    {
+      "file": "lib/data/sports/traditional/kho-kho.ts",
+      "slug": "kho-kho",
+      "name": "Kho Kho",
+      "title": "Kho kho",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Kho_Kho_game_at_a_Government_school_in_Haryana%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kho kho"
+    },
+    {
+      "file": "lib/data/sports/playground/kickball.ts",
+      "slug": "kickball",
+      "name": "Kickball",
+      "title": "Kickball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Upward_Bound_%283654408771%29.jpg/3840px-Upward_Bound_%283654408771%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Kickball"
+    },
+    {
+      "file": "lib/data/sports/combat/kickboxing.ts",
+      "slug": "kickboxing",
+      "name": "Kickboxing",
+      "title": "Kickboxing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/USMC-050716-M-1837P-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kickboxing"
+    },
+    {
+      "file": "lib/data/sports/board/king-of-tokyo.ts",
+      "slug": "king-of-tokyo",
+      "name": "King of Tokyo",
+      "title": "King of Tokyo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Deskohran%C3%AD_2012_-_6869.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "King of Tokyo"
+    },
+    {
+      "file": "lib/data/sports/video/kirby.ts",
+      "slug": "kirby",
+      "name": "Kirby",
+      "title": "Kirby (series)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Kirby_blue_and_yellow_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kirby (series)"
+    },
+    {
+      "file": "lib/data/sports/aquatic/kitesurfing.ts",
+      "slug": "kitesurfing",
+      "name": "Kitesurfing",
+      "title": "Kiteboarding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kitesurfing_Sotavento.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kiteboarding"
+    },
+    {
+      "file": "lib/data/sports/card/klondike-solitaire.ts",
+      "slug": "klondike-solitaire",
+      "name": "Klondike Solitaire",
+      "title": "Klondike (solitaire)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/GNOME_Aisleriot_Solitaire_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Klondike (solitaire)"
+    },
+    {
+      "file": "lib/data/sports/ball/korfball.ts",
+      "slug": "korfball",
+      "name": "Korfball",
+      "title": "Korfball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kvdrachten1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Korfball"
+    },
+    {
+      "file": "lib/data/sports/playground/kubb.ts",
+      "slug": "kubb",
+      "name": "Kubb",
+      "title": "Kubb",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/US_National_Kubb_Championship.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Kubb"
+    },
+    {
+      "file": "lib/data/sports/traditional/lacrosse.ts",
+      "slug": "lacrosse",
+      "name": "Lacrosse",
+      "title": "Lacrosse",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/UNC_Lacrosse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Lacrosse"
+    },
+    {
+      "file": "lib/data/sports/motor/le-mans-endurance.ts",
+      "slug": "le-mans-endurance",
+      "name": "Le Mans Endurance Racing",
+      "title": "24 Hours of Le Mans",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/24_Hours_of_Le_Mans_logo_%28since_2014%29.svg/960px-24_Hours_of_Le_Mans_logo_%28since_2014%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "24 Hours of Le Mans"
+    },
+    {
+      "file": "lib/data/sports/esports/league-of-legends.ts",
+      "slug": "league-of-legends",
+      "name": "League of Legends",
+      "title": "League of Legends",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/960px-League_of_Legends_2019_vector.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "League of Legends"
+    },
+    {
+      "file": "lib/data/sports/dice/liars-dice.ts",
+      "slug": "liars-dice",
+      "name": "Liar's Dice",
+      "title": "Perudo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Perudo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Dudo"
+    },
+    {
+      "file": "lib/data/sports/athletics/long-jump.ts",
+      "slug": "long-jump",
+      "name": "Long Jump",
+      "title": "Long jump",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/2013_IPC_Athletics_World_Championships_-_26072013_-_Maximiliano_Rodriguez_Magi_of_Spain_during_the_Men%27s_Long_jump_-_T12.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Long jump"
+    },
+    {
+      "file": "lib/data/sports/board/ludo.ts",
+      "slug": "ludo",
+      "name": "Ludo",
+      "title": "Ludo (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Ludo-3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Ludo"
+    },
+    {
+      "file": "lib/data/sports/winter/luge.ts",
+      "slug": "luge",
+      "name": "Luge",
+      "title": "Luge",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mortensen_and_Griffall.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Luge"
+    },
+    {
+      "file": "lib/data/sports/video/madden-nfl.ts",
+      "slug": "madden-nfl",
+      "name": "Madden NFL",
+      "title": "Madden NFL 24",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/b/b0/Madden_NFL_24_Cover.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Madden NFL 24"
+    },
+    {
+      "file": "lib/data/sports/party/mafia.ts",
+      "slug": "mafia",
+      "name": "Mafia",
+      "title": "Mafia (party game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Playing_mafia_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mafia (party game)"
+    },
+    {
+      "file": "lib/data/sports/card/magic-the-gathering.ts",
+      "slug": "magic-the-gathering",
+      "name": "Magic: The Gathering",
+      "title": "Magic: The Gathering",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Magic: The Gathering"
+    },
+    {
+      "file": "lib/data/sports/tile/mahjong.ts",
+      "slug": "mahjong",
+      "name": "Mahjong",
+      "title": "Mahjong",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mahjong_game.jpg/3840px-Mahjong_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Mahjong"
+    },
+    {
+      "file": "lib/data/sports/traditional/mallakhamb.ts",
+      "slug": "mallakhamb",
+      "name": "Mallakhamb",
+      "title": "Mallakhamba",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Malakhambha_pradarshana_Nudisir_2015_02.JPG/3840px-Malakhambha_pradarshana_Nudisir_2015_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Mallakhamba"
+    },
+    {
+      "file": "lib/data/sports/traditional/mancala.ts",
+      "slug": "mancala",
+      "name": "Mancala",
+      "title": "Mancala",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Yao_People_Playing_%22Bawo%22.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mancala"
+    },
+    {
+      "file": "lib/data/sports/athletics/marathon-running.ts",
+      "slug": "marathon-running",
+      "name": "Marathon",
+      "title": "Marathon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/BSK_CSOB_MARATON046_%2833791445325%29.jpg/3840px-BSK_CSOB_MARATON046_%2833791445325%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Marathon"
+    },
+    {
+      "file": "lib/data/sports/playground/marbles.ts",
+      "slug": "marbles",
+      "name": "Marbles",
+      "title": "Marbles",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Marble_collector_-_Flickr_-_smkybear.jpg/3840px-Marble_collector_-_Flickr_-_smkybear.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Marble (toy)"
+    },
+    {
+      "file": "lib/data/sports/puzzle/mastermind.ts",
+      "slug": "mastermind",
+      "name": "Mastermind",
+      "title": "Mastermind (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mastermind.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mastermind (board game)"
+    },
+    {
+      "file": "lib/data/sports/video/metroid.ts",
+      "slug": "metroid",
+      "name": "Metroid",
+      "title": "Metroid (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/5/5d/Metroid_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Metroid (video game)"
+    },
+    {
+      "file": "lib/data/sports/combat/mixed-martial-arts.ts",
+      "slug": "mixed-martial-arts",
+      "name": "Mixed Martial Arts",
+      "title": "Mixed martial arts",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/UFC_131_Carwin_vs._JDS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mixed martial arts"
+    },
+    {
+      "file": "lib/data/sports/adventure/modern-pentathlon.ts",
+      "slug": "modern-pentathlon",
+      "name": "Modern Pentathlon",
+      "title": "Modern pentathlon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/JO_PARIS_2024_PENTATHLON_MODERNE_MENS_PARC_DU_CHATEAU_DE_VERSAILLES_-_53915892043.jpg/3840px-JO_PARIS_2024_PENTATHLON_MODERNE_MENS_PARC_DU_CHATEAU_DE_VERSAILLES_-_53915892043.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Modern pentathlon"
+    },
+    {
+      "file": "lib/data/sports/playground/molkky.ts",
+      "slug": "molkky",
+      "name": "Mölkky",
+      "title": "Mölkky",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/M%C3%B6lkky_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mölkky"
+    },
+    {
+      "file": "lib/data/sports/board/monopoly.ts",
+      "slug": "monopoly",
+      "name": "Monopoly",
+      "title": "Monopoly (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Monopoly_board_on_white_bg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Monopoly (game)"
+    },
+    {
+      "file": "lib/data/sports/video/mortal-kombat.ts",
+      "slug": "mortal-kombat",
+      "name": "Mortal Kombat",
+      "title": "Mortal Kombat",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Mortal_Kombat_Logo.svg/330px-Mortal_Kombat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Mortal Kombat"
+    },
+    {
+      "file": "lib/data/sports/motor/motocross.ts",
+      "slug": "motocross",
+      "name": "Motocross",
+      "title": "Motocross",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mundial_de_motocross.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Motocross"
+    },
+    {
+      "file": "lib/data/sports/motor/motogp.ts",
+      "slug": "motogp",
+      "name": "MotoGP",
+      "title": "MotoGP",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Marc_M%C3%A1rquez_at_the_pit_lane_during_the_2025_Italian_motorcycle_Grand_Prix_%28front_view%2C_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Grand Prix motorcycle racing"
+    },
+    {
+      "file": "lib/data/sports/adventure/mountain-biking.ts",
+      "slug": "mountain-biking",
+      "name": "Mountain Biking",
+      "title": "Mountain biking",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Alexandra_Engen_2012_London_Olympics_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Mountain biking"
+    },
+    {
+      "file": "lib/data/sports/combat/muay-thai.ts",
+      "slug": "muay-thai",
+      "name": "Muay Thai",
+      "title": "Muay Thai",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Muay Thai"
+    },
+    {
+      "file": "lib/data/sports/escape/murder-mystery-games.ts",
+      "slug": "murder-mystery-games",
+      "name": "Murder Mystery Games",
+      "title": "Murder mystery game",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Murder_mystery_merriment_at_RAF_Mildenhall_131025-F-DL987-126.jpg/3840px-Murder_mystery_merriment_at_RAF_Mildenhall_131025-F-DL987-126.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Murder mystery game"
+    },
+    {
+      "file": "lib/data/sports/playground/musical-chairs.ts",
+      "slug": "musical-chairs",
+      "name": "Musical Chairs",
+      "title": "Musical chairs",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Musical_chairs_Lawn_Jam_Our_Community_Place_Harrisonburg_VA_June_2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Musical chairs"
+    },
+    {
+      "file": "lib/data/sports/motor/nascar.ts",
+      "slug": "nascar",
+      "name": "NASCAR",
+      "title": "NASCAR Cup Series",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/60px-NASCAR_Cup_Series_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "NASCAR Cup Series"
+    },
+    {
+      "file": "lib/data/sports/video/nba-2k.ts",
+      "slug": "nba-2k",
+      "name": "NBA 2K",
+      "title": "NBA 2K25",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/2f/NBA_2K25_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "NBA 2K25"
+    },
+    {
+      "file": "lib/data/sports/ball/netball.ts",
+      "slug": "netball",
+      "name": "Netball",
+      "title": "Netball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/MalawiFijiNetball.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Netball"
+    },
+    {
+      "file": "lib/data/sports/board/nine-mens-morris.ts",
+      "slug": "nine-mens-morris",
+      "name": "Nine Men's Morris",
+      "title": "Nine men's morris",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Nine_Men%27s_Morris_board_with_coordinates.svg/330px-Nine_Men%27s_Morris_board_with_coordinates.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Nine men's morris"
+    },
+    {
+      "file": "lib/data/sports/puzzle/nonogram.ts",
+      "slug": "nonogram",
+      "name": "Nonogram",
+      "title": "Nonogram",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Nonogram_wiki.svg/960px-Nonogram_wiki.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Nonogram"
+    },
+    {
+      "file": "lib/data/sports/card/omaha-poker.ts",
+      "slug": "omaha-poker",
+      "name": "Omaha Poker",
+      "title": "Omaha hold 'em",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Omaha_hi_showdown1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Omaha hold 'em"
+    },
+    {
+      "file": "lib/data/sports/esports/overwatch.ts",
+      "slug": "overwatch",
+      "name": "Overwatch",
+      "title": "Overwatch 2",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/8/89/Overwatch_2_Steam_artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Overwatch (2023 video game)"
+    },
+    {
+      "file": "lib/data/sports/traditional/oware.ts",
+      "slug": "oware",
+      "name": "Oware",
+      "title": "Oware",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Awale.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Oware"
+    },
+    {
+      "file": "lib/data/sports/video/pac-man.ts",
+      "slug": "pac-man",
+      "name": "Pac-Man",
+      "title": "Pac-Man",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/1/16/Pac_flyer.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pac-Man"
+    },
+    {
+      "file": "lib/data/sports/casino/pachinko.ts",
+      "slug": "pachinko",
+      "name": "Pachinko",
+      "title": "Pachinko",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Pachinko_machine_5.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pachinko"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/padel.ts",
+      "slug": "padel",
+      "name": "Padel",
+      "title": "Padel",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Sanchez-Casal_Paddle_Tennis_Game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Padel"
+    },
+    {
+      "file": "lib/data/sports/casino/pai-gow.ts",
+      "slug": "pai-gow",
+      "name": "Pai Gow",
+      "title": "Pai gow",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/ChineseDominoes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pai gow"
+    },
+    {
+      "file": "lib/data/sports/board/pandemic.ts",
+      "slug": "pandemic",
+      "name": "Pandemic",
+      "title": "Pandemic (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/3/36/Pandemic_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pandemic (board game)"
+    },
+    {
+      "file": "lib/data/sports/air/paragliding.ts",
+      "slug": "paragliding",
+      "name": "Paragliding",
+      "title": "Paragliding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Paragliding_1350361.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Paragliding"
+    },
+    {
+      "file": "lib/data/sports/adventure/parkour.ts",
+      "slug": "parkour",
+      "name": "Parkour",
+      "title": "Parkour",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Julien_Do_parkour_in_park.jpg/3840px-Julien_Do_parkour_in_park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Parkour"
+    },
+    {
+      "file": "lib/data/sports/tabletop-rpg/pathfinder.ts",
+      "slug": "pathfinder",
+      "name": "Pathfinder",
+      "title": "Pathfinder Roleplaying Game",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/0/0e/Pathfinder_RPG_Core_Rulebook_cover.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pathfinder Roleplaying Game"
+    },
+    {
+      "file": "lib/data/sports/precision/petanque.ts",
+      "slug": "petanque",
+      "name": "Pétanque",
+      "title": "Pétanque",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Petanque_on_a_beach_of_Nice.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pétanque"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/pickleball.ts",
+      "slug": "pickleball",
+      "name": "Pickleball",
+      "title": "Pickleball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Pickle_Pro_Tour_2025_2.jpg/3840px-Pickle_Pro_Tour_2025_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Pickleball"
+    },
+    {
+      "file": "lib/data/sports/party/pictionary.ts",
+      "slug": "pictionary",
+      "name": "Pictionary",
+      "title": "Pictionary",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Pictionary_Party.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pictionary"
+    },
+    {
+      "file": "lib/data/sports/video/pinball.ts",
+      "slug": "pinball",
+      "name": "Pinball",
+      "title": "Pinball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/A_rebuilt_Terminator_2_pinball_machine_by_Wayne_Patrick_Finn_Melbourne_Australia._38.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pinball"
+    },
+    {
+      "file": "lib/data/sports/card/pinochle.ts",
+      "slug": "pinochle",
+      "name": "Pinochle",
+      "title": "Pinochle",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Pinochle2.svg/500px-Pinochle2.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Pinochle"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/poi.ts",
+      "slug": "poi",
+      "name": "Poi",
+      "title": "Poi (performance art)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Poi-manutuke.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Poi (performance art)"
+    },
+    {
+      "file": "lib/data/sports/card/pokemon-tcg.ts",
+      "slug": "pokemon-tcg",
+      "name": "Pokémon Trading Card Game",
+      "title": "Pokémon Trading Card Game",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pok%C3%A9mon_Trading_Card_Game_logo.svg/330px-Pok%C3%A9mon_Trading_Card_Game_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Pokémon Trading Card Game"
+    },
+    {
+      "file": "lib/data/sports/video/pokemon-video-games.ts",
+      "slug": "pokemon-video-games",
+      "name": "Pokémon (Video Games)",
+      "title": "Pokémon (video game series)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/330px-International_Pok%C3%A9mon_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Pokémon (video game series)"
+    },
+    {
+      "file": "lib/data/sports/mind/poker.ts",
+      "slug": "poker",
+      "name": "Poker",
+      "title": "Poker",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Poker-Texas-Holdem-multiplayer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Poker"
+    },
+    {
+      "file": "lib/data/sports/athletics/pole-vault.ts",
+      "slug": "pole-vault",
+      "name": "Pole Vault",
+      "title": "Pole vault",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Pole_Vault_Sequence_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pole vault"
+    },
+    {
+      "file": "lib/data/sports/equestrian/polo.ts",
+      "slug": "polo",
+      "name": "Polo",
+      "title": "Polo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Varsity_Polo_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Polo"
+    },
+    {
+      "file": "lib/data/sports/precision/pool.ts",
+      "slug": "pool",
+      "name": "Pool",
+      "title": "Pool (cue sports)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Niels_Feijen_NL.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pool (cue sports)"
+    },
+    {
+      "file": "lib/data/sports/video/portal.ts",
+      "slug": "portal",
+      "name": "Portal",
+      "title": "Portal (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Portal (video game)"
+    },
+    {
+      "file": "lib/data/sports/gymnastics/tumbling.ts",
+      "slug": "power-tumbling",
+      "name": "Power Tumbling",
+      "title": "Power tumbling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Jordan_Ramos_tumbling_gymnastics_champion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Tumbling (sport)"
+    },
+    {
+      "file": "lib/data/sports/strength/powerlifting.ts",
+      "slug": "powerlifting",
+      "name": "Powerlifting",
+      "title": "Powerlifting",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/IPF_World_Champion_Dean_Bowring_performing_the_three_Powerlifting_moves.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Powerlifting"
+    },
+    {
+      "file": "lib/data/sports/esports/pubg.ts",
+      "slug": "pubg",
+      "name": "PUBG: Battlegrounds",
+      "title": "PUBG: Battlegrounds",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/9/9f/Pubgbattlegrounds.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "PUBG: Battlegrounds"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/racquetball.ts",
+      "slug": "racquetball",
+      "name": "Racquetball",
+      "title": "Racquetball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Racquetball-racquet-and-bal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Racquetball"
+    },
+    {
+      "file": "lib/data/sports/motor/rally-racing.ts",
+      "slug": "rally-racing",
+      "name": "Rally Racing",
+      "title": "World Rally Championship",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/WRC.svg/960px-WRC.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "World Rally Championship"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/real-tennis.ts",
+      "slug": "real-tennis",
+      "name": "Real Tennis",
+      "title": "Real tennis",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Jesmond-Dene-tennis-court.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Real tennis"
+    },
+    {
+      "file": "lib/data/sports/video/red-dead-redemption-2.ts",
+      "slug": "red-dead-redemption-2",
+      "name": "Red Dead Redemption 2",
+      "title": "Red Dead Redemption 2",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Red Dead Redemption 2"
+    },
+    {
+      "file": "lib/data/sports/playground/red-light-green-light.ts",
+      "slug": "red-light-green-light",
+      "name": "Red Light, Green Light",
+      "title": "Statues (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hemlock_Overlook_-_Red_light_Green_light_-_04.jpg/3840px-Hemlock_Overlook_-_Red_light_Green_light_-_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Statues (game)"
+    },
+    {
+      "file": "lib/data/sports/video/resident-evil.ts",
+      "slug": "resident-evil",
+      "name": "Resident Evil",
+      "title": "Resident Evil (1996 video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/a/a6/Resident_Evil_1_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Resident Evil (1996 video game)"
+    },
+    {
+      "file": "lib/data/sports/board/reversi.ts",
+      "slug": "reversi",
+      "name": "Reversi / Othello",
+      "title": "Reversi",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Othello_Spielbrett.jpg/3840px-Othello_Spielbrett.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Reversi"
+    },
+    {
+      "file": "lib/data/sports/gymnastics/rhythmic-gymnastics.ts",
+      "slug": "rhythmic-gymnastics",
+      "name": "Rhythmic Gymnastics",
+      "title": "Rhythmic gymnastics",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Brazil_Group_2016_Olympics_Test_Event_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rhythmic gymnastics"
+    },
+    {
+      "file": "lib/data/sports/board/risk.ts",
+      "slug": "risk",
+      "name": "Risk",
+      "title": "Risk (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Amsterdam_-_Risk_players_-_1136_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Risk (game)"
+    },
+    {
+      "file": "lib/data/sports/adventure/road-cycling.ts",
+      "slug": "road-cycling",
+      "name": "Road Cycling",
+      "title": "Road bicycle racing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%C3%89preuve_Cyclisme_Route_Course_Ligne_Masculine_Jeux_Olympiques_2024_Rue_Saint_%C3%89leuth%C3%A8re_-_Paris_XVIII_%28FR75%29_-_2024-08-03_-_51.jpg/3840px-%C3%89preuve_Cyclisme_Route_Course_Ligne_Masculine_Jeux_Olympiques_2024_Rue_Saint_%C3%89leuth%C3%A8re_-_Paris_XVIII_%28FR75%29_-_2024-08-03_-_51.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Road bicycle racing"
+    },
+    {
+      "file": "lib/data/sports/adventure/rock-climbing.ts",
+      "slug": "rock-climbing",
+      "name": "Rock Climbing",
+      "title": "Rock climbing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Crack_climbing_in_Indian_Creek%2C_Utah.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rock climbing"
+    },
+    {
+      "file": "lib/data/sports/playground/rock-paper-scissors.ts",
+      "slug": "rock-paper-scissors",
+      "name": "Rock Paper Scissors",
+      "title": "Rock paper scissors",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/500px-Rock-paper-scissors.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Rock paper scissors"
+    },
+    {
+      "file": "lib/data/sports/esports/rocket-league.ts",
+      "slug": "rocket-league",
+      "name": "Rocket League",
+      "title": "Rocket League",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rocket League"
+    },
+    {
+      "file": "lib/data/sports/board/root.ts",
+      "slug": "root",
+      "name": "Root",
+      "title": "Root (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Turn_1_in_board_game_Root.jpg/3840px-Turn_1_in_board_game_Root.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Root (board game)"
+    },
+    {
+      "file": "lib/data/sports/casino/roulette.ts",
+      "slug": "roulette",
+      "name": "Roulette",
+      "title": "Roulette",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/13-02-27-spielbank-wiesbaden-by-RalfR-094.jpg/3840px-13-02-27-spielbank-wiesbaden-by-RalfR-094.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Roulette"
+    },
+    {
+      "file": "lib/data/sports/ball/rounders.ts",
+      "slug": "rounders",
+      "name": "Rounders",
+      "title": "Rounders",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_rounders_on_Christmas_Day_at_Baroona%2C_Glamorgan_Vale%2C_1913.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rounders"
+    },
+    {
+      "file": "lib/data/sports/aquatic/rowing.ts",
+      "slug": "rowing",
+      "name": "Rowing",
+      "title": "Rowing (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Harvard_Rowing_Crew_at_Henley_2004_-2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rowing (sport)"
+    },
+    {
+      "file": "lib/data/sports/puzzle/rubiks-cube.ts",
+      "slug": "rubiks-cube",
+      "name": "Rubik's Cube (Speedcubing)",
+      "title": "Rubik's Cube",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Rubiks_cube_solved.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rubik's Cube"
+    },
+    {
+      "file": "lib/data/sports/ball/rugby-league.ts",
+      "slug": "rugby-league",
+      "name": "Rugby League",
+      "title": "Rugby league",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Fraus04rugby13.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rugby league"
+    },
+    {
+      "file": "lib/data/sports/ball/rugby-union.ts",
+      "slug": "rugby-union",
+      "name": "Rugby Union",
+      "title": "Rugby union",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2014_Women%27s_Six_Nations_Championship_-_France_Italy_%2851%29.jpg/3840px-2014_Women%27s_Six_Nations_Championship_-_France_Italy_%2851%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Rugby union"
+    },
+    {
+      "file": "lib/data/sports/tile/rummikub.ts",
+      "slug": "rummikub",
+      "name": "Rummikub",
+      "title": "Rummikub",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rummikub_Tiles.jpg/3840px-Rummikub_Tiles.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Rummikub"
+    },
+    {
+      "file": "lib/data/sports/mind/rummy.ts",
+      "slug": "rummy",
+      "name": "Rummy",
+      "title": "Rummy",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/A_Game_of_Rummy.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Rummy"
+    },
+    {
+      "file": "lib/data/sports/aquatic/sailing.ts",
+      "slug": "sailing",
+      "name": "Sailing",
+      "title": "Sailing (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mar%C3%ADa_Jos%C3%A9_Poncell_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Sailing (sport)"
+    },
+    {
+      "file": "lib/data/sports/escape/scavenger-hunts.ts",
+      "slug": "scavenger-hunts",
+      "name": "Scavenger Hunts",
+      "title": "Scavenger hunt",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/1L_and_LLM_Scavenger_Hunt_at_Harvard_Law_School_in_September_2009_%283952858025%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Scavenger hunt"
+    },
+    {
+      "file": "lib/data/sports/tile/scrabble.ts",
+      "slug": "scrabble",
+      "name": "Scrabble",
+      "title": "Scrabble",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Scrabble_game_in_progress.jpg/3840px-Scrabble_game_in_progress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Scrabble"
+    },
+    {
+      "file": "lib/data/sports/board/scythe.ts",
+      "slug": "scythe",
+      "name": "Scythe",
+      "title": "Scythe (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/1/1a/Scythe_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Scythe (board game)"
+    },
+    {
+      "file": "lib/data/sports/combat/senegalese-wrestling.ts",
+      "slug": "senegalese-wrestling",
+      "name": "Senegalese Wrestling",
+      "title": "Senegalese wrestling",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Lutte_s%C3%A9n%C3%A9galaise_Bercy_2013_-_Mame_Balla-Pape_Mor_L%C3%B4_-_32.jpg/3840px-Lutte_s%C3%A9n%C3%A9galaise_Bercy_2013_-_Mame_Balla-Pape_Mor_L%C3%B4_-_32.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Senegalese wrestling"
+    },
+    {
+      "file": "lib/data/sports/traditional/sepak-takraw.ts",
+      "slug": "sepak-takraw",
+      "name": "Sepak Takraw",
+      "title": "Sepak takraw",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Incheon_AsianGames_Sepaktakraw_09_%2815291705581%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Sepak takraw"
+    },
+    {
+      "file": "lib/data/sports/board/seven-wonders.ts",
+      "slug": "seven-wonders",
+      "name": "7 Wonders",
+      "title": "7 Wonders (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/0/0b/7_Wonders_-_New_Edition_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "7 Wonders (board game)"
+    },
+    {
+      "file": "lib/data/sports/tabletop-rpg/shadowrun.ts",
+      "slug": "shadowrun",
+      "name": "Shadowrun",
+      "title": "Shadowrun",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/2c/Shadowrun4A.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Shadowrun"
+    },
+    {
+      "file": "lib/data/sports/mind/shogi.ts",
+      "slug": "shogi",
+      "name": "Shogi",
+      "title": "Shogi",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Shogi_board_pieces_and_komadai.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Shogi"
+    },
+    {
+      "file": "lib/data/sports/precision/shooting-sports.ts",
+      "slug": "shooting-sports",
+      "name": "Shooting Sports",
+      "title": "Shooting sports",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Skeet_masculin_aux_Jeux_olympiques_de_2024_-_%C3%89ric_Delaunay_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Shooting sports"
+    },
+    {
+      "file": "lib/data/sports/athletics/shot-put.ts",
+      "slug": "shot-put",
+      "name": "Shot Put",
+      "title": "Shot put",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tomasz_Majewski_-_2._Memoria%C5%82_Kamili_Skolimowskiej_-_Warszawa%2C_2011-09-20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Shot put"
+    },
+    {
+      "file": "lib/data/sports/equestrian/show-jumping.ts",
+      "slug": "show-jumping",
+      "name": "Show Jumping",
+      "title": "Show jumping",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/R3DE_StadiumJump.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Show jumping"
+    },
+    {
+      "file": "lib/data/sports/casino/sic-bo.ts",
+      "slug": "sic-bo",
+      "name": "Sic Bo",
+      "title": "Sic bo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Sic_bo_Table.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Sic bo"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/simon.ts",
+      "slug": "simon",
+      "name": "Simon",
+      "title": "Simon (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Simon_Electronic_Game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Simon (game)"
+    },
+    {
+      "file": "lib/data/sports/playground/simon-says.ts",
+      "slug": "simon-says",
+      "name": "Simon Says",
+      "title": "Simon Says",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Simon_Says_%286101891636%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Simon Says"
+    },
+    {
+      "file": "lib/data/sports/ball/sitting-volleyball.ts",
+      "slug": "sitting-volleyball",
+      "name": "Sitting Volleyball",
+      "title": "Sitting volleyball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/London_2012_paralympic_volleyball_%281%29.jpg/3840px-London_2012_paralympic_volleyball_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Sitting volleyball"
+    },
+    {
+      "file": "lib/data/sports/card/skat.ts",
+      "slug": "skat",
+      "name": "Skat",
+      "title": "Skat (card game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Skat_Trick_Jacks.svg/1280px-Skat_Trick_Jacks.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Skat (card game)"
+    },
+    {
+      "file": "lib/data/sports/adventure/skateboarding.ts",
+      "slug": "skateboarding",
+      "name": "Skateboarding",
+      "title": "Skateboarding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/BackSmithGrind.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Skateboarding"
+    },
+    {
+      "file": "lib/data/sports/winter/skeleton.ts",
+      "slug": "skeleton",
+      "name": "Skeleton",
+      "title": "Skeleton (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/D%C3%A9part_de_skeleton_Amy_Williams.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Skeleton (sport)"
+    },
+    {
+      "file": "lib/data/sports/winter/ski-jumping.ts",
+      "slug": "ski-jumping",
+      "name": "Ski Jumping",
+      "title": "Ski jumping",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FIS_Ski_Weltcup_Titisee-Neustadt_2016_-_Peter_Prevc1.jpg/3840px-FIS_Ski_Weltcup_Titisee-Neustadt_2016_-_Peter_Prevc1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Ski jumping"
+    },
+    {
+      "file": "lib/data/sports/adventure/skydiving.ts",
+      "slug": "skydiving",
+      "name": "Skydiving",
+      "title": "Parachuting",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Skydiver_Holding_Aircraft_Door_Before_Exit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Parachuting"
+    },
+    {
+      "file": "lib/data/sports/video/skyrim.ts",
+      "slug": "skyrim",
+      "name": "The Elder Scrolls V: Skyrim",
+      "title": "The Elder Scrolls V: Skyrim",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "The Elder Scrolls V: Skyrim"
+    },
+    {
+      "file": "lib/data/sports/board/snakes-and-ladders.ts",
+      "slug": "snakes-and-ladders",
+      "name": "Snakes and Ladders",
+      "title": "Snakes and ladders",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Snakes_and_Ladders.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Snakes and ladders"
+    },
+    {
+      "file": "lib/data/sports/precision/snooker.ts",
+      "slug": "snooker",
+      "name": "Snooker",
+      "title": "Snooker",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Snooker_table_selby.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Snooker"
+    },
+    {
+      "file": "lib/data/sports/winter/snowboarding.ts",
+      "slug": "snowboarding",
+      "name": "Snowboarding",
+      "title": "Snowboarding",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Snowboarding.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Snowboarding"
+    },
+    {
+      "file": "lib/data/sports/winter/snowmobiling.ts",
+      "slug": "snowmobiling",
+      "name": "Snowmobiling",
+      "title": "Snowmobile",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/SnowmobilesYellowstone.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Snowmobile"
+    },
+    {
+      "file": "lib/data/sports/ball/softball.ts",
+      "slug": "softball",
+      "name": "Softball",
+      "title": "Softball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Australia_v_Japan_Game_7_034.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Softball"
+    },
+    {
+      "file": "lib/data/sports/card/solitaire.ts",
+      "slug": "solitaire",
+      "name": "Solitaire",
+      "title": "Klondike (solitaire)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/GNOME_Aisleriot_Solitaire_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Klondike (solitaire)"
+    },
+    {
+      "file": "lib/data/sports/video/sonic.ts",
+      "slug": "sonic",
+      "name": "Sonic the Hedgehog",
+      "title": "Sonic the Hedgehog",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sonic_The_Hedgehog.svg/1280px-Sonic_The_Hedgehog.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Sonic the Hedgehog"
+    },
+    {
+      "file": "lib/data/sports/video/sonic-the-hedgehog.ts",
+      "slug": "sonic-the-hedgehog",
+      "name": "Sonic the Hedgehog",
+      "title": "Sonic the Hedgehog",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sonic_The_Hedgehog.svg/1280px-Sonic_The_Hedgehog.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Sonic the Hedgehog"
+    },
+    {
+      "file": "lib/data/sports/video/space-invaders.ts",
+      "slug": "space-invaders",
+      "name": "Space Invaders",
+      "title": "Space Invaders",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/0/0f/Space_Invaders_flyer%2C_1978.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Space Invaders"
+    },
+    {
+      "file": "lib/data/sports/card/spades.ts",
+      "slug": "spades",
+      "name": "Spades",
+      "title": "Spades (card game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Spades_%284371711785%29.jpg/3840px-Spades_%284371711785%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Spades (card game)"
+    },
+    {
+      "file": "lib/data/sports/winter/speed-skating.ts",
+      "slug": "speed-skating",
+      "name": "Speed Skating",
+      "title": "Speed skating",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Paulien_van_Deutekom_%2808-12-2007%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Speed skating"
+    },
+    {
+      "file": "lib/data/sports/motor/speedway.ts",
+      "slug": "speedway",
+      "name": "Speedway (Motorcycle)",
+      "title": "Motorcycle speedway",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/%C5%81ukasz_S%C3%B3wka_wisniowy.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Motorcycle speedway"
+    },
+    {
+      "file": "lib/data/sports/card/spider-solitaire.ts",
+      "slug": "spider-solitaire",
+      "name": "Spider Solitaire",
+      "title": "Spider (solitaire)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Spider_%28solitaire%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Spider (solitaire)"
+    },
+    {
+      "file": "lib/data/sports/board/spirit-island.ts",
+      "slug": "spirit-island",
+      "name": "Spirit Island",
+      "title": "Spirit Island (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Game_in_progress%2C_Spirit_Island.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Spirit Island (board game)"
+    },
+    {
+      "file": "lib/data/sports/board/splendor.ts",
+      "slug": "splendor",
+      "name": "Splendor",
+      "title": "Splendor (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/2e/BoardGameSplendorLogoFairUse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Splendor (game)"
+    },
+    {
+      "file": "lib/data/sports/athletics/sprinting.ts",
+      "slug": "sprinting",
+      "name": "Sprinting",
+      "title": "Sprint (running)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Usain_Bolt_2012_Olympics_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Sprint (running)"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/squash.ts",
+      "slug": "squash",
+      "name": "Squash",
+      "title": "Squash (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Semifinal_Squash_SM_2021.jpg/3840px-Semifinal_Squash_SM_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Squash (sport)"
+    },
+    {
+      "file": "lib/data/sports/traditional/ssireum.ts",
+      "slug": "ssireum",
+      "name": "Ssireum",
+      "title": "Ssireum",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Danwon-Ssireum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Ssireum"
+    },
+    {
+      "file": "lib/data/sports/wargames/x-wing.ts",
+      "slug": "star-wars-x-wing",
+      "name": "Star Wars: X-Wing",
+      "title": "Star Wars: X-Wing Miniatures Game",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/d/d6/Star_Wars_X-Wing_Miniatures_FF_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Star Wars: X-Wing Miniatures Game"
+    },
+    {
+      "file": "lib/data/sports/esports/starcraft-ii.ts",
+      "slug": "starcraft-ii",
+      "name": "StarCraft II",
+      "title": "StarCraft II",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/9/90/StarCraft_II_Logo.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "StarCraft II"
+    },
+    {
+      "file": "lib/data/sports/athletics/steeplechase.ts",
+      "slug": "steeplechase",
+      "name": "Steeplechase",
+      "title": "3000 metres steeplechase",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Sgt._Hillary_Bor_runs_3%2C000-meter_steeplechase_at_Rio_Olympic_Games_photos_by_Tim_Hipps%2C_U.S._Army_IMCOM_Public_Affairs_%2828945469872%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "3000 metres steeplechase"
+    },
+    {
+      "file": "lib/data/sports/video/street-fighter.ts",
+      "slug": "street-fighter",
+      "name": "Street Fighter",
+      "title": "Street Fighter",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Street Fighter"
+    },
+    {
+      "file": "lib/data/sports/puzzle/sudoku.ts",
+      "slug": "sudoku",
+      "name": "Sudoku",
+      "title": "Sudoku",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/500px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Sudoku"
+    },
+    {
+      "file": "lib/data/sports/combat/sumo.ts",
+      "slug": "sumo",
+      "name": "Sumo",
+      "title": "Sumo",
+      "explicit": false,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Asashoryu_fight_Jan08.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Sumo"
+    },
+    {
+      "file": "lib/data/sports/video/super-mario-bros.ts",
+      "slug": "super-mario-bros",
+      "name": "Super Mario Bros.",
+      "title": "Super Mario",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/960px-Mario_Series_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Super Mario"
+    },
+    {
+      "file": "lib/data/sports/video/super-smash-bros.ts",
+      "slug": "super-smash-bros",
+      "name": "Super Smash Bros.",
+      "title": "Super Smash Bros. (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/4/42/Supersmashbox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Super Smash Bros. (video game)"
+    },
+    {
+      "file": "lib/data/sports/motor/superbike-racing.ts",
+      "slug": "superbike-racing",
+      "name": "Superbike Racing",
+      "title": "Superbike racing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/2006Ducati999R-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Superbike racing"
+    },
+    {
+      "file": "lib/data/sports/aquatic/surfing.ts",
+      "slug": "surfing",
+      "name": "Surfing",
+      "title": "Surfing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mavericks_Surf_Contest_2010b.jpg/3840px-Mavericks_Surf_Contest_2010b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Surfing"
+    },
+    {
+      "file": "lib/data/sports/aquatic/swimming.ts",
+      "slug": "swimming",
+      "name": "Swimming",
+      "title": "Swimming (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Depart4x100.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Competitive swimming"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/table-tennis.ts",
+      "slug": "table-tennis",
+      "name": "Table Tennis",
+      "title": "Table tennis",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/3840px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Table tennis"
+    },
+    {
+      "file": "lib/data/sports/combat/taekwondo.ts",
+      "slug": "taekwondo",
+      "name": "Taekwondo",
+      "title": "Taekwondo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Milad_Kharchegani_at_the_2016_Summer_Olympics.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Taekwondo"
+    },
+    {
+      "file": "lib/data/sports/playground/tag.ts",
+      "slug": "tag",
+      "name": "Tag",
+      "title": "Tag (game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Jongensspelen_10.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Tag (game)"
+    },
+    {
+      "file": "lib/data/sports/puzzle/tangram.ts",
+      "slug": "tangram",
+      "name": "Tangram",
+      "title": "Tangram",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Tangram_set_00.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Tangram"
+    },
+    {
+      "file": "lib/data/sports/card/tarot.ts",
+      "slug": "tarot",
+      "name": "Tarot (Card Game)",
+      "title": "French tarot",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Oudlers1910.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "French Tarot"
+    },
+    {
+      "file": "lib/data/sports/ball/tchoukball.ts",
+      "slug": "tchoukball",
+      "name": "Tchoukball",
+      "title": "Tchoukball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/European_Tchoukball_Championships_2014.jpg/3840px-European_Tchoukball_Championships_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Tchoukball"
+    },
+    {
+      "file": "lib/data/sports/casino/teen-patti.ts",
+      "slug": "teen-patti",
+      "name": "Teen Patti",
+      "title": "Teen patti",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Crystal_Clear_app_Cardgame-3.svg/250px-Crystal_Clear_app_Cardgame-3.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Teen patti"
+    },
+    {
+      "file": "lib/data/sports/video/tekken.ts",
+      "slug": "tekken",
+      "name": "Tekken",
+      "title": "Tekken (video game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/0/0e/Tekken_1_game_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Tekken (video game)"
+    },
+    {
+      "file": "lib/data/sports/precision/ten-pin-bowling.ts",
+      "slug": "ten-pin-bowling",
+      "name": "Ten-Pin Bowling",
+      "title": "Ten-pin bowling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/10-pin-bowling-strike.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Tenpin bowling"
+    },
+    {
+      "file": "lib/data/sports/racket-paddle/tennis.ts",
+      "slug": "tennis",
+      "name": "Tennis",
+      "title": "Tennis",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/94/2013_Australian_Open_-_Guillaume_Rufin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Tennis"
+    },
+    {
+      "file": "lib/data/sports/board/terraforming-mars.ts",
+      "slug": "terraforming-mars",
+      "name": "Terraforming Mars",
+      "title": "Terraforming Mars (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/f/f0/Terraforming_Mars_board_game_box_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Terraforming Mars (board game)"
+    },
+    {
+      "file": "lib/data/sports/video/terraria.ts",
+      "slug": "terraria",
+      "name": "Terraria",
+      "title": "Terraria",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Terraria"
+    },
+    {
+      "file": "lib/data/sports/video/tetris.ts",
+      "slug": "tetris",
+      "name": "Tetris",
+      "title": "Tetris",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Tetris_logo_2019.svg/960px-Tetris_logo_2019.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Tetris"
+    },
+    {
+      "file": "lib/data/sports/card/texas-holdem.ts",
+      "slug": "texas-holdem",
+      "name": "Texas Hold'em Poker",
+      "title": "Texas hold 'em",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Holdem.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Texas hold 'em"
+    },
+    {
+      "file": "lib/data/sports/video/the-legend-of-zelda.ts",
+      "slug": "the-legend-of-zelda",
+      "name": "The Legend of Zelda",
+      "title": "The Legend of Zelda",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zelda_2017.svg/960px-Zelda_2017.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "The Legend of Zelda"
+    },
+    {
+      "file": "lib/data/sports/video/the-sims.ts",
+      "slug": "the-sims",
+      "name": "The Sims",
+      "title": "The Sims",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/The_Sims_series_logo.svg/1280px-The_Sims_series_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "The Sims"
+    },
+    {
+      "file": "lib/data/sports/video/the-witcher-3.ts",
+      "slug": "the-witcher-3",
+      "name": "The Witcher 3: Wild Hunt",
+      "title": "The Witcher 3: Wild Hunt",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "The Witcher 3: Wild Hunt"
+    },
+    {
+      "file": "lib/data/sports/board/ticket-to-ride.ts",
+      "slug": "ticket-to-ride",
+      "name": "Ticket to Ride",
+      "title": "Ticket to Ride (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/9/92/Ticket_to_Ride_Board_Game_Box_EN.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Ticket to Ride (board game)"
+    },
+    {
+      "file": "lib/data/sports/puzzle/tower-of-hanoi.ts",
+      "slug": "tower-of-hanoi",
+      "name": "Tower of Hanoi",
+      "title": "Tower of Hanoi",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/UniversumUNAM34.JPG/3840px-UniversumUNAM34.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Tower of Hanoi"
+    },
+    {
+      "file": "lib/data/sports/adventure/track-cycling.ts",
+      "slug": "track-cycling",
+      "name": "Track Cycling",
+      "title": "Track cycling",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cycling_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_sprint_1-32_finals_-_13.jpg/3840px-Cycling_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_sprint_1-32_finals_-_13.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Track cycling"
+    },
+    {
+      "file": "lib/data/sports/gymnastics/trampoline.ts",
+      "slug": "trampoline",
+      "name": "Trampoline Gymnastics",
+      "title": "Trampolining",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Rio_2016_Summer_Olympics_%2828558139233%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Trampolining"
+    },
+    {
+      "file": "lib/data/sports/aquatic/triathlon.ts",
+      "slug": "triathlon",
+      "name": "Triathlon",
+      "title": "Triathlon",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Paris2024_-_Triathlon_-_02_-_Pont_Alexandre_III.jpg/3840px-Paris2024_-_Triathlon_-_02_-_Pont_Alexandre_III.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Triathlon"
+    },
+    {
+      "file": "lib/data/sports/traditional/tuho.ts",
+      "slug": "tuho",
+      "name": "Tuho",
+      "title": "Tuho",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/ChineseVietnamesePlayingPitchPot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Pitch-pot"
+    },
+    {
+      "file": "lib/data/sports/board/twilight-imperium.ts",
+      "slug": "twilight-imperium",
+      "name": "Twilight Imperium",
+      "title": "Twilight Imperium",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/7/77/Twilight-imperium-layout_12.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Twilight Imperium"
+    },
+    {
+      "file": "lib/data/sports/ball/ultimate-frisbee.ts",
+      "slug": "ultimate-frisbee",
+      "name": "Ultimate Frisbee",
+      "title": "Ultimate (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/James_White_Flick.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Ultimate frisbee"
+    },
+    {
+      "file": "lib/data/sports/card/uno.ts",
+      "slug": "uno",
+      "name": "Uno",
+      "title": "Uno (card game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UNO_Logo.svg/960px-UNO_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Uno (card game)"
+    },
+    {
+      "file": "lib/data/sports/esports/valorant.ts",
+      "slug": "valorant",
+      "name": "Valorant",
+      "title": "Valorant",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/960px-Valorant_logo_-_pink_color_version.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Valorant"
+    },
+    {
+      "file": "lib/data/sports/tabletop-rpg/vampire-the-masquerade.ts",
+      "slug": "vampire-the-masquerade",
+      "name": "Vampire: The Masquerade",
+      "title": "Vampire: The Masquerade",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/7/7a/Vampmasq.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Vampire: The Masquerade"
+    },
+    {
+      "file": "lib/data/sports/ball/volleyball.ts",
+      "slug": "volleyball",
+      "name": "Volleyball",
+      "title": "Volleyball",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Brasil_vence_a_Fran%C3%A7a_no_v%C3%B4lei_masculino_1037987-15.08.2016_ffz-6369.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Volleyball"
+    },
+    {
+      "file": "lib/data/sports/wargames/warhammer-40000.ts",
+      "slug": "warhammer-40000",
+      "name": "Warhammer 40,000",
+      "title": "Warhammer 40,000",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Keno_mini_wargame.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Warhammer 40,000"
+    },
+    {
+      "file": "lib/data/sports/aquatic/water-polo.ts",
+      "slug": "water-polo",
+      "name": "Water Polo",
+      "title": "Water polo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e5/WaterPolo.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Water polo"
+    },
+    {
+      "file": "lib/data/sports/aquatic/water-skiing.ts",
+      "slug": "water-skiing",
+      "name": "Water Skiing",
+      "title": "Water skiing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Water_skiing_on_the_yarra02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Water skiing"
+    },
+    {
+      "file": "lib/data/sports/strength/weightlifting.ts",
+      "slug": "weightlifting",
+      "name": "Weightlifting",
+      "title": "Olympic weightlifting",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Kuo_Hsing-chun_at_her_final_round_in_2024_Summer_Olympics_2024-08-09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Olympic weightlifting"
+    },
+    {
+      "file": "lib/data/sports/card/whist.ts",
+      "slug": "whist",
+      "name": "Whist",
+      "title": "Whist",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Whist_marker.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Whist"
+    },
+    {
+      "file": "lib/data/sports/video/wii-sports.ts",
+      "slug": "wii-sports",
+      "name": "Wii Sports",
+      "title": "Wii Sports",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/5/54/Wii_Sports_Sleeve_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Wii Sports"
+    },
+    {
+      "file": "lib/data/sports/aquatic/windsurfing.ts",
+      "slug": "windsurfing",
+      "name": "Windsurfing",
+      "title": "Windsurfing",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Hood_river_windsurfers_20060701_0759.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Windsurfing"
+    },
+    {
+      "file": "lib/data/sports/board/wingspan.ts",
+      "slug": "wingspan",
+      "name": "Wingspan",
+      "title": "Wingspan (board game)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/c/c3/3d-wingspan-768x752.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Wingspan (board game)"
+    },
+    {
+      "file": "lib/data/sports/adventure/wingsuit-flying.ts",
+      "slug": "wingsuit-flying",
+      "name": "Wingsuit Flying",
+      "title": "Wingsuit flying",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Wingsuit_Flying_over_Langar_Airfield_UK.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Wingsuit flying"
+    },
+    {
+      "file": "lib/data/sports/combat/wushu.ts",
+      "slug": "wushu",
+      "name": "Wushu",
+      "title": "Wushu (sport)",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/10th_all_china_games_floor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Wushu (sport)"
+    },
+    {
+      "file": "lib/data/sports/mind/xiangqi.ts",
+      "slug": "xiangqi",
+      "name": "Xiangqi",
+      "title": "Xiangqi",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Xiangqi_Board.svg/960px-Xiangqi_Board.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "pageTitle": "Xiangqi"
+    },
+    {
+      "file": "lib/data/sports/dice/yahtzee.ts",
+      "slug": "yahtzee",
+      "name": "Yahtzee",
+      "title": "Yahtzee",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Original_Yahtzee_game_set_-_1980s_UK_release.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Yahtzee"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/yoyo.ts",
+      "slug": "yoyo",
+      "name": "Yo-yo",
+      "title": "Yo-yo",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Yo-Yo-Plastic-Toy-Green.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Yo-yo"
+    },
+    {
+      "file": "lib/data/sports/card/yu-gi-oh.ts",
+      "slug": "yu-gi-oh",
+      "name": "Yu-Gi-Oh! Trading Card Game",
+      "title": "Yu-Gi-Oh! Trading Card Game",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/en/2/2b/Yugioh_Card_Back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Yu-Gi-Oh! Trading Card Game"
+    },
+    {
+      "file": "lib/data/sports/traditional/yut-nori.ts",
+      "slug": "yut-nori",
+      "name": "Yut Nori",
+      "title": "Yut",
+      "explicit": true,
+      "ok": true,
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Korea_yut_pan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "pageTitle": "Yunnori"
+    }
+  ],
+  "missing": [
+    {
+      "file": "lib/data/sports/wargames/age-of-sigmar.ts",
+      "slug": "age-of-sigmar",
+      "name": "Warhammer Age of Sigmar",
+      "title": "Warhammer Age of Sigmar",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Warhammer Age of Sigmar"
+    },
+    {
+      "file": "lib/data/sports/board/betrayal-at-house-on-the-hill.ts",
+      "slug": "betrayal-at-house-on-the-hill",
+      "name": "Betrayal at House on the Hill",
+      "title": "Betrayal at House on the Hill",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Betrayal at House on the Hill"
+    },
+    {
+      "file": "lib/data/sports/wargames/bolt-action.ts",
+      "slug": "bolt-action",
+      "name": "Bolt Action",
+      "title": "Bolt Action (game)",
+      "explicit": true,
+      "ok": false,
+      "reason": "HTTP 404"
+    },
+    {
+      "file": "lib/data/sports/aquatic/dragon-boat-racing.ts",
+      "slug": "dragon-boat-racing",
+      "name": "Dragon Boat Racing",
+      "title": "Dragon boat",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Dragon boat"
+    },
+    {
+      "file": "lib/data/sports/video/fall-guys.ts",
+      "slug": "fall-guys",
+      "name": "Fall Guys",
+      "title": "Fall Guys",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Fall Guys"
+    },
+    {
+      "file": "lib/data/sports/skill-toys/fingerboarding.ts",
+      "slug": "fingerboarding",
+      "name": "Fingerboarding",
+      "title": "Fingerboard (skateboard)",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Fingerboard (skateboard)"
+    },
+    {
+      "file": "lib/data/sports/video/fortnite.ts",
+      "slug": "fortnite",
+      "name": "Fortnite",
+      "title": "Fortnite Battle Royale",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Fortnite Battle Royale"
+    },
+    {
+      "file": "lib/data/sports/party/heads-up.ts",
+      "slug": "heads-up",
+      "name": "Heads Up!",
+      "title": "Heads Up! (game)",
+      "explicit": true,
+      "ok": false,
+      "reason": "HTTP 404"
+    },
+    {
+      "file": "lib/data/sports/party/hot-potato.ts",
+      "slug": "hot-potato",
+      "name": "Hot Potato",
+      "title": "Hot Potato (game)",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Hot potato"
+    },
+    {
+      "file": "lib/data/sports/video/minecraft.ts",
+      "slug": "minecraft",
+      "name": "Minecraft",
+      "title": "Minecraft",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Minecraft"
+    },
+    {
+      "file": "lib/data/sports/party/mouse-trap.ts",
+      "slug": "mouse-trap",
+      "name": "Mouse Trap",
+      "title": "Mouse Trap (game)",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Mousetrap (disambiguation)"
+    },
+    {
+      "file": "lib/data/sports/party/never-have-i-ever.ts",
+      "slug": "never-have-i-ever",
+      "name": "Never Have I Ever",
+      "title": "Never have I ever",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Never have I ever"
+    },
+    {
+      "file": "lib/data/sports/party/operation.ts",
+      "slug": "operation",
+      "name": "Operation",
+      "title": "Operation (game)",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Operation (game)"
+    },
+    {
+      "file": "lib/data/sports/video/roblox.ts",
+      "slug": "roblox",
+      "name": "Roblox",
+      "title": "Roblox",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Roblox"
+    },
+    {
+      "file": "lib/data/sports/card/seven-card-stud.ts",
+      "slug": "seven-card-stud",
+      "name": "Seven-Card Stud",
+      "title": "Seven-card stud",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Seven-card stud"
+    },
+    {
+      "file": "lib/data/sports/party/spyfall.ts",
+      "slug": "spyfall",
+      "name": "Spyfall",
+      "title": "Spyfall",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Spyfall"
+    },
+    {
+      "file": "lib/data/sports/party/truth-or-dare.ts",
+      "slug": "truth-or-dare",
+      "name": "Truth or Dare",
+      "title": "Truth or dare?",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Truth or dare?"
+    },
+    {
+      "file": "lib/data/sports/party/two-truths-and-a-lie.ts",
+      "slug": "two-truths-and-a-lie",
+      "name": "Two Truths and a Lie",
+      "title": "Two truths and a lie",
+      "explicit": true,
+      "ok": false,
+      "reason": "HTTP 404"
+    },
+    {
+      "file": "lib/data/sports/puzzle/wordle.ts",
+      "slug": "wordle",
+      "name": "Wordle",
+      "title": "Wordle",
+      "explicit": true,
+      "ok": false,
+      "reason": "no-image",
+      "pageTitle": "Wordle"
+    }
+  ]
+}

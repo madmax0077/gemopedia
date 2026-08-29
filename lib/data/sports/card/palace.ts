@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const palace: Sport = {
+  id: "palace",
+  slug: "palace",
+  name: "Palace",
+  officialName: "Palace",
+  aliases: ["Shithead", "Karma", "China Hand", "President's Palace", "Idiot"],
+  shortDescription:
+    "SHEDDING-STYLE CARD GAME using a standard 52-card deck. 2-5 players each have 3 hidden face-down cards, 3 face-up cards on top of them, + 3 in hand. Play cards in ascending order onto the discard pile; special cards (2 = reset, 10 = clear pile, 4-of-a-kind = clear) trigger effects. Last player left with cards is the SHITHEAD/PALACE. Extremely popular in UK, Ireland, Australia, New Zealand + European hostels + student circles. 15-30 min. Family relative of PRESIDENT + Chinese SHENG JI.",
+  category: "card-games",
+  subCategory: "shedding / party / pub / hostel favorite",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "British Isles; popular across UK, Ireland, Australia, hostel circuits worldwide",
+  estimatedOrigin: "20th century British Isles; possibly derived from Karma (Indian)",
+  players: { min: 2, max: 5, note: "2-5 players; best at 3-4." },
+  equipment: [
+    { name: "Standard 52-card deck (or 2 decks for 6+ players)", description: "Standard playing cards" },
+  ],
+  duration: { approximateMinutes: 20, structure: "Single-round or best-of-3; loser is the Shithead/Palace." },
+  objective: "Be first to shed all 9 cards (hand + face-up + face-down) from your play area.",
+  basicRules: [
+    { title: "Deal 3 face-down cards + 3 face-up on top + 3 in hand", body: "3 layers of shedding." },
+    { title: "Play cards equal or higher than discard pile top", body: "Ascending rule." },
+    { title: "Special cards: 2 = reset (any card next), 10 = burn pile, 4-of-a-kind = burn", body: "Signature effects." },
+    { title: "Cannot play → pick up whole discard pile", body: "Punishment for stalling." },
+    { title: "Empty hand → play face-up cards; then face-down blindly", body: "Layer progression." },
+    { title: "Last player with cards = Shithead/Palace", body: "Anti-winner label." },
+  ],
+  scoring: {
+    summary: "First to shed all 9 cards wins; last player is the Shithead/Palace.",
+    breakdown: [
+      { action: "First to shed all 9 cards", points: "Wins the round" },
+      { action: "Last player with cards", points: "Loses (becomes Shithead/Palace)" },
+      { action: "Playing face-down card that can't beat pile", points: "Pick up whole pile" },
+    ],
+    winCondition: "Round-based; no cumulative score in most versions.",
+  },
+  countriesPlayed: ["GB", "IE", "AU", "NZ", "CA", "US", "DE", "FR", "NL", "SE"],
+  variants: ["shithead-standard", "karma-variant", "china-hand-with-runs", "palace-with-jokers-wild"],
+  relatedSports: ["president", "asshole", "uno", "crazy-eights", "sheng-ji"],
+  skills: ["card hierarchy tracking", "special-card timing", "opponent-hand estimation", "risk management with blind face-downs"],
+  terminology: [
+    { term: "Shithead / Palace", meaning: "Last player with cards; loser." },
+    { term: "Burn / Clear", meaning: "Removing entire discard pile from play (via 10 or 4-of-a-kind)." },
+    { term: "Reset", meaning: "Playing a 2 — next player can play any card." },
+    { term: "Face-down", meaning: "Blind last-layer cards; played without seeing." },
+  ],
+  faq: [
+    { question: "Palace vs Shithead vs Karma — are they the same?", answer: "YES — all names for the same game. British pubs + student circles call it SHITHEAD; family-friendly + Australian circles use PALACE; some Indian + hippie circles use KARMA. Core rules identical: 3 layers of cards, shed in ascending order, special cards clear/reset the pile." },
+  ],
+  wikipediaTitle: "Shithead (card game)",
+  sources: [{ label: "Wikipedia — Shithead", url: "https://en.wikipedia.org/wiki/Shithead_(card_game)", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

@@ -1,0 +1,58 @@
+import type { Sport } from "@/lib/types";
+
+export const projectL: Sport = {
+  id: "project-l",
+  slug: "project-l",
+  name: "Project L",
+  officialName: "Project L",
+  aliases: [],
+  shortDescription:
+    "SPATIAL PUZZLE / TETRIS-LIKE BOARD GAME (2020) by MICHAL MIKEŠ / JAN SOUKAL / ADAM ŠPANĚL (BOARDCUBATOR, CZECH REPUBLIC) — players fill polyomino puzzle cards with colorful plastic tetromino-like pieces. Signature: TETROMINO PIECES UPGRADE INTO LARGER PIECES via ONE-TIME UPGRADES; puzzle cards give reward pieces upon completion, feeding an engine. Simple, tactile, satisfying. Successfully funded via Kickstarter; earned Kennerspiel-adjacent buzz + strong solo mode.",
+  category: "board-games",
+  subCategory: "spatial puzzle / engine-building / plastic-piece",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "CZ",
+  regionOfOrigin: "Czech Republic (Boardcubator, Prague)",
+  estimatedOrigin: "2020 Kickstarter + BoardCubator release; expansions Finesse (2022) + Ghost Piece 2024",
+  players: { min: 1, max: 4, note: "1-4 including strong solo puzzle mode." },
+  equipment: [
+    { name: "Colorful plastic polyomino pieces (rotate + fit into cards)", description: "Signature tactile components" },
+    { name: "Puzzle cards (2 tiers, white easy + black hard)", description: "Signature puzzle deck" },
+  ],
+  duration: { approximateMinutes: 30, structure: "Games typically 20-40 min." },
+  objective: "Complete highest-value puzzle cards; build engine of polyomino pieces.",
+  basicRules: [
+    { title: "Each turn: 3 ACTIONS from menu — take a puzzle, upgrade piece, place piece, take piece, master action", body: "Signature action menu." },
+    { title: "PIECES range in size 1-5; upgrade smaller into next-tier larger via upgrade action", body: "Signature upgrade tree." },
+    { title: "PUZZLE CARDS: place pieces to fill exactly; complete = collect VP + reward piece", body: "Signature card completion." },
+    { title: "MASTER ACTION: fill ONE piece into every active puzzle simultaneously (endgame push)", body: "Signature master action." },
+    { title: "END: when black deck depletes; +1 final round; count VP", body: "End trigger." },
+  ],
+  scoring: {
+    summary: "Sum VP from completed puzzle cards (white = 1-4 VP, black = 3-5 VP).",
+    breakdown: [
+      { action: "White puzzle complete", points: "1-4 VP" },
+      { action: "Black puzzle complete", points: "3-5 VP" },
+    ],
+    winCondition: "Highest total VP.",
+  },
+  countriesPlayed: ["CZ", "US", "GB", "DE", "PL", "FR", "JP", "KR", "IT"],
+  variants: ["project-l-standard", "project-l-finesse-expansion-2022", "project-l-ghost-piece-expansion-2024", "project-l-solo-personal-best-mode"],
+  relatedSports: ["patchwork", "azul", "kingdomino", "cascadia"],
+  skills: ["polyomino fitting", "action economy", "piece-upgrade timing", "master-action optimization"],
+  terminology: [
+    { term: "Polyomino", meaning: "Shapes made of squares (like Tetris blocks) — sizes 1-5." },
+    { term: "Puzzle card", meaning: "Card with shape to be filled + reward for completion." },
+    { term: "Master Action", meaning: "Single-use per-turn action to place 1 piece into each active puzzle." },
+    { term: "Boardcubator", meaning: "Czech board-game publisher, Prague-based." },
+  ],
+  wikipediaTitle: "Project L",
+  sources: [{ label: "Boardcubator — Project L", url: "https://boardcubator.com/", publisher: "Boardcubator" }, { label: "BoardGameGeek", url: "https://boardgamegeek.com/boardgame/260605/project-l", publisher: "BGG" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

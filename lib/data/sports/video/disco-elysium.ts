@@ -1,0 +1,76 @@
+import type { Sport } from "@/lib/types";
+
+export const discoElysium: Sport = {
+  id: "disco-elysium",
+  slug: "disco-elysium",
+  name: "Disco Elysium",
+  officialName: "Disco Elysium: The Final Cut",
+  aliases: ["Disco Elysium", "Disco Elysium: The Final Cut"],
+  shortDescription:
+    "GROUNDBREAKING RPG VIDEO GAME (2019) by Estonian studio ZA/UM. Play as a WRECKED AMNESIAC DETECTIVE investigating a murder in the socialist-realist city of Revachol. NO COMBAT — pure DIALOGUE + SKILL CHECKS + INNER-VOICE conversations with 24 SKILLS (Encyclopedia, Empathy, Rhetoric, Volition, Endurance, etc.) that quite literally SPEAK TO YOU. Widely regarded as one of the greatest RPGs ever made. Won GDC + BAFTA + Golden Joystick GOTY 2019/2020. Praised for literary depth + political philosophy + surreal humor.",
+  category: "video-games",
+  subCategory: "RPG / narrative / dialogue-driven / no combat / indie",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "EE",
+  regionOfOrigin: "Estonia (ZA/UM studio, Tallinn)",
+  estimatedOrigin: "2019 release (Oct 2019 PC); 'Final Cut' 2021 with full voice acting + PS/Xbox/Switch",
+  players: { min: 1, max: 1, note: "Single-player." },
+  equipment: [
+    { name: "PC (Windows, Mac, Linux), PS4/5, Xbox One/Series, Switch", description: "Multi-platform (Final Cut)" },
+    { name: "Standard controller or keyboard + mouse", description: "Both supported" },
+    { name: "Reading + note-taking recommended", description: "Extremely dialogue-heavy" },
+  ],
+  duration: { approximateMinutes: 3600, structure: "60+ hours main story; 100+ hours completionist." },
+  objective: "Solve the murder + navigate the shattered psyche of your amnesiac detective through choice + dialogue.",
+  basicRules: [
+    { title: "No combat — resolve conflicts via dialogue + skill checks", body: "Signature 'no combat' RPG." },
+    { title: "24 skills across 4 attributes (Intellect, Psyche, Physique, Motorics)", body: "Skills literally speak as inner voices." },
+    { title: "Thought Cabinet — process 'thoughts' over in-game time for buffs/debuffs", body: "Unique meta-mechanic." },
+    { title: "Political-ideological choices (Communist, Fascist, Moralist, Ultraliberal) affect dialogue + world", body: "Political depth." },
+    { title: "Multiple game-ending outcomes based on investigation quality + choices", body: "Branching endings." },
+  ],
+  scoring: {
+    summary: "Not score-based; player success measured by depth of investigation + character coherence + endings unlocked.",
+    breakdown: [
+      { action: "Complete main investigation", points: "Requires 40-80 hours" },
+      { action: "See all endings + dialogue branches", points: "Requires multiple full playthroughs" },
+      { action: "Complete all Thoughts + Encyclopedia entries", points: "100+ hours completion" },
+    ],
+    winCondition: "Solve the mystery + complete narrative arc.",
+  },
+  countriesPlayed: ["EE", "US", "GB", "DE", "AU", "CA", "JP", "KR", "RU", "FR", "IT", "PL"],
+  famousAthletes: [
+    "Robert Kurvitz (writer + game director; Estonian novelist)",
+    "Estonian ZA/UM studio team (Aleksandr Rostov, Kaspar Tamsalu, others)",
+  ],
+  variants: [
+    "disco-elysium-original-2019",
+    "disco-elysium-the-final-cut-2021-with-full-voice-acting",
+    "za-um-planned-sequel-project-x7-cancelled-2024",
+  ],
+  relatedSports: ["baldurs-gate-3", "the-witcher-3", "planescape-torment", "fallout-new-vegas"],
+  skills: ["dialogue navigation", "character building", "political awareness", "reading comprehension", "note-taking"],
+  terminology: [
+    { term: "Detective", meaning: "The player character — an amnesiac cop with a shattered psyche." },
+    { term: "Thought Cabinet", meaning: "Meta-progression system where thoughts are internalized over game time." },
+    { term: "24 Skills", meaning: "Personality-driven skills (Encyclopedia, Empathy, Rhetoric...) that speak as inner voices." },
+    { term: "Skill check", meaning: "Dice roll + skill vs difficulty; dialogue outcomes branch on success/fail." },
+    { term: "Revachol", meaning: "The dying city of the setting; former royal capital + socialist experiment." },
+  ],
+  governingBodies: [
+    { name: "ZA/UM (developer)", founded: 2016, headquarters: "Tallinn, Estonia (studio breakup 2022; sequel status uncertain)" },
+  ],
+  faq: [
+    { question: "Is Disco Elysium the best RPG ever?", answer: "OFTEN cited in that conversation. It won BAFTA GAME OF THE YEAR 2020 + swept nearly every 2019 awards ceremony (GDC, DICE, Golden Joysticks, IGN GOTY). Beloved for LITERARY QUALITY OF WRITING (rare in games — Robert Kurvitz is an Estonian novelist), rich POLITICAL PHILOSOPHY, + REVOLUTIONARY 'no combat' RPG structure. Detractors find it TOO WORDY + politically heavy-handed. Regardless, indisputably one of the most influential RPGs of the 2010s." },
+    { question: "What happened to the sequel?", answer: "In 2022 ZA/UM's parent company FIRED CO-FOUNDERS Robert Kurvitz + Aleksandr Rostov in a controversial IP-ownership dispute. Multiple staffers resigned. The planned SEQUEL 'PROJECT X7' was CANCELLED in 2024. As of 2026 no direct sequel is in development; former ZA/UM members have founded new studios." },
+  ],
+  wikipediaTitle: "Disco Elysium",
+  sources: [{ label: "Wikipedia — Disco Elysium", url: "https://en.wikipedia.org/wiki/Disco_Elysium", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

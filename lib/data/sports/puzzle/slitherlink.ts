@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const slitherlink: Sport = {
+  id: "slitherlink",
+  slug: "slitherlink",
+  name: "Slitherlink",
+  officialName: "Slitherlink",
+  aliases: ["Fences", "Loop the Loop", "Loopy"],
+  shortDescription:
+    "JAPANESE LOGIC PUZZLE by NIKOLI (1989) — solver draws a SINGLE CLOSED LOOP along a grid of dots, satisfying constraints given by NUMBERS INSIDE CELLS. Number indicates how many of the cell's 4 SIDES are part of the loop (0-3). Signature: LOOP MUST BE SINGLE + NON-SELF-CROSSING. Elegant, pure logic — no arithmetic, no words. Enormously popular in Japan + Nikoli's international puzzle magazines. Considered one of Nikoli's finest logic puzzle inventions alongside Sudoku + Kakuro.",
+  category: "puzzle-games",
+  subCategory: "logic / loop / grid / paper-and-pencil",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (Nikoli publications, 1989)",
+  estimatedOrigin: "1989 Nikoli publication; global spread via puzzle magazines + apps 2000s+",
+  players: { min: 1, max: 1, note: "Single-solver puzzle." },
+  equipment: [
+    { name: "Slitherlink grid + pen/pencil", description: "Paper puzzle; app + online versions common" },
+  ],
+  duration: { approximateMinutes: 20, structure: "Easy 5 min; hard 30-90 min." },
+  objective: "Draw a single closed non-self-crossing loop along the grid that satisfies all numeric clues.",
+  basicRules: [
+    { title: "Grid of DOTS with cells; some cells contain numbers 0, 1, 2, or 3", body: "Signature grid + clues." },
+    { title: "Draw HORIZONTAL or VERTICAL line segments between adjacent dots", body: "Signature edges." },
+    { title: "NUMBER indicates how many of that cell's 4 SIDES have a line", body: "Signature edge count clue." },
+    { title: "SINGLE CLOSED LOOP — no branches, no crossings, no separate loops", body: "Signature loop constraint." },
+    { title: "Cells WITHOUT numbers have no constraint (may have 0-4 sides on loop)", body: "Standard blank cells." },
+    { title: "UNIQUE SOLUTION for well-designed puzzles", body: "Puzzle quality." },
+  ],
+  scoring: {
+    summary: "Complete valid single-loop = puzzle solved.",
+    breakdown: [
+      { action: "Valid single closed loop satisfying all clues", points: "Puzzle solved" },
+      { action: "Multiple loops, self-crossing, or violated clue", points: "Invalid" },
+    ],
+    winCondition: "Complete valid loop.",
+  },
+  countriesPlayed: ["JP", "US", "GB", "DE", "FR", "IT", "ES", "AU", "IN"],
+  famousAthletes: [
+    "Various Nikoli-published Slitherlink constructors",
+    "Puzzle Championship regulars (World Puzzle Federation events)",
+  ],
+  variants: ["slitherlink-standard-square-grid", "slitherlink-triangular-grid", "slitherlink-hexagonal-grid", "slitherlink-cairo-tiling"],
+  relatedSports: ["sudoku", "kakuro", "nonogram", "hitori", "masyu"],
+  skills: ["logical deduction", "pattern recognition (0/1/2/3 corner rules)", "loop-invariant awareness"],
+  terminology: [
+    { term: "Slitherlink", meaning: "Nikoli's Japanese name; also known as Fences, Loop the Loop." },
+    { term: "0 cell", meaning: "No sides on loop → all 4 sides must be BLANK." },
+    { term: "3 cell", meaning: "3 sides on loop → often quickly deducible." },
+    { term: "Nikoli", meaning: "Japanese puzzle publisher; popularized Sudoku, Kakuro, Slitherlink globally." },
+  ],
+  wikipediaTitle: "Slitherlink",
+  sources: [{ label: "Wikipedia — Slitherlink", url: "https://en.wikipedia.org/wiki/Slitherlink", publisher: "Wikipedia" }, { label: "Nikoli — Slitherlink", url: "https://www.nikoli.co.jp/en/puzzles/slitherlink/", publisher: "Nikoli" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

@@ -1,0 +1,78 @@
+import type { Sport } from "@/lib/types";
+
+export const marvelRivals: Sport = {
+  id: "marvel-rivals",
+  slug: "marvel-rivals",
+  name: "Marvel Rivals",
+  officialName: "Marvel Rivals",
+  aliases: ["Marvel Rivals"],
+  shortDescription:
+    "FREE-TO-PLAY 6v6 HERO SHOOTER (2024) by NETEASE + MARVEL GAMES. Play as MARVEL HEROES + VILLAINS (Iron Man, Spider-Man, Doctor Strange, Magik, Storm, Loki, etc.) in team-based objective battles. Instant success — 20M+ players in first month; often cited as OVERWATCH KILLER. Signature: DESTRUCTIBLE ENVIRONMENTS, TEAM-UP ABILITIES (character-pairing bonuses), 30+ heroes at launch. Season-based content updates. Strong esports investment — Marvel Rivals Championship + regional pro leagues.",
+  category: "esports",
+  subCategory: "hero shooter / 6v6 / free-to-play / Marvel",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: true,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "global",
+  countryOfOrigin: "CN",
+  regionOfOrigin: "China (NetEase's Marvel Rivals development team, Guangzhou)",
+  estimatedOrigin: "2024 launch (Dec 6 2024 global PC/PS5/Xbox Series)",
+  players: { min: 6, max: 12, note: "6v6 primary; ranked + quickplay + custom." },
+  equipment: [
+    { name: "PC (Windows), PS5, Xbox Series", description: "Multi-platform crossplay" },
+    { name: "Controller or M/KB", description: "Both fully supported" },
+    { name: "Free-to-play with cosmetics + Battle Pass", description: "Standard modern shooter monetization" },
+  ],
+  duration: { approximateMinutes: 20, structure: "Individual matches ~10-20 min; ranked seasons every 2 months." },
+  objective: "Complete objective (Convoy escort, Domination, Convergence) faster + better than opposing team.",
+  basicRules: [
+    { title: "6v6 team-based objective shooter", body: "Overwatch-inspired structure." },
+    { title: "3 roles: Vanguard (tank), Duelist (DPS), Strategist (support)", body: "Standard hero-shooter roles." },
+    { title: "Marvel-themed heroes: Iron Man, Storm, Magik, Doctor Strange, Groot, Star-Lord, etc.", body: "Character variety." },
+    { title: "Team-Up abilities: specific hero pairs unlock bonus effects (e.g., Groot + Rocket = 'IAMROOT')", body: "Signature team synergy." },
+    { title: "DESTRUCTIBLE ENVIRONMENTS — walls + structures break during combat", body: "Unique environmental mechanic." },
+    { title: "3rd-person over-the-shoulder camera", body: "Signature 3rd-person shooter." },
+  ],
+  scoring: {
+    summary: "Ranked ladder (Bronze → Grandmaster → Eternity) + esports tournament prize pools.",
+    breakdown: [
+      { action: "Ranked ladder placement", points: "Bronze → Eternity tiers" },
+      { action: "Marvel Rivals Championship", points: "$1-2M prize pool" },
+      { action: "Regional pro leagues", points: "APAC, NA, EU, LATAM circuits" },
+    ],
+    winCondition: "Best team on objective wins.",
+  },
+  countriesPlayed: ["CN", "US", "GB", "DE", "AU", "KR", "JP", "BR", "MX", "IT", "FR", "CA", "PH", "TH", "VN"],
+  famousAthletes: [
+    "Emerging streamers + pros (community still forming)",
+    "NetEase official broadcasters",
+    "SuperData analysts: rapid audience growth in first months",
+  ],
+  variants: ["marvel-rivals-standard", "quickplay", "ranked-competitive", "conquest-mode", "custom-lobbies"],
+  relatedSports: ["overwatch", "valorant", "counter-strike", "team-fortress-2"],
+  skills: ["3rd-person shooter aim", "hero + team-up knowledge", "role-specific playstyles", "environmental destruction awareness", "team coordination"],
+  terminology: [
+    { term: "Vanguard / Duelist / Strategist", meaning: "Tank / DPS / Support roles." },
+    { term: "Team-Up", meaning: "Specific hero pairs that unlock bonus abilities together." },
+    { term: "Convoy", meaning: "Payload escort game mode." },
+    { term: "Domination", meaning: "Point-capture game mode." },
+    { term: "Marvel Rivals Championship", meaning: "Annual global tournament." },
+  ],
+  governingBodies: [
+    { name: "NetEase (developer + publisher)", founded: 1997, headquarters: "Hangzhou, China" },
+    { name: "Marvel Games (co-publisher + licensor)", founded: 1996, headquarters: "Disney/Marvel, Burbank USA" },
+  ],
+  majorCompetitions: [
+    { name: "Marvel Rivals Championship", frequency: "annual (planned)", founded: 2025, region: "Global" },
+    { name: "Marvel Rivals Season Cups", frequency: "seasonal", founded: 2025, region: "Regional (APAC + NA + EU + LATAM)" },
+  ],
+  faq: [
+    { question: "Marvel Rivals vs Overwatch — will it kill Overwatch?", answer: "MARVEL RIVALS launched Dec 2024 to MASSIVE SUCCESS — 20M+ players first month, immediately competing with OVERWATCH 2. Similarities: 6v6 hero shooter, tank/DPS/support roles, objective-based modes. DIFFERENCES: 3rd-person (not first-person), MARVEL HERO LICENSING (huge draw), TEAM-UP abilities are unique, DESTRUCTIBLE ENVIRONMENTS. Whether it 'kills' Overwatch depends on long-term content + esports investment. Both games will likely coexist; Marvel Rivals will pull casual + Marvel-fan players; Overwatch retains established esports scene." },
+  ],
+  wikipediaTitle: "Marvel Rivals",
+  sources: [{ label: "Wikipedia — Marvel Rivals", url: "https://en.wikipedia.org/wiki/Marvel_Rivals", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

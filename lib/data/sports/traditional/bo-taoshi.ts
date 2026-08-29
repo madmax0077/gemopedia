@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const boTaoshi: Sport = {
+  id: "bo-taoshi",
+  slug: "bo-taoshi",
+  name: "Bō-taoshi",
+  officialName: "Bō-taoshi (棒倒し, 'Pole Toppling')",
+  aliases: ["Pole Toppling", "Japanese Bo-taoshi"],
+  shortDescription:
+    "JAPANESE TEAM SPORT played at SCHOOL SPORTS DAYS + Japanese SELF-DEFENSE FORCE academies. 2 teams of 150 players (75 attackers + 75 defenders per side) — the attackers try to TOPPLE the opposing team's TALL WOODEN POLE (~4m) to less than 30° from vertical, defenders form a human bulwark around their pole. Signature Japanese group-athletic tradition — pure chaotic mass strategy + brute force. Widely broadcast + iconic in Japan. 2-minute matches; incredibly intense.",
+  category: "traditional-cultural-sports",
+  subCategory: "team combat / chaotic mass sport / Japanese school/military tradition",
+  sportType: "team",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (school sports days + JSDF academies)",
+  estimatedOrigin: "Early 20th century Japan; popularized at Japan Self-Defense Force Academy (Bōeidai) sports days",
+  players: { min: 150, max: 300, note: "Traditionally 150 vs 150; can scale to 300 vs 300 in large events." },
+  equipment: [
+    { name: "Two wooden poles (~4m tall)", description: "One per team, planted in sand" },
+    { name: "Padded uniform + optional helmets", description: "Team colors" },
+    { name: "Large sand/grass field", description: "Similar to rugby field" },
+  ],
+  duration: { approximateMinutes: 3, structure: "Matches typically 2-3 min each; multi-match tournaments." },
+  objective: "Topple opposing team's pole to less than 30° from vertical; protect own pole.",
+  basicRules: [
+    { title: "Each team: ~75 attackers + ~75 defenders", body: "Split roles." },
+    { title: "Defenders form human fortress around pole (rings + pyramid formations)", body: "Signature defensive shape." },
+    { title: "Attackers climb defenders + push pole to topple", body: "Layered attack." },
+    { title: "Team that topples pole to <30° first wins", body: "Simple win condition." },
+    { title: "Extremely physical — collisions + falls common", body: "Injury risk high." },
+  ],
+  scoring: {
+    summary: "First team to topple opposing pole to <30° wins.",
+    breakdown: [
+      { action: "Successfully topple pole to <30°", points: "WIN" },
+      { action: "Time expires with both poles standing", points: "Judged by pole angles (closer to horizontal loses)" },
+    ],
+    winCondition: "First topple; or better pole angle at end of match.",
+  },
+  countriesPlayed: ["JP"],
+  variants: ["bo-taoshi-jsdf-academy-most-famous", "school-bo-taoshi-elementary-modified", "olympics-1964-demonstration"],
+  relatedSports: ["tug-of-war", "sumo", "yagli-gures", "kabaddi"],
+  skills: ["mass coordination", "climbing over teammates", "human pyramid formation", "brute force", "spatial awareness in chaos"],
+  terminology: [
+    { term: "Bō", meaning: "'Pole' — the target of the attack." },
+    { term: "Taoshi", meaning: "'To topple' or 'knock down'." },
+    { term: "Bōeidai", meaning: "Japan Self-Defense Force Academy — the most famous venue." },
+    { term: "Attackers / Defenders", meaning: "Split team roles." },
+  ],
+  faq: [
+    { question: "Why is Bō-taoshi so intense?", answer: "It's 300+ HUMAN BODIES all pushing + climbing at once — one of the LARGEST-SCALE physical team sports played anywhere. Injuries (twisted ankles, broken bones, concussions) are routine at JSDF Academy matches; players wear minimal padding + genuinely fight over the pole. VIDEO CLIPS of Bo-taoshi matches regularly go viral internationally for their FURIOUS INTENSITY." },
+  ],
+  wikipediaTitle: "Bō-taoshi",
+  sources: [{ label: "Wikipedia — Bō-taoshi", url: "https://en.wikipedia.org/wiki/B%C5%8D-taoshi", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

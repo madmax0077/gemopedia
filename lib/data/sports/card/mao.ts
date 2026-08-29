@@ -1,0 +1,61 @@
+import type { Sport } from "@/lib/types";
+
+export const mao: Sport = {
+  id: "mao",
+  slug: "mao",
+  name: "Mao",
+  officialName: "Mao",
+  aliases: ["Mau", "Mow"],
+  shortDescription:
+    "SHEDDING-STYLE CARD GAME (mid-20th century, likely US college origin) played with a standard 52-card deck. Objective: play all cards from hand. Distinguishing feature: THE RULES ARE SECRET — newcomers must LEARN by observation + trial-and-error, with penalty cards drawn for infractions. The DEALER creates + enforces house rules each game. Widely played on college campuses worldwide. Family game closely related to UNO, CRAZY EIGHTS, MAU-MAU (Germany). 30-60 min. Cult favorite for its psychological + social gameplay.",
+  category: "card-games",
+  subCategory: "shedding / hidden rules / social / college favorite",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "United States college campuses (unofficial); may derive from German MAU-MAU",
+  estimatedOrigin: "Mid-20th century; possibly derived from German Mau-Mau (1930s)",
+  players: { min: 3, max: 8, note: "Best at 4-6 players." },
+  equipment: [
+    { name: "Standard 52-card deck (or 2 decks for large groups)", description: "Standard playing cards" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Multiple hands until dealer ends game." },
+  objective: "Be first to shed all cards from hand while adhering to unspoken rules.",
+  basicRules: [
+    { title: "Play cards matching suit or rank of top discard", body: "Basic shedding mechanic." },
+    { title: "Special cards trigger effects (jacks skip, 7s draw 2, etc.)", body: "Rules vary by dealer." },
+    { title: "Rules are SECRET — newcomers must infer + suffer penalty cards", body: "Signature feature." },
+    { title: "Dealer enforces + adds new rules each game", body: "Meta-rule authority." },
+    { title: "Winner of prior hand becomes new dealer + adds a rule", body: "Rule accumulation." },
+  ],
+  scoring: {
+    summary: "First to shed all cards wins the hand; loser draws penalty cards.",
+    breakdown: [
+      { action: "First to empty hand", points: "Wins hand + becomes new dealer" },
+      { action: "Rule infraction", points: "Draw 1 penalty card" },
+      { action: "Failure to say 'Mao' on last card", points: "Draw penalty" },
+    ],
+    winCondition: "Wins the hand; game typically has no cumulative winner (played casually).",
+  },
+  countriesPlayed: ["US", "GB", "DE", "CA", "AU", "NZ", "IE"],
+  variants: ["mao-mau-mau-german-ancestor", "eleusis-related-rule-inference-game", "campus-house-rules"],
+  relatedSports: ["mau-mau", "uno", "crazy-eights", "eleusis"],
+  skills: ["pattern recognition", "rule inference", "social observation", "bluffing"],
+  terminology: [
+    { term: "Mao", meaning: "Called when you play your second-to-last card." },
+    { term: "Failure to Mao", meaning: "Penalty card for not saying 'Mao' at the right time." },
+    { term: "Point of order", meaning: "Called to pause game for rules discussion (no rules revealed)." },
+    { term: "Dealer's rule", meaning: "A new secret rule added by the winning dealer." },
+  ],
+  faq: [
+    { question: "Is Mao really unteachable?", answer: "The convention is that RULES ARE NEVER EXPLICITLY TAUGHT — newcomers must observe + deduce. In practice, groups vary from strict 'never explain' to friendly hints. Core mechanic (shedding, playing on suit/rank) is straightforward; the FUN is in slowly discovering 5-15 quirky penalty rules the dealer has stacked." },
+  ],
+  wikipediaTitle: "Mao (card game)",
+  sources: [{ label: "Wikipedia — Mao", url: "https://en.wikipedia.org/wiki/Mao_(card_game)", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

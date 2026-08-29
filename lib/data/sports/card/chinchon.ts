@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const chinchon: Sport = {
+  id: "chinchon",
+  slug: "chinchon",
+  name: "Chinchón",
+  officialName: "Chinchón",
+  aliases: ["Chinchon", "Conga (variant)"],
+  shortDescription:
+    "SPANISH + LATIN AMERICAN RUMMY-FAMILY CARD GAME. 2-8 players use a SPANISH 40- or 48-CARD DECK (or standard deck with 8s/9s removed). Objective: form MELDS (runs of 3+ same-suit + sets of 3-4 same-rank) to reach 7 cards + close hand. Loser accumulates penalty points; player who reaches 100 points is ELIMINATED. Last player standing wins. Special hand 'CHINCHÓN' (7-card run in one suit) automatically wins the game. Wildly popular in Spain, Uruguay, Argentina, Cape Verde.",
+  category: "card-games",
+  subCategory: "rummy family / elimination / Spanish deck",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "ES",
+  regionOfOrigin: "Spain; widely played in Río de la Plata (Argentina, Uruguay) + Cape Verde",
+  estimatedOrigin: "Early 20th century Spain; related to Gin Rummy family",
+  players: { min: 2, max: 8, note: "2-8 players; best at 3-5." },
+  equipment: [
+    { name: "Spanish 40- or 48-card deck (or standard 52 with 8s/9s removed)", description: "Native Spanish deck" },
+    { name: "Score pad", description: "Elimination tracking" },
+  ],
+  duration: { approximateMinutes: 40, structure: "Multiple hands until only one player is under 100 points." },
+  objective: "Avoid reaching 100 penalty points; last player standing wins.",
+  basicRules: [
+    { title: "Deal 7 cards each; draw + discard each turn", body: "Standard rummy loop." },
+    { title: "Close hand when all 7 cards are in melds + up to 5 pts of unmelded card", body: "Close condition." },
+    { title: "Non-closers count unmelded card values as penalty", body: "Points added negatively." },
+    { title: "Reaching 100 penalty points = eliminated", body: "Elimination scoring." },
+    { title: "CHINCHÓN (7-card run in one suit) = auto-win", body: "Signature bonus hand." },
+  ],
+  scoring: {
+    summary: "Unmelded card values added as penalty; 100 = eliminated; last standing wins.",
+    breakdown: [
+      { action: "Close with clean meld", points: "-10 (deducted from your score)" },
+      { action: "Chinchón (7-card same-suit run)", points: "Automatic game win" },
+      { action: "Unmelded cards in hand", points: "Positive penalty" },
+    ],
+    winCondition: "Last player under 100 pts; or player who makes a Chinchón.",
+  },
+  countriesPlayed: ["ES", "AR", "UY", "CV", "PE", "MX", "CL", "CO"],
+  variants: ["chinchon-standard", "conga-uruguayan-variant", "chinchon-with-standard-deck-8s-9s-removed"],
+  relatedSports: ["gin-rummy", "rummy", "buraco", "canasta", "briscola"],
+  skills: ["meld planning", "endgame closing timing", "risk management", "opponents' discard reading"],
+  terminology: [
+    { term: "Chinchón", meaning: "7-card run in one suit; automatic game-winning hand." },
+    { term: "Cerrar", meaning: "To close/end the hand with melds." },
+    { term: "Escalera", meaning: "Run/sequence of same-suit cards." },
+    { term: "Trío", meaning: "Set of 3 same-rank cards." },
+  ],
+  faq: [
+    { question: "Chinchón vs Gin Rummy?", answer: "Both are close cousins in the RUMMY FAMILY. Chinchón uses a SPANISH 40-CARD DECK + is ELIMINATION-based (reach 100 = out; last standing wins). Gin Rummy uses a 52-card deck + is 2-player only + score-target based. Chinchón also has the special CHINCHÓN AUTO-WIN hand (7-card same-suit run); Gin has no equivalent." },
+  ],
+  wikipediaTitle: "Chinchón (card game)",
+  sources: [{ label: "Wikipedia — Chinchón", url: "https://en.wikipedia.org/wiki/Chinch%C3%B3n_(card_game)", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

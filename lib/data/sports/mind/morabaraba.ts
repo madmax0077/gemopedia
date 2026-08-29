@@ -1,0 +1,78 @@
+import type { Sport } from "@/lib/types";
+
+export const morabaraba: Sport = {
+  id: "morabaraba",
+  slug: "morabaraba",
+  name: "Morabaraba",
+  officialName: "Morabaraba",
+  aliases: ["12 Men's Morris", "Umlabalaba", "Mlabalaba"],
+  shortDescription:
+    "SOUTHERN AFRICAN ABSTRACT STRATEGY BOARD GAME — related to NINE MEN'S MORRIS. Traditional game of Sotho, Tswana, Zulu peoples of South Africa, Lesotho, Botswana. 2 players each with 12 pieces (cows) on a 3-concentric-square board with connecting lines. Place cows one at a time to form mills (3-in-a-row) that remove opponent's pieces. Move phase after all placed. Official SPORT OF SOUTH AFRICAN MIND SPORTS COUNCIL. World Championships since 2001. National sport promotion in South Africa.",
+  category: "mind-sports",
+  subCategory: "abstract strategy / morris family / traditional Southern African",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: true,
+  season: "year-round",
+  era: "medieval",
+  popularity: "regional",
+  countryOfOrigin: "ZA",
+  regionOfOrigin: "South Africa + Lesotho + Botswana (Sotho, Tswana, Zulu peoples)",
+  estimatedOrigin: "Ancient African folk tradition; formally codified as sport 20th century; SAMSC recognition 2001+",
+  players: { min: 2, max: 2, note: "Strictly 1v1." },
+  equipment: [
+    { name: "Morabaraba board (3 concentric squares with connecting lines)", description: "Signature board" },
+    { name: "24 pieces (12 per player) — traditionally cows or stones", description: "Cattle theme" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Tournament games 30-60 min; casual 15-30 min." },
+  objective: "Reduce opponent to 2 pieces or trap them so they can't move.",
+  basicRules: [
+    { title: "PHASE 1 (Placement): players alternate placing 12 pieces each on empty intersections", body: "Signature 24-piece placement phase." },
+    { title: "PHASE 2 (Movement): move 1 piece 1 space along board line", body: "Movement after all placed." },
+    { title: "PHASE 3 (Flying): when reduced to 3 pieces, can 'fly' to any empty intersection", body: "Signature flying rule." },
+    { title: "MILL: 3 pieces in a row along a line = remove opponent's piece", body: "Signature scoring mechanic." },
+    { title: "Cannot remove opponent's mill pieces if unmilled pieces available", body: "Standard morris rule." },
+    { title: "WIN: reduce opponent to 2 pieces or block their movement", body: "Standard win condition." },
+  ],
+  scoring: {
+    summary: "Reduce opponent to 2 pieces or immobilize them; casual play often uses point systems for cumulative games.",
+    breakdown: [
+      { action: "Form a mill (3-in-a-row)", points: "Remove 1 opponent piece" },
+      { action: "Reduce opponent to 2 pieces", points: "WIN" },
+      { action: "Immobilize opponent (no legal moves)", points: "WIN" },
+      { action: "Fly with 3 pieces remaining", points: "Special mobility rule" },
+    ],
+    winCondition: "Reduce opponent to 2 pieces or immobilize.",
+  },
+  countriesPlayed: ["ZA", "LS", "BW", "NA", "ZW", "SZ"],
+  famousAthletes: [
+    "Mind Sports South Africa (MSSA) national team",
+    "Multiple South African Morabaraba World Champions",
+  ],
+  variants: ["morabaraba-standard-12-piece", "nine-mens-morris-close-cousin-9-pieces-6-mens-morris-simpler-variant", "twelve-mens-morris-alternate-english-name"],
+  relatedSports: ["nine-mens-morris", "mancala", "bao", "checkers"],
+  skills: ["mill formation planning", "double-mill strategy (opening + closing to remove 2 pieces)", "flying-phase endgame technique"],
+  terminology: [
+    { term: "Morabaraba", meaning: "Sotho/Tswana name for the game." },
+    { term: "Cows / Motho", meaning: "The pieces — traditionally represented as cattle." },
+    { term: "Mill", meaning: "3 pieces in a row along a board line; grants removal of opponent piece." },
+    { term: "Flying", meaning: "Special movement when reduced to 3 pieces — jump to any empty intersection." },
+    { term: "Umlabalaba", meaning: "Zulu name for the game." },
+  ],
+  governingBodies: [
+    { name: "Mind Sports South Africa (MSSA)", founded: 1985, headquarters: "South Africa" },
+    { name: "World Morabaraba Federation", founded: 2001, headquarters: "South Africa" },
+  ],
+  majorCompetitions: [
+    { name: "World Morabaraba Championships", frequency: "biennial", founded: 2001, region: "Global (South Africa dominates)" },
+    { name: "MSSA National Morabaraba Championships", frequency: "annual", founded: 1985, region: "South Africa" },
+    { name: "African Mind Sports Championships", frequency: "biennial", founded: 2005, region: "Africa" },
+  ],
+  faq: [
+    { question: "Morabaraba vs Nine Men's Morris?", answer: "SIBLING GAMES from the MORRIS FAMILY. NINE MEN'S MORRIS (ancient European, oldest board game with 3000+ year history): 9 pieces per player, 3 concentric squares WITHOUT diagonal connecting lines. MORABARABA (Southern African): 12 pieces per player, 3 concentric squares WITH diagonal connecting lines. The extra pieces + diagonal lines make Morabaraba more complex + strategic. Both share the mill-formation mechanic. Morabaraba is South Africa's traditional version + national mind sport." },
+  ],
+  wikipediaTitle: "Morabaraba",
+  sources: [{ label: "Wikipedia — Morabaraba", url: "https://en.wikipedia.org/wiki/Morabaraba", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

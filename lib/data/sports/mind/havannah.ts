@@ -1,0 +1,68 @@
+import type { Sport } from "@/lib/types";
+
+export const havannah: Sport = {
+  id: "havannah",
+  slug: "havannah",
+  name: "Havannah",
+  officialName: "Havannah",
+  aliases: [],
+  shortDescription:
+    "ABSTRACT STRATEGY CONNECTION GAME invented 1979 by CHRISTIAN FREELING. Played on a HEXAGONAL BOARD (usually side-8 hex = 61 or side-10 = 91 cells). Two players place stones seeking to form ONE OF THREE WINNING STRUCTURES: (1) BRIDGE (chain connecting 2 corners), (2) FORK (chain connecting 3 sides), (3) RING (loop of any size enclosing empty or opposing area). Signature: MULTIPLE WIN CONDITIONS make it distinctly strategic. First-player advantage; usually with swap rule.",
+  category: "mind-sports",
+  subCategory: "abstract strategy / connection / hex grid",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "niche",
+  countryOfOrigin: "NL",
+  regionOfOrigin: "Netherlands (Christian Freeling, mind-sports designer)",
+  estimatedOrigin: "1979 Christian Freeling invention; part of his Mindsports catalog",
+  players: { min: 2, max: 2, note: "Strictly 1v1." },
+  equipment: [
+    { name: "Hexagonal board (side-8 or side-10 typical)", description: "Signature hex grid" },
+    { name: "White + Black stones", description: "Go-style stones" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Tournament games 30-60 min." },
+  objective: "Form a BRIDGE (2 corners), FORK (3 sides), or RING (any loop).",
+  basicRules: [
+    { title: "Alternate placing 1 stone per turn on any empty hex", body: "Standard placement." },
+    { title: "WIN CONDITION 1 — BRIDGE: connect any 2 corner hexes with your chain", body: "Signature bridge win." },
+    { title: "WIN CONDITION 2 — FORK: connect any 3 of the 6 sides (not corners) with your chain", body: "Signature fork win." },
+    { title: "WIN CONDITION 3 — RING: form a closed loop (any size) with your stones (containing anything inside)", body: "Signature ring win." },
+    { title: "No captures, no removal — stones stay forever", body: "Pure placement." },
+    { title: "Swap rule (pie rule) commonly used to balance first-move advantage", body: "Balance rule." },
+  ],
+  scoring: {
+    summary: "Any of the 3 win conditions (bridge, fork, ring) wins the game.",
+    breakdown: [
+      { action: "BRIDGE (2 corners connected)", points: "WIN" },
+      { action: "FORK (3 sides connected)", points: "WIN" },
+      { action: "RING (closed loop of any size)", points: "WIN" },
+    ],
+    winCondition: "Bridge OR Fork OR Ring.",
+  },
+  countriesPlayed: ["NL", "DE", "US", "FR", "JP", "GB"],
+  famousAthletes: [
+    "Christian Freeling (inventor + top player)",
+    "Various Mind Sports Olympiad Havannah champions",
+    "Board Game Arena top-tier players",
+  ],
+  variants: ["havannah-side-8-61-hex", "havannah-side-10-91-hex", "havannah-side-6-smaller", "y-simpler-related-game", "star-freeling-related"],
+  relatedSports: ["hex", "twixt", "go-board-game", "y-game"],
+  skills: ["multi-win-condition awareness", "ring detection", "corner + edge threat management"],
+  terminology: [
+    { term: "Bridge", meaning: "Chain of your stones connecting 2 corners of the hex board." },
+    { term: "Fork", meaning: "Chain connecting 3 of the 6 sides (excluding corners)." },
+    { term: "Ring", meaning: "Closed loop of stones enclosing anything (empty or opposing stones)." },
+    { term: "Christian Freeling", meaning: "Dutch game designer, prolific inventor of abstract games (Havannah, Y, Emergo, etc.)." },
+  ],
+  faq: [
+    { question: "Havannah vs Hex — how do they differ?", answer: "Both are CONNECTION GAMES on HEX GRIDS with NO DRAWS + PURE STRATEGY. HEX: single win condition (connect your 2 sides). HAVANNAH: 3 different win conditions (Bridge, Fork, Ring) — much more strategic complexity + variety. Because there are multiple ways to win, HAVANNAH forces players to defend against 3 possible threats simultaneously. AI RESISTANCE: Havannah was long considered a challenge for AI due to the ring pattern recognition being non-trivial." },
+  ],
+  wikipediaTitle: "Havannah",
+  sources: [{ label: "Wikipedia — Havannah", url: "https://en.wikipedia.org/wiki/Havannah", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

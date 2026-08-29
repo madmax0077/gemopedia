@@ -1,0 +1,71 @@
+import type { Sport } from "@/lib/types";
+
+export const bokator: Sport = {
+  id: "bokator",
+  slug: "bokator",
+  name: "Bokator",
+  officialName: "Kbach Kun Boran Khmer (ក្បាច់គុនបុរាណខ្មែរ), 'Bokator'",
+  aliases: ["Kun Khmer Boran", "Labokkatao", "Ancient Cambodian Martial Art"],
+  shortDescription:
+    "ANCIENT CAMBODIAN MARTIAL ART, over 1000 YEARS OLD — one of the oldest surviving fighting styles in Southeast Asia. Depicted in the ANGKOR WAT stone reliefs (12th c). Comprehensive system: strikes, elbows, knees, wrestling, WEAPONS (sword, spear, staff, dagger, shield). Nearly extinct after KHMER ROUGE genocide killed most masters (1975-79); revived by GRANDMASTER SAN KIM SEAN 1990s. Now recognized as Cambodia's national martial art. UNESCO INTANGIBLE CULTURAL HERITAGE 2022.",
+  category: "combat-sports",
+  subCategory: "Cambodian traditional martial art / weapons + unarmed / national heritage",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: false,
+  season: "year-round",
+  era: "medieval",
+  popularity: "regional",
+  countryOfOrigin: "KH",
+  regionOfOrigin: "Cambodia (Khmer civilization, Angkor)",
+  estimatedOrigin: "9th-12th century Angkor Empire; depicted in Angkor Wat carvings; revived post-1990s",
+  players: { min: 1, max: 2, note: "Individual practice + partner sparring + weapons demonstrations." },
+  equipment: [
+    { name: "Krama (traditional Cambodian scarf; belt-colored)", description: "Rank indicator + practical tool" },
+    { name: "Traditional weapons: sword, spear, staff, dagger, shield", description: "Weapon system" },
+    { name: "No formal uniform; traditional or modern gi", description: "Optional" },
+  ],
+  duration: { approximateMinutes: 90, structure: "Training + forms + weapons; competitive matches 3x3 min." },
+  objective: "Master comprehensive Khmer combat: unarmed + weapons + wrestling; preserve national heritage.",
+  basicRules: [
+    { title: "Full-body striking: fists, elbows, knees, shins, feet, headbutts", body: "Comprehensive." },
+    { title: "Wrestling + clinch + throws", body: "Grappling included." },
+    { title: "Weapons: sword, spear, staff, knife, shield", body: "Distinct from Muay Thai." },
+    { title: "10 krama ranks by color (white to gold-plated)", body: "Ranking system." },
+    { title: "Modern competition: point-based sparring + weapons demo", body: "Tournament format." },
+  ],
+  scoring: {
+    summary: "Modern competitive matches use point-scoring for clean strikes + takedowns + weapons demos.",
+    breakdown: [
+      { action: "Clean strike", points: "1 point" },
+      { action: "Knockdown or throw", points: "2-3 points" },
+      { action: "Krama color-belt promotion", points: "Rank recognition" },
+    ],
+    winCondition: "Traditional: national heritage preservation. Modern: points or KO.",
+  },
+  countriesPlayed: ["KH", "TH (Khmer diaspora)", "US", "AU", "FR", "CA"],
+  famousAthletes: [
+    "San Kim Sean (Grandmaster, revived Bokator after Khmer Rouge)",
+    "Mao Sinal (national champion)",
+    "Sok Chanrasmey (women's champion)",
+  ],
+  variants: ["bokator-modern-competitive", "bokator-traditional-weapons", "kun-khmer-related-modern-combat-sport"],
+  relatedSports: ["muay-thai", "muay-boran", "silat", "kalaripayattu", "wing-chun"],
+  skills: ["comprehensive striking", "wrestling + throws", "weapons proficiency", "traditional forms"],
+  terminology: [
+    { term: "Bokator", meaning: "'Pounding a lion' — refers to founding legend of a warrior defeating a lion." },
+    { term: "Kbach Kun Boran", meaning: "Full traditional name — 'Ancient Techniques of Combat'." },
+    { term: "Krama", meaning: "Traditional Cambodian scarf; used as rank belt in Bokator." },
+  ],
+  governingBodies: [
+    { name: "Cambodian Bokator Federation", founded: 2004, headquarters: "Phnom Penh, Cambodia" },
+    { name: "International Bokator Federation (IBF)", founded: 2007, headquarters: "Cambodia + expatriate branches" },
+  ],
+  faq: [
+    { question: "How was Bokator nearly lost?", answer: "The KHMER ROUGE genocide (1975-79) killed most traditional Bokator masters + banned martial practices. When Cambodia reopened, GRANDMASTER SAN KIM SEAN — one of the few surviving lineage holders — spent 1990s-2000s traveling Cambodia recovering surviving masters + techniques + revived the art. UNESCO recognition (2022) helped secure its cultural preservation." },
+  ],
+  wikipediaTitle: "Bokator",
+  sources: [{ label: "Wikipedia — Bokator", url: "https://en.wikipedia.org/wiki/Bokator", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

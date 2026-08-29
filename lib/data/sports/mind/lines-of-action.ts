@@ -1,0 +1,62 @@
+import type { Sport } from "@/lib/types";
+
+export const linesOfAction: Sport = {
+  id: "lines-of-action",
+  slug: "lines-of-action",
+  name: "Lines of Action",
+  officialName: "Lines of Action (LOA)",
+  aliases: ["LOA"],
+  shortDescription:
+    "ABSTRACT STRATEGY BOARD GAME (1969) invented by CLAUDE SOUCIE. Played on 8×8 board with 12 black + 12 white pieces starting on the two long-edge rows. Objective: CONNECT ALL YOUR PIECES into ONE GROUP (adjacent orthogonally + diagonally). Movement rule: pieces move in a straight line by a distance equal to the NUMBER OF PIECES (own or opponent) on that line. Elegant + deeply strategic. Computer Olympiad favorite. Considered a classic combinatorial abstract by top game designers.",
+  category: "mind-sports",
+  subCategory: "abstract strategy / connection game / classic",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Claude Soucie 1969)",
+  estimatedOrigin: "1969 Claude Soucie invention; recognized as fine abstract game 1980s+; Computer Olympiad category since 2000s",
+  players: { min: 2, max: 2, note: "Strictly 1v1." },
+  equipment: [
+    { name: "8×8 checkered board", description: "Standard chess/checkers board" },
+    { name: "12 black + 12 white pieces", description: "Checkers-style pieces" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Tournament games 30-60 min; casual 15-30 min." },
+  objective: "Connect all your pieces into ONE group (adjacent orthogonally + diagonally).",
+  basicRules: [
+    { title: "Start: 12 black on top + bottom rows; 12 white on left + right columns", body: "Signature starting position." },
+    { title: "Move: piece moves in straight line by distance = TOTAL pieces on that line (both colors)", body: "Signature counting movement rule." },
+    { title: "Jump own pieces but stop on/capture opponent's piece", body: "Movement + capture." },
+    { title: "Cannot land on own piece; can capture opponent's piece by landing on it", body: "Standard capture rule." },
+    { title: "WIN: connect all your pieces into ONE group (adjacent by rook + bishop distance)", body: "Signature connection win condition." },
+  ],
+  scoring: {
+    summary: "First to connect all own pieces into one group wins.",
+    breakdown: [
+      { action: "All own pieces connected (adjacent orthogonally + diagonally)", points: "WIN" },
+      { action: "Reduce opponent below 2 pieces (can't split)", points: "WIN" },
+      { action: "Both players connect on same move", points: "Player who moved wins" },
+    ],
+    winCondition: "Own pieces form single connected group.",
+  },
+  countriesPlayed: ["US", "GB", "NL", "DE", "SE", "PL", "RU", "JP", "TW", "IL"],
+  variants: ["loa-standard-8x8", "loa-scrambled-starting-position", "loa-larger-board-variants"],
+  relatedSports: ["chess", "go-board-game", "othello", "havannah", "twixt"],
+  skills: ["mobility restriction", "clustering + expansion balance", "endgame connection threats", "counting on lines"],
+  terminology: [
+    { term: "LOA", meaning: "Abbreviation for Lines of Action." },
+    { term: "Line", meaning: "Any horizontal, vertical, or diagonal line on the board." },
+    { term: "Connected Group", meaning: "All pieces adjacent (orthogonally + diagonally) form one group." },
+    { term: "Trapping", meaning: "Reducing opponent's mobility to lock down groups." },
+  ],
+  faq: [
+    { question: "Lines of Action vs other connection games?", answer: "LOA is UNIQUELY DIFFERENT from most connection games (Havannah, Twixt, Hex) because pieces MOVE on the board rather than being permanently placed. This makes LOA more dynamic — mobility + timing matter as much as position. The 'MOVE DISTANCE EQUALS PIECES ON THAT LINE' rule creates elegant strategic tension: cluster pieces = fast-moving, spread pieces = slow-moving. Considered by many designers as one of the most elegant abstract games ever created." },
+  ],
+  wikipediaTitle: "Lines of Action",
+  sources: [{ label: "Wikipedia — Lines of Action", url: "https://en.wikipedia.org/wiki/Lines_of_Action", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

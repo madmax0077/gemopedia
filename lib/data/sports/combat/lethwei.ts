@@ -1,0 +1,83 @@
+import type { Sport } from "@/lib/types";
+
+export const lethwei: Sport = {
+  id: "lethwei",
+  slug: "lethwei",
+  name: "Lethwei",
+  officialName: "Lethwei (လက်ဝှေ့, 'Burmese Bareknuckle Boxing')",
+  aliases: ["Myanmar Lethwei", "Burmese Boxing", "9-Limb Boxing"],
+  shortDescription:
+    "MYANMAR (BURMESE) BAREKNUCKLE MARTIAL ART — considered the WORLD'S MOST BRUTAL STANDING COMBAT SPORT. Uses ALL 9 LIMBS (8 like Muay Thai + HEADBUTTS). Fighters wear ONLY HAND GAUZE — no boxing gloves. Traditional matches have NO WINNER unless KNOCKOUT (or 'Boegyi' — 2-min rest per knockout allowed). Ancient (2000+ years); newly popularized globally via WORLD LETHWEI CHAMPIONSHIP (WLC) since 2017. Fighter DAVE LETURDU + CANADIAN DAVE LETURDU + MYANMAR'S TUN TUN MIN are legends.",
+  category: "combat-sports",
+  subCategory: "Myanmar traditional bareknuckle / 9-limb striking / most brutal standing combat",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: true,
+  season: "year-round",
+  era: "ancient",
+  popularity: "regional",
+  countryOfOrigin: "MM",
+  regionOfOrigin: "Myanmar (Burma)",
+  estimatedOrigin: "2000+ years old; sport-formalization 20th c; global WLC circuit 2017+",
+  players: { min: 1, max: 2, note: "1v1 combat; single fight per event card." },
+  equipment: [
+    { name: "Hand gauze/tape ONLY (no gloves)", description: "Signature bareknuckle rule" },
+    { name: "Groin protector, mouthguard", description: "Minimum modern PPE" },
+    { name: "Ring (18-20ft square, canvas-covered)", description: "Standard combat sports ring" },
+  ],
+  duration: { approximateMinutes: 20, structure: "5 rounds × 3 min in modern WLC rules; traditional bouts no time limit until KO" },
+  objective: "Defeat opponent via KO — traditional rules: only KO wins; modern WLC: judged decisions allowed.",
+  basicRules: [
+    { title: "9 limbs = fists, elbows, knees, shins, HEADBUTTS", body: "Only sport with legal headbutts." },
+    { title: "Bareknuckle — only hand gauze/tape, no gloves", body: "Signature brutality." },
+    { title: "Traditional rules: only KO wins; matches can end in draw", body: "Historic ruleset." },
+    { title: "Modern WLC: 5×3 min rounds; judges score for decisions if no KO", body: "Global TV rules." },
+    { title: "Boegyi rule: 1 knockout → 2-minute rest allowed to continue", body: "Signature comeback mechanic." },
+    { title: "Wai Kru-like pre-fight dance (Lethwei Yay)", body: "Cultural ritual." },
+  ],
+  scoring: {
+    summary: "Traditional: only KO wins. Modern WLC: judged decisions score aggression + damage + effective striking.",
+    breakdown: [
+      { action: "Knockout", points: "Automatic win" },
+      { action: "Modern WLC judged decision", points: "Aggression + effective striking + damage" },
+      { action: "Traditional draw (no KO)", points: "Match ends without winner" },
+    ],
+    winCondition: "KO in traditional; KO or judged decision in modern WLC.",
+  },
+  countriesPlayed: ["MM", "TH", "US", "JP", "CA", "AU", "IT", "MX"],
+  famousAthletes: [
+    "Tun Tun Min (Myanmar; multi-time golden belt)",
+    "Dave Leduc (Canada; WLC world cruiserweight champion, popularized globally)",
+    "Cyrus Washington (USA-Myanmar)",
+    "Too Too (Myanmar national hero)",
+  ],
+  variants: [
+    "traditional-lethwei-kick-only-KO-wins",
+    "wlc-modern-lethwei-5-round-judged",
+    "amateur-lethwei-limited-headbutts",
+  ],
+  relatedSports: ["muay-thai", "muay-boran", "boxing", "kickboxing", "bokator"],
+  skills: ["all-9-limb striking", "headbutt technique", "bareknuckle conditioning", "clinch + short-elbow strikes"],
+  terminology: [
+    { term: "Lethwei", meaning: "'Boxing' in Burmese." },
+    { term: "Lethwei Yay", meaning: "Pre-fight ritual dance/greeting." },
+    { term: "Boegyi", meaning: "1 knockout allowed with 2-min rest to continue." },
+    { term: "9 limbs", meaning: "Fists + elbows + knees + shins + headbutts." },
+    { term: "Hand gauze", meaning: "Only hand protection permitted in traditional Lethwei." },
+  ],
+  governingBodies: [
+    { name: "World Lethwei Championship (WLC)", founded: 2017, headquarters: "Yangon, Myanmar" },
+    { name: "Myanmar Lethwei Federation", founded: 1996, headquarters: "Myanmar" },
+  ],
+  majorCompetitions: [
+    { name: "World Lethwei Championship (WLC)", frequency: "quarterly events", founded: 2017, region: "Global (broadcast worldwide)" },
+    { name: "Myanmar Traditional Lethwei Golden Belt", frequency: "annual", founded: 1996, region: "Myanmar" },
+  ],
+  faq: [
+    { question: "Is Lethwei really more brutal than Muay Thai?", answer: "YES by consensus. Both are 8-limb striking arts with elbows + knees + shins. LETHWEI ADDS: (1) HEADBUTTS (unique among major combat sports); (2) BAREKNUCKLE — only hand gauze, no gloves = more cuts + head trauma; (3) TRADITIONAL RULES require KNOCKOUT to win — fighters cannot 'win on points' safely; (4) Fewer weight class restrictions historically. Muay Thai fighters transitioning to Lethwei often struggle with headbutts + cut damage." },
+  ],
+  wikipediaTitle: "Lethwei",
+  sources: [{ label: "Wikipedia — Lethwei", url: "https://en.wikipedia.org/wiki/Lethwei", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

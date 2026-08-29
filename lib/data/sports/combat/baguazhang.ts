@@ -1,0 +1,58 @@
+import type { Sport } from "@/lib/types";
+
+export const baguazhang: Sport = {
+  id: "baguazhang",
+  slug: "baguazhang",
+  name: "Baguazhang",
+  officialName: "Baguazhang (八卦掌, 'Eight Trigrams Palm')",
+  aliases: ["Ba Gua Zhang", "Pakua Chang", "Eight Trigrams Palm"],
+  shortDescription:
+    "CHINESE INTERNAL MARTIAL ART (mid-19th c, Dong Haichuan) built around CIRCULAR WALKING + SPIRAL PALM STRIKES. Practitioners circle a center point while executing palm techniques based on the 8 TRIGRAMS of the I Ching. One of the 3 major CHINESE INTERNAL ARTS alongside TAI CHI + XINGYIQUAN. Renowned for its EVASIVE FOOTWORK + spinning body movement + palm-focused striking. Practiced worldwide; UNESCO-recognized Chinese cultural heritage.",
+  category: "combat-sports",
+  subCategory: "Chinese internal martial art / circular walking / palm strikes",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: false,
+  season: "year-round",
+  era: "19th-century",
+  popularity: "regional",
+  countryOfOrigin: "CN",
+  regionOfOrigin: "Beijing / Northern China (Dong Haichuan 1813-1882)",
+  estimatedOrigin: "Mid-19th c Dong Haichuan; spread through his students to global following 20th c",
+  players: { min: 1, max: 2, note: "Solo practice + partner drills." },
+  equipment: [
+    { name: "Loose clothing + soft-soled shoes", description: "For continuous walking" },
+    { name: "Optional weapons: broadsword (dao), straight sword (jian), spear", description: "Advanced training" },
+  ],
+  duration: { approximateMinutes: 60, structure: "Training sessions 45-90 min; circle walking forms 5-30 min." },
+  objective: "Combat + health via circular walking, spiral energy, + evasive palm strikes.",
+  basicRules: [
+    { title: "Continuous circular walking around center point", body: "Signature footwork." },
+    { title: "8 Palm changes correspond to 8 I Ching trigrams", body: "Philosophical basis." },
+    { title: "Body constantly twists + coils generating spiral power", body: "Internal energy technique." },
+    { title: "Palm strikes (rather than fists) — thrust, chop, uppercut, lift, sweep", body: "Distinctive weapon." },
+  ],
+  scoring: {
+    summary: "Not primarily competitive; wushu tournaments have baguazhang divisions.",
+    breakdown: [
+      { action: "Wushu competition (form performance)", points: "Judged technical + expressive" },
+      { action: "Traditional bagua tournaments (rare)", points: "Application-based" },
+    ],
+    winCondition: "Personal mastery is the primary goal.",
+  },
+  countriesPlayed: ["CN", "US", "GB", "DE", "AU", "CA", "FR", "MX"],
+  famousAthletes: ["Dong Haichuan (founder)", "Yin Fu + Cheng Tinghua (main disciple lineages)", "Sun Lutang (crossed with xingyi + tai chi)"],
+  variants: ["yin-style-bagua", "cheng-style-bagua", "liang-style-bagua", "gao-style-bagua"],
+  relatedSports: ["tai-chi-chuan", "xingyiquan", "kung-fu", "wing-chun"],
+  skills: ["circular walking", "spiral body power", "palm techniques", "evasive footwork"],
+  terminology: [
+    { term: "Bagua", meaning: "'Eight Trigrams' of the I Ching." },
+    { term: "Zhang", meaning: "'Palm' — the primary striking tool." },
+    { term: "Circle walking (Zou Zhuan)", meaning: "The foundational training method." },
+    { term: "Palm change", meaning: "Transition between the 8 palm positions." },
+  ],
+  wikipediaTitle: "Baguazhang",
+  sources: [{ label: "Wikipedia — Baguazhang", url: "https://en.wikipedia.org/wiki/Baguazhang", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

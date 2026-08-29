@@ -1,0 +1,47 @@
+import type { Sport } from "@/lib/types";
+
+export const matkot: Sport = {
+  id: "matkot",
+  slug: "matkot",
+  name: "Matkot",
+  officialName: "Matkot (מטקות)",
+  aliases: ["Israeli beach paddleball", "Kadima (variant)"],
+  shortDescription:
+    "Israeli national beach sport — COOPERATIVE paddleball played on Mediterranean beaches with wooden paddles (matkot) + small rubber ball. Goal: rally as LONG AS POSSIBLE without dropping ball (no net, no scoring in traditional form). Iconic Tel Aviv beach soundtrack; introduced 1930s Mandate Palestine.",
+  category: "racket-paddle-sports",
+  subCategory: "beach paddleball / cooperative sport",
+  sportType: "mixed",
+  indoorOutdoor: "outdoor",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "IL",
+  regionOfOrigin: "Israel — Tel Aviv + Mediterranean coast",
+  estimatedOrigin: "Popularised 1930s-40s in Mandate Palestine; became iconic Israeli beach culture 1950s-present.",
+  players: { min: 2, max: 4, note: "Usually 2 (cooperative); 4-player variants exist." },
+  equipment: [
+    { name: "Wooden matkot paddle (28-30 cm, unstrung, plywood or laminated wood)", description: "Signature simple wooden paddle." },
+    { name: "Small rubber ball (~5 cm, low-bounce)", description: "Standard black rubber ball." },
+  ],
+  duration: { approximateMinutes: 20, structure: "No fixed length; play until ball drops or players stop." },
+  objective: "TRADITIONALLY COOPERATIVE — rally as many consecutive hits as possible without dropping ball.",
+  basicRules: [
+    { title: "NO NET, NO SCORING (traditional) — purely cooperative rally", body: "Signature cooperative rule." },
+    { title: "PLAYERS FACE EACH OTHER — hit ball back-and-forth on beach sand", body: "Standard face-off." },
+    { title: "COMPETITIVE variants use net + points (rare)", body: "Standard competitive option." },
+    { title: "PLAYED BAREFOOT ON SAND — key beach setting", body: "Signature beach environment." },
+  ],
+  scoring: { summary: "Traditionally none — cooperative count of consecutive hits.", winCondition: "N/A (cooperative); competitive variants: first to 21." },
+  countriesPlayed: ["IL", "US (Israeli diaspora)", "AR (Israeli diaspora)"],
+  famousAthletes: ["No individual stars (cooperative sport)"],
+  variants: ["matkot-classic-cooperative", "matkot-competitive-with-net-and-score", "kadima-brazil-similar-frescobol"],
+  relatedSports: ["frescobol", "beach-tennis", "pickleball", "paddleball"],
+  skills: ["consistent paddle control", "communication with partner", "endurance"],
+  terminology: [
+    { term: "Matka", meaning: "Singular of matkot (racquet)." },
+    { term: "Rally count", meaning: "Number of consecutive successful hits — informal social bragging." },
+  ],
+  wikipediaTitle: "Matkot",
+  sources: [{ label: "Wikipedia — Matkot", url: "https://en.wikipedia.org/wiki/Matkot", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

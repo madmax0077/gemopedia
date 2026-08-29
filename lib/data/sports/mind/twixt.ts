@@ -1,0 +1,68 @@
+import type { Sport } from "@/lib/types";
+
+export const twixt: Sport = {
+  id: "twixt",
+  slug: "twixt",
+  name: "TwixT",
+  officialName: "TwixT",
+  aliases: ["Twixt"],
+  shortDescription:
+    "CONNECTION BOARD GAME invented 1962 by ALEX RANDOLPH. Two players (Red/Black) alternate placing pegs on a 24×24 grid trying to connect their two opposite sides with a chain of KNIGHT-JUMP LINKS. Each peg becomes a potential link node; linked pegs form a fence. Signature: LINKS CANNOT CROSS opposing player's links. NO DRAWS in pure form (like Hex). Published by 3M Bookshelf Games; won SPIEL DES JAHRES nomination. Widely considered ONE OF THE FINEST CONNECTION GAMES ever designed alongside HEX + GO.",
+  category: "mind-sports",
+  subCategory: "abstract strategy / connection / peg-and-link",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Alex Randolph, published by 3M)",
+  estimatedOrigin: "1962 Alex Randolph invention; 3M Bookshelf Games publication",
+  players: { min: 2, max: 2, note: "Strictly 1v1." },
+  equipment: [
+    { name: "TwixT 24×24 pegboard with 4 border sides marked Red/Black", description: "Signature 24×24 grid" },
+    { name: "Red + Black pegs + link bridges", description: "Player pieces" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Tournament games 30-90 min." },
+  objective: "Connect your two colored sides with an unbroken chain of pegs linked by knight-jump links.",
+  basicRules: [
+    { title: "Alternate placing 1 peg per turn on any empty intersection (excluding opposing side's borders)", body: "Standard placement." },
+    { title: "PEGS AT KNIGHT-JUMP DISTANCE (2+1) can be LINKED — link auto-forms or player option", body: "Signature knight-link rule." },
+    { title: "LINKS CANNOT CROSS opposing links (blocking is core strategy)", body: "Signature crossing rule." },
+    { title: "Board excludes 4 CORNER squares (impossible to link corners)", body: "Design rule." },
+    { title: "First player advantage compensated by SWAP RULE (pie rule): P2 can swap after P1's opening", body: "Balance rule." },
+    { title: "WIN: create unbroken chain of your pegs (linked) from your side to your opposite side", body: "Standard connection win." },
+  ],
+  scoring: {
+    summary: "Connect your two sides with linked pegs; no draws.",
+    breakdown: [
+      { action: "Chain of linked pegs from side to side", points: "WIN" },
+      { action: "Block all opposing paths", points: "Advanced defensive win" },
+    ],
+    winCondition: "Connect two opposing sides.",
+  },
+  countriesPlayed: ["US", "DE", "AT", "GB", "FR", "JP"],
+  famousAthletes: [
+    "Alex Randolph (inventor)",
+    "Multiple Board Game Arena TwixT champions",
+    "Various online + club champions",
+  ],
+  variants: ["twixt-standard-24x24", "twixt-pp-cross-cross-allowed-variant", "y-connection-3-sided-variant", "havannah-3-goals-variant"],
+  relatedSports: ["hex", "havannah", "go-board-game", "gomoku"],
+  skills: ["blocking strategy", "chain planning", "opposing-link crossing prevention"],
+  terminology: [
+    { term: "Peg", meaning: "Player piece placed on intersection." },
+    { term: "Link", meaning: "Connection between 2 pegs at knight-jump distance." },
+    { term: "Knight-jump", meaning: "L-shaped distance of 2+1 (like chess knight) between pegs." },
+    { term: "Crossing", meaning: "Links cannot cross opposing links — blocking mechanic." },
+    { term: "Alex Randolph", meaning: "American game designer (1922-2004), TwixT + other classics." },
+  ],
+  faq: [
+    { question: "TwixT vs Hex — differences?", answer: "Both are CONNECTION GAMES with NO DRAWS. HEX (Piet Hein / John Nash 1942): stones on HEX GRID, adjacent connections. TwixT (Alex Randolph 1962): pegs on SQUARE GRID with KNIGHT-JUMP links; links CAN BE BLOCKED by crossing. Hex has simpler rules but deeper mathematical analysis. TwixT has richer tactics due to the crossing rule + longer link distance. Both are considered CLASSICS of pure abstract strategy." },
+  ],
+  wikipediaTitle: "TwixT",
+  sources: [{ label: "Wikipedia — TwixT", url: "https://en.wikipedia.org/wiki/TwixT", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

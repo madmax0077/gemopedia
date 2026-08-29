@@ -1,0 +1,68 @@
+import type { Sport } from "@/lib/types";
+
+export const calcioStorico: Sport = {
+  id: "calcio-storico",
+  slug: "calcio-storico",
+  name: "Calcio Storico",
+  officialName: "Calcio Storico Fiorentino",
+  aliases: ["Calcio in Costume", "Florentine Football", "Historic Football"],
+  shortDescription:
+    "16TH-CENTURY FLORENTINE PROTO-FOOTBALL / MOB SPORT surviving as a 3-match ANNUAL TOURNAMENT in Florence, Italy (June, Piazza Santa Croce). 4 teams of 27 REPRESENTING FLORENCE'S 4 HISTORIC QUARTERS (Bianchi/Verdi/Rossi/Azzurri) fight for 50 minutes to throw a ball into the opposing team's goal net. Legal: punching, kicking, headbutting, tackling. Extremely brutal — considered one of the WORLD'S MOST VIOLENT LEGAL SPORTS. Historical since 1580; player of Calcio referenced by Michelangelo, Cosimo I.",
+  category: "traditional-cultural-sports",
+  subCategory: "historic mob football / brutal traditional / annual Florentine tournament",
+  sportType: "team",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "early-modern",
+  popularity: "regional",
+  countryOfOrigin: "IT",
+  regionOfOrigin: "Florence, Italy",
+  estimatedOrigin: "1580 first documented; likely 15th-c origins; annual revival codified 1930",
+  players: { min: 54, max: 54, note: "27 vs 27 (per team); 4 teams enter, 2 semifinals + 1 final each June." },
+  equipment: [
+    { name: "Sand-covered piazza (Piazza Santa Croce, Florence)", description: "80m × 40m makeshift arena" },
+    { name: "Leather-covered ball (~30cm diameter)", description: "Traditional ball" },
+    { name: "Renaissance-era costumes (each quarter's colors)", description: "Bianchi, Verdi, Rossi, Azzurri" },
+    { name: "Goals: 2m-wide nets at each short end", description: "Simple wooden nets" },
+  ],
+  duration: { approximateMinutes: 50, structure: "1 match of 50 min continuous play, no substitutions." },
+  objective: "Throw ball into opposing goal net; most goals in 50 minutes wins.",
+  basicRules: [
+    { title: "27 players per team; no substitutions; 50-min match", body: "Full-team endurance." },
+    { title: "Ball must reach net; punching + kicking + tackling ALL LEGAL", body: "Combat-sport dimension." },
+    { title: "Missed shot goes over back wall = half point to opponents (caccia)", body: "Deters wild throws." },
+    { title: "Rules against striking downed players + 2-on-1 gang beatings", body: "Modest safety limits." },
+    { title: "Winners parade + eat traditional beef supper", body: "Historic tradition (originally a Chianina cow)." },
+  ],
+  scoring: {
+    summary: "Goals scored during 50-min match; wild throws over back wall give ½ point to opponents.",
+    breakdown: [
+      { action: "Goal scored (caccia)", points: "1 point" },
+      { action: "Missed shot over back wall (contra-caccia)", points: "½ point to OPPONENTS" },
+    ],
+    winCondition: "Most goals in 50 minutes.",
+  },
+  countriesPlayed: ["IT"],
+  variants: ["calcio-storico-fiorentino-official-1580-revival-1930", "hunn-mob-football-english-cousin", "shrovetide-football-english-cousin"],
+  relatedSports: ["shrovetide-football", "cnapan", "hurling", "rugby-union", "gaelic-football"],
+  skills: ["hand-to-hand combat", "team wrestling", "throwing accuracy", "extreme endurance", "pain tolerance"],
+  terminology: [
+    { term: "Calcio Storico", meaning: "Historic Football." },
+    { term: "Caccia", meaning: "Goal (1 point)." },
+    { term: "Contra-caccia", meaning: "Wild throw over back wall — ½ pt to opponent." },
+    { term: "Bianchi / Verdi / Rossi / Azzurri", meaning: "The 4 competing Florentine quarters: white, green, red, blue." },
+    { term: "Datore di ordine", meaning: "Team captain / play caller." },
+  ],
+  majorCompetitions: [
+    { name: "Calcio Storico Fiorentino Tournament", frequency: "annual", founded: 1580, region: "Florence, Italy (June)" },
+  ],
+  faq: [
+    { question: "Is Calcio Storico really that violent?", answer: "YES — it's routinely cited as one of the WORLD'S MOST BRUTAL LEGAL SPORTS. Multiple players are hospitalized every year (broken bones, concussions, severe lacerations). Punching, kicking, headbutting, chokeholds, tackling — nearly everything short of weapons is legal. In 2018 the tournament was NEARLY BANNED after multiple hospitalizations. Only slight rule tightening + ambulance-on-site standards let it continue." },
+    { question: "How can I watch Calcio Storico?", answer: "Held annually in JUNE in Florence, Italy. 3 matches (2 semifinals + 1 final on 24 June = feast of San Giovanni, patron saint of Florence). Tickets are limited + expensive; often sold out months ahead. Some matches broadcast on Italian TV." },
+  ],
+  wikipediaTitle: "Calcio Fiorentino",
+  sources: [{ label: "Wikipedia — Calcio Fiorentino", url: "https://en.wikipedia.org/wiki/Calcio_Fiorentino", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

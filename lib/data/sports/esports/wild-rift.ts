@@ -1,0 +1,78 @@
+import type { Sport } from "@/lib/types";
+
+export const wildRift: Sport = {
+  id: "wild-rift",
+  slug: "wild-rift",
+  name: "League of Legends: Wild Rift",
+  officialName: "League of Legends: Wild Rift",
+  aliases: ["Wild Rift", "LoL Mobile", "WR"],
+  shortDescription:
+    "MOBILE MOBA (2020) by RIOT GAMES — the mobile-native cousin of LEAGUE OF LEGENDS. Same 5v5 lane + jungle + objective MOBA structure but redesigned for mobile: 15-min matches (vs LoL's 25-40), simplified UI + control scheme, ~100 champions (vs LoL's 170+, sub-set). Available on iOS + Android. Peak popularity 30M+ MAU; Wild Rift Icons Global Championship prize pool $2M+. Riot's push into mobile-heavy markets (China, Southeast Asia, Latin America) where LoL PC never dominated.",
+  category: "esports",
+  subCategory: "mobile MOBA / free-to-play / competitive esport",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: true,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Riot Games, Los Angeles)",
+  estimatedOrigin: "2020 launch (Oct 2020 SEA, staggered global 2020-21)",
+  players: { min: 6, max: 10, note: "5v5 primary; ARAM 5v5 also." },
+  equipment: [
+    { name: "iOS + Android smartphones (minimum specs required)", description: "Mobile-only (no PC/console)" },
+    { name: "Touch-screen controls + optional Bluetooth controller", description: "Signature mobile input" },
+    { name: "Data connection (5G/WiFi recommended)", description: "Online-only" },
+    { name: "Free-to-play with cosmetics + champion unlocks", description: "Standard Riot monetization" },
+  ],
+  duration: { approximateMinutes: 18, structure: "Individual matches ~15-20 min; ranked seasons ongoing." },
+  objective: "Destroy enemy Nexus by pushing lanes + team-fighting.",
+  basicRules: [
+    { title: "5 players + jungle; 3 lanes (top, mid, bot); 15-min matches", body: "MOBA fundamentals; faster than PC." },
+    { title: "Champion pool ~100 (subset of LoL's 170+, adapted for mobile)", body: "Selective champion selection." },
+    { title: "Touch controls: virtual joystick + tap abilities + drag-target skillshots", body: "Signature mobile input." },
+    { title: "Simplified objectives: Dragon, Baron, Turrets", body: "LoL-equivalent objectives." },
+    { title: "Ranked mode: Iron → Challenger tiers", body: "Standard Riot ranking system." },
+  ],
+  scoring: {
+    summary: "Team ranked ladder; individual MMR; professional tournament prize pools.",
+    breakdown: [
+      { action: "Ranked ladder placement", points: "Iron → Challenger" },
+      { action: "Wild Rift Icons Global Championship", points: "$2M+ prize pool" },
+      { action: "Regional pro leagues", points: "WCS championships across regions" },
+    ],
+    winCondition: "Destroy enemy Nexus.",
+  },
+  countriesPlayed: ["US", "GB", "DE", "AU", "BR", "MX", "IT", "FR", "CN", "IN", "PH", "VN", "TH", "ID"],
+  famousAthletes: [
+    "Uzi (Chinese esports legend, played Wild Rift semi-pro after LPL retirement)",
+    "Faker (LoL PC GOAT, occasional Wild Rift streams)",
+    "Regional pros from China, SE Asia, LatAm circuits",
+  ],
+  variants: ["wild-rift-standard", "aram-wild-rift", "urf-mode-limited-time", "clash-team-tournaments"],
+  relatedSports: ["league-of-legends", "arena-of-valor", "mobile-legends-bang-bang", "dota-2"],
+  skills: ["touch-screen skillshot precision", "champion knowledge (100+ pool)", "objective control", "team coordination via mobile"],
+  terminology: [
+    { term: "Nexus", meaning: "Team's base — destroy to win." },
+    { term: "Baron / Dragon", meaning: "Objective monsters granting powerful buffs." },
+    { term: "Bot / Mid / Top / Jungle / Support", meaning: "5 standard MOBA roles." },
+    { term: "Wild Rift Icons", meaning: "Global World Championship annual tournament." },
+    { term: "Wild Rift Champions Southeast Asia (WCS)", meaning: "Major regional tournament." },
+  ],
+  governingBodies: [
+    { name: "Riot Games (developer + tournament organizer)", founded: 2006, headquarters: "Los Angeles, USA (owned by Tencent since 2011)" },
+  ],
+  majorCompetitions: [
+    { name: "Wild Rift Icons Global Championship", frequency: "annual", founded: 2022, region: "Global (rotating hosts)" },
+    { name: "Wild Rift Champions Southeast Asia (WCS)", frequency: "biannual", founded: 2021, region: "Southeast Asia" },
+    { name: "Wild Rift Elite Championship (Latin America)", frequency: "biannual", founded: 2022, region: "Latin America" },
+  ],
+  faq: [
+    { question: "Wild Rift vs Mobile Legends: Bang Bang (MLBB)?", answer: "COMPETITORS in the mobile MOBA space. MLBB (2016 Moonton): earlier + more dominant in Southeast Asia; simpler + faster; hundreds of millions of players. WILD RIFT (2020 Riot): direct challenger with League of Legends' champion brand + polish; smaller player base but strong esports scene. In China + SE Asia, MLBB is bigger; globally + North America, Wild Rift has more mindshare among competitive players." },
+  ],
+  wikipediaTitle: "League of Legends: Wild Rift",
+  sources: [{ label: "Wikipedia — Wild Rift", url: "https://en.wikipedia.org/wiki/League_of_Legends:_Wild_Rift", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

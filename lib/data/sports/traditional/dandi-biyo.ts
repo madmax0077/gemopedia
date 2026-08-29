@@ -1,0 +1,61 @@
+import type { Sport } from "@/lib/types";
+
+export const dandiBiyo: Sport = {
+  id: "dandi-biyo",
+  slug: "dandi-biyo",
+  name: "Dandi Biyo",
+  officialName: "Dandi Biyo",
+  aliases: ["Danda Biyo", "Nepali Gilli-Danda"],
+  shortDescription:
+    "TRADITIONAL NEPALI CHILDREN'S BAT-AND-BALL STICK GAME — Nepal's answer to Indian GILLI-DANDA. Player uses long wooden STICK (dandi, ~60cm) to strike a small tapered STICK (biyo, ~15cm) lying on the ground; upon airborne biyo, strike it far to score. Scored by distance the biyo travels + successful catches. Widely played by children in Nepali villages + hills since ancient times; declared Nepal's NATIONAL SPORT in the early 20th century + celebrated at cultural events.",
+  category: "traditional-cultural-sports",
+  subCategory: "traditional bat-and-ball / children's game / Nepali national sport",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "ancient",
+  popularity: "regional",
+  countryOfOrigin: "NP",
+  regionOfOrigin: "Nepal (Himalayan villages, hills, Terai)",
+  estimatedOrigin: "Ancient — shared origin with Indian gilli-danda; predates written record",
+  players: { min: 2, max: 20, note: "Individual + team play; ~2-20 players." },
+  equipment: [
+    { name: "Dandi (wooden striking stick, ~60cm)", description: "The 'bat'" },
+    { name: "Biyo (small tapered wooden stick, ~15cm)", description: "The 'ball' equivalent" },
+    { name: "Shallow ground hole or line marker", description: "Setup point" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Informal; typically 30-60 min per session." },
+  objective: "Strike biyo as far as possible + catch it; score by distance in dandi-lengths.",
+  basicRules: [
+    { title: "Place biyo on/across ground line", body: "Setup." },
+    { title: "Strike biyo with dandi to lift + strike airborne", body: "Signature 2-strike technique." },
+    { title: "Distance scored in dandi-lengths from launch point", body: "Measurement." },
+    { title: "Opposing players may catch airborne biyo to eliminate striker", body: "Defensive." },
+    { title: "Winner: player with most distance-points at agreed time", body: "Simple scoring." },
+  ],
+  scoring: {
+    summary: "Distance scored in dandi-lengths per strike; team with most total wins.",
+    breakdown: [
+      { action: "Successful long strike", points: "Distance ÷ dandi-length" },
+      { action: "Caught airborne biyo", points: "Striker out (0 points that turn)" },
+      { action: "Missed strike", points: "0 points" },
+    ],
+    winCondition: "Most distance points at end of session.",
+  },
+  countriesPlayed: ["NP", "IN (border regions)"],
+  variants: ["dandi-biyo-standard", "team-variant", "adult-informal-village-play"],
+  relatedSports: ["gilli-danda", "lippa-italian-cousin", "tipcat-english-cousin", "kancha"],
+  skills: ["stick-striking accuracy", "distance calibration", "spatial awareness", "reflexes"],
+  terminology: [
+    { term: "Dandi", meaning: "The larger striking stick (~60cm)." },
+    { term: "Biyo", meaning: "The smaller tapered stick (~15cm) that is struck." },
+  ],
+  faq: [
+    { question: "Dandi Biyo vs Gilli-Danda?", answer: "Same core game — both descend from ancient South Asian stick-and-ball tradition. GILLI-DANDA (Indian): more widely known name; regional variants across India + Pakistan + Bangladesh. DANDI BIYO (Nepali): Nepali linguistic + cultural version; declared NEPAL'S NATIONAL SPORT in early 20th century + practiced in Himalayan villages. Rules essentially identical." },
+  ],
+  wikipediaTitle: "Dandi Biyo",
+  sources: [{ label: "Wikipedia — Dandi Biyo", url: "https://en.wikipedia.org/wiki/Dandi_Biyo", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

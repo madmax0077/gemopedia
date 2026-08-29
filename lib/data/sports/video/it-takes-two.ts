@@ -1,0 +1,70 @@
+import type { Sport } from "@/lib/types";
+
+export const itTakesTwo: Sport = {
+  id: "it-takes-two",
+  slug: "it-takes-two",
+  name: "It Takes Two",
+  officialName: "It Takes Two",
+  aliases: ["It Takes Two", "Hazelight Studios game"],
+  shortDescription:
+    "GROUNDBREAKING COOPERATIVE-ONLY VIDEO GAME (2021) by JOSEF FARES + HAZELIGHT STUDIOS. Two players (SPLIT-SCREEN required, no solo mode) play as CODY + MAY — a couple magically transformed into dolls by their daughter's tears + must reconcile their marriage to become human again. Genre-jumping platform-adventure — every chapter introduces new mechanics (magnetism, gravity, time, sound). Won GAME OF THE YEAR at THE GAME AWARDS 2021 + BAFTA GOTY + DICE GOTY. Set the modern standard for coop game design.",
+  category: "video-games",
+  subCategory: "cooperative / platformer / adventure / couch coop",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "major",
+  countryOfOrigin: "SE",
+  regionOfOrigin: "Sweden (Hazelight Studios, Stockholm)",
+  estimatedOrigin: "2021 release (March 2021 PC/PS/Xbox)",
+  players: { min: 2, max: 2, note: "EXACTLY 2 players — cooperative only, no solo mode." },
+  equipment: [
+    { name: "PS4/5, Xbox One/Series, PC (Windows), Switch (2022)", description: "Multi-platform" },
+    { name: "2 controllers OR local + online split-screen", description: "1 copy grants free 'Friend's Pass' to second player" },
+  ],
+  duration: { approximateMinutes: 900, structure: "Main story ~14 hours; longer with all mini-games." },
+  objective: "Reconcile Cody + May's marriage + become human again via cooperative puzzle-solving.",
+  basicRules: [
+    { title: "Two players work in tandem — each has unique mechanic per chapter", body: "Signature asymmetric coop." },
+    { title: "Genre changes constantly: platformer, third-person shooter, driving, rhythm, mini-games", body: "Constant variety." },
+    { title: "SPLIT-SCREEN REQUIRED — no solo mode; ONLY playable with 2 people", body: "Design purity." },
+    { title: "'Friend's Pass' allows free download for second player — need only 1 copy", body: "Signature accessibility." },
+    { title: "25+ optional mini-games in world for coop competition", body: "Side content." },
+  ],
+  scoring: {
+    summary: "Not competitive; measured by main-story completion + mini-game high scores.",
+    breakdown: [
+      { action: "Complete main story", points: "~14 hours" },
+      { action: "Find all mini-games (25+)", points: "Optional content" },
+      { action: "Complete all mini-games (2-player)", points: "Extended play" },
+    ],
+    winCondition: "Complete Cody + May's journey.",
+  },
+  countriesPlayed: ["SE", "US", "GB", "DE", "AU", "JP", "KR", "CA", "IT", "FR", "MX", "BR"],
+  famousAthletes: [
+    "Josef Fares (director + writer + spiritual leader of Hazelight)",
+    "Hazelight team (~50 developers)",
+  ],
+  variants: ["it-takes-two-standard", "friends-pass-free-second-player-mechanic"],
+  relatedSports: ["a-way-out", "portal", "portal-2", "super-mario-bros"],
+  skills: ["real-time cooperation", "voice communication", "diverse mini-game skills", "puzzle solving"],
+  terminology: [
+    { term: "Cody + May", meaning: "The 2 player characters — an unhappy married couple." },
+    { term: "Dr. Hakim", meaning: "Bizarre self-help book character who catalyzes the plot." },
+    { term: "Friend's Pass", meaning: "Free second-player download when 1 person owns the game." },
+    { term: "Hazelight", meaning: "The Swedish studio; also made Brothers: A Tale of Two Sons + A Way Out." },
+  ],
+  governingBodies: [
+    { name: "Hazelight Studios (developer)", founded: 2014, headquarters: "Stockholm, Sweden" },
+    { name: "Electronic Arts (publisher via EA Originals)", founded: 1982, headquarters: "Redwood City, USA" },
+  ],
+  faq: [
+    { question: "Why did It Takes Two win GOTY 2021?", answer: "It DEFINED the modern cooperative game — every chapter introduced NEW mechanics, GENRES, + INTERACTIONS between the two players. Combined with EMOTIONAL storytelling about a marriage in crisis, gorgeous visuals, + the FRIEND'S PASS (free second-player copy) making coop accessible, it won BAFTA, DICE, + The Game Awards' Game of the Year 2021. Sold 20M+ copies + inspired numerous coop games since." },
+  ],
+  wikipediaTitle: "It Takes Two (video game)",
+  sources: [{ label: "Wikipedia — It Takes Two", url: "https://en.wikipedia.org/wiki/It_Takes_Two_(video_game)", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

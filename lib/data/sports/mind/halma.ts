@@ -1,0 +1,68 @@
+import type { Sport } from "@/lib/types";
+
+export const halma: Sport = {
+  id: "halma",
+  slug: "halma",
+  name: "Halma",
+  officialName: "Halma",
+  aliases: ["Chinese Checkers (variant)", "Hoppers"],
+  shortDescription:
+    "STRATEGY BOARD GAME (1883) invented by DR. GEORGE HOWARD MONKS, Harvard University. Played on 16×16 square board with 2-6 players. Each player has 13-19 pieces in a corner CAMP; goal is to MOVE ALL PIECES to the OPPOSITE CAMP. Move 1 square OR jump over adjacent pieces (own or opponent's) — chained jumps allowed. Ancestor of CHINESE CHECKERS (1892 German variant on hexagonal star board). Classic 19th-century strategy game; hugely popular in Victorian era; niche today.",
+  category: "mind-sports",
+  subCategory: "abstract strategy / racing / jumping / classic",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "19th-century",
+  popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Harvard University; George Howard Monks 1883)",
+  estimatedOrigin: "1883 George Howard Monks; based on English game 'Hoppity'; ancestor of Chinese Checkers 1892",
+  players: { min: 2, max: 6, note: "2-4 players standard; 2-6 possible with adjustments." },
+  equipment: [
+    { name: "16×16 square Halma board", description: "Signature — square with corner triangles marked as camps" },
+    { name: "Colored pieces (13 each for 4-player, 19 each for 2-player)", description: "Traditional wooden or plastic pieces" },
+  ],
+  duration: { approximateMinutes: 45, structure: "Casual games 30-60 min; competitive faster." },
+  objective: "Move all your pieces from your corner camp to the opposite corner camp.",
+  basicRules: [
+    { title: "Each turn: move 1 piece ONE step OR make chain of jumps over adjacent pieces", body: "Signature 2 move types." },
+    { title: "Jump over own or opponent's pieces (no capture)", body: "Signature all-jumping." },
+    { title: "Chain jumps allowed (multiple in one move)", body: "Signature chaining." },
+    { title: "Move only into empty squares", body: "Standard board rule." },
+    { title: "Winner: first to move all pieces into opposite camp", body: "Simple racing win condition." },
+  ],
+  scoring: {
+    summary: "First to occupy opposite camp entirely wins.",
+    breakdown: [
+      { action: "All pieces in opposite camp", points: "WIN" },
+      { action: "Chained jump completion", points: "Efficiency measured in moves" },
+      { action: "Racing efficiency", points: "Fewer moves = better play" },
+    ],
+    winCondition: "All pieces in opposite corner camp.",
+  },
+  countriesPlayed: ["US", "GB", "DE", "AU", "JP", "CN (as Chinese Checkers)", "IT", "FR", "ES"],
+  variants: [
+    "halma-square-16x16-original-1883",
+    "chinese-checkers-hexagonal-star-1892-german-variant-more-popular-today",
+    "sternhalma-alternate-name-for-chinese-checkers",
+    "halma-6-player",
+    "halma-2-player-simplified",
+  ],
+  relatedSports: ["chinese-checkers", "checkers", "draughts", "sorry", "ludo"],
+  skills: ["chain-jump planning", "endgame piece placement", "opponent-blocking", "path optimization"],
+  terminology: [
+    { term: "Halma", meaning: "Greek for 'jump'." },
+    { term: "Camp", meaning: "Corner triangle where pieces start + must reach in opposite corner." },
+    { term: "Chain Jump", meaning: "Multiple sequential jumps over pieces in a single move." },
+    { term: "Chinese Checkers", meaning: "Popular 1892 German variant on hexagonal star board — technically 'Sternhalma'." },
+  ],
+  faq: [
+    { question: "Halma vs Chinese Checkers?", answer: "SIBLING GAMES with different boards. HALMA (1883 USA, George Howard Monks): 16×16 SQUARE board with corner triangles as camps. Original + more strategic (variable moves possible). CHINESE CHECKERS (1892 Germany, marketed by Ravensburger): HEXAGONAL STAR board with 6 corner points. Actually German invention despite name. More popular today in USA, China, Germany. Rules essentially identical (jump + move); Chinese Checkers is more accessible + visually elegant." },
+  ],
+  wikipediaTitle: "Halma",
+  sources: [{ label: "Wikipedia — Halma", url: "https://en.wikipedia.org/wiki/Halma", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

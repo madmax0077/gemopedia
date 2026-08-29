@@ -1,0 +1,52 @@
+import type { Sport } from "@/lib/types";
+
+export const aerobie: Sport = {
+  id: "aerobie",
+  slug: "aerobie",
+  name: "Aerobie",
+  officialName: "Aerobie",
+  aliases: ["Flying Ring"],
+  shortDescription:
+    "SKILL-TOY OUTDOOR THROWING RING — hard plastic ring (~33 cm diameter) with a special AERODYNAMIC AIRFOIL cross-section allowing EXCEPTIONAL FLIGHT DISTANCES (world record 406m by Scott Zimmerman 2003, GUINNESS RECORD for farthest thrown object). Invented 1984 by Alan ADLER (Stanford lecturer). Signature: much LONGER RANGE + FLATTER TRAJECTORY than a frisbee. Recreational catch-throw play; used for altitude testing + skill throwing. Related SPRINT format.",
+  category: "skill-toys",
+  subCategory: "skill toy / throwing / flying ring",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isProfessional: false,
+  season: "summer",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Stanford, California — Alan Adler 1984)",
+  estimatedOrigin: "1984 Alan Adler invention; distance record 406m Scott Zimmerman 2003",
+  players: { min: 2, max: 4, note: "Usually 2 partners for catch; solo throw for distance." },
+  equipment: [
+    { name: "Aerobie ring (~33cm diameter hard plastic ring with aerodynamic cross-section)", description: "Signature aerofoil ring" },
+  ],
+  duration: { approximateMinutes: 30, structure: "Casual play sessions 15-60 min." },
+  objective: "Catch-throw partner play OR maximum distance throwing.",
+  basicRules: [
+    { title: "AERODYNAMIC RING with airfoil cross-section — flies MUCH farther than frisbee (world record 406m)", body: "Signature aerofoil design." },
+    { title: "Thrown similar to frisbee but with sidearm flick", body: "Signature throwing technique." },
+    { title: "CATCH partners at 20-50m typical range; extreme throws 100m+", body: "Signature catch range." },
+    { title: "FLIGHT: nearly flat + straight trajectory (unlike frisbee curve)", body: "Signature flat flight." },
+  ],
+  scoring: { summary: "Recreational; distance records for competitive throws.", winCondition: "Longest throw for records." },
+  countriesPlayed: ["US", "CA", "GB", "AU", "DE", "NL", "JP"],
+  famousAthletes: [
+    "Scott Zimmerman (USA, 406m world record 2003 — Guinness record for farthest thrown object)",
+    "Alan Adler (inventor)",
+  ],
+  variants: ["aerobie-pro-ring-standard-33cm", "aerobie-sprint-smaller-shorter", "aerobie-orbiter-boomerang-variant", "aeropress-coffee-maker-adler-other-invention-not-related"],
+  relatedSports: ["frisbee-ultimate", "disc-golf", "boomerang"],
+  skills: ["throwing technique (sidearm flick)", "catch timing", "wind-reading"],
+  terminology: [
+    { term: "Airfoil cross-section", meaning: "Ring shape creates lift like an aircraft wing — signature Aerobie feature." },
+    { term: "Flick throw", meaning: "Sidearm wrist-flick technique." },
+    { term: "Guinness record 406m", meaning: "Scott Zimmerman's 2003 world record throw." },
+  ],
+  wikipediaTitle: "Aerobie",
+  sources: [{ label: "Wikipedia — Aerobie", url: "https://en.wikipedia.org/wiki/Aerobie", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

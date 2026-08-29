@@ -1,0 +1,66 @@
+import type { Sport } from "@/lib/types";
+
+export const wizard: Sport = {
+  id: "wizard",
+  slug: "wizard",
+  name: "Wizard",
+  officialName: "Wizard",
+  aliases: ["Wizard card game", "Wizard by AMIGO"],
+  shortDescription:
+    "TRICK-TAKING BIDDING CARD GAME (1984) by CANADIAN designer KEN FISHER, published by AMIGO SPIELE (Germany). 3-6 players use a special 60-CARD DECK (standard 52 + 4 WIZARDS + 4 JESTERS). Signature: at start of each hand, players BID EXACTLY how many tricks they'll win. Score bonuses for exact bids, penalties for missing. Wizards always win, Jesters always lose (or are trump ordinal). Card counting + partner-neutral play. 45-60 min. Sold 1M+ copies worldwide. Family relative of OH HELL + SPADES + CONTRACT WHIST.",
+  category: "card-games",
+  subCategory: "trick-taking / bidding / prediction game",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "CA",
+  regionOfOrigin: "Canada (Ken Fisher designer); Germany (AMIGO Spiele publisher)",
+  estimatedOrigin: "1984 Ken Fisher; 1986 AMIGO publication",
+  players: { min: 3, max: 6, note: "3-6 players; best at 4-5." },
+  equipment: [
+    { name: "Wizard 60-card deck (52 standard + 4 Wizards + 4 Jesters)", description: "Custom deck" },
+    { name: "Score pad", description: "Tracking bids + points across rounds" },
+  ],
+  duration: { approximateMinutes: 50, structure: "Round count = 60 / player count; game ends when all rounds played." },
+  objective: "Win EXACTLY the number of tricks you bid; highest cumulative score after all rounds.",
+  basicRules: [
+    { title: "Round N: deal N cards each; N grows each round", body: "Progressive card count." },
+    { title: "Cut for trump; last card of deck = trump suit (Wizards/Jesters have variants)", body: "Random trump." },
+    { title: "Each player secretly bids # of tricks they'll win", body: "Exact-bid signature." },
+    { title: "Play tricks: highest trump wins; else highest of led suit", body: "Standard trick-taking." },
+    { title: "Wizards ALWAYS win their trick (top of trump); Jesters ALWAYS lose", body: "Special cards." },
+    { title: "Score exactly: 20 pts for exact bid + 10 pts per trick; -10 per off", body: "Bonus vs penalty." },
+  ],
+  scoring: {
+    summary: "20 pts base + 10 per trick if EXACT; -10 per trick over/under.",
+    breakdown: [
+      { action: "Bid exactly matched", points: "20 + (10 × tricks bid)" },
+      { action: "Bid missed by 1", points: "-10" },
+      { action: "Bid missed by N", points: "-10 × N" },
+    ],
+    winCondition: "Highest total score after all progressive rounds are played.",
+  },
+  countriesPlayed: ["CA", "DE", "US", "GB", "AT", "FR", "AU", "NL", "SE", "IT"],
+  variants: ["wizard-base-1984", "wizard-junior-family-version", "wizard-extreme-with-modifier-cards", "amigo-wizard-official-tournament-rules"],
+  relatedSports: ["oh-hell", "spades", "contract-bridge", "whist", "hearts"],
+  skills: ["trick prediction", "trump analysis", "opponent bid tracking", "card counting"],
+  terminology: [
+    { term: "Wizard", meaning: "Always wins the trick (top of hierarchy)." },
+    { term: "Jester", meaning: "Always loses the trick (bottom)." },
+    { term: "Contract / Bid", meaning: "Number of tricks you predict you'll win." },
+    { term: "Set", meaning: "Failing to make your bid (any deviation)." },
+  ],
+  faq: [
+    { question: "Wizard vs Oh Hell — how do they compare?", answer: "Very similar bidding trick-takers. OH HELL (folk game, 1920s+) uses a standard 52-card deck; total tricks bid CANNOT equal hand size (last bidder constrained). WIZARD adds 8 SPECIAL CARDS (4 always-winners + 4 always-losers), making bid math + tactics richer + more predictable when planning. Wizard is more commercial (AMIGO 1M+ copies); Oh Hell is a folk tradition. Both reward exact bidding + card counting." },
+  ],
+  governingBodies: [
+    { name: "AMIGO Spiele (publisher)", founded: 1980, headquarters: "Germany" },
+  ],
+  wikipediaTitle: "Wizard (card game)",
+  sources: [{ label: "Wikipedia — Wizard", url: "https://en.wikipedia.org/wiki/Wizard_(card_game)", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

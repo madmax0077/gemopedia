@@ -1,0 +1,65 @@
+import type { Sport } from "@/lib/types";
+
+export const buraco: Sport = {
+  id: "buraco",
+  slug: "buraco",
+  name: "Buraco",
+  officialName: "Buraco",
+  aliases: ["Biriba", "Canasta Buraco", "Buraco fechado", "Buraco aberto"],
+  shortDescription:
+    "PARTNERSHIP RUMMY-FAMILY CARD GAME from Uruguay/Brazil (1940s). Uses TWO STANDARD 52-CARD DECKS + 4 JOKERS (108 cards). 2-6 players (best in 4-player partnerships) form MELDS (runs + sets of 3+ cards) + attempt to complete a CANASTA/BURACO (a 7-card meld). Distinct feature: DEAD HAND (morto) picked up when a partner goes out. Very popular in Brazil, Argentina, Italy, Portugal. Family of canasta.",
+  longDescription:
+    "BURACO (Portuguese for 'hole') is a PARTNERSHIP RUMMY-FAMILY CARD GAME originating in the RÍO DE LA PLATA REGION (Uruguay + Argentina) in the 1940s + heavily developed in BRAZIL where it remains a national favorite. In Italy it is called BURRACO + is enormously popular; in Israel + Turkey called BIRIBA. Related to CANASTA (Uruguay 1939) + shares the CANASTA/BURACO 7-card meld concept. GAMEPLAY: 2-6 players; classic form is 4-player partnerships. Uses 2 STANDARD 52-CARD DECKS + 4 JOKERS = 108 cards. Deal 11 cards each; 2 face-down MORTOS (dead hands) of 11 cards set aside. Players take turns: (1) draw from stock or discard pile (whole pile in some variants), (2) meld runs or sets, (3) discard. A meld of 7+ cards is a CANASTA/BURACO — LIMPO (clean) if without wild cards, SUJO (dirty) if with wilds. Once a player empties their hand, they PICK UP THE MORTO + continue. Round ends when a player goes out AFTER completing at least 1 canasta AND after picking up + emptying the morto. SCORING: melded cards score positive; unmelded cards in hand negative; canasta bonuses (limpo 200, sujo 100); going out bonus 100. First team to reach agreed target (usually 3000) wins.",
+  category: "card-games",
+  subCategory: "rummy family / partnership / canasta variant",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "major",
+  countryOfOrigin: "UY",
+  regionOfOrigin: "Río de la Plata (Uruguay/Argentina); popularized in Brazil",
+  estimatedOrigin: "1940s (Uruguay); rapid spread to Brazil, Argentina, Italy, Israel",
+  players: { min: 2, max: 6, note: "Best in 4-player partnerships (2 vs 2); 2p and 3p variants exist." },
+  equipment: [
+    { name: "Two standard 52-card decks + 4 jokers (108 cards)", description: "Standard buraco deck" },
+    { name: "Score pad", description: "Partnership running score" },
+  ],
+  duration: { approximateMinutes: 60, structure: "Multi-round; first to 3000 points wins." },
+  objective: "Score points via melds + canastas; be first partnership to reach the target.",
+  basicRules: [
+    { title: "Deal 11 cards + set aside 2 mortos", body: "Signature dead-hand mechanic." },
+    { title: "Draw + meld + discard each turn", body: "Standard rummy loop." },
+    { title: "7-card meld = canasta/buraco (limpo or sujo)", body: "Core scoring unit." },
+    { title: "Empty hand → pick up morto + continue", body: "Prevents premature endings." },
+    { title: "Go out only after completing 1 canasta + morto phase", body: "Anti-quick-out rule." },
+  ],
+  scoring: {
+    summary: "Melded cards positive; hand cards negative; canasta + go-out bonuses; first to 3000 wins.",
+    breakdown: [
+      { action: "Limpo (clean 7-card canasta)", points: "200 bonus" },
+      { action: "Sujo (dirty 7-card canasta with wilds)", points: "100 bonus" },
+      { action: "Go-out bonus", points: "100" },
+      { action: "Unmelded cards in hand", points: "Negative" },
+    ],
+    winCondition: "First partnership to agreed target (usually 3000) after a complete round.",
+  },
+  countriesPlayed: ["BR", "UY", "AR", "IT", "PT", "ES", "IL", "TR", "US"],
+  variants: ["burraco-italiano", "biriba-israeli-turkish", "buraco-aberto-open-discard", "buraco-fechado-closed-discard"],
+  relatedSports: ["canasta", "gin-rummy", "rummy", "spades", "five-hundred"],
+  skills: ["meld optimization", "partnership signaling", "discard-pile risk", "canasta completion pacing"],
+  terminology: [
+    { term: "Buraco", meaning: "'Hole' — Portuguese; also = a canasta of 7 cards." },
+    { term: "Morto", meaning: "Dead hand of 11 cards taken when partner empties hand." },
+    { term: "Limpo", meaning: "Clean canasta (no wild cards)." },
+    { term: "Sujo", meaning: "Dirty canasta (contains wild cards)." },
+  ],
+  faq: [
+    { question: "Buraco vs Canasta — what's the difference?", answer: "Both are partnership rummy games with 108 cards + canastas. BURACO adds the MORTO (dead hand you pick up after emptying yours) + slightly different meld/discard rules. Canasta is the older 1939 Uruguayan ancestor; Buraco is its most-played modern descendant, especially in Brazil + Italy." },
+  ],
+  wikipediaTitle: "Buraco (card game)",
+  sources: [{ label: "Wikipedia — Buraco", url: "https://en.wikipedia.org/wiki/Buraco", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

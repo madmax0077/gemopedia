@@ -1,0 +1,63 @@
+import type { Sport } from "@/lib/types";
+
+export const astrojax: Sport = {
+  id: "astrojax",
+  slug: "astrojax",
+  name: "Astrojax",
+  officialName: "Astrojax",
+  aliases: ["Astro Jax", "Orbital Toy"],
+  shortDescription:
+    "SKILL TOY (1987) invented by LARRY SHAW consisting of THREE BALLS on a STRING — two balls fixed at the ends, one ball sliding freely in the middle. Player manipulates the toy in 3D SPACE, creating ORBITAL PATTERNS around themselves via elegant physical motions. Distinctive from yo-yos or poi — the free-sliding middle ball creates ORBITAL DYNAMICS. Practiced worldwide by skill-toy enthusiasts. Astrojax featured on NASA Discovery Space Shuttle mission (1994) as a study in physics education.",
+  category: "skill-toys",
+  subCategory: "orbital string toy / 3-ball manipulation / physics-based",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Larry Shaw, San Francisco / Exploratorium)",
+  estimatedOrigin: "1987 Larry Shaw invention; NASA space mission demo 1994; skill-toy community 1990s-2000s",
+  players: { min: 1, max: 1, note: "Solo practice." },
+  equipment: [
+    { name: "Astrojax set (3 balls + string, ~$8-15)", description: "Standard equipment" },
+    { name: "Astrojax Pop (light-up variant, ~$15)", description: "Modern LED variant" },
+    { name: "Astrojax MX (metal-weighted variant)", description: "For advanced players" },
+  ],
+  duration: { approximateMinutes: 30, structure: "Personal practice; ~30-60 min sessions." },
+  objective: "Master orbital patterns + tricks; personal skill development.",
+  basicRules: [
+    { title: "Grip 2 outer balls, spin around body to create orbital motion", body: "Signature basic swing." },
+    { title: "Middle ball orbits + creates centrifugal patterns", body: "Physics-based movement." },
+    { title: "Trick names: Windmills, Butterflies, Turntables, Vertical Orbits, Wraps", body: "Named patterns." },
+    { title: "No formal ranking or competition — freestyle skill development", body: "Individual practice focus." },
+  ],
+  scoring: {
+    summary: "No formal scoring; personal skill mastery + freestyle exhibition.",
+    breakdown: [
+      { action: "Learn basic patterns", points: "Personal milestone" },
+      { action: "Combine 5+ tricks in flow", points: "Personal freestyle achievement" },
+      { action: "Custom trick invention", points: "Community recognition (rare in this niche community)" },
+    ],
+    winCondition: "Personal mastery is the goal; no formal competitions.",
+  },
+  countriesPlayed: ["US", "GB", "DE", "AU", "JP", "CA", "IT", "FR"],
+  variants: ["astrojax-standard-3-ball", "astrojax-pop-led-light-up", "astrojax-mx-metal-weighted", "astrojax-vmax-larger"],
+  relatedSports: ["yoyo", "juggling", "poi", "diabolo", "kendama"],
+  skills: ["3D spatial manipulation", "orbital physics intuition", "rhythmic motion", "hand-eye coordination"],
+  terminology: [
+    { term: "Astrojax", meaning: "'Astro' (space) + 'Jax' (jacks)." },
+    { term: "Wrap", meaning: "Trick where string wraps around wrists/fingers." },
+    { term: "Windmill", meaning: "Circular arm-swing pattern." },
+    { term: "Butterfly", meaning: "Symmetric hand-crossing pattern." },
+    { term: "Orbit", meaning: "Circular movement of middle ball around body/arms." },
+  ],
+  faq: [
+    { question: "Astrojax vs yo-yo?", answer: "Fundamentally different despite both being skill toys with balls + strings. YO-YO: 1 ball on a string, spun on axis + returned. ASTROJAX: 3 balls on 1 string, middle ball slides freely creating ORBITAL PATTERNS in 3D space. Astrojax requires FULL-BODY MOTION + spatial awareness; yo-yo is primarily hand-focused. Astrojax is a much smaller community (~10,000 enthusiasts worldwide) vs yo-yo's millions." },
+  ],
+  wikipediaTitle: "Astrojax",
+  sources: [{ label: "Wikipedia — Astrojax", url: "https://en.wikipedia.org/wiki/Astrojax", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

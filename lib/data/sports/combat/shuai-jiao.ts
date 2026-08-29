@@ -1,0 +1,83 @@
+import type { Sport } from "@/lib/types";
+
+export const shuaiJiao: Sport = {
+  id: "shuai-jiao",
+  slug: "shuai-jiao",
+  name: "Shuai Jiao",
+  officialName: "Shuai Jiao (摔跤, 'Chinese Wrestling')",
+  aliases: ["Chinese Wrestling", "Shuaijiao", "Guo Jiao", "Bei Jing Shuai Jiao"],
+  shortDescription:
+    "TRADITIONAL CHINESE WRESTLING — one of the OLDEST martial arts of China (documented in Zhou Dynasty, 1046 BCE). Practitioners wear a heavy jacket (DA LIAN) + attempt to throw opponent to the ground. Throwing techniques emphasize speed, leverage, + torque. Standardized in modern era; competitions use point system. INNER MONGOLIAN + MANCHU + HAN traditions all contribute. Practiced widely across China + Taiwan; International Shuai Jiao Federation coordinates world championships.",
+  category: "combat-sports",
+  subCategory: "Chinese traditional wrestling / throwing / grappling",
+  sportType: "individual",
+  indoorOutdoor: "both",
+  isProfessional: false,
+  season: "year-round",
+  era: "ancient",
+  popularity: "regional",
+  countryOfOrigin: "CN",
+  regionOfOrigin: "China (Zhou Dynasty documentation); modern styles from Manchu + Beijing + Mongolian traditions",
+  estimatedOrigin: "1046 BCE Zhou Dynasty documented; Beijing style formalized Qing Dynasty (17-19th c)",
+  players: { min: 1, max: 2, note: "1v1 individual matches; team + weight class competitions." },
+  equipment: [
+    { name: "Da Lian (heavy sleeveless jacket)", description: "Signature Shuai Jiao attire; used for grips" },
+    { name: "Traditional short trousers", description: "Loose lower attire" },
+    { name: "Kung fu shoes (soft-soled)", description: "For stability + throw execution" },
+    { name: "Wrestling mat or padded floor", description: "Modern competition surface" },
+  ],
+  duration: { approximateMinutes: 3, structure: "Modern competitive matches 2-3 rounds × 2-3 min each." },
+  objective: "Throw opponent to the ground; grounded body wins the point.",
+  basicRules: [
+    { title: "Wear Da Lian jacket; grip via collar, sleeves, belt", body: "Signature jacket grip." },
+    { title: "Throws win the point; joint locks + strikes prohibited", body: "Pure throwing sport." },
+    { title: "Any body part except foot touching ground = point to opponent", body: "Signature scoring." },
+    { title: "Modern weight classes + timed rounds", body: "Standardized competition." },
+    { title: "Traditional styles emphasize speed + torque; Beijing style focuses on standing throws", body: "Style variations." },
+  ],
+  scoring: {
+    summary: "Points awarded for successful throws; opponent's body-to-ground = point.",
+    breakdown: [
+      { action: "Successful throw (opponent grounded)", points: "1-3 points depending on cleanness" },
+      { action: "Total control throw (opponent lands on back)", points: "3 points" },
+      { action: "Own knees touching ground while throwing", points: "0 points (invalid)" },
+    ],
+    winCondition: "Points at end of rounds; best-of series in tournaments.",
+  },
+  countriesPlayed: ["CN", "TW", "MN", "KR", "JP", "US", "GB", "IT", "RU"],
+  famousAthletes: [
+    "Chang Dongsheng (Manchu-style master, 20th c)",
+    "Yuan Zumou (Chinese wrestling champion)",
+    "Master Antonio Langiano (US Shuai Jiao pioneer)",
+  ],
+  variants: [
+    "beijing-shuai-jiao-standing-throws",
+    "mongolian-bokh-close-cousin",
+    "manchu-buku-northern-tradition",
+    "modern-competitive-shuai-jiao",
+    "traditional-shan-po-jiao-village-wrestling",
+  ],
+  relatedSports: ["mongolian-wrestling", "sumo", "judo", "wrestling-freestyle", "kung-fu"],
+  skills: ["jacket grip", "hip + shoulder throws", "sweeps", "reactive throws", "core stability"],
+  terminology: [
+    { term: "Shuai Jiao", meaning: "'To throw + wrestle' — the art of throwing." },
+    { term: "Da Lian", meaning: "Traditional heavy jacket used for grips." },
+    { term: "Bokh", meaning: "Mongolian wrestling — sister art." },
+    { term: "Bei Jing Shuai Jiao", meaning: "Beijing style — the most codified modern variant." },
+  ],
+  governingBodies: [
+    { name: "International Shuai-Chiao Federation", founded: 1993, headquarters: "USA / global" },
+    { name: "Chinese Wushu Association", founded: 1958, headquarters: "Beijing" },
+  ],
+  majorCompetitions: [
+    { name: "World Shuai Jiao Championships", frequency: "biennial", founded: 1997, region: "Global (rotating)" },
+    { name: "China National Shuai Jiao Championships", frequency: "annual", founded: 1957, region: "China" },
+  ],
+  faq: [
+    { question: "Shuai Jiao vs Judo?", answer: "Both are JACKET-BASED THROWING MARTIAL ARTS. SHUAI JIAO (Chinese, ancient): standing throws only, no ground grappling, throws for immediate victory or point; jacket has different construction (heavier, sleeveless in some styles). JUDO (Japanese, 1882 Kano Jigoro): standing throws PLUS extensive ground grappling (newaza), holds, chokes, arm bars; jacket similar structure. Both share ancestry in East Asian wrestling traditions. Judo became Olympic (1964); Shuai Jiao remains largely regional/traditional." },
+  ],
+  wikipediaTitle: "Shuai jiao",
+  sources: [{ label: "Wikipedia — Shuai jiao", url: "https://en.wikipedia.org/wiki/Shuai_jiao", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

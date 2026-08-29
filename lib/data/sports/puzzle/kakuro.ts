@@ -1,0 +1,66 @@
+import type { Sport } from "@/lib/types";
+
+export const kakuro: Sport = {
+  id: "kakuro",
+  slug: "kakuro",
+  name: "Kakuro",
+  officialName: "Kakuro (加算クロス, kasan kurosu)",
+  aliases: ["Cross Sums", "Kakro"],
+  shortDescription:
+    "JAPANESE LOGIC + ARITHMETIC PUZZLE — a numeric variant of the crossword. Grid contains 'clue' cells with sums; player fills white cells with digits 1-9 (no repeats in same run) so that each RUN of consecutive cells sums to its clue value. Signature: DIGITS 1-9 UNIQUE PER RUN + must sum exactly. Introduced by DELL MAGAZINES as CROSS SUMS (1966), popularized in Japan as KAKURO (short for 'kasan kurosu' = addition cross); Japanese renaming in 1980s.",
+  category: "puzzle-games",
+  subCategory: "logic-arithmetic / paper-and-pencil / grid-filling",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Dell Magazines as Cross Sums 1966); Japan named + popularized (1980s Nikoli)",
+  estimatedOrigin: "1966 Cross Sums in Dell Puzzle Magazines; 1980s renamed Kakuro by Nikoli in Japan; global spread 2000s",
+  players: { min: 1, max: 1, note: "Single-solver puzzle." },
+  equipment: [
+    { name: "Kakuro grid + pen or pencil", description: "Paper puzzle; also solved on apps + online" },
+  ],
+  duration: { approximateMinutes: 20, structure: "Easy 5-15 min; hard 30-60 min." },
+  objective: "Fill all white cells with digits 1-9 such that each run sums to its clue AND no digit repeats within a run.",
+  basicRules: [
+    { title: "Grid contains BLACK CLUE CELLS (with sums) + WHITE PLAY CELLS", body: "Signature grid layout." },
+    { title: "Each CLUE indicates the sum of the RUN in that direction (across or down)", body: "Signature clue sum." },
+    { title: "Fill white cells with digits 1-9", body: "Digit constraint." },
+    { title: "NO DIGIT REPEATS in any single run (unlike Sudoku's row/column)", body: "Signature run-uniqueness." },
+    { title: "All runs' sums must exactly equal clue values", body: "Standard sum constraint." },
+    { title: "UNIQUE SOLUTION for well-constructed puzzle", body: "Puzzle quality." },
+  ],
+  scoring: {
+    summary: "Correctly filled puzzle = solved.",
+    breakdown: [
+      { action: "Correctly filled grid", points: "Puzzle solved" },
+      { action: "Invalid digit repeat or wrong sum", points: "Puzzle unsolved (invalid)" },
+    ],
+    winCondition: "Complete valid grid.",
+  },
+  countriesPlayed: ["JP", "US", "GB", "DE", "FR", "IT", "ES", "AU", "IN", "BR"],
+  famousAthletes: [
+    "Various Japanese Kakuro competition champions",
+    "Nikoli-published Kakuro puzzle constructors",
+  ],
+  variants: ["kakuro-standard-9-digit", "kakuro-mini-6x6", "kakuro-jumbo-15x15+", "kaidoku-cross-sums-plus-crypto", "cross-sums-original-us-name"],
+  relatedSports: ["sudoku", "crossword", "kenken", "nonogram", "slitherlink"],
+  skills: ["arithmetic combinations (which digit-sets sum to a value)", "unique-digit tracking", "logical deduction"],
+  terminology: [
+    { term: "Kakuro", meaning: "'Kasan kurosu' = 'addition cross' — Japanese name." },
+    { term: "Run", meaning: "Consecutive sequence of white cells in a row or column." },
+    { term: "Clue cell", meaning: "Black cell with number(s) indicating sum of adjacent run(s)." },
+    { term: "Cross Sums", meaning: "Original American name (Dell Magazines 1966)." },
+    { term: "Nikoli", meaning: "Japanese puzzle publisher; renamed + popularized Kakuro + Sudoku." },
+  ],
+  faq: [
+    { question: "Kakuro vs Sudoku — how do they differ?", answer: "SUDOKU: 9x9 grid, place 1-9 so each row/column/3x3 box has all 9 digits. No arithmetic. KAKURO: variable grid with clue sums + runs; place 1-9 so each RUN sums to clue value + no digit repeats. Kakuro requires ARITHMETIC (which digit sets sum to X); Sudoku is pure logic. Both use 1-9 uniqueness constraints in different scopes. Both from Japan-via-Nikoli. Sudoku is simpler + more widespread; Kakuro is deeper for puzzle enthusiasts." },
+  ],
+  wikipediaTitle: "Kakuro",
+  sources: [{ label: "Wikipedia — Kakuro", url: "https://en.wikipedia.org/wiki/Kakuro", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

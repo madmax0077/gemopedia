@@ -1,0 +1,66 @@
+import type { Sport } from "@/lib/types";
+
+export const doppelkopf: Sport = {
+  id: "doppelkopf",
+  slug: "doppelkopf",
+  name: "Doppelkopf",
+  officialName: "Doppelkopf",
+  aliases: ["Doko", "Double Head"],
+  shortDescription:
+    "GERMAN TRICK-TAKING CARD GAME (early 20th century, Northern Germany). 4 players in shifting 2v2 partnerships use a 48-CARD DECK (two copies each of 9, 10, J, Q, K, A in 4 suits). Partnership determined by holding the QUEEN OF CLUBS (DAMEN VON KREUZ). Complex trump hierarchy + special ANNOUNCEMENTS + BOCK ROUND rules. Extremely popular in Germany (2nd only to Skat); official Deutscher Doppelkopf-Verband (DDV) tournaments held nationally. 30-60 min per session.",
+  category: "card-games",
+  subCategory: "trick-taking / partnership / German traditional",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "regional",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Northern Germany",
+  estimatedOrigin: "Early 20th century Northern Germany; rules codified by DDV 1980s",
+  players: { min: 4, max: 4, note: "Strictly 4 players; partnerships determined per hand by Queens of Clubs." },
+  equipment: [
+    { name: "Doppelkopf 48-card deck (2 copies each of 9, 10, J, Q, K, A in 4 suits)", description: "Standard Doko deck" },
+    { name: "Score pad", description: "Session tracking" },
+  ],
+  duration: { approximateMinutes: 45, structure: "10-20 hands per session; DDV tournaments longer." },
+  objective: "Win tricks to accumulate 121+ points (out of 240) for your partnership.",
+  basicRules: [
+    { title: "Deal 12 cards each; Queens of Clubs holders form 1 partnership", body: "Signature partnership rule." },
+    { title: "Complex trump hierarchy: Q♣ > Q♠ > Q♥ > Q♦ > J♣ > J♠ > J♥ > J♦ > diamond A > 10 > K > 9", body: "Trumps rank differently than suits." },
+    { title: "Announcements (Ansagen): declare Re, Contra, No 90, No 60, etc.", body: "Advanced bidding-like layer." },
+    { title: "Solo variants: single player can play alone against 3", body: "Solo bids." },
+    { title: "Bock rounds (double stakes) triggered by specific outcomes", body: "Session dynamics." },
+  ],
+  scoring: {
+    summary: "121+ of 240 card points wins the hand; announcements multiply stakes; session-long scoring.",
+    breakdown: [
+      { action: "Winning the hand (121+ points)", points: "1 game point + announcement bonuses" },
+      { action: "No 90 announcement (opponents held under 90)", points: "Additional bonus" },
+      { action: "Re/Contra + successful announcement", points: "Point multiplier" },
+      { action: "Winning Doppelkopf trick (40+ points in one trick)", points: "Bonus" },
+    ],
+    winCondition: "Session-based; leaderboard from cumulative game points.",
+  },
+  countriesPlayed: ["DE", "AT", "CH"],
+  variants: ["dko-standard-ddv-rules", "doppelkopf-with-9s-schafskopf-blend", "regional-variants-hesse-bavaria"],
+  relatedSports: ["skat", "sheepshead", "schafkopf", "pinochle"],
+  skills: ["trump-hierarchy memorization", "partnership signaling via play order", "announcement risk assessment", "point-count estimation"],
+  terminology: [
+    { term: "Damen von Kreuz", meaning: "Queens of Clubs — determine partnerships each hand." },
+    { term: "Re / Contra", meaning: "Announcements — Re for winning side, Contra for opposition." },
+    { term: "Bock", meaning: "Double-stakes round triggered by tie or certain outcomes." },
+    { term: "Solo", meaning: "1 player plays alone against 3 with special trump rules." },
+  ],
+  governingBodies: [
+    { name: "Deutscher Doppelkopf-Verband (DDV)", founded: 1982, headquarters: "Germany" },
+  ],
+  faq: [
+    { question: "Doppelkopf vs Skat — which German card game is more popular?", answer: "SKAT is Germany's most-played (3 players; deeper strategy; more competitive scene). DOPPELKOPF is #2 (4 players; more social; partnership-based). Both are cornerstone German card games. Doppelkopf's partnership rule (Q♣ holders together) creates DELIGHTFUL UNCERTAINTY every hand — you don't know who your partner is until the Queens play." },
+  ],
+  wikipediaTitle: "Doppelkopf",
+  sources: [{ label: "Wikipedia — Doppelkopf", url: "https://en.wikipedia.org/wiki/Doppelkopf", publisher: "Wikipedia" }, { label: "Deutscher Doppelkopf-Verband", url: "https://www.doko-verband.de/", publisher: "DDV" }],
+  lastVerified: "2026-08-28",
+  confidence: "verified",
+};

@@ -1,0 +1,254 @@
+{
+  "age-of-sigmar": {
+    "title": null,
+    "ok": false
+  },
+  "angry-birds": {
+    "title": "Angry Birds (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/2/2d/Angry_Birds_promo_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Angry Birds (video game)",
+    "width": 316,
+    "height": 316
+  },
+  "betrayal-at-house-on-the-hill": {
+    "title": null,
+    "ok": false
+  },
+  "bolt-action": {
+    "title": "Bolt Action",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gev%C3%A4r_modell_96_Jvm21379_%283%29.jpg/3840px-Gev%C3%A4r_modell_96_Jvm21379_%283%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "pageTitle": "Bolt action",
+    "width": 6000,
+    "height": 3046
+  },
+  "bulls-and-cows": {
+    "title": "Mastermind (board game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mastermind.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Mastermind (board game)",
+    "width": 600,
+    "height": 637
+  },
+  "call-of-duty": {
+    "title": "Call of Duty (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/7/7c/Call_Of_Duty_%282003%29%2CCover%2CUpdated.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Call of Duty (video game)",
+    "width": 264,
+    "height": 377
+  },
+  "civilization": {
+    "title": "Sid Meier's Civilization",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/e/ec/Civilizationboxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Civilization (video game)",
+    "width": 262,
+    "height": 294
+  },
+  "counter-strike": {
+    "title": "Counter-Strike 2",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/f/f2/CS2_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Counter-Strike 2",
+    "width": 289,
+    "height": 346
+  },
+  "dance-dance-revolution": {
+    "title": "Dance Dance Revolution (1998 video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/b/b4/DDR_1stMIX_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Dance Dance Revolution (1998 video game)",
+    "width": 250,
+    "height": 325
+  },
+  "donkey-kong": {
+    "title": "Donkey Kong (character)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/d/d4/Donkey_Kong_character.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Donkey Kong (character)",
+    "width": 316,
+    "height": 316
+  },
+  "dragon-boat-racing": {
+    "title": null,
+    "ok": false
+  },
+  "fall-guys": {
+    "title": null,
+    "ok": false
+  },
+  "final-fantasy": {
+    "title": "Final Fantasy (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/d/d8/FF1_USA_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Final Fantasy (video game)",
+    "width": 227,
+    "height": 324
+  },
+  "fingerboarding": {
+    "title": "Skateboarding",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/BackSmithGrind.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Skateboarding",
+    "width": 512,
+    "height": 768
+  },
+  "five-card-draw": {
+    "title": "Poker",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Poker-Texas-Holdem-multiplayer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Poker",
+    "width": 3000,
+    "height": 1902
+  },
+  "fortnite": {
+    "title": null,
+    "ok": false
+  },
+  "guitar-hero": {
+    "title": "Guitar Hero (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/2/2d/Guitarhero-cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Guitar Hero (video game)",
+    "width": 266,
+    "height": 375
+  },
+  "halo": {
+    "title": "Halo: Combat Evolved",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/8/80/Halo_-_Combat_Evolved_%28XBox_version_-_box_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Halo: Combat Evolved",
+    "width": 272,
+    "height": 366
+  },
+  "heads-up": {
+    "title": null,
+    "ok": false
+  },
+  "hot-potato": {
+    "title": null,
+    "ok": false
+  },
+  "liars-dice": {
+    "title": "Perudo",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Perudo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Dudo",
+    "width": 597,
+    "height": 393
+  },
+  "madden-nfl": {
+    "title": "Madden NFL 24",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/b/b0/Madden_NFL_24_Cover.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Madden NFL 24",
+    "width": 201,
+    "height": 251
+  },
+  "metroid": {
+    "title": "Metroid (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/5/5d/Metroid_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Metroid (video game)",
+    "width": 263,
+    "height": 379
+  },
+  "minecraft": {
+    "title": null,
+    "ok": false
+  },
+  "mouse-trap": {
+    "title": null,
+    "ok": false
+  },
+  "nascar": {
+    "title": "NASCAR Cup Series",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/60px-NASCAR_Cup_Series_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "pageTitle": "NASCAR Cup Series",
+    "width": 54,
+    "height": 27
+  },
+  "nba-2k": {
+    "title": "NBA 2K25",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/2/2f/NBA_2K25_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "NBA 2K25",
+    "width": 288,
+    "height": 346
+  },
+  "never-have-i-ever": {
+    "title": null,
+    "ok": false
+  },
+  "operation": {
+    "title": null,
+    "ok": false
+  },
+  "resident-evil": {
+    "title": "Resident Evil (1996 video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/a/a6/Resident_Evil_1_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Resident Evil (1996 video game)",
+    "width": 257,
+    "height": 388
+  },
+  "roblox": {
+    "title": null,
+    "ok": false
+  },
+  "seven-card-stud": {
+    "title": null,
+    "ok": false
+  },
+  "spirit-island": {
+    "title": "Spirit Island (board game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Game_in_progress%2C_Spirit_Island.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Spirit Island (board game)",
+    "width": 1200,
+    "height": 562
+  },
+  "spyfall": {
+    "title": null,
+    "ok": false
+  },
+  "super-smash-bros": {
+    "title": "Super Smash Bros. (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/4/42/Supersmashbox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Super Smash Bros. (video game)",
+    "width": 380,
+    "height": 262
+  },
+  "superbike-racing": {
+    "title": "Superbike racing",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/2006Ducati999R-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Superbike racing",
+    "width": 3264,
+    "height": 2448
+  },
+  "tekken": {
+    "title": "Tekken (video game)",
+    "ok": true,
+    "src": "https://upload.wikimedia.org/wikipedia/en/0/0e/Tekken_1_game_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageTitle": "Tekken (video game)",
+    "width": 257,
+    "height": 389
+  },
+  "truth-or-dare": {
+    "title": null,
+    "ok": false
+  },
+  "two-truths-and-a-lie": {
+    "title": null,
+    "ok": false
+  },
+  "wordle": {
+    "title": null,
+    "ok": false
+  }
+}

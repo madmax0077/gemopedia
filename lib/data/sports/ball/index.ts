@@ -2,7 +2,7 @@
 
 import { americanFootball } from "./american-football";
 import { associationFootball } from "./association-football";
-import { australianFootball } from "./australian-rules-football";
+import { australianFootball as australianRulesFootball } from "./australian-rules-football";
 import { ballHockey } from "./ball-hockey";
 import { bandy } from "./bandy";
 import { baseball } from "./baseball";
@@ -42,9 +42,11 @@ import { rugbyUnion } from "./rugby-union";
 import { sittingVolleyball } from "./sitting-volleyball";
 import { softball } from "./softball";
 import { spikeball } from "./spikeball";
+import { spikeballDoublesTournament } from "./spikeball-doubles-tournament";
 import { stoolball } from "./stoolball";
 import { tagRugby } from "./tag-rugby";
 import { tchoukball } from "./tchoukball";
+import { tchoukballTournament } from "./tchoukball-tournament";
 import { teqball } from "./teqball";
 import { torball } from "./torball";
 import { touchFootball } from "./touch-football";
@@ -56,13 +58,13 @@ import { wheelchairBasketball } from "./wheelchair-basketball";
 import { wheelchairRugby } from "./wheelchair-rugby";
 
 /**
- * Ball sports.
- * Sourced from `lib/data/sports/ball/*.ts`.
+ * ball entries
+ * Auto-generated from lib/data/sports/ball/*.ts
  */
 export const BALL_SPORTS: Sport[] = [
   americanFootball,
   associationFootball,
-  australianFootball,
+  australianRulesFootball,
   ballHockey,
   bandy,
   baseball,
@@ -102,9 +104,11 @@ export const BALL_SPORTS: Sport[] = [
   sittingVolleyball,
   softball,
   spikeball,
+  spikeballDoublesTournament,
   stoolball,
   tagRugby,
   tchoukball,
+  tchoukballTournament,
   teqball,
   torball,
   touchFootball,
@@ -115,4 +119,5 @@ export const BALL_SPORTS: Sport[] = [
   wheelchairBasketball,
   wheelchairRugby,
 ];
+
 

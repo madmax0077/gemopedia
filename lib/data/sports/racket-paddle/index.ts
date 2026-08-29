@@ -11,6 +11,7 @@ import { paddleTennis } from "./paddle-tennis";
 import { padel } from "./padel";
 import { pala } from "./pala";
 import { pickleball } from "./pickleball";
+import { pickleballDoublesTournament } from "./pickleball-doubles-tournament";
 import { platformTennis } from "./platform-tennis";
 import { racketlon } from "./racketlon";
 import { racquetball } from "./racquetball";
@@ -38,6 +39,7 @@ export const RACKET_PADDLE_SPORTS: Sport[] = [
   padel,
   pala,
   pickleball,
+  pickleballDoublesTournament,
   platformTennis,
   racketlon,
   racquetball,

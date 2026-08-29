@@ -43,12 +43,13 @@ import { twister } from "./twister";
 import { twoTruthsAndALie } from "./two-truths-and-a-lie";
 import { unstableUnicorns } from "./unstable-unicorns";
 import { wavelength } from "./wavelength";
+import { wavelengthParty } from "./wavelength-party";
 import { werewolf } from "./werewolf";
 import { witsAndWagers } from "./wits-and-wagers";
 
 /**
- * Party games — social deduction, drawing, guessing, and mixer games.
- * Sourced from `lib/data/sports/party/*.ts`.
+ * party entries
+ * Auto-generated from lib/data/sports/party/*.ts
  */
 export const PARTY_GAMES: Sport[] = [
   balderdash,
@@ -94,7 +95,9 @@ export const PARTY_GAMES: Sport[] = [
   twoTruthsAndALie,
   unstableUnicorns,
   wavelength,
+  wavelengthParty,
   werewolf,
   witsAndWagers,
 ];
+
 

@@ -19,6 +19,7 @@ import { freerunning } from "./freerunning";
 import { gravelCycling } from "./gravel-cycling";
 import { handcycling } from "./handcycling";
 import { heliSkiing } from "./heli-skiing";
+import { highliningCompetitive } from "./highlining-competitive";
 import { hydrofoiling } from "./hydrofoiling";
 import { kiteBuggy } from "./kite-buggy";
 import { landYachting } from "./land-yachting";
@@ -30,6 +31,7 @@ import { obstacleCourseRacing } from "./obstacle-course-racing";
 import { orienteering } from "./orienteering";
 import { packrafting } from "./packrafting";
 import { parkour } from "./parkour";
+import { parkourFreerunningChampionship } from "./parkour-freerunning-championship";
 import { redBullRampage } from "./red-bull-rampage";
 import { roadCycling } from "./road-cycling";
 import { rockClimbing } from "./rock-climbing";
@@ -46,8 +48,8 @@ import { viaFerrata } from "./via-ferrata";
 import { wingsuitFlying } from "./wingsuit-flying";
 
 /**
- * Adventure sport entries
- * Sourced from `lib/data/sports/adventure/*.ts`.
+ * adventure entries
+ * Auto-generated from lib/data/sports/adventure/*.ts
  */
 export const ADVENTURE_SPORTS: Sport[] = [
   adventureRacing,
@@ -69,6 +71,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   gravelCycling,
   handcycling,
   heliSkiing,
+  highliningCompetitive,
   hydrofoiling,
   kiteBuggy,
   landYachting,
@@ -80,6 +83,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   orienteering,
   packrafting,
   parkour,
+  parkourFreerunningChampionship,
   redBullRampage,
   roadCycling,
   rockClimbing,
@@ -95,4 +99,5 @@ export const ADVENTURE_SPORTS: Sport[] = [
   viaFerrata,
   wingsuitFlying,
 ];
+
 

@@ -10,6 +10,7 @@ import { doubleDutch } from "./double-dutch";
 import { duckDuckGoose } from "./duck-duck-goose";
 import { fourSquare } from "./four-square";
 import { freezeTag } from "./freeze-tag";
+import { handball4SquareWall } from "./handball-4-square-wall";
 import { hideAndSeek } from "./hide-and-seek";
 import { hopscotch } from "./hopscotch";
 import { jacks } from "./jacks";
@@ -31,8 +32,8 @@ import { tag } from "./tag";
 import { tetherball } from "./tetherball";
 
 /**
- * Playground games category.
- * Sourced from `lib/data/sports/playground/*.ts`.
+ * playground entries
+ * Auto-generated from lib/data/sports/playground/*.ts
  */
 export const PLAYGROUND_GAMES: Sport[] = [
   blindMansBuff,
@@ -45,6 +46,7 @@ export const PLAYGROUND_GAMES: Sport[] = [
   duckDuckGoose,
   fourSquare,
   freezeTag,
+  handball4SquareWall,
   hideAndSeek,
   hopscotch,
   jacks,
@@ -65,3 +67,5 @@ export const PLAYGROUND_GAMES: Sport[] = [
   tag,
   tetherball,
 ];
+
+

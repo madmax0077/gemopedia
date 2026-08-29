@@ -21,6 +21,7 @@ import { oldSchoolEssentials } from "./old-school-essentials";
 import { paranoia } from "./paranoia";
 import { pathfinder } from "./pathfinder";
 import { pathfinder2e } from "./pathfinder-2e";
+import { pathfinderSociety } from "./pathfinder-society";
 import { runequest } from "./runequest";
 import { savageWorlds } from "./savage-worlds";
 import { shadowrun } from "./shadowrun";
@@ -31,8 +32,8 @@ import { vampireTheMasquerade } from "./vampire-the-masquerade";
 import { warhammerFantasyRoleplay } from "./warhammer-fantasy-roleplay";
 
 /**
- * Tabletop RPG games category.
- * Sourced from `lib/data/sports/tabletop-rpg/*.ts`.
+ * tabletop-rpg entries
+ * Auto-generated from lib/data/sports/tabletop-rpg/*.ts
  */
 export const TABLETOP_RPG_GAMES: Sport[] = [
   alienRpg,
@@ -56,6 +57,7 @@ export const TABLETOP_RPG_GAMES: Sport[] = [
   paranoia,
   pathfinder,
   pathfinder2e,
+  pathfinderSociety,
   runequest,
   savageWorlds,
   shadowrun,
@@ -65,4 +67,5 @@ export const TABLETOP_RPG_GAMES: Sport[] = [
   vampireTheMasquerade,
   warhammerFantasyRoleplay,
 ];
+
 

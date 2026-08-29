@@ -29,6 +29,7 @@ import { skeleton } from "./skeleton";
 import { skiCross } from "./ski-cross";
 import { skiJumping } from "./ski-jumping";
 import { skiMountaineering } from "./ski-mountaineering";
+import { skiMountaineeringVertical } from "./ski-mountaineering-vertical";
 import { sledHockey } from "./sled-hockey";
 import { slopestyleSkiing } from "./slopestyle-skiing";
 import { slopestyleSnowboarding } from "./slopestyle-snowboarding";
@@ -76,6 +77,7 @@ export const WINTER_SPORTS: Sport[] = [
   skiCross,
   skiJumping,
   skiMountaineering,
+  skiMountaineeringVertical,
   sledHockey,
   slopestyleSkiing,
   slopestyleSnowboarding,

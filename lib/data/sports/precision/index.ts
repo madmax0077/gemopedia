@@ -31,6 +31,7 @@ import { paletBreton } from "./palet-breton";
 import { petanque } from "./petanque";
 import { pool } from "./pool";
 import { poolBilliards } from "./pool-billiards";
+import { quickDrawPistol } from "./quick-draw-pistol";
 import { raffa } from "./raffa";
 import { russianPyramid } from "./russian-pyramid";
 import { shootingSport } from "./shooting-sport";
@@ -83,6 +84,7 @@ export const PRECISION_SPORTS: Sport[] = [
   petanque,
   pool,
   poolBilliards,
+  quickDrawPistol,
   raffa,
   russianPyramid,
   shootingSport,

@@ -6,6 +6,7 @@ import { acquire } from "./acquire";
 import { aFeastForOdin } from "./a-feast-for-odin";
 import { ageOfSteam } from "./age-of-steam";
 import { agricola } from "./agricola";
+import { anachrony } from "./anachrony";
 import { arboretum } from "./arboretum";
 import { arcs } from "./arcs";
 import { arimaa } from "./arimaa";
@@ -130,6 +131,7 @@ export const BOARD_GAMES: Sport[] = [
   aFeastForOdin,
   ageOfSteam,
   agricola,
+  anachrony,
   arboretum,
   arcs,
   arimaa,

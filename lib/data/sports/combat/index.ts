@@ -62,6 +62,7 @@ import { pankration } from "./pankration";
 import { pencakSilat } from "./pencak-silat";
 import { pradalSerey } from "./pradal-serey";
 import { prayingMantisKungFu } from "./praying-mantis-kung-fu";
+import { qwanKiDo } from "./qwan-ki-do";
 import { sambo } from "./sambo";
 import { sanda } from "./sanda";
 import { sanshou } from "./sanshou";
@@ -157,6 +158,7 @@ export const COMBAT_SPORTS: Sport[] = [
   pencakSilat,
   pradalSerey,
   prayingMantisKungFu,
+  qwanKiDo,
   sambo,
   sanda,
   sanshou,

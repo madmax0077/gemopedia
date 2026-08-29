@@ -10,6 +10,7 @@ import { enduranceRiding } from "./endurance-riding";
 import { equestrianVaulting } from "./equestrian-vaulting";
 import { eventing } from "./eventing";
 import { gymkhana } from "./gymkhana";
+import { gymkhanaTimed } from "./gymkhana-timed";
 import { harnessRacing } from "./harness-racing";
 import { horseRacing } from "./horse-racing";
 import { hunterJumper } from "./hunter-jumper";
@@ -25,8 +26,8 @@ import { tentPegging } from "./tent-pegging";
 import { vaulting } from "./vaulting";
 
 /**
- * Equestrian sport entries
- * Sourced from `lib/data/sports/equestrian/*.ts`.
+ * equestrian entries
+ * Auto-generated from lib/data/sports/equestrian/*.ts
  */
 export const EQUESTRIAN_SPORTS: Sport[] = [
   barrelRacing,
@@ -39,6 +40,7 @@ export const EQUESTRIAN_SPORTS: Sport[] = [
   equestrianVaulting,
   eventing,
   gymkhana,
+  gymkhanaTimed,
   harnessRacing,
   horseRacing,
   hunterJumper,
@@ -53,4 +55,5 @@ export const EQUESTRIAN_SPORTS: Sport[] = [
   tentPegging,
   vaulting,
 ];
+
 

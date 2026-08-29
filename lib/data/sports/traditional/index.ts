@@ -35,6 +35,7 @@ import { lacrosse } from "./lacrosse";
 import { lagori } from "./lagori";
 import { lapta } from "./lapta";
 import { luchaCanaria } from "./lucha-canaria";
+import { luchaLibreMexico } from "./lucha-libre-mexico";
 import { mallakhamb } from "./mallakhamb";
 import { mancala } from "./mancala";
 import { masWrestling } from "./mas-wrestling";
@@ -69,8 +70,8 @@ import { yagliGures } from "./yagli-gures";
 import { yutNori } from "./yut-nori";
 
 /**
- * Traditional sport entries
- * Sourced from `lib/data/sports/traditional/*.ts`.
+ * traditional entries
+ * Auto-generated from lib/data/sports/traditional/*.ts
  */
 export const TRADITIONAL_SPORTS: Sport[] = [
   atyaPatya,
@@ -108,6 +109,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   lagori,
   lapta,
   luchaCanaria,
+  luchaLibreMexico,
   mallakhamb,
   mancala,
   masWrestling,
@@ -141,4 +143,5 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   yagliGures,
   yutNori,
 ];
+
 

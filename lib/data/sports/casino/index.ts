@@ -4,6 +4,7 @@ import { andarBahar } from "./andar-bahar";
 import { baccarat } from "./baccarat";
 import { bigSixWheel } from "./big-six-wheel";
 import { bingo } from "./bingo";
+import { bingoCompetitive } from "./bingo-competitive";
 import { blackjack } from "./blackjack";
 import { caribbeanStud } from "./caribbean-stud";
 import { caribbeanStudPoker } from "./caribbean-stud-poker";
@@ -39,14 +40,15 @@ import { ultimateTexasHoldEm } from "./ultimate-texas-hold-em";
 import { videoPoker } from "./video-poker";
 
 /**
- * Casino games category.
- * Sourced from `lib/data/sports/casino/*.ts`.
+ * casino entries
+ * Auto-generated from lib/data/sports/casino/*.ts
  */
 export const CASINO_GAMES: Sport[] = [
   andarBahar,
   baccarat,
   bigSixWheel,
   bingo,
+  bingoCompetitive,
   blackjack,
   caribbeanStud,
   caribbeanStudPoker,
@@ -81,4 +83,5 @@ export const CASINO_GAMES: Sport[] = [
   ultimateTexasHoldEm,
   videoPoker,
 ];
+
 

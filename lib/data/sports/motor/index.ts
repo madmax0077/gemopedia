@@ -8,6 +8,7 @@ import { dragRacing } from "./drag-racing";
 import { drifting } from "./drifting";
 import { enduranceRacing } from "./endurance-racing";
 import { enduro } from "./enduro";
+import { f1Academy } from "./f1-academy";
 import { formula1 } from "./formula-1";
 import { formula2 } from "./formula-2";
 import { formula3 } from "./formula-3";
@@ -38,8 +39,8 @@ import { worldEnduranceChampionship } from "./world-endurance-championship";
 import { worldRallyChampionship } from "./world-rally-championship";
 
 /**
- * Motor sport entries
- * Sourced from `lib/data/sports/motor/*.ts`.
+ * motor entries
+ * Auto-generated from lib/data/sports/motor/*.ts
  */
 export const MOTOR_SPORTS: Sport[] = [
   autocross,
@@ -50,6 +51,7 @@ export const MOTOR_SPORTS: Sport[] = [
   drifting,
   enduranceRacing,
   enduro,
+  f1Academy,
   formula1,
   formula2,
   formula3,
@@ -79,4 +81,5 @@ export const MOTOR_SPORTS: Sport[] = [
   worldEnduranceChampionship,
   worldRallyChampionship,
 ];
+
 

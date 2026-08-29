@@ -54,6 +54,7 @@ import { grandTheftAutoV } from "./grand-theft-auto-v";
 import { guiltyGear } from "./guilty-gear";
 import { guitarHero } from "./guitar-hero";
 import { hades } from "./hades";
+import { hades2 } from "./hades-2";
 import { halfLife } from "./half-life";
 import { halo } from "./halo";
 import { helldivers2 } from "./helldivers-2";
@@ -76,6 +77,7 @@ import { monsterHunter } from "./monster-hunter";
 import { monsterHunterWilds } from "./monster-hunter-wilds";
 import { monsterHunterWorld } from "./monster-hunter-world";
 import { mortalKombat } from "./mortal-kombat";
+import { mortalKombat1 } from "./mortal-kombat-1";
 import { nba2k } from "./nba-2k";
 import { nierAutomata } from "./nier-automata";
 import { noMansSky } from "./no-mans-sky";
@@ -107,16 +109,19 @@ import { sonic } from "./sonic";
 import { sonicTheHedgehog } from "./sonic-the-hedgehog";
 import { soulcalibur } from "./soulcalibur";
 import { spaceInvaders } from "./space-invaders";
+import { splitgate } from "./splitgate";
 import { starCitizen } from "./star-citizen";
 import { stardewValley } from "./stardew-valley";
 import { starfield } from "./starfield";
 import { starRail } from "./star-rail";
 import { stellaris } from "./stellaris";
 import { streetFighter } from "./street-fighter";
+import { streetFighter6 } from "./street-fighter-6";
 import { subnautica } from "./subnautica";
 import { superMarioBros } from "./super-mario-bros";
 import { superSmashBros } from "./super-smash-bros";
 import { tekken } from "./tekken";
+import { tekken8 } from "./tekken-8";
 import { terraria } from "./terraria";
 import { tetris } from "./tetris";
 import { theElderScrolls } from "./the-elder-scrolls";
@@ -197,6 +202,7 @@ export const VIDEO_GAMES: Sport[] = [
   guiltyGear,
   guitarHero,
   hades,
+  hades2,
   halfLife,
   halo,
   helldivers2,
@@ -219,6 +225,7 @@ export const VIDEO_GAMES: Sport[] = [
   monsterHunterWilds,
   monsterHunterWorld,
   mortalKombat,
+  mortalKombat1,
   nba2k,
   nierAutomata,
   noMansSky,
@@ -250,16 +257,19 @@ export const VIDEO_GAMES: Sport[] = [
   sonicTheHedgehog,
   soulcalibur,
   spaceInvaders,
+  splitgate,
   starCitizen,
   stardewValley,
   starfield,
   starRail,
   stellaris,
   streetFighter,
+  streetFighter6,
   subnautica,
   superMarioBros,
   superSmashBros,
   tekken,
+  tekken8,
   terraria,
   tetris,
   theElderScrolls,

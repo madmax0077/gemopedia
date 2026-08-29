@@ -3,6 +3,7 @@
 import { ageOfEmpiresIi } from "./age-of-empires-ii";
 import { apexLegends } from "./apex-legends";
 import { arenaOfValor } from "./arena-of-valor";
+import { brawlhalla } from "./brawlhalla";
 import { brawlStars } from "./brawl-stars";
 import { callOfDutyEsports } from "./call-of-duty-esports";
 import { clashOfClans } from "./clash-of-clans";
@@ -61,6 +62,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   ageOfEmpiresIi,
   apexLegends,
   arenaOfValor,
+  brawlhalla,
   brawlStars,
   callOfDutyEsports,
   clashOfClans,

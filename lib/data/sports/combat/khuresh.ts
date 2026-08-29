@@ -1,0 +1,97 @@
+import type { Sport } from "@/lib/types";
+
+export const khuresh: Sport = {
+  id: "khuresh",
+  slug: "khuresh",
+  name: "Khuresh",
+  officialName: "Khuresh (Tuvan Traditional Wrestling)",
+  aliases: ["Tuvan Wrestling", "Тыва Хүреш"],
+  shortDescription:
+    "Traditional wrestling of the Tuvan people of Siberia (Republic of Tuva, Russia) + Mongolian borderlands — belt-grip standing wrestling with signature eagle-dance ceremony (devig) before and after matches. Central event at Naadym festival + Tuvan cultural ceremonies.",
+  longDescription:
+    "Khuresh is the traditional wrestling of the Tuvan people of the Republic of Tuva (autonomous republic within Russian Federation, bordering Mongolia + China). A belt-grip standing wrestling art dating back to ancient Turkic + Mongolian nomadic tradition. Distinctive cultural feature: the EAGLE DANCE (devig or ezengileer) — wrestlers perform a stylized eagle-flight dance before + after matches, imitating the flight of the mountain eagle sacred to Tuvan culture. Winners flap their arms after victory + walk in eagle-flight pattern. Bouts feature belt/waistband grips + throws to force opponent to ground (any body part other than feet touching = loss). Central event at the annual NAADYM (Tuvan National Games festival, mid-July) alongside horse racing + archery — the 'three manly games' of Central Asian tradition. Similar to Mongolian Bökh (Mongolian wrestling) but with distinct Tuvan grips + ceremony.",
+  category: "combat-sports",
+  subCategory: "folk wrestling (Turkic/Tuvan tradition)",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isOlympic: false,
+  isParalympic: false,
+  isProfessional: false,
+  season: "summer",
+  era: "ancient",
+  popularity: "niche",
+  countryOfOrigin: "RU",
+  regionOfOrigin: "Republic of Tuva (autonomous republic within Russia, bordering Mongolia + China); Tuvan Turkic peoples",
+  estimatedOrigin: "Ancient Central Asian Turkic + Mongolian nomadic wrestling tradition; continuous Tuvan cultural practice; Naadym festival formalized 20th century",
+  players: { min: 2, max: 2, note: "1v1 match." },
+  equipment: [
+    { name: "Traditional wrestling attire (short jacket + shorts + belt)", description: "Distinctive Tuvan wrestling costume with belt providing grip surface." },
+    { name: "Grass wrestling area", description: "Outdoor grass wrestling ground at Naadym festival + cultural events." },
+  ],
+  duration: { approximateMinutes: 5, structure: "Traditional single-fall bouts; typically <5 minutes." },
+  objective: "Throw opponent so any body part other than feet touches ground first = fall = win.",
+  matchStructure: "Single-fall knockout tournament format at Naadym; ~1000+ wrestlers may participate in stages.",
+  basicRules: [
+    { title: "Belt/waistband grip wrestling", body: "Wrestlers grip each other's belt/waistband + attempt to throw." },
+    { title: "Fall = any body part other than feet touches ground first", body: "Even knee touch = fall loss (strict standard)." },
+    { title: "No striking; standing wrestling only", body: "Pure grappling from standing position." },
+    { title: "Eagle Dance (devig / ezengileer) mandatory", body: "Wrestlers perform stylized eagle flight before + after matches — cultural + ceremonial." },
+  ],
+  advancedRules: [
+    { title: "Winner's eagle dance walk", body: "Winner walks in eagle-flight pattern (arms out + slight steps) around loser or arena after victory." },
+    { title: "Naadym knockout tournament", body: "Annual Naadym festival tournament progresses through single-elimination brackets; can involve 1000+ wrestlers." },
+    { title: "Title of Champion (Arzylan / Nachyn / Möge)", body: "Successful wrestlers earn titles: Nachyn (falcon) → Möge (hero) → Arzylan (lion) — highest Tuvan wrestling honor." },
+  ],
+  scoring: {
+    summary: "Single-fall bouts; opponent touches ground first with any body part = fall = win.",
+    winCondition: "Fall on opponent.",
+    breakdown: [{ action: "Fall (opponent touches ground)", points: "1 fall (match win)" }],
+  },
+  penalties: [{ title: "Striking", body: "DQ." }],
+  positions: [{ name: "Wrestler (Möge)", role: "Belt grip + throw + eagle ceremony.", count: 1 }],
+  officiating: { officials: ["Traditional judges + elders", "Referee"], summary: "Community elders + formal referee at Naadym." },
+  governingBodies: [
+    { name: "Tuvan Wrestling Federation (regional Russian federation)", founded: 1990, headquarters: "Kyzyl, Republic of Tuva, Russia" },
+    { name: "Nadaam/Naadym committee (Republic of Tuva)", founded: 1930, headquarters: "Kyzyl, Tuva" },
+  ],
+  majorCompetitions: [
+    { name: "Naadym (annual Tuvan National Games)", frequency: "annual (mid-July)", founded: 1930, region: "Kyzyl, Republic of Tuva, Russia" },
+    { name: "Regional Tuvan cultural festivals", frequency: "seasonal", founded: 1950, region: "Tuvan communities" },
+    { name: "Cross-border exhibitions with Mongolian Bökh", frequency: "occasional", founded: 1990, region: "Tuva + Mongolia border regions" },
+  ],
+  countriesPlayed: ["RU (Republic of Tuva + Tuvan Russian communities)", "MN (Mongolian-Tuvan border regions)", "CN (small Tuvan Chinese communities Xinjiang)"],
+  famousAthletes: [
+    "Various Tuvan Arzylan (Lion) champions across Naadym history",
+    "Mergen Ondar (Tuva) — modern Naadym champion",
+    "Multi-generation Tuvan wrestling families",
+  ],
+  records: [
+    { title: "Central to Tuvan cultural identity", holder: "Khuresh", value: "One of 'three manly games' (with horse racing + archery) at annual Naadym festival; cultural heart of Tuvan identity", year: 2024 },
+    { title: "1000+ wrestler tournaments", holder: "Naadym Khuresh Championship", value: "Annual tournament can involve 1000+ wrestlers progressing through single-elimination brackets over multiple days", year: 2023 },
+  ],
+  variants: ["standard-tuvan-khuresh", "naadym-tournament-format", "cross-border-mongolian-tuvan-exhibition"],
+  relatedSports: ["mongolian-wrestling", "bokh", "yagli-gures", "sumo", "backhold-wrestling"],
+  skills: ["belt grip strength", "hip throw execution", "balance + base defense", "eagle dance ceremony", "endurance for long tournament days"],
+  strategies: [
+    { title: "Belt grip dominance", body: "Establish dominant belt grip before throw initiation." },
+    { title: "Naadym tournament pacing", body: "Multi-day tournament; conserve energy in early rounds." },
+  ],
+  terminology: [
+    { term: "Khuresh", meaning: "Tuvan wrestling." },
+    { term: "Devig / Ezengileer", meaning: "Eagle dance performed before + after matches." },
+    { term: "Nachyn / Möge / Arzylan", meaning: "Wrestler ranks: falcon / hero / lion." },
+    { term: "Naadym", meaning: "Annual Tuvan National Games festival (July)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [{ title: "Attend Naadym festival (mid-July, Republic of Tuva)", body: "Cultural experience + traditional wrestling exhibitions." }] },
+    { level: "advanced", steps: [{ title: "Cross-train with Mongolian Bökh", body: "Similar Central Asian belt wrestling tradition." }] },
+  ],
+  faq: [
+    { question: "Why the eagle dance?", answer: "The mountain eagle is sacred to Tuvan culture — a symbol of freedom, strength, and connection to sky/heaven. Wrestlers imitate eagle flight to invoke the eagle's power + honor Tuvan cultural traditions. The devig is as culturally important as the wrestling itself." },
+    { question: "How is Khuresh different from Mongolian Bökh?", answer: "Both are Central Asian belt-grip wrestling with cultural festival context. Khuresh has distinctive eagle dance (devig); Bökh has different Mongolian ceremonies (deer walk). Rules differ in nuance: Khuresh emphasizes strict fall standard (any body part = fall); Bökh similar. Culturally distinct within same Central Asian family." },
+  ],
+  wikipediaTitle: "Khuresh",
+  sources: [{ label: "Wikipedia — Khuresh", url: "https://en.wikipedia.org/wiki/Khuresh", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-29",
+  confidence: "verified",
+};

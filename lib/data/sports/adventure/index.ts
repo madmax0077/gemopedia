@@ -17,6 +17,9 @@ import { freerunning } from "./freerunning";
 import { gravelCycling } from "./gravel-cycling";
 import { handcycling } from "./handcycling";
 import { heliSkiing } from "./heli-skiing";
+import { hydrofoiling } from "./hydrofoiling";
+import { kiteBuggy } from "./kite-buggy";
+import { landYachting } from "./land-yachting";
 import { leadClimbing } from "./lead-climbing";
 import { modernPentathlon } from "./modern-pentathlon";
 import { mountainBiking } from "./mountain-biking";
@@ -32,6 +35,7 @@ import { skydiving } from "./skydiving";
 import { slacklining } from "./slacklining";
 import { spartanRace } from "./spartan-race";
 import { speedClimbing } from "./speed-climbing";
+import { speedRiding } from "./speed-riding";
 import { toughMudder } from "./tough-mudder";
 import { trackCycling } from "./track-cycling";
 import { ultraDistanceCycling } from "./ultra-distance-cycling";
@@ -60,6 +64,9 @@ export const ADVENTURE_SPORTS: Sport[] = [
   gravelCycling,
   handcycling,
   heliSkiing,
+  hydrofoiling,
+  kiteBuggy,
+  landYachting,
   leadClimbing,
   modernPentathlon,
   mountainBiking,
@@ -75,6 +82,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   slacklining,
   spartanRace,
   speedClimbing,
+  speedRiding,
   toughMudder,
   trackCycling,
   ultraDistanceCycling,

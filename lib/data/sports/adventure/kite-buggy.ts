@@ -1,0 +1,110 @@
+import type { Sport } from "@/lib/types";
+
+export const kiteBuggy: Sport = {
+  id: "kite-buggy",
+  slug: "kite-buggy",
+  name: "Kite Buggy",
+  officialName: "Kite Buggying",
+  aliases: ["Kitebuggying", "Buggy Kiting", "Land Kiteboarding (buggy variant)"],
+  shortDescription:
+    "Kite-powered three-wheeled buggy racing across beaches, deserts, and flat land — invented 1990s by Peter Lynn. Speeds exceed 100 km/h. World Kitebuggy Championships + Ivanpah Speed Sailing events showcase competitive circuit.",
+  longDescription:
+    "Kite Buggying is a kite-powered land sport where the rider sits in a three-wheeled buggy pulled by a power kite (~2-15 sqm). Invented + commercialized in the early 1990s by New Zealand kite designer Peter Lynn (1985 prototype, commercial 1993). Ridden across firm beaches, dry lake beds, deserts, and flat open land. Steering via foot pedals controlling front wheel + kite direction. Speeds routinely exceed 40-80 km/h; top competitive speeds have exceeded 100 km/h (60+ mph) at Ivanpah Dry Lake Bed (Nevada) speed sailing events. World Kitebuggy Championships hosted since 2000s in various countries. Popular kite buggy destinations: French/Belgian coast beaches, La Franqui (France), Ivanpah (Nevada USA), Wildwood (NJ), Australian outback beaches, Middle Eastern deserts. Not Olympic; smaller community than kite surfing but dedicated global following.",
+  category: "adventure-extreme-sports",
+  subCategory: "kite-powered land vehicle",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isOlympic: false,
+  isParalympic: false,
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "niche",
+  countryOfOrigin: "NZ",
+  regionOfOrigin: "New Zealand (Peter Lynn 1985 prototype); commercialized 1993",
+  estimatedOrigin: "1985 Peter Lynn prototype; 1993 commercial availability; explosive growth mid-1990s to 2000s",
+  players: { min: 1, max: 1, note: "Individual sport; solo rider in buggy." },
+  equipment: [
+    { name: "Kite buggy (3-wheeled)", description: "Aluminum/steel frame; single steerable front wheel + 2 rear wheels; low-slung rider position." },
+    { name: "Power kite (2-15 sqm)", description: "Foil kite (dual-line or quad-line); size varies with wind strength (large for light wind, small for strong wind)." },
+    { name: "Helmet + gloves + eye protection", description: "Standard safety gear." },
+    { name: "Harness (optional)", description: "Some setups use kite harness for larger kites." },
+  ],
+  duration: { approximateMinutes: 90, structure: "Recreational sessions 1-4 hours; race events 20-30 min races over multiple days." },
+  objective: "Recreational: extended kite-powered land travel. Competitive: race speed + distance.",
+  matchStructure: "Race format (course-based or speed sailing straight-line); freestyle judged competitions.",
+  basicRules: [
+    { title: "Rider sits in buggy pulled by kite", body: "Low seated position; kite bar controls kite; foot pedals steer front wheel." },
+    { title: "Steering: foot pedals + kite direction", body: "Combined foot steering + kite positioning determine direction + speed." },
+    { title: "Wind range 5-40+ knots", body: "Kite size chosen by wind strength; too little = no power; too much = uncontrollable." },
+    { title: "Flat open terrain required", body: "Beach, dry lake bed, desert, hard-packed sand or dirt." },
+  ],
+  advancedRules: [
+    { title: "Race courses (windward-leeward or triangle)", body: "Competitive races on marked courses similar to sailing courses." },
+    { title: "Speed sailing (straight-line record attempts)", body: "Ivanpah Dry Lake Bed hosts annual speed sailing events; 100+ km/h speeds achievable." },
+    { title: "Kite selection strategy", body: "Larger kites for lighter wind (more power); smaller for stronger wind (control + safety)." },
+  ],
+  scoring: {
+    summary: "Race position or speed record.",
+    winCondition: "Fastest race time or highest speed run.",
+    breakdown: [
+      { action: "Race finish position", points: "1st, 2nd, etc." },
+      { action: "Speed sailing peak km/h", points: "Fastest wins" },
+    ],
+  },
+  penalties: [{ title: "Course cut", body: "Time penalty." }],
+  positions: [{ name: "Kite buggy rider", role: "Solo rider steering + controlling kite.", count: 1 }],
+  officiating: { officials: ["Race committee", "Timekeepers"], summary: "Standard land yacht + kite race officiating." },
+  governingBodies: [
+    { name: "World Kitebuggy Association", founded: 2000, headquarters: "worldwide" },
+    { name: "International Kiteboarding Association (broader kite sports)", founded: 2008, headquarters: "worldwide" },
+  ],
+  majorCompetitions: [
+    { name: "World Kitebuggy Championships", frequency: "biennial", founded: 2000, region: "worldwide rotating hosts" },
+    { name: "European Kitebuggy Championships", frequency: "annual", founded: 1998, region: "European coastal beaches" },
+    { name: "Ivanpah Speed Sailing (Nevada USA)", frequency: "annual", founded: 2000, region: "Ivanpah Dry Lake Bed, Nevada" },
+    { name: "La Franqui Kite Buggy Festival (France)", frequency: "annual", founded: 1995, region: "La Franqui, France" },
+  ],
+  countriesPlayed: ["FR", "BE", "NL", "GB", "US", "AU", "NZ", "DE", "ES", "AE (desert kite buggying)"],
+  famousAthletes: [
+    "Peter Lynn (New Zealand, 1944-) — inventor of modern kite buggy 1985; commercial manufacturer 1993",
+    "Bruno Legaignoux (France) — kite pioneer, related contributions",
+    "Various World Kitebuggy Championship winners",
+  ],
+  records: [
+    { title: "Speed sailing records", holder: "Elite kite buggy racers", value: "100+ km/h speeds achieved at Ivanpah + other speed sailing events; among fastest wind-powered land vehicles", year: 2024 },
+    { title: "Peter Lynn commercial impact", holder: "Peter Lynn (NZ)", value: "1985 prototype + 1993 commercial kite buggy launched entire kite-powered land vehicle sport; established world market", year: 1993 },
+  ],
+  variants: ["standard-3-wheel-buggy", "speed-sailing-record-attempt-variant", "freestyle-jumping-variant", "expedition-kite-buggy-desert-crossing"],
+  relatedSports: ["kitesurfing", "land-yachting", "windsurfing", "sand-yachting"],
+  skills: ["power kite flying (dual-line or quad-line)", "buggy steering with foot pedals", "wind reading + kite size selection", "high-speed control", "recovery from spin-outs + crashes"],
+  strategies: [
+    { title: "Kite size for wind conditions", body: "Larger kite = more power for lighter wind; smaller = control for stronger wind. Wrong choice = danger or under-performance." },
+    { title: "Course reading (upwind/downwind angles)", body: "Kite buggy can travel upwind at ~45° angle to wind; downwind straight." },
+    { title: "Speed sailing straight-line commitment", body: "Ivanpah-style speed attempts require full commitment + no directional correction." },
+  ],
+  terminology: [
+    { term: "Kite Buggy", meaning: "3-wheeled kite-powered land vehicle." },
+    { term: "Power kite", meaning: "Foil kite designed to generate significant pull force." },
+    { term: "Ivanpah", meaning: "Ivanpah Dry Lake Bed, Nevada — kite buggy speed sailing venue." },
+    { term: "Land yacht", meaning: "Related but distinct sport (sailed wheeled vehicle without kite)." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Learn power kite flying first (2-3 sessions)", body: "Master kite control before adding buggy." },
+      { title: "Take lesson at beach kite buggy school", body: "French + English + US East Coast schools offer instruction." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "World Kitebuggy Championship circuit", body: "Biennial world championship + regional European + American events." },
+      { title: "Speed sailing (Ivanpah, La Franqui)", body: "Straight-line speed record attempts." },
+    ]},
+  ],
+  faq: [
+    { question: "How fast can kite buggies go?", answer: "Recreational cruising: 30-50 km/h (18-30 mph). Aggressive riding: 70-90 km/h (45-55 mph). Speed sailing record attempts: 100+ km/h (60+ mph) at Ivanpah Dry Lake Bed + other flat venues. Speeds depend on wind strength + rider skill + course conditions." },
+    { question: "Where can you kite buggy?", answer: "Flat open terrain: hard-packed beaches (English Channel coast French/Belgian coast, La Franqui France, Wildwood NJ), dry lake beds (Ivanpah Nevada), desert flats (UAE, Australia), and some grass fields with permission. Wind strength critical — 10-25 knots optimal." },
+  ],
+  wikipediaTitle: "Kite buggy",
+  sources: [{ label: "Wikipedia — Kite buggy", url: "https://en.wikipedia.org/wiki/Kite_buggy", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-29",
+  confidence: "verified",
+};

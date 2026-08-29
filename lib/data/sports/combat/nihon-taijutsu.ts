@@ -1,0 +1,97 @@
+import type { Sport } from "@/lib/types";
+
+export const nihonTaijutsu: Sport = {
+  id: "nihon-taijutsu",
+  slug: "nihon-taijutsu",
+  name: "Nihon Taijutsu",
+  officialName: "Nihon Taijutsu (Japanese Body Art)",
+  aliases: ["Japanese Taijutsu", "Nihon Tai-jutsu", "日本体術"],
+  shortDescription:
+    "Modern Japanese hybrid martial art founded 1953 by Minoru Mochizuki — combines Judo (throws) + Aikido (joint locks + circular deflection) + Karate (strikes) + Kobudo (traditional weapons) into unified self-defense system. FFST (French Federation) major international steward.",
+  longDescription:
+    "Nihon Taijutsu ('Japanese body art') is a modern Japanese hybrid martial art founded 1953 by Minoru Mochizuki (1907-2003), a direct student of Judo founder Jigoro Kano + Aikido founder Morihei Ueshiba + Karate + traditional Japanese weapons masters. Mochizuki synthesized Judo throws + Aikido joint locks + circular deflection + Karate strikes + Kobudo (traditional Japanese weapons: sword, staff, knife) into unified pragmatic self-defense system. Preserves classical Japanese martial ethos while integrating modern effectiveness. Practiced internationally primarily through Japanese Federation + Fédération Française de Sportive de Taijutsu (FFST France — major steward outside Japan) + smaller European + American associations. Taught as self-defense art rather than sport competition — no primary competitive circuit; emphasis on kata + techniques + partner practice + belt progression.",
+  category: "combat-sports",
+  subCategory: "hybrid Japanese martial art (Judo + Aikido + Karate + Kobudo)",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isOlympic: false,
+  isParalympic: false,
+  isProfessional: false,
+  season: "year-round",
+  era: "20th-century",
+  popularity: "niche",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (founded 1953 by Minoru Mochizuki, Shizuoka + Yoseikan dojo)",
+  estimatedOrigin: "Founded 1953 by Minoru Mochizuki (1907-2003); international expansion via France FFST 1970s+",
+  players: { min: 2, max: 2, note: "1v1 partner practice; solo kata + techniques." },
+  equipment: [
+    { name: "Gi (Japanese uniform)", description: "White or black gi worn by practitioners." },
+    { name: "Belt (obi) system", description: "Standard Japanese belt colors from white through black + dan grades." },
+    { name: "Traditional weapons (advanced)", description: "Bokken (wooden sword), jo (staff), tanto (wooden knife) for weapons practice." },
+  ],
+  duration: { approximateMinutes: 90, structure: "Class 60-90 min; belt tests 2-4 hours." },
+  objective: "Master hybrid technique system + progression through belt ranks + self-defense competence.",
+  matchStructure: "Not competition-oriented; training format = warmup + kata + techniques + partner practice + freestyle randori.",
+  basicRules: [
+    { title: "Hybrid technique base", body: "Judo throws + Aikido locks + Karate strikes + Kobudo weapons integrated." },
+    { title: "Belt progression", body: "White through black belt + dan (degree) grades." },
+    { title: "Traditional Japanese dojo etiquette", body: "Standard Japanese martial arts etiquette (bowing + respectful conduct)." },
+    { title: "Self-defense orientation", body: "Emphasis on effectiveness over sport competition." },
+  ],
+  advancedRules: [
+    { title: "Weapon integration at advanced levels", body: "Kobudo weapons introduced at intermediate + advanced belts." },
+    { title: "Aikido-derived circular deflection", body: "Signature technique — redirect opponent's force via circular movement." },
+  ],
+  scoring: {
+    summary: "Belt promotion via master evaluation; kata + technique demonstrations.",
+    winCondition: "Belt promotion.",
+    breakdown: [{ action: "Belt test passing", points: "Master evaluation" }],
+  },
+  penalties: [{ title: "Etiquette breach", body: "Instructor correction." }],
+  positions: [{ name: "Practitioner", role: "Belt-ranked student learning hybrid curriculum.", count: 1 }],
+  officiating: { officials: ["Sensei (master instructor)", "Belt test panel"], summary: "Master-led instruction + belt evaluations." },
+  governingBodies: [
+    { name: "Japanese Nihon Taijutsu Federation", founded: 1953, headquarters: "Shizuoka, Japan" },
+    { name: "Fédération Française de Sportive de Taijutsu (FFST)", founded: 1975, headquarters: "France" },
+    { name: "European Nihon Taijutsu Federation", founded: 1985, headquarters: "European member nations" },
+  ],
+  majorCompetitions: [
+    { name: "French national kata + technique competitions", frequency: "annual", founded: 1980, region: "France" },
+    { name: "International Nihon Taijutsu gatherings", frequency: "biennial", founded: 1990, region: "Europe + Japan" },
+  ],
+  countriesPlayed: ["JP", "FR (largest international base)", "ES", "IT", "DE", "BE", "CH", "PT"],
+  famousAthletes: [
+    "Minoru Mochizuki (Japan, 1907-2003) — founder + student of Jigoro Kano (Judo) + Morihei Ueshiba (Aikido)",
+    "Hiroo Mochizuki (Japan/France, son of Minoru) — brought Nihon Taijutsu to France + Yoseikan Budo development",
+    "Roland Hernaez (France) — major FFST steward",
+  ],
+  records: [
+    { title: "Direct lineage to Judo + Aikido founders", holder: "Minoru Mochizuki", value: "Mochizuki was direct student of Jigoro Kano (Judo founder) + Morihei Ueshiba (Aikido founder); unique cross-lineage direct transmission", year: 1953 },
+    { title: "French Federation stewardship", holder: "FFST France", value: "France + FFST have preserved + expanded Nihon Taijutsu internationally more than any nation outside Japan", year: 2024 },
+  ],
+  variants: ["mochizuki-traditional-method", "yoseikan-budo-related-variant"],
+  relatedSports: ["judo", "aikido", "karate", "yoseikan-budo", "kobudo", "jujutsu"],
+  skills: ["Judo throw arsenal", "Aikido joint locks + circular deflection", "Karate strikes", "Kobudo weapons", "partner-practice discipline"],
+  strategies: [
+    { title: "Blend hard + soft technique", body: "Karate strikes (hard) + Aikido deflection (soft) + Judo throws (blend) — integrated response." },
+    { title: "Weapon awareness", body: "Traditional weapons practice enhances distance awareness + timing." },
+  ],
+  terminology: [
+    { term: "Taijutsu", meaning: "Japanese for 'body art' or 'body technique'." },
+    { term: "Yoseikan", meaning: "Mochizuki's dojo + broader Yoseikan Budo tradition." },
+    { term: "Sensei", meaning: "Teacher / master (Japanese)." },
+    { term: "Kata", meaning: "Formal technique sequence." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [{ title: "Find FFST-affiliated French school or Japanese branch", body: "Primary international presence in France + Japan." }] },
+    { level: "advanced", steps: [{ title: "Weapons training + dan grade progression", body: "Advanced levels include weapons + higher dan certifications." }] },
+  ],
+  faq: [
+    { question: "Is Nihon Taijutsu similar to Aikido or Judo?", answer: "It combines both plus Karate + weapons. Founder Minoru Mochizuki trained under both Kano (Judo) + Ueshiba (Aikido) — direct lineage cross-transmission. So Nihon Taijutsu incorporates authentic Judo throws + Aikido circular locks alongside Karate strikes + weapons." },
+    { question: "How does it compare to Kajukenbo?", answer: "Both are 1940s-50s hybrid martial arts synthesizing multiple styles. Nihon Taijutsu is Japanese (Judo + Aikido + Karate + Kobudo); Kajukenbo is Hawaiian (Karate + Judo + Kenpo + Boxing). Different technique emphasis — Nihon Taijutsu retains more classical Japanese aesthetic + weapons; Kajukenbo more pragmatic street self-defense oriented. Both predate Bruce Lee's Jeet Kune Do." },
+  ],
+  wikipediaTitle: "Nihon Tai Jitsu",
+  sources: [{ label: "Wikipedia — Nihon Tai Jitsu", url: "https://en.wikipedia.org/wiki/Nihon_Tai_Jitsu", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-29",
+  confidence: "verified",
+};

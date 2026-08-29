@@ -1,0 +1,102 @@
+import type { Sport } from "@/lib/types";
+
+export const catchAsCatchCan: Sport = {
+  id: "catch-as-catch-can",
+  slug: "catch-as-catch-can",
+  name: "Catch-as-Catch-Can",
+  officialName: "Catch-as-Catch-Can Wrestling",
+  aliases: ["Catch Wrestling (British origin)", "Lancashire Wrestling", "Free-Style (historical)"],
+  shortDescription:
+    "British catch wrestling style originating Lancashire, England — pioneering 'anything-goes' style permitting ground wrestling, submissions, and free-form takedowns; unlike Cornish/Backhold's rigid grips. Direct ancestor of modern freestyle wrestling + American pro wrestling + submission grappling.",
+  longDescription:
+    "Catch-as-Catch-Can Wrestling ('CACC') is a British catch wrestling style originating in Lancashire, northwestern England — pioneering an 'anything-goes' free-form approach unlike the rigid grip requirements of Cornish + Backhold wrestling. CACC permits ground wrestling, submission holds (armlocks, leglocks, chokes), takedowns from any grip, and mat combat continuing after initial takedown. Popularized 19th century in Lancashire mining regions + carnival wrestling shows. Massively influential globally: (1) direct ancestor of modern OLYMPIC FREESTYLE WRESTLING (freestyle = CACC without submissions), (2) foundational technical base for early AMERICAN PROFESSIONAL WRESTLING (Frank Gotch + Ed 'Strangler' Lewis were CACC champions who evolved into pro wrestling stars), (3) core influence on modern SUBMISSION GRAPPLING + MMA via 'catch wrestling' revival (Karl Gotch → Billy Robinson → Josh Barnett + Kazushi Sakuraba lineage). Contemporary CACC practiced through Snake Pit UK (Wigan, Lancashire, historically Billy Riley's gym) + revival gyms worldwide.",
+  category: "combat-sports",
+  subCategory: "submission wrestling (British catch tradition)",
+  sportType: "individual",
+  indoorOutdoor: "indoor",
+  isOlympic: false,
+  isParalympic: false,
+  isProfessional: false,
+  season: "year-round",
+  era: "19th-century",
+  popularity: "niche",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "Lancashire, northwestern England (mining regions + carnival shows)",
+  estimatedOrigin: "19th century Lancashire English carnival + mining wrestling; peaked 1870-1920; revived via Snake Pit UK + MMA connection 1990s+",
+  players: { min: 2, max: 2, note: "1v1 match." },
+  equipment: [
+    { name: "Wrestling shorts / singlet", description: "Modern practice attire; historically bare-chested + shorts." },
+    { name: "Wrestling mat", description: "Grappling mat for ground wrestling." },
+  ],
+  duration: { approximateMinutes: 15, structure: "Historically no time limit (matches could go 1-3 hours); modern matches 2-3 rounds × 5 min or single-round submission-only." },
+  objective: "Win by pin fall (both shoulders on mat) or submission (opponent taps or verbally submits).",
+  matchStructure: "Modern format: pin or submission victory; historically open-ended time (submission or exhaustion).",
+  basicRules: [
+    { title: "Free-form takedowns from any grip", body: "No mandatory start grip; wrestlers may attack from any position with any grip." },
+    { title: "Ground wrestling permitted", body: "Match continues on ground after takedown; unlike Cornish/Backhold which are standing-only." },
+    { title: "Submissions permitted (armlocks, leglocks, chokes)", body: "Full submission arsenal legal; core distinguishing feature from freestyle wrestling." },
+    { title: "Pin fall = both shoulders on mat 3-second count (approximate)", body: "Standard wrestling pin win condition." },
+  ],
+  advancedRules: [
+    { title: "'Hooks' (submissions) as core skill", body: "CACC practitioners called 'hookers' due to submission specialty." },
+    { title: "Historical open-ended matches", body: "1800s+ matches often had no time limit — some famous matches lasted 3+ hours until submission." },
+    { title: "Modern rulesets", body: "Various modern CACC rulesets differ: some pin-only + submission-only, some time-limited, some points-based." },
+  ],
+  scoring: {
+    summary: "Pin fall or submission = match win.",
+    winCondition: "Pin (both shoulders on mat) or submission (tap/verbal).",
+    breakdown: [
+      { action: "Pin fall", points: "Match win" },
+      { action: "Submission", points: "Match win" },
+    ],
+  },
+  penalties: [{ title: "Illegal small joint manipulation (some rulesets)", body: "Fall loss." }],
+  positions: [{ name: "Catch wrestler ('hooker')", role: "Takedown + submission specialist.", count: 1 }],
+  officiating: { officials: ["Referee (mat)", "Corner + timekeeper"], summary: "Standard grappling referee ensures safety + submission recognition." },
+  governingBodies: [
+    { name: "Snake Pit UK (Wigan, historic Billy Riley's gym)", founded: 1948, headquarters: "Wigan, Lancashire, England" },
+    { name: "Various modern catch wrestling associations (revival era)", founded: 2000, headquarters: "worldwide revival community" },
+  ],
+  majorCompetitions: [
+    { name: "Snake Pit UK Wigan events (contemporary)", frequency: "occasional", founded: 2000, region: "Wigan, Lancashire, England" },
+    { name: "Historical carnival + championship matches (1870-1920)", frequency: "historical", founded: 1870, region: "England + USA carnival + championship circuits" },
+  ],
+  countriesPlayed: ["GB (Lancashire)", "US (historical + submission grappling influence)", "JP (Karl Gotch lineage → puroresu → shoot wrestling)", "worldwide revival"],
+  famousAthletes: [
+    "Frank Gotch (USA, 1878-1917) — early American catch/pro wrestling champion",
+    "Ed 'Strangler' Lewis (USA, 1891-1966) — 5× world catch/pro wrestling champion",
+    "Billy Riley (England, 1896-1977) — founded Snake Pit UK in Wigan; trained generations of catch wrestlers",
+    "Karl Gotch (Belgium/USA, 1924-2007) — 'God of Wrestling'; brought catch wrestling to Japan; Antonio Inoki's mentor",
+    "Josh Barnett (USA) — modern MMA + catch wrestling revival advocate",
+    "Kazushi Sakuraba (Japan) — MMA legend + catch wrestling practitioner",
+  ],
+  records: [
+    { title: "Direct ancestor of freestyle wrestling", holder: "Catch-as-Catch-Can", value: "Olympic freestyle wrestling evolved from CACC by removing submissions — CACC → freestyle transition c. 1900-1904", year: 1904 },
+    { title: "Foundational American pro wrestling influence", holder: "Frank Gotch + Ed Lewis (both CACC)", value: "Early American pro wrestling grew directly from CACC via championship wrestling tour circuits 1890-1920", year: 1920 },
+  ],
+  variants: ["snake-pit-uk-revival-modern", "shoot-wrestling-japanese-lineage", "submission-only-modern", "worked-professional-wrestling-lineage"],
+  relatedSports: ["freestyle-wrestling", "greco-roman-wrestling", "brazilian-jiu-jitsu", "mixed-martial-arts", "sambo", "professional-wrestling"],
+  skills: ["takedowns (all styles)", "ground wrestling", "submission arsenal (arm + leg + neck)", "escapes + reversals", "pin defense"],
+  strategies: [
+    { title: "Submission from any position", body: "CACC hookers can submit from bottom, top, standing — unlike freestyle wrestlers who lack submission arsenal." },
+    { title: "Chain wrestling", body: "Continuous transition from takedown to control to submission attempt." },
+  ],
+  terminology: [
+    { term: "Hooker", meaning: "Skilled catch wrestler with submission specialty." },
+    { term: "Hook", meaning: "Submission hold." },
+    { term: "Snake Pit", meaning: "Billy Riley's historic Wigan gym; catch wrestling Mecca." },
+    { term: "Toehold / Chickenwing / Half-nelson", meaning: "Classic catch wrestling submissions." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [{ title: "Train at Snake Pit UK or catch wrestling revival gym", body: "Modern catch wrestling gyms in UK + USA + Japan preserve tradition." }] },
+    { level: "advanced", steps: [{ title: "Cross-train with BJJ + freestyle + MMA", body: "Catch skills translate directly to modern grappling + MMA competition." }] },
+  ],
+  faq: [
+    { question: "Is catch wrestling the same as freestyle wrestling?", answer: "No — freestyle is CACC without submissions (Olympic sport). CACC allows submission holds. Freestyle emerged c. 1900-1904 as sanitized Olympic-safe version of CACC." },
+    { question: "How does catch differ from BJJ?", answer: "Both are submission arts, but CACC has stronger takedown + pin emphasis + historically open-ended match times. BJJ is Brazilian evolution from Judo emphasizing bottom-position play + guard. Modern MMA fighters often cross-train both — catch for top position + pins, BJJ for bottom guard game." },
+  ],
+  wikipediaTitle: "Catch wrestling",
+  sources: [{ label: "Wikipedia — Catch wrestling", url: "https://en.wikipedia.org/wiki/Catch_wrestling", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-29",
+  confidence: "verified",
+};

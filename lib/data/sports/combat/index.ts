@@ -9,10 +9,13 @@ import { bokator } from "./bokator";
 import { boxing } from "./boxing";
 import { brazilianJiuJitsu } from "./brazilian-jiu-jitsu";
 import { capoeira } from "./capoeira";
+import { catchAsCatchCan } from "./catch-as-catch-can";
 import { catchWrestling } from "./catch-wrestling";
 import { chidaoba } from "./chidaoba";
+import { collarAndElbow } from "./collar-and-elbow";
 import { coreeda } from "./coreeda";
 import { cornishWrestling } from "./cornish-wrestling";
+import { dumog } from "./dumog";
 import { escrima } from "./escrima";
 import { eskrima } from "./eskrima";
 import { fencing } from "./fencing";
@@ -28,9 +31,11 @@ import { jeetKuneDo } from "./jeet-kune-do";
 import { jodo } from "./jodo";
 import { judo } from "./judo";
 import { k1 } from "./k-1";
+import { kajukenbo } from "./kajukenbo";
 import { kalaripayattu } from "./kalaripayattu";
 import { karate } from "./karate";
 import { kendo } from "./kendo";
+import { khuresh } from "./khuresh";
 import { kickboxing } from "./kickboxing";
 import { kravMaga } from "./krav-maga";
 import { kudo } from "./kudo";
@@ -46,6 +51,7 @@ import { muayBoran } from "./muay-boran";
 import { muayThai } from "./muay-thai";
 import { naban } from "./naban";
 import { naginatajutsu } from "./naginatajutsu";
+import { nihonTaijutsu } from "./nihon-taijutsu";
 import { ninjutsu } from "./ninjutsu";
 import { pankration } from "./pankration";
 import { prayingMantisKungFu } from "./praying-mantis-kung-fu";
@@ -87,10 +93,13 @@ export const COMBAT_SPORTS: Sport[] = [
   boxing,
   brazilianJiuJitsu,
   capoeira,
+  catchAsCatchCan,
   catchWrestling,
   chidaoba,
+  collarAndElbow,
   coreeda,
   cornishWrestling,
+  dumog,
   escrima,
   eskrima,
   fencing,
@@ -106,9 +115,11 @@ export const COMBAT_SPORTS: Sport[] = [
   jodo,
   judo,
   k1,
+  kajukenbo,
   kalaripayattu,
   karate,
   kendo,
+  khuresh,
   kickboxing,
   kravMaga,
   kudo,
@@ -124,6 +135,7 @@ export const COMBAT_SPORTS: Sport[] = [
   muayThai,
   naban,
   naginatajutsu,
+  nihonTaijutsu,
   ninjutsu,
   pankration,
   prayingMantisKungFu,

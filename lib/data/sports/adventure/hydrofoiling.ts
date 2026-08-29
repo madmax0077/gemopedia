@@ -1,0 +1,118 @@
+import type { Sport } from "@/lib/types";
+
+export const hydrofoiling: Sport = {
+  id: "hydrofoiling",
+  slug: "hydrofoiling",
+  name: "Hydrofoiling",
+  officialName: "Hydrofoiling (Foil-Board Watersports)",
+  aliases: ["Foiling", "Foil Boarding", "Foil Surfing"],
+  shortDescription:
+    "Watersport family where board rides ABOVE water surface on underwater FOIL (wing) — kite foil, wing foil, surf foil, wake foil variants. Board hovers on foil at ~0.5m height, drastically reducing drag; enables ultra-high speeds + flat glide over choppy water. Olympic debut: kite foiling 2024 Paris.",
+  longDescription:
+    "Hydrofoiling refers to the family of watersports where a board rides ABOVE the water surface on an underwater hydrofoil (wing-shaped fin ~50-90cm below board). At speed, the foil generates lift + raises the board out of water — the board hovers ~0.3-0.7m above water surface, drastically reducing drag + enabling ultra-smooth glide over choppy water. Variants: KITE FOIL (kite-powered, Olympic debut Paris 2024), WING FOIL (handheld inflatable wing, fastest-growing variant), SURF FOIL (surf-driven, ocean waves), WAKE FOIL (boat-towed), PROne FOIL (paddle-powered). Hydrofoil technology adapted from Moth sailing class (dinghy foiling since 2000s) and Formula Kite competitions. Explosive recreational growth 2018-2024. Competitive Kite Foil World Championships + Olympic Sailing kite foil event (Paris 2024, Los Angeles 2028). Cost: full setup $2000-6000. Learning curve moderate but very rewarding.",
+  category: "adventure-extreme-sports",
+  subCategory: "watersport (hydrofoil-lifted board)",
+  sportType: "individual",
+  indoorOutdoor: "outdoor",
+  isOlympic: true,
+  isParalympic: false,
+  isProfessional: true,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (foil technology adapted from Moth sailing 2000s; kite foil developed by Alex Aguera + Kai Lenny 2010s Hawaii)",
+  estimatedOrigin: "Moth class dinghy foiling 2000s; kite foil development 2010s Hawaii; wing foil explosion 2018-2020; kite foil Olympic debut Paris 2024",
+  players: { min: 1, max: 1, note: "Individual sport." },
+  equipment: [
+    { name: "Foil board", description: "Shorter than traditional board; ~4-6ft; drilled for foil mount." },
+    { name: "Hydrofoil (mast + wing)", description: "Vertical mast ~60-90cm + horizontal front + rear wings; carbon fiber typical." },
+    { name: "Kite (kite foil) OR wing (wing foil) OR surf/boat power source", description: "Power source varies by discipline." },
+    { name: "Wetsuit + helmet + impact vest", description: "Safety kit — foil can be dangerous in crashes." },
+  ],
+  duration: { approximateMinutes: 60, structure: "Recreational sessions 1-3 hours; races 20-40 min." },
+  objective: "Recreational: extended smooth glide + high-speed runs. Competitive: fastest race or highest wave performance.",
+  matchStructure: "Race format (kite foil: gate + windward-leeward), or wave/freestyle judged competition.",
+  basicRules: [
+    { title: "Board rides above water on foil", body: "At sufficient speed (~15+ knots), foil generates lift + raises board out of water." },
+    { title: "Kite foil (Olympic): kite-powered", body: "Kite provides propulsion; rider controls kite + board + foil pitch simultaneously." },
+    { title: "Wing foil: handheld wing-powered", body: "Handheld inflatable wing provides propulsion; simpler than kite foil." },
+    { title: "Foil pitch control critical", body: "Rider adjusts weight forward/back to control board altitude above water." },
+  ],
+  advancedRules: [
+    { title: "Kite foil Olympic race format", body: "Paris 2024 introduced kite foil as Olympic sailing event — course races + medal race." },
+    { title: "Speed record 60+ knots", body: "Elite kite foil racers exceed 60 knots (110 km/h) — one of fastest human-powered watersports." },
+    { title: "Foil design innovation", body: "Rapid foil technology evolution — high-aspect-ratio wings for speed, low-aspect for maneuverability, etc." },
+  ],
+  scoring: {
+    summary: "Race-based (fastest time) or judged (freestyle + wave riding).",
+    winCondition: "Race: fastest. Freestyle: judged.",
+    breakdown: [
+      { action: "Race finish position", points: "1 (first), 2 (second), etc." },
+      { action: "Freestyle trick judged score", points: "0-10" },
+    ],
+  },
+  penalties: [{ title: "Course collision", body: "Race protest + potential disqualification." }],
+  positions: [{ name: "Foiler (rider)", role: "Individual rider.", count: 1 }],
+  officiating: { officials: ["Race committee", "Course marshals", "Wave judges (freestyle)"], summary: "Standard sailing/watersport officiating." },
+  governingBodies: [
+    { name: "World Sailing (kite foil Olympic sanctioning)", founded: 1907, headquarters: "London, England", website: "https://www.sailing.org" },
+    { name: "International Kiteboarding Association (IKA)", founded: 2008, headquarters: "worldwide" },
+    { name: "International Wing Foil Association (IWFA)", founded: 2020, headquarters: "worldwide" },
+  ],
+  majorCompetitions: [
+    { name: "Formula Kite World Championships", frequency: "annual", founded: 2015, region: "worldwide rotating hosts" },
+    { name: "Olympic Sailing kite foil (Paris 2024 debut, LA 2028)", frequency: "quadrennial", founded: 2024, region: "Olympic host cities" },
+    { name: "Wing Foil World Tour", frequency: "annual", founded: 2020, region: "worldwide" },
+    { name: "GKA Kite World Tour (Foil discipline)", frequency: "annual", founded: 2016, region: "worldwide" },
+  ],
+  countriesPlayed: ["US", "AU", "FR", "IT", "ES", "PT", "GR", "BR", "MA", "CL", "AR", "worldwide coastal + windy inland lakes"],
+  famousAthletes: [
+    "Kai Lenny (USA/Hawaii) — pioneering foil surfer + multi-discipline champion",
+    "Alex Aguera (USA) — kite foil pioneer",
+    "Toni Vodišek (Slovenia) — Olympic kite foil competitor Paris 2024",
+    "Various French + Italian + Australian kite foil race champions",
+  ],
+  records: [
+    { title: "Olympic debut Paris 2024", holder: "Kite Foil (Formula Kite)", value: "Olympic Sailing debut at Paris 2024 Marseille; kite foil recognized as premier competitive foiling discipline", year: 2024 },
+    { title: "Speed records", holder: "Top kite foilers", value: "60+ knots sustained speeds; approaches fastest human-powered watersport achievements", year: 2024 },
+    { title: "Explosive wing foil growth", holder: "Wing foil (2018-2024)", value: "Fastest-growing watersport in world 2018-2024; participation grew from ~1000 to 500,000+ globally", year: 2024 },
+  ],
+  variants: ["kite-foil-kite-powered-olympic", "wing-foil-handheld-wing", "surf-foil-ocean-waves", "wake-foil-boat-towed", "prone-foil-paddle"],
+  relatedSports: ["kitesurfing", "windsurfing", "wing-foiling", "surfing", "moth-class-sailing"],
+  skills: ["kite/wing control (power source)", "board + foil balance", "foil pitch adjustment (fore-aft weight shifting)", "recovery from foil breach (board slams down)", "high-speed turning"],
+  strategies: [
+    { title: "Weight-based pitch control", body: "Forward weight lowers board; back weight raises. Constant micro-adjustment while riding." },
+    { title: "Foil selection for conditions", body: "Larger foil for light wind; smaller for high wind + speed." },
+    { title: "Kite/wing coordination", body: "Kite/wing power + foil lift must balance — too much lift = breach, too little = drop into water." },
+  ],
+  terminology: [
+    { term: "Foil", meaning: "The underwater wing that lifts board out of water." },
+    { term: "Foiling / on foil", meaning: "Board raised above water surface on foil." },
+    { term: "Breach", meaning: "Foil comes out of water = board slams back down = crash risk." },
+    { term: "Formula Kite", meaning: "Olympic kite foil racing class." },
+    { term: "Downwinder", meaning: "Long-distance foil ride with wind at back." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [
+      { title: "Start with wing foil (easier learning curve)", body: "Wing foil generally easier to learn than kite foil; less setup + safer failure modes." },
+      { title: "Take lessons from certified foil school", body: "Foiling has real risks; instructor lessons recommended." },
+    ]},
+    { level: "advanced", steps: [
+      { title: "Kite foil racing (Formula Kite Olympic circuit)", body: "Competitive kite foil requires elite skill; Olympic + World Championship circuit." },
+      { title: "Big wave surf foiling", body: "Kai Lenny + Hawaii community pioneering ocean-swell foil surfing." },
+    ]},
+  ],
+  faq: [
+    { question: "How does hydrofoiling work?", answer: "The hydrofoil (underwater wing) works like an airplane wing but underwater. At sufficient speed (~15+ knots), the foil generates enough lift to raise the board out of the water. This dramatically reduces drag (water resistance vs. air resistance) enabling much higher speeds + smoother glide over chop. Same physics as airplane flight, just underwater." },
+    { question: "Is hydrofoiling dangerous?", answer: "Moderate risk. The foil is sharp + can cause serious lacerations in crashes. Board slams back down during breaches can injure feet + legs. Helmets + impact vests recommended. Learning under professional instruction reduces risk significantly. Elite kite foil racing at 60+ knots is extremely fast + high-risk." },
+    { question: "Wing foil vs kite foil — which to start with?", answer: "Wing foil generally recommended for beginners. Setup is simpler (just inflate wing, no kite lines/harness), failure modes safer (drop wing = stop), and learning curve gentler. Kite foil offers higher speed + Olympic pathway but steeper learning curve + more setup complexity + safety considerations." },
+  ],
+  wikipediaTitle: "Hydrofoil",
+  sources: [
+    { label: "World Sailing Formula Kite", url: "https://www.sailing.org", publisher: "World Sailing" },
+    { label: "Wikipedia — Kite foilboarding", url: "https://en.wikipedia.org/wiki/Kite_foilboarding", publisher: "Wikipedia" },
+  ],
+  lastVerified: "2026-08-29",
+  confidence: "verified",
+};

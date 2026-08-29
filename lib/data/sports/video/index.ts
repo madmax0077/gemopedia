@@ -6,6 +6,7 @@ import { animalCrossing } from "./animal-crossing";
 import { assassinsCreed } from "./assassins-creed";
 import { balatro } from "./balatro";
 import { baldursGate3 } from "./baldurs-gate-3";
+import { battlefield2042 } from "./battlefield-2042";
 import { beatSaber } from "./beat-saber";
 import { bioshock } from "./bioshock";
 import { bloodborne } from "./bloodborne";
@@ -32,9 +33,11 @@ import { doomGame } from "./doom-game";
 import { eaFc } from "./ea-fc";
 import { eaSportsUfc } from "./ea-sports-ufc";
 import { eldenRing } from "./elden-ring";
+import { escapeFromTarkov } from "./escape-from-tarkov";
 import { factorio } from "./factorio";
 import { fallGuys } from "./fall-guys";
 import { finalFantasy } from "./final-fantasy";
+import { finalFantasyViiRebirth } from "./final-fantasy-vii-rebirth";
 import { fortnite } from "./fortnite";
 import { galaga } from "./galaga";
 import { ghostOfTsushima } from "./ghost-of-tsushima";
@@ -57,6 +60,7 @@ import { kirby } from "./kirby";
 import { lethalCompany } from "./lethal-company";
 import { maddenNfl } from "./madden-nfl";
 import { marioKart } from "./mario-kart";
+import { marvelStrikeForce } from "./marvel-strike-force";
 import { metalGearSolid } from "./metal-gear-solid";
 import { metroid } from "./metroid";
 import { minecraft } from "./minecraft";
@@ -85,6 +89,7 @@ import { sonic } from "./sonic";
 import { sonicTheHedgehog } from "./sonic-the-hedgehog";
 import { soulcalibur } from "./soulcalibur";
 import { spaceInvaders } from "./space-invaders";
+import { starCitizen } from "./star-citizen";
 import { stardewValley } from "./stardew-valley";
 import { starRail } from "./star-rail";
 import { stellaris } from "./stellaris";
@@ -101,6 +106,7 @@ import { theLegendOfZelda } from "./the-legend-of-zelda";
 import { theSims } from "./the-sims";
 import { theWitcher3 } from "./the-witcher-3";
 import { uncharted } from "./uncharted";
+import { valorantMobile } from "./valorant-mobile";
 import { vampireSurvivors } from "./vampire-survivors";
 import { virtuaFighter } from "./virtua-fighter";
 import { warframe } from "./warframe";
@@ -122,6 +128,7 @@ export const VIDEO_GAMES: Sport[] = [
   assassinsCreed,
   balatro,
   baldursGate3,
+  battlefield2042,
   beatSaber,
   bioshock,
   bloodborne,
@@ -148,9 +155,11 @@ export const VIDEO_GAMES: Sport[] = [
   eaFc,
   eaSportsUfc,
   eldenRing,
+  escapeFromTarkov,
   factorio,
   fallGuys,
   finalFantasy,
+  finalFantasyViiRebirth,
   fortnite,
   galaga,
   ghostOfTsushima,
@@ -173,6 +182,7 @@ export const VIDEO_GAMES: Sport[] = [
   lethalCompany,
   maddenNfl,
   marioKart,
+  marvelStrikeForce,
   metalGearSolid,
   metroid,
   minecraft,
@@ -201,6 +211,7 @@ export const VIDEO_GAMES: Sport[] = [
   sonicTheHedgehog,
   soulcalibur,
   spaceInvaders,
+  starCitizen,
   stardewValley,
   starRail,
   stellaris,
@@ -217,6 +228,7 @@ export const VIDEO_GAMES: Sport[] = [
   theSims,
   theWitcher3,
   uncharted,
+  valorantMobile,
   vampireSurvivors,
   virtuaFighter,
   warframe,

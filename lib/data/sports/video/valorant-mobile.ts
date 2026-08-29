@@ -1,0 +1,101 @@
+import type { Sport } from "@/lib/types";
+
+export const valorantMobile: Sport = {
+  id: "valorant-mobile",
+  slug: "valorant-mobile",
+  name: "Valorant Mobile",
+  officialName: "Valorant Mobile",
+  aliases: ["Valorant M", "VLR Mobile"],
+  shortDescription:
+    "Mobile version of Riot Games' tactical hero shooter Valorant — 5v5 competitive shooting with unique agent abilities. Announced 2021; regional China launch 2024 via Tencent partnership; global launch expected 2025-2026. Competes with Call of Duty Mobile + PUBG Mobile + Free Fire in mobile FPS market.",
+  longDescription:
+    "Valorant Mobile is the mobile-adapted version of Riot Games' tactical hero shooter Valorant (2020 PC/console success). Announced 2021 alongside PC Valorant's success; developed collaboratively by Riot Games + partners for mobile-first optimization. Regional China launch 2024 via Tencent Games publishing partnership (as Valorant Mobile). Global launch expected 2025-2026 pending optimization + regional publishing. Retains PC Valorant's core mechanics: 5v5 attacker/defender rounds with plant/defuse Spike (bomb), unique agent abilities (Duelists, Controllers, Initiators, Sentinels), tactical shooting emphasis, precise gunplay. Mobile adaptations: touchscreen controls, shorter matches option (Deathmatch, Escalation modes), region-specific servers. Competes with Call of Duty Mobile (~150M active) + PUBG Mobile + Free Fire in mobile FPS market. Anticipated massive launch given Valorant's global esports presence.",
+  category: "video-games",
+  subCategory: "mobile tactical FPS (hero shooter)",
+  sportType: "team",
+  indoorOutdoor: "indoor",
+  isOlympic: false,
+  isParalympic: false,
+  isProfessional: false,
+  season: "year-round",
+  era: "21st-century",
+  popularity: "global",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Riot Games, Los Angeles) + partners for mobile port",
+  estimatedOrigin: "Announced 2021; China regional launch 2024 via Tencent; global launch expected 2025-2026",
+  players: { min: 10, max: 10, note: "5v5 competitive matches." },
+  equipment: [{ name: "Smartphone (iOS/Android, high-spec)", description: "Modern smartphone with capable GPU + high-refresh display recommended." }],
+  duration: { approximateMinutes: 30, structure: "Standard 25-round match ~30-45 min; Deathmatch shorter 10 min; Escalation quick modes." },
+  objective: "5v5 attacker vs. defender rounds — attackers plant Spike (bomb) + defenders defuse; first team to 13 rounds wins.",
+  matchStructure: "Attackers vs. defenders switching sides mid-match (round 12); first team to 13 rounds wins.",
+  basicRules: [
+    { title: "5v5 attackers vs. defenders", body: "Attackers try to plant Spike (bomb) at bomb site; defenders try to prevent plant or defuse." },
+    { title: "First team to 13 rounds wins", body: "Best-of-24 rounds; sides switch at round 12." },
+    { title: "Unique agent abilities", body: "Each agent has 3 signature abilities + 1 Ultimate ability; role classes: Duelist / Controller / Initiator / Sentinel." },
+    { title: "Economy-based weapon purchasing", body: "Round-based credits earned from kills + rounds; spend on weapons + abilities each round." },
+    { title: "Precision gunplay", body: "Tap-firing + burst-firing + head-shot precision emphasis." },
+  ],
+  advancedRules: [
+    { title: "Agent role composition", body: "Team of 5 balances 1-2 Duelists (fraggers) + 1 Controller (smokes) + 1 Initiator (info + flash) + 1 Sentinel (defensive)." },
+    { title: "Ranked competitive queue", body: "Skill-based matchmaking + ranked ladder (Iron → Radiant)." },
+    { title: "Regional China variant differences", body: "China-launched version may have region-specific agents + skins per Chinese regulations." },
+  ],
+  scoring: {
+    summary: "Rounds won; first to 13 = match win.",
+    winCondition: "First team to 13 rounds wins.",
+    breakdown: [
+      { action: "Round win (plant + explode / defuse / eliminate)", points: "1 round" },
+      { action: "Overtime rounds (12-12 tied)", points: "1 pt per round, win-by-2" },
+    ],
+  },
+  penalties: [{ title: "Team-kill / griefing", body: "Report + ban system." }],
+  positions: [
+    { name: "Duelist (Jett, Phoenix, Raze, Neon, Yoru, Iso, Waylay etc.)", role: "Front-line fragger; entry killer.", count: 1 },
+    { name: "Controller (Brimstone, Omen, Viper, Astra, Harbor, Clove etc.)", role: "Smokes + area control.", count: 1 },
+    { name: "Initiator (Sova, Breach, Skye, KAY/O, Fade, Gekko, Tejo etc.)", role: "Info + flash + break stalemates.", count: 1 },
+    { name: "Sentinel (Sage, Cypher, Killjoy, Chamber, Deadlock, Vyse etc.)", role: "Defensive + area denial.", count: 1 },
+  ],
+  officiating: { officials: ["N/A (matchmaking)", "Riot competitive integrity team (esports)"], summary: "Automated matchmaking + esports referees for pro play." },
+  governingBodies: [
+    { name: "Riot Games", founded: 2006, headquarters: "Los Angeles, USA", website: "https://www.riotgames.com" },
+    { name: "Tencent Games (China publishing partner)", founded: 1998, headquarters: "Shenzhen, China" },
+  ],
+  majorCompetitions: [
+    { name: "Valorant Champions Tour (VCT) — PC (mobile TBD)", frequency: "annual", founded: 2021, region: "worldwide" },
+    { name: "Valorant Mobile championships (China initial)", frequency: "TBD", founded: 2024, region: "China initially; global expected 2025-2026" },
+  ],
+  countriesPlayed: ["CN (regional launch)", "worldwide (global launch pending)"],
+  famousAthletes: [
+    "Various PC Valorant pros; mobile-specific pro scene forming",
+    "Chinese Valorant Mobile early competitive players",
+  ],
+  records: [
+    { title: "Anticipated mobile launch", holder: "Valorant Mobile", value: "Highly anticipated global mobile release; Riot Games' 5-year mobile ambitions extending Valorant's ~30M PC playerbase to mobile market", year: 2024 },
+  ],
+  variants: ["china-regional-tencent-published", "global-launch-pending-2025-2026"],
+  relatedSports: ["valorant", "call-of-duty-mobile", "pubg-mobile", "free-fire", "counter-strike"],
+  skills: ["mobile touchscreen FPS aim", "agent ability mastery", "team coordination + comms", "map knowledge (bomb sites + angles)", "economy management"],
+  strategies: [
+    { title: "Team composition balance", body: "Balanced team = Duelist + Controller + Initiator + Sentinel + flex 5th." },
+    { title: "Economy management", body: "Team-wide buy vs. save decisions crucial across match." },
+  ],
+  terminology: [
+    { term: "Spike", meaning: "Valorant's bomb (planted by attackers, defused by defenders)." },
+    { term: "Ult / Ultimate", meaning: "Agent's most powerful ability charged over rounds." },
+    { term: "Radiant", meaning: "Highest competitive rank." },
+    { term: "Ace", meaning: "Single player eliminates all 5 enemies in one round." },
+  ],
+  learningPaths: [
+    { level: "beginner", steps: [{ title: "Complete tutorial + play unrated matches", body: "Learn mobile controls + agent basics." }] },
+    { level: "advanced", steps: [{ title: "Ranked ladder climb + agent role specialization", body: "Master 1-2 agents per role for competitive play." }] },
+  ],
+  faq: [
+    { question: "When does Valorant Mobile launch globally?", answer: "Regional China launch 2024 via Tencent partnership. Global launch expected 2025-2026 pending platform optimization + regional publishing agreements. Riot Games has not committed to specific global launch date." },
+    { question: "How is it different from PC Valorant?", answer: "Same core gameplay: 5v5 tactical shooter with agent abilities + Spike plant/defuse. Mobile adaptations: touchscreen controls, potentially shorter game modes (Deathmatch, Escalation), region-specific servers + agents. PC cross-play unlikely due to platform differences." },
+    { question: "Can it compete with Call of Duty Mobile?", answer: "Different genre — Valorant Mobile is TACTICAL 5v5 (Counter-Strike/CS2-style); CoD Mobile is arcade FPS with battle royale + multiplayer. Both target mobile FPS market but distinct player bases. Valorant Mobile expected to attract Valorant PC crossover + tactical shooter mobile audience." },
+  ],
+  wikipediaTitle: "Valorant",
+  sources: [{ label: "Wikipedia — Valorant", url: "https://en.wikipedia.org/wiki/Valorant", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-29",
+  confidence: "community",
+};

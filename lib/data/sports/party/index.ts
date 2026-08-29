@@ -47,7 +47,7 @@ import { werewolf } from "./werewolf";
 import { witsAndWagers } from "./wits-and-wagers";
 
 /**
- * Party games category.
+ * Party games — social deduction, drawing, guessing, and mixer games.
  * Sourced from `lib/data/sports/party/*.ts`.
  */
 export const PARTY_GAMES: Sport[] = [

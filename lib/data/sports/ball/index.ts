@@ -40,7 +40,7 @@ import { volleyball } from "./volleyball";
 import { wallyball } from "./wallyball";
 
 /**
- * Ball sports category - all games advancing a ball into a target zone.
+ * Ball sports — team, individual, indoor + outdoor ball-based sports.
  * Sourced from `lib/data/sports/ball/*.ts`.
  */
 export const BALL_SPORTS: Sport[] = [

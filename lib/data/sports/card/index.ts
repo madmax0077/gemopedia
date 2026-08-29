@@ -93,7 +93,7 @@ import { wizard } from "./wizard";
 import { yuGiOh } from "./yu-gi-oh";
 
 /**
- * Card games category.
+ * Card games — trick-taking, deck-building, CCG/TCG, solitaire, casino variants.
  * Sourced from `lib/data/sports/card/*.ts`.
  */
 export const CARD_GAMES: Sport[] = [

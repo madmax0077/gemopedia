@@ -118,7 +118,7 @@ import { wyrmspan } from "./wyrmspan";
 import { zombicide } from "./zombicide";
 
 /**
- * Board games category.
+ * Board games — abstracts, Euros, ameritrash, party board, and family games.
  * Sourced from `lib/data/sports/board/*.ts`.
  */
 export const BOARD_GAMES: Sport[] = [

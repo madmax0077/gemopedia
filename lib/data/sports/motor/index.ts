@@ -4,6 +4,7 @@ import { autocross } from "./autocross";
 import { dakarRally } from "./dakar-rally";
 import { dirtTrackRacing } from "./dirt-track-racing";
 import { dragRacing } from "./drag-racing";
+import { drifting } from "./drifting";
 import { enduranceRacing } from "./endurance-racing";
 import { enduro } from "./enduro";
 import { formula1 } from "./formula-1";
@@ -17,6 +18,7 @@ import { monsterTruckRacing } from "./monster-truck-racing";
 import { motocross } from "./motocross";
 import { motogp } from "./motogp";
 import { nascar } from "./nascar";
+import { rallycross } from "./rallycross";
 import { rallyRacing } from "./rally-racing";
 import { sidecarcross } from "./sidecarcross";
 import { sidecarMotorcycleRacing } from "./sidecar-motorcycle-racing";
@@ -25,7 +27,7 @@ import { superbikeRacing } from "./superbike-racing";
 import { worldRallyChampionship } from "./world-rally-championship";
 
 /**
- * Motorsports — cars, motorbikes, powered racing.
+ * Motor sports — cars, bikes, engine-powered vehicles.
  * Sourced from `lib/data/sports/motor/*.ts`.
  */
 export const MOTOR_SPORTS: Sport[] = [
@@ -33,6 +35,7 @@ export const MOTOR_SPORTS: Sport[] = [
   dakarRally,
   dirtTrackRacing,
   dragRacing,
+  drifting,
   enduranceRacing,
   enduro,
   formula1,
@@ -46,6 +49,7 @@ export const MOTOR_SPORTS: Sport[] = [
   motocross,
   motogp,
   nascar,
+  rallycross,
   rallyRacing,
   sidecarcross,
   sidecarMotorcycleRacing,

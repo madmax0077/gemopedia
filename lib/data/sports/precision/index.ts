@@ -3,7 +3,9 @@
 import { airHockey } from "./air-hockey";
 import { archery } from "./archery";
 import { bocce } from "./bocce";
+import { boccia } from "./boccia";
 import { cornhole } from "./cornhole";
+import { croquet } from "./croquet";
 import { darts } from "./darts";
 import { discGolf } from "./disc-golf";
 import { eightBall } from "./eight-ball";
@@ -32,14 +34,16 @@ import { tenPinBowling } from "./ten-pin-bowling";
 import { trapShooting } from "./trap-shooting";
 
 /**
- * Precision sports including cue sports, shooting, and archery.
+ * Precision sports — target, accuracy, control-based disciplines.
  * Sourced from `lib/data/sports/precision/*.ts`.
  */
 export const PRECISION_SPORTS: Sport[] = [
   airHockey,
   archery,
   bocce,
+  boccia,
   cornhole,
+  croquet,
   darts,
   discGolf,
   eightBall,

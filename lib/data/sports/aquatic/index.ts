@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { artisticSwimming } from "./artistic-swimming";
+import { bigWaveSurfing } from "./big-wave-surfing";
 import { bodyboarding } from "./bodyboarding";
 import { canoeing } from "./canoeing";
 import { canoeSprint } from "./canoe-sprint";
@@ -9,6 +10,7 @@ import { diving } from "./diving";
 import { dragonBoatRacing } from "./dragon-boat-racing";
 import { finSwimming } from "./fin-swimming";
 import { freediving } from "./freediving";
+import { iceSwimming } from "./ice-swimming";
 import { jetSkiRacing } from "./jet-ski-racing";
 import { kayaking } from "./kayaking";
 import { kitesurfing } from "./kitesurfing";
@@ -36,11 +38,12 @@ import { whitewaterRafting } from "./whitewater-rafting";
 import { windsurfing } from "./windsurfing";
 
 /**
- * Water-based competitive sports.
+ * Aquatic sports — swimming, watercraft, surface + underwater disciplines.
  * Sourced from `lib/data/sports/aquatic/*.ts`.
  */
 export const AQUATIC_SPORTS: Sport[] = [
   artisticSwimming,
+  bigWaveSurfing,
   bodyboarding,
   canoeing,
   canoeSprint,
@@ -49,6 +52,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   dragonBoatRacing,
   finSwimming,
   freediving,
+  iceSwimming,
   jetSkiRacing,
   kayaking,
   kitesurfing,

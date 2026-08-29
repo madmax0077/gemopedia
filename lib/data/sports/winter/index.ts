@@ -9,6 +9,7 @@ import { curling } from "./curling";
 import { dogsledRacing } from "./dogsled-racing";
 import { figureSkating } from "./figure-skating";
 import { freestyleSkiing } from "./freestyle-skiing";
+import { halfpipeSkiing } from "./halfpipe-skiing";
 import { iceboating } from "./iceboating";
 import { iceClimbing } from "./ice-climbing";
 import { kicksled } from "./kicksled";
@@ -17,7 +18,9 @@ import { pondHockey } from "./pond-hockey";
 import { ringette } from "./ringette";
 import { shortTrackSpeedSkating } from "./short-track-speed-skating";
 import { skeleton } from "./skeleton";
+import { skiCross } from "./ski-cross";
 import { skiJumping } from "./ski-jumping";
+import { snowboardCross } from "./snowboard-cross";
 import { snowboarding } from "./snowboarding";
 import { snowkiting } from "./snowkiting";
 import { snowmobiling } from "./snowmobiling";
@@ -26,7 +29,7 @@ import { speedSkating } from "./speed-skating";
 import { speedSkiing } from "./speed-skiing";
 
 /**
- * Winter sports category.
+ * Winter sports — snow, ice, cold-weather disciplines.
  * Sourced from `lib/data/sports/winter/*.ts`.
  */
 export const WINTER_SPORTS: Sport[] = [
@@ -39,6 +42,7 @@ export const WINTER_SPORTS: Sport[] = [
   dogsledRacing,
   figureSkating,
   freestyleSkiing,
+  halfpipeSkiing,
   iceboating,
   iceClimbing,
   kicksled,
@@ -47,7 +51,9 @@ export const WINTER_SPORTS: Sport[] = [
   ringette,
   shortTrackSpeedSkating,
   skeleton,
+  skiCross,
   skiJumping,
+  snowboardCross,
   snowboarding,
   snowkiting,
   snowmobiling,

@@ -35,10 +35,11 @@ import { snowmobiling } from "./snowmobiling";
 import { snowscoot } from "./snowscoot";
 import { speedSkating } from "./speed-skating";
 import { speedSkiing } from "./speed-skiing";
+import { telemarkSkiing } from "./telemark-skiing";
 import { wheelchairCurling } from "./wheelchair-curling";
 
 /**
- * Winter sports.
+ * Winter sport entries
  * Sourced from `lib/data/sports/winter/*.ts`.
  */
 export const WINTER_SPORTS: Sport[] = [
@@ -77,6 +78,7 @@ export const WINTER_SPORTS: Sport[] = [
   snowscoot,
   speedSkating,
   speedSkiing,
+  telemarkSkiing,
   wheelchairCurling,
 ];
 

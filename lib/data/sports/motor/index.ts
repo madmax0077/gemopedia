@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { autocross } from "./autocross";
+import { baja1000 } from "./baja-1000";
 import { dakarRally } from "./dakar-rally";
 import { dirtTrackRacing } from "./dirt-track-racing";
 import { dragRacing } from "./drag-racing";
@@ -22,6 +23,7 @@ import { motocross } from "./motocross";
 import { motogp } from "./motogp";
 import { motorcycleTrials } from "./motorcycle-trials";
 import { nascar } from "./nascar";
+import { pikesPeakHillclimb } from "./pikes-peak-hillclimb";
 import { powerboatRacing } from "./powerboat-racing";
 import { rallycross } from "./rallycross";
 import { rallyRacing } from "./rally-racing";
@@ -35,11 +37,12 @@ import { touringCarRacing } from "./touring-car-racing";
 import { worldRallyChampionship } from "./world-rally-championship";
 
 /**
- * Motor sports.
+ * Motor sport entries
  * Sourced from `lib/data/sports/motor/*.ts`.
  */
 export const MOTOR_SPORTS: Sport[] = [
   autocross,
+  baja1000,
   dakarRally,
   dirtTrackRacing,
   dragRacing,
@@ -61,6 +64,7 @@ export const MOTOR_SPORTS: Sport[] = [
   motogp,
   motorcycleTrials,
   nascar,
+  pikesPeakHillclimb,
   powerboatRacing,
   rallycross,
   rallyRacing,

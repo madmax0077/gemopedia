@@ -86,6 +86,7 @@ import { sonicTheHedgehog } from "./sonic-the-hedgehog";
 import { soulcalibur } from "./soulcalibur";
 import { spaceInvaders } from "./space-invaders";
 import { stardewValley } from "./stardew-valley";
+import { starRail } from "./star-rail";
 import { stellaris } from "./stellaris";
 import { streetFighter } from "./street-fighter";
 import { subnautica } from "./subnautica";
@@ -106,10 +107,12 @@ import { warframe } from "./warframe";
 import { warzone } from "./warzone";
 import { wiiSports } from "./wii-sports";
 import { worldOfWarcraft } from "./world-of-warcraft";
+import { wutheringWaves } from "./wuthering-waves";
 import { yakuza } from "./yakuza";
+import { zenlessZoneZero } from "./zenless-zone-zero";
 
 /**
- * Video games.
+ * Video game entries
  * Sourced from `lib/data/sports/video/*.ts`.
  */
 export const VIDEO_GAMES: Sport[] = [
@@ -199,6 +202,7 @@ export const VIDEO_GAMES: Sport[] = [
   soulcalibur,
   spaceInvaders,
   stardewValley,
+  starRail,
   stellaris,
   streetFighter,
   subnautica,
@@ -219,6 +223,8 @@ export const VIDEO_GAMES: Sport[] = [
   warzone,
   wiiSports,
   worldOfWarcraft,
+  wutheringWaves,
   yakuza,
+  zenlessZoneZero,
 ];
 

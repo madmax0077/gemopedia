@@ -12,9 +12,11 @@ import { caving } from "./caving";
 import { coasteering } from "./coasteering";
 import { cyclocross } from "./cyclocross";
 import { downhillMountainBiking } from "./downhill-mountain-biking";
+import { fellRunning } from "./fell-running";
 import { freerunning } from "./freerunning";
 import { gravelCycling } from "./gravel-cycling";
 import { handcycling } from "./handcycling";
+import { heliSkiing } from "./heli-skiing";
 import { leadClimbing } from "./lead-climbing";
 import { modernPentathlon } from "./modern-pentathlon";
 import { mountainBiking } from "./mountain-biking";
@@ -37,7 +39,7 @@ import { viaFerrata } from "./via-ferrata";
 import { wingsuitFlying } from "./wingsuit-flying";
 
 /**
- * Adventure and extreme sports.
+ * Adventure sport entries
  * Sourced from `lib/data/sports/adventure/*.ts`.
  */
 export const ADVENTURE_SPORTS: Sport[] = [
@@ -53,9 +55,11 @@ export const ADVENTURE_SPORTS: Sport[] = [
   coasteering,
   cyclocross,
   downhillMountainBiking,
+  fellRunning,
   freerunning,
   gravelCycling,
   handcycling,
+  heliSkiing,
   leadClimbing,
   modernPentathlon,
   mountainBiking,

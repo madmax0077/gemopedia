@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { aikido } from "./aikido";
+import { backholdWrestling } from "./backhold-wrestling";
 import { baguazhang } from "./baguazhang";
 import { bajiquan } from "./bajiquan";
 import { bareKnuckleBoxing } from "./bare-knuckle-boxing";
@@ -10,6 +11,8 @@ import { brazilianJiuJitsu } from "./brazilian-jiu-jitsu";
 import { capoeira } from "./capoeira";
 import { catchWrestling } from "./catch-wrestling";
 import { chidaoba } from "./chidaoba";
+import { coreeda } from "./coreeda";
+import { cornishWrestling } from "./cornish-wrestling";
 import { escrima } from "./escrima";
 import { eskrima } from "./eskrima";
 import { fencing } from "./fencing";
@@ -24,6 +27,7 @@ import { iaido } from "./iaido";
 import { jeetKuneDo } from "./jeet-kune-do";
 import { jodo } from "./jodo";
 import { judo } from "./judo";
+import { k1 } from "./k-1";
 import { kalaripayattu } from "./kalaripayattu";
 import { karate } from "./karate";
 import { kendo } from "./kendo";
@@ -35,10 +39,12 @@ import { kurash } from "./kurash";
 import { kyokushin } from "./kyokushin";
 import { kyudo } from "./kyudo";
 import { lethwei } from "./lethwei";
+import { luchaLibre } from "./lucha-libre";
 import { lutaLivre } from "./luta-livre";
 import { mixedMartialArts } from "./mixed-martial-arts";
 import { muayBoran } from "./muay-boran";
 import { muayThai } from "./muay-thai";
+import { naban } from "./naban";
 import { naginatajutsu } from "./naginatajutsu";
 import { ninjutsu } from "./ninjutsu";
 import { pankration } from "./pankration";
@@ -68,11 +74,12 @@ import { xingyiquan } from "./xingyiquan";
 import { yawYan } from "./yaw-yan";
 
 /**
- * Combat sports and martial arts.
+ * Combat sport entries
  * Sourced from `lib/data/sports/combat/*.ts`.
  */
 export const COMBAT_SPORTS: Sport[] = [
   aikido,
+  backholdWrestling,
   baguazhang,
   bajiquan,
   bareKnuckleBoxing,
@@ -82,6 +89,8 @@ export const COMBAT_SPORTS: Sport[] = [
   capoeira,
   catchWrestling,
   chidaoba,
+  coreeda,
+  cornishWrestling,
   escrima,
   eskrima,
   fencing,
@@ -96,6 +105,7 @@ export const COMBAT_SPORTS: Sport[] = [
   jeetKuneDo,
   jodo,
   judo,
+  k1,
   kalaripayattu,
   karate,
   kendo,
@@ -107,10 +117,12 @@ export const COMBAT_SPORTS: Sport[] = [
   kyokushin,
   kyudo,
   lethwei,
+  luchaLibre,
   lutaLivre,
   mixedMartialArts,
   muayBoran,
   muayThai,
+  naban,
   naginatajutsu,
   ninjutsu,
   pankration,
@@ -139,3 +151,4 @@ export const COMBAT_SPORTS: Sport[] = [
   xingyiquan,
   yawYan,
 ];
+

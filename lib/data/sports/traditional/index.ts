@@ -39,7 +39,9 @@ import { mallakhamb } from "./mallakhamb";
 import { mancala } from "./mancala";
 import { masWrestling } from "./mas-wrestling";
 import { mongolianWrestling } from "./mongolian-wrestling";
+import { musangwe } from "./musangwe";
 import { nguniStickFighting } from "./nguni-stick-fighting";
+import { nubianWrestling } from "./nubian-wrestling";
 import { oware } from "./oware";
 import { palant } from "./palant";
 import { pehlwani } from "./pehlwani";
@@ -66,7 +68,7 @@ import { yagliGures } from "./yagli-gures";
 import { yutNori } from "./yut-nori";
 
 /**
- * Traditional cultural sports category.
+ * Traditional sport entries
  * Sourced from `lib/data/sports/traditional/*.ts`.
  */
 export const TRADITIONAL_SPORTS: Sport[] = [
@@ -109,7 +111,9 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   mancala,
   masWrestling,
   mongolianWrestling,
+  musangwe,
   nguniStickFighting,
+  nubianWrestling,
   oware,
   palant,
   pehlwani,

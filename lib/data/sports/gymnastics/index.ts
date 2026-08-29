@@ -11,10 +11,11 @@ import { germanWheel } from "./german-wheel";
 import { rhythmicGymnastics } from "./rhythmic-gymnastics";
 import { ropeSkipping } from "./rope-skipping";
 import { trampoline } from "./trampoline";
+import { trampolining } from "./trampolining";
 import { tumbling } from "./tumbling";
 
 /**
- * Gymnastics sports category.
+ * Gymnastics, acrobatics, and body-control disciplines.
  * Sourced from `lib/data/sports/gymnastics/*.ts`.
  */
 export const GYMNASTICS_SPORTS: Sport[] = [
@@ -29,6 +30,7 @@ export const GYMNASTICS_SPORTS: Sport[] = [
   rhythmicGymnastics,
   ropeSkipping,
   trampoline,
+  trampolining,
   tumbling,
 ];
 

@@ -9,8 +9,12 @@ import { bungeeJumping } from "./bungee-jumping";
 import { canyoning } from "./canyoning";
 import { caving } from "./caving";
 import { coasteering } from "./coasteering";
+import { freerunning } from "./freerunning";
+import { gravelCycling } from "./gravel-cycling";
+import { leadClimbing } from "./lead-climbing";
 import { modernPentathlon } from "./modern-pentathlon";
 import { mountainBiking } from "./mountain-biking";
+import { mountaineering } from "./mountaineering";
 import { obstacleCourseRacing } from "./obstacle-course-racing";
 import { orienteering } from "./orienteering";
 import { packrafting } from "./packrafting";
@@ -21,13 +25,14 @@ import { skateboarding } from "./skateboarding";
 import { skydiving } from "./skydiving";
 import { slacklining } from "./slacklining";
 import { spartanRace } from "./spartan-race";
+import { speedClimbing } from "./speed-climbing";
 import { toughMudder } from "./tough-mudder";
 import { trackCycling } from "./track-cycling";
 import { viaFerrata } from "./via-ferrata";
 import { wingsuitFlying } from "./wingsuit-flying";
 
 /**
- * Adventure and extreme sports category.
+ * Adventure and outdoor extreme sports.
  * Sourced from `lib/data/sports/adventure/*.ts`.
  */
 export const ADVENTURE_SPORTS: Sport[] = [
@@ -40,8 +45,12 @@ export const ADVENTURE_SPORTS: Sport[] = [
   canyoning,
   caving,
   coasteering,
+  freerunning,
+  gravelCycling,
+  leadClimbing,
   modernPentathlon,
   mountainBiking,
+  mountaineering,
   obstacleCourseRacing,
   orienteering,
   packrafting,
@@ -52,6 +61,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   skydiving,
   slacklining,
   spartanRace,
+  speedClimbing,
   toughMudder,
   trackCycling,
   viaFerrata,

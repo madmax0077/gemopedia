@@ -14,6 +14,7 @@ import { candyCrush } from "./candy-crush";
 import { candyCrushSaga } from "./candy-crush-saga";
 import { celeste } from "./celeste";
 import { civilization } from "./civilization";
+import { civilizationGame } from "./civilization-game";
 import { crusaderKingsIii } from "./crusader-kings-iii";
 import { cuphead } from "./cuphead";
 import { cyberpunk2077 } from "./cyberpunk-2077";
@@ -23,9 +24,11 @@ import { deathStranding } from "./death-stranding";
 import { deepRockGalactic } from "./deep-rock-galactic";
 import { destiny2 } from "./destiny-2";
 import { diablo } from "./diablo";
+import { diabloGame } from "./diablo-game";
 import { discoElysium } from "./disco-elysium";
 import { donkeyKong } from "./donkey-kong";
 import { doom } from "./doom";
+import { doomGame } from "./doom-game";
 import { eaFc } from "./ea-fc";
 import { eaSportsUfc } from "./ea-sports-ufc";
 import { eldenRing } from "./elden-ring";
@@ -33,8 +36,10 @@ import { factorio } from "./factorio";
 import { fallGuys } from "./fall-guys";
 import { finalFantasy } from "./final-fantasy";
 import { fortnite } from "./fortnite";
+import { galaga } from "./galaga";
 import { ghostOfTsushima } from "./ghost-of-tsushima";
 import { godOfWar } from "./god-of-war";
+import { grandTheftAuto } from "./grand-theft-auto";
 import { grandTheftAutoV } from "./grand-theft-auto-v";
 import { guitarHero } from "./guitar-hero";
 import { hades } from "./hades";
@@ -64,11 +69,14 @@ import { persona5 } from "./persona-5";
 import { pinball } from "./pinball";
 import { pokemonVideoGames } from "./pokemon-video-games";
 import { portal } from "./portal";
+import { portalGame } from "./portal-game";
 import { redDeadRedemption2 } from "./red-dead-redemption-2";
 import { residentEvil } from "./resident-evil";
 import { returnal } from "./returnal";
 import { riskOfRain2 } from "./risk-of-rain-2";
 import { roblox } from "./roblox";
+import { robloxGame } from "./roblox-game";
+import { simCity } from "./sim-city";
 import { skyrim } from "./skyrim";
 import { slayTheSpire } from "./slay-the-spire";
 import { sonic } from "./sonic";
@@ -83,6 +91,7 @@ import { superSmashBros } from "./super-smash-bros";
 import { tekken } from "./tekken";
 import { terraria } from "./terraria";
 import { tetris } from "./tetris";
+import { theElderScrolls } from "./the-elder-scrolls";
 import { theLastOfUs } from "./the-last-of-us";
 import { theLegendOfZelda } from "./the-legend-of-zelda";
 import { theSims } from "./the-sims";
@@ -90,12 +99,13 @@ import { theWitcher3 } from "./the-witcher-3";
 import { uncharted } from "./uncharted";
 import { vampireSurvivors } from "./vampire-survivors";
 import { warframe } from "./warframe";
+import { warzone } from "./warzone";
 import { wiiSports } from "./wii-sports";
 import { worldOfWarcraft } from "./world-of-warcraft";
 import { yakuza } from "./yakuza";
 
 /**
- * Video games category.
+ * Video games with a strong competitive or sporting element.
  * Sourced from `lib/data/sports/video/*.ts`.
  */
 export const VIDEO_GAMES: Sport[] = [
@@ -113,6 +123,7 @@ export const VIDEO_GAMES: Sport[] = [
   candyCrushSaga,
   celeste,
   civilization,
+  civilizationGame,
   crusaderKingsIii,
   cuphead,
   cyberpunk2077,
@@ -122,9 +133,11 @@ export const VIDEO_GAMES: Sport[] = [
   deepRockGalactic,
   destiny2,
   diablo,
+  diabloGame,
   discoElysium,
   donkeyKong,
   doom,
+  doomGame,
   eaFc,
   eaSportsUfc,
   eldenRing,
@@ -132,8 +145,10 @@ export const VIDEO_GAMES: Sport[] = [
   fallGuys,
   finalFantasy,
   fortnite,
+  galaga,
   ghostOfTsushima,
   godOfWar,
+  grandTheftAuto,
   grandTheftAutoV,
   guitarHero,
   hades,
@@ -163,11 +178,14 @@ export const VIDEO_GAMES: Sport[] = [
   pinball,
   pokemonVideoGames,
   portal,
+  portalGame,
   redDeadRedemption2,
   residentEvil,
   returnal,
   riskOfRain2,
   roblox,
+  robloxGame,
+  simCity,
   skyrim,
   slayTheSpire,
   sonic,
@@ -182,6 +200,7 @@ export const VIDEO_GAMES: Sport[] = [
   tekken,
   terraria,
   tetris,
+  theElderScrolls,
   theLastOfUs,
   theLegendOfZelda,
   theSims,
@@ -189,6 +208,7 @@ export const VIDEO_GAMES: Sport[] = [
   uncharted,
   vampireSurvivors,
   warframe,
+  warzone,
   wiiSports,
   worldOfWarcraft,
   yakuza,

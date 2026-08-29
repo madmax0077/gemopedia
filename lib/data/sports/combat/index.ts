@@ -7,6 +7,7 @@ import { bokator } from "./bokator";
 import { boxing } from "./boxing";
 import { brazilianJiuJitsu } from "./brazilian-jiu-jitsu";
 import { capoeira } from "./capoeira";
+import { escrima } from "./escrima";
 import { eskrima } from "./eskrima";
 import { fencing } from "./fencing";
 import { freestyleWrestling } from "./freestyle-wrestling";
@@ -48,6 +49,7 @@ import { silambam } from "./silambam";
 import { sumo } from "./sumo";
 import { systema } from "./systema";
 import { taekwondo } from "./taekwondo";
+import { taiChi } from "./tai-chi";
 import { taiChiChuan } from "./tai-chi-chuan";
 import { tangSooDo } from "./tang-soo-do";
 import { thangTa } from "./thang-ta";
@@ -59,7 +61,7 @@ import { xingyiquan } from "./xingyiquan";
 import { yawYan } from "./yaw-yan";
 
 /**
- * Combat sports category.
+ * Combat sports and martial arts.
  * Sourced from `lib/data/sports/combat/*.ts`.
  */
 export const COMBAT_SPORTS: Sport[] = [
@@ -70,6 +72,7 @@ export const COMBAT_SPORTS: Sport[] = [
   boxing,
   brazilianJiuJitsu,
   capoeira,
+  escrima,
   eskrima,
   fencing,
   freestyleWrestling,
@@ -111,6 +114,7 @@ export const COMBAT_SPORTS: Sport[] = [
   sumo,
   systema,
   taekwondo,
+  taiChi,
   taiChiChuan,
   tangSooDo,
   thangTa,

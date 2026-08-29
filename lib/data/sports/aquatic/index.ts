@@ -14,14 +14,17 @@ import { kayaking } from "./kayaking";
 import { kitesurfing } from "./kitesurfing";
 import { kneeboarding } from "./kneeboarding";
 import { lifeguardSport } from "./lifeguard-sport";
+import { openWaterSwimming } from "./open-water-swimming";
 import { outriggerCanoeing } from "./outrigger-canoeing";
 import { rowing } from "./rowing";
 import { sailing } from "./sailing";
+import { scubaDiving } from "./scuba-diving";
 import { spearfishing } from "./spearfishing";
 import { standUpPaddleboarding } from "./stand-up-paddleboarding";
 import { surfing } from "./surfing";
 import { swimming } from "./swimming";
 import { swimrun } from "./swimrun";
+import { synchronizedDiving } from "./synchronized-diving";
 import { triathlon } from "./triathlon";
 import { underwaterHockey } from "./underwater-hockey";
 import { underwaterRugby } from "./underwater-rugby";
@@ -33,7 +36,7 @@ import { whitewaterRafting } from "./whitewater-rafting";
 import { windsurfing } from "./windsurfing";
 
 /**
- * Aquatic sports category.
+ * Water-based competitive sports.
  * Sourced from `lib/data/sports/aquatic/*.ts`.
  */
 export const AQUATIC_SPORTS: Sport[] = [
@@ -51,14 +54,17 @@ export const AQUATIC_SPORTS: Sport[] = [
   kitesurfing,
   kneeboarding,
   lifeguardSport,
+  openWaterSwimming,
   outriggerCanoeing,
   rowing,
   sailing,
+  scubaDiving,
   spearfishing,
   standUpPaddleboarding,
   surfing,
   swimming,
   swimrun,
+  synchronizedDiving,
   triathlon,
   underwaterHockey,
   underwaterRugby,

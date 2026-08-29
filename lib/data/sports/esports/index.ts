@@ -4,12 +4,14 @@ import { ageOfEmpiresIi } from "./age-of-empires-ii";
 import { apexLegends } from "./apex-legends";
 import { arenaOfValor } from "./arena-of-valor";
 import { brawlStars } from "./brawl-stars";
+import { callOfDutyEsports } from "./call-of-duty-esports";
 import { clashOfClans } from "./clash-of-clans";
 import { clashRoyale } from "./clash-royale";
 import { counterStrike } from "./counter-strike";
 import { deadlock } from "./deadlock";
 import { dota2 } from "./dota-2";
 import { dragonBallFighterZ } from "./dragon-ball-fighterz";
+import { eaSportsFc } from "./ea-sports-fc";
 import { fifaOnline4 } from "./fifa-online-4";
 import { garenaFreeFire } from "./garena-free-fire";
 import { genshinImpact } from "./genshin-impact";
@@ -17,6 +19,7 @@ import { guiltyGearStrive } from "./guilty-gear-strive";
 import { hearthstone } from "./hearthstone";
 import { honorOfKings } from "./honor-of-kings";
 import { huntShowdown } from "./hunt-showdown";
+import { iracing } from "./iracing";
 import { kingOfFightersXv } from "./king-of-fighters-xv";
 import { leagueOfLegends } from "./league-of-legends";
 import { magicTheGatheringArena } from "./magic-the-gathering-arena";
@@ -33,6 +36,7 @@ import { rainbowSixSiege } from "./rainbow-six-siege";
 import { rocketLeague } from "./rocket-league";
 import { smite } from "./smite";
 import { splatoon } from "./splatoon";
+import { starcraft2 } from "./starcraft-2";
 import { starcraftII } from "./starcraft-ii";
 import { teamfightTactics } from "./teamfight-tactics";
 import { trackmania } from "./trackmania";
@@ -42,7 +46,7 @@ import { wildRift } from "./wild-rift";
 import { worldOfTanks } from "./world-of-tanks";
 
 /**
- * Esports category.
+ * Professional esports titles and competitive video game leagues.
  * Sourced from `lib/data/sports/esports/*.ts`.
  */
 export const ESPORTS_SPORTS: Sport[] = [
@@ -50,12 +54,14 @@ export const ESPORTS_SPORTS: Sport[] = [
   apexLegends,
   arenaOfValor,
   brawlStars,
+  callOfDutyEsports,
   clashOfClans,
   clashRoyale,
   counterStrike,
   deadlock,
   dota2,
   dragonBallFighterZ,
+  eaSportsFc,
   fifaOnline4,
   garenaFreeFire,
   genshinImpact,
@@ -63,6 +69,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   hearthstone,
   honorOfKings,
   huntShowdown,
+  iracing,
   kingOfFightersXv,
   leagueOfLegends,
   magicTheGatheringArena,
@@ -79,6 +86,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   rocketLeague,
   smite,
   splatoon,
+  starcraft2,
   starcraftII,
   teamfightTactics,
   trackmania,

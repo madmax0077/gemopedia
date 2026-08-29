@@ -26,6 +26,7 @@ import { renju } from "./renju";
 import { rummy } from "./rummy";
 import { shobu } from "./shobu";
 import { shogi } from "./shogi";
+import { speedcubing } from "./speedcubing";
 import { surakarta } from "./surakarta";
 import { twixt } from "./twixt";
 import { tzaar } from "./tzaar";
@@ -33,7 +34,7 @@ import { xiangqi } from "./xiangqi";
 import { yote } from "./yote";
 
 /**
- * Mind sports category.
+ * Mind sports — chess, go, memory sports, mental competitions.
  * Sourced from `lib/data/sports/mind/*.ts`.
  */
 export const MIND_SPORTS: Sport[] = [
@@ -63,6 +64,7 @@ export const MIND_SPORTS: Sport[] = [
   rummy,
   shobu,
   shogi,
+  speedcubing,
   surakarta,
   twixt,
   tzaar,

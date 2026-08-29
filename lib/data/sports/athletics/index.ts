@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { aquathlon } from "./aquathlon";
+import { athletics } from "./athletics";
 import { crossCountryRunning } from "./cross-country-running";
 import { decathlon } from "./decathlon";
 import { discusThrow } from "./discus-throw";
@@ -22,11 +23,12 @@ import { tripleJump } from "./triple-jump";
 import { ultraMarathon } from "./ultra-marathon";
 
 /**
- * Athletics category.
+ * Athletics — track and field disciplines.
  * Sourced from `lib/data/sports/athletics/*.ts`.
  */
 export const ATHLETICS_SPORTS: Sport[] = [
   aquathlon,
+  athletics,
   crossCountryRunning,
   decathlon,
   discusThrow,

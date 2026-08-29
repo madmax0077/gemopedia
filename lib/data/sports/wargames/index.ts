@@ -22,7 +22,7 @@ import { warmachine } from "./warmachine";
 import { xWing } from "./x-wing";
 
 /**
- * Wargames category.
+ * Miniature wargames and strategic wargaming.
  * Sourced from `lib/data/sports/wargames/*.ts`.
  */
 export const WARGAMES_GAMES: Sport[] = [

@@ -3,15 +3,19 @@
 import { aikido } from "./aikido";
 import { baguazhang } from "./baguazhang";
 import { bajiquan } from "./bajiquan";
+import { bareKnuckleBoxing } from "./bare-knuckle-boxing";
 import { bokator } from "./bokator";
 import { boxing } from "./boxing";
 import { brazilianJiuJitsu } from "./brazilian-jiu-jitsu";
 import { capoeira } from "./capoeira";
+import { catchWrestling } from "./catch-wrestling";
+import { chidaoba } from "./chidaoba";
 import { escrima } from "./escrima";
 import { eskrima } from "./eskrima";
 import { fencing } from "./fencing";
 import { freestyleWrestling } from "./freestyle-wrestling";
 import { gatka } from "./gatka";
+import { grecoRomanWrestling } from "./greco-roman-wrestling";
 import { hapkido } from "./hapkido";
 import { hema } from "./hema";
 import { hungGar } from "./hung-gar";
@@ -25,10 +29,13 @@ import { karate } from "./karate";
 import { kendo } from "./kendo";
 import { kickboxing } from "./kickboxing";
 import { kravMaga } from "./krav-maga";
+import { kudo } from "./kudo";
 import { kungFu } from "./kung-fu";
+import { kurash } from "./kurash";
 import { kyokushin } from "./kyokushin";
 import { kyudo } from "./kyudo";
 import { lethwei } from "./lethwei";
+import { lutaLivre } from "./luta-livre";
 import { mixedMartialArts } from "./mixed-martial-arts";
 import { muayBoran } from "./muay-boran";
 import { muayThai } from "./muay-thai";
@@ -68,15 +75,19 @@ export const COMBAT_SPORTS: Sport[] = [
   aikido,
   baguazhang,
   bajiquan,
+  bareKnuckleBoxing,
   bokator,
   boxing,
   brazilianJiuJitsu,
   capoeira,
+  catchWrestling,
+  chidaoba,
   escrima,
   eskrima,
   fencing,
   freestyleWrestling,
   gatka,
+  grecoRomanWrestling,
   hapkido,
   hema,
   hungGar,
@@ -90,10 +101,13 @@ export const COMBAT_SPORTS: Sport[] = [
   kendo,
   kickboxing,
   kravMaga,
+  kudo,
   kungFu,
+  kurash,
   kyokushin,
   kyudo,
   lethwei,
+  lutaLivre,
   mixedMartialArts,
   muayBoran,
   muayThai,
@@ -125,4 +139,3 @@ export const COMBAT_SPORTS: Sport[] = [
   xingyiquan,
   yawYan,
 ];
-

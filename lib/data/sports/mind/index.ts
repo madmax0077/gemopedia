@@ -14,11 +14,14 @@ import { gomoku } from "./gomoku";
 import { halma } from "./halma";
 import { havannah } from "./havannah";
 import { hearts } from "./hearts";
+import { janggi } from "./janggi";
 import { konane } from "./konane";
 import { linesOfAction } from "./lines-of-action";
 import { makruk } from "./makruk";
+import { memorySport } from "./memory-sport";
 import { morabaraba } from "./morabaraba";
 import { omweso } from "./omweso";
+import { othello } from "./othello";
 import { patolli } from "./patolli";
 import { pente } from "./pente";
 import { poker } from "./poker";
@@ -52,11 +55,14 @@ export const MIND_SPORTS: Sport[] = [
   halma,
   havannah,
   hearts,
+  janggi,
   konane,
   linesOfAction,
   makruk,
+  memorySport,
   morabaraba,
   omweso,
+  othello,
   patolli,
   pente,
   poker,
@@ -71,4 +77,3 @@ export const MIND_SPORTS: Sport[] = [
   xiangqi,
   yote,
 ];
-

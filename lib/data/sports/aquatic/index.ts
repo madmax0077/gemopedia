@@ -1,5 +1,6 @@
 ﻿import type { Sport } from "@/lib/types";
 
+import { aquaCycling } from "./aqua-cycling";
 import { artisticSwimming } from "./artistic-swimming";
 import { bigWaveSurfing } from "./big-wave-surfing";
 import { bodyboarding } from "./bodyboarding";
@@ -42,10 +43,11 @@ import { windsurfing } from "./windsurfing";
 import { wingFoiling } from "./wing-foiling";
 
 /**
- * Aquatic sports.
+ * Aquatic sport entries
  * Sourced from `lib/data/sports/aquatic/*.ts`.
  */
 export const AQUATIC_SPORTS: Sport[] = [
+  aquaCycling,
   artisticSwimming,
   bigWaveSurfing,
   bodyboarding,

@@ -34,6 +34,7 @@ import { speedway } from "./speedway";
 import { superbikeRacing } from "./superbike-racing";
 import { supercross } from "./supercross";
 import { touringCarRacing } from "./touring-car-racing";
+import { worldEnduranceChampionship } from "./world-endurance-championship";
 import { worldRallyChampionship } from "./world-rally-championship";
 
 /**
@@ -75,6 +76,7 @@ export const MOTOR_SPORTS: Sport[] = [
   superbikeRacing,
   supercross,
   touringCarRacing,
+  worldEnduranceChampionship,
   worldRallyChampionship,
 ];
 

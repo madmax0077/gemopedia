@@ -15,6 +15,7 @@ import { chidaoba } from "./chidaoba";
 import { collarAndElbow } from "./collar-and-elbow";
 import { coreeda } from "./coreeda";
 import { cornishWrestling } from "./cornish-wrestling";
+import { defendo } from "./defendo";
 import { dumog } from "./dumog";
 import { escrima } from "./escrima";
 import { eskrima } from "./eskrima";
@@ -22,6 +23,7 @@ import { fencing } from "./fencing";
 import { freestyleWrestling } from "./freestyle-wrestling";
 import { gatka } from "./gatka";
 import { grecoRomanWrestling } from "./greco-roman-wrestling";
+import { haidongGumdo } from "./haidong-gumdo";
 import { hapkido } from "./hapkido";
 import { hema } from "./hema";
 import { hungGar } from "./hung-gar";
@@ -37,6 +39,7 @@ import { karate } from "./karate";
 import { kendo } from "./kendo";
 import { khuresh } from "./khuresh";
 import { kickboxing } from "./kickboxing";
+import { kobudo } from "./kobudo";
 import { kravMaga } from "./krav-maga";
 import { kudo } from "./kudo";
 import { kungFu } from "./kung-fu";
@@ -53,12 +56,15 @@ import { naban } from "./naban";
 import { naginatajutsu } from "./naginatajutsu";
 import { nihonTaijutsu } from "./nihon-taijutsu";
 import { ninjutsu } from "./ninjutsu";
+import { okichitaw } from "./okichitaw";
 import { pankration } from "./pankration";
+import { pencakSilat } from "./pencak-silat";
 import { prayingMantisKungFu } from "./praying-mantis-kung-fu";
 import { sambo } from "./sambo";
 import { sanda } from "./sanda";
 import { savate } from "./savate";
 import { senegaleseWrestling } from "./senegalese-wrestling";
+import { shootBoxing } from "./shoot-boxing";
 import { shootfighting } from "./shootfighting";
 import { shooto } from "./shooto";
 import { shorinjiKempo } from "./shorinji-kempo";
@@ -99,6 +105,7 @@ export const COMBAT_SPORTS: Sport[] = [
   collarAndElbow,
   coreeda,
   cornishWrestling,
+  defendo,
   dumog,
   escrima,
   eskrima,
@@ -106,6 +113,7 @@ export const COMBAT_SPORTS: Sport[] = [
   freestyleWrestling,
   gatka,
   grecoRomanWrestling,
+  haidongGumdo,
   hapkido,
   hema,
   hungGar,
@@ -121,6 +129,7 @@ export const COMBAT_SPORTS: Sport[] = [
   kendo,
   khuresh,
   kickboxing,
+  kobudo,
   kravMaga,
   kudo,
   kungFu,
@@ -137,12 +146,15 @@ export const COMBAT_SPORTS: Sport[] = [
   naginatajutsu,
   nihonTaijutsu,
   ninjutsu,
+  okichitaw,
   pankration,
+  pencakSilat,
   prayingMantisKungFu,
   sambo,
   sanda,
   savate,
   senegaleseWrestling,
+  shootBoxing,
   shootfighting,
   shooto,
   shorinjiKempo,

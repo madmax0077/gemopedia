@@ -10,9 +10,11 @@ import { bungeeJumping } from "./bungee-jumping";
 import { canyoning } from "./canyoning";
 import { caving } from "./caving";
 import { coasteering } from "./coasteering";
+import { crankworx } from "./crankworx";
 import { cyclocross } from "./cyclocross";
 import { downhillMountainBiking } from "./downhill-mountain-biking";
 import { fellRunning } from "./fell-running";
+import { freerideWorldTour } from "./freeride-world-tour";
 import { freerunning } from "./freerunning";
 import { gravelCycling } from "./gravel-cycling";
 import { handcycling } from "./handcycling";
@@ -28,6 +30,7 @@ import { obstacleCourseRacing } from "./obstacle-course-racing";
 import { orienteering } from "./orienteering";
 import { packrafting } from "./packrafting";
 import { parkour } from "./parkour";
+import { redBullRampage } from "./red-bull-rampage";
 import { roadCycling } from "./road-cycling";
 import { rockClimbing } from "./rock-climbing";
 import { skateboarding } from "./skateboarding";
@@ -57,9 +60,11 @@ export const ADVENTURE_SPORTS: Sport[] = [
   canyoning,
   caving,
   coasteering,
+  crankworx,
   cyclocross,
   downhillMountainBiking,
   fellRunning,
+  freerideWorldTour,
   freerunning,
   gravelCycling,
   handcycling,
@@ -75,6 +80,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   orienteering,
   packrafting,
   parkour,
+  redBullRampage,
   roadCycling,
   rockClimbing,
   skateboarding,

@@ -65,6 +65,8 @@ import { metalGearSolid } from "./metal-gear-solid";
 import { metroid } from "./metroid";
 import { minecraft } from "./minecraft";
 import { monsterHunter } from "./monster-hunter";
+import { monsterHunterWilds } from "./monster-hunter-wilds";
+import { monsterHunterWorld } from "./monster-hunter-world";
 import { mortalKombat } from "./mortal-kombat";
 import { nba2k } from "./nba-2k";
 import { noMansSky } from "./no-mans-sky";
@@ -73,7 +75,11 @@ import { palworld } from "./palworld";
 import { pathOfExile } from "./path-of-exile";
 import { persona5 } from "./persona-5";
 import { pinball } from "./pinball";
+import { pokemonGo } from "./pokemon-go";
+import { pokemonLegendsArceus } from "./pokemon-legends-arceus";
+import { pokemonScarletViolet } from "./pokemon-scarlet-violet";
 import { pokemonVideoGames } from "./pokemon-video-games";
+import { pokkenTournament } from "./pokken-tournament";
 import { portal } from "./portal";
 import { portalGame } from "./portal-game";
 import { redDeadRedemption2 } from "./red-dead-redemption-2";
@@ -187,6 +193,8 @@ export const VIDEO_GAMES: Sport[] = [
   metroid,
   minecraft,
   monsterHunter,
+  monsterHunterWilds,
+  monsterHunterWorld,
   mortalKombat,
   nba2k,
   noMansSky,
@@ -195,7 +203,11 @@ export const VIDEO_GAMES: Sport[] = [
   pathOfExile,
   persona5,
   pinball,
+  pokemonGo,
+  pokemonLegendsArceus,
+  pokemonScarletViolet,
   pokemonVideoGames,
+  pokkenTournament,
   portal,
   portalGame,
   redDeadRedemption2,

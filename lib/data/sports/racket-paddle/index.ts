@@ -17,9 +17,10 @@ import { softTennis } from "./soft-tennis";
 import { squash } from "./squash";
 import { tableTennis } from "./table-tennis";
 import { tennis } from "./tennis";
+import { wheelchairTennis } from "./wheelchair-tennis";
 
 /**
- * Racket and paddle sports category.
+ * Racket and paddle sports.
  * Sourced from `lib/data/sports/racket-paddle/*.ts`.
  */
 export const RACKET_PADDLE_SPORTS: Sport[] = [
@@ -40,5 +41,6 @@ export const RACKET_PADDLE_SPORTS: Sport[] = [
   squash,
   tableTennis,
   tennis,
+  wheelchairTennis,
 ];
 

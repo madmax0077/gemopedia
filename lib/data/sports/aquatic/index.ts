@@ -4,6 +4,8 @@ import { artisticSwimming } from "./artistic-swimming";
 import { bigWaveSurfing } from "./big-wave-surfing";
 import { bodyboarding } from "./bodyboarding";
 import { canoeing } from "./canoeing";
+import { canoePolo } from "./canoe-polo";
+import { canoeSlalom } from "./canoe-slalom";
 import { canoeSprint } from "./canoe-sprint";
 import { cliffDiving } from "./cliff-diving";
 import { diving } from "./diving";
@@ -24,6 +26,7 @@ import { scubaDiving } from "./scuba-diving";
 import { spearfishing } from "./spearfishing";
 import { standUpPaddleboarding } from "./stand-up-paddleboarding";
 import { surfing } from "./surfing";
+import { surfLifesaving } from "./surf-lifesaving";
 import { swimming } from "./swimming";
 import { swimrun } from "./swimrun";
 import { synchronizedDiving } from "./synchronized-diving";
@@ -36,9 +39,10 @@ import { waterPolo } from "./water-polo";
 import { waterSkiing } from "./water-skiing";
 import { whitewaterRafting } from "./whitewater-rafting";
 import { windsurfing } from "./windsurfing";
+import { wingFoiling } from "./wing-foiling";
 
 /**
- * Aquatic sports — swimming, watercraft, surface + underwater disciplines.
+ * Aquatic sports.
  * Sourced from `lib/data/sports/aquatic/*.ts`.
  */
 export const AQUATIC_SPORTS: Sport[] = [
@@ -46,6 +50,8 @@ export const AQUATIC_SPORTS: Sport[] = [
   bigWaveSurfing,
   bodyboarding,
   canoeing,
+  canoePolo,
+  canoeSlalom,
   canoeSprint,
   cliffDiving,
   diving,
@@ -66,6 +72,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   spearfishing,
   standUpPaddleboarding,
   surfing,
+  surfLifesaving,
   swimming,
   swimrun,
   synchronizedDiving,
@@ -78,5 +85,6 @@ export const AQUATIC_SPORTS: Sport[] = [
   waterSkiing,
   whitewaterRafting,
   windsurfing,
+  wingFoiling,
 ];
 

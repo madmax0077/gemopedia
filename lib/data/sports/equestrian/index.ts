@@ -2,9 +2,11 @@
 
 import { barrelRacing } from "./barrel-racing";
 import { buzkashi } from "./buzkashi";
+import { combinedDriving } from "./combined-driving";
 import { cuttingHorse } from "./cutting-horse";
 import { dressage } from "./dressage";
 import { enduranceRiding } from "./endurance-riding";
+import { equestrianVaulting } from "./equestrian-vaulting";
 import { eventing } from "./eventing";
 import { gymkhana } from "./gymkhana";
 import { harnessRacing } from "./harness-racing";
@@ -21,15 +23,17 @@ import { tentPegging } from "./tent-pegging";
 import { vaulting } from "./vaulting";
 
 /**
- * Equestrian sports — horse-mounted disciplines.
+ * Equestrian sports.
  * Sourced from `lib/data/sports/equestrian/*.ts`.
  */
 export const EQUESTRIAN_SPORTS: Sport[] = [
   barrelRacing,
   buzkashi,
+  combinedDriving,
   cuttingHorse,
   dressage,
   enduranceRiding,
+  equestrianVaulting,
   eventing,
   gymkhana,
   harnessRacing,

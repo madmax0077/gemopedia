@@ -4,6 +4,7 @@ import { airHockey } from "./air-hockey";
 import { archery } from "./archery";
 import { bocce } from "./bocce";
 import { boccia } from "./boccia";
+import { caromBilliards } from "./carom-billiards";
 import { cornhole } from "./cornhole";
 import { croquet } from "./croquet";
 import { darts } from "./darts";
@@ -31,10 +32,11 @@ import { straightPool } from "./straight-pool";
 import { tableHockey } from "./table-hockey";
 import { tableShuffleboard } from "./table-shuffleboard";
 import { tenPinBowling } from "./ten-pin-bowling";
+import { threeCushionBilliards } from "./three-cushion-billiards";
 import { trapShooting } from "./trap-shooting";
 
 /**
- * Precision sports — target, accuracy, control-based disciplines.
+ * Precision sports.
  * Sourced from `lib/data/sports/precision/*.ts`.
  */
 export const PRECISION_SPORTS: Sport[] = [
@@ -42,6 +44,7 @@ export const PRECISION_SPORTS: Sport[] = [
   archery,
   bocce,
   boccia,
+  caromBilliards,
   cornhole,
   croquet,
   darts,
@@ -69,6 +72,7 @@ export const PRECISION_SPORTS: Sport[] = [
   tableHockey,
   tableShuffleboard,
   tenPinBowling,
+  threeCushionBilliards,
   trapShooting,
 ];
 

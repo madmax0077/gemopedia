@@ -24,10 +24,11 @@ import { sprinting } from "./sprinting";
 import { steeplechase } from "./steeplechase";
 import { trailRunning } from "./trail-running";
 import { tripleJump } from "./triple-jump";
+import { ultramarathon } from "./ultramarathon";
 import { ultraMarathon } from "./ultra-marathon";
 
 /**
- * Track and field, running, jumping, and throwing events.
+ * Athletics sports.
  * Sourced from `lib/data/sports/athletics/*.ts`.
  */
 export const ATHLETICS_SPORTS: Sport[] = [
@@ -55,6 +56,7 @@ export const ATHLETICS_SPORTS: Sport[] = [
   steeplechase,
   trailRunning,
   tripleJump,
+  ultramarathon,
   ultraMarathon,
 ];
 

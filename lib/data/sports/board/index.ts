@@ -35,6 +35,7 @@ import { connectFour } from "./connect-four";
 import { cthulhuWars } from "./cthulhu-wars";
 import { diplomacy } from "./diplomacy";
 import { duneImperium } from "./dune-imperium";
+import { earthBoardGame } from "./earth-board-game";
 import { elGrande } from "./el-grande";
 import { everdell } from "./everdell";
 import { foodChainMagnate } from "./food-chain-magnate";
@@ -79,6 +80,7 @@ import { quacksOfQuedlinburg } from "./quacks-of-quedlinburg";
 import { quoridor } from "./quoridor";
 import { resArcana } from "./res-arcana";
 import { reversi } from "./reversi";
+import { reviveBoardGame } from "./revive-board-game";
 import { risingSun } from "./rising-sun";
 import { risk } from "./risk";
 import { rollForTheGalaxy } from "./roll-for-the-galaxy";
@@ -118,8 +120,8 @@ import { wyrmspan } from "./wyrmspan";
 import { zombicide } from "./zombicide";
 
 /**
- * Board games — abstracts, Euros, ameritrash, party board, and family games.
- * Sourced from `lib/data/sports/board/*.ts`.
+ * board entries
+ * Auto-generated from lib/data/sports/board/*.ts
  */
 export const BOARD_GAMES: Sport[] = [
   railways1830,
@@ -157,6 +159,7 @@ export const BOARD_GAMES: Sport[] = [
   cthulhuWars,
   diplomacy,
   duneImperium,
+  earthBoardGame,
   elGrande,
   everdell,
   foodChainMagnate,
@@ -201,6 +204,7 @@ export const BOARD_GAMES: Sport[] = [
   quoridor,
   resArcana,
   reversi,
+  reviveBoardGame,
   risingSun,
   risk,
   rollForTheGalaxy,
@@ -239,4 +243,5 @@ export const BOARD_GAMES: Sport[] = [
   wyrmspan,
   zombicide,
 ];
+
 

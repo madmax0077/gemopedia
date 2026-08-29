@@ -12,6 +12,12 @@ $files = Get-ChildItem -Path $dir -Filter *.ts | Where-Object { $_.Name -ne "ind
 
 function KebabToCamel([string]$s) {
   $parts = $s -split "-"
+  # If first part is purely numeric, move it to the end so the identifier
+  # doesn't start with a digit (invalid in JS/TS).
+  if ($parts[0] -match '^\d+$' -and $parts.Length -gt 1) {
+    $head = $parts[0]
+    $parts = $parts[1..($parts.Length-1)] + @($head)
+  }
   $out = $parts[0].ToLower()
   for ($i=1; $i -lt $parts.Length; $i++) {
     $p = $parts[$i]
@@ -19,6 +25,8 @@ function KebabToCamel([string]$s) {
       $out += ($p.Substring(0,1).ToUpper() + $p.Substring(1).ToLower())
     }
   }
+  # Belt-and-braces: if still starts with a digit, prefix underscore.
+  if ($out -match '^\d') { $out = "_$out" }
   return $out
 }
 

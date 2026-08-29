@@ -12,6 +12,7 @@ import { dogsledRacing } from "./dogsled-racing";
 import { figureSkating } from "./figure-skating";
 import { freestyleSkiing } from "./freestyle-skiing";
 import { halfpipeSkiing } from "./halfpipe-skiing";
+import { halfpipeSnowboarding } from "./halfpipe-snowboarding";
 import { iceboating } from "./iceboating";
 import { iceClimbing } from "./ice-climbing";
 import { iceCross } from "./ice-cross";
@@ -20,6 +21,7 @@ import { luge } from "./luge";
 import { lugeNaturalTrack } from "./luge-natural-track";
 import { moguls } from "./moguls";
 import { nordicCombined } from "./nordic-combined";
+import { parallelGiantSlalom } from "./parallel-giant-slalom";
 import { pondHockey } from "./pond-hockey";
 import { ringette } from "./ringette";
 import { shortTrackSpeedSkating } from "./short-track-speed-skating";
@@ -29,6 +31,7 @@ import { skiJumping } from "./ski-jumping";
 import { skiMountaineering } from "./ski-mountaineering";
 import { sledHockey } from "./sled-hockey";
 import { slopestyleSkiing } from "./slopestyle-skiing";
+import { slopestyleSnowboarding } from "./slopestyle-snowboarding";
 import { snowboardCross } from "./snowboard-cross";
 import { snowboarding } from "./snowboarding";
 import { snowkiting } from "./snowkiting";
@@ -40,8 +43,8 @@ import { telemarkSkiing } from "./telemark-skiing";
 import { wheelchairCurling } from "./wheelchair-curling";
 
 /**
- * Winter sport entries
- * Sourced from `lib/data/sports/winter/*.ts`.
+ * winter entries
+ * Auto-generated from lib/data/sports/winter/*.ts
  */
 export const WINTER_SPORTS: Sport[] = [
   aerials,
@@ -56,6 +59,7 @@ export const WINTER_SPORTS: Sport[] = [
   figureSkating,
   freestyleSkiing,
   halfpipeSkiing,
+  halfpipeSnowboarding,
   iceboating,
   iceClimbing,
   iceCross,
@@ -64,6 +68,7 @@ export const WINTER_SPORTS: Sport[] = [
   lugeNaturalTrack,
   moguls,
   nordicCombined,
+  parallelGiantSlalom,
   pondHockey,
   ringette,
   shortTrackSpeedSkating,
@@ -73,6 +78,7 @@ export const WINTER_SPORTS: Sport[] = [
   skiMountaineering,
   sledHockey,
   slopestyleSkiing,
+  slopestyleSnowboarding,
   snowboardCross,
   snowboarding,
   snowkiting,
@@ -83,4 +89,5 @@ export const WINTER_SPORTS: Sport[] = [
   telemarkSkiing,
   wheelchairCurling,
 ];
+
 

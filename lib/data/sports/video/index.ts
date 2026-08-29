@@ -1,8 +1,10 @@
 ﻿import type { Sport } from "@/lib/types";
 
+import { alanWake2 } from "./alan-wake-2";
 import { amongUs } from "./among-us";
 import { angryBirds } from "./angry-birds";
 import { animalCrossing } from "./animal-crossing";
+import { armoredCore6 } from "./armored-core-6";
 import { assassinsCreed } from "./assassins-creed";
 import { balatro } from "./balatro";
 import { baldursGate3 } from "./baldurs-gate-3";
@@ -22,6 +24,7 @@ import { cuphead } from "./cuphead";
 import { cyberpunk2077 } from "./cyberpunk-2077";
 import { danceDanceRevolution } from "./dance-dance-revolution";
 import { darkSouls } from "./dark-souls";
+import { daveTheDiver } from "./dave-the-diver";
 import { deadOrAlive6 } from "./dead-or-alive-6";
 import { deathStranding } from "./death-stranding";
 import { deepRockGalactic } from "./deep-rock-galactic";
@@ -140,9 +143,11 @@ import { zenlessZoneZero } from "./zenless-zone-zero";
  * Auto-generated from lib/data/sports/video/*.ts
  */
 export const VIDEO_GAMES: Sport[] = [
+  alanWake2,
   amongUs,
   angryBirds,
   animalCrossing,
+  armoredCore6,
   assassinsCreed,
   balatro,
   baldursGate3,
@@ -162,6 +167,7 @@ export const VIDEO_GAMES: Sport[] = [
   cyberpunk2077,
   danceDanceRevolution,
   darkSouls,
+  daveTheDiver,
   deadOrAlive6,
   deathStranding,
   deepRockGalactic,

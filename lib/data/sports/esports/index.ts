@@ -10,10 +10,10 @@ import { clashRoyale } from "./clash-royale";
 import { counterStrike } from "./counter-strike";
 import { deadlock } from "./deadlock";
 import { dota2 } from "./dota-2";
-import { dragonBallFighterZ } from "./dragon-ball-fighterz";
+import { dragonBallFighterZ as dragonBallFighterz } from "./dragon-ball-fighterz";
 import { eaSportsFc } from "./ea-sports-fc";
 import { fifaOnline4 } from "./fifa-online-4";
-import { finalFantasyXIV } from "./final-fantasy-xiv";
+import { finalFantasyXIV as finalFantasyXiv } from "./final-fantasy-xiv";
 import { freeFire } from "./free-fire";
 import { garenaFreeFire } from "./garena-free-fire";
 import { genshinImpact } from "./genshin-impact";
@@ -42,17 +42,20 @@ import { rocketLeague } from "./rocket-league";
 import { smite } from "./smite";
 import { splatoon } from "./splatoon";
 import { starcraft2 } from "./starcraft-2";
-import { starcraftII } from "./starcraft-ii";
+import { starcraftII as starcraftIi } from "./starcraft-ii";
 import { teamfightTactics } from "./teamfight-tactics";
+import { theFinals } from "./the-finals";
+import { throneAndLiberty } from "./throne-and-liberty";
 import { trackmania } from "./trackmania";
 import { valorant } from "./valorant";
 import { warcraftIii } from "./warcraft-iii";
 import { wildRift } from "./wild-rift";
 import { worldOfTanks } from "./world-of-tanks";
+import { xdefiant } from "./xdefiant";
 
 /**
- * Esports.
- * Sourced from `lib/data/sports/esports/*.ts`.
+ * esports entries
+ * Auto-generated from lib/data/sports/esports/*.ts
  */
 export const ESPORTS_SPORTS: Sport[] = [
   ageOfEmpiresIi,
@@ -65,10 +68,10 @@ export const ESPORTS_SPORTS: Sport[] = [
   counterStrike,
   deadlock,
   dota2,
-  dragonBallFighterZ,
+  dragonBallFighterz,
   eaSportsFc,
   fifaOnline4,
-  finalFantasyXIV,
+  finalFantasyXiv,
   freeFire,
   garenaFreeFire,
   genshinImpact,
@@ -97,12 +100,16 @@ export const ESPORTS_SPORTS: Sport[] = [
   smite,
   splatoon,
   starcraft2,
-  starcraftII,
+  starcraftIi,
   teamfightTactics,
+  theFinals,
+  throneAndLiberty,
   trackmania,
   valorant,
   warcraftIii,
   wildRift,
   worldOfTanks,
+  xdefiant,
 ];
+
 

@@ -5,6 +5,7 @@ import { artisticSwimming } from "./artistic-swimming";
 import { bigWaveSurfing } from "./big-wave-surfing";
 import { bodyboarding } from "./bodyboarding";
 import { canoeing } from "./canoeing";
+import { canoeMarathon } from "./canoe-marathon";
 import { canoePolo } from "./canoe-polo";
 import { canoeSlalom } from "./canoe-slalom";
 import { canoeSprint } from "./canoe-sprint";
@@ -13,12 +14,14 @@ import { diving } from "./diving";
 import { dragonBoatRacing } from "./dragon-boat-racing";
 import { finSwimming } from "./fin-swimming";
 import { freediving } from "./freediving";
+import { highDiving } from "./high-diving";
 import { iceSwimming } from "./ice-swimming";
 import { jetSkiRacing } from "./jet-ski-racing";
 import { kayaking } from "./kayaking";
 import { kitesurfing } from "./kitesurfing";
 import { kneeboarding } from "./kneeboarding";
 import { lifeguardSport } from "./lifeguard-sport";
+import { oceanRowing } from "./ocean-rowing";
 import { openWaterSwimming } from "./open-water-swimming";
 import { outriggerCanoeing } from "./outrigger-canoeing";
 import { rowing } from "./rowing";
@@ -43,8 +46,8 @@ import { windsurfing } from "./windsurfing";
 import { wingFoiling } from "./wing-foiling";
 
 /**
- * Aquatic sport entries
- * Sourced from `lib/data/sports/aquatic/*.ts`.
+ * aquatic entries
+ * Auto-generated from lib/data/sports/aquatic/*.ts
  */
 export const AQUATIC_SPORTS: Sport[] = [
   aquaCycling,
@@ -52,6 +55,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   bigWaveSurfing,
   bodyboarding,
   canoeing,
+  canoeMarathon,
   canoePolo,
   canoeSlalom,
   canoeSprint,
@@ -60,12 +64,14 @@ export const AQUATIC_SPORTS: Sport[] = [
   dragonBoatRacing,
   finSwimming,
   freediving,
+  highDiving,
   iceSwimming,
   jetSkiRacing,
   kayaking,
   kitesurfing,
   kneeboarding,
   lifeguardSport,
+  oceanRowing,
   openWaterSwimming,
   outriggerCanoeing,
   rowing,
@@ -89,4 +95,5 @@ export const AQUATIC_SPORTS: Sport[] = [
   windsurfing,
   wingFoiling,
 ];
+
 

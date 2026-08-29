@@ -2,12 +2,14 @@
 
 import { badminton } from "./badminton";
 import { beachTennis } from "./beach-tennis";
+import { cestaPunta } from "./cesta-punta";
 import { crossminton } from "./crossminton";
 import { frontenis } from "./frontenis";
 import { jaiAlai } from "./jai-alai";
 import { matkot } from "./matkot";
 import { paddleTennis } from "./paddle-tennis";
 import { padel } from "./padel";
+import { pala } from "./pala";
 import { pickleball } from "./pickleball";
 import { platformTennis } from "./platform-tennis";
 import { racketlon } from "./racketlon";
@@ -18,20 +20,23 @@ import { squash } from "./squash";
 import { tableTennis } from "./table-tennis";
 import { tennis } from "./tennis";
 import { wheelchairTennis } from "./wheelchair-tennis";
+import { xare } from "./xare";
 
 /**
- * Racket and paddle sports.
- * Sourced from `lib/data/sports/racket-paddle/*.ts`.
+ * racket-paddle entries
+ * Auto-generated from lib/data/sports/racket-paddle/*.ts
  */
 export const RACKET_PADDLE_SPORTS: Sport[] = [
   badminton,
   beachTennis,
+  cestaPunta,
   crossminton,
   frontenis,
   jaiAlai,
   matkot,
   paddleTennis,
   padel,
+  pala,
   pickleball,
   platformTennis,
   racketlon,
@@ -42,5 +47,7 @@ export const RACKET_PADDLE_SPORTS: Sport[] = [
   tableTennis,
   tennis,
   wheelchairTennis,
+  xare,
 ];
+
 

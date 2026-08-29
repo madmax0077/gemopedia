@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { airHockey } from "./air-hockey";
+import { airRifle10m } from "./air-rifle-10m";
 import { archery } from "./archery";
 import { artisticBilliards } from "./artistic-billiards";
 import { bocce } from "./bocce";
@@ -10,10 +11,12 @@ import { caromBilliards } from "./carom-billiards";
 import { chinese8Ball } from "./chinese-8-ball";
 import { cornhole } from "./cornhole";
 import { croquet } from "./croquet";
+import { crossbowShooting } from "./crossbow-shooting";
 import { darts } from "./darts";
 import { discGolf } from "./disc-golf";
 import { eightBall } from "./eight-ball";
 import { englishBilliards } from "./english-billiards";
+import { fieldArchery } from "./field-archery";
 import { fivePinBilliards } from "./five-pin-billiards";
 import { gateball } from "./gateball";
 import { golf } from "./golf";
@@ -45,11 +48,12 @@ import { trapShooting } from "./trap-shooting";
 import { volo } from "./volo";
 
 /**
- * Precision sport entries
- * Sourced from `lib/data/sports/precision/*.ts`.
+ * precision entries
+ * Auto-generated from lib/data/sports/precision/*.ts
  */
 export const PRECISION_SPORTS: Sport[] = [
   airHockey,
+  airRifle10m,
   archery,
   artisticBilliards,
   bocce,
@@ -59,10 +63,12 @@ export const PRECISION_SPORTS: Sport[] = [
   chinese8Ball,
   cornhole,
   croquet,
+  crossbowShooting,
   darts,
   discGolf,
   eightBall,
   englishBilliards,
+  fieldArchery,
   fivePinBilliards,
   gateball,
   golf,
@@ -93,4 +99,5 @@ export const PRECISION_SPORTS: Sport[] = [
   trapShooting,
   volo,
 ];
+
 

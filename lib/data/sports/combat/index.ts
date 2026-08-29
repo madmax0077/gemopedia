@@ -36,6 +36,7 @@ import { k1 } from "./k-1";
 import { kajukenbo } from "./kajukenbo";
 import { kalaripayattu } from "./kalaripayattu";
 import { karate } from "./karate";
+import { kbachBoran } from "./kbach-boran";
 import { kendo } from "./kendo";
 import { khuresh } from "./khuresh";
 import { kickboxing } from "./kickboxing";
@@ -59,9 +60,11 @@ import { ninjutsu } from "./ninjutsu";
 import { okichitaw } from "./okichitaw";
 import { pankration } from "./pankration";
 import { pencakSilat } from "./pencak-silat";
+import { pradalSerey } from "./pradal-serey";
 import { prayingMantisKungFu } from "./praying-mantis-kung-fu";
 import { sambo } from "./sambo";
 import { sanda } from "./sanda";
+import { sanshou } from "./sanshou";
 import { savate } from "./savate";
 import { senegaleseWrestling } from "./senegalese-wrestling";
 import { shootBoxing } from "./shoot-boxing";
@@ -82,12 +85,14 @@ import { valeTudo } from "./vale-tudo";
 import { vovinam } from "./vovinam";
 import { wingChun } from "./wing-chun";
 import { wushu } from "./wushu";
+import { wushuSanda } from "./wushu-sanda";
+import { wushuTaolu } from "./wushu-taolu";
 import { xingyiquan } from "./xingyiquan";
 import { yawYan } from "./yaw-yan";
 
 /**
- * Combat sport entries
- * Sourced from `lib/data/sports/combat/*.ts`.
+ * combat entries
+ * Auto-generated from lib/data/sports/combat/*.ts
  */
 export const COMBAT_SPORTS: Sport[] = [
   aikido,
@@ -126,6 +131,7 @@ export const COMBAT_SPORTS: Sport[] = [
   kajukenbo,
   kalaripayattu,
   karate,
+  kbachBoran,
   kendo,
   khuresh,
   kickboxing,
@@ -149,9 +155,11 @@ export const COMBAT_SPORTS: Sport[] = [
   okichitaw,
   pankration,
   pencakSilat,
+  pradalSerey,
   prayingMantisKungFu,
   sambo,
   sanda,
+  sanshou,
   savate,
   senegaleseWrestling,
   shootBoxing,
@@ -172,7 +180,10 @@ export const COMBAT_SPORTS: Sport[] = [
   vovinam,
   wingChun,
   wushu,
+  wushuSanda,
+  wushuTaolu,
   xingyiquan,
   yawYan,
 ];
+
 

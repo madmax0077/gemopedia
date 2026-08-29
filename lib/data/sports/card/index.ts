@@ -21,6 +21,7 @@ import { cribbage } from "./cribbage";
 import { cuttle } from "./cuttle";
 import { disneyLorcana } from "./disney-lorcana";
 import { dixit } from "./dixit";
+import { dobble } from "./dobble";
 import { dominion } from "./dominion";
 import { doppelkopf } from "./doppelkopf";
 import { douDizhu } from "./dou-dizhu";
@@ -100,8 +101,8 @@ import { wizard } from "./wizard";
 import { yuGiOh } from "./yu-gi-oh";
 
 /**
- * Card game entries
- * Sourced from `lib/data/sports/card/*.ts`.
+ * card entries
+ * Auto-generated from lib/data/sports/card/*.ts
  */
 export const CARD_GAMES: Sport[] = [
   allFours,
@@ -125,6 +126,7 @@ export const CARD_GAMES: Sport[] = [
   cuttle,
   disneyLorcana,
   dixit,
+  dobble,
   dominion,
   doppelkopf,
   douDizhu,
@@ -203,4 +205,5 @@ export const CARD_GAMES: Sport[] = [
   wizard,
   yuGiOh,
 ];
+
 

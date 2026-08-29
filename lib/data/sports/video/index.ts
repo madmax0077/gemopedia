@@ -12,6 +12,7 @@ import { battlefield2042 } from "./battlefield-2042";
 import { beatSaber } from "./beat-saber";
 import { bioshock } from "./bioshock";
 import { blackMythWukong } from "./black-myth-wukong";
+import { blackMythZhongKui } from "./black-myth-zhong-kui";
 import { bloodborne } from "./bloodborne";
 import { callOfDuty } from "./call-of-duty";
 import { candyCrush } from "./candy-crush";
@@ -40,6 +41,7 @@ import { eaFc } from "./ea-fc";
 import { eaSportsUfc } from "./ea-sports-ufc";
 import { eldenRing } from "./elden-ring";
 import { escapeFromTarkov } from "./escape-from-tarkov";
+import { expedition33 } from "./expedition-33";
 import { factorio } from "./factorio";
 import { fallGuys } from "./fall-guys";
 import { finalFantasy } from "./final-fantasy";
@@ -98,6 +100,7 @@ import { portalGame } from "./portal-game";
 import { redDeadRedemption2 } from "./red-dead-redemption-2";
 import { residentEvil } from "./resident-evil";
 import { returnal } from "./returnal";
+import { riseOfRonin } from "./rise-of-ronin";
 import { riskOfRain2 } from "./risk-of-rain-2";
 import { roblox } from "./roblox";
 import { robloxGame } from "./roblox-game";
@@ -160,6 +163,7 @@ export const VIDEO_GAMES: Sport[] = [
   beatSaber,
   bioshock,
   blackMythWukong,
+  blackMythZhongKui,
   bloodborne,
   callOfDuty,
   candyCrush,
@@ -188,6 +192,7 @@ export const VIDEO_GAMES: Sport[] = [
   eaSportsUfc,
   eldenRing,
   escapeFromTarkov,
+  expedition33,
   factorio,
   fallGuys,
   finalFantasy,
@@ -246,6 +251,7 @@ export const VIDEO_GAMES: Sport[] = [
   redDeadRedemption2,
   residentEvil,
   returnal,
+  riseOfRonin,
   riskOfRain2,
   roblox,
   robloxGame,

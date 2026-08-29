@@ -4,6 +4,7 @@ import { dominoes } from "./dominoes";
 import { hongKongMahjong } from "./hong-kong-mahjong";
 import { kingdomino } from "./kingdomino";
 import { mahjong } from "./mahjong";
+import { mahjongRiichi } from "./mahjong-riichi";
 import { mahjongSolitaire } from "./mahjong-solitaire";
 import { mexicanTrainDominoes } from "./mexican-train-dominoes";
 import { okey } from "./okey";
@@ -24,6 +25,7 @@ export const TILE_GAMES: Sport[] = [
   hongKongMahjong,
   kingdomino,
   mahjong,
+  mahjongRiichi,
   mahjongSolitaire,
   mexicanTrainDominoes,
   okey,

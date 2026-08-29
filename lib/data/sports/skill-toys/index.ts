@@ -8,19 +8,22 @@ import { contactJuggling } from "./contact-juggling";
 import { cupStacking } from "./cup-stacking";
 import { devilSticks } from "./devil-sticks";
 import { diabolo } from "./diabolo";
+import { diaboloCompetitive } from "./diabolo-competitive";
 import { fingerboarding } from "./fingerboarding";
 import { hackySack } from "./hacky-sack";
 import { hulaHoop } from "./hula-hoop";
 import { juggling } from "./juggling";
 import { kendama } from "./kendama";
+import { kendamaCompetitive } from "./kendama-competitive";
 import { poi } from "./poi";
 import { simon } from "./simon";
 import { spinningTops } from "./spinning-tops";
 import { yoyo } from "./yoyo";
+import { yoyoFreestyle } from "./yoyo-freestyle";
 
 /**
- * Skill toys games category.
- * Sourced from `lib/data/sports/skill-toys/*.ts`.
+ * skill-toys entries
+ * Auto-generated from lib/data/sports/skill-toys/*.ts
  */
 export const SKILL_TOYS_GAMES: Sport[] = [
   aerobie,
@@ -31,14 +34,18 @@ export const SKILL_TOYS_GAMES: Sport[] = [
   cupStacking,
   devilSticks,
   diabolo,
+  diaboloCompetitive,
   fingerboarding,
   hackySack,
   hulaHoop,
   juggling,
   kendama,
+  kendamaCompetitive,
   poi,
   simon,
   spinningTops,
   yoyo,
+  yoyoFreestyle,
 ];
+
 

@@ -4,6 +4,7 @@ import { ageOfSigmar } from "./age-of-sigmar";
 import { bloodBowl } from "./blood-bowl";
 import { boltAction } from "./bolt-action";
 import { flamesOfWar } from "./flames-of-war";
+import { infinityCodeOne } from "./infinity-code-one";
 import { infinityTheGame } from "./infinity-the-game";
 import { killTeam } from "./kill-team";
 import { kingsOfWar } from "./kings-of-war";
@@ -15,21 +16,24 @@ import { saga } from "./saga";
 import { starWarsArmada } from "./star-wars-armada";
 import { starWarsLegion } from "./star-wars-legion";
 import { starWarsShatterpoint } from "./star-wars-shatterpoint";
-import { warhammer40k } from "./warhammer-40000";
+import { warhammer40k as warhammer40000 } from "./warhammer-40000";
+import { warhammer40kCompetitive } from "./warhammer-40k-competitive";
 import { warhammerTheOldWorld } from "./warhammer-the-old-world";
 import { warhammerUnderworlds } from "./warhammer-underworlds";
 import { warmachine } from "./warmachine";
 import { xWing } from "./x-wing";
+import { xWingMiniatures } from "./x-wing-miniatures";
 
 /**
- * Miniature wargames and strategic wargaming.
- * Sourced from `lib/data/sports/wargames/*.ts`.
+ * wargames entries
+ * Auto-generated from lib/data/sports/wargames/*.ts
  */
 export const WARGAMES_GAMES: Sport[] = [
   ageOfSigmar,
   bloodBowl,
   boltAction,
   flamesOfWar,
+  infinityCodeOne,
   infinityTheGame,
   killTeam,
   kingsOfWar,
@@ -41,10 +45,13 @@ export const WARGAMES_GAMES: Sport[] = [
   starWarsArmada,
   starWarsLegion,
   starWarsShatterpoint,
-  warhammer40k,
+  warhammer40000,
+  warhammer40kCompetitive,
   warhammerTheOldWorld,
   warhammerUnderworlds,
   warmachine,
   xWing,
+  xWingMiniatures,
 ];
+
 

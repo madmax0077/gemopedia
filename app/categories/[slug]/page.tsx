@@ -10,6 +10,11 @@ import type { SportCategory } from "@/lib/types";
 
 interface RouteParams { params: { slug: string } }
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const dynamicParams = false;
+export const revalidate = false;
+
 export async function generateStaticParams() {
   return CATEGORIES.map((c) => ({ slug: c.slug }));
 }

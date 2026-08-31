@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/compare" },
 };
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function CompareIndexPage() {
   return (
     <div className="container-page pb-20 pt-6 sm:pt-10">

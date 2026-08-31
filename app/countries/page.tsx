@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/countries" },
 };
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function CountriesPage() {
   const regions = ["Asia", "Middle East", "Europe", "Africa", "North America", "South America", "Oceania"] as const;
 

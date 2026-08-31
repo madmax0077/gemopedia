@@ -84,8 +84,11 @@ export async function fetchWikipediaImage(title: string): Promise<SportHeroImage
 
     try {
       const res = await fetch(url, {
-        // Cache for a week — sport lead images barely change.
-        next: { revalidate: 60 * 60 * 24 * 7 },
+        // Wiki lead images barely change and every content update ships with
+        // a redeploy anyway. Using `force-cache` keeps this fetch out of the
+        // ISR revalidation graph so pages that consume it can render as
+        // fully static (SSG) on Vercel — which drops ISR Reads to ~0.
+        cache: "force-cache",
         headers: {
           "User-Agent":
             "GemopediaBot/1.0 (https://gemopedia.dev; hello@gemopedia.dev)",

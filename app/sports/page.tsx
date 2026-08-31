@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/sports" },
 };
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default async function SportsPage() {
   const sports = getAllSports();
   // Pre-fetch all Wikipedia lead photos on the server so every card renders

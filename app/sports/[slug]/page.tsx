@@ -10,6 +10,12 @@ interface RouteParams {
   params: { slug: string };
 }
 
+// Fully static SSG — no ISR reads on Vercel.
+// All sports are known at build time; any unknown slug 404s immediately.
+export const dynamic = "force-static";
+export const dynamicParams = false;
+export const revalidate = false;
+
 export async function generateStaticParams() {
   return getAllSports().map((s) => ({ slug: s.slug }));
 }

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/learn" },
 };
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function LearnHubPage() {
   const sports = getAllSports().filter((s) => (s.learningPaths?.length ?? 0) > 0);
 

@@ -8,6 +8,11 @@ import { breadcrumbJsonLd } from "@/lib/seo";
 
 interface RouteParams { params: { pair: string } }
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const dynamicParams = false;
+export const revalidate = false;
+
 export async function generateStaticParams() {
   return COMPARISON_PAIRS.map((p) => ({ pair: p.slug }));
 }

@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+// Fully static SSG — no ISR reads on Vercel.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default async function Homepage() {
   const featured = getFeaturedSports(6);
   const unusual = getUnusualSports(6);

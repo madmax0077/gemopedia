@@ -25,6 +25,7 @@ import { teamRoping } from "./team-roping";
 import { tentPegging } from "./tent-pegging";
 import { tentPeggingCavalry } from "./tent-pegging-cavalry";
 import { vaulting } from "./vaulting";
+import { vaultingEquestrianFei } from "./vaulting-equestrian-fei";
 
 /**
  * equestrian entries
@@ -56,6 +57,7 @@ export const EQUESTRIAN_SPORTS: Sport[] = [
   tentPegging,
   tentPeggingCavalry,
   vaulting,
+  vaultingEquestrianFei,
 ];
 
 

@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const mahjongRiichiJapanese: Sport = {
+  id: "mahjong-riichi-japanese",
+  slug: "mahjong-riichi-japanese",
+  name: "Riichi Mahjong (Japanese Competitive)",
+  officialName: "World Riichi Championship Rules (WRC) — European Mahjong Association + Japan Pro Mahjong League",
+  aliases: ["リーチ麻雀", "Japanese Mahjong", "Riichi", "Reach Mahjong"],
+  shortDescription:
+    "Japanese competitive variant of Chinese mahjong — 4-player tile game emphasizing strategic hand building + Riichi declaration (betting on final tile); WRC rules govern international competition since 2014; 3+ million Japanese players + growing global scene; deep strategic games featured in anime Akagi + Saki + Kaiji.",
+  longDescription:
+    "Riichi Mahjong (リーチ麻雀) is the Japanese competitive variant of the ancient Chinese tile game Mahjong — arguably the most strategically sophisticated + deeply analyzed mahjong variant, with a global competitive tradition beyond traditional Chinese + Hong Kong formats. Distinguished from other mahjong variants primarily by the 'Riichi' declaration mechanic — a player one tile away from winning hand ('tenpai') may bet 1,000 points + declare 'Riichi!' committing to winning with current hand shape only; if they win, get bonus 1 han (multiplier) yaku + accumulated riichi stakes; if they lose, penalty. 4 players (ranks: East + South + West + North) play 136 tiles (or 144 with red 5s): (a) Manzu (1-9 characters) × 4; (b) Pinzu (1-9 circles) × 4; (c) Souzu (1-9 bamboos) × 4; (d) Honor tiles: 4 winds (East + South + West + North) × 4 + 3 dragons (Red + Green + White) × 4. Each round: deal 13 tiles to each player + 1 more to dealer; players draw + discard sequentially building 14-tile winning hand structure (4 groups of 3 + 1 pair, or exceptional shapes like Kokushi Musou). Must have at least 1 'yaku' (scoring pattern) to declare winning hand — this rule distinguishes riichi from Chinese mahjong which awards any completed hand. Common yaku: Riichi (declared), Tanyao (all simples), Pinfu (all sequences no pair value), Yakuhai (dragon or wind pair), Iipeiko (pair of identical sequences), Sanshoku (three same sequences), etc. Advanced yaku multiply hand value dramatically: Yakuman = 8 han base (maximum limit) including Kokushi Musou (all 13 terminals + honors), Suuankou (4 concealed triplets), Daisangen (3 dragons). Modern professional scene: (1) Japan Pro Mahjong League (JPML) — founded 1981; ~500 pro players; broadcasts on MONDO TV; annual Ten Position title tournament; (2) Nihon Pro Mahjong Association (Renmei) — second major pro league; (3) World Riichi Championship (WRC) — held every 3 years since 2014 first WRC in Paris — attracts 200+ international players; won 2014 Toshiki Kai (Japan), 2017 Shuji Sakamoto (Japan), 2019 Sho Uehara (Japan), 2023 Toshinari Kayamori (Japan); (4) European Mahjong Association — governs European tournaments; (5) US Riichi League. Deep popular cultural presence in Japan: (a) Anime featuring mahjong: Akagi, Saki, Kaiji, Legendary Gambler Tetsuya; (b) Mahjong parlors ubiquitous across Japan (30,000+ parlors 1990s peak, ~10,000 today); (c) Automated mahjong tables (Junsan + Amos) standard in professional play; (d) Online mahjong huge on Tenhou + Mahjong Soul + MJ Mobile (millions of daily players).",
+  category: "board-games",
+  subCategory: "Japanese competitive tile game variant of mahjong",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "year-round", era: "20th-century", popularity: "regional",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (evolved from Chinese mahjong 1920s; Riichi rule added 1950s; formalized modern rules 1980s)",
+  estimatedOrigin: "Chinese mahjong introduced Japan 1920s; Riichi declaration mechanic added 1950s; JPML founded 1981; WRC rules formalized 2014",
+  players: { min: 4, max: 4, note: "Exactly 4 players (East + South + West + North seats)." },
+  equipment: [{ name: "136-tile mahjong set (or 144 with red 5s)", description: "136 tiles: 4 suits × 9 ranks × 4 copies (108) + 4 winds × 4 + 3 dragons × 4 (16 honors); plus optional red 5s (1 per suit)." }, { name: "Score sticks (bone or plastic)", description: "Colored score sticks: 10K + 5K + 1K + 100 point denominations; each player starts with 25K points." }, { name: "Riichi stick (1K point stick)", description: "1,000-point stick placed in middle of table when player declares Riichi." }, { name: "Automated mahjong table (professional)", description: "Junsan or Amos automated table shuffles + deals tiles automatically; standard in Japanese professional play." }, { name: "Dice (2)", description: "Two dice for determining dealer + wall break position." }],
+  duration: { approximateMinutes: 60, structure: "Half-game (Tonpuusen 4 hands): 30-45 min; full game (Hanchan 8 hands): 60-90 min; tournament rounds 90-120 min." },
+  objective: "End game with most points; earn points by completing winning hands with yaku scoring patterns.",
+  matchStructure: "East round (4 hands) + South round (4 hands) = full hanchan; each hand: draw + discard + declare winning hand; scoring per hand won.",
+  basicRules: [
+    { title: "Must have at least 1 yaku to declare winning hand", body: "Unlike Chinese mahjong, Riichi requires at least 1 yaku (scoring pattern) to declare winning hand — a completed 14-tile pattern without yaku = invalid win." },
+    { title: "Riichi declaration bets 1,000 points on tenpai commitment", body: "Player one tile away from winning ('tenpai') may declare Riichi + bet 1,000 points; if wins gets Riichi yaku + accumulated stakes; must commit to current hand shape only." },
+    { title: "Furiten prevention — can't win on tile you discarded", body: "'Furiten' rule: cannot win on any tile you have previously discarded (or discarded while in tenpai); prevents defensive-hand exploitation." },
+    { title: "Yaku multiply hand value dramatically", body: "Hand value = base fu × han (yaku multiplier); higher yaku count = geometric point increase; Yakuman (8 han base) = maximum limit hand." },
+    { title: "Points transfer between players — non-winners pay winner", body: "When player wins, opponents pay based on hand value + winner position (dealer = higher); Ron (win on opponent discard) vs Tsumo (self-drawn win) distribution differs." },
+  ],
+  scoring: { summary: "Complex fu (base) × han (yaku multiplier) calculation; final scoring tallies point totals across all hands; players ranked 1st-4th by final points.", winCondition: "1st place = most points at end of hanchan (or tournament round); WRC uses point differences + placement rankings across multiple rounds." },
+  positions: [{ name: "East seat (Dealer/Oya)", role: "Dealer position; wins/losses count double.", count: 1 }, { name: "South seat (Toimen)", role: "Second seat.", count: 1 }, { name: "West seat", role: "Third seat.", count: 1 }, { name: "North seat", role: "Fourth seat.", count: 1 }],
+  officiating: { officials: ["Chief Referee", "Table Officials (per table)", "Scorekeepers", "Tournament Director"], summary: "WRC + EMA + JPML certified officials at international competitions." },
+  governingBodies: [{ name: "Japan Pro Mahjong League (JPML)", founded: 1981, headquarters: "Tokyo, Japan" }, { name: "European Mahjong Association (EMA)", founded: 2005, headquarters: "Europe" }, { name: "World Riichi Championship (WRC)", founded: 2014, headquarters: "rotating" }, { name: "US Riichi League", founded: 2010, headquarters: "USA" }],
+  majorCompetitions: [{ name: "World Riichi Championship (WRC)", frequency: "every 3 years", founded: 2014, region: "rotating (Paris 2014, Las Vegas 2017, Vienna 2019, London 2023)" }, { name: "JPML Ten Position title tournament", frequency: "annual", founded: 1981, region: "Japan" }, { name: "European Riichi Championship (ERMC)", frequency: "biennial", founded: 2005, region: "rotating Europe" }, { name: "Tenhou online rating tournaments", frequency: "ongoing", founded: 2006, region: "worldwide online — Tenhou platform" }, { name: "Mahjong Soul tournaments", frequency: "ongoing", founded: 2019, region: "worldwide online" }],
+  countriesPlayed: ["JPN (dominant — 3+ million players)", "USA (growing US Riichi League)", "FRA", "DEU", "AUT", "GBR", "CHN (via Riichi export)", "KOR", "TWN", "SGP", "AUS", "worldwide via Tenhou + Mahjong Soul online platforms"],
+  famousAthletes: ["Toshiki Kai (Japan — 2014 WRC Champion)", "Shuji Sakamoto (Japan — 2017 WRC Champion)", "Sho Uehara (Japan — 2019 WRC Champion)", "Toshinari Kayamori (Japan — 2023 WRC Champion)", "Naoyuki Sakuma (JPML top pro)", "Manzo Kojima (Riichi theorist + author)"],
+  records: [
+    { title: "World Riichi Championship founded 2014 Paris", holder: "WRC organizing committee", value: "First World Riichi Championship held 2014 in Paris; every 3 years since; unified international competitive tradition combining Japanese + European + American scenes", year: 2014 },
+    { title: "3+ million Japanese players + 30K parlors historic peak", holder: "Japan mahjong industry", value: "Japan has 3+ million active Riichi Mahjong players; 30,000+ mahjong parlors 1990s peak (10,000+ today); one of Japan's largest indoor recreational games", year: 2024 },
+    { title: "Yakuman (limit hand) 8 han base — extremely rare", holder: "Riichi Mahjong scoring system", value: "Yakuman (maximum-limit hand types like Kokushi Musou, Suuankou, Daisangen) score 8 han base — extremely rare + game-defining wins", year: 2024 },
+    { title: "Japan Pro Mahjong League founded 1981 — 500+ pros", holder: "JPML", value: "Japan Pro Mahjong League founded 1981; ~500 professional Riichi players; broadcasts on MONDO TV; annual Ten Position title", year: 1981 },
+  ],
+  variants: ["riichi-hanchan-full-game-8-hands", "riichi-tonpuusen-half-game-4-hands", "wrc-rules-2014-standard-international", "jpml-rules-japan-professional", "chinese-mahjong-traditional-parent", "hong-kong-mahjong-alternate-variant"],
+  relatedSports: ["chinese-mahjong-traditional", "gin-rummy-competitive-card", "bridge-duplicate", "poker-texas-holdem"],
+  skills: ["yaku recognition + hand-shape planning", "tile discard pattern reading (defense)", "Riichi timing decisions (when to commit)", "opponent hand-shape deduction from discards"],
+  wikipediaTitle: "Japanese Mahjong",
+  sources: [{ label: "Wikipedia — Japanese Mahjong", url: "https://en.wikipedia.org/wiki/Japanese_Mahjong", publisher: "Wikipedia" }, { label: "European Mahjong Association", url: "http://mahjong-europe.org", publisher: "EMA" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default mahjongRiichiJapanese;

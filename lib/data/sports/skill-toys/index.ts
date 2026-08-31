@@ -12,6 +12,7 @@ import { diaboloCompetitive } from "./diabolo-competitive";
 import { fingerboarding } from "./fingerboarding";
 import { hackySack } from "./hacky-sack";
 import { hulaHoop } from "./hula-hoop";
+import { hulaHoopCompetitive } from "./hula-hoop-competitive";
 import { juggling } from "./juggling";
 import { jugglingCompetitive } from "./juggling-competitive";
 import { kendama } from "./kendama";
@@ -23,6 +24,7 @@ import { spinningTops } from "./spinning-tops";
 import { spinningTopsKoma } from "./spinning-tops-koma";
 import { yoyo } from "./yoyo";
 import { yoyoFreestyle } from "./yoyo-freestyle";
+import { yoYoWorldYoyoContest } from "./yo-yo-world-yoyo-contest";
 
 /**
  * skill-toys entries
@@ -41,6 +43,7 @@ export const SKILL_TOYS_GAMES: Sport[] = [
   fingerboarding,
   hackySack,
   hulaHoop,
+  hulaHoopCompetitive,
   juggling,
   jugglingCompetitive,
   kendama,
@@ -52,6 +55,7 @@ export const SKILL_TOYS_GAMES: Sport[] = [
   spinningTopsKoma,
   yoyo,
   yoyoFreestyle,
+  yoYoWorldYoyoContest,
 ];
 
 

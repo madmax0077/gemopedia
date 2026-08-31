@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const arimaaAntiChess: Sport = {
+  id: "arimaa-anti-chess",
+  slug: "arimaa-anti-chess",
+  name: "Arimaa (Anti-Computer Chess)",
+  officialName: "Arimaa — Omar Syed (arimaa.com)",
+  aliases: ["Arimaa", "Anti-Computer Chess"],
+  shortDescription:
+    "Chess variant designed 2003 by Omar Syed to be difficult for computers but easy for humans; played on standard 8×8 chessboard using chess pieces but with different rules — up to 4 moves per turn, push/pull mechanics, trap squares; annual Arimaa Challenge until 2015 offered $10K prize for first computer to beat top humans; finally lost by humans 2015 (computer Sharp beat 3 top humans).",
+  longDescription:
+    "Arimaa is a strategic board game designed by Omar Syed in 2003 with a specific mission: create a game that is easy for humans to learn + play well, but extremely difficult for AI/computers to master. Syed conceived Arimaa after IBM's Deep Blue defeated Garry Kasparov in chess 1997 — believing chess's ease for computers came from tactical concreteness. He designed Arimaa to emphasize positional/strategic play that humans excel at + computers struggle with. Uses standard 8×8 chessboard + a set of chess pieces (repurposed): (a) 1 Elephant (strongest, replaces King); (b) 1 Camel; (c) 2 Horses; (d) 2 Dogs; (e) 2 Cats; (f) 8 Rabbits (weakest, replace Pawns). Setup: each player arranges their 16 pieces however they want on their first two ranks (no fixed starting position — huge strategic depth added). Movement: on each turn, player gets up to 4 'steps' — each step moves one piece one square orthogonally OR pushes/pulls an enemy piece; may split steps across multiple pieces. Unique mechanic: (i) Piece strengths ordered E > C > H > D > C > R — stronger piece can push/pull adjacent weaker piece; (ii) 4 'trap' squares (c3, c6, f3, f6) — piece on trap dies unless friendly piece is orthogonally adjacent; (iii) Goal: get one of your Rabbits to opponent's back rank (opposite side of board) — wins immediately; (iv) Elephant cannot be captured (too strong). Deliberately anti-computer features: (a) Enormous branching factor per turn — up to 4 sub-moves with piece + direction choices = ~17,000 legal turn combinations vs chess's ~35; (b) Piece placement freedom = astronomically large opening space; (c) Positional value dominates tactical calculations. Annual 'Arimaa Challenge' offered by Syed 2004-2015 with $10,000 prize for first computer to beat 3 top-ranked human players in a match. Computer 'Sharp' (David Wu, University of Michigan) finally won 2015 (defeated 3 human champions) — 12 years after Deep Blue's chess triumph, showing Syed's design succeeded in defying AI advances longer. Post-2015 Arimaa continues to have small dedicated player base + tournament scene at arimaa.com. Notable players: Karl Juhnke (multi-time World Champion), Jean Daligault (French champion), Toby Hudson.",
+  category: "board-games",
+  subCategory: "anti-computer chess variant with 4-move turns",
+  sportType: "individual", indoorOutdoor: "both",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Omar Syed, 2003 — inspired by Deep Blue vs Kasparov 1997)",
+  estimatedOrigin: "Invented 2003 by Omar Syed; Arimaa Challenge annual 2004-2015 with $10K prize; computer Sharp finally defeated humans 2015; arimaa.com launched 2003",
+  players: { min: 2, max: 2 },
+  equipment: [{ name: "Standard 8×8 chessboard", description: "Any standard chessboard works; special Arimaa boards mark the 4 trap squares (c3, c6, f3, f6)." }, { name: "Chess pieces (16 per side)", description: "Repurposed chess pieces: King = Elephant, Queen = Camel, Rooks = Horses, Bishops = Dogs, Knights = Cats, Pawns = Rabbits." }, { name: "Chess clock (competitive)", description: "Standard chess clock; typical timing 30 sec per move + 3 min reserve for competitive play." }],
+  duration: { approximateMinutes: 45, structure: "Casual game 30-60 min; competitive game 60-120 min with clock." },
+  objective: "Get one of your Rabbits to opponent's back (8th) rank to win.",
+  matchStructure: "Single game or match play; competitive matches typically best-of-3 or best-of-5.",
+  basicRules: [
+    { title: "Free piece placement on first 2 ranks", body: "Both players arrange their 16 pieces however they want across their first two ranks — no fixed starting position." },
+    { title: "Up to 4 steps per turn (any distribution)", body: "Each turn allows up to 4 'steps' distributed across any pieces; each step = 1 orthogonal move OR 1 push/pull of enemy piece." },
+    { title: "Piece strength order: Elephant > Camel > Horse > Dog > Cat > Rabbit", body: "Stronger piece can push adjacent weaker enemy (into empty square) or pull adjacent weaker enemy (behind).." },
+    { title: "4 trap squares (c3, c6, f3, f6) kill unguarded pieces", body: "Piece on trap square dies UNLESS friendly piece is orthogonally adjacent." },
+    { title: "Rabbit reaching 8th rank = immediate win", body: "First player to move any Rabbit to opponent's back rank wins immediately." },
+    { title: "Elephant cannot be captured", body: "Elephant is strongest piece + cannot be pushed/pulled/captured by any means." },
+  ],
+  scoring: { summary: "Binary win by getting Rabbit to opponent's back rank; also possible to win by elimination (opponent has no Rabbits left) or by immobilization (opponent has no legal move).", winCondition: "Move any own Rabbit to opponent's back rank." },
+  positions: [{ name: "Elephant", role: "Strongest piece; cannot be captured.", count: 1 }, { name: "Camel", role: "Second strongest piece.", count: 1 }, { name: "Horse", role: "Third-tier piece.", count: 2 }, { name: "Dog", role: "Fourth-tier piece.", count: 2 }, { name: "Cat", role: "Fifth-tier piece.", count: 2 }, { name: "Rabbit", role: "Weakest piece; win condition — get one to opponent's back rank.", count: 8 }],
+  officiating: { officials: ["Tournament Arbiter (online)", "arimaa.com moderators"], summary: "Online play via arimaa.com uses automated arbitration; live tournaments use certified arbiters." },
+  governingBodies: [{ name: "Omar Syed / arimaa.com (designer + platform)", founded: 2003, headquarters: "USA (online)" }],
+  majorCompetitions: [{ name: "Arimaa World Championship", frequency: "annual", founded: 2004, region: "worldwide online via arimaa.com" }, { name: "Arimaa Challenge (2004-2015)", frequency: "annual (until 2015)", founded: 2004, region: "$10K prize for first computer to beat 3 humans; won by Sharp 2015" }],
+  countriesPlayed: ["USA (origin)", "GBR", "FRA", "DEU", "JPN", "worldwide small niche via arimaa.com"],
+  famousAthletes: ["Omar Syed (designer + early champion)", "Karl Juhnke (multi-time World Champion)", "Jean Daligault (French champion)", "Toby Hudson (UK player)", "David Wu (creator of Sharp — first computer to beat humans 2015)"],
+  records: [
+    { title: "Computer Sharp defeated humans 2015 ended Arimaa Challenge", holder: "David Wu / Sharp program", value: "Sharp (David Wu, University of Michigan) defeated 3 top-ranked human Arimaa players 2015 — first computer program to win Arimaa Challenge after 12 years", year: 2015 },
+    { title: "Arimaa Challenge $10K prize offered 2004-2015", holder: "Omar Syed", value: "Omar Syed offered $10,000 annual prize 2004-2015 for first computer to beat 3 top Arimaa humans; won only in final year 2015 — anti-computer design outlasted chess by 18 years", year: 2015 },
+    { title: "Branching factor ~17,000 per turn vs chess ~35", holder: "Game theory analysis", value: "Arimaa has ~17,000 legal turn combinations per turn vs chess's ~35 — anti-computer design's core mechanism", year: 2010 },
+  ],
+  variants: ["standard-arimaa-8x8-16-pieces", "arimaa-variants-alternative-rules", "arimaa-endgame-puzzles"],
+  relatedSports: ["chess-classical", "xiangqi-chinese-chess", "shogi-japanese-chess", "go-baduk"],
+  skills: ["long-term positional planning", "trap square usage + defense", "push/pull tactical sequences", "piece-value evaluation without fixed values"],
+  wikipediaTitle: "Arimaa",
+  sources: [{ label: "Wikipedia — Arimaa", url: "https://en.wikipedia.org/wiki/Arimaa", publisher: "Wikipedia" }, { label: "Arimaa.com", url: "http://arimaa.com", publisher: "Omar Syed" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default arimaaAntiChess;

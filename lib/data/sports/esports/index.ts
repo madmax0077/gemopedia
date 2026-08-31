@@ -40,6 +40,7 @@ import { pubgMobile } from "./pubg-mobile";
 import { rainbowSix } from "./rainbow-six";
 import { rainbowSixSiege } from "./rainbow-six-siege";
 import { rocketLeague } from "./rocket-league";
+import { rocketLeagueRlcs } from "./rocket-league-rlcs";
 import { smite } from "./smite";
 import { splatoon } from "./splatoon";
 import { starcraft2 } from "./starcraft-2";
@@ -99,6 +100,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   rainbowSix,
   rainbowSixSiege,
   rocketLeague,
+  rocketLeagueRlcs,
   smite,
   splatoon,
   starcraft2,

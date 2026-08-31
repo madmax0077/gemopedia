@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const euchreMidwestAmerican: Sport = {
+  id: "euchre-midwest-american",
+  slug: "euchre-midwest-american",
+  name: "Euchre (Midwestern American Trick-Taking Card)",
+  officialName: "Euchre — American Midwest regional card game (informal)",
+  aliases: ["Euchre", "Bower", "Jucker"],
+  shortDescription:
+    "Quintessential Midwestern American 4-player partnership trick-taking card game — 24-card deck (9-A × 4 suits); features signature 'bowers' Jack of trump + Jack of same-color suit; huge cultural presence Indiana, Ohio, Michigan, Wisconsin, Ontario Canada; ancestor of Bridge + Spades + Hearts; state game of Indiana + Ohio informally.",
+  longDescription:
+    "Euchre is a classic 4-player partnership trick-taking card game with deep Midwestern American + Canadian cultural roots. Ancestor of most modern trick-taking card games including Bridge, Spades, Hearts. Uses 24-card deck (standard 52-card deck with 2s, 3s, 4s, 5s, 6s, 7s, 8s removed — just 9, 10, J, Q, K, A × 4 suits). Believed to have originated among German immigrants to Pennsylvania (18th-19th century, 'Juckerspiel'); spread through Midwest via German immigration + peaked popularity in Ohio, Indiana, Michigan, Wisconsin, Ontario Canada. Signature bowers: (1) Right Bower — Jack of trump suit, HIGHEST card of trump; (2) Left Bower — Jack of same-color suit as trump, 2ND HIGHEST card of trump (treated as trump card despite different suit); rest of trump ranks A > K > Q > 10 > 9 below bowers. Trump ranking with bowers: Right Bower > Left Bower > A > K > Q > 10 > 9 of trump; other suits rank A > K > Q > J > 10 > 9 normally. Game: (1) Deal — 5 cards to each of 4 players; 1 card turned face-up as trump indicator ('upcard'); (2) Bidding/trump selection — first pass: any player may accept upcard's suit as trump; second pass (if all passed): any player may name any other suit as trump; declarer's team becomes 'makers'; (3) Optional 'Alone' declaration — declarer may play without partner (partner sits out); scored higher if successful; (4) Play — 5 tricks played; must follow suit (or trump/discard if void); trump beats non-trump; (5) Scoring — 3-4 tricks by makers = 1 pt, 5 tricks = 2 pts (or 4 pts alone), euchred (0-2 tricks) = 2 pts to defenders; games typically to 10 pts (or 15/16 in some regions). Signature strategic depth: (a) 'Ordering up' vs passing — reveals hand strength; (b) Alone declaration timing — 3× point risk/reward; (c) Left bower memorization — trap for beginners; (d) 5-card hand = high variance + luck factor. Regional variants: (1) Ohio Euchre — most standard rules; (2) Michigan Euchre — 'Stick the Dealer' if all pass (dealer must call trump); (3) Canadian Euchre — 'Farmer's Hand' allows swap; (4) 3-player Euchre — solo variant; (5) 6-player Euchre — 3v3 partnership; (6) Bid Euchre — auction-style bidding variant popular Indiana + Illinois. Cultural presence: (a) Indiana + Ohio informal 'state game' status; (b) Purdue University + Big Ten universities central to student culture (dorm room + fraternity staple); (c) Firehouse + bar + American Legion halls; (d) Church basement + Sunday gatherings; (e) 'Michigan Euchre League' + 'Windsor Euchre Association' regional formal scenes; (f) Featured in Vice + New York Times articles as quintessentially Midwestern; (g) Canadian Ontario cottage country signature card game. Modern online play: World Of Card Games + Trickster Cards + Board Game Arena + numerous mobile apps. Popular ancestor: (a) Bridge (evolved from Euchre in 1890s); (b) Spades (American Depression-era simplification); (c) Hearts (avoidance variant).",
+  category: "card-games",
+  subCategory: "Midwestern American partnership trick-taking card game with bowers",
+  sportType: "team", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "19th-century", popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA Midwest — spread by German immigrants 18-19th century Pennsylvania → Ohio, Indiana, Michigan, Wisconsin",
+  estimatedOrigin: "Origin among German immigrants to Pennsylvania 18-19th century (Juckerspiel); spread through Midwest USA + Ontario Canada; peaked 1900s-70s; ancestor of Bridge (1890s) + Spades + Hearts",
+  players: { min: 3, max: 6, note: "Standard 4 (2 partnerships); variants 3-6 players." },
+  equipment: [{ name: "Euchre deck (24 cards, 9-A × 4 suits)", description: "Standard 52-card deck reduced to 24 cards: 9, 10, J, Q, K, A × 4 suits; remove 2s through 8s." }, { name: "Score cards + pencil (traditional)", description: "Traditional Midwest scoring: 2 spare cards (5-of-spades + 5-of-hearts, or other) used to track score to 10 pts." }],
+  duration: { approximateMinutes: 30, structure: "Single hand 5-10 min; game to 10 pts 20-45 min; tournament match 45-90 min." },
+  objective: "Score 10 pts before opponent by winning tricks with trump + bower strategy.",
+  matchStructure: "Deal + trump selection + 5 tricks per hand; running total to 10 pts (or 15/16 in regional variants).",
+  basicRules: [
+    { title: "24-card deck (9-A × 4 suits, remove 2-8)", body: "Reduced deck: only 9, 10, J, Q, K, A × 4 suits = 24 cards; keeps game fast + card counting manageable." },
+    { title: "Right Bower (Jack of trump) = HIGHEST card + Left Bower (Jack same-color) = 2ND HIGHEST", body: "Signature bowers: Right Bower (Jack of trump) is HIGHEST card; Left Bower (Jack of same color as trump) is 2ND HIGHEST + treated as trump card despite different suit label." },
+    { title: "Bidding via 'ordering up' upcard or naming another trump", body: "Bidding: first round any player may accept upcard's suit as trump; second round any player may name any other suit; declarer's team = 'makers'; declarer may go 'Alone' (without partner)." },
+    { title: "'Alone' declaration = 4 pts if all 5 tricks, 1 pt for 3-4", body: "Declarer may go Alone (partner sits out): 5 tricks alone = 4 pts, 3-4 tricks alone = 1 pt; risky but potentially game-changing." },
+    { title: "3-4 tricks = 1 pt makers; 5 tricks = 2 pts; euchred (0-2) = 2 pts defenders", body: "Scoring: makers win 3-4 tricks = 1 pt; makers win 5 tricks ('march') = 2 pts (or 4 pts alone); makers get 0-2 tricks ('euchred') = 2 pts to defenders." },
+  ],
+  scoring: { summary: "1 pt (3-4 tricks makers), 2 pts (5 tricks makers), 4 pts (5 tricks alone), 2 pts (defenders euchre); running total to 10 pts.", winCondition: "First team to 10 pts wins game." },
+  positions: [{ name: "Dealer", role: "Deals cards; last chance to accept upcard as trump.", count: 1 }, { name: "Maker (declarer)", role: "Player who named trump; leads team on that hand.", count: 1 }, { name: "Maker's Partner", role: "Partners with declarer; must contribute tricks (or sits out if Alone).", count: 1 }, { name: "Defenders (2 players)", role: "Opposing partnership trying to euchre makers.", count: 2 }],
+  officiating: { officials: ["Tournament arbiter (large tournaments)", "Casual play self-officiated", "Online platforms automated"], summary: "Casual play self-officiated; regional tournaments use arbitration." },
+  governingBodies: [{ name: "No formal national governing body (regional traditions)", founded: 1900, headquarters: "USA Midwest + Canada" }, { name: "Windsor Euchre Association (Ontario Canada regional)", founded: 1975, headquarters: "Windsor, Ontario, Canada" }, { name: "Michigan Euchre League (Michigan regional)", founded: 1985, headquarters: "Michigan, USA" }],
+  majorCompetitions: [{ name: "Windsor Euchre Association Tournament", frequency: "annual", founded: 1975, region: "Windsor, Ontario, Canada" }, { name: "Michigan Euchre League Championships", frequency: "annual", founded: 1985, region: "Michigan, USA" }, { name: "Indiana + Ohio regional tournaments (numerous)", frequency: "annual multiple", founded: 1950, region: "Indiana + Ohio, USA" }, { name: "Various VFW + American Legion tournaments", frequency: "annual", founded: 1950, region: "USA Midwest nationwide" }, { name: "Board Game Arena Euchre tournaments", frequency: "ongoing", founded: 2015, region: "worldwide online" }],
+  countriesPlayed: ["USA (dominant Midwest — Indiana, Ohio, Michigan, Wisconsin)", "CAN (Ontario dominant)", "GBR (declining traditional presence)", "AUS + NZL (small British colonial legacy)", "worldwide via cards.io + BGA online"],
+  famousAthletes: ["No famous professional players (grassroots amateur game)", "Various regional tournament winners"],
+  records: [
+    { title: "Ancestor of Bridge (evolved 1890s from Euchre)", holder: "Card game history", value: "Euchre is direct ancestor of Bridge — Bridge evolved from Euchre + Whist 1890s; also ancestor of Spades (American Depression era) + Hearts", year: 1895 },
+    { title: "Indiana + Ohio informal 'state game' status", holder: "Midwestern American tradition", value: "Euchre holds informal 'state game' status in Indiana + Ohio; deep Midwestern German-American heritage; central to bar + church basement + American Legion culture", year: 2024 },
+    { title: "Origin via German immigrants Pennsylvania 18-19th century", holder: "German-American immigrant tradition", value: "Euchre originated among German immigrants to Pennsylvania 18-19th century (as 'Juckerspiel'); spread through Midwest USA + Ontario Canada", year: 1850 },
+    { title: "5-card hand = high variance quick-play game", holder: "Euchre game design", value: "5-card hand + 5 tricks per hand creates high variance + luck factor — fast quick-play game (5-10 min per hand) suitable for casual + tournament play", year: 2024 },
+  ],
+  variants: ["ohio-standard-euchre-most-common", "michigan-stick-the-dealer-variant", "canadian-farmers-hand-swap-variant", "3-player-euchre-solo-variant", "6-player-3v3-partnership", "bid-euchre-auction-indiana-illinois", "railroad-euchre-2-player-variant", "24-card-vs-32-card-british-variant"],
+  relatedSports: ["bridge-duplicate", "spades-american-partnership", "hearts-avoidance-card", "pinochle-german-american", "whist-british-classical"],
+  skills: ["bower recognition + trump anticipation", "'ordering up' vs passing judgment", "Alone declaration risk assessment", "5-card hand tactical planning"],
+  wikipediaTitle: "Euchre",
+  sources: [{ label: "Wikipedia — Euchre", url: "https://en.wikipedia.org/wiki/Euchre", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default euchreMidwestAmerican;

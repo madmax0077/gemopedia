@@ -28,6 +28,7 @@ import { pente } from "./pente";
 import { poker } from "./poker";
 import { renju } from "./renju";
 import { rummy } from "./rummy";
+import { scrabbleCompetitiveWescpa } from "./scrabble-competitive-wescpa";
 import { shobu } from "./shobu";
 import { shogi } from "./shogi";
 import { speedcubing } from "./speedcubing";
@@ -70,6 +71,7 @@ export const MIND_SPORTS: Sport[] = [
   poker,
   renju,
   rummy,
+  scrabbleCompetitiveWescpa,
   shobu,
   shogi,
   speedcubing,

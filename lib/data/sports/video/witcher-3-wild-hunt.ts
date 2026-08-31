@@ -1,0 +1,56 @@
+import type { Sport } from "@/lib/types";
+
+export const witcher3WildHunt: Sport = {
+  id: "witcher-3-wild-hunt",
+  slug: "witcher-3-wild-hunt",
+  name: "The Witcher 3: Wild Hunt (Open-World RPG)",
+  officialName: "The Witcher 3: Wild Hunt — CD Projekt RED (2015)",
+  aliases: ["The Witcher 3", "Witcher 3", "TW3", "Wild Hunt"],
+  shortDescription:
+    "Landmark open-world action RPG by CD Projekt RED (Poland 2015) — Geralt of Rivia searches for adopted daughter Ciri across Northern Kingdoms; 200+ hour completion time; won 250+ Game of the Year awards; sold 50M+ copies; established modern narrative RPG standard; free 2022 next-gen upgrade + 2 major expansions.",
+  longDescription:
+    "The Witcher 3: Wild Hunt is a landmark open-world action role-playing game developed by CD Projekt RED (Warsaw Poland) released May 2015. Considered by many the greatest RPG ever made + one of most influential video games of the 2010s. Won 250+ Game of the Year awards including Game Awards 2015 GOTY, BAFTA 2016 Best Game, Golden Joystick 2015 Ultimate Game of the Year. Sold 50+ million copies by 2024 (largest-selling single-player RPG on PC + console before Elder Ring 2022). Third installment in Witcher series based on Polish author Andrzej Sapkowski's Witcher novels + short stories. Player controls Geralt of Rivia — a mutated 'witcher' (monster hunter for hire) — searching for his adopted daughter Ciri (Cirilla Fiona Elen Riannon) who is being pursued by the Wild Hunt (spectral wraith kings). Massive open world spanning: (1) White Orchard (prologue tutorial region); (2) Velen + Novigrad (main continent — largest region); (3) Skellige Isles (Viking-inspired island chain); (4) Kaer Morhen (witcher stronghold); (5) Toussaint (Blood and Wine expansion — Mediterranean-inspired duchy). Base game ~100 hours main story; 200+ hours with side content; 400+ hours with expansions + full completionist run. Gameplay pillars: (a) Combat — signature witcher combat with 2 swords (silver for monsters, steel for humans), 5 magical signs (Igni fire, Aard telekinesis, Yrden trap, Quen shield, Axii mind-control), potions + oils; (b) Investigation — 'witcher senses' detective mode uncovering clues; (c) Choice-driven narrative — 36 possible ending combinations based on dozens of major choices; (d) Side quests written to novel-quality standards ('The Bloody Baron' side quest considered greatest video game side quest ever written); (e) Gwent — signature in-game card game; became so popular CDPR spun off as standalone Gwent: The Witcher Card Game 2018; (f) Contract quests hunting specific monsters; (g) Character build — 4 skill trees Combat + Signs + Alchemy + General. Two major DLC expansions: (1) Hearts of Stone (2015) — ~10 hour Faust-inspired mystery story; (2) Blood and Wine (2016) — 30+ hour Mediterranean epic with new Toussaint region. Free 2022 'Next-Gen Update' — remastered for PS5 + Xbox Series X + PC with ray tracing + faster loading + Netflix Witcher series-inspired armor DLC. Cultural impact: (a) Landmark example of AAA storytelling quality; (b) Directly influenced Netflix Witcher series (Henry Cavill 2019-2023, Liam Hemsworth 2024+); (c) Gwent Card Game spinoff; (d) Novel-quality writing set new industry standard for narrative depth; (e) Poland's leading cultural export; Polish President gave copy to Barack Obama as diplomatic gift 2011. Notable people: Marcin Iwiński + Michał Kiciński (CDPR co-founders); Jakub Szamałek + Marcin Blacha (lead writers); Marcin Przybyłowicz (composer). Developer CD Projekt RED subsequently developed Cyberpunk 2077 (2020) using similar RPG framework.",
+  category: "video-games",
+  subCategory: "open-world action role-playing game (RPG)",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "major",
+  countryOfOrigin: "PL",
+  regionOfOrigin: "Poland (CD Projekt RED developer — Warsaw)",
+  estimatedOrigin: "Developed 2011-2015 by CD Projekt RED Warsaw; released May 2015 (PC/PS4/Xbox One); Nintendo Switch port 2019; PS5/Xbox Series X free upgrade 2022; based on Andrzej Sapkowski's Witcher novels",
+  players: { min: 1, max: 1, note: "Single-player only." },
+  equipment: [{ name: "Gaming device (PC/PS/Xbox/Switch)", description: "Playable on Windows/macOS/Linux PC (Steam/GOG/Epic), PlayStation 4/5, Xbox One/Series X|S, Nintendo Switch (2019 port)." }, { name: "Controller or keyboard+mouse", description: "Controller preferred (Xbox or PS layout); keyboard+mouse fully supported for PC + modding." }],
+  duration: { approximateMinutes: 60, structure: "Main story ~50 hours; base game full completion 100+ hours; with expansions 200+ hours; completionist run 400+ hours." },
+  objective: "Guide Geralt of Rivia through Northern Kingdoms in search of adopted daughter Ciri; explore vast open world completing hundreds of quests + contracts.",
+  matchStructure: "Single-player open-world progression; player-directed exploration; main story + side quests + contracts + treasure hunts + Gwent card game.",
+  basicRules: [
+    { title: "3 experience skill trees + General (36 possible builds)", body: "Character progression across 4 trees: Combat, Signs (magic), Alchemy, General; 36 possible build combinations at max level; encourages diverse playstyles." },
+    { title: "5 magical signs (Igni, Aard, Yrden, Quen, Axii)", body: "5 witcher signs: Igni (fire), Aard (telekinesis push), Yrden (trap circle), Quen (protective shield), Axii (mind control); each has upgrade tree." },
+    { title: "2 swords — silver for monsters, steel for humans", body: "Signature witcher combat: silver sword for monster damage bonus, steel sword for human damage bonus; must switch actively during combat." },
+    { title: "Choice-driven narrative — 36 possible endings", body: "Major moral/political choices throughout game affect story outcomes; 36 possible ending combinations based on decisions; no morality gauge (moral complexity central)." },
+    { title: "Gwent — signature in-game card game (spun off as standalone)", body: "In-game Gwent card game so popular CD Projekt RED spun off as standalone Gwent: The Witcher Card Game 2018; still active in TW3 as beloved side activity." },
+  ],
+  scoring: { summary: "No formal scoring; completion tracked by: main story progression, quests completed, monsters defeated, Gwent card collection, achievements, endings unlocked.", winCondition: "Complete main story + select from 36 possible ending combinations; full completionist = all quests + contracts + Gwent cards + achievements + both DLC expansions." },
+  positions: [{ name: "Geralt of Rivia (player character)", role: "Sole protagonist; mutated witcher monster hunter.", count: 1 }, { name: "Ciri (companion, playable segments)", role: "Adopted daughter; playable in ~6 hours of story segments.", count: 1 }],
+  officiating: { officials: ["CD Projekt RED (developer)", "Speedrun.com moderators (competitive leaderboards)"], summary: "Community speedrun scene at Speedrun.com; no formal competitive tournaments." },
+  governingBodies: [{ name: "CD Projekt RED (developer)", founded: 2002, headquarters: "Warsaw, Poland" }, { name: "CD Projekt (parent company + GOG.com owner)", founded: 1994, headquarters: "Warsaw, Poland" }],
+  majorCompetitions: [{ name: "The Game Awards 2015 — Game of the Year", frequency: "one-time award", founded: 2015, region: "Los Angeles, USA" }, { name: "BAFTA Games Awards 2016 — Best Game", frequency: "one-time award", founded: 2016, region: "London, UK" }, { name: "Golden Joystick 2015 — Ultimate Game of the Year", frequency: "one-time award", founded: 2015, region: "UK" }, { name: "Speedrun.com Witcher 3 leaderboards", frequency: "ongoing", founded: 2015, region: "worldwide online" }, { name: "Games Done Quick Witcher 3 speedruns", frequency: "biannual", founded: 2016, region: "worldwide streamed marathons" }],
+  countriesPlayed: ["POL (developer)", "USA (largest market)", "DEU", "GBR", "FRA", "RUS", "CHN", "JPN", "BRA", "worldwide via Steam/GOG/Epic/PSN/Xbox Live/Switch"],
+  famousAthletes: ["Marcin Iwiński (CDPR co-founder)", "Michał Kiciński (CDPR co-founder)", "Jakub Szamałek + Marcin Blacha (lead writers)", "Marcin Przybyłowicz (composer)", "Doug Cockle (Geralt English voice actor)", "Henry Cavill (Netflix Geralt actor 2019-2023 — also public superfan)"],
+  records: [
+    { title: "250+ Game of the Year awards", holder: "CD Projekt RED", value: "The Witcher 3: Wild Hunt won 250+ Game of the Year awards in 2015 from gaming media outlets worldwide — one of most-decorated games in history", year: 2015 },
+    { title: "50M+ copies sold by 2024", holder: "CD Projekt RED", value: "The Witcher 3 sold 50+ million copies by 2024 — largest-selling single-player RPG on PC + console before Elden Ring surpassed 2022", year: 2024 },
+    { title: "Novel-quality writing established modern RPG standard", holder: "Jakub Szamałek + Marcin Blacha (writers)", value: "The Witcher 3's novel-quality writing (especially 'Bloody Baron' side quest) established new industry standard for narrative depth in AAA RPGs; directly influenced Baldur's Gate 3 (2023) + others", year: 2015 },
+    { title: "Polish President gave copy to Barack Obama 2011", holder: "Polish diplomatic tradition", value: "Polish President Bronisław Komorowski gave copy of The Witcher 2 (predecessor) to US President Barack Obama as diplomatic gift 2011 — Poland's leading cultural export", year: 2011 },
+    { title: "Gwent spun off as standalone game 2018", holder: "CD Projekt RED", value: "In-game Gwent card game so popular CDPR spun off as standalone Gwent: The Witcher Card Game 2018; still active as beloved side activity within TW3", year: 2018 },
+  ],
+  variants: ["main-game-100-hour-story", "hearts-of-stone-dlc-10-hour", "blood-and-wine-dlc-30-plus-hour", "next-gen-update-2022-ray-tracing-remaster", "witcher-3-gwent-spinoff-standalone-card-game", "netflix-witcher-series-inspired-armor-dlc-2022"],
+  relatedSports: ["elden-ring", "cyberpunk-2077-cdpr", "baldurs-gate-3", "skyrim-elder-scrolls", "red-dead-redemption-2"],
+  skills: ["combat timing + parry + counter", "sign + potion + oil preparation planning", "quest choice consequences assessment", "Gwent card game mastery"],
+  wikipediaTitle: "The Witcher 3: Wild Hunt",
+  sources: [{ label: "Wikipedia — The Witcher 3: Wild Hunt", url: "https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt", publisher: "Wikipedia" }, { label: "CD Projekt RED", url: "https://www.cdprojektred.com", publisher: "CD Projekt RED" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default witcher3WildHunt;

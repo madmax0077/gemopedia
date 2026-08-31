@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const pinochleGermanAmerican: Sport = {
+  id: "pinochle-german-american",
+  slug: "pinochle-german-american",
+  name: "Pinochle (German-American Trick-Taking Card Game)",
+  officialName: "American Contract Bridge League + National Pinochle Association (informal)",
+  aliases: ["Pinochle", "Pinocle", "Binocle", "Bezique descendant"],
+  shortDescription:
+    "Classic German-American trick-taking + melding card game — 4-player partnership standard (Double Deck 80 cards); descended from French Bezique via German immigrants 1800s; peak US popularity 1930s-70s; still ~5M+ American players; ~300 registered clubs; competitive Amdur + Rack + Kansas City variants.",
+  longDescription:
+    "Pinochle is a classic trick-taking + melding card game descended from the French classical game Bezique via German immigrants to the United States 1800s — became one of America's most-played household card games peaking 1930s-1970s. Standard modern competitive version: 4-player partnership using Double Deck Pinochle (80 cards) — 2 complete Pinochle decks combined (Pinochle deck = 48 cards: A, K, Q, J, 10, 9 × 4 suits × 2 copies each). Also common variants: Single Deck 48-card 2-4 player, Firehouse 3-player individual, Kansas City Amdur 4-player partnership. Uses German-style card ranking: A > 10 > K > Q > J > 9 (ten ranks between Ace + King) — unusual to modern players. Game structure: (1) Deal — 20 cards to each of 4 players in double deck game; (2) Bidding — auction-style bidding starting at 500 pts (typical); winner declares trump suit; (3) Melding — before play, players 'meld' scoring combinations from hand + score them (Aces Around 100, Kings Around 80, Queens Around 60, Jacks Around 40, Marriage in trump 40, Marriage other 20, Pinochle Q♠ + J♦ 40, Double Pinochle 300, Run/Sequence A-10-K-Q-J in trump 150, Double Run 1500 — signature high scoring combinations); (4) Passing — some variants allow partners to pass cards to each other; (5) Playing tricks — 20 tricks played out; must follow suit + must beat previous card of same suit if possible; trump beats non-trump; (6) Trick scoring — Aces 11, Tens 10, Kings 4, Queens 3, Jacks 2, 9s 0 (some variants) + 10 pts for last trick; (7) Final score — bidding team combines meld + trick pts; if less than bid, entire bid deducted ('set'); other team scores just their meld + tricks. Games typically to 500 or 1500 pts. Signature strategic depth: (a) Meld optimization — reveals hand info to opponents; (b) Bidding precision — bid too high = set; too low = lose control; (c) Trump selection — dramatically affects card values + winning tricks; (d) Card counting critical (80-card double deck memory). Modern competitive scene: (1) National Pinochle Association (informal — no formal national body); (2) ~300 registered pinochle clubs across USA; (3) Firehouse Pinochle popular in Chicago + Cleveland + St Louis firefighter tradition; (4) Amdur Pinochle Kansas City signature variant; (5) Amish community central pastime; (6) VFW + American Legion halls tournament venues; (7) Online play on Board Game Arena + dedicated pinochle apps. Cultural: (a) Deeply German-American Midwestern heritage — Wisconsin, Ohio, Michigan, Pennsylvania strongest states; (b) Central to Chicago + Cleveland Polish + German neighborhoods 20th century; (c) Firehouse tradition — American firefighters played between calls; (d) Declined 1980s-90s as bridge + poker rose but ~5 million American players still play regularly. Notable competitions: American National Pinochle Championship informal + numerous state + regional tournaments.",
+  category: "card-games",
+  subCategory: "German-American trick-taking + melding partnership card game",
+  sportType: "team", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "19th-century", popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (German-American immigrant descendant of French Bezique 1800s; peak Midwest 1930s-70s)",
+  estimatedOrigin: "Descended from French classical Bezique via German immigrants to USA 1800s; codified 1860s-70s American Midwest; peak popularity 1930s-70s; still played by ~5M American players",
+  players: { min: 2, max: 4, note: "Double Deck standard 4 (2 partnerships); Single Deck 2-4; Firehouse 3-player individual." },
+  equipment: [{ name: "Double Deck Pinochle 80 cards (2 Pinochle decks combined)", description: "Double Deck: 2 complete Pinochle decks = 80 cards; Pinochle deck each has 48 cards (A, K, Q, J, 10, 9 × 4 suits × 2 copies each)." }, { name: "Single Deck Pinochle 48 cards (alternate)", description: "Single Deck alternate: A, K, Q, J, 10, 9 in 4 suits × 2 copies each = 48 cards; used for 2-4 player smaller games." }, { name: "Score pad + pencil (traditional)", description: "Traditional paper scoring pad for meld + trick tallying + running score to 500 or 1500 pts." }],
+  duration: { approximateMinutes: 60, structure: "Single hand 20-40 min; game to 500 pts 45-90 min; game to 1500 pts 2-3 hours; tournament 6-10 hours multiple matches." },
+  objective: "Score more points than opponent via meld + trick combinations; games to 500 or 1500 pts.",
+  matchStructure: "Deal + Bidding + Melding + Playing tricks + Scoring per hand; running total to 500 or 1500 pts over multiple hands.",
+  basicRules: [
+    { title: "German card ranking: A > 10 > K > Q > J > 9", body: "Distinctive Pinochle card ranking: Ace highest, then 10, then K, Q, J, 9 lowest — unusual order (10 above K + Q + J) traces to German origin." },
+    { title: "Bidding auction determines trump + minimum score to achieve", body: "Bidding phase: players bid increasing amounts; highest bidder declares trump suit + must score at least bid amount (meld + tricks combined) or 'set' (lose entire bid)." },
+    { title: "Meld scoring combinations (Aces + Kings + Marriage + Pinochle + Run)", body: "Before trick play, players 'meld' scoring combinations: Aces Around 100, Kings Around 80, Marriage (K+Q same suit) 40 trump/20 non-trump, Pinochle (Q♠+J♦) 40, Double Pinochle 300, Run (A-10-K-Q-J trump) 150, Double Run 1500." },
+    { title: "20 tricks played; Aces 11, Tens 10, Kings 4, Queens 3, Jacks 2, 9s 0", body: "20 tricks played out; must follow suit + beat previous card of same suit if possible; trump beats non-trump; trick card values Aces 11, Tens 10, Kings 4, Queens 3, Jacks 2, 9s 0 + 10 for last trick." },
+    { title: "Bidding team must reach bid or 'set' (lose entire bid)", body: "Bidding team combines meld + trick scores; if less than bid, entire bid deducted from score ('set'); other team scores just meld + tricks." },
+  ],
+  scoring: { summary: "Complex meld + trick point combinations; running total to 500 or 1500 pts; bidding team must reach bid or 'set' loses bid amount.", winCondition: "First team to reach specified game total (500 or 1500 pts)." },
+  positions: [{ name: "Bidder (winning bidder each hand)", role: "Player who won bidding auction; declares trump + must score bid amount.", count: 1 }, { name: "Bidder's Partner", role: "Partners with bidder; combined meld + tricks toward bid.", count: 1 }, { name: "Opposing Partnership", role: "Other 2 players; try to prevent bidding team from reaching bid.", count: 2 }],
+  officiating: { officials: ["Tournament arbiter", "Table judges (large tournaments)", "Scorekeepers"], summary: "Casual play self-officiated; formal tournaments use arbitration at large multi-table events." },
+  governingBodies: [{ name: "No formal national governing body (National Pinochle Association informal)", founded: 1900, headquarters: "USA" }, { name: "American Contract Bridge League (host of some pinochle events)", founded: 1937, headquarters: "USA" }, { name: "Amdur Pinochle Association (Kansas City)", founded: 1975, headquarters: "Kansas City, USA" }],
+  majorCompetitions: [{ name: "American National Pinochle Championship (informal)", frequency: "annual", founded: 1980, region: "USA — rotating cities" }, { name: "Amdur Pinochle Kansas City", frequency: "annual", founded: 1975, region: "Kansas City, USA" }, { name: "Various VFW + American Legion tournaments", frequency: "state + regional", founded: 1950, region: "USA nationwide" }, { name: "Firehouse Pinochle Championships", frequency: "annual", founded: 1990, region: "USA — firefighter departments" }, { name: "Board Game Arena Pinochle tournaments", frequency: "ongoing", founded: 2015, region: "worldwide online" }],
+  countriesPlayed: ["USA (dominant Midwest — Wisconsin, Ohio, Michigan, Pennsylvania)", "DEU (declining — original ancestor's home)", "CAN (small scene)", "smaller diaspora scenes worldwide"],
+  famousAthletes: ["Various American National Pinochle Championship winners (limited English-language records)", "Amdur family (Kansas City variant popularization)", "Chicago Firehouse Pinochle tradition players"],
+  records: [
+    { title: "Descended from French Bezique via German immigrants 1800s", holder: "German-American immigrant tradition", value: "Pinochle descended from French classical Bezique via German immigrants to USA 1800s; became one of America's most-played household card games peaking 1930s-70s", year: 1870 },
+    { title: "~5M American players still play regularly", holder: "American pinochle community", value: "Estimated 5+ million American pinochle players still play regularly; ~300 registered clubs across USA; deeply German-American Midwestern heritage", year: 2024 },
+    { title: "German card ranking A > 10 > K > Q > J > 9", holder: "Pinochle tradition", value: "Distinctive Pinochle card ranking places Ten above King, Queen, and Jack — unusual German-origin card ranking preserved from ancestral game", year: 2024 },
+    { title: "Double Run 1500 pt meld = highest possible", holder: "Pinochle meld scoring", value: "Double Run meld (2 complete A-10-K-Q-J sequences in trump suit) scores 1500 points — highest single-meld score possible; extremely rare + game-defining", year: 2024 },
+  ],
+  variants: ["double-deck-pinochle-4-player-partnership-standard", "single-deck-pinochle-2-4-player", "firehouse-pinochle-3-player-individual", "kansas-city-amdur-4-player-variant", "check-pinochle-scoring-variant", "auction-pinochle-3-player-individual"],
+  relatedSports: ["bezique-french-classical-card", "bridge-duplicate", "euchre-midwest-american", "skat-german-3-player", "sheepshead-german-american-card"],
+  skills: ["meld combination recognition + scoring", "bidding precision (bid vs risk of set)", "card counting (80-card double deck)", "trump play + trick sequencing"],
+  wikipediaTitle: "Pinochle",
+  sources: [{ label: "Wikipedia — Pinochle", url: "https://en.wikipedia.org/wiki/Pinochle", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default pinochleGermanAmerican;

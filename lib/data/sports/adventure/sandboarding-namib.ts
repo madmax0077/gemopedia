@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const sandboardingNamib: Sport = {
+  id: "sandboarding-namib",
+  slug: "sandboarding-namib",
+  name: "Sandboarding (Desert Board Sport)",
+  officialName: "World Sandboarding Championships (informal) — International Sandboarding Federation",
+  aliases: ["Sand Boarding", "Sand Surfing", "Dune Boarding"],
+  shortDescription:
+    "Extreme desert board sport — descend steep sand dunes on specialized boards (stand-up snowboard-style OR lie-down toboggan-style); commercial birthplace 1990s Namibia + Peru; top venues Cerro Blanco Peru + Namib Dune 7 + Erg Chebbi Morocco + Little Sahara USA; ~1-2 million participants globally; adventure tourism industry pillar.",
+  longDescription:
+    "Sandboarding is an extreme board sport where riders descend steep sand dunes on specialized boards — the desert-based cousin of snowboarding. Two main disciplines: (1) Stand-up sandboarding — rider stands on snowboard-style board with foot bindings; carves + jumps down dune (most technical + athletic form); (2) Lie-down sandboarding — rider lies prone on shorter board like toboggan or skimboard; faster + less technical (recreational + tourist-focused). Commercial birth 1990s in Namibia (Namib Desert dunes) + Peru (Ica + Nazca desert dunes); rapidly expanded through adventure tourism industry to Morocco, USA, Australia, UAE, Chile. Standard equipment: (a) Sandboard — laminated wooden or composite board 100-160cm long × 20-30cm wide; formica or plexiglass bottom (waxed); foot bindings for stand-up; strap or handles for lie-down; (b) Board wax — special sandboard wax (harder than snowboard wax; often silicone-based) applied to base for glide; (c) Boots — snowboard-style boots for stand-up, athletic shoes for lie-down; (d) Goggles + face buff — protect from blowing sand + wind; (e) Long sleeves — protect from sand burn on falls. Top global venues: (1) Cerro Blanco (Nazca Peru) — 1,176m tallest dune in world; regarded as ultimate sandboarding destination; (2) Namib Desert Dune 7 (Namibia — 383m tall near Walvis Bay) + Big Daddy (Sossusvlei); (3) Erg Chebbi (Morocco — Sahara dunes 150m); (4) Little Sahara (Utah + Oklahoma USA); (5) Great Sand Dunes National Park (Colorado USA — 230m dunes); (6) Simpson Desert (Australia); (7) Ubari Sand Sea (Libya); (8) Wadi Rum (Jordan). Competitive scene mostly informal: (a) Sandboarding World Championships (Peru + Namibia rotating; informal international); (b) US Sandboarding Championships (Oregon Dune Fest); (c) Various adventure tourism-sponsored regional events; (d) No formal international governing body. Terrain differences from snow: (i) Sand is HEAVIER + slower — even waxed board typically 30-60 km/h max vs 100+ km/h snowboarding; (ii) Sand doesn't 'set' like snow — impact absorption different; (iii) Sand temperature can be extreme (60-70°C on dune surface in summer); (iv) Sand grinds board bases faster than snow → daily rewaxing critical. Notable practitioners: (1) Josh Tenge (USA — 4x World Sandboarding Champion; 'godfather' of stand-up sandboarding); (2) Erik Johnson (USA — early adopter); (3) Josh Weinberg (Australia); (4) Various Peruvian + Namibian sandboarding guide/athletes. Adventure tourism industry: (a) Huayascachina Peru oasis destination attracts ~500K annual sandboarding tourists; (b) Namibia + Morocco desert tour operators offer daily sandboarding excursions; (c) UAE Dubai dune sandboarding integrated with 4×4 dune bashing tours; (d) Colorado + Utah + Oregon USA state parks accessible recreational sandboarding.",
+  category: "adventure-extreme-sports",
+  subCategory: "extreme desert board sport on sand dunes",
+  sportType: "individual", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "20th-century", popularity: "niche",
+  countryOfOrigin: "NA",
+  regionOfOrigin: "Namibia + Peru (commercial birthplace 1990s Namib + Ica deserts); global adventure tourism expansion 2000s-2020s",
+  estimatedOrigin: "Commercial sport emerged 1990s in Namibia (Namib Desert) + Peru (Ica + Nazca deserts) as adventure tourism industry; global expansion via desert tourism 2000s-2020s",
+  players: { min: 1, max: 1, note: "Individual sport; group excursions common for tourism." },
+  equipment: [{ name: "Sandboard (100-160cm × 20-30cm)", description: "Laminated wooden or composite board with formica or plexiglass slick bottom; foot bindings for stand-up variant; strap/handles for lie-down." }, { name: "Sandboard wax (harder than snow wax, silicone-based)", description: "Specialized sandboard wax harder than snowboard wax; often silicone-based; applied to base for glide; must reapply frequently as sand grinds fast." }, { name: "Snowboard-style boots (stand-up) or athletic shoes (lie-down)", description: "Stand-up: snowboard-style boots with binding attachment; lie-down: athletic shoes for hiking back up dunes." }, { name: "Goggles + face buff", description: "Ski/snowboard goggles + face buff/scarf protect from blowing sand + wind common in desert conditions." }, { name: "Long sleeves + pants", description: "Long sleeves + pants protect from sand burn on falls; sand at 60-70°C surface temperature can burn exposed skin." }],
+  duration: { approximateMinutes: 30, structure: "Single descent 30 sec-2 min depending on dune; recreational session 2-4 hours; competitive event day 4-8 hours." },
+  objective: "Descend sand dune with skill (stand-up carving + jumps) or speed (lie-down racing) safely.",
+  matchStructure: "Recreational tourism-focused; occasional competitive events with time trials + freestyle judging.",
+  basicRules: [
+    { title: "2 disciplines: Stand-up + Lie-down", body: "Two main disciplines: Stand-up (snowboard-style with foot bindings; technical carving + jumping); Lie-down (prone on shorter board; faster; recreational)." },
+    { title: "Board wax required for effective sliding", body: "Sand board must be waxed before every descent for effective sliding; unwaxed boards barely move on sand; wax wears fast (sand abrasive)." },
+    { title: "Climb dune between runs (no lifts)", body: "Unlike snowboarding, sandboarding has no lifts — riders must climb back up dune between runs (major fitness element)." },
+    { title: "Sand grinds board bases faster than snow", body: "Sand is abrasive + grinds board bases faster than snow; requires daily rewaxing + regular base refinishing; boards have shorter lifespan than snowboards." },
+    { title: "Weather + wind conditions critical", body: "Strong winds change sand surface conditions rapidly + can create sandstorms; heat management critical in summer (dune surface 60-70°C); early morning + late afternoon safer windows." },
+  ],
+  scoring: { summary: "Competitive time trials: fastest descent. Freestyle: judged tricks + carving + air; casual: no scoring.", winCondition: "Time trial: fastest descent. Freestyle: highest judge score." },
+  positions: [{ name: "Sandboarder", role: "Sole rider/competitor.", count: 1 }, { name: "Adventure Guide (tourism)", role: "Trained guide for tourist excursions.", count: 1 }],
+  officiating: { officials: ["Local guides + tourism operators", "Informal event judges"], summary: "No formal international governing body; occasional regional event officiating." },
+  governingBodies: [{ name: "No formal international governing body", founded: 1990, headquarters: "worldwide" }, { name: "Various regional tourism + adventure sport bodies", founded: 2000, headquarters: "Namibia + Peru + USA + Morocco" }],
+  majorCompetitions: [{ name: "Sandboarding World Championships (informal)", frequency: "irregular", founded: 2000, region: "rotating Peru + Namibia" }, { name: "US Sandboarding Championships — Oregon Dune Fest", frequency: "annual", founded: 2005, region: "Oregon, USA" }, { name: "Namibia Sandboarding Days", frequency: "annual", founded: 1990, region: "Swakopmund + Walvis Bay, Namibia" }],
+  countriesPlayed: ["NAM (birthplace)", "PER (birthplace)", "USA (Oregon, Colorado, Utah, Oklahoma)", "MAR (Erg Chebbi Sahara)", "AUS", "UAE", "CHL", "LBY", "JOR", "worldwide desert regions"],
+  famousAthletes: ["Josh Tenge (USA — 4x World Sandboarding Champion; 'godfather' of stand-up sandboarding)", "Erik Johnson (USA — early adopter)", "Various Peruvian + Namibian professional sandboarding guides", "Josh Weinberg (Australia)"],
+  records: [
+    { title: "Cerro Blanco Peru — 1,176m tallest dune in world", holder: "Cerro Blanco (Nazca, Peru)", value: "Cerro Blanco in Nazca, Peru is world's tallest sand dune at 1,176m — ultimate sandboarding destination for expert riders + destination adventure tourism", year: 2024 },
+    { title: "Commercial birth 1990s Namibia + Peru", holder: "Namibian + Peruvian adventure tourism", value: "Commercial sandboarding emerged 1990s in Namibia (Namib Desert Swakopmund) + Peru (Huacachina + Nazca desert oases) as adventure tourism sports", year: 1995 },
+    { title: "Josh Tenge 4x World Sandboarding Champion", holder: "Josh Tenge (USA)", value: "Josh Tenge of USA won 4 World Sandboarding Championships in 1990s-2000s — 'godfather' of stand-up sandboarding technique + international champion", year: 2005 },
+    { title: "Sand surface temperatures 60-70°C in summer", holder: "Desert conditions", value: "Sand dune surface temperatures reach 60-70°C in summer desert conditions — extreme heat challenge for sandboarding + potential burn hazard; early morning/late afternoon safer", year: 2024 },
+  ],
+  variants: ["stand-up-sandboarding-snowboard-style", "lie-down-sandboarding-toboggan-style", "sand-skiing-2-board-ski-style", "sand-luge-lie-down-tobogganing", "dune-buggy-sandboarding-mechanized"],
+  relatedSports: ["snowboarding-freestyle", "surfing-shortboard", "skateboarding-street", "skiing-alpine", "grass-skiing"],
+  skills: ["dune-line reading + descent planning", "sandboard wax + base maintenance", "sand surface + wind condition assessment", "heat + hydration management"],
+  wikipediaTitle: "Sandboarding",
+  sources: [{ label: "Wikipedia — Sandboarding", url: "https://en.wikipedia.org/wiki/Sandboarding", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default sandboardingNamib;

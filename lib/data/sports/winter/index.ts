@@ -9,6 +9,7 @@ import { broomball } from "./broomball";
 import { broomballCanada } from "./broomball-canada";
 import { crossCountrySkiing } from "./cross-country-skiing";
 import { curling } from "./curling";
+import { curlingMixedDoubles } from "./curling-mixed-doubles";
 import { dogsledRacing } from "./dogsled-racing";
 import { figureSkating } from "./figure-skating";
 import { freestyleSkiing } from "./freestyle-skiing";
@@ -18,6 +19,7 @@ import { iceboating } from "./iceboating";
 import { iceClimbing } from "./ice-climbing";
 import { iceCross } from "./ice-cross";
 import { iceCrossRedBullCrashedIce } from "./ice-cross-red-bull-crashed-ice";
+import { iceYachtingDn } from "./ice-yachting-dn";
 import { kicksled } from "./kicksled";
 import { luge } from "./luge";
 import { lugeNaturalTrack } from "./luge-natural-track";
@@ -28,6 +30,7 @@ import { pondHockey } from "./pond-hockey";
 import { ringette } from "./ringette";
 import { shortTrackSpeedSkating } from "./short-track-speed-skating";
 import { skeleton } from "./skeleton";
+import { skeletonSledFibt } from "./skeleton-sled-fibt";
 import { skiCross } from "./ski-cross";
 import { skijoringNordic } from "./skijoring-nordic";
 import { skiJumping } from "./ski-jumping";
@@ -61,6 +64,7 @@ export const WINTER_SPORTS: Sport[] = [
   broomballCanada,
   crossCountrySkiing,
   curling,
+  curlingMixedDoubles,
   dogsledRacing,
   figureSkating,
   freestyleSkiing,
@@ -70,6 +74,7 @@ export const WINTER_SPORTS: Sport[] = [
   iceClimbing,
   iceCross,
   iceCrossRedBullCrashedIce,
+  iceYachtingDn,
   kicksled,
   luge,
   lugeNaturalTrack,
@@ -80,6 +85,7 @@ export const WINTER_SPORTS: Sport[] = [
   ringette,
   shortTrackSpeedSkating,
   skeleton,
+  skeletonSledFibt,
   skiCross,
   skijoringNordic,
   skiJumping,

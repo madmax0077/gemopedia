@@ -4,6 +4,7 @@ import { airHockey } from "./air-hockey";
 import { airRifle10m } from "./air-rifle-10m";
 import { archery } from "./archery";
 import { artisticBilliards } from "./artistic-billiards";
+import { atlatlPrimitiveWeapons } from "./atlatl-primitive-weapons";
 import { axeThrowingWaltl } from "./axe-throwing-waltl";
 import { bocce } from "./bocce";
 import { boccia } from "./boccia";
@@ -14,6 +15,7 @@ import { cornhole } from "./cornhole";
 import { croquet } from "./croquet";
 import { crossbowShooting } from "./crossbow-shooting";
 import { darts } from "./darts";
+import { dartsPdcProfessional } from "./darts-pdc-professional";
 import { discGolf } from "./disc-golf";
 import { eightBall } from "./eight-ball";
 import { englishBilliards } from "./english-billiards";
@@ -60,6 +62,7 @@ export const PRECISION_SPORTS: Sport[] = [
   airRifle10m,
   archery,
   artisticBilliards,
+  atlatlPrimitiveWeapons,
   axeThrowingWaltl,
   bocce,
   boccia,
@@ -70,6 +73,7 @@ export const PRECISION_SPORTS: Sport[] = [
   croquet,
   crossbowShooting,
   darts,
+  dartsPdcProfessional,
   discGolf,
   eightBall,
   englishBilliards,

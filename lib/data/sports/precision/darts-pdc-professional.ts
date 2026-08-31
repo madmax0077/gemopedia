@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const dartsPdcProfessional: Sport = {
+  id: "darts-pdc-professional",
+  slug: "darts-pdc-professional",
+  name: "Darts (PDC Professional)",
+  officialName: "Professional Darts Corporation (PDC) — World Darts Championship",
+  aliases: ["PDC Darts", "Professional Darts", "501 Darts", "World Darts Championship"],
+  shortDescription:
+    "Professional precision throwing sport — competitors throw 3 darts per turn at circular board scoring from 60 (triple 20) down through complex geometry finishing on double for 501 game format; PDC founded 1992 as breakaway from BDO; annual World Darts Championship at Alexandra Palace London; Michael van Gerwen + Luke Littler dominant modern names.",
+  longDescription:
+    "Darts is a precision throwing sport with deep pub + tavern origins that has evolved into a major professional television sport in the 21st century. Governed at professional elite level by the Professional Darts Corporation (PDC) — founded 1992 as breakaway from British Darts Organisation (BDO) by top players seeking commercial development; PDC now dominant global pro body with massive TV rights + prize money (~£20M+ prize pool annually). Standard equipment: (1) Dartboard — 45.7cm diameter sisal-fibre board (traditional 'clock' pattern) with 20 numbered pie segments 1-20 arranged non-sequentially to minimize easy adjacent scoring; outer double ring (2× value), inner triple ring (3× value), single bull (25 pts), inner bull/bullseye (50 pts); (2) Darts — 3 per player set; typically 20-24g tungsten with steel-tip point + shaft + flight; (3) Throwing distance 2.37m (7 ft 9.25 in) from board face; (4) Board height 1.73m (5 ft 8 in) center to floor. Standard professional game format = 501 (double-out): (a) Each player starts at 501; (b) Turns of 3 darts subtract from total; (c) Must finish on a 'double' (double ring segment OR bullseye 50); (d) 'Bust' if score would go below 0 or leave 1 (impossible to double out from 1). Signature possible scores: 180 (three triple-20s in one turn) — max possible per throw; 'Big Fish' 170 checkout finish (T20 T20 Bull); 'Shanghai' (single + double + triple of same number). Professional match formats: (i) Legs (individual 501 game); (ii) Sets (best-of-X legs); (iii) Championship best-of-13 sets = up to ~40 legs. PDC major tournaments: (1) William Hill World Darts Championship — annual December-January at Alexandra Palace London; ~£2.5M prize pool; £500K winner; (2) UK Open (March); (3) World Matchplay (July); (4) World Grand Prix (October); (5) Premier League (weekly Thursday nights UK Sky Sports); (6) Grand Slam of Darts (November); (7) Players Championship Finals. Historic legends: (a) Phil 'The Power' Taylor — 16-time World Champion (1990-2013) — considered GOAT of darts; (b) Eric Bristow 5x World Champion (1980s); (c) Jocky Wilson 2x; (d) Bobby George showman. Modern era stars: (i) Michael van Gerwen (Netherlands — 3x World Champion 2014, 2017, 2019; considered modern GOAT); (ii) Luke Littler (England — youngest World Championship finalist 2024 at 16, phenom); (iii) Peter Wright (Scotland — 2x World Champion 2020, 2022); (iv) Michael Smith (England — 2023 World Champion); (v) Gary Anderson (Scotland — 2x); (vi) Rob Cross (England — 2018 World Champion). Global TV audience: 3+ million viewers UK peak (World Championship final); expanding into USA, Germany, Netherlands, Australia. Modern professional scene: ~130 tour card holders on PDC circuit; ~£20M+ annual prize money; Sky Sports UK broadcast contract.",
+  category: "precision-sports",
+  subCategory: "professional dartboard throwing sport",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "year-round", era: "20th-century", popularity: "major",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "England (pub + tavern origins 19th century; PDC founded 1992 UK)",
+  estimatedOrigin: "Deep pub + tavern origins in England 19th century; standardized dartboard by Lancashire carpenter Brian Gamlin 1896; PDC founded 1992 as breakaway from BDO; modern TV era from 1990s",
+  players: { min: 1, max: 2, note: "Individual match play; team formats (Pairs Championship) also exist." },
+  equipment: [{ name: "Dartboard (45.7cm sisal-fibre, 20-segment clock)", description: "Sisal-fibre dartboard 45.7cm diameter with 20 non-sequential numbered segments 1-20; outer double ring, inner triple ring, single bull 25, inner bull 50." }, { name: "Darts (3 per player, ~20-24g tungsten)", description: "Set of 3 darts per player; typically 20-24g tungsten body with steel-tip point + shaft + flight; personal customization common." }, { name: "Oche (throw line) 2.37m from board", description: "Throwing distance line ('oche') 2.37m (7 ft 9.25 in) from board face — professional standard." }, { name: "Scoreboard (electronic or manual chalk)", description: "Electronic scoreboard for professional matches; manual chalk-and-eraser for casual play." }],
+  duration: { approximateMinutes: 60, structure: "Single leg 5-15 min; best-of-11-legs set 30-60 min; championship match 90-180 min; final 2-4 hours." },
+  objective: "Reduce score from 501 to exactly 0 finishing on a double (double ring or bullseye 50) before opponent.",
+  matchStructure: "Match = best-of-N sets; set = best-of-N legs; leg = 501 game to zero (double-out finish).",
+  basicRules: [
+    { title: "501 game — subtract dart scores until exactly 0", body: "Each player starts at 501; 3 darts per turn subtract from total; first to exactly 0 wins leg." },
+    { title: "Must finish on a double (double ring or bullseye 50)", body: "Winning dart MUST land in a double segment (outer ring, 2× value) OR the inner bull (bullseye, 50 pts, counts as double 25) — cannot finish on single or triple." },
+    { title: "'Bust' if score below 0 or leaves 1 (rules undefeatable)", body: "If your throw would take score below 0 OR leave exactly 1 (impossible to double-out from 1), you 'bust' — turn ends + score reverts to start of turn." },
+    { title: "Standard scoring: doubles + triples + bullseye", body: "Segments: single = face value; double ring (thin outer) = 2× face value; triple ring (thin inner) = 3× face value; single bull = 25; inner bull (bullseye) = 50." },
+    { title: "Match = best-of-N sets; set = best-of-N legs", body: "Match format hierarchical: best-of-N sets; each set = best-of-N legs (odd number typically); each leg = full 501 game." },
+  ],
+  scoring: { summary: "Legs contribute to sets, sets contribute to match; leg won by first player to exact 0 finishing on double; set won by first to specified leg total; match won by first to specified set total.", winCondition: "Win specified number of sets in match (e.g., first to 7 sets in World Championship final)." },
+  positions: [{ name: "Darts player", role: "Sole competitor per match; head-to-head format.", count: 2 }],
+  officiating: { officials: ["Referee (calls scores)", "Chair Judge", "Marker (scoreboard operator)"], summary: "PDC certified referees + chair judges at major tournaments; loud enthusiastic score-calling (Russ Bray + George Noble legendary voices)." },
+  governingBodies: [{ name: "Professional Darts Corporation (PDC)", founded: 1992, headquarters: "Milton Keynes, UK" }, { name: "World Darts Federation (WDF, formerly BDO)", founded: 1976, headquarters: "UK" }, { name: "Darts Regulation Authority (DRA)", founded: 2004, headquarters: "UK" }],
+  majorCompetitions: [{ name: "William Hill World Darts Championship (PDC)", frequency: "annual (December-January)", founded: 1994, region: "Alexandra Palace, London, UK — £2.5M prize pool" }, { name: "UK Open", frequency: "annual (March)", founded: 2003, region: "UK" }, { name: "World Matchplay", frequency: "annual (July)", founded: 1994, region: "Blackpool, UK" }, { name: "World Grand Prix", frequency: "annual (October)", founded: 1998, region: "Ireland" }, { name: "Premier League Darts", frequency: "annual (Thursday nights UK)", founded: 2005, region: "UK + Europe touring venues" }, { name: "Grand Slam of Darts", frequency: "annual (November)", founded: 2007, region: "UK" }, { name: "Players Championship Finals", frequency: "annual (November)", founded: 2007, region: "UK" }, { name: "World Cup of Darts (teams)", frequency: "annual", founded: 2010, region: "rotating international" }],
+  countriesPlayed: ["GBR (dominant historic + present)", "NED (Netherlands — Michael van Gerwen)", "SCO (Peter Wright, Gary Anderson)", "IRL", "AUS", "DEU (huge fan scene)", "USA (growing)", "CAN", "NZL", "worldwide via PDC European Tour"],
+  famousAthletes: ["Phil 'The Power' Taylor (England — 16x World Champion 1990-2013; GOAT of darts)", "Michael van Gerwen (Netherlands — 3x World Champion 2014/2017/2019; modern GOAT)", "Luke Littler (England — youngest World Championship finalist 2024 at 16)", "Peter Wright (Scotland — 2x World Champion 2020/2022)", "Michael Smith (England — 2023 World Champion)", "Gary Anderson (Scotland — 2x)", "Rob Cross (England — 2018)", "Eric Bristow (England — 5x World Champion 1980s legend)"],
+  records: [
+    { title: "Phil 'The Power' Taylor 16x World Champion 1990-2013", holder: "Phil Taylor (England)", value: "Phil 'The Power' Taylor won 16 World Darts Championships 1990-2013 (14 PDC + 2 BDO era) — GOAT of darts; unmatched dominance record", year: 2013 },
+    { title: "PDC founded 1992 as breakaway from BDO", holder: "Top pro darts players", value: "Professional Darts Corporation (PDC) founded 1992 as breakaway from British Darts Organisation (BDO) by top pros seeking commercial development; PDC now dominant global pro body", year: 1992 },
+    { title: "Luke Littler youngest World Championship finalist age 16 (2024)", holder: "Luke Littler (England)", value: "Luke Littler of England became youngest ever World Darts Championship finalist at age 16 in January 2024; runner-up to Luke Humphries; phenom generating massive attention", year: 2024 },
+    { title: "£20M+ annual PDC prize pool 2020s", holder: "Professional Darts Corporation", value: "PDC circuit distributes £20+ million annually in prize money 2020s; World Championship alone £2.5M; £500K to winner — massive professional sport", year: 2024 },
+  ],
+  variants: ["501-double-out-standard-professional", "301-shorter-quick-game", "701-longer-extended-game", "cricket-scoring-variant-close-out-numbers", "around-the-world-progressive-numbers", "killer-multiplayer-elimination", "team-doubles-pairs-championship"],
+  relatedSports: ["archery-target", "axe-throwing-waltl", "knife-throwing-competitive", "10-pin-bowling"],
+  skills: ["throwing consistency (grip + release + follow-through)", "checkout math + finish combinations", "pressure performance (final leg + double)", "board reading + mental subtraction speed"],
+  wikipediaTitle: "Darts",
+  sources: [{ label: "Wikipedia — Darts", url: "https://en.wikipedia.org/wiki/Darts", publisher: "Wikipedia" }, { label: "PDC Professional Darts Corporation", url: "https://www.pdc.tv", publisher: "PDC" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default dartsPdcProfessional;

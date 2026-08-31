@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const molkkyFinnishLawn: Sport = {
+  id: "molkky-finnish-lawn",
+  slug: "molkky-finnish-lawn",
+  name: "Mölkky (Finnish Skittles Game)",
+  officialName: "Mölkky World Championship — Fédération Internationale de Mölkky (FIM)",
+  aliases: ["Mölkky", "Finnish Skittles", "Kyykkä descendant"],
+  shortDescription:
+    "Finnish outdoor throwing game invented 1996 in Lahti — modernized variant of traditional Karelian Kyykkä; players throw wooden 'mölkky' pin underhand at 12 numbered wooden pins trying to score exactly 50 pts (bust if over); World Championships since 1997; explosive global growth 2000s-2020s including USA + Japan + France.",
+  longDescription:
+    "Mölkky is a Finnish outdoor lawn throwing game invented 1996 by Tuoterengas company in Lahti Finland — modernized variant of traditional Karelian folk game Kyykkä (played by Karelian people of Finland + Russia for centuries). Rapidly became one of Finland's most popular summer garden sports + spread globally 2000s-2020s. Standard equipment: (1) 12 numbered wooden pins (skittles) numbered 1-12 — cylinders ~15cm tall × 5cm diameter; (2) 1 mölkky throwing pin — cylinder ~22cm long × 6cm diameter; (3) Set of number pins arranged in tight cluster ~3-4m away from throwing line. Simple gameplay: (1) Players take turns underhand-throwing the mölkky pin at the pin cluster; (2) Scoring: knock down exactly 1 pin = score equal to that pin's number (1-12); knock down 2+ pins = score equal to NUMBER of pins knocked down (not sum of numbers); (3) After each throw, knocked-down pins are stood back up WHERE THEY FELL (not returned to original cluster) — game spreads out over time; (4) First player/team to EXACTLY 50 pts wins; (5) If throw would take score OVER 50 pts, score RESETS to 25 pts (bust penalty); (6) 3 consecutive misses = eliminated (individual play) or team suffers penalty; (7) Games play 15-45 min typically. Strategic depth: (a) Early game — target high-number pins (12, 11, 10) close to 50 goal; (b) Late game (near 50) — precise single-pin targeting to hit exact remaining points; (c) Multi-pin knocks trade certainty (any 2 pins = 2 pts) for lower point value; (d) Kill-shot defensive throws to knock pins away from opponents. Match formats: (i) Individual 1v1; (ii) Team 2v2, 3v3, 4v4, up to 12v12; (iii) Doubles + team formats popular at festivals + workplace. Fédération Internationale de Mölkky (FIM) founded 2010; Mölkky World Championship annually since 1997 (typically Lahti Finland — hometown). ~50 national federations globally. Notable strongholds: Finland (dominant historic), France (huge scene ~50K active players), Japan (Japan Mölkky Association 20K+ players), USA (growing scene 10K+ players), Czech Republic, Estonia, Sweden, Netherlands. Notable competitions: (1) Mölkky World Championship — Lahti Finland (traditional); (2) European Championship; (3) French Championship (huge participation); (4) Japan Mölkky Championship. Cultural growth: (a) Featured in Finnish summer festivals + midsummer celebrations; (b) Corporate + workplace outdoor recreation staple; (c) Wedding + camping game; (d) Simple rules + no skill barrier = massive family + intergenerational appeal; (e) Sold ~5+ million sets worldwide 2000-2024. Related traditional Karelian game: (i) Kyykkä — larger heavier pins, more physical, 4-person team, played since medieval times in Karelia; considered parent game.",
+  category: "traditional-cultural-sports",
+  subCategory: "Finnish outdoor pin-throwing lawn game",
+  sportType: "individual", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "summer", era: "20th-century", popularity: "regional",
+  countryOfOrigin: "FI",
+  regionOfOrigin: "Finland (invented 1996 Lahti by Tuoterengas; based on ancient Karelian Kyykkä)",
+  estimatedOrigin: "Modern variant invented 1996 in Lahti Finland by Tuoterengas company; based on ancient Karelian Kyykkä (played centuries); first World Championship 1997; FIM founded 2010",
+  players: { min: 2, max: 24, note: "1v1, 2v2, up to 12v12 team formats." },
+  equipment: [{ name: "12 numbered wooden pins (numbered 1-12)", description: "12 wooden cylinder pins ~15cm tall × 5cm diameter, numbered 1-12 in black on top surface." }, { name: "1 mölkky throwing pin", description: "Wooden throwing cylinder ~22cm long × 6cm diameter; underhand-thrown at pin cluster." }, { name: "Throwing line marker + pin storage bag", description: "Line marker for consistent throwing distance (~3-4m from initial pin cluster); canvas bag for equipment storage/transport." }],
+  duration: { approximateMinutes: 30, structure: "Casual game 15-45 min; competitive game with clock 20-60 min; tournament day 6-10 hours." },
+  objective: "Reach exactly 50 points first by knocking down numbered pins; bust to 25 pts if exceeded.",
+  matchStructure: "Turn-based throwing until first player/team reaches exactly 50 pts; multi-round competition Swiss + knockout formats.",
+  basicRules: [
+    { title: "Single pin knock = pin's number value (1-12)", body: "Knocking down exactly 1 pin scores that pin's number value (1-12); high-value single pins targeted early game." },
+    { title: "Multiple pin knock = number of pins knocked", body: "Knocking down 2+ pins scores the COUNT of pins knocked down (2, 3, 4, etc.) — NOT the sum of their numbers; encourages precision over spread hits." },
+    { title: "Knocked pins stood up WHERE they fell (not returned)", body: "After each throw, knocked-down pins are stood back up in the exact location they fell — game spreads out over time creating changing strategic landscape." },
+    { title: "Exact 50 pts to win — bust to 25 pts if over", body: "Must reach EXACTLY 50 pts to win; if throw takes score above 50, score resets to 25 pts (bust penalty)." },
+    { title: "3 consecutive misses = elimination (or penalty)", body: "Missing all pins 3 consecutive times = elimination in individual play OR team penalty in team play." },
+  ],
+  scoring: { summary: "Single-pin knock = pin number; multi-pin knock = pin count; running total; first to exactly 50 wins; bust to 25 if over.", winCondition: "First to reach exactly 50 pts." },
+  positions: [{ name: "Mölkky player", role: "Sole competitor in individual play; team member in team format.", count: 12 }],
+  officiating: { officials: ["Chief Referee (tournament)", "Score Judge", "Time Judge (clock)"], summary: "FIM certified officials at World Championships; casual play self-officiated." },
+  governingBodies: [{ name: "Fédération Internationale de Mölkky (FIM)", founded: 2010, headquarters: "Lahti, Finland" }, { name: "Finnish Mölkky Association", founded: 1997, headquarters: "Lahti, Finland" }, { name: "European Mölkky Association", founded: 2005, headquarters: "Europe" }, { name: "Japan Mölkky Association", founded: 2015, headquarters: "Tokyo, Japan" }, { name: "US Mölkky Association", founded: 2018, headquarters: "USA" }],
+  majorCompetitions: [{ name: "Mölkky World Championship", frequency: "annual", founded: 1997, region: "Lahti, Finland (traditional home)" }, { name: "European Mölkky Championship", frequency: "biennial", founded: 2011, region: "rotating Europe" }, { name: "French Mölkky Championship", frequency: "annual", founded: 2010, region: "France — massive participation" }, { name: "Japan Mölkky Championship", frequency: "annual", founded: 2016, region: "Japan" }, { name: "US Mölkky Nationals", frequency: "annual", founded: 2019, region: "USA" }],
+  countriesPlayed: ["FIN (dominant + origin)", "FRA (huge scene ~50K players)", "JPN (Japan Mölkky Association 20K+ players)", "USA (growing ~10K players)", "CZE", "EST", "SWE", "NLD", "DEU", "GBR", "worldwide ~50 national federations"],
+  famousAthletes: ["Various Mölkky World Championship winning teams (limited English-language records — dominant Finnish + French + Japanese teams)", "Tuoterengas company (Finnish invented modern game 1996)"],
+  records: [
+    { title: "Invented 1996 in Lahti Finland by Tuoterengas", holder: "Tuoterengas (Finnish company)", value: "Modern Mölkky invented 1996 in Lahti Finland by Tuoterengas company as modernized variant of ancient Karelian folk game Kyykkä", year: 1996 },
+    { title: "First World Championship 1997 Lahti", holder: "Finnish Mölkky Association", value: "First Mölkky World Championship held 1997 in Lahti Finland — traditional annual home of world championships; 25+ year continuous tradition", year: 1997 },
+    { title: "Sold ~5+ million sets worldwide 2000-2024", holder: "Mölkky retailers globally", value: "Estimated 5+ million Mölkky sets sold worldwide 2000-2024 — explosive growth of Finnish garden game globally", year: 2024 },
+    { title: "Explosive French adoption ~50K active players", holder: "French Mölkky community", value: "France adopted Mölkky enthusiastically with ~50K active players — largest scene outside Finland; annual French Championship massive participation", year: 2024 },
+  ],
+  variants: ["molkky-individual-standard", "molkky-team-2v2-doubles", "molkky-team-3v3-triples", "molkky-team-up-to-12v12-mass-format", "kyykka-parent-karelian-heavier-pins-4-person-team"],
+  relatedSports: ["kubb-viking-lawn-game", "cornhole-bags", "petanque-french-boules", "bocce-italian", "horseshoes-lawn"],
+  skills: ["underhand throwing accuracy + spin", "single vs multi-pin strategic choice", "endgame precision (exact 50 targeting)", "pin location memorization + planning"],
+  wikipediaTitle: "Mölkky",
+  sources: [{ label: "Wikipedia — Mölkky", url: "https://en.wikipedia.org/wiki/M%C3%B6lkky", publisher: "Wikipedia" }, { label: "Fédération Internationale de Mölkky", url: "https://molkky.com", publisher: "FIM" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default molkkyFinnishLawn;

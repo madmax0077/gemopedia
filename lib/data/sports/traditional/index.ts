@@ -25,10 +25,12 @@ import { gorodki } from "./gorodki";
 import { gouren } from "./gouren";
 import { greyhoundRacing } from "./greyhound-racing";
 import { highlandGames } from "./highland-games";
+import { hnefataflViking } from "./hnefatafl-viking";
 import { hornussen } from "./hornussen";
 import { hurling } from "./hurling";
 import { hurlingCamogieWomens } from "./hurling-camogie-womens";
 import { insuknawr } from "./insuknawr";
+import { jaiAlaiBasque } from "./jai-alai-basque";
 import { jianzi } from "./jianzi";
 import { kabaddi } from "./kabaddi";
 import { kancha } from "./kancha";
@@ -36,6 +38,7 @@ import { khoKho } from "./kho-kho";
 import { khridoli } from "./khridoli";
 import { kokBoru } from "./kok-boru";
 import { kokBoruKyrgyz } from "./kok-boru-kyrgyz";
+import { kubbVikingLawnGame } from "./kubb-viking-lawn-game";
 import { lacrosse } from "./lacrosse";
 import { lagori } from "./lagori";
 import { lapta } from "./lapta";
@@ -43,18 +46,24 @@ import { luchaCanaria } from "./lucha-canaria";
 import { luchaLibreMexico } from "./lucha-libre-mexico";
 import { mallakhamb } from "./mallakhamb";
 import { mancala } from "./mancala";
+import { mancalaAfricanUbiquitous } from "./mancala-african-ubiquitous";
 import { masWrestling } from "./mas-wrestling";
+import { molkkyFinnishLawn } from "./molkky-finnish-lawn";
 import { mongolianWrestling } from "./mongolian-wrestling";
 import { musangwe } from "./musangwe";
 import { nagaWrestling } from "./naga-wrestling";
 import { naginataJapanese } from "./naginata-japanese";
 import { nguniStickFighting } from "./nguni-stick-fighting";
+import { nineMensMorrisMedieval } from "./nine-mens-morris-medieval";
 import { nubianWrestling } from "./nubian-wrestling";
 import { oware } from "./oware";
 import { palant } from "./palant";
+import { palantPolish } from "./palant-polish";
 import { pehlwani } from "./pehlwani";
+import { pelotaManoBasque } from "./pelota-mano-basque";
 import { pelotaMixteca } from "./pelota-mixteca";
 import { pesapallo } from "./pesapallo";
+import { petanqueFrenchBoules } from "./petanque-french-boules";
 import { pigeonRacing } from "./pigeon-racing";
 import { royalShrovetideFootball } from "./royal-shrovetide-football";
 import { schwingen } from "./schwingen";
@@ -107,10 +116,12 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   gouren,
   greyhoundRacing,
   highlandGames,
+  hnefataflViking,
   hornussen,
   hurling,
   hurlingCamogieWomens,
   insuknawr,
+  jaiAlaiBasque,
   jianzi,
   kabaddi,
   kancha,
@@ -118,6 +129,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   khridoli,
   kokBoru,
   kokBoruKyrgyz,
+  kubbVikingLawnGame,
   lacrosse,
   lagori,
   lapta,
@@ -125,18 +137,24 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   luchaLibreMexico,
   mallakhamb,
   mancala,
+  mancalaAfricanUbiquitous,
   masWrestling,
+  molkkyFinnishLawn,
   mongolianWrestling,
   musangwe,
   nagaWrestling,
   naginataJapanese,
   nguniStickFighting,
+  nineMensMorrisMedieval,
   nubianWrestling,
   oware,
   palant,
+  palantPolish,
   pehlwani,
+  pelotaManoBasque,
   pelotaMixteca,
   pesapallo,
+  petanqueFrenchBoules,
   pigeonRacing,
   royalShrovetideFootball,
   schwingen,

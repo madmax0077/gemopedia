@@ -1,0 +1,56 @@
+import type { Sport } from "@/lib/types";
+
+export const celesteIndie: Sport = {
+  id: "celeste-indie",
+  slug: "celeste-indie",
+  name: "Celeste (Precision Platformer)",
+  officialName: "Celeste — Maddy Makes Games (2018)",
+  aliases: ["Celeste", "Mount Celeste", "Celeste 2018"],
+  shortDescription:
+    "Landmark 2D precision platformer by Maddy Thorson + Noel Berry (2018) — protagonist Madeline climbs mountain fighting anxiety metaphor; renowned mid-air-dash movement + assist mode disability innovations; won BAFTA Best Game + IGF Grand Prize 2019; sold 1M+ copies; benchmark for indie precision platformers + mental-health themed game design.",
+  longDescription:
+    "Celeste is a landmark 2D precision platformer game developed by Maddy Makes Games (Maddy Thorson + Noel Berry, Canadian indie studio) released January 2018 on PC + PS4 + Xbox + Switch + macOS + Linux + iOS. Protagonist Madeline (later revealed as trans woman) climbs the fictional Mount Celeste while battling internal manifestations of her anxiety + depression. Considered one of the most influential indie games of the 2010s + defining mental-health-themed video game design. Core movement: (1) 8-directional dash — pivotal precision-jump mechanic that allows one mid-air burst in any of 8 directions; recharges on ground touch; (2) Wall grab + wall jump — Madeline can grab any wall + climb up (limited stamina); (3) Precise pixel-perfect platforming across 200+ screens across 8 chapters + optional B-Sides + C-Sides. Signature accessibility innovations: 'Assist Mode' allows players to modify game difficulty extensively (invincibility, infinite dashes, slower speed, stage skip) — considered landmark disability accommodation in gaming; explicitly framed by devs as 'this is your game, play how you want'. Chapter progression: Prologue → Chapter 1 (Forsaken City) → 2 (Old Site) → 3 (Celestial Resort) → 4 (Golden Ridge) → 5 (Mirror Temple) → 6 (Reflection) → 7 (The Summit) → Epilogue → Chapter 8 (Core) → Chapter 9 (Farewell, added free 2019). Each chapter has: (a) Main path (main story); (b) B-Side remix (harder version of same levels with new music by Ben Prunty); (c) C-Side ultra-hard (added post-release). Awards: (1) BAFTA Best Game 2019; (2) IGF Grand Prize 2019; (3) The Game Awards 2018 Best Independent Game; (4) DICE Awards 2019 Outstanding Achievement in Indie Games; (5) Music (by Lena Raine) widely praised + Grammy-nominated. Sold 1+ million copies by 2020; ongoing free updates. Massive speedrun community — Any% world record ~26 minutes; All Chapters Golden Strawberries (deathless run) ~4-8 hours. Notable speedrunners: TGH, Noellyy, Alexis Cuadra. Sequel 'Celeste 2' + spiritual successor 'Earthblade' in development by same team.",
+  category: "video-games",
+  subCategory: "2D precision platformer with mental-health metaphor + accessibility innovations",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "major",
+  countryOfOrigin: "CA",
+  regionOfOrigin: "Canada (Maddy Makes Games — Maddy Thorson + Noel Berry)",
+  estimatedOrigin: "Started as PICO-8 game jam 2015 by Maddy Thorson + Noel Berry; expanded to full release January 2018; free Chapter 9 (Farewell) 2019",
+  players: { min: 1, max: 1, note: "Single-player game." },
+  equipment: [{ name: "Gaming device (PC/PS4/PS5/Xbox/Switch/iOS/macOS/Linux)", description: "Playable on Windows PC (Steam/Epic/GOG), macOS, Linux, Nintendo Switch, PlayStation 4/5, Xbox One/Series X|S, iOS." }, { name: "Controller or keyboard", description: "Controller strongly preferred for smooth movement + precise dash timing; keyboard fully supported." }],
+  duration: { approximateMinutes: 60, structure: "Main story: 6-10 hours; 100% including B-Sides + C-Sides + Chapter 9: 30-60 hours; speedrun Any%: ~26 min WR; deathless Golden Strawberry runs: 4-8 hours each." },
+  objective: "Help Madeline climb Mount Celeste through 8+ chapters of precision platforming challenges while navigating her mental health metaphor storyline.",
+  matchStructure: "Linear story chapter progression 1-8 (Chapter 9 free unlock); each chapter contains screens with respawn checkpoints; optional collectibles + B-Sides + C-Sides.",
+  basicRules: [
+    { title: "Mid-air dash mechanic (8 directions, refresh on ground)", body: "Madeline can dash once in any of 8 directions mid-air; recharges when touching ground or specific crystals." },
+    { title: "Wall grab + climb with stamina limit", body: "Grab walls to hang + climb up; limited stamina drains while climbing, refills on ground." },
+    { title: "Respawn instantly on death (no lives system)", body: "Instant respawn on failure at last checkpoint — friction removed to encourage experimentation on precision challenges." },
+    { title: "Assist Mode allows extensive difficulty modification", body: "Player-controlled Assist Mode toggles include: invincibility, infinite dashes, slower speed, hazard removal, stage skip — landmark accessibility feature." },
+    { title: "Optional Strawberries + Crystal Hearts + Cassettes as collectibles", body: "Optional collectibles: 175 Strawberries (mostly cosmetic + tracking), 8 Crystal Hearts (unlock B-Sides + Chapter 8), 8 Cassette Tapes (B-Side access)." },
+  ],
+  scoring: { summary: "Completion tracked by: chapters completed, deaths per chapter, time per chapter, strawberries + crystal hearts + cassettes collected, B-Sides + C-Sides cleared. Speedrun scoring by wall-clock time.", winCondition: "Complete main story Chapters 1-7 + optional Chapter 8 (Core) + optional Chapter 9 (Farewell) for full completion." },
+  positions: [{ name: "Madeline (player character)", role: "Sole playable protagonist; trans woman climbing Mount Celeste.", count: 1 }],
+  officiating: { officials: ["Maddy Makes Games (developer)", "Speedrun.com moderators (competitive speedrun leaderboards)"], summary: "Community speedrun scene moderated at Speedrun.com." },
+  governingBodies: [{ name: "Maddy Makes Games (developer/publisher)", founded: 2015, headquarters: "Vancouver, British Columbia, Canada" }],
+  majorCompetitions: [{ name: "Games Done Quick (GDQ) — Celeste speedrun blocks", frequency: "biannual (SGDQ + AGDQ)", founded: 2018, region: "worldwide streamed marathons" }, { name: "Speedrun.com Celeste leaderboards", frequency: "ongoing", founded: 2018, region: "worldwide online" }, { name: "BAFTA Games Awards 2019 Best Game", frequency: "one-time award", founded: 2019, region: "UK — London" }, { name: "IGF Grand Prize 2019", frequency: "one-time award", founded: 2019, region: "USA — San Francisco" }, { name: "The Game Awards 2018 Best Independent Game", frequency: "one-time award", founded: 2018, region: "USA — Los Angeles" }],
+  countriesPlayed: ["USA (largest player base)", "CAN (origin)", "JPN", "DEU", "GBR", "FRA", "BRA", "worldwide via Steam/PSN/Xbox/Switch"],
+  famousAthletes: ["Maddy Thorson (co-designer + writer)", "Noel Berry (co-designer + programmer)", "Lena Raine (composer; Grammy-nominated soundtrack)", "TGH (Celeste Any% speedrun world record holder)", "Noellyy + Alexis Cuadra (top speedrunners)"],
+  records: [
+    { title: "BAFTA Best Game 2019", holder: "Maddy Makes Games", value: "Celeste won BAFTA Games Award Best Game 2019 — highest recognition for indie games in UK", year: 2019 },
+    { title: "IGF Grand Prize 2019", holder: "Maddy Makes Games", value: "Celeste won Independent Games Festival Grand Prize 2019 — highest indie game honor", year: 2019 },
+    { title: "1M+ copies sold by 2020", holder: "Maddy Makes Games", value: "Celeste sold 1+ million copies across all platforms by 2020 — massive indie hit", year: 2020 },
+    { title: "Assist Mode landmark accessibility innovation", holder: "Maddy Thorson + Noel Berry", value: "Celeste's Assist Mode considered landmark accessibility innovation in gaming — set new standard for difficulty accommodation without shame framing", year: 2018 },
+    { title: "Free Chapter 9 (Farewell) added 2019 — 4 hours new content", holder: "Maddy Makes Games", value: "Free Chapter 9 (Farewell) added 2019 adds 4+ hours of new content — considered ultra-hard capstone chapter; unusual free post-launch content commitment", year: 2019 },
+  ],
+  variants: ["celeste-standard", "celeste-b-sides-remix-chapters", "celeste-c-sides-ultra-hard-chapters", "celeste-chapter-9-farewell-free-update", "celeste-classic-pico-8-original-jam-version"],
+  relatedSports: ["hollow-knight-metroidvania", "hades-supergiant", "super-meat-boy-precision-platformer", "ori-and-the-blind-forest"],
+  skills: ["precision dash timing (frame-perfect execution)", "wall-climb stamina management", "screen memorization + optimal routing", "hyper-precision speedrunning technique"],
+  wikipediaTitle: "Celeste (video game)",
+  sources: [{ label: "Wikipedia — Celeste (video game)", url: "https://en.wikipedia.org/wiki/Celeste_(video_game)", publisher: "Wikipedia" }, { label: "Maddy Makes Games", url: "https://www.maddymakesgamesinc.com", publisher: "Maddy Makes Games" }, { label: "Speedrun.com Celeste", url: "https://www.speedrun.com/celeste", publisher: "Speedrun.com Community" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default celesteIndie;

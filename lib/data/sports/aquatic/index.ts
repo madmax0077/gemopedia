@@ -13,6 +13,7 @@ import { canoeSlalom } from "./canoe-slalom";
 import { canoeSprint } from "./canoe-sprint";
 import { cliffDiving } from "./cliff-diving";
 import { diving } from "./diving";
+import { dragonBoat1000mIcf } from "./dragon-boat-1000m-icf";
 import { dragonBoat500m } from "./dragon-boat-500m";
 import { dragonBoatRacing } from "./dragon-boat-racing";
 import { finSwimming } from "./fin-swimming";
@@ -34,6 +35,7 @@ import { rowing } from "./rowing";
 import { sailing } from "./sailing";
 import { scubaDiving } from "./scuba-diving";
 import { spearfishing } from "./spearfishing";
+import { spearfishingCompetitiveCmas } from "./spearfishing-competitive-cmas";
 import { standUpPaddleboarding } from "./stand-up-paddleboarding";
 import { surfing } from "./surfing";
 import { surfLifesaving } from "./surf-lifesaving";
@@ -42,6 +44,7 @@ import { swimrun } from "./swimrun";
 import { synchronizedDiving } from "./synchronized-diving";
 import { triathlon } from "./triathlon";
 import { underwaterHockey } from "./underwater-hockey";
+import { underwaterOrienteering } from "./underwater-orienteering";
 import { underwaterPhotographyCompetition } from "./underwater-photography-competition";
 import { underwaterRugby } from "./underwater-rugby";
 import { wakeboarding } from "./wakeboarding";
@@ -72,6 +75,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   canoeSprint,
   cliffDiving,
   diving,
+  dragonBoat1000mIcf,
   dragonBoat500m,
   dragonBoatRacing,
   finSwimming,
@@ -93,6 +97,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   sailing,
   scubaDiving,
   spearfishing,
+  spearfishingCompetitiveCmas,
   standUpPaddleboarding,
   surfing,
   surfLifesaving,
@@ -101,6 +106,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   synchronizedDiving,
   triathlon,
   underwaterHockey,
+  underwaterOrienteering,
   underwaterPhotographyCompetition,
   underwaterRugby,
   wakeboarding,

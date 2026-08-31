@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const iceYachtingDn: Sport = {
+  id: "ice-yachting-dn",
+  slug: "ice-yachting-dn",
+  name: "Ice Yachting (DN-Class)",
+  officialName: "International DN Ice Yacht Racing Association (IDNIYRA)",
+  aliases: ["Ice Boating", "Iceboating", "DN Iceboat", "DN Class"],
+  shortDescription:
+    "Extreme winter sailing — sled-mounted sail rig races on ice at 100+ mph (fastest wind-powered sport); DN class dominant single-hander design since 1937 (Detroit News patented); World Championships since 1971 with regatta requiring wind + smooth thick ice; Poland + USA + Netherlands + Sweden dominant.",
+  longDescription:
+    "Ice Yachting (also 'Ice Boating' or 'Iceboating') is extreme winter sailing — a boat rig mounted on a runner-equipped sled races across frozen lakes at speeds regularly exceeding 100 mph (160 km/h) powered only by wind. Considered the fastest wind-powered sport in the world — top speeds recorded over 130 mph (210 km/h). Modern dominant design is DN (Detroit News) class — patented 1937 by Joseph Lodge of Detroit News newspaper as inexpensive backyard-buildable iceboat; became worldwide standard for competitive single-handed ice racing. DN boat specifications: (1) Length ~12 ft (3.66 m); (2) Beam (width) ~8 ft (2.44 m) via steering runner + 2 side runners in tricycle configuration; (3) Sail ~60 sq ft (5.6 sq m); (4) Weight (empty) ~65 kg; (5) Skipper lies in cockpit prone facing forward. Speed physics: ice runners have minimal friction on smooth ice; sail wind driving force accelerates boat until aerodynamic drag equals thrust; can reach speeds up to 6× actual wind speed. Signature technique: 'apparent wind' constantly moves further forward as boat accelerates; skipper trims sail progressively tighter as boat speeds up. Competition venues require: (a) Wind 8-25 knots; (b) Ice minimum 4 inches thick (safety); (c) Smooth ice surface (large frozen lake); (d) Length 1+ miles for race course. Governing body: International DN Ice Yacht Racing Association (IDNIYRA) founded 1953, US-based; European DN Association since 1972. Origins pre-DN: (1) Netherlands 17th century (ice boats documented on Dutch canals for freight transport); (2) Long Island NY late 1800s (early recreational iceboating); (3) Detroit + Great Lakes early 1900s (Yankee/Skeeter classes 1920s-30s); (4) DN patented 1937 by Joseph Lodge Detroit News; (5) Post-WWII international spread. Modern competitive scene: (a) DN World Championships — annual since 1971; typically 100+ competitors from 15+ countries; venue moves depending on ice conditions each year (Europe or North America); (b) European DN Championship — annual since 1972; (c) North American Championship — annual since 1959; (d) US National Championship. Strongholds: Poland (dominant modern nation — Marcin 'Marcinkowski' + Karol Jablonski multiple World Champions); USA (birthplace scene Wisconsin + Minnesota + Michigan + New Jersey); Netherlands; Sweden; Germany; Estonia; Russia; Latvia. Notable athletes: (1) Karol Jablonski (Poland — multi-time DN World Champion); (2) Ron Sherry (USA — multi-time North American Champion); (3) Bengt Marktoft (Sweden — dominant 1980s); (4) T. Bowden (USA — 5x North American Champion); (5) Warren Nethercote (Canada). Other iceboat classes: Skeeter (larger, faster), Renegade, C-class (multi-crew), Nite (1-crew similar to DN). Weather-critical sport — many regattas cancelled due to bad ice or lack of wind; requires flexible scheduling by competitors.",
+  category: "winter-sports",
+  subCategory: "extreme winter sailing on iceboat runners",
+  sportType: "individual", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "winter", era: "20th-century", popularity: "niche",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Detroit + Great Lakes region — DN class patented 1937 by Detroit News); Netherlands 17th century historical origin",
+  estimatedOrigin: "17th century Dutch ice boats on canals; recreational USA late 1800s Long Island; DN class patented 1937 by Joseph Lodge Detroit News; IDNIYRA founded 1953; first DN World Championships 1971",
+  players: { min: 1, max: 1, note: "Single-hander competition; some multi-crew classes (C-class) exist." },
+  equipment: [{ name: "DN iceboat (~12ft × 8ft, ~65 kg empty)", description: "DN class: 12 ft length × 8 ft beam × ~65 kg; steering runner front + 2 side runners; skipper cockpit prone position." }, { name: "Sail (~60 sq ft)", description: "60 sq ft mainsail with mast + boom; sail material Dacron or Mylar; class-specific measurements." }, { name: "3 steel runners (2 side + 1 steering)", description: "3 hardened steel runners in tricycle configuration; steering runner controls direction; side runners provide lateral stability." }, { name: "Wind-sail-friendly clothing + helmet + goggles", description: "Insulated cold-weather gear + windproof outer + helmet + face protection + goggles for wind + ice spray." }, { name: "Safety equipment (life jacket, ice picks)", description: "Personal flotation device + ice picks (self-rescue if boat falls through ice); mandatory at IDNIYRA events." }],
+  duration: { approximateMinutes: 20, structure: "Single race 15-30 min around 1-2 mile course; regatta day contains 3-5 races per class; multi-day World Championship 4-7 days." },
+  objective: "Complete race course fastest by skillful sailing on frozen lake in DN class boat.",
+  matchStructure: "Regatta format: multiple races per class per day; points-per-place cumulative across all races; low-point-total wins.",
+  basicRules: [
+    { title: "DN class strict one-design (equal boats)", body: "DN class strictly one-design: all boats identical dimensions + sail area + hardware; skill + tactics + wind judgment determine winner." },
+    { title: "Skipper lies prone in cockpit facing forward", body: "Skipper sails in prone (belly-down) position in low cockpit facing forward; reduces aerodynamic drag; ~50 cm off ice." },
+    { title: "3-mark windward-leeward course typical", body: "Standard race course = triangle or windward-leeward-windward with 3-5 marks; typically 1-2 miles long; race 30-40 min." },
+    { title: "Ice safety — minimum 4 inch thick ice", body: "IDNIYRA safety rules require minimum 4 inch clear ice thickness; ice inspector reports pre-race; boats cancelled if inadequate." },
+    { title: "Apparent wind trim critical (boat outruns actual wind)", body: "Iceboats accelerate to 4-6× actual wind speed; apparent wind shifts forward continuously; requires progressive sail trim as speed increases." },
+  ],
+  scoring: { summary: "Points-per-place per race (1st = 1 pt, 2nd = 2 pts, etc); lowest-point-total wins regatta after all races completed.", winCondition: "Lowest total points across all races of regatta." },
+  positions: [{ name: "Skipper (Sailor)", role: "Sole competitor; controls both steering + sail trim.", count: 1 }],
+  officiating: { officials: ["Chief Race Officer", "Course Judges", "Timekeepers", "Ice Inspector", "Protest Committee"], summary: "IDNIYRA + World Sailing certified officials at World + North American Championships." },
+  governingBodies: [{ name: "International DN Ice Yacht Racing Association (IDNIYRA)", founded: 1953, headquarters: "USA (rotating)" }, { name: "European DN Association", founded: 1972, headquarters: "Europe" }, { name: "World Sailing (parent body)", founded: 1907, headquarters: "London, UK" }],
+  majorCompetitions: [{ name: "DN Ice Yacht World Championships (IDNIYRA)", frequency: "annual", founded: 1971, region: "rotating (Europe or North America — depending on ice)" }, { name: "European DN Championship", frequency: "annual", founded: 1972, region: "rotating Europe (Poland, Netherlands, Sweden)" }, { name: "North American DN Championship", frequency: "annual", founded: 1959, region: "USA + Canada — rotating (Wisconsin, Minnesota, Michigan, Ontario)" }, { name: "US DN National Championship", frequency: "annual", founded: 1957, region: "USA" }],
+  countriesPlayed: ["POL (dominant modern nation)", "USA (birthplace scene — Wisconsin, Minnesota, Michigan, NJ)", "NLD (17th century origin)", "SWE", "DEU", "EST", "RUS", "LVA", "CAN", "CZE", "worldwide 20+ IDNIYRA member nations"],
+  famousAthletes: ["Karol Jablonski (Poland — multi-time DN World Champion 2000s)", "Marcin Marcinkowski (Poland — recent World Champion)", "Ron Sherry (USA — multi-time North American Champion)", "Bengt Marktoft (Sweden — dominant 1980s)", "T. Bowden (USA — 5x North American Champion)", "Warren Nethercote (Canada)"],
+  records: [
+    { title: "DN class patented 1937 by Joseph Lodge Detroit News", holder: "Joseph Lodge (Detroit News)", value: "DN iceboat class patented 1937 by Joseph Lodge of Detroit News as inexpensive backyard-buildable design; became worldwide standard for competitive single-handed ice racing", year: 1937 },
+    { title: "Fastest wind-powered sport (~130+ mph top speeds)", holder: "Ice yachting community", value: "Ice yachting recognized as fastest wind-powered sport in the world — DN class boats regularly reach 100+ mph, top speeds recorded over 130 mph (210 km/h)", year: 2024 },
+    { title: "First DN World Championships 1971", holder: "IDNIYRA", value: "First DN Ice Yacht World Championships held 1971; annual since; typically 100+ competitors from 15+ countries; venue moves depending on ice conditions each year", year: 1971 },
+    { title: "Boats can reach 6× actual wind speed", holder: "Iceboat physics", value: "DN iceboats can accelerate to 4-6× actual wind speed due to minimal ice friction + apparent wind aerodynamics — unique physics vs water sailing", year: 2024 },
+  ],
+  variants: ["dn-class-standard-worldwide-competitive", "skeeter-class-larger-multi-crew", "renegade-class-larger-single-crew", "c-class-multi-crew", "nite-class-similar-to-dn-single-hander"],
+  relatedSports: ["sailing-dinghy-olympic", "windsurfing-competitive", "kite-surfing", "land-yachting-desert-buggy"],
+  skills: ["apparent wind sail trim technique", "ice runner sharpening + maintenance", "high-speed sailing tactics", "ice condition assessment"],
+  wikipediaTitle: "Ice yachting",
+  sources: [{ label: "Wikipedia — Ice yachting", url: "https://en.wikipedia.org/wiki/Ice_yachting", publisher: "Wikipedia" }, { label: "IDNIYRA (International DN Ice Yacht Racing)", url: "https://idniyra.org", publisher: "IDNIYRA" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default iceYachtingDn;

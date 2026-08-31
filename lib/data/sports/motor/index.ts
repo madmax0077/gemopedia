@@ -15,6 +15,7 @@ import { formula3 } from "./formula-3";
 import { formulaE } from "./formula-e";
 import { gtRacing } from "./gt-racing";
 import { hillclimb } from "./hillclimb";
+import { hillclimbMountainMotorsport } from "./hillclimb-mountain-motorsport";
 import { iceRacing } from "./ice-racing";
 import { iceSpeedway } from "./ice-speedway";
 import { indycar } from "./indycar";
@@ -31,6 +32,7 @@ import { rallycross } from "./rallycross";
 import { rallycrossFiaWorldRx as rallycrossFiaWorldrx } from "./rallycross-fia-worldrx";
 import { rallyRacing } from "./rally-racing";
 import { rallyRaid } from "./rally-raid";
+import { rallyRaidDakar } from "./rally-raid-dakar";
 import { sidecarcross } from "./sidecarcross";
 import { sidecarMotorcycleRacing } from "./sidecar-motorcycle-racing";
 import { speedway } from "./speedway";
@@ -60,6 +62,7 @@ export const MOTOR_SPORTS: Sport[] = [
   formulaE,
   gtRacing,
   hillclimb,
+  hillclimbMountainMotorsport,
   iceRacing,
   iceSpeedway,
   indycar,
@@ -76,6 +79,7 @@ export const MOTOR_SPORTS: Sport[] = [
   rallycrossFiaWorldrx,
   rallyRacing,
   rallyRaid,
+  rallyRaidDakar,
   sidecarcross,
   sidecarMotorcycleRacing,
   speedway,

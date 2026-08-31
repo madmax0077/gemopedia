@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const stardewValleyFarming: Sport = {
+  id: "stardew-valley-farming",
+  slug: "stardew-valley-farming",
+  name: "Stardew Valley (Farming Life Sim)",
+  officialName: "Stardew Valley — ConcernedApe / Chucklefish (2016)",
+  aliases: ["Stardew Valley", "Stardew", "SDV"],
+  shortDescription:
+    "Landmark solo-developed farming life simulation by Eric 'ConcernedApe' Barone (2016) — inherit grandfather's farm in Pelican Town, cultivate crops + animals + relationships across 4-season cycle; sold 30M+ copies; established modern cozy game genre; ongoing free content updates through 1.6 (2024); tremendous cultural + speedrun scenes.",
+  longDescription:
+    "Stardew Valley is a landmark farming life simulation game developed solo over 4 years by Eric 'ConcernedApe' Barone + first released February 2016. Considered THE defining modern cozy game + one of most successful indie games of all time. Player inherits grandfather's farm in Pelican Town (rural community reminiscent of Harvest Moon series) + gradually develops farm + community relationships across in-game years spanning 4-season cycle. Sold 30+ million copies across all platforms by 2024 — one of top-selling indie games ever. Core gameplay loops: (1) Farming — plant + tend seasonal crops (parsnips + potatoes + tomatoes + strawberries + starfruit + ancient fruit + more); each season has distinct crop palette; sprinkler automation unlockable; (2) Animal husbandry — chickens, cows, goats, pigs, ducks, rabbits, sheep in barns + coops; produce milk + eggs + wool + truffles; friendship level affects product quality; (3) Mining — descend 120-level 'Mines' with combat + resource gathering; then unlock endless Skull Cavern (challenge dungeon); (4) Fishing — 60+ fish species across locations + seasons; mini-game fishing skill; (5) Foraging — season-specific wild foods + mushrooms; (6) Combat — enemies in mines + Skull Cavern + Volcano Dungeon (Ginger Island 1.5 update); (7) Community relationships — 12 marriageable characters (6 male + 6 female — bisexual player character); 30+ NPCs with dialogue + gift preferences + 10-heart friendship levels; (8) Community Center restoration OR Joja Mart alternative path; (9) Ginger Island endgame (added 1.5 update 2020); (10) Fishing pond + shed farm building crafting. Signature design: hundreds of hours of content; no time pressure (endless days); player-directed goals; extraordinary attention to NPC personalities. Cultural impact: (a) Established modern 'cozy game' genre inspiration for successors (Coral Island, Fields of Mistria, Sun Haven, My Time at Portia); (b) Enormous mod scene on Nexus Mods (Stardew Valley Expanded, SVE, adds 30+ hours + new areas + NPCs); (c) Featured in numerous 'Game of the Year' lists 2016; (d) Community translation to 12+ languages; (e) Board game adaptation 2022 (Stardew Valley Board Game). ConcernedApe's continuous free content updates: 1.1 (2017), 1.2, 1.3 multiplayer (2018), 1.4 (2019), 1.5 Ginger Island (2020), 1.6 (2024 — massive 30+ hour additions); has permanently declined to charge for DLC. Currently developing spiritual successor 'Haunted Chocolatier'. Multiplayer: 1.3+ update supports 4-player co-op on shared farm. Speedrunning scene: various categories tracked at Speedrun.com including All Sprinklers, Community Center, Marriage.",
+  category: "video-games",
+  subCategory: "farming + life simulation cozy game",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "major",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Eric 'ConcernedApe' Barone — sole developer Seattle)",
+  estimatedOrigin: "Developed solo over 4 years by Eric 'ConcernedApe' Barone 2012-2016; released February 2016 (PC via Steam); consoles later 2016-2018; ongoing free content updates through 1.6 (2024)",
+  players: { min: 1, max: 4, note: "Single-player primary; 4-player co-op multiplayer added in 1.3 update (2018)." },
+  equipment: [{ name: "Gaming device (PC/PS/Xbox/Switch/mobile)", description: "Playable on Windows/macOS/Linux PC (Steam), PlayStation 4/5, Xbox One/Series, Nintendo Switch, iOS, Android." }, { name: "Controller or keyboard + mouse", description: "Both control schemes fully supported; controller preferred for console; keyboard+mouse for PC + modding." }],
+  duration: { approximateMinutes: 60, structure: "Base game content 30-60 hours to complete Community Center + main story; deep completion 200+ hours; endless replayability with mods + 1.6 content 500+ hours possible." },
+  objective: "Restore grandfather's farm in Pelican Town, develop community relationships, complete Community Center (or Joja alternative), explore endless post-story content.",
+  matchStructure: "Single-player endless progression; in-game years divided into 4 seasons × 28 days; player-directed goals; no forced ending.",
+  basicRules: [
+    { title: "4-season cycle (Spring + Summer + Fall + Winter × 28 days each)", body: "In-game year is 112 days across 4 seasons (28 days each); each season has different crops, fish, foraging, events; time management critical." },
+    { title: "Health + energy manage day length", body: "Character has energy (green bar) + health (red bar); energy depleted by activities; running out of energy or getting to 2am forces sleep; day ends 1am if awake." },
+    { title: "Community Center restoration primary goal (or Joja Mart alternative)", body: "Primary story: restore Community Center by completing 'Junimo Bundles' with specific items across seasons; OR pay Joja Mart membership for alternative Warehouse ending." },
+    { title: "Friendship + marriage system (12 marriageable NPCs)", body: "30+ NPCs have 10-heart friendship system built by gifts + dialogue; 12 (6M + 6F) marriageable — bisexual player character can marry any." },
+    { title: "Continuous free content updates from developer", body: "ConcernedApe has released free major content updates every 1-2 years since launch (1.1 through 1.6); has permanently declined to charge for DLC or expansions." },
+  ],
+  scoring: { summary: "No formal scoring; completion tracked by: perfection score (100% content completion), Community Center bundles, friendship levels, gold earned, days survived, achievements.", winCondition: "'Perfection' achievement = 100% content completion (Community Center + all fish + all achievements + all crafting + all recipes + max friendships + more)." },
+  positions: [{ name: "Farmer (player character)", role: "Customizable protagonist; bisexual + gender-flexible.", count: 1 }, { name: "Co-op partners (multiplayer 1.3+)", role: "Up to 3 additional players share farm in 1.3+ multiplayer.", count: 3 }],
+  officiating: { officials: ["ConcernedApe (Eric Barone — sole developer)", "Speedrun.com moderators (competitive leaderboards)"], summary: "Development by solo developer ConcernedApe; community speedrun scene at Speedrun.com." },
+  governingBodies: [{ name: "ConcernedApe (Eric Barone — sole developer + publisher)", founded: 2016, headquarters: "Seattle, Washington, USA" }, { name: "Chucklefish (original publisher for console ports)", founded: 2016, headquarters: "UK" }],
+  majorCompetitions: [{ name: "Games Done Quick (GDQ) Stardew Valley speedrun blocks", frequency: "biannual", founded: 2017, region: "worldwide streamed marathons" }, { name: "Speedrun.com Stardew Valley leaderboards", frequency: "ongoing", founded: 2016, region: "worldwide online" }],
+  countriesPlayed: ["USA (largest)", "CHN", "JPN", "KOR", "GBR", "DEU", "FRA", "BRA", "worldwide via Steam/PSN/Xbox Live/Switch/mobile"],
+  famousAthletes: ["Eric 'ConcernedApe' Barone (sole developer)", "Various Speedrun.com top runners", "Community mod authors (SVE creator Flashshifter)"],
+  records: [
+    { title: "30M+ copies sold by 2024", holder: "ConcernedApe", value: "Stardew Valley sold 30+ million copies across all platforms by 2024 — one of top-selling indie games in history", year: 2024 },
+    { title: "Solo developed over 4 years by ConcernedApe", holder: "Eric Barone (ConcernedApe)", value: "Stardew Valley developed solo over 4 years (2012-2016) by Eric Barone — coding, art, music, design all self-produced; landmark solo indie development story", year: 2016 },
+    { title: "6 free major content updates 1.1-1.6 (2017-2024)", holder: "ConcernedApe", value: "ConcernedApe has released 6 major FREE content updates 1.1 (2017) through 1.6 (2024) adding hundreds of hours of content; permanently declined to charge for DLC", year: 2024 },
+    { title: "Established modern cozy game genre", holder: "Stardew Valley + ConcernedApe", value: "Stardew Valley recognized as landmark game that established modern 'cozy game' genre — inspired numerous successors (Coral Island, Fields of Mistria, Sun Haven)", year: 2024 },
+  ],
+  variants: ["stardew-valley-vanilla-single-player", "stardew-valley-multiplayer-co-op-1-3-plus", "stardew-valley-expanded-sve-mod-30-plus-hours", "stardew-valley-board-game-2022-adaptation", "haunted-chocolatier-spiritual-successor-in-development"],
+  relatedSports: ["harvest-moon-back-to-nature", "animal-crossing-new-horizons", "coral-island", "story-of-seasons-friends-of-mineral-town", "my-time-at-portia"],
+  skills: ["farm optimization + crop rotation planning", "NPC gift preference memorization", "fishing skill (mini-game timing)", "mining combat + Skull Cavern efficient descent"],
+  wikipediaTitle: "Stardew Valley",
+  sources: [{ label: "Wikipedia — Stardew Valley", url: "https://en.wikipedia.org/wiki/Stardew_Valley", publisher: "Wikipedia" }, { label: "Stardew Valley official", url: "https://www.stardewvalley.net", publisher: "ConcernedApe" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default stardewValleyFarming;

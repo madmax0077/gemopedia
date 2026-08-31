@@ -14,10 +14,12 @@ import { bioshock } from "./bioshock";
 import { blackMythWukong } from "./black-myth-wukong";
 import { blackMythZhongKui } from "./black-myth-zhong-kui";
 import { bloodborne } from "./bloodborne";
+import { bloodborneFromsoftware } from "./bloodborne-fromsoftware";
 import { callOfDuty } from "./call-of-duty";
 import { candyCrush } from "./candy-crush";
 import { candyCrushSaga } from "./candy-crush-saga";
 import { celeste } from "./celeste";
+import { celesteIndie } from "./celeste-indie";
 import { civilization } from "./civilization";
 import { civilizationGame } from "./civilization-game";
 import { crusaderKingsIii } from "./crusader-kings-iii";
@@ -63,6 +65,7 @@ import { halo } from "./halo";
 import { helldivers2 } from "./helldivers-2";
 import { hogwartsLegacy } from "./hogwarts-legacy";
 import { hollowKnight } from "./hollow-knight";
+import { hollowKnightMetroidvania } from "./hollow-knight-metroidvania";
 import { hollowKnightSilksong } from "./hollow-knight-silksong";
 import { itTakesTwo } from "./it-takes-two";
 import { kerbalSpaceProgram } from "./kerbal-space-program";
@@ -117,6 +120,7 @@ import { spaceInvaders } from "./space-invaders";
 import { splitgate } from "./splitgate";
 import { starCitizen } from "./star-citizen";
 import { stardewValley } from "./stardew-valley";
+import { stardewValleyFarming } from "./stardew-valley-farming";
 import { starfield } from "./starfield";
 import { starRail } from "./star-rail";
 import { stellaris } from "./stellaris";
@@ -141,6 +145,7 @@ import { virtuaFighter } from "./virtua-fighter";
 import { warframe } from "./warframe";
 import { warzone } from "./warzone";
 import { wiiSports } from "./wii-sports";
+import { witcher3WildHunt } from "./witcher-3-wild-hunt";
 import { worldOfWarcraft } from "./world-of-warcraft";
 import { wutheringWaves } from "./wuthering-waves";
 import { yakuza } from "./yakuza";
@@ -167,10 +172,12 @@ export const VIDEO_GAMES: Sport[] = [
   blackMythWukong,
   blackMythZhongKui,
   bloodborne,
+  bloodborneFromsoftware,
   callOfDuty,
   candyCrush,
   candyCrushSaga,
   celeste,
+  celesteIndie,
   civilization,
   civilizationGame,
   crusaderKingsIii,
@@ -216,6 +223,7 @@ export const VIDEO_GAMES: Sport[] = [
   helldivers2,
   hogwartsLegacy,
   hollowKnight,
+  hollowKnightMetroidvania,
   hollowKnightSilksong,
   itTakesTwo,
   kerbalSpaceProgram,
@@ -270,6 +278,7 @@ export const VIDEO_GAMES: Sport[] = [
   splitgate,
   starCitizen,
   stardewValley,
+  stardewValleyFarming,
   starfield,
   starRail,
   stellaris,
@@ -294,6 +303,7 @@ export const VIDEO_GAMES: Sport[] = [
   warframe,
   warzone,
   wiiSports,
+  witcher3WildHunt,
   worldOfWarcraft,
   wutheringWaves,
   yakuza,

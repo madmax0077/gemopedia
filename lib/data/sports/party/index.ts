@@ -9,6 +9,7 @@ import { cluedo } from "./cluedo";
 import { codenames } from "./codenames";
 import { codenamesDuet } from "./codenames-duet";
 import { concept } from "./concept";
+import { coupSocialDeduction } from "./coup-social-deduction";
 import { crokinole } from "./crokinole";
 import { decrypto } from "./decrypto";
 import { decryptoTeam } from "./decrypto-team";
@@ -49,6 +50,7 @@ import { twoTruthsAndALie } from "./two-truths-and-a-lie";
 import { unstableUnicorns } from "./unstable-unicorns";
 import { wavelength } from "./wavelength";
 import { wavelengthParty } from "./wavelength-party";
+import { wavelengthSocialGuessing } from "./wavelength-social-guessing";
 import { werewolf } from "./werewolf";
 import { witsAndWagers } from "./wits-and-wagers";
 
@@ -66,6 +68,7 @@ export const PARTY_GAMES: Sport[] = [
   codenames,
   codenamesDuet,
   concept,
+  coupSocialDeduction,
   crokinole,
   decrypto,
   decryptoTeam,
@@ -106,6 +109,7 @@ export const PARTY_GAMES: Sport[] = [
   unstableUnicorns,
   wavelength,
   wavelengthParty,
+  wavelengthSocialGuessing,
   werewolf,
   witsAndWagers,
 ];

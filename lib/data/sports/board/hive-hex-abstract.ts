@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const hiveHexAbstract: Sport = {
+  id: "hive-hex-abstract",
+  slug: "hive-hex-abstract",
+  name: "Hive (Insect Abstract Strategy)",
+  officialName: "Hive — Gen42 Games / John Yianni (2001)",
+  aliases: ["Hive"],
+  shortDescription:
+    "Modern abstract strategy board game 2001 by John Yianni — 2 players use bug-themed hexagonal tiles (Queen Bee + Ants + Spiders + Beetles + Grasshoppers) building interlocking hive; goal is surround opponent's Queen Bee; no board needed (tiles form board); won 8+ major game awards including Mensa Select 2006; considered one of best modern abstract games.",
+  longDescription:
+    "Hive is an award-winning modern abstract strategy board game designed 2001 by British designer John Yianni + published by Gen42 Games — considered by many game reviewers as one of the best modern abstract strategy games alongside Chess + Go + Quoridor. Won 8+ major game awards including Mensa Select 2006, International Gamers Award 2006, Games Magazine Best Family Strategy Game 2006, ~Sold 500,000+ copies worldwide. Distinctive from traditional abstract games: uses BUG-THEMED hexagonal tiles instead of chess-like pieces on grid; NO BOARD required — the tiles themselves form the playing surface as they're placed; hive shape grows organically + can extend in any direction. Standard equipment: (1) 22 hexagonal tiles per player (11 white + 11 black + 22 total) — 6 bug types: 1 Queen Bee, 2 Spiders, 2 Beetles, 3 Grasshoppers, 3 Ants; expansion sets add Mosquito + Ladybug + Pillbug; (2) Any flat surface for play. Movement rules unique per bug: (a) Queen Bee — moves 1 hex per turn (any direction); must be placed by turn 4 else forfeit; (b) Ant — moves any distance around perimeter of hive per turn (fastest most flexible); (c) Grasshopper — jumps over adjacent tile(s) to land in first empty hex (like checkers); (d) Spider — moves EXACTLY 3 hexes around hive perimeter per turn; (e) Beetle — moves 1 hex per turn but may STACK on top of adjacent tile (only piece that can be on top of others); (f) Mosquito (expansion) — copies movement of adjacent piece; (g) Ladybug (expansion) — moves 2 on top + 1 off (mount + dismount stack); (h) Pillbug (expansion) — moves 1 + may move adjacent piece 1 hex. Turn structure: (1) Place new tile from own reserve OR move already-placed tile; (2) Queen Bee must be placed by turn 4 (if not, forfeit); (3) Once Queen Bee placed, may start moving tiles; (4) Cannot BREAK the hive (moving would disconnect must be illegal — 'One Hive Rule'); (5) Cannot 'crawl through cracks' (moving through gap smaller than tile). Win condition: Surround opponent's Queen Bee with 6 tiles (any color) so no adjacent hex is empty. Games typically last 15-30 min. Strategic depth: (a) Bug type combinations create rock-paper-scissors dynamics; (b) Beetle stacking creates 3-dimensional gameplay; (c) Ants + Spiders provide long-range attackers; (d) Grasshoppers create leaping insertion threats; (e) Queen placement timing critical. Modern online play: Hive Pro (dedicated online site + mobile app); Board Game Arena; tens of thousands of daily online games. Notable tournaments: Mind Sports Olympiad hosts Hive competition annually; Hive World Championship informal international scene. Competitive computer AI: BoardSpace + various strong Hive engines available for study. Related expansions: (a) Hive Carbon (2010) — Mosquito + Ladybug expansions; (b) Hive Pocket (2012) — travel edition; (c) Hive Ultimate — all expansions.",
+  category: "board-games",
+  subCategory: "modern abstract strategy game with hexagonal insect-themed tiles",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "regional",
+  countryOfOrigin: "GB",
+  regionOfOrigin: "UK (John Yianni designer + Gen42 Games publisher)",
+  estimatedOrigin: "Designed 2001 by John Yianni (UK); published by Gen42 Games; won Mensa Select 2006 + numerous awards",
+  players: { min: 2, max: 2, note: "Exactly 2 players (base game)." },
+  equipment: [{ name: "22 hexagonal tiles per player (2-color set)", description: "22 hexagonal tiles: 11 per player in 2 contrasting colors (typically black + white); bug art on each tile face." }, { name: "6 bug types base game (Queen + Ants + Spiders + Beetles + Grasshoppers)", description: "Base game: 1 Queen Bee, 2 Spiders, 2 Beetles, 3 Grasshoppers, 3 Ants per player; expansion adds Mosquito + Ladybug + Pillbug." }, { name: "No board (tiles form playing surface)", description: "No board required — tiles themselves form the growing hive playing surface on any flat table." }],
+  duration: { approximateMinutes: 20, structure: "Casual game 15-30 min; competitive game with clock 20-45 min." },
+  objective: "Completely surround opponent's Queen Bee with tiles (6 adjacent hexes filled) so no adjacent hex is empty.",
+  matchStructure: "Turn-based; each turn place new tile from reserve OR move already-placed tile; first to surround opponent's Queen Bee wins.",
+  basicRules: [
+    { title: "Queen Bee must be placed by turn 4 (else forfeit)", body: "Each player must place their Queen Bee tile within their first 4 turns; failure to do so = forfeit the game." },
+    { title: "One Hive Rule — cannot break connection", body: "All tiles must remain connected in single 'hive' at all times; move that would break hive into 2 disconnected groups = illegal." },
+    { title: "Bug-specific movement (Queen 1, Ant any, Spider 3, Grasshopper jump, Beetle stack)", body: "Each bug type has unique movement: Queen 1 hex, Ant any distance around perimeter, Spider exactly 3 hexes, Grasshopper jumps over adjacent, Beetle 1 hex + may stack." },
+    { title: "Beetle can stack on top of other tiles", body: "Beetle uniquely may STACK on top of adjacent tile (only piece that can be on top of others); creates 3D vertical gameplay." },
+    { title: "Cannot 'crawl through cracks' (physical hex movement rules)", body: "Movement follows physical hex geometry; cannot squeeze through gap smaller than the tile itself; realistic hex-based pathfinding." },
+  ],
+  scoring: { summary: "Binary win by surrounding opponent Queen Bee.", winCondition: "Surround opponent's Queen Bee completely (all 6 adjacent hexes filled with any color tiles)." },
+  positions: [{ name: "Hive player", role: "One of 2 players controlling 11-tile bug set.", count: 2 }],
+  officiating: { officials: ["Tournament arbiter (rare formal events)", "Casual play self-officiated", "Online platforms automated"], summary: "Casual play self-officiated; MSO + BGA use standard arbitration." },
+  governingBodies: [{ name: "Gen42 Games (publisher)", founded: 2001, headquarters: "UK" }, { name: "John Yianni (designer)", founded: 2001, headquarters: "UK" }, { name: "Mind Sports Olympiad hosts events", founded: 1997, headquarters: "UK" }],
+  majorCompetitions: [{ name: "Mind Sports Olympiad — Hive", frequency: "annual", founded: 2005, region: "UK" }, { name: "Hive Pro online tournaments", frequency: "ongoing", founded: 2010, region: "worldwide online" }, { name: "Board Game Arena Hive tournaments", frequency: "ongoing", founded: 2015, region: "worldwide online" }, { name: "Mensa Select Award 2006", frequency: "one-time award", founded: 2006, region: "USA" }, { name: "International Gamers Award 2006", frequency: "one-time award", founded: 2006, region: "USA" }],
+  countriesPlayed: ["GBR (origin)", "USA", "DEU", "FRA", "NLD", "ESP", "JPN", "worldwide via BGA + Hive Pro + mobile apps"],
+  famousAthletes: ["John Yianni (designer)", "Various Mind Sports Olympiad Hive Champions", "Top-rated Board Game Arena + Hive Pro online players"],
+  records: [
+    { title: "Won Mensa Select 2006", holder: "Gen42 Games + John Yianni", value: "Hive won Mensa Select Award 2006 — Mensa's recognition for exceptional game design meeting rigorous criteria; joined elite Mensa-recognized games", year: 2006 },
+    { title: "500K+ copies sold worldwide", holder: "Gen42 Games", value: "Hive sold 500,000+ copies worldwide; established modern abstract strategy classic alongside Quoridor + Blokus", year: 2024 },
+    { title: "No board required (tiles form playing surface)", holder: "John Yianni design innovation", value: "Hive uniquely requires no board — tiles themselves form growing playing surface; portable + design innovation recognized by game community", year: 2001 },
+    { title: "Beetle stacking creates 3D gameplay", holder: "John Yianni design", value: "Hive's Beetle piece uniquely may stack on top of other tiles — creates 3-dimensional gameplay dynamic rarely seen in abstract strategy games", year: 2001 },
+  ],
+  variants: ["hive-base-game-6-bug-types", "hive-carbon-with-mosquito-ladybug-expansions", "hive-with-pillbug-expansion", "hive-pocket-travel-edition", "hive-ultimate-all-expansions", "3-player-hive-experimental-variant"],
+  relatedSports: ["chess-classical", "go-baduk", "quoridor-abstract", "abalone-abstract", "gipf-abstract"],
+  skills: ["bug-type strategic combination", "beetle stacking tactics", "One Hive Rule pathfinding", "Queen surrounding + attack setup"],
+  wikipediaTitle: "Hive (game)",
+  sources: [{ label: "Wikipedia — Hive (game)", url: "https://en.wikipedia.org/wiki/Hive_(game)", publisher: "Wikipedia" }, { label: "Gen42 Games Hive", url: "https://gen42.com/games/hive", publisher: "Gen42 Games" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default hiveHexAbstract;

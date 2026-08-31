@@ -22,6 +22,7 @@ import { gravelCycling } from "./gravel-cycling";
 import { handcycling } from "./handcycling";
 import { heliSkiing } from "./heli-skiing";
 import { highliningCompetitive } from "./highlining-competitive";
+import { highliningSlackline } from "./highlining-slackline";
 import { hydrofoiling } from "./hydrofoiling";
 import { iceClimbingMixedDrytooling } from "./ice-climbing-mixed-drytooling";
 import { kiteBuggy } from "./kite-buggy";
@@ -39,6 +40,7 @@ import { parkourFreerunningFig } from "./parkour-freerunning-fig";
 import { redBullRampage } from "./red-bull-rampage";
 import { roadCycling } from "./road-cycling";
 import { rockClimbing } from "./rock-climbing";
+import { sandboardingNamib } from "./sandboarding-namib";
 import { skateboarding } from "./skateboarding";
 import { skydiving } from "./skydiving";
 import { slacklining } from "./slacklining";
@@ -49,6 +51,7 @@ import { toughMudder } from "./tough-mudder";
 import { trackCycling } from "./track-cycling";
 import { ultraDistanceCycling } from "./ultra-distance-cycling";
 import { viaFerrata } from "./via-ferrata";
+import { viaFerrataItalianDolomites } from "./via-ferrata-italian-dolomites";
 import { wingsuitBaseProximity } from "./wingsuit-base-proximity";
 import { wingsuitFlying } from "./wingsuit-flying";
 
@@ -79,6 +82,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   handcycling,
   heliSkiing,
   highliningCompetitive,
+  highliningSlackline,
   hydrofoiling,
   iceClimbingMixedDrytooling,
   kiteBuggy,
@@ -96,6 +100,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   redBullRampage,
   roadCycling,
   rockClimbing,
+  sandboardingNamib,
   skateboarding,
   skydiving,
   slacklining,
@@ -106,6 +111,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   trackCycling,
   ultraDistanceCycling,
   viaFerrata,
+  viaFerrataItalianDolomites,
   wingsuitBaseProximity,
   wingsuitFlying,
 ];

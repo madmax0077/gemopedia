@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const hillclimbMountainMotorsport: Sport = {
+  id: "hillclimb-mountain-motorsport",
+  slug: "hillclimb-mountain-motorsport",
+  name: "Hillclimb (FIA European + Pikes Peak)",
+  officialName: "FIA European Hill Climb Championship + Pikes Peak International Hill Climb (PPIHC)",
+  aliases: ["Hill Climb", "Mountain Race", "Bergrennen", "Course de Côte"],
+  shortDescription:
+    "Timed uphill motorsport — single vehicle races up mountain road against clock; oldest form: Pikes Peak International Hill Climb (USA since 1916, world's second-oldest motor race); FIA European Hill Climb Championship since 1957 with 12+ European rounds; famous VW ID.R electric record 7:57 Pikes Peak 2018.",
+  longDescription:
+    "Hillclimb (also 'Hill Climb' or 'Bergrennen' in German, 'Course de Côte' in French) is a form of motorsport where drivers race a mountain road one at a time against the clock — no wheel-to-wheel competition, purely a time trial format on winding uphill routes typically 4-20 km long with hundreds of turns + massive elevation gain. Two major competitive traditions: (1) Pikes Peak International Hill Climb (PPIHC) — 'The Race to the Clouds' — held annually since 1916 in Colorado USA, up Pikes Peak (14,115 ft summit); world's SECOND-oldest motor race (behind Indy 500 1911); course 12.4 miles + 156 turns + 4,725 ft elevation gain; famous overall record 7:57.148 set by Romain Dumas in VW ID.R (electric prototype) 2018, breaking all-time record + demolishing internal combustion barrier. (2) FIA European Hill Climb Championship — founded 1957; annual series of 10-12 European hillclimb rounds; strongholds Austria, Germany, Switzerland, France, Italy, Belgium, Czech Republic, Slovakia; premier category currently 'Big Bang' single-seaters (Osella FA30, Norma M20 FC). (3) British Hill Climb Championship — dating to 1947, uses shorter courses (~1 km) at venues like Shelsley Walsh, Wiscombe Park, Prescott. Vehicle classes: (a) Production cars — road-legal sport cars in various displacement classes; (b) GT cars — race-tuned modified sports cars; (c) Sports 2000 — sports racing prototypes; (d) Formula racing cars — single-seater open-wheel; (e) Group E1 / E2 — Silhouette-style modified production; (f) Category II — dedicated hillclimb single-seaters (Osella, Norma, Reynard). Notable drivers: (i) Nobuhiro 'Monster' Tajima (Japan — Pikes Peak legend, 6 overall wins 2006-2011); (ii) Sebastien Loeb (France — WRC legend + Pikes Peak record 8:13.878 in Peugeot 208 T16 Pikes Peak 2013); (iii) Romain Dumas (France — VW ID.R 7:57 2018 all-time record); (iv) Simone Faggioli (Italy — 12+ FIA European Hillclimb Championships 2007-2020s); (v) Rhys Millen (New Zealand); (vi) Jeff Zwart (USA). Modern trend: electric vehicles like VW ID.R breaking records due to instant torque + no atmospheric power loss at altitude (Pikes Peak summit air is ~40% less dense than sea level).",
+  category: "motor-sports",
+  subCategory: "timed uphill mountain road racing",
+  sportType: "individual", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "summer", era: "early-modern", popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Pikes Peak 1916) + Europe (Alpine hillclimbs late 1800s-early 1900s)",
+  estimatedOrigin: "Pikes Peak International Hill Climb founded 1916 by Spencer Penrose Colorado; European hillclimb tradition late 1800s; FIA European Hill Climb Championship founded 1957",
+  players: { min: 1, max: 1, note: "Individual time trial; multiple classes race sequentially." },
+  equipment: [{ name: "Purpose-built or modified racing vehicle", description: "Wide class range: production sports cars, GT cars, single-seaters, prototypes, electric prototypes; class-specific technical regulations." }, { name: "Full FIA safety equipment", description: "Roll cage, race harness, HANS device, fireproof suit, helmet, gloves, race shoes — full FIA specification for the vehicle class." }, { name: "Mountain road course (4-20km, hundreds of turns)", description: "Closed mountain road with hundreds of turns + significant elevation gain; barriers + safety marshals mandatory." }, { name: "Timing transponder + FIA-certified clocks", description: "Electronic timing systems accurate to 0.001 sec; multiple checkpoints along course." }],
+  duration: { approximateMinutes: 10, structure: "Single run typically 3-15 min; competition day 10-30 min racing per class; multi-day event 2-4 days with practice + qualifying + race runs." },
+  objective: "Complete mountain course fastest possible time; best of multiple runs typically counts.",
+  matchStructure: "Practice + Qualifying + Race Day format: multiple timed runs per class; fastest run counts; separate podiums per class + overall Fastest Time of Day (FTD).",
+  basicRules: [
+    { title: "Single-car time trial (no wheel-to-wheel)", body: "Only one car on course at a time; purely time-trial format with fastest run winning; no direct passing between cars." },
+    { title: "Multi-class competition (production, GT, prototype, single-seater)", body: "Multiple technical classes race same day — separate podiums per class; overall 'Fastest Time of Day' (FTD) crowns event king." },
+    { title: "Best-of-N runs count (typically 2-3 timed runs)", body: "Each competitor gets multiple attempts (typically 2-3 timed runs); fastest single run counts as competitive result." },
+    { title: "Full FIA safety requirements for vehicle class", body: "Vehicles must meet full FIA safety specifications for their class: roll cage, harness, HANS, fireproof suit, etc." },
+    { title: "Weather conditions can dramatically affect times", body: "Mountain weather (rain, snow, fog, wind) affects tires + visibility + power; changing conditions during race day create unequal comparability." },
+  ],
+  scoring: { summary: "Elapsed time in seconds:milliseconds from start to finish; fastest single time wins competitive class.", winCondition: "Fastest single run in class OR Fastest Time of Day for overall event king." },
+  positions: [{ name: "Driver (sole competitor)", role: "Only driver in vehicle; no co-driver.", count: 1 }, { name: "Race Engineer", role: "Team member managing car setup + strategy between runs.", count: 1 }, { name: "Mechanic Crew", role: "Team supporting car maintenance + tire changes between runs.", count: 5 }],
+  officiating: { officials: ["Chief Race Steward", "Course Marshals (safety, ~100 for long course)", "Timekeepers", "Technical Scrutineers", "Medical + Rescue crew"], summary: "FIA certified officials at European Championship + PPIHC certified officials." },
+  governingBodies: [{ name: "Fédération Internationale de l'Automobile (FIA)", founded: 1904, headquarters: "Paris, France" }, { name: "Pikes Peak International Hill Climb (PPIHC)", founded: 1916, headquarters: "Colorado Springs, Colorado, USA" }, { name: "British Motor Sport Association (Motorsport UK)", founded: 1907, headquarters: "Colnbrook, UK" }],
+  majorCompetitions: [{ name: "Pikes Peak International Hill Climb", frequency: "annual (June)", founded: 1916, region: "Colorado Springs, Colorado, USA" }, { name: "FIA European Hill Climb Championship", frequency: "annual (12+ rounds)", founded: 1957, region: "Rotating Europe (Austria, Germany, France, Italy, Slovakia)" }, { name: "British Hill Climb Championship", frequency: "annual", founded: 1947, region: "UK (Shelsley Walsh, Wiscombe Park, Prescott)" }, { name: "Race of Champions Rossfeld Bergrennen", frequency: "annual", founded: 1958, region: "Bavaria, Germany" }, { name: "Rally Legends + Nürburgring 24hr auxiliary", frequency: "annual", founded: 1970, region: "Nürburgring, Germany" }],
+  countriesPlayed: ["USA (Pikes Peak legendary)", "FRA", "DEU", "AUT (Alpine tradition)", "SUI", "ITA (Trento Bondone historic)", "BEL", "CZE", "SVK", "GBR", "ESP", "JPN", "NZL"],
+  famousAthletes: ["Nobuhiro 'Monster' Tajima (Japan — 6x Pikes Peak overall wins 2006-2011)", "Sebastien Loeb (France — Pikes Peak record 8:13.878 in 2013)", "Romain Dumas (France — VW ID.R Pikes Peak all-time record 7:57 in 2018)", "Simone Faggioli (Italy — 12+ FIA European Hill Climb Championships)", "Rhys Millen (New Zealand)", "Jeff Zwart (USA — 8x Pikes Peak Porsche class winner)"],
+  records: [
+    { title: "Romain Dumas VW ID.R Pikes Peak 7:57.148 (2018)", holder: "Romain Dumas (France) — VW ID.R electric prototype", value: "Romain Dumas set Pikes Peak all-time record 7:57.148 in 2018 driving VW ID.R electric prototype — broke Sebastien Loeb's 2013 combustion record + first sub-8-minute Pikes Peak run", year: 2018 },
+    { title: "Pikes Peak world's second-oldest motor race (since 1916)", holder: "Pikes Peak International Hill Climb", value: "Pikes Peak International Hill Climb held continuously since 1916 (except 1917-1918 WWI + 1942-1945 WWII) — world's second-oldest active motor race behind Indianapolis 500 (1911)", year: 1916 },
+    { title: "Simone Faggioli 12+ FIA European Hill Climb Championships", holder: "Simone Faggioli (Italy)", value: "Simone Faggioli of Italy has won 12+ FIA European Hill Climb Championships 2007-2020s — most dominant hillclimb driver of modern era", year: 2020 },
+    { title: "Sebastien Loeb Pikes Peak 8:13.878 (2013) combustion record", holder: "Sebastien Loeb (France) — Peugeot 208 T16", value: "Sebastien Loeb set Pikes Peak record 8:13.878 in 2013 driving Peugeot 208 T16 Pikes Peak — final combustion-engine overall record before electric VW ID.R broke it 2018", year: 2013 },
+  ],
+  variants: ["pikes-peak-international-hill-climb", "fia-european-hill-climb-championship", "british-hill-climb-championship", "targa-tasmania-tarmac-rally-hybrid", "goodwood-festival-of-speed-hillclimb", "isle-of-man-tt-mountain-course-motorcycle"],
+  relatedSports: ["formula-1", "rally-fia-world-rally-championship", "rallycross-fia-worldrx", "circuit-racing-le-mans"],
+  skills: ["mountain-road racing line (blind crest turns)", "altitude power management (naturally aspirated cars)", "brake conservation over long descents", "corner memorization + apex precision"],
+  wikipediaTitle: "Hillclimbing (motorsport)",
+  sources: [{ label: "Wikipedia — Hillclimbing (motorsport)", url: "https://en.wikipedia.org/wiki/Hillclimbing_(motorsport)", publisher: "Wikipedia" }, { label: "Pikes Peak International Hill Climb", url: "https://ppihc.org", publisher: "PPIHC" }, { label: "FIA European Hill Climb Championship", url: "https://www.fia.com/events/european-hill-climb-championship", publisher: "FIA" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default hillclimbMountainMotorsport;

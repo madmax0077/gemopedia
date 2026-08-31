@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const yoYoWorldYoyoContest: Sport = {
+  id: "yo-yo-world-yoyo-contest",
+  slug: "yo-yo-world-yoyo-contest",
+  name: "Yo-Yo (Competitive — WYYC)",
+  officialName: "World Yo-Yo Contest (WYYC) — International Yo-Yo Federation (IYYF)",
+  aliases: ["Yo-Yo", "Yo-Yoing", "WYYC", "Freehand Yo-Yo"],
+  shortDescription:
+    "Ancient skill toy transformed into modern competitive sport — WYYC founded 1932 (revived modern era 1992); 5 divisions covering 1A/2A/3A/4A/5A styles including single string, dual, freehand counterweight, off-string; strongholds Japan, USA, Philippines, Czech Republic; top champions include Gentry Stein, Takeshi Matsuura, Shinya Kido.",
+  longDescription:
+    "Yo-Yo has evolved from ancient skill toy (documented as far back as 500 BC ancient Greek + Chinese depictions) into a legitimate competitive sport with defined divisions, international judging systems, and professional world-class players. Modern World Yo-Yo Contest (WYYC) traces to 1932 US Yo-Yo Championships (organized by Duncan Toys) — revived + globalized 1992 by yo-yo enthusiasts + American Yo-Yo Association; now governed by International Yo-Yo Federation (IYYF, founded 2010). Modern professional yo-yoing uses precision ball-bearing yo-yos (sleep for 5+ minutes) allowing elaborate string tricks impossible with traditional axle yo-yos. Competitive divisions: (1) 1A — Single string, one yo-yo, string tricks (classic 'looping' + 'string tricks' like Split the Atom, Zipper, Buddha's Revenge); most popular division; (2) 2A — Two yo-yos on strings (one each hand) simultaneously with 'looping' tricks (Two Handed Loop, UFO); (3) 3A — Two yo-yos with intricate string tricks between them (single-handed string transfers); (4) 4A — Off-string (yo-yo flies free of string during tricks; player catches on string mid-air); (5) 5A — Freehand counterweight (dice or bean bag ties to counterweight end; player throws yo-yo out + swings counterweight independently); Signature current stars: (a) Gentry Stein (USA — multi-time 1A World Champion 2014, 2018, 2022); (b) Takeshi Matsuura (Japan — 2A specialist); (c) Shinya Kido (Japan — 3A champion); (d) Sam Kim (Korea — 4A specialist); (e) Nakayama (Japan — 5A world champion); (f) Iori Yamaki (Japan — legendary technical innovator). Scoring: judges evaluate technical difficulty + execution + performance + music synchronization on 60-90 sec routines; complex point system per WYYC rules. WYYC held annually (rotating cities — Prague, Cleveland, Iceland, Chico California, Reykjavik, Shanghai, Tokyo). National championships in ~40 countries — dominant scenes Japan (Japanese Nationals biggest domestic contest), USA, Philippines (huge popular scene), Czech Republic, France. Yo-yo industry ecosystem: brands YoYoFactory (USA), YoYoRecreation (Japan), C3yoyodesign (Japan), OneDrop (USA), Duncan (USA classic). Ball-bearing metal yo-yos priced $60-200 for competition-grade. Community 'YoYoExpert' online forum + YouTube trick tutorials + local yo-yo clubs.",
+  category: "skill-toys",
+  subCategory: "competitive skill toy with 5 division styles",
+  sportType: "individual", indoorOutdoor: "both",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "year-round", era: "20th-century", popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Duncan Toys 1932 US Championships) + Japan (technical innovations 1990s+)",
+  estimatedOrigin: "Yo-yo ancient skill toy 500 BC+; modern competition 1932 US Championships (Duncan); WYYC revived 1992; IYYF founded 2010",
+  players: { min: 1, max: 1, note: "Individual competition; team demonstrations occasional." },
+  equipment: [{ name: "Competition yo-yo (metal, ball-bearing)", description: "Precision-machined aluminum or bimetal yo-yo with ball bearing axle enabling multi-minute sleep times; $60-200 competition-grade." }, { name: "String (polyester or nylon)", description: "Twisted polyester or nylon string; specific string types for each style; consumable + replaced frequently." }, { name: "Counterweight (5A division only)", description: "Weighted dice or bean bag attached to free string end for 5A freehand division; enables independent-swing tricks." }, { name: "Yo-yo case / lubrication / string bag", description: "Player kit: multiple yo-yos, strings, lube, cleaning tools; competitors carry ~5-10 yo-yos to comps." }],
+  duration: { approximateMinutes: 3, structure: "Prelim routine 1-2 min; final routine 3-5 min; competition day 4-8 hours with hundreds of competitors." },
+  objective: "Execute highest-scoring routine of technical yo-yo tricks synchronized to music within time limit.",
+  matchStructure: "Preliminary + Semifinal + Final rounds; each division separate; routines scored by judges on technical + performance + creativity + execution.",
+  basicRules: [
+    { title: "5 divisions: 1A, 2A, 3A, 4A, 5A", body: "Competition divided into 5 styles: 1A single-string, 2A two-handed looping, 3A two-yo-yo string, 4A off-string, 5A freehand counterweight." },
+    { title: "Routine synchronized to music", body: "Competitor performs to their choice of music; performance value part of scoring (music synchronization + choreography)." },
+    { title: "Point deductions for drops + string breaks + off-time", body: "Deductions applied for: dropped yo-yo (-1 pt per drop), string breaks (-1 pt each), running out of music time (partial routine only)." },
+    { title: "Technical scoring by judges (trick difficulty + execution)", body: "Judges score technical difficulty of tricks executed + cleanness of execution; complex WYYC formula combines with performance + music scores." },
+    { title: "Time limit strict (prelim 1-2 min, final 3-5 min)", body: "Time limits vary by division + round; prelim typically 1-2 min, final typically 3-5 min; going over = disqualification." },
+  ],
+  scoring: { summary: "WYYC judging formula: Technical Value (TV) + Performance Value (PV) - Deductions; complex per-division specifics; final routines scored 0-100+.", winCondition: "Highest total score in division wins that division; overall Grand Champion sometimes awarded across divisions." },
+  positions: [{ name: "Yo-Yo player (Yo-yoer)", role: "Sole competitor.", count: 1 }],
+  officiating: { officials: ["Chief Judge", "Technical Judges (5)", "Performance Judges (3)", "Music/Time Judge", "Head Referee"], summary: "IYYF certified judges at WYYC + certified regional judges at national championships." },
+  governingBodies: [{ name: "International Yo-Yo Federation (IYYF)", founded: 2010, headquarters: "Prague, Czech Republic" }, { name: "American Yo-Yo Association (AYYA)", founded: 1992, headquarters: "USA" }, { name: "Japan Yo-Yo Association", founded: 1998, headquarters: "Tokyo, Japan" }],
+  majorCompetitions: [{ name: "World Yo-Yo Contest (WYYC)", frequency: "annual", founded: 1932, region: "rotating (Prague, Cleveland, Iceland, Chico CA, Reykjavik, Shanghai, Tokyo)" }, { name: "US National Yo-Yo Contest", frequency: "annual", founded: 1993, region: "USA — Chico California typically" }, { name: "Japan National Yo-Yo Contest", frequency: "annual", founded: 1998, region: "Tokyo, Japan" }, { name: "European Yo-Yo Championship (EYYC)", frequency: "annual", founded: 2004, region: "rotating Europe" }, { name: "Asia-Pacific Yo-Yo Championship (APYC)", frequency: "annual", founded: 2005, region: "rotating Asia" }],
+  countriesPlayed: ["JPN (dominant technical + medal count)", "USA (large scene)", "PHL (huge popular scene)", "CZE", "KOR", "SGP", "HKG", "TWN", "CAN", "FRA", "DEU", "ISL", "worldwide 40+ national championships"],
+  famousAthletes: ["Gentry Stein (USA — 3x 1A World Champion 2014, 2018, 2022)", "Takeshi Matsuura (Japan — 2A specialist multi-time World Champion)", "Shinya Kido (Japan — 3A World Champion)", "Sam Kim (Korea — 4A specialist)", "Nakayama (Japan — 5A World Champion)", "Iori Yamaki (Japan — technical innovator legend)", "Hiroyuki Suzuki (Japan — 1A legend 2000s)", "Yuuki Nishisako (Japan)"],
+  records: [
+    { title: "Original US Yo-Yo Championships 1932 by Duncan Toys", holder: "Duncan Toys", value: "First US National Yo-Yo Championships held 1932 organized by Duncan Toys — 90+ year continuous competition tradition (with revivals)", year: 1932 },
+    { title: "WYYC modern revival 1992", holder: "American Yo-Yo Association", value: "WYYC modern era launched 1992 by American Yo-Yo Association — globalized competition + established modern 5-division structure", year: 1992 },
+    { title: "Ball-bearing yo-yo enabled multi-minute sleep 1990s revolution", holder: "Modern yo-yo manufacturers", value: "Ball-bearing axle yo-yos developed 1990s enable 5+ minute sleep times vs 30-sec traditional axles — enabled entire modern trick catalog", year: 1998 },
+    { title: "Gentry Stein 3x 1A World Champion", holder: "Gentry Stein (USA)", value: "Gentry Stein (USA) won 1A World Championships 2014, 2018, 2022 — most 1A World titles by American in modern era", year: 2022 },
+  ],
+  variants: ["1a-single-string-string-tricks", "2a-two-handed-looping", "3a-two-yo-yo-string-tricks", "4a-off-string-catches", "5a-freehand-counterweight", "artistic-performance-routine-format", "speed-competition-most-tricks-in-time-limit"],
+  relatedSports: ["kendama-competitive", "diabolo-chinese-yo-yo", "spinning-tops-koma", "juggling-competitive"],
+  skills: ["string tension management", "trick timing + sequencing", "regeneration technique (regen tricks)", "performance choreography + music sync"],
+  wikipediaTitle: "Yo-yo",
+  sources: [{ label: "Wikipedia — Yo-yo", url: "https://en.wikipedia.org/wiki/Yo-yo", publisher: "Wikipedia" }, { label: "World Yo-Yo Contest", url: "https://worldyoyocontest.com", publisher: "IYYF" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default yoYoWorldYoyoContest;

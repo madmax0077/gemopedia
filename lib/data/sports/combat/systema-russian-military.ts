@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const systemaRussianMilitary: Sport = {
+  id: "systema-russian-military",
+  slug: "systema-russian-military",
+  name: "Systema (Russian Military Martial Art)",
+  officialName: "Systema — Russian military-derived martial art (multiple international schools)",
+  aliases: ["Систе́ма", "Russian Systema", "Russian Combat System", "System"],
+  shortDescription:
+    "Russian military-derived martial art emphasizing relaxed breath control + biomechanics over traditional forms; formalized 1990s by Mikhail Ryabko (Moscow) + Vladimir Vasiliev (Toronto); rooted in Russian Spetsnaz (special forces) + centuries-old Slavic Cossack + Bogatyr wrestling traditions; ~50,000+ practitioners across 40+ countries; increasingly influential in military + law enforcement training.",
+  longDescription:
+    "Systema (Russian: Систе́ма, 'The System') is a Russian martial art derived from military special forces training + centuries-old Slavic combat traditions. Distinguished from Asian martial arts by (a) absence of formal kata/forms/belts; (b) emphasis on relaxed breathing + natural biomechanics over rigid stances; (c) focus on practical survival scenarios over sport competition. Two main lineages formalized 1990s: (1) Mikhail Ryabko (Moscow) — reputedly trained in Soviet special forces + drew on ancient Cossack + Bogatyr Russian folk wrestling traditions; opened Moscow school 1990s; (2) Vladimir Vasiliev (Toronto Canada) — former Soviet Special Operations soldier, Ryabko's senior student, opened Toronto school 1993 + globalized Systema Vasiliev worldwide. Historical roots: (a) Ancient Slavic combat traditions — Bogatyr (Russian folk warrior heroes) wrestling; (b) Cossack martial traditions (multi-generational family wrestling arts); (c) Slavic-Byzantine military heritage; (d) Soviet Spetsnaz + KGB special forces training incorporating close-quarters combat + weapon defense + tactical scenarios; (e) Post-Soviet 1990s formalization + international opening. Distinctive principles: (i) 'Breath' — controlled cyclical breathing under stress; (ii) 'Relaxation' — muscles remain loose (contrary to Asian martial hardness); (iii) 'Structure' — biomechanical alignment for maximum efficiency; (iv) 'Movement' — continuous flow, avoid stopping/tension; (v) 'Psyche' — mental composure under threat + adrenaline management. Technical curriculum: (a) Empty-hand defense — strikes, throws, joint manipulation, ground control; (b) Weapon defense — knife, stick, firearm disarms; (c) Multiple attackers — signature training scenario; (d) Ground fighting — Russian sambo-influenced grappling; (e) Breathing exercises + Russian physical culture (calisthenics, weighted movements); (f) Massage + healing arts (part of tradition). No formal ranking system — differs from Asian martial arts. Instructors judged on demonstrated skill + Vasiliev/Ryabko certification. Modern spread: (1) Vladimir Vasiliev Toronto school + international seminar circuit; (2) 40+ certified instructors globally in USA + Canada + UK + Germany + France + Australia + Brazil + Israel; (3) Adopted by police + military special forces in various countries; (4) 2000s-2010s viral internet fame via YouTube videos + Vasiliev demonstration seminars; (5) Featured in mainstream martial arts publications + Joe Rogan interviews; (6) UFC fighter Chael Sonnen + others trained briefly. Controversial: some criticism from martial arts community about 'unrealistic' demonstrations (compliant partners); defenders point to practical origins + working military use. Notable: Aaron Fields (Rus Kettlebell Club USA), Kevin Secours (Combat Systema Canada), Emmanuel Manolakakis (Fit To Fight USA).",
+  category: "combat-sports",
+  subCategory: "Russian military-derived martial art with breath + biomechanics focus",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "20th-century", popularity: "niche",
+  countryOfOrigin: "RU",
+  regionOfOrigin: "Russia (formalized 1990s Moscow — Mikhail Ryabko + Vladimir Vasiliev; ancient Slavic + Cossack roots)",
+  estimatedOrigin: "Ancient Slavic + Cossack combat traditions; Soviet Spetsnaz special forces training 20th century; formalized 1990s by Mikhail Ryabko (Moscow) + Vladimir Vasiliev (Toronto); globalized 2000s-2010s",
+  players: { min: 1, max: 5, note: "Individual training + partner drills + multiple-attacker scenarios (2-5 people)." },
+  equipment: [{ name: "Comfortable athletic clothing (no gi)", description: "No traditional uniform; practitioners wear comfortable workout clothes; may include Russian tricolor patches for identification." }, { name: "Training knife + stick + firearm replica", description: "Rubber training knife + wooden stick + rubber firearm replica for weapon defense drills." }, { name: "Padded mats (for ground work + falls)", description: "Basic padded training mats for ground work + safe falling drills." }, { name: "Kettlebells + weights (Russian physical culture)", description: "Kettlebells + weighted exercises central to Russian physical culture tradition often incorporated into Systema training." }],
+  duration: { approximateMinutes: 90, structure: "Class 90-180 min typically longer than Asian martial arts; seminars 4-8 hours; multi-day intensives 20-40 hours." },
+  objective: "Master survival + self-defense in violent scenarios through breath + relaxation + biomechanical efficiency; no competitive sparring/tournaments.",
+  matchStructure: "Training format: class + partner drills + scenario training + multi-attacker scenarios; no ranking system + no competitive tournaments.",
+  basicRules: [
+    { title: "4 pillars: Breath + Relaxation + Structure + Movement", body: "Systema built on 4 foundational pillars: controlled breath under stress, muscular relaxation, biomechanical structure, continuous flowing movement." },
+    { title: "No formal kata/forms/belts", body: "Distinctive from Asian martial arts: no formal kata/forms; no belt ranking system; instructors judged on demonstrated skill + Vasiliev/Ryabko certification." },
+    { title: "No competitive tournaments", body: "Not a sport — no formal competitive tournaments; focus on practical survival scenarios rather than competition." },
+    { title: "Multiple-attacker training standard", body: "Signature training method: multiple-attacker scenarios (2-5 attackers) — trains awareness + movement + prioritization under overwhelming force." },
+    { title: "Weapon defense (knife, stick, firearm) integrated", body: "Weapon defense against knife + stick + firearm integrated throughout curriculum from beginner level; not reserved for advanced students." },
+  ],
+  scoring: { summary: "No scoring — not a competitive sport; skill assessed subjectively by instructor observation.", winCondition: "N/A — self-defense/survival art, no competition." },
+  positions: [{ name: "Systema practitioner", role: "Sole trainee.", count: 1 }, { name: "Instructor (certified by Vasiliev or Ryabko)", role: "Senior teacher; no formal rank system beyond certification.", count: 1 }],
+  officiating: { officials: ["No competitive officials", "Instructor certification via Vasiliev + Ryabko lineage"], summary: "No competitive officiating; instructor certification tracked by Vasiliev (Toronto) + Ryabko (Moscow) lineages." },
+  governingBodies: [{ name: "Systema Vasiliev (Vladimir Vasiliev — Toronto)", founded: 1993, headquarters: "Toronto, Canada" }, { name: "Systema Ryabko (Mikhail Ryabko — Moscow)", founded: 1990, headquarters: "Moscow, Russia" }, { name: "Combat Systema (Kevin Secours branch)", founded: 2010, headquarters: "Montreal, Canada" }, { name: "Various independent Systema branches globally", founded: 2000, headquarters: "worldwide" }],
+  majorCompetitions: [{ name: "Not a competitive sport — no formal tournaments", frequency: "N/A", founded: 1990, region: "worldwide seminars" }, { name: "Annual Vasiliev + Ryabko instructor seminars + retreats", frequency: "annual multiple", founded: 1993, region: "worldwide" }],
+  countriesPlayed: ["RUS (origin)", "CAN (Vasiliev Toronto — modern hub)", "USA (~200 certified instructors)", "GBR", "DEU", "FRA", "AUS", "BRA", "ISR", "worldwide 40+ countries + military/police adoption"],
+  famousAthletes: ["Mikhail Ryabko (Moscow founder — died 2023)", "Vladimir Vasiliev (Toronto — globalized Systema)", "Aaron Fields (Rus Kettlebell Club USA)", "Kevin Secours (Combat Systema Canada)", "Emmanuel Manolakakis (Fit To Fight USA)", "Various military + police special forces instructors"],
+  records: [
+    { title: "Formalized 1990s by Mikhail Ryabko + Vladimir Vasiliev", holder: "Mikhail Ryabko + Vladimir Vasiliev", value: "Modern Systema formalized 1990s by Mikhail Ryabko (Moscow) + Vladimir Vasiliev (Toronto) drawing on Soviet Spetsnaz training + ancient Slavic combat traditions", year: 1993 },
+    { title: "40+ countries with certified instructors", holder: "Global Systema community", value: "Systema now practiced in 40+ countries with certified instructors across USA, Canada, UK, Germany, France, Australia, Brazil, Israel + military/police adoption", year: 2024 },
+    { title: "Adopted by military + police special forces globally", holder: "Various national special forces", value: "Systema adopted by military + police special forces in various countries as close-quarters combat training component; renewed institutional recognition beyond civilian practice", year: 2024 },
+    { title: "No formal kata/forms/belts (distinctive)", holder: "Systema tradition", value: "Systema uniquely lacks formal kata/forms/belt ranking system among major world martial arts — distinctive Russian approach emphasizing situational responsiveness over technique memorization", year: 2024 },
+  ],
+  variants: ["systema-vasiliev-toronto-lineage", "systema-ryabko-moscow-lineage", "combat-systema-kevin-secours-canada", "russian-martial-art-broader-family"],
+  relatedSports: ["sambo-russian-wrestling", "krav-maga", "brazilian-jiu-jitsu", "wing-chun"],
+  skills: ["controlled breathing under stress", "muscular relaxation technique", "biomechanical alignment + power generation", "multiple-attacker awareness + prioritization"],
+  wikipediaTitle: "Systema",
+  sources: [{ label: "Wikipedia — Systema", url: "https://en.wikipedia.org/wiki/Systema", publisher: "Wikipedia" }, { label: "Systema Vasiliev", url: "https://www.russianmartialart.com", publisher: "Vladimir Vasiliev" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default systemaRussianMilitary;

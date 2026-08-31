@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const rocketLeagueRlcs: Sport = {
+  id: "rocket-league-rlcs",
+  slug: "rocket-league-rlcs",
+  name: "Rocket League (RLCS Esports)",
+  officialName: "Rocket League Championship Series (RLCS) — Psyonix / Epic Games",
+  aliases: ["Rocket League", "RLCS", "SARPBC — Supersonic Acrobatic Rocket-Powered Battle-Cars"],
+  shortDescription:
+    "Groundbreaking soccer-with-rocket-cars esport — 3v3 rocket-powered cars fly + boost + score in arena; RLCS is Psyonix / Epic Games flagship championship since 2016 with ~$10M annual prize pool; Season World Championships crown yearly champions; NRG + Team Vitality + Karmine Corp among top orgs; 8+ years of professional competition.",
+  longDescription:
+    "Rocket League is a groundbreaking sports video game combining soccer with rocket-powered cars — published 2015 by Psyonix (acquired 2019 by Epic Games) as sequel to their 2008 game Supersonic Acrobatic Rocket-Powered Battle-Cars (SARPBC). Considered THE definitive competitive sports esport of the 2010s-2020s alongside FIFA/EAFC + NBA 2K. Basic gameplay: 3v3 (standard competitive) teams of rocket-powered cars in enclosed arena try to hit a large ball into opponent's goal; cars can boost + jump + double-jump + fly + wall-bounce; matches typically 5 minutes with overtime if tied. Simple to learn, extremely difficult to master — pro-level play features aerial car ball control, wall play, ceiling bounces, backboard reads, dribbling, flip-resets, air rolls, breezes. Rocket League Championship Series (RLCS) — flagship esport league founded 2016 by Psyonix; 8+ years of professional competition; format has evolved: (1) Season format 2016-2020 with League Play + Championship; (2) 2021-2023 restructured into Split system (Fall + Winter + Spring Splits + Worlds); (3) 2024+ new format with regional leagues + majors + Worlds. Structured regional leagues: (a) NA (North America); (b) EU (Europe); (c) MENA (Middle East + North Africa); (d) SAM (South America); (e) OCE (Oceania); (f) APAC (Asia-Pacific); (g) SSA (Sub-Saharan Africa). ~$10 million annual RLCS prize pool; Season Worlds ~$2M prize pool; Champion team ~$500K. Notable top-tier teams: (1) NRG (USA — 2019 World Champion; multi-time RLCS Champion; Jstn + GarrettG + SquishyMuffinz lineage); (2) Team Vitality (France — 2022 World Champion + numerous EU titles); (3) Karmine Corp (France — 2023 World Champion); (4) G2 Esports (USA — Rizzo + Reysbull); (5) Team BDS (Europe — top European organization); (6) The General NRG (rebrand); (7) Faze Clan; (8) Spacestation Gaming. Signature legendary players: (i) Jstn.a (USA — NRG 2019 World Champion; 3x MVP); (ii) GarrettG (USA — NRG core 2016-present); (iii) SquishyMuffinz (Canada); (iv) Fairy Peak (France — 2018 World Champion Vitality legend); (v) Kaydop (France — 2018 + 2022 World Champion); (vi) Alpha54 (France — 2022 + 2023 back-to-back World Champion); (vii) Vatira (Belgium); (viii) Firstkiller (USA). Global viewership: 500K+ peak concurrent viewers at RLCS Worlds; broadcast on Twitch + YouTube. Rocket League Free-to-Play conversion 2020 dramatically expanded player base; current 40+ million monthly active players. Additional formats: 1v1 (Duel), 2v2 (Doubles), 4v4 (Chaos), Rumble (with items), Snow Day (hockey), Dropshot (breaking floor tiles).",
+  category: "esports",
+  subCategory: "sports esport — 3v3 rocket-car soccer",
+  sportType: "team", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "year-round", era: "21st-century", popularity: "major",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Psyonix — San Diego California developer; acquired by Epic Games 2019)",
+  estimatedOrigin: "Rocket League released 2015 by Psyonix (sequel to 2008's SARPBC); RLCS founded 2016; free-to-play conversion 2020; Epic Games acquired Psyonix 2019",
+  players: { min: 1, max: 8, note: "Standard competitive 3v3; also 1v1 (Duel), 2v2 (Doubles), 4v4 (Chaos)." },
+  equipment: [{ name: "Rocket League game software (PC/Console)", description: "Free-to-play game since 2020 on PC (Steam/Epic), PlayStation, Xbox, Nintendo Switch; cross-platform play enabled." }, { name: "Controller (competitive standard) or keyboard+mouse", description: "Controller strongly preferred at competitive level (~95%+ of pros use controllers — Xbox or PS layout); keyboard+mouse fully supported but disadvantaged for aerial control." }, { name: "High refresh rate monitor (144Hz+)", description: "144Hz+ refresh rate + 1ms response time monitor standard for pro play; competitive advantage on reaction time." }, { name: "Custom car choice + hitbox familiarity", description: "Players use one of 6 hitbox types (Octane most popular, Fennec, Dominus, Batmobile, Plank, Merc); customize appearance freely; hitbox choice tactical." }],
+  duration: { approximateMinutes: 5, structure: "Standard match 5 min + overtime if tied; RLCS best-of-5 or best-of-7 matches; series 30-90 min; Worlds tournament 3-5 day event." },
+  objective: "Score more goals than opponent by using rocket-powered cars to hit ball into opponent's goal within 5 minutes.",
+  matchStructure: "Match = 5-min game + overtime; RLCS series = best-of-5 or best-of-7 matches; regional leagues → Majors → World Championship.",
+  basicRules: [
+    { title: "3v3 rocket cars in arena try to score with ball", body: "Two teams of 3 cars each in enclosed arena; hit large ball into opponent's goal; more goals in 5 min wins (overtime if tied)." },
+    { title: "Boost meter powers acceleration + flight", body: "Boost meter (0-100) powers acceleration + air flight; refilled by driving over boost pads or 100-pad corners; strategic boost management critical." },
+    { title: "Overtime = sudden death (first goal wins)", body: "If tied at 5-min end, unlimited-length overtime begins; first team to score wins (sudden death)." },
+    { title: "Bumps + demolitions allowed", body: "Cars may bump or 'demolish' opposing cars (bumping at high speed while supersonic); demolished cars respawn after 3 sec." },
+    { title: "Kickoff after each goal + game start", body: "Game begins with kickoff at center; after each goal, players return to positions + new kickoff begins." },
+  ],
+  scoring: { summary: "Team goal count in match; matches contribute to series win-loss; series win-loss in tournament bracket determines advancement.", winCondition: "Match: more goals in 5 min (or first in OT). Series: majority of games. Tournament: bracket champion." },
+  positions: [{ name: "Offensive player (typically 1)", role: "Primary striker; forward attacking positioning.", count: 1 }, { name: "Midfielder / Rotation player (1-2)", role: "Rotates between offense + defense based on ball position; most active positioning role.", count: 2 }, { name: "Defensive player (typically 1)", role: "Last-back safety; goal defense priority.", count: 1 }],
+  officiating: { officials: ["Tournament Admin", "Referee (rare disputes)", "Casters + Analysts (broadcast)"], summary: "Psyonix/Epic + tournament operators + RLCS partners manage RLCS competition; game engine handles most rules automatically." },
+  governingBodies: [{ name: "Psyonix (developer) — subsidiary of Epic Games", founded: 2015, headquarters: "San Diego, California, USA" }, { name: "Epic Games (parent since 2019)", founded: 1991, headquarters: "Cary, North Carolina, USA" }, { name: "Rocket League Championship Series (RLCS)", founded: 2016, headquarters: "worldwide regions" }],
+  majorCompetitions: [{ name: "Rocket League Championship Series (RLCS) — regional leagues + Majors + Worlds", frequency: "annual season", founded: 2016, region: "worldwide regional leagues + international Worlds" }, { name: "RLCS World Championship", frequency: "annual", founded: 2016, region: "rotating international (Fort Worth 2022, London 2023, Copenhagen + Dallas 2024)" }, { name: "RLCS Majors (Fall + Winter + Spring)", frequency: "3 annually", founded: 2021, region: "rotating international" }, { name: "Rocket League Championship — Regional Leagues (NA + EU + MENA + SAM + OCE + APAC + SSA)", frequency: "ongoing splits", founded: 2020, region: "regional online + LAN finals" }, { name: "Rocket League Salt Mine tournaments", frequency: "regular", founded: 2018, region: "worldwide online — grassroots to pro pipeline" }],
+  countriesPlayed: ["USA (dominant historic)", "FRA (Vitality + Karmine Corp back-to-back World Champions 2022, 2023)", "CAN", "GBR", "DEU", "BEL", "ESP", "MEX", "BRA (SAM region)", "AUS + NZL (OCE)", "worldwide via cross-platform + free-to-play"],
+  famousAthletes: ["Jstn.a (USA — NRG 2019 World Champion; 3x MVP)", "GarrettG (USA — NRG core 2016-present)", "SquishyMuffinz (Canada)", "Fairy Peak (France — 2018 World Champion Vitality)", "Kaydop (France — 2018 + 2022 World Champion)", "Alpha54 (France — 2022 + 2023 back-to-back Vitality/Karmine Corp)", "Vatira (Belgium)", "Firstkiller (USA)", "Reysbull (Chile — 2020 + 2021 World Champion)"],
+  records: [
+    { title: "RLCS founded 2016 — flagship pro league since", holder: "Psyonix + Epic Games", value: "Rocket League Championship Series (RLCS) founded 2016 by Psyonix; 8+ years of continuous professional competition; ~$10M annual prize pool", year: 2016 },
+    { title: "40M+ monthly active players (free-to-play era)", holder: "Rocket League community", value: "Rocket League has 40+ million monthly active players since 2020 free-to-play conversion — huge active player base; cross-platform play across PC + all consoles", year: 2024 },
+    { title: "Karmine Corp back-to-back World Champions 2023 + 2024", holder: "Karmine Corp (France)", value: "Karmine Corp of France (players Alpha54 + Vatira + Itachi) won back-to-back Rocket League World Championships 2023 + 2024 — first repeat winner of RLCS", year: 2024 },
+    { title: "Alpha54 dominant modern player 2020s", holder: "Alpha54 (France)", value: "Alpha54 of France dominant modern Rocket League player 2020s — 2022 + 2023 + 2024 World Champion + MVP performances", year: 2024 },
+  ],
+  variants: ["standard-3v3-competitive-rlcs", "1v1-duel-solo-competitive", "2v2-doubles-competitive", "4v4-chaos-casual", "rumble-with-item-power-ups", "snow-day-hockey-variant", "dropshot-breaking-floor-tiles", "hoops-basketball-variant"],
+  relatedSports: ["fifa-eafc-competitive", "gran-turismo-championships", "mario-kart-competitive", "counter-strike-competitive"],
+  skills: ["aerial car control (mid-air ball hits)", "boost management + rotation", "team communication + positional rotation", "ball reading + positional prediction"],
+  wikipediaTitle: "Rocket League Championship Series",
+  sources: [{ label: "Wikipedia — Rocket League Championship Series", url: "https://en.wikipedia.org/wiki/Rocket_League_Championship_Series", publisher: "Wikipedia" }, { label: "RLCS official", url: "https://liquipedia.net/rocketleague", publisher: "Liquipedia" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default rocketLeagueRlcs;

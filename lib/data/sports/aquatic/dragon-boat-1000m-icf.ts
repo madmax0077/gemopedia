@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const dragonBoat1000mIcf: Sport = {
+  id: "dragon-boat-1000m-icf",
+  slug: "dragon-boat-1000m-icf",
+  name: "Dragon Boat Racing (IDBF World)",
+  officialName: "International Dragon Boat Federation (IDBF) — World Championships",
+  aliases: ["Dragon Boat", "龙舟", "Ryū-sen", "Dragonboat"],
+  shortDescription:
+    "Ancient Chinese team paddle sport dating 2,500 years — 10-20 paddlers plus drummer + sweep (helm) power ornately decorated dragon-shaped boat over 200/500/1000/2000m sprint distances; commemorates poet Qu Yuan drowning ~278 BCE; IDBF World Championships since 1995; ~50 million participants globally with strongholds China, Hong Kong, Canada, Australia.",
+  longDescription:
+    "Dragon Boat Racing is one of the world's oldest team paddle sports — traced to at least 2,500 years ago in southern China (Yangtze River region), commemorating the drowning of Chinese poet Qu Yuan (~278 BCE) whose body was reputedly protected from fish by villagers paddling boats + beating drums. Ancient origins in Chinese folk religion (dragon boat festivals to appease water dragons) formalized as modern competitive sport 20th century. Modern boat: (1) Standard 22-crew boat = 20 paddlers + 1 drummer at bow + 1 sweep/helm (steer person) at stern; typically 12.5m long × 1.1m wide; (2) Small boat (10-crew) = 8 paddlers + drummer + sweep; 9m long; (3) Ornate dragon head + dragon tail decorations attached at start of race (cultural authenticity + boat identity); (4) Standard fiber-reinforced composite construction competitive (traditional wooden boats used ceremonially). Competition distances: (a) 200m — sprint (~1 min race time); (b) 500m — Olympic-length standard; (c) 1000m — traditional distance; (d) 2000m — endurance turning race with 6 turns. Additional formats: (i) 5000m marathon (rare); (ii) Corporate + charity 200m sprint (most common recreational); (iii) 100m mini-sprint. Race categories: Men, Women, Mixed (10 male + 10 female), Senior (40+, 50+, 60+), Junior. Drummer role: (a) Sets pace via drum beat + calls; (b) Also traditionally spiritual leader of boat (calling on dragon spirit for speed); (c) Weight distribution matters (drummer + sweep must be lighter competitors). Modern competitive era: (1) 1976 first modern international race Hong Kong (Hong Kong Tourism Association Fisherman's Festival — birthed globally-organized dragon boat); (2) 1991 International Dragon Boat Federation (IDBF) founded; (3) 1995 First IDBF World Nations Championship; (4) 1999 First IDBF Club Crew World Championships; (5) 2007 Included in Asian Games; (6) 2010 First IDBF Corporate + Community Championships. Estimated 50+ million participants globally — huge participation base across grassroots + corporate + charity + elite. Strongholds: (1) China (dominant historic + present; hosts Dragon Boat Festival national holiday Duanwu Jie on 5th day of 5th lunar month); (2) Hong Kong (modern competitive scene birthplace); (3) Canada (Toronto + Vancouver massive scenes; 100K+ participants); (4) Australia (breast cancer survivor teams enormous scene — 'Dragons Abreast'); (5) USA (Boston + San Francisco + Portland); (6) UK; (7) Germany; (8) Singapore + Taiwan. Notable: (a) Breast cancer survivor teams globally significant — dragon boat became international breast cancer awareness sport via Dr. Don McKenzie's 1996 Vancouver research; 260+ survivor teams worldwide; (b) Corporate + charity racing = huge participation base.",
+  category: "aquatic-sports",
+  subCategory: "ancient Chinese team paddling sport with dragon-decorated boat",
+  sportType: "team", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "summer", era: "ancient", popularity: "major",
+  countryOfOrigin: "CN",
+  regionOfOrigin: "Ancient China — southern Chinese folk religion + Qu Yuan commemoration (~278 BCE)",
+  estimatedOrigin: "Ancient Chinese origin ~2,500 years ago commemorating poet Qu Yuan ~278 BCE; modern international sport 1976 Hong Kong; IDBF founded 1991; first World Championships 1995",
+  players: { min: 10, max: 22, note: "Standard boat 22 crew (20 paddlers + drummer + sweep); small boat 10 crew (8 paddlers + drummer + sweep)." },
+  equipment: [{ name: "Dragon boat (standard 22-crew, 12.5m × 1.1m)", description: "Composite fiber boat 12.5m × 1.1m; ornate detachable dragon head at bow + dragon tail at stern for cultural authenticity + boat identity." }, { name: "Paddles (bent-shaft, ~120cm)", description: "Bent-shaft paddles ~120cm long; standardized IDBF specifications; single-blade design." }, { name: "Drum + drumstick (at bow)", description: "Drum with 40cm diameter head mounted at bow position; drummer beats to set pace + calls commands to crew." }, { name: "Sweep oar (at stern)", description: "Long steering oar ~3m at stern operated by helm ('sweep'); steers boat around course." }, { name: "Life jackets (mandatory)", description: "Mandatory personal flotation devices for all paddlers + drummer + sweep." }],
+  duration: { approximateMinutes: 3, structure: "200m race ~55 sec; 500m ~2 min; 1000m ~4 min; 2000m turning race ~9 min; regatta day 6-10 hours with many races." },
+  objective: "Complete race distance fastest across all boat lengths + crew categories.",
+  matchStructure: "Heats + Semifinals + Finals format; multiple distances + boat sizes + gender/age categories; regatta day contains 100+ individual races.",
+  basicRules: [
+    { title: "22-crew boat = 20 paddlers + drummer + sweep", body: "Standard IDBF boat 22 total crew: 20 paddlers in 10 rows of 2 + drummer at bow + sweep (helm) at stern; small boat 10-crew simpler version." },
+    { title: "Paddlers must maintain synchronized stroke rhythm", body: "All 20 paddlers must synchronize strokes exactly — one slightly-off paddler slows entire boat; drummer's beat + lead-stroke pair set rhythm." },
+    { title: "Drummer beats + calls commands (spiritual + practical role)", body: "Drummer sets pace with drum beats + vocal calls; traditionally spiritual leader invoking dragon spirit; practically controls race strategy." },
+    { title: "Sweep steers with stern oar (weight + skill critical)", body: "Sweep at stern uses long oar to steer around course; weight distribution matters (lighter sweep + drummer preferred to reduce total boat weight)." },
+    { title: "Category restrictions on gender + age + weight", body: "Categories: Men, Women, Mixed (10M + 10F), Senior 40+/50+/60+, Junior, Breast Cancer Survivor; weight-restricted categories for lightweight events." },
+  ],
+  scoring: { summary: "Fastest elapsed time from start signal to finish line for boat's specific distance; heats + semis + final format.", winCondition: "Fastest boat in final wins the race." },
+  positions: [{ name: "Paddlers (20 in standard boat)", role: "Primary propulsion; must synchronize strokes; sit in 10 rows of 2.", count: 20 }, { name: "Drummer (at bow)", role: "Sets pace + calls commands; spiritual + tactical leader.", count: 1 }, { name: "Sweep / Helm (at stern)", role: "Steers boat with long stern oar; critical for staying in lane.", count: 1 }],
+  officiating: { officials: ["Chief Umpire", "Course Judges (per lane)", "Timekeepers (electronic)", "Weigh-in Officials", "Boat Inspector"], summary: "IDBF certified officials at World Championships." },
+  governingBodies: [{ name: "International Dragon Boat Federation (IDBF)", founded: 1991, headquarters: "Berkshire, UK" }, { name: "Chinese Dragon Boat Association", founded: 1985, headquarters: "Beijing, China" }, { name: "Hong Kong China Dragon Boat Association", founded: 1976, headquarters: "Hong Kong" }, { name: "European Dragon Boat Federation (EDBF)", founded: 1990, headquarters: "Europe" }],
+  majorCompetitions: [{ name: "IDBF World Nations Dragon Boat Championships", frequency: "biennial", founded: 1995, region: "rotating international" }, { name: "IDBF Club Crew World Championships", frequency: "biennial", founded: 1999, region: "rotating international" }, { name: "Hong Kong International Dragon Boat Races (Tourism Association)", frequency: "annual (June)", founded: 1976, region: "Hong Kong" }, { name: "Asian Games — Dragon Boat", frequency: "quadrennial", founded: 2007, region: "rotating Asia" }, { name: "Duanwu Jie (Dragon Boat Festival) races", frequency: "annual (5th day 5th lunar month)", founded: 500, region: "China + Chinese diaspora worldwide" }, { name: "Toronto International Dragon Boat Race Festival", frequency: "annual", founded: 1989, region: "Toronto, Canada — 200+ teams" }],
+  countriesPlayed: ["CHN (dominant + origin)", "HKG (modern sport birthplace)", "CAN (huge scene 100K+ participants)", "AUS (breast cancer survivor scene)", "USA (Boston + SF + Portland)", "GBR", "DEU", "SGP", "TWN", "MYS", "PHL", "ITA", "worldwide 70+ IDBF member nations"],
+  famousAthletes: ["Dr. Don McKenzie (Canada — pioneered breast cancer survivor dragon boat 1996)", "Chinese national team (dominant World Championship medalists)", "Various IDBF Club Crew world champions"],
+  records: [
+    { title: "2,500+ year old commemorating Qu Yuan drowning ~278 BCE", holder: "Chinese cultural tradition", value: "Dragon boat racing traced to at least 2,500 years ago in China, commemorating poet Qu Yuan's drowning ~278 BCE — one of world's oldest team paddle sports", year: -278 },
+    { title: "Modern international sport founded 1976 Hong Kong", holder: "Hong Kong Tourism Association", value: "Modern international dragon boat racing founded 1976 in Hong Kong by Hong Kong Tourism Association Fisherman's Festival — birthed global sport", year: 1976 },
+    { title: "~50 million participants globally", holder: "Global dragon boat community", value: "Estimated 50+ million dragon boat racing participants globally across elite + corporate + charity + community levels", year: 2024 },
+    { title: "Breast cancer survivor dragon boat movement 1996+", holder: "Dr. Don McKenzie (Canada)", value: "Breast cancer survivor dragon boat movement pioneered 1996 by Dr. Don McKenzie Vancouver Canada research; 260+ survivor teams worldwide", year: 1996 },
+  ],
+  variants: ["200m-sprint-fastest-format", "500m-olympic-length", "1000m-traditional-distance", "2000m-turning-endurance-6-turns", "10-crew-small-boat-format", "22-crew-standard-boat", "mixed-10m-10f-category", "breast-cancer-survivor-teams-charity"],
+  relatedSports: ["outrigger-canoe-va-a", "rowing-crew", "canoe-marathon-icf", "kayak-sprint-olympic"],
+  skills: ["synchronized paddle stroke technique", "team rhythm following drummer", "drum pacing + tactical calls", "sweep steering precision"],
+  wikipediaTitle: "Dragon boat",
+  sources: [{ label: "Wikipedia — Dragon boat", url: "https://en.wikipedia.org/wiki/Dragon_boat", publisher: "Wikipedia" }, { label: "International Dragon Boat Federation", url: "https://www.dragonboat.sport", publisher: "IDBF" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default dragonBoat1000mIcf;

@@ -10,7 +10,7 @@ import {
   getUnusualSports,
 } from "@/lib/data";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
-import { COUNTRIES } from "@/lib/data/countries";
+import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
 import { SportCard } from "@/components/SportCard";
 import { categoryIcon } from "@/lib/icons";
 import { fetchHeroImages } from "@/lib/heroImages";
@@ -32,8 +32,17 @@ export default async function Homepage() {
   // These are cached by Next.js for a week, so subsequent renders are free.
   const cardImages = await fetchHeroImages([...featured, ...unusual]);
   const totalSports = allSports.length;
+  // Only count real countries — several `countriesPlayed` entries in the
+  // catalog are free-text notes ("worldwide via clocktower.online",
+  // "Korean diaspora — USA + JPN", …) or region tags rather than clean
+  // ISO 3166 alpha-2 codes, which used to inflate this stat past 500.
+  // Intersecting with the canonical COUNTRY_BY_CODE map caps it at
+  // the number of countries the atlas can actually link to.
   const countryCount = new Set(
-    allSports.flatMap((s) => [s.countryOfOrigin, ...(s.countriesPlayed ?? [])].filter(Boolean)),
+    allSports
+      .flatMap((s) => [s.countryOfOrigin, ...(s.countriesPlayed ?? [])])
+      .filter((code): code is string => typeof code === "string" && !!COUNTRY_BY_CODE[code.toUpperCase()])
+      .map((code) => code.toUpperCase()),
   ).size;
   const diagramCount = allSports.reduce((n, s) => n + (s.diagrams?.length ?? 0), 0);
   const animationCount = allSports.reduce((n, s) => n + (s.animations?.length ?? 0), 0);

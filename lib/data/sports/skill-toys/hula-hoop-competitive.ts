@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const hulaHoopCompetitive: Sport = {
+  id: "hula-hoop-competitive",
+  slug: "hula-hoop-competitive",
+  name: "Hula Hooping (Competitive Flow Arts)",
+  officialName: "IHOOP (International Hoop Dance Championship) + Hooping World Championship",
+  aliases: ["Hooping", "Hoop Dance", "Flow Hoop", "Hula Hoop"],
+  shortDescription:
+    "Ancient skill toy transformed into modern flow arts + competitive dance discipline — practitioners perform choreographed routines with 1+ plastic hoops around body + limbs; revival late 1990s from Grateful Dead festivals; multiple World Championships (IHOOP + IHOF); growing global scene with strongholds USA + UK + Germany + Australia.",
+  longDescription:
+    "Hula Hooping has evolved from ancient skill toy (used ~3,000 years ago in ancient Egypt + Greece for fitness + games) through 1958 Wham-O toy craze into a serious modern flow arts + competitive dance discipline. Modern revival began late 1990s at Grateful Dead + Phish + jam-band festivals where 'hoopers' rediscovered hula hoops as expressive dance tools; scene formalized 2000s with introduction of larger + heavier adult hoops (~90-100cm diameter vs 65cm children's) using polyethylene tubing. Modern hooping has 3 distinct scene branches: (1) Fitness Hooping — larger heavier hoops for aerobic exercise (Hoopnotica movement 2005+ USA); (2) Flow Arts Hooping — dance-oriented performance combining hoop with music + expressive movement; (3) Competitive Hooping — judged routines with technical + performance scoring. Signature competitions: (1) International Hoop Dance Championship (IHOOP) — founded 2013; annual World Championship rotating international; multiple divisions (Solo, Doubles, Mixed, Youth, Advanced); (2) International Hoopers Federation (IHOF) World Championship — annual since 2010; (3) FloHoop annual convention + competition California; (4) UK Hoop Convention; (5) European Hoop Convention (rotating). Competition divisions: (a) Solo — 1 person 1 hoop; (b) Solo Multi-Hoop — 1 person 2-6 hoops simultaneously; (c) Doubles — 2 persons 1 or more hoops; (d) Team — 3+ persons choreographed; (e) Youth (under 16); (f) Freestyle (2-3 min music); (g) Contact hooping (hoop stays in contact with body). Technical elements scored: (i) On-body tricks — waist, hips, chest, neck spinning; (ii) Off-body tricks — hand spinning, throws, catches, releases; (iii) Multi-hoop management (juggling 2-6 hoops); (iv) Isolations (hoop appears stationary while body moves); (v) Vortex + escalator + reversal moves; (vi) Fire hooping (specialty subgenre with kerosene-soaked wicks — massive spectacle). Modern flow arts influence: (a) Hooping deeply integrated with LED hoops (battery-powered lights for night performances); (b) Fire hooping specialty subgenre; (c) Instagram + TikTok flow arts creators millions of followers; (d) EDM festival + Burning Man circuit prominent. Notable hoopers + teachers: (1) Anah Reichenbach 'HoopAlicious' (early adopter + instructor); (2) SpiralSpinner Rachel Lovingood (competitor + performer); (3) Malia Malia (Cirque du Soleil hooper); (4) Deanne Love (Australian teacher + author); (5) Hoop Sparx (Australian pro troupe). Growing worldwide scene ~1-2 million active hoopers globally; hundreds of professional performers on Cirque du Soleil + Blue Man Group + cruise ships + circus.",
+  category: "skill-toys",
+  subCategory: "flow arts + competitive dance with hoop skill toy",
+  sportType: "individual", indoorOutdoor: "both",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "year-round", era: "20th-century", popularity: "regional",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (modern revival late 1990s Grateful Dead festivals; Wham-O commercial toy 1958)",
+  estimatedOrigin: "Ancient origin ~3,000 years ago Egypt + Greece; 1958 Wham-O toy craze; modern flow arts revival late 1990s Grateful Dead festivals; IHOOP founded 2013; IHOF World Championships since 2010",
+  players: { min: 1, max: 6, note: "Solo, doubles, team formations up to 6+; unlimited team choreography." },
+  equipment: [{ name: "Adult hoop (polyethylene, ~90-100cm diameter)", description: "Adult hooping hoop typically polyethylene or polypro tubing, ~90-100cm diameter, ~150-500g weight; larger + heavier than children's Wham-O hoop." }, { name: "LED hoop (battery-powered lights)", description: "LED hoops with battery-powered light strips for night performance; charge lasts 2-4 hours; range from single-color to programmable RGB patterns." }, { name: "Fire hoop (kerosene-soaked wicks + safety kit)", description: "Fire hoop with 3-6 wicks around hoop rim; soaked in kerosene for fire performances; requires safety training + spotter + fire blanket." }, { name: "Multi-hoop set (2-6 hoops)", description: "Set of matched hoops for multi-hoop tricks; typically same size + weight for even handling; range 2-6 in advanced routines." }, { name: "Performance costume + music", description: "Dance performance attire + custom music choice for competitive routines." }],
+  duration: { approximateMinutes: 3, structure: "Competition routine 90-180 sec; performance sets 15-45 min; casual practice 30-90 min sessions." },
+  objective: "Perform highest-scoring choreographed routine combining technical hoop tricks + performance/dance elements + music synchronization within time limit.",
+  matchStructure: "Judged competition routines with prelim + final rounds; each round scored by 3-5 judges on technical + performance + creativity criteria.",
+  basicRules: [
+    { title: "Routine synchronized to music (60-180 sec)", body: "Competition routines must be choreographed to competitor's chosen music; time limits vary by division (60-180 sec typical)." },
+    { title: "Judged on technical difficulty + execution + performance + creativity", body: "Multi-criteria judging: Technical Difficulty (0-30 pts), Execution/Cleanness (0-30 pts), Performance/Musicality (0-20 pts), Creativity (0-20 pts); sum = 100." },
+    { title: "Point deductions for drops + hoop losses", body: "Deductions applied for: hoop drops, unsuccessful catches, hoop touching ground, routine restarts; severity varies by drop count." },
+    { title: "Multi-hoop division requires specified number simultaneous", body: "Multi-hoop divisions require specific hoop count (2, 3, 4, 5, or 6 hoops) simultaneously in trick sequences; must be visible from start of routine." },
+    { title: "Fire hooping requires safety certification + spotter", body: "Fire hooping performance requires safety certification + on-site fire safety spotter + fire blanket + venue permits; not competition category due to safety." },
+  ],
+  scoring: { summary: "Technical Difficulty + Execution + Performance + Creativity scores summed by 3-5 judges; average = final routine score.", winCondition: "Highest average judge score across specified rounds." },
+  positions: [{ name: "Hooper (Hoop Dancer)", role: "Sole competitor or team member.", count: 6 }],
+  officiating: { officials: ["Chief Judge", "Technical Judges (3-5)", "Performance/Musicality Judge", "Time Judge", "Fire Safety Marshal (fire performance)"], summary: "IHOOP + IHOF certified judges at major competitions." },
+  governingBodies: [{ name: "International Hoop Dance Championship (IHOOP)", founded: 2013, headquarters: "USA (rotating)" }, { name: "International Hoopers Federation (IHOF)", founded: 2010, headquarters: "USA" }, { name: "FloHoop Convention (California)", founded: 2011, headquarters: "California, USA" }],
+  majorCompetitions: [{ name: "International Hoop Dance Championship (IHOOP)", frequency: "annual", founded: 2013, region: "rotating international" }, { name: "IHOF Hooping World Championships", frequency: "annual", founded: 2010, region: "rotating international" }, { name: "FloHoop Convention Championships", frequency: "annual", founded: 2011, region: "California, USA" }, { name: "UK Hoop Convention", frequency: "annual", founded: 2012, region: "UK" }, { name: "European Hoop Convention", frequency: "annual", founded: 2013, region: "rotating Europe" }, { name: "Prophoop European Championships", frequency: "annual", founded: 2015, region: "Berlin, Germany" }],
+  countriesPlayed: ["USA (dominant modern scene)", "GBR", "DEU", "AUS", "CAN", "FRA", "NLD", "ESP", "JPN", "worldwide flow arts festival circuit"],
+  famousAthletes: ["Anah Reichenbach 'HoopAlicious' (early adopter + instructor)", "SpiralSpinner Rachel Lovingood (competitor + performer)", "Malia Malia (Cirque du Soleil hooper)", "Deanne Love (Australian teacher + author)", "Hoop Sparx (Australian pro troupe)", "Various IHOOP + IHOF World Champions"],
+  records: [
+    { title: "Ancient origin ~3,000 years Egypt + Greece", holder: "Ancient civilizations", value: "Hula hoop skill toy traced back ~3,000 years to ancient Egypt + Greece where reeds + vines were used as hoops for fitness + games — one of oldest continuous skill toys", year: -1000 },
+    { title: "1958 Wham-O commercial toy craze", holder: "Wham-O Corporation", value: "Wham-O introduced plastic hula hoop 1958 in USA; sold 25+ million in first 4 months — largest toy craze in American history at the time", year: 1958 },
+    { title: "Modern flow arts revival late 1990s Grateful Dead festivals", holder: "Modern hooping community", value: "Modern adult hooping flow arts revival began late 1990s at Grateful Dead + Phish + jam-band festivals; introduced larger heavier adult hoops (~90-100cm)", year: 1998 },
+    { title: "IHOOP founded 2013 formalized competition", holder: "IHOOP", value: "International Hoop Dance Championship (IHOOP) founded 2013 formalized modern hooping competition with judged routines across multiple divisions", year: 2013 },
+  ],
+  variants: ["solo-1-person-1-hoop", "solo-multi-hoop-2-to-6-hoops", "doubles-2-person-choreography", "team-3-plus-person-choreography", "fitness-hooping-cardio-workout", "led-hoop-night-performance", "fire-hooping-flame-performance", "contact-hooping-hoop-stays-on-body"],
+  relatedSports: ["yo-yo-world-yoyo-contest", "kendama-competitive", "juggling-competitive", "poi-spinning-flow-arts"],
+  skills: ["body isolation control (waist + hips + chest + neck)", "multi-hoop juggling coordination", "musicality + choreography", "off-body throws + catches"],
+  wikipediaTitle: "Hoop dance",
+  sources: [{ label: "Wikipedia — Hula hoop", url: "https://en.wikipedia.org/wiki/Hula_hoop", publisher: "Wikipedia" }, { label: "IHOOP International Hoop Dance Championship", url: "https://www.ihoopchamps.com", publisher: "IHOOP" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default hulaHoopCompetitive;

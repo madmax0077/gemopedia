@@ -28,8 +28,10 @@ import { dominion } from "./dominion";
 import { doppelkopf } from "./doppelkopf";
 import { douDizhu } from "./dou-dizhu";
 import { durak } from "./durak";
+import { durakRussian } from "./durak-russian";
 import { euchre } from "./euchre";
 import { euchreCanadian } from "./euchre-canadian";
+import { euchreMidwestAmerican } from "./euchre-midwest-american";
 import { fiveCardDraw } from "./five-card-draw";
 import { fiveHundred } from "./five-hundred";
 import { fiveHundredRummy } from "./five-hundred-rummy";
@@ -58,6 +60,7 @@ import { mao } from "./mao";
 import { marvelChampionsLcg } from "./marvel-champions-lcg";
 import { milleBornes } from "./mille-bornes";
 import { mus } from "./mus";
+import { musBasque } from "./mus-basque";
 import { napoleonCardGame } from "./napoleon-card-game";
 import { nertz } from "./nertz";
 import { oldMaid } from "./old-maid";
@@ -65,7 +68,9 @@ import { omahaPoker } from "./omaha-poker";
 import { onePieceTcg } from "./one-piece-tcg";
 import { palace } from "./palace";
 import { pinochle } from "./pinochle";
+import { pinochleGermanAmerican } from "./pinochle-german-american";
 import { piquet } from "./piquet";
+import { piquetFrenchClassic } from "./piquet-french-classic";
 import { pitch } from "./pitch";
 import { pokemonTcg } from "./pokemon-tcg";
 import { president } from "./president";
@@ -83,6 +88,7 @@ import { skullKing } from "./skull-king";
 import { solitaire } from "./solitaire";
 import { soloWhist } from "./solo-whist";
 import { spades } from "./spades";
+import { spadesUsPartnership } from "./spades-us-partnership";
 import { speedCardGame } from "./speed-card-game";
 import { spiderSolitaire } from "./spider-solitaire";
 import { spitCardGame } from "./spit-card-game";
@@ -140,8 +146,10 @@ export const CARD_GAMES: Sport[] = [
   doppelkopf,
   douDizhu,
   durak,
+  durakRussian,
   euchre,
   euchreCanadian,
+  euchreMidwestAmerican,
   fiveCardDraw,
   fiveHundred,
   fiveHundredRummy,
@@ -170,6 +178,7 @@ export const CARD_GAMES: Sport[] = [
   marvelChampionsLcg,
   milleBornes,
   mus,
+  musBasque,
   napoleonCardGame,
   nertz,
   oldMaid,
@@ -177,7 +186,9 @@ export const CARD_GAMES: Sport[] = [
   onePieceTcg,
   palace,
   pinochle,
+  pinochleGermanAmerican,
   piquet,
+  piquetFrenchClassic,
   pitch,
   pokemonTcg,
   president,
@@ -195,6 +206,7 @@ export const CARD_GAMES: Sport[] = [
   solitaire,
   soloWhist,
   spades,
+  spadesUsPartnership,
   speedCardGame,
   spiderSolitaire,
   spitCardGame,

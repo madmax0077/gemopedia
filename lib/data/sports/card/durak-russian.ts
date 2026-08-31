@@ -1,0 +1,56 @@
+import type { Sport } from "@/lib/types";
+
+export const durakRussian: Sport = {
+  id: "durak-russian",
+  slug: "durak-russian",
+  name: "Durak (Russian Card Game)",
+  officialName: "Durak — traditional Russian card game (no formal governing body)",
+  aliases: ["Дурак", "Fool", "Podkidnoy Durak", "Passing Durak"],
+  shortDescription:
+    "Most popular card game in Russia + former Soviet states — 2-6 players use 36-card Russian deck; attackers throw cards, defender must beat each with higher card of same suit OR trump; last player holding cards = 'Durak' (fool); massive cultural presence 200M+ Russian-speaking players; goal is not to WIN but to NOT LOSE.",
+  longDescription:
+    "Durak (Russian: Дурак, 'Fool') is by far the most popular card game across Russia + all former Soviet Union states (Ukraine, Belarus, Kazakhstan, Uzbekistan, Baltic states, etc). Uniquely designed around avoiding LAST place rather than winning — the last player still holding cards when all others have emptied their hands is dubbed 'Durak' (fool) and loses; there is no formal winner. Uses 36-card Russian deck (standard deck with 2-5 removed; retains 6, 7, 8, 9, 10, Jack, Queen, King, Ace in 4 suits). 2-6 players deal 6 cards each; last card of remaining deck flipped face-up + placed under deck to indicate 'trump suit' for the hand. Attack/defense structure: (1) 'Attacker' (player to dealer's left) plays 1 card face-up on table; (2) 'Defender' (next player clockwise) must beat it with either: (a) higher card of same suit; (b) any trump card (if attack was non-trump); or (c) higher trump if attack was trump. (3) After defender beats, attacker may 'throw in' another card matching RANK of any card already in play — defender must beat this too; other attackers may also throw in matching-rank cards. (4) If defender cannot or chooses not to beat all attacks — must pick up all cards to hand + turn passes; (5) If defender beats all attacks — all cards discarded + defender becomes next attacker. (6) After each round, players draw back up to 6 cards from deck. (7) Once deck exhausted, no more drawing — hands empty out. (8) Game continues until only ONE player holds cards = Durak (loser). Variants: (a) Podkidnoy Durak — attackers can 'throw in' matching-rank cards; (b) Perevodnoy Durak — defender can PASS attack to next player by adding matching-rank card instead of defending; (c) Perekidnoy — combination of both; (d) 5-6-7 card variants for larger groups. Estimated 200+ million players across Russian-speaking world; every Russian household knows the game. Popular online (Yandex Games, VK, Odnoklassniki) with millions of daily players. Notable cultural role: taught to children as first strategic card game; workplace lunch break staple; drinking-game variants common.",
+  category: "card-games",
+  subCategory: "Russian trick-taking card game with 'attack + defend' mechanic",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "19th-century", popularity: "regional",
+  countryOfOrigin: "RU",
+  regionOfOrigin: "Russia (spread through Russian Empire + Soviet Union 19th-20th century)",
+  estimatedOrigin: "Origins unclear, likely 19th century Russia; documented in Russian folk-game collections early 1900s; became ubiquitous during Soviet era 1917-1991",
+  players: { min: 2, max: 6, note: "2-6 players; 4 most common; 6 requires larger deck." },
+  equipment: [{ name: "Russian 36-card deck", description: "Standard 52-card deck with 2, 3, 4, 5 removed = 36 cards; ranks 6-A in 4 suits." }, { name: "Trump indicator (last card face-up)", description: "Last card of deck placed face-up under remaining deck; suit becomes trump for entire hand." }, { name: "Table + space for card play + discard pile", description: "Any flat surface; discarded cards placed to side face-down (once beaten)." }],
+  duration: { approximateMinutes: 20, structure: "Single hand 10-30 min depending on player count + variant; typically 5-10 hands per session." },
+  objective: "Avoid being the last player with cards in hand — that player becomes 'Durak' (fool) + loses the round.",
+  matchStructure: "Continuous attack-defend-throw-in cycle until deck exhausted + all but one player empty; loser designated Durak.",
+  basicRules: [
+    { title: "Trump suit = last card face-up", body: "Last card of deck placed face-up under remaining deck indicates trump suit for entire hand; trump cards beat all non-trump of any suit." },
+    { title: "Defender must beat attack with higher same-suit OR trump", body: "Defender beats attack card with higher card of same suit, OR any trump card (if attack was non-trump), OR higher trump if attack was trump." },
+    { title: "Attackers may 'throw in' matching-rank cards", body: "After successful defense, any attacker may throw in another card matching rank of any card in play; defender must beat this too." },
+    { title: "Cannot attack with more than defender has cards", body: "Total attacks in a round cannot exceed number of cards in defender's hand; caps escalation." },
+    { title: "Defender who fails picks up ALL cards in play", body: "If defender cannot or chooses not to beat all attacks, must add all cards in play to hand; turn passes." },
+    { title: "Deck exhausted → no more drawing → hands empty out", body: "Once deck empty, players don't draw back to 6; game continues until only one has cards." },
+    { title: "Last player with cards = 'Durak' loses", body: "When all but one player has emptied hand, remaining player is dubbed Durak (fool) and loses that round; game may continue multiple rounds." },
+  ],
+  scoring: { summary: "No positive scoring — game about AVOIDING loser status. In tournament play, tracks Durak count per player over multiple hands; fewest Duraks wins overall.", winCondition: "Empty your hand (or have empty hand when deck done) to avoid being Durak. In multi-hand play: fewest Durak-losses across N hands wins overall." },
+  positions: [{ name: "Attacker (Podkidyvayushchiy)", role: "Rotates: player to left of previous defender attacks next; leads with card.", count: 1 }, { name: "Defender (Otbiviyushchiy)", role: "Player being attacked; must beat all cards played against them or pick up.", count: 1 }, { name: "Other players (throw-in attackers)", role: "Non-defender players may throw in matching-rank cards to increase pressure on defender.", count: 4 }],
+  officiating: { officials: ["Casual: self-officiated", "Online: Yandex/VK/Odnoklassniki automated arbitration"], summary: "Casual play self-officiated; online play uses automated platforms; no international federation." },
+  governingBodies: [{ name: "No formal international governing body", founded: 1900, headquarters: "Russia" }],
+  majorCompetitions: [{ name: "Russian Durak Championships (informal, various)", frequency: "annual", founded: 2000, region: "Russia" }, { name: "Yandex Games Durak Tournaments (online)", frequency: "ongoing", founded: 2015, region: "worldwide online" }, { name: "VK Durak Tournaments (online)", frequency: "ongoing", founded: 2012, region: "Russia + former Soviet states online" }],
+  countriesPlayed: ["RUS (dominant national card game)", "UKR", "BLR", "KAZ", "UZB", "BGR", "LTU", "LVA", "EST", "MDA", "GEO", "ARM", "AZE", "Russian-speaking diaspora worldwide"],
+  famousAthletes: ["N/A — no formal professional scene; game plays for cultural love not prize money"],
+  records: [
+    { title: "Most-played card game across former Soviet Union", holder: "Russian + Soviet cultural tradition", value: "Durak recognized as most-played card game across Russia + all former Soviet Union states — estimated 200+ million active players", year: 2024 },
+    { title: "Yandex Games Durak: millions daily players", holder: "Yandex Games platform", value: "Online Durak on Yandex Games platform + VK + Odnoklassniki serves millions of daily active players — largest online card game in Russian-speaking internet", year: 2024 },
+    { title: "Uniquely designed to avoid LAST not win FIRST", holder: "Traditional Russian card game design", value: "Durak uniquely designed around avoiding LAST place rather than winning FIRST — cultural focus on not being the 'fool'", year: 1900 },
+  ],
+  variants: ["podkidnoy-durak-throw-in-standard", "perevodnoy-durak-pass-defense-variant", "perekidnoy-durak-combined-throw-and-pass", "5-card-durak-smaller-hands", "6-card-durak-larger-hands", "prostoy-durak-simple-2-player"],
+  relatedSports: ["scopa-italian", "briscola-italian-card", "spades-american-partnership", "hearts-avoidance-card"],
+  skills: ["card counting (36-card deck memory)", "trump preservation strategy", "throw-in pressure tactics", "endgame handoff timing"],
+  wikipediaTitle: "Durak",
+  sources: [{ label: "Wikipedia — Durak", url: "https://en.wikipedia.org/wiki/Durak", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default durakRussian;

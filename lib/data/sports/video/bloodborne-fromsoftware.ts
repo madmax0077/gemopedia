@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const bloodborneFromsoftware: Sport = {
+  id: "bloodborne-fromsoftware",
+  slug: "bloodborne-fromsoftware",
+  name: "Bloodborne (PlayStation Soulslike)",
+  officialName: "Bloodborne — FromSoftware / Sony Interactive (2015)",
+  aliases: ["Bloodborne", "BB"],
+  shortDescription:
+    "Landmark PS4-exclusive Soulslike action RPG by FromSoftware + Hidetaka Miyazaki (2015) — Gothic Victorian horror setting Yharnam; introduces aggressive trick weapons + rally mechanic promoting offensive play; won 50+ Game of the Year awards 2015; considered peak Miyazaki Soulslike work; ~8M copies sold; massive speedrun + PVP scene.",
+  longDescription:
+    "Bloodborne is a landmark PlayStation 4-exclusive Soulslike action role-playing game by FromSoftware directed by Hidetaka Miyazaki + published by Sony Interactive Entertainment; released March 2015. Considered by many the peak of Miyazaki's Soulslike catalog + one of most influential games of the 2010s. Won 50+ Game of the Year awards 2015 including Golden Joystick 2015 Best PS4 Game. Sold ~8 million copies (impressive for platform exclusive). Setting: Gothic Victorian horror city of Yharnam — cursed by 'beast plague' + Lovecraftian cosmic horrors; player is a 'Hunter' newly-arrived to slay beasts + uncover mysteries + face 'Great Ones' (cosmic entities). Distinguished from other FromSoftware Souls games (Dark Souls 1-3, Sekiro, Elden Ring) by: (a) Setting — Gothic Victorian + Lovecraftian horror (vs medieval fantasy); (b) Combat philosophy — AGGRESSIVE offense encouraged over defensive shield-play; no shields (only tiny 'Wooden Shield' as joke item); (c) Trick weapons — every weapon has 2 forms (compact + extended) toggle mid-combat via L1 button = fluid moveset variety; (d) Rally mechanic — after taking damage, brief window to hit enemy + regain lost HP (encourages counterattack); (e) Firearms — small guns parry attacks + open enemies to critical 'visceral attack'; (f) No poise/hyper-armor system — dodge-heavy movement; (g) Chalice Dungeons — procedurally-generated endgame areas. Key locations: (1) Central Yharnam; (2) Old Yharnam; (3) Cathedral Ward; (4) Forsaken Cainhurst Castle; (5) Nightmare Frontier; (6) Fishing Hamlet (Old Hunters DLC); (7) Research Hall (DLC). Notable bosses: Father Gascoigne (early game gateway), Bloodstarved Beast, Rom the Vacuous Spider, Ludwig the Accursed (DLC — considered greatest boss fight in gaming), Lady Maria, Orphan of Kos (DLC — extremely hard). One expansion: The Old Hunters (2015) — 15+ hour content adding new area + weapons + 5 bosses; considered essential companion. Signature FromSoftware design: (a) Extreme difficulty demanding pattern learning + patience; (b) Cryptic environmental storytelling; (c) Deep item + dialogue lore; (d) Interconnected map with meaningful shortcuts; (e) Multiple endings based on player choices. Development: Miyazaki (Dark Souls creator) + Sony Japan Studio collaboration; original working title 'Project Beast'. Massive speedrun scene: Any% world record ~19-22 min (2024); All Bosses ~2:30 hours; hardcore challenge runs (NG+7, No-Hit, Level 4) major community focus. Cultural impact: (a) Established Soulslike genre alongside Dark Souls; (b) Passionate PS4-exclusive fanbase advocating PC port (never happened, source of long-standing community frustration); (c) Inspired Hollow Knight, Nioh, Code Vein, Lies of P; (d) 'Kart' fanmade demake April Fools 2022 gained massive attention. Notable: PSX Downpatched fanmade demake released 2022 (60fps + PC-playable via emulation).",
+  category: "video-games",
+  subCategory: "action RPG Soulslike (Gothic Victorian + Lovecraftian horror)",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "major",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (FromSoftware — Hidetaka Miyazaki director; collaboration with Sony Japan Studio)",
+  estimatedOrigin: "Developed 2012-2015 by FromSoftware + Sony Japan Studio; released March 2015 (PS4 exclusive); The Old Hunters DLC November 2015",
+  players: { min: 1, max: 3, note: "Single-player primary; up to 3-player asynchronous co-op via signaling; PVP asynchronous." },
+  equipment: [{ name: "PlayStation 4 or PS5 (backward compatible)", description: "PS4 exclusive; playable on PS5 via backward compatibility; NO PC PORT (long-standing community request); no other platform releases." }, { name: "DualShock 4 controller", description: "Sony DualShock 4 controller standard; PS5 DualSense also works via backward compatibility." }],
+  duration: { approximateMinutes: 60, structure: "Main story ~30-50 hours; with DLC 50-80 hours; completionist 100+ hours; speedrun WR ~19-22 min Any%." },
+  objective: "Investigate cursed Yharnam city + defeat beasts + Great Ones as a 'Hunter'; achieve one of multiple endings.",
+  matchStructure: "Single-player Souls-style progression; interconnected map with save points ('Lanterns'); die + retry loop; boss encounters + optional side content.",
+  basicRules: [
+    { title: "Trick weapons — 2 forms toggle mid-combat", body: "Every weapon has 2 forms (compact + extended) toggle mid-combat via L1 button = fluid moveset variety mid-fight; signature Bloodborne mechanic." },
+    { title: "Rally system — regain HP by attacking after taking damage", body: "After taking damage, brief window to hit enemy + regain lost HP; encourages aggressive counterattack over defensive retreat." },
+    { title: "No shields — offensive dodge-focused combat", body: "No functional shields (only tiny 'Wooden Shield' as joke item); combat is dodge-heavy + offensive-focused vs Dark Souls shield-play." },
+    { title: "Firearms parry into 'visceral attack' criticals", body: "Small firearms parry enemy attacks with correct timing = enemy stagger opening for critical 'visceral attack' massive damage; core combat rhythm." },
+    { title: "Chalice Dungeons = procedurally-generated endgame", body: "Chalice Dungeons unlockable endgame content: procedurally-generated dungeons with themed bosses + rare loot; extends beyond main story significantly." },
+  ],
+  scoring: { summary: "No formal scoring; completion tracked by: bosses defeated, story progress, weapons + items collected, achievements, endings unlocked, speedrun personal bests.", winCondition: "Complete main story + defeat final boss for one of 3 possible endings; DLC extends optional content significantly." },
+  positions: [{ name: "The Hunter (player character)", role: "Newly-arrived Yharnam hunter; customizable protagonist.", count: 1 }],
+  officiating: { officials: ["FromSoftware (developer)", "Speedrun.com moderators (competitive leaderboards)"], summary: "Community speedrun scene at Speedrun.com; extensive challenge run community." },
+  governingBodies: [{ name: "FromSoftware (developer)", founded: 1986, headquarters: "Tokyo, Japan" }, { name: "Sony Interactive Entertainment (publisher)", founded: 1993, headquarters: "Tokyo, Japan + California, USA" }],
+  majorCompetitions: [{ name: "Games Done Quick (GDQ) Bloodborne speedrun blocks", frequency: "biannual", founded: 2015, region: "worldwide streamed marathons" }, { name: "Speedrun.com Bloodborne leaderboards", frequency: "ongoing", founded: 2015, region: "worldwide online" }, { name: "Golden Joystick 2015 — Best PlayStation Game", frequency: "one-time award", founded: 2015, region: "UK" }],
+  countriesPlayed: ["JPN (developer)", "USA (largest market)", "GBR", "DEU", "FRA", "CHN", "KOR", "worldwide via PSN + PS4/PS5"],
+  famousAthletes: ["Hidetaka Miyazaki (director/game designer)", "Ryōgo Yamamura (co-director)", "Nobuyoshi Yamada + Ryō Kawaguchi (composers)", "InsaneVictor + Distortion2 (top speedrunners)", "Various challenge-run community pioneers (Level 4 no-hit runs)"],
+  records: [
+    { title: "50+ Game of the Year awards 2015", holder: "FromSoftware", value: "Bloodborne won 50+ Game of the Year awards 2015 including Golden Joystick 2015 Best PS4 Game; recognized as peak Miyazaki Soulslike work", year: 2015 },
+    { title: "~8M copies sold (PS4 exclusive)", holder: "Sony Interactive + FromSoftware", value: "Bloodborne sold ~8 million copies — impressive for platform exclusive limited to PS4 (later PS5 via backward compatibility)", year: 2024 },
+    { title: "NEVER released on PC — long-standing community request", holder: "Community frustration", value: "Bloodborne has NEVER been released on PC despite 10+ years of community requests; source of long-standing frustration; still PlayStation exclusive 2025", year: 2024 },
+    { title: "Speedrun Any% WR ~19-22 min (2024)", holder: "Distortion2 + community speedrunners", value: "Bloodborne Any% speedrun world record ~19-22 minutes as of 2024 (varies by category); All Bosses ~2:30 hours; massive challenge run + speedrun community", year: 2024 },
+  ],
+  variants: ["main-game-yharnam-story", "the-old-hunters-dlc-fishing-hamlet-15-hours", "chalice-dungeons-procedural-endgame", "bloodborne-psx-downpatched-fanmade-demake-2022", "bloodborne-kart-fanmade-april-fools-2022"],
+  relatedSports: ["dark-souls-3", "elden-ring", "sekiro-shadows-die-twice", "demons-souls-fromsoftware", "lies-of-p-korean-soulslike"],
+  skills: ["trick weapon form-switching mid-combat", "dodge timing + rally counterattack", "firearm parry + visceral attack timing", "boss pattern recognition + memorization"],
+  wikipediaTitle: "Bloodborne",
+  sources: [{ label: "Wikipedia — Bloodborne", url: "https://en.wikipedia.org/wiki/Bloodborne", publisher: "Wikipedia" }, { label: "Speedrun.com Bloodborne", url: "https://www.speedrun.com/bloodborne", publisher: "Speedrun.com Community" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default bloodborneFromsoftware;

@@ -1,0 +1,56 @@
+import type { Sport } from "@/lib/types";
+
+export const onitamaAbstractNinja: Sport = {
+  id: "onitama-abstract-ninja",
+  slug: "onitama-abstract-ninja",
+  name: "Onitama (2-Player Abstract Strategy Ninja Board Game)",
+  officialName: "Onitama — Arcane Wonders (2014) — designed by Shimpei Sato",
+  aliases: ["Onitama Board Game"],
+  shortDescription:
+    "2-player abstract strategy board game (2014, Shimpei Sato/Arcane Wonders) — 5×5 board, 5 pawns per side, movement determined by 5 shared move-cards rotating between players each turn (like miniature Chess with rotating move set); capture opposing Master or move own Master to opposite Temple Arch to win; celebrated for elegant rules + deep strategic depth in ~15-30 min games.",
+  longDescription:
+    "Onitama is a 2-player abstract strategy board game designed by Shimpei Sato and published by Arcane Wonders in 2014. Depicts martial arts masters + students battling for control of dojos on a 5×5 board. Distinguished from Chess by unique 'rotating move cards' mechanic — instead of fixed piece movement, each player uses 2 move cards (drawn from a rotating pool of 5 shared cards), and after each move, the used card cycles to opponent for their next turn. Result: constantly evolving movement patterns + deep strategic depth in accessible ~15-30 minute games. Origins: (1) Designed by Japanese designer Shimpei Sato inspired by classical Japanese martial arts + Go/Shogi abstract heritage; (2) Published Arcane Wonders 2014 English edition; (3) Nominated Spiel des Jahres 2015 + won multiple abstract strategy awards; (4) Multiple expansions: Sensei's Path (2017), Way of the Wind (2020); (5) Successful digital adaptation (Steam + mobile). Standard components: (a) 5×5 board with 5 Temple Arch squares (one at each player's back row, colored red/blue); (b) 10 wooden pawns — 5 per player (1 Master + 4 Students) in red vs blue; (c) 16 unique Move Cards — each card shows Chess-like movement pattern on 5×5 grid + which player color goes first when card is next used; (d) Card holder for board display. Game setup: (1) Each player places 5 pawns on their back row — Master in center Temple Arch + 4 Students flanking; (2) 5 Move Cards dealt — 2 to each player + 1 face-up center as 'next turn' card; (3) Player with matching stamp color on center card goes first. Game flow: (1) Turn — player picks 1 of their 2 cards, moves 1 pawn according to that card's movement pattern, exchanges the used card with the current center 'next turn' card; (2) The center card now becomes opponent's for their next turn; (3) Movement rules: cannot capture own pawns; can capture opponent's pawns landing on their square; must move exactly according to card pattern; (4) Win conditions: (a) 'Way of the Stone' — capture opponent's Master; (b) 'Way of the Stream' — move your Master onto opposite side's Temple Arch (opponent's starting Master square). Notable move card names: Tiger, Dragon, Frog, Rabbit, Crab, Elephant, Goose, Rooster, Monkey, Mantis, Horse, Ox, Crane, Boar, Eel, Cobra (traditional Onitama zodiac). Notable expansions: (a) Sensei's Path (2017) — 16 new move cards allowing shuffling of card pool; (b) Way of the Wind (2020) — 16 new cards + wind spirit rules with 6th neutral piece. Onitama is celebrated for elegant rule set + deep strategic depth — often compared to Chess for tactical depth compressed into 15-30 min games; enthusiastic tournament + club play; competitive tournament circuit (World Onitama Championship 2018+).",
+  category: "board-games",
+  subCategory: "2-player abstract strategy with rotating move cards",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "niche",
+  countryOfOrigin: "JP",
+  regionOfOrigin: "Japan (designer Shimpei Sato) — published Arcane Wonders (USA) 2014",
+  estimatedOrigin: "Designed by Shimpei Sato Japan; published Arcane Wonders (USA) 2014; expansions Sensei's Path 2017 + Way of the Wind 2020",
+  players: { min: 2, max: 2, note: "Strictly 2-player abstract strategy; no team play (unlike Bughouse Chess)." },
+  equipment: [{ name: "5×5 board with Temple Arches", description: "5×5 grid board with 5 Temple Arch squares on each player's back row (red vs blue color coding)." }, { name: "10 wooden pawns (5 per player)", description: "10 total — 5 per player: 1 Master + 4 Students; red vs blue coloring." }, { name: "16 Move Cards + card holder", description: "16 unique cards each showing a Chess-like movement pattern on a 5×5 grid + player color stamp indicating who goes first when card is next used." }],
+  duration: { approximateMinutes: 20, structure: "Typical game 15-30 min; tournament rounds 20-30 min per game." },
+  objective: "Win by 'Way of the Stone' (capture opponent Master) OR 'Way of the Stream' (move own Master to opposite Temple Arch).",
+  matchStructure: "Single-game format or best-of-3 tournament rounds; ranked play via digital Onitama app; competitive tournaments include World Onitama Championship since 2018.",
+  basicRules: [
+    { title: "Rotating move cards — each player holds 2, exchanges used card with center 'next turn' card", body: "Each player holds 2 of 5 shared move cards; after playing card, card exchanges with center 'next turn' card, which becomes opponent's for their next turn; creates constantly evolving movement patterns." },
+    { title: "Move exactly according to card pattern — no partial moves", body: "Each move card shows specific 5×5 grid movement pattern (like Chess piece movements); player must move exactly according to that pattern; cannot partially execute or skip." },
+    { title: "Capture opponent pawn by landing on their square", body: "Landing on opponent's pawn square captures it; cannot capture own pawns; captured pawns removed from board." },
+    { title: "Win by 'Way of the Stone' (capture Master) OR 'Way of the Stream' (Master reaches opposite Temple Arch)", body: "Two win conditions: (a) capture opponent's Master pawn; (b) move own Master pawn onto opposite side's Temple Arch (opponent's starting Master square)." },
+    { title: "Must always make a move — no passing", body: "Player cannot pass turn; must always play a card + move a pawn (or exchange card with center if no legal move exists — losing opportunity)." },
+  ],
+  scoring: { summary: "First to satisfy either win condition wins the game; no scoring/point system — direct victory.", winCondition: "First to capture opponent's Master OR move own Master to opponent's Temple Arch wins." },
+  positions: [{ name: "Player (Red)", role: "Sole player controlling red pieces (1 Master + 4 Students).", count: 1 }, { name: "Player (Blue)", role: "Sole player controlling blue pieces (1 Master + 4 Students).", count: 1 }],
+  officiating: { officials: ["Tournament Arbiter (competitive events)"], summary: "Casual play needs no officials; competitive tournaments use single arbiter for rule adjudication." },
+  governingBodies: [{ name: "Arcane Wonders (publisher)", founded: 2011, headquarters: "USA" }, { name: "Onitama community — Board Game Geek + Discord communities", founded: 2014, headquarters: "worldwide" }],
+  majorCompetitions: [{ name: "World Onitama Championship", frequency: "annual", founded: 2018, region: "USA (Arcane Wonders sponsored)" }, { name: "Onitama Digital Tournaments (Steam)", frequency: "seasonal digital ladder", founded: 2018, region: "worldwide online" }, { name: "Board Game Convention tournaments (Gen Con + Origins Game Fair)", frequency: "annual", founded: 2014, region: "USA rotating conventions" }],
+  countriesPlayed: ["USA (published home)", "JPN (designer origin)", "DEU (strong European board game market)", "FRA", "GBR", "NLD", "CAN", "AUS", "worldwide 30+ countries via digital play"],
+  famousAthletes: ["World Onitama Championship winners annual since 2018", "Digital Onitama top-ranked players via Steam ladder"],
+  records: [
+    { title: "Designed by Shimpei Sato Japan (2014)", holder: "Shimpei Sato + Arcane Wonders", value: "Onitama designed by Japanese designer Shimpei Sato + published Arcane Wonders (USA) 2014 — inspired by classical Japanese martial arts + Go/Shogi abstract heritage", year: 2014 },
+    { title: "Nominated Spiel des Jahres 2015", holder: "Spiel des Jahres jury", value: "Onitama nominated Spiel des Jahres 2015 (German 'Game of the Year' — highest honor in board game industry) — celebrated for elegant rule set + deep strategic depth", year: 2015 },
+    { title: "Multiple expansions Sensei's Path (2017) + Way of the Wind (2020)", holder: "Arcane Wonders", value: "Two expansion packs Sensei's Path (2017) + Way of the Wind (2020) each add 16 new move cards + advanced rules including 6th neutral wind spirit piece", year: 2020 },
+    { title: "World Onitama Championship since 2018", holder: "Arcane Wonders + Onitama community", value: "Annual World Onitama Championship since 2018 — competitive tournament circuit + digital ladder rankings via Steam Onitama app", year: 2018 },
+    { title: "5×5 board + rotating move cards — 'Chess in 15 min' elegant abstract", holder: "Onitama design philosophy", value: "Onitama's 5×5 board + rotating 5-card move mechanic celebrated as 'Chess in 15 min' — deep strategic depth compressed into accessible 15-30 min play sessions", year: 2020 },
+  ],
+  variants: ["base-game-16-move-cards-2014", "sensei-path-expansion-2017-16-new-cards", "way-of-the-wind-expansion-2020-6th-piece-wind-spirit", "digital-onitama-steam-mobile-2018-ranked-ladder", "3-player-house-rules-variant-community"],
+  relatedSports: ["chess", "shogi", "arimaa-anti-chess", "hive-hex-abstract", "quoridor-abstract", "hnefatafl-viking", "gomoku-standard"],
+  skills: ["card selection strategy (which 2 to play across turns)", "movement pattern memorization + tactical planning", "trade-off analysis (giving good card to opponent)", "positional Chess-like piece placement"],
+  wikipediaTitle: "Onitama",
+  sources: [{ label: "Wikipedia — Onitama", url: "https://en.wikipedia.org/wiki/Onitama", publisher: "Wikipedia" }, { label: "Onitama — Arcane Wonders", url: "https://arcanewonders.com/games/onitama/", publisher: "Arcane Wonders" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default onitamaAbstractNinja;

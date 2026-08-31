@@ -6,6 +6,7 @@ import { bodybuilding } from "./bodybuilding";
 import { calisthenics } from "./calisthenics";
 import { crossfit } from "./crossfit";
 import { farmersWalkStrongman } from "./farmers-walk-strongman";
+import { highlandGamesScottish } from "./highland-games-scottish";
 import { hyrox } from "./hyrox";
 import { indianClubs } from "./indian-clubs";
 import { kettlebellSport } from "./kettlebell-sport";
@@ -27,6 +28,7 @@ export const STRENGTH_SPORTS: Sport[] = [
   calisthenics,
   crossfit,
   farmersWalkStrongman,
+  highlandGamesScottish,
   hyrox,
   indianClubs,
   kettlebellSport,

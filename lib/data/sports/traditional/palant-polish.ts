@@ -1,0 +1,56 @@
+import type { Sport } from "@/lib/types";
+
+export const palantPolish: Sport = {
+  id: "palant-polish",
+  slug: "palant-polish",
+  name: "Palant (Polish National Bat-and-Ball Sport)",
+  officialName: "Palant — Polish traditional bat-and-ball sport (Polski Związek Palanta)",
+  aliases: ["Pilka Palantowa", "Polish Palant", "Palant Polski"],
+  shortDescription:
+    "Polish bat-and-ball sport of medieval origin — batter hits ball with palant (wooden bat) from batting square + tries to score by running between bases while fielders throw ball to hit runner ('burnt'); recognized Polish national game; part of European Baseball-Cricket family; regional revival 2000s+ via Polski Związek Palanta.",
+  longDescription:
+    "Palant is Poland's traditional bat-and-ball sport, part of the European family of running bat-and-ball games that also includes English Cricket, Rounders (Ireland), Lapta (Russia), Oina (Romania), Brännboll (Sweden), Longue Paume (France), and Pesäpallo (Finland). Officially recognized as Poland's national game with tradition dating back to medieval times. Origins: (1) Traceable to at least 15th-16th century Poland played by peasants + youth in villages; (2) Name derived from Latin 'palantis' or German 'Ballspiel'; some historians trace to older Slavic games; (3) Documented in 17th century Polish literature + noble children's games; (4) 18th-19th century widespread village sport; (5) Standardized rules formalized late 19th century Poland; (6) Post-WWII sport diminished under Soviet-era Polish sports program favoring football + volleyball; (7) 2000s+ revival — Polski Związek Palanta (Polish Palant Federation) founded 2000s to preserve + promote sport; (8) Now played competitively regional leagues + tournaments primarily in southeastern Poland (Podkarpackie region). Standard equipment: (a) Palant bat — wooden bat 60-90cm long × 4-6cm diameter round-section; hardwood traditional; (b) Ball — soft rubber ball ~7cm diameter; softer than baseball to reduce injury from being 'burnt' (hit by thrown ball); (c) No gloves/pads (unlike baseball). Standard field: Rectangle ~40m × 20m; batter's square at one end; runner's line at opposite end (~30m distance); no formal bases like baseball — just batter's square + runner's line. Standard team size: 6-10 players per side (regional variation). Game format: (1) Two teams — Batting team + Fielding team (like Cricket/Baseball); (2) Batter (from batting square) — 3 attempts to hit thrown ball with palant; must hit ball forward into playing area; (3) After successful hit — batter must run to runner's line + back to batting square to score point; (4) Fielders — try to catch ball on fly (batter out) or throw ball to hit runner ('burn' runner) while running; (5) Runner hit by thrown ball = 'burnt' = out; safe only in batter's square or runner's line; (6) Innings — teams alternate batting/fielding when all batters out or after set overs; (7) Scoring — runs scored by completing full round-trip. Notable variants: (a) Traditional village Palant — informal rules; (b) Modern Federation Palant — standardized rules by Polski Związek Palanta since 2000s; (c) Youth Palant — smaller field + softer ball. Palant is culturally significant as symbol of Polish traditional games heritage — actively promoted in schools + cultural festivals as pre-Christian era Slavic sporting tradition alongside similar games in Baltic + Slavic countries.",
+  category: "traditional-cultural-sports",
+  subCategory: "bat-and-ball folk game",
+  sportType: "team", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "summer", era: "medieval", popularity: "regional",
+  countryOfOrigin: "PL",
+  regionOfOrigin: "Poland (national game — traditional throughout, modern revival in Podkarpackie region southeast Poland)",
+  estimatedOrigin: "Medieval Poland (15th-16th century) — documented 17th century Polish sources; formalized rules late 19th century; modern revival 2000s+ via Polski Związek Palanta",
+  players: { min: 6, max: 10, note: "Regional variation — typically 8 vs 8; two teams alternate batting/fielding." },
+  equipment: [{ name: "Palant bat (60-90cm hardwood)", description: "Wooden bat 60-90cm long × 4-6cm diameter round-section; hardwood traditional (oak/ash)." }, { name: "Ball (~7cm soft rubber)", description: "Soft rubber ball ~7cm diameter; softer than baseball to reduce injury from being 'burnt' (hit by thrown ball while running)." }, { name: "Rectangular field (40m × 20m)", description: "Rectangular field ~40m × 20m; batter's square at one end; runner's line at opposite end (~30m distance)." }],
+  duration: { approximateMinutes: 60, structure: "Multi-innings format; teams alternate batting/fielding when all batters out or after set overs; 60-90 min typical game." },
+  objective: "Batter hits thrown ball with palant, then runs to runner's line + back to batter's square while avoiding being 'burnt' by fielders' thrown ball.",
+  matchStructure: "Innings format like Cricket/Baseball: batting team vs fielding team; teams alternate innings; combined runs across innings determines winner.",
+  basicRules: [
+    { title: "Batter has 3 attempts to hit thrown ball", body: "Batter (from batting square) has 3 attempts to hit thrown ball with palant; must hit ball forward into playing area; failure to hit = out." },
+    { title: "'Burnt' runner rule — hit by thrown ball while running = out", body: "If fielder hits running batter with thrown ball anywhere on body (not head), runner is 'burnt' = out; safe only in batter's square or runner's line; encourages accurate throwing." },
+    { title: "Score run by completing round-trip to runner's line + back", body: "Batter scores 1 run by successfully running from batter's square → runner's line → back to batter's square without being burnt or caught out." },
+    { title: "Catch on the fly = batter out (like Cricket/Baseball)", body: "Fielder catching hit ball on the fly (before ball bounces) = batter out; encourages skillful fielding." },
+    { title: "Innings alternate when all batters out", body: "Team's innings ends when all batters are out (burnt, caught, or missed 3 hits); teams alternate batting + fielding; combined runs across innings determines winner." },
+  ],
+  scoring: { summary: "1 run per completed round-trip (batter's square → runner's line → back); combined runs across innings determines winner.", winCondition: "Highest combined runs across all innings wins." },
+  positions: [{ name: "Batter (Pałkarz)", role: "Attacks pitched ball with palant + runs to runner's line + back to score.", count: 1 }, { name: "Fielders (Polowi)", role: "Field hit ball + throw at runners to 'burn' them.", count: 6 }, { name: "Pitcher (Podający)", role: "Throws ball to batter — underhand delivery.", count: 1 }],
+  officiating: { officials: ["Referee (Sędzia)", "Scorer"], summary: "Simple 1-2 official system; Polski Związek Palanta certifies referees for tournaments." },
+  governingBodies: [{ name: "Polski Związek Palanta (Polish Palant Federation)", founded: 2005, headquarters: "Poland" }, { name: "European Traditional Sports and Games Association (TAFISA)", founded: 1990, headquarters: "Frankfurt, Germany" }],
+  majorCompetitions: [{ name: "Mistrzostwa Polski w Palancie (Polish Palant Championship)", frequency: "annual", founded: 2007, region: "Poland (rotating region)" }, { name: "Turniej Palanta o Puchar Wójta (Village Palant Cups)", frequency: "seasonal regional cups", founded: 2005, region: "Podkarpackie region + traditional Palant strongholds Poland" }, { name: "European Traditional Sports Festivals (TAFISA)", frequency: "biennial", founded: 1996, region: "Europe rotating" }],
+  countriesPlayed: ["PL (dominant national tradition)", "small Polish diaspora communities USA + CAN + GBR + DEU + AUS + FRA"],
+  famousAthletes: ["Regional folk sport — no professional stars; competitive players from Podkarpackie + Silesia regions"],
+  records: [
+    { title: "Origin traceable to medieval Poland (15th-16th century)", holder: "Polish traditional sport heritage", value: "Palant traceable to at least 15th-16th century Poland; documented 17th century Polish literary sources; 500+ year continuous heritage as Polish folk bat-and-ball sport", year: 1500 },
+    { title: "Officially recognized as Polish national game", holder: "Polish Ministry of Culture + Polski Związek Palanta", value: "Palant officially recognized as Poland's national traditional game — protected + promoted as intangible cultural heritage", year: 2005 },
+    { title: "Modern revival 2000s+ via Polski Związek Palanta", holder: "Polski Związek Palanta (Polish Palant Federation)", value: "Modern revival 2000s+ via Polski Związek Palanta (Polish Palant Federation); annual national championship since 2007 + regional cup circuit", year: 2007 },
+    { title: "Part of European bat-and-ball family (Cricket/Rounders/Lapta/Oina/Brännboll/Pesäpallo)", holder: "European traditional sports comparative research", value: "Palant is part of pan-European bat-and-ball sport family — sibling sports include English Cricket, Irish Rounders, Russian Lapta, Romanian Oina, Swedish Brännboll, Finnish Pesäpallo — all sharing common medieval Northern European bat-and-ball ancestry", year: 2020 },
+    { title: "Podkarpackie region southeast Poland — modern stronghold", holder: "Regional Polish sports geography", value: "Podkarpackie region southeast Poland is modern stronghold of competitive Palant — annual regional tournaments + village cups", year: 2024 },
+  ],
+  variants: ["traditional-village-palant-informal", "modern-federation-palant-standardized-2000s", "youth-palant-smaller-field-softer-ball", "school-physical-education-palant"],
+  relatedSports: ["cricket", "rounders-irish", "lapta-russian-folk-bat-and-ball", "oina-romanian-national-sport", "brannboll-swedish-summer-bat-and-ball", "pesapallo-finnish-baseball", "baseball", "kickball-playground"],
+  skills: ["batting technique (hit ball with wooden palant)", "sprinting between batter's square + runner's line", "avoiding thrown ball while running ('not-burnt' skill)", "accurate throwing to hit running batter"],
+  wikipediaTitle: "Palant",
+  sources: [{ label: "Wikipedia — Palant", url: "https://en.wikipedia.org/wiki/Palant", publisher: "Wikipedia" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default palantPolish;

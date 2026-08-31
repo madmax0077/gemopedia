@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const curlingMixedDoubles: Sport = {
+  id: "curling-mixed-doubles",
+  slug: "curling-mixed-doubles",
+  name: "Curling — Mixed Doubles",
+  officialName: "World Curling Federation (WCF) — Mixed Doubles",
+  aliases: ["Mixed Doubles Curling", "MD Curling"],
+  shortDescription:
+    "Modern 2-player mixed-gender curling variant (1 man + 1 woman per team) introduced 2008 by WCF; faster 8-end format vs 10-end traditional; each team throws 5 stones per end (vs 8 in standard); Olympic debut PyeongChang 2018; Canada + Switzerland + Norway dominant; growing rapidly as accessible format.",
+  longDescription:
+    "Curling Mixed Doubles is the modern 2-player mixed-gender variant of curling formalized 2008 by the World Curling Federation (WCF) to expand the sport's accessibility + introduce faster gameplay for TV. Teams consist of exactly 1 man + 1 woman; each team throws 5 stones per end (vs 8 in traditional 4-person team format); games play 8 ends (vs traditional 10 ends) — reducing typical game length from ~2.5 hours to ~1.5-2 hours. Introduced at 2008 World Mixed Doubles Curling Championship; Olympic debut PyeongChang 2018 (Canada's Kaitlyn Lawes + John Morris won inaugural gold medal); has been Olympic medal sport at every Winter Olympics since. Distinctive rules unique to mixed doubles: (1) Pre-placed stones — each end begins with two stones pre-placed on the ice (one for each team) — one behind the button + one guard in front of house; team with 'hammer' (last-stone advantage) chooses which starting configuration; (2) 'Power play' option — once per game, team with hammer may reposition pre-placed stones to more offensive positions (one on side of house, other behind); (3) One player throws first + fifth stones, other throws stones 2-3-4; may swap throwing responsibilities each end; (4) Sweeping — either team member may sweep any own stone; only skip (last-throwing player) may sweep opponent stones after they cross tee line. Signature strategic depth: without hammer, mixed doubles heavily favors 'blank end' strategy to preserve hammer for later ends; with hammer, teams typically play aggressively to score multiple points. Strongholds: Canada (dominant historic + present — 2018 Olympic gold Kaitlyn Lawes + John Morris + numerous World titles), Switzerland (Jenny Perret + Martin Rios silver 2018 Olympics), Norway (Kristin Skaslien + Magnus Nedregotten bronze 2018), Sweden, Scotland, Russia, Estonia, USA. Notable athletes: Kaitlyn Lawes + John Morris (Canada — Olympic gold 2018), Jenny Perret + Martin Rios (Switzerland — Olympic silver 2018), Almida de Val (Sweden — World Champion), Wang Rui + Xu Xiaoming (China).",
+  category: "winter-sports",
+  subCategory: "modern 2-person mixed-gender curling variant",
+  sportType: "team", indoorOutdoor: "indoor",
+  isOlympic: true, isParalympic: false, isProfessional: true,
+  season: "winter", era: "21st-century", popularity: "major",
+  countryOfOrigin: "CA",
+  regionOfOrigin: "Canada + Switzerland (WCF formalized 2008; Canadian + European curling nations designed together)",
+  estimatedOrigin: "Formalized 2008 by World Curling Federation; first World Mixed Doubles Curling Championship 2008; Olympic debut PyeongChang 2018",
+  players: { min: 2, max: 2, note: "Exactly 2 players — 1 man + 1 woman per team." },
+  equipment: [{ name: "Curling stones (16 total — 8 per team)", description: "Standard curling stones ~19kg each, granite from Ailsa Craig Scotland or Trefor Wales; 8 stones per team (4 per player)." }, { name: "Curling shoes + broom", description: "Sliding shoe + gripper shoe; brooms with fabric heads for sweeping ice pathways." }, { name: "Curling sheet ice (~46m × 5m)", description: "Standard curling sheet with pebbled ice surface + house rings at each end." }, { name: "Hog line + tee line + back line markings", description: "Standard curling ice markings; hog line for delivery, tee line + house rings for scoring." }],
+  duration: { approximateMinutes: 90, structure: "8 ends per game; each end 8-12 min; total 1.5-2 hours vs 2-3 hours for 10-end 4-person games." },
+  objective: "Score more total points than opponent by placing curling stones closer to center of house (button) at end of each 8-end.",
+  matchStructure: "8 ends of alternating stone deliveries; team with stones closest to button at end of each end scores points equal to number of stones closer than nearest opponent stone.",
+  basicRules: [
+    { title: "2 players per team (1 man + 1 woman required)", body: "Mixed doubles requires exactly 2 players per team; 1 man + 1 woman mandatory composition." },
+    { title: "5 stones per team per end (vs 8 in 4-person)", body: "Each team throws 5 stones per end (one player throws stones 1 + 5, other throws stones 2-3-4); teams may swap throwing responsibilities each end." },
+    { title: "8 ends per game (vs 10 in 4-person)", body: "Mixed doubles games are 8 ends long — faster than traditional 10-end 4-person games." },
+    { title: "Pre-placed stones — each end starts with 2 stones already positioned", body: "Each end begins with 1 stone pre-placed for each team — one behind button, one guard in front; hammer team chooses configuration." },
+    { title: "Power play option — once per game reposition pre-placed stones", body: "Team with hammer may use 'power play' once per game to reposition pre-placed stones for more aggressive setup." },
+    { title: "Either player may sweep any own stone", body: "Both team members can sweep their team's stones; only skip (last-thrower this end) may sweep opponent stones after they cross tee line." },
+  ],
+  scoring: { summary: "1 point per own stone closer to button than nearest opponent stone at end of each end; running total across 8 ends.", winCondition: "Higher total points after 8 ends; extra ends played if tied (like tennis tiebreak)." },
+  positions: [{ name: "Man (mixed doubles)", role: "Male player; typically throws stones 1 + 5 (or 2-3-4 by choice); mandatory 1 per team.", count: 1 }, { name: "Woman (mixed doubles)", role: "Female player; typically throws stones 2-3-4 (or 1 + 5 by choice); mandatory 1 per team.", count: 1 }],
+  officiating: { officials: ["Chief Umpire", "Ice Umpire", "Timekeeper (thinking time)", "Video review official"], summary: "WCF certified officials at Olympic + World Championship level." },
+  governingBodies: [{ name: "World Curling Federation (WCF)", founded: 1966, headquarters: "Perth, Scotland, UK" }, { name: "International Olympic Committee (IOC)", founded: 1894, headquarters: "Lausanne, Switzerland" }],
+  majorCompetitions: [{ name: "Winter Olympic Games — Mixed Doubles Curling", frequency: "quadrennial", founded: 2018, region: "rotating (PyeongChang 2018, Beijing 2022)" }, { name: "World Mixed Doubles Curling Championship", frequency: "annual", founded: 2008, region: "rotating international" }, { name: "European Mixed Doubles Curling Championship", frequency: "annual", founded: 2012, region: "rotating Europe" }, { name: "Canadian Mixed Doubles Curling Trials", frequency: "annual", founded: 2013, region: "Canada — Olympic qualification pathway" }],
+  countriesPlayed: ["CAN (dominant)", "SUI (Olympic silver 2018)", "NOR", "SWE", "SCT/GBR", "USA", "RUS", "EST", "CHN (emerging)", "KOR", "worldwide 20+ WCF member nations"],
+  famousAthletes: ["Kaitlyn Lawes + John Morris (Canada — Olympic Gold 2018)", "Jenny Perret + Martin Rios (Switzerland — Olympic Silver 2018)", "Kristin Skaslien + Magnus Nedregotten (Norway — Olympic Bronze 2018)", "Almida de Val (Sweden — 2019 World Champion)", "Wang Rui + Xu Xiaoming (China — top Asian pair)", "Jenny Perret + Martin Rios (Switzerland — 2017 World Champions)"],
+  records: [
+    { title: "Olympic debut PyeongChang 2018 — Canada gold", holder: "Kaitlyn Lawes + John Morris (Canada)", value: "Curling Mixed Doubles Olympic debut PyeongChang 2018 — Canada's Kaitlyn Lawes + John Morris won inaugural gold defeating Switzerland's Jenny Perret + Martin Rios in final", year: 2018 },
+    { title: "First World Championship 2008", holder: "World Curling Federation", value: "First World Mixed Doubles Curling Championship held 2008 (Vierumäki, Finland) — Switzerland's Toni Müller + Irene Schori won inaugural title", year: 2008 },
+    { title: "Fastest curling format (~1.5-2 hours)", holder: "World Curling Federation format", value: "Mixed Doubles designed as fastest curling format at ~1.5-2 hours per game vs 2.5-3 hours for 10-end 4-person games — TV-friendly", year: 2008 },
+  ],
+  variants: ["mixed-doubles-8-end-2-player-standard", "mixed-doubles-4-end-mini-format-recreational"],
+  relatedSports: ["curling-4-person-standard", "wheelchair-curling", "brier-canadian-mens-championship", "scotties-tournament-of-hearts-womens"],
+  skills: ["precision stone throwing", "5-rock strategy (fewer stones = higher stakes)", "sweeping speed + judgment", "hammer preservation tactics", "power play utilization"],
+  wikipediaTitle: "Mixed doubles curling",
+  sources: [{ label: "Wikipedia — Mixed doubles curling", url: "https://en.wikipedia.org/wiki/Mixed_doubles_curling", publisher: "Wikipedia" }, { label: "World Curling Federation — Mixed Doubles", url: "https://worldcurling.org/mixeddoubles", publisher: "WCF" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default curlingMixedDoubles;

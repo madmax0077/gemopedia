@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const nineMensMorrisMedieval: Sport = {
+  id: "nine-mens-morris-medieval",
+  slug: "nine-mens-morris-medieval",
+  name: "Nine Men's Morris (Medieval Mill Game)",
+  officialName: "Nine Men's Morris — medieval European board game (no formal international federation)",
+  aliases: ["Mill", "Merels", "Merelles", "Cowboy Checkers", "Ninepenny Marl", "Mühle (German)"],
+  shortDescription:
+    "Ancient board game 1400 BCE Egypt through medieval Europe — 2 players place then move 9 pieces on 3-square-concentric board trying to form 'mills' (3-in-a-row) which capture opponent pieces; found carved on medieval European cathedral stones including Chester Cathedral England + Canterbury; deep strategic game with modern computer analysis solving perfect play (drawn).",
+  longDescription:
+    "Nine Men's Morris (also called Mill, Merels, Merelles, Ninepenny Marl, or Mühle in German) is one of the oldest continuously-played abstract strategy board games in human history. Archaeological evidence: (1) 1400 BCE — Egyptian temple carving at Kurna Temple; (2) 700 BCE — Bronze Age Britain artifacts; (3) 1st century CE — Roman ruins across Europe (Trajan's Column Rome, Corstopitum England, Chichester Chichester); (4) Medieval Europe — carved into stone benches + church pillars at Chester Cathedral, Canterbury Cathedral, Salisbury Cathedral, Norwich Cathedral, Westminster Abbey (all UK); Norwich Cathedral in England alone has ~30 board carvings; (5) Very popular medieval game 12th-16th century + declined 18th century + revived 20th century. Uses simple 3-concentric-squares board with 24 intersection points (8 per square × 3 squares) connected by lines. 2 players each have 9 pieces (typically wooden or stone). 3-phase gameplay: (1) Placement Phase — players alternately place all 18 pieces on empty intersections; whenever a player forms a 'mill' (3 own pieces in row along drawn line), they REMOVE one opposing piece from board (cannot remove piece in existing mill unless no other piece available); (2) Movement Phase — after all pieces placed, players alternately move ONE piece to adjacent empty intersection along drawn lines; forming new mills still captures opposing pieces; may 'open + close' same mill for repeated captures; (3) Flying Phase — when player reduced to 3 pieces, that player may 'fly' any piece to ANY empty intersection (not just adjacent) — desperate last chance; (4) Win — reduce opponent below 3 pieces OR trap opponent so they cannot move (no legal moves). Signature strategic dimensions: (a) Placement phase — deny opponent mill formations; (b) Movement phase — 'mill machine' formations that repeatedly open + close = massive captures; (c) Flying phase — endgame where trailing player may still win via clever repositioning. Computer analysis: Nine Men's Morris was 'solved' by Ralph Gasser 1993 (ETH Zurich) — with perfect play from both sides, game ends in DRAW; also analysis by Aloril + others confirming draw result. Modern competitive scene: (1) Mind Sports Olympiad hosts Nine Men's Morris competition annually since 1997; (2) Some national tournaments in Germany (Mühle World Championships informal); (3) Digital versions widespread (Board Game Arena + numerous mobile apps); (4) Historical reenactment groups + medieval fairs feature the game. Cultural presence: (a) Shakespeare mentioned it in A Midsummer Night's Dream Act II Scene 1 ('The nine men's morris is filled up with mud'); (b) Featured in medieval historical fiction; (c) Popular puzzle game for teaching strategic thinking; (d) Similar smaller variants Six Men's Morris (medieval simpler), Three Men's Morris (basically tic-tac-toe), Twelve Men's Morris (16th century larger board).",
+  category: "board-games",
+  subCategory: "ancient medieval abstract strategy mill game",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "ancient", popularity: "regional",
+  countryOfOrigin: "EG",
+  regionOfOrigin: "Ancient Egypt (1400 BCE) + Bronze Age Britain + Roman Empire + Medieval Europe",
+  estimatedOrigin: "Archaeological evidence dates to 1400 BCE Egyptian temple carvings; popular medieval European game 12-16th century; declined 18th century; revived 20th century",
+  players: { min: 2, max: 2, note: "Exactly 2 players." },
+  equipment: [{ name: "Board — 3 concentric squares with 24 intersections connected by lines", description: "Traditional board: 3 concentric squares with lines connecting midpoints of edges + 24 intersection points where pieces can be placed." }, { name: "18 pieces (9 per player, typically wood or stone)", description: "9 pieces per player in 2 colors; historically stone, wood, or bone; modern sets use molded plastic or wooden discs." }],
+  duration: { approximateMinutes: 20, structure: "Casual game 15-30 min; competitive game with clock 20-40 min." },
+  objective: "Reduce opponent below 3 pieces OR trap opponent so no legal move possible.",
+  matchStructure: "3 sequential phases: Placement (place all 18 pieces) → Movement (move to adjacent intersection) → Flying (when reduced to 3 pieces, may fly anywhere).",
+  basicRules: [
+    { title: "3 phases: Placement + Movement + Flying (when 3 pieces)", body: "Game has 3 sequential phases: (1) Placement — alternately place all 18 pieces; (2) Movement — move to adjacent intersection; (3) Flying — when reduced to 3 pieces, may fly to ANY empty intersection." },
+    { title: "Form 'mill' (3 in row) = capture 1 opponent piece", body: "Whenever player forms mill (3 own pieces in row along drawn line), they REMOVE one opposing piece from board." },
+    { title: "Cannot capture piece in existing mill (unless no other available)", body: "Cannot remove opponent's piece that is part of an existing mill — UNLESS all opponent pieces are in mills (then may remove mill piece)." },
+    { title: "Mill 'machine' = open + close same mill for repeated captures", body: "Signature strategic tactic: form mill, move piece out (opens mill), move back (reforms mill, another capture); can repeat = 'mill machine' devastates opponent." },
+    { title: "Win by reducing opponent below 3 pieces OR trapping (no legal move)", body: "Two win conditions: (1) Reduce opponent to 2 or fewer pieces; (2) Trap opponent so they have no legal moves." },
+  ],
+  scoring: { summary: "No point system — binary win by piece reduction or trapping.", winCondition: "Reduce opponent below 3 pieces OR trap opponent with no legal moves." },
+  positions: [{ name: "Player (2 total)", role: "One of 2 players controlling 9 pieces.", count: 2 }],
+  officiating: { officials: ["Tournament arbiter (rare)", "Casual play self-officiated"], summary: "Casual play self-officiated; MSO + digital tournaments use standard board game arbitration." },
+  governingBodies: [{ name: "No formal international governing body", founded: 1500, headquarters: "Europe" }, { name: "Mind Sports Olympiad (MSO) hosts events", founded: 1997, headquarters: "UK" }],
+  majorCompetitions: [{ name: "Mind Sports Olympiad — Nine Men's Morris", frequency: "annual", founded: 1997, region: "UK" }, { name: "German Mühle Championships (informal)", frequency: "annual", founded: 1990, region: "Germany" }, { name: "Board Game Arena Nine Men's Morris tournaments", frequency: "ongoing", founded: 2015, region: "worldwide online" }, { name: "Historical reenactment + medieval fair play", frequency: "seasonal", founded: 1980, region: "Europe + USA medieval fairs" }],
+  countriesPlayed: ["GBR (medieval heritage — carved in cathedral stones)", "DEU", "FRA", "ITA", "USA", "worldwide small dedicated community"],
+  famousAthletes: ["Ralph Gasser (ETH Zurich — solved game 1993)", "Various Mind Sports Olympiad champions", "Historical: William Shakespeare mentioned in A Midsummer Night's Dream 1595"],
+  records: [
+    { title: "Oldest evidence 1400 BCE Egyptian temple carving", holder: "Kurna Temple Egypt", value: "Nine Men's Morris board carving found at Kurna Temple Egypt dating to 1400 BCE — one of oldest documented board games in human history", year: -1400 },
+    { title: "Solved by Ralph Gasser 1993 — draw with perfect play", holder: "Ralph Gasser (ETH Zurich)", value: "Nine Men's Morris solved by Ralph Gasser at ETH Zurich 1993 — with perfect play from both sides, game ends in DRAW", year: 1993 },
+    { title: "Carved in medieval European cathedral stones", holder: "Medieval European stone masons", value: "Nine Men's Morris boards carved into medieval European cathedral stones + church pillars — Chester Cathedral, Canterbury Cathedral, Salisbury Cathedral, Norwich Cathedral (30+ boards), Westminster Abbey", year: 1300 },
+    { title: "Shakespeare A Midsummer Night's Dream Act II reference", holder: "William Shakespeare", value: "Shakespeare referenced Nine Men's Morris in A Midsummer Night's Dream Act II Scene 1 (1595): 'The nine men's morris is filled up with mud' — cultural staple", year: 1595 },
+  ],
+  variants: ["nine-mens-morris-standard-9-pieces", "six-mens-morris-medieval-simpler-6-pieces", "three-mens-morris-basic-tic-tac-toe-cousin", "twelve-mens-morris-16th-century-larger", "morabaraba-southern-africa-variant"],
+  relatedSports: ["chess-classical", "checkers-draughts", "tic-tac-toe", "gomoku-five-in-a-row"],
+  skills: ["mill formation planning", "mill machine tactical setup", "opponent mill denial", "endgame flying phase repositioning"],
+  wikipediaTitle: "Nine men's morris",
+  sources: [{ label: "Wikipedia — Nine men's morris", url: "https://en.wikipedia.org/wiki/Nine_men%27s_morris", publisher: "Wikipedia" }, { label: "Ralph Gasser — Nine Men's Morris Solution", url: "https://link.springer.com/chapter/10.1007/978-1-4612-2588-7_9", publisher: "Springer" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default nineMensMorrisMedieval;

@@ -20,13 +20,16 @@ import { defendo } from "./defendo";
 import { dumog } from "./dumog";
 import { escrima } from "./escrima";
 import { eskrima } from "./eskrima";
+import { eskrimaArnisFilipino } from "./eskrima-arnis-filipino";
 import { fencing } from "./fencing";
 import { freestyleWrestling } from "./freestyle-wrestling";
 import { gatka } from "./gatka";
+import { gatkaSikhPunjabi } from "./gatka-sikh-punjabi";
 import { glimaIcelandic } from "./glima-icelandic";
 import { grecoRomanWrestling } from "./greco-roman-wrestling";
 import { haidongGumdo } from "./haidong-gumdo";
 import { hapkido } from "./hapkido";
+import { hapkidoKorean } from "./hapkido-korean";
 import { hema } from "./hema";
 import { hungGar } from "./hung-gar";
 import { hwaRangDo } from "./hwa-rang-do";
@@ -50,12 +53,14 @@ import { kungFu } from "./kung-fu";
 import { kurash } from "./kurash";
 import { kyokushin } from "./kyokushin";
 import { kyudo } from "./kyudo";
+import { kyudoJapaneseArchery } from "./kyudo-japanese-archery";
 import { lethwei } from "./lethwei";
 import { lethweiBurmeseBareknuckle } from "./lethwei-burmese-bareknuckle";
 import { luchaLibre } from "./lucha-libre";
 import { lutaLivre } from "./luta-livre";
 import { mixedMartialArts } from "./mixed-martial-arts";
 import { muayBoran } from "./muay-boran";
+import { muayBoranAncientThai } from "./muay-boran-ancient-thai";
 import { muayThai } from "./muay-thai";
 import { naban } from "./naban";
 import { naginatajutsu } from "./naginatajutsu";
@@ -66,6 +71,7 @@ import { pankration } from "./pankration";
 import { pankrationModernMma } from "./pankration-modern-mma";
 import { pehlwaniIndianWrestling } from "./pehlwani-indian-wrestling";
 import { pencakSilat } from "./pencak-silat";
+import { pencakSilatIndonesia } from "./pencak-silat-indonesia";
 import { pradalSerey } from "./pradal-serey";
 import { prayingMantisKungFu } from "./praying-mantis-kung-fu";
 import { qwanKiDo } from "./qwan-ki-do";
@@ -84,13 +90,16 @@ import { shuaiJiao } from "./shuai-jiao";
 import { sikaran } from "./sikaran";
 import { silambam } from "./silambam";
 import { silambamTamil } from "./silambam-tamil";
+import { silatMelayuMalay } from "./silat-melayu-malay";
 import { sumo } from "./sumo";
 import { systema } from "./systema";
+import { systemaRussianMilitary } from "./systema-russian-military";
 import { taekwondo } from "./taekwondo";
 import { taiChi } from "./tai-chi";
 import { taiChiChuan } from "./tai-chi-chuan";
 import { tangSooDo } from "./tang-soo-do";
 import { thangTa } from "./thang-ta";
+import { thangTaManipuri } from "./thang-ta-manipuri";
 import { valeTudo } from "./vale-tudo";
 import { vovinam } from "./vovinam";
 import { vovinamVietnamese } from "./vovinam-vietnamese";
@@ -126,13 +135,16 @@ export const COMBAT_SPORTS: Sport[] = [
   dumog,
   escrima,
   eskrima,
+  eskrimaArnisFilipino,
   fencing,
   freestyleWrestling,
   gatka,
+  gatkaSikhPunjabi,
   glimaIcelandic,
   grecoRomanWrestling,
   haidongGumdo,
   hapkido,
+  hapkidoKorean,
   hema,
   hungGar,
   hwaRangDo,
@@ -156,12 +168,14 @@ export const COMBAT_SPORTS: Sport[] = [
   kurash,
   kyokushin,
   kyudo,
+  kyudoJapaneseArchery,
   lethwei,
   lethweiBurmeseBareknuckle,
   luchaLibre,
   lutaLivre,
   mixedMartialArts,
   muayBoran,
+  muayBoranAncientThai,
   muayThai,
   naban,
   naginatajutsu,
@@ -172,6 +186,7 @@ export const COMBAT_SPORTS: Sport[] = [
   pankrationModernMma,
   pehlwaniIndianWrestling,
   pencakSilat,
+  pencakSilatIndonesia,
   pradalSerey,
   prayingMantisKungFu,
   qwanKiDo,
@@ -190,13 +205,16 @@ export const COMBAT_SPORTS: Sport[] = [
   sikaran,
   silambam,
   silambamTamil,
+  silatMelayuMalay,
   sumo,
   systema,
+  systemaRussianMilitary,
   taekwondo,
   taiChi,
   taiChiChuan,
   tangSooDo,
   thangTa,
+  thangTaManipuri,
   valeTudo,
   vovinam,
   vovinamVietnamese,

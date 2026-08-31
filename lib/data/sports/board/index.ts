@@ -10,6 +10,7 @@ import { anachrony } from "./anachrony";
 import { arboretum } from "./arboretum";
 import { arcs } from "./arcs";
 import { arimaa } from "./arimaa";
+import { arimaaAntiChess } from "./arimaa-anti-chess";
 import { arkhamHorror } from "./arkham-horror";
 import { arkNova } from "./ark-nova";
 import { atomicChess } from "./atomic-chess";
@@ -54,6 +55,7 @@ import { heatPedalToTheMetal } from "./heat-pedal-to-the-metal";
 import { hex } from "./hex";
 import { hex2Player } from "./hex-2-player";
 import { hive } from "./hive";
+import { hiveHexAbstract } from "./hive-hex-abstract";
 import { hnefatafl } from "./hnefatafl";
 import { inis } from "./inis";
 import { janggiKoreanChess } from "./janggi-korean-chess";
@@ -66,6 +68,7 @@ import { leHavre } from "./le-havre";
 import { lostRuinsOfArnak } from "./lost-ruins-of-arnak";
 import { ludo } from "./ludo";
 import { mageKnight } from "./mage-knight";
+import { mahjongRiichiJapanese } from "./mahjong-riichi-japanese";
 import { makrukThaiChess } from "./makruk-thai-chess";
 import { maracaibo } from "./maracaibo";
 import { marvelUnited } from "./marvel-united";
@@ -76,6 +79,7 @@ import { nineMensMorris } from "./nine-mens-morris";
 import { nucleum } from "./nucleum";
 import { oath } from "./oath";
 import { onitama } from "./onitama";
+import { onitamaAbstractNinja } from "./onitama-abstract-ninja";
 import { pachisi } from "./pachisi";
 import { pandemic } from "./pandemic";
 import { pandemicLegacySeason1 } from "./pandemic-legacy-season-1";
@@ -87,6 +91,7 @@ import { projectL } from "./project-l";
 import { puertoRico } from "./puerto-rico";
 import { quacksOfQuedlinburg } from "./quacks-of-quedlinburg";
 import { quoridor } from "./quoridor";
+import { quoridorAbstract } from "./quoridor-abstract";
 import { resArcana } from "./res-arcana";
 import { reversi } from "./reversi";
 import { reviveBoardGame } from "./revive-board-game";
@@ -119,6 +124,7 @@ import { theWhiteCastle } from "./the-white-castle";
 import { threeCheckChess } from "./three-check-chess";
 import { throughTheAges } from "./through-the-ages";
 import { ticketToRide } from "./ticket-to-ride";
+import { tigersAndGoatsBaghChalNepali } from "./tigers-and-goats-bagh-chal-nepali";
 import { twilightImperium } from "./twilight-imperium";
 import { twilightStruggle } from "./twilight-struggle";
 import { tzolkinTheMayanCalendar } from "./tzolkin-the-mayan-calendar";
@@ -144,6 +150,7 @@ export const BOARD_GAMES: Sport[] = [
   arboretum,
   arcs,
   arimaa,
+  arimaaAntiChess,
   arkhamHorror,
   arkNova,
   atomicChess,
@@ -188,6 +195,7 @@ export const BOARD_GAMES: Sport[] = [
   hex,
   hex2Player,
   hive,
+  hiveHexAbstract,
   hnefatafl,
   inis,
   janggiKoreanChess,
@@ -200,6 +208,7 @@ export const BOARD_GAMES: Sport[] = [
   lostRuinsOfArnak,
   ludo,
   mageKnight,
+  mahjongRiichiJapanese,
   makrukThaiChess,
   maracaibo,
   marvelUnited,
@@ -210,6 +219,7 @@ export const BOARD_GAMES: Sport[] = [
   nucleum,
   oath,
   onitama,
+  onitamaAbstractNinja,
   pachisi,
   pandemic,
   pandemicLegacySeason1,
@@ -221,6 +231,7 @@ export const BOARD_GAMES: Sport[] = [
   puertoRico,
   quacksOfQuedlinburg,
   quoridor,
+  quoridorAbstract,
   resArcana,
   reversi,
   reviveBoardGame,
@@ -253,6 +264,7 @@ export const BOARD_GAMES: Sport[] = [
   threeCheckChess,
   throughTheAges,
   ticketToRide,
+  tigersAndGoatsBaghChalNepali,
   twilightImperium,
   twilightStruggle,
   tzolkinTheMayanCalendar,

@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const vaultingEquestrianFei: Sport = {
+  id: "vaulting-equestrian-fei",
+  slug: "vaulting-equestrian-fei",
+  name: "Equestrian Vaulting (FEI)",
+  officialName: "Fédération Équestre Internationale (FEI) — Vaulting",
+  aliases: ["Vaulting", "Horse Vaulting", "Equestrian Vaulting", "Voltige"],
+  shortDescription:
+    "Discipline combining gymnastics + dance performed on the back of a moving horse — individual + pair + team competitions on cantering horse on 15m circle; ancient Roman origins; modern FEI sport since 1983; World Championships biennial since 1986; Germany + Switzerland + Austria dominant; Kai Vorberg + Simone Wiegele legendary champions.",
+  longDescription:
+    "Equestrian Vaulting is a unique discipline combining gymnastics + dance elements performed on the back of a cantering horse — one of the most visually spectacular equestrian sports. Governed by FEI (Fédération Équestre Internationale) with formal competition rules since 1983 + World Championships biennial since 1986. Horse canters continuously on a 15m diameter circle on a 'lunge line' held by a 'longeur' (handler in center of circle); vaulter(s) perform choreographed routines on horse's back to music. Competition formats: (1) Individual — 1 vaulter, 2 rounds (compulsory + freestyle); (2) Pas de Deux — 2 vaulters together; (3) Squad — team of 6 vaulters (all perform on same horse in rotating routine); (4) Nations Cup — team country event. Compulsory exercises (mandatory technical elements to demonstrate technique): (a) Basic Seat; (b) Flag (kneeling one leg, other leg + opposite arm extended); (c) Mill (rotating on horse back); (d) Scissors (twist + swap direction); (e) Flank (elevated body position off horse's back); (f) Stand (standing upright on horse); (g) Dismount. Freestyle routines: 60-90 sec choreographed to music including original moves like handstands, backflips, mounts + dismounts, static holds. Horse gaits used: predominantly canter (steady 6-beat rhythm); some walk/trot in youth/lower categories. Judging: 4 judges evaluate on 0-10 scale for technical execution + performance + horse quality + composition; horse itself also scored (poor horse quality caps vaulter scores). Origins: (a) Ancient Roman + Greek equestrian games (cavalry acrobatics on moving horses); (b) Medieval military training tradition; (c) Modern circus tradition (Roman-style trick riding); (d) Codified as sport 20th century in Germany + Austria; (e) FEI added 1983; (f) World Championships 1986 first held Bulle Switzerland. Strongholds: (1) Germany (dominant — Nürnberg + Bavaria are hubs; Kai Vorberg + Nicola Ströh + Corinna Knauf legendary champions); (2) Switzerland (Simone Wiegele multi-time World Champion); (3) Austria; (4) France (growing); (5) USA (~5,000 competitors); (6) Denmark; (7) Sweden. Notable athletes: (i) Kai Vorberg (Germany — 6x World Champion 1990s-2000s legend); (ii) Simone Wiegele (Switzerland — multi-time World Champion + coach); (iii) Nicolas Andreani (France — 2x World Champion); (iv) Kristian Roberts (USA — 2x World Champion); (v) Nicola Ströh (Germany — modern women's dominant vaulter).",
+  category: "equestrian-sports",
+  subCategory: "gymnastics + dance on cantering horse",
+  sportType: "mixed", indoorOutdoor: "outdoor",
+  isOlympic: false, isParalympic: false, isProfessional: true,
+  season: "year-round", era: "20th-century", popularity: "regional",
+  countryOfOrigin: "DE",
+  regionOfOrigin: "Germany + Austria (modern codification 20th century); ancient Roman + Greek + medieval military origins",
+  estimatedOrigin: "Ancient Roman + Greek cavalry acrobatics; medieval military tradition; modern codified 1920s-30s Germany + Austria; FEI discipline since 1983; World Championships since 1986",
+  players: { min: 1, max: 6, note: "1 individual, 2 pas de deux, 6 squad; +1 longeur handler + 1 horse per team." },
+  equipment: [{ name: "Vaulting horse (specifically trained)", description: "Specially trained horse (typically warmblood 15-17 hands) with calm temperament + steady canter rhythm; wears specialized surcingle (roller) vaulting saddle." }, { name: "Surcingle (vaulting roller saddle)", description: "Padded strap around horse's belly with 2 handles ('grips') + foot straps ('cossacks') for vaulter to grip; NOT a regular saddle — provides handles + secure points." }, { name: "Vaulting pad (thick sheepskin/felt)", description: "Thick padding on horse's back protecting horse from vaulter's weight + providing traction for vaulter." }, { name: "Long lunge line + whip (longeur equipment)", description: "Longeur (handler) uses long lunge line + gentle whip cue to keep horse cantering in 15m circle." }, { name: "Leotard uniform + soft shoes", description: "Vaulters wear gymnastics-style leotard + soft-soled shoes; national team uniforms at international events." }],
+  duration: { approximateMinutes: 5, structure: "Individual compulsory ~2 min; individual freestyle ~90 sec; squad freestyle ~4 min; competition day 6-10 hours." },
+  objective: "Perform gymnastics + dance routine on cantering horse with highest technical + artistic + horse quality score.",
+  matchStructure: "Individual: 2 rounds (compulsory + freestyle). Pas de Deux: 1 round freestyle. Squad: compulsory + 2 freestyles. Multi-day competition with prelims + finals.",
+  basicRules: [
+    { title: "Horse canters continuously on 15m circle on lunge line", body: "Horse maintains steady canter rhythm on 15m diameter circle held by longeur (handler in center); consistent tempo critical for scoring." },
+    { title: "Compulsory exercises test technique fundamentals", body: "Individual competition includes compulsory round with 7 mandatory technical elements (Basic Seat, Flag, Mill, Scissors, Flank, Stand, Dismount) — assess fundamentals." },
+    { title: "Freestyle routines 60-90 sec choreographed to music", body: "Freestyle routine performed to competitor's chosen music; composition + artistry + music synchronization scored." },
+    { title: "Horse quality separately scored (caps vaulter score)", body: "Horse's gait quality + tempo consistency + carriage scored separately; poor horse quality caps maximum vaulter score achievable." },
+    { title: "4 judges score 0-10 on multiple criteria", body: "4 judges score technical execution + performance + horse quality + composition on 0-10 scale each; averaged for final score." },
+  ],
+  scoring: { summary: "Judges (4) score 0-10 across: Technical Execution, Performance, Horse Quality, Composition; average of judges = final round score; multi-round events sum rounds.", winCondition: "Highest total score across all rounds." },
+  positions: [{ name: "Vaulter", role: "Performing gymnast on horse's back.", count: 6 }, { name: "Longeur (Lunger)", role: "Handler in center of circle controlling horse's canter via lunge line; critical role for scoring.", count: 1 }, { name: "Horse (Equine Athlete)", role: "Sport athlete equal to human vaulter; scored separately.", count: 1 }],
+  officiating: { officials: ["Chief Judge (Ground Jury)", "3 Ground Jury Judges", "Foreign Judge (international events)", "Technical Delegate", "Veterinary Delegate (horse welfare)"], summary: "FEI certified judges at World Championships + FEI World Cup." },
+  governingBodies: [{ name: "Fédération Équestre Internationale (FEI)", founded: 1921, headquarters: "Lausanne, Switzerland" }, { name: "American Vaulting Association (AVA)", founded: 1966, headquarters: "USA" }, { name: "Deutsche Reiterliche Vereinigung (FN Germany)", founded: 1905, headquarters: "Warendorf, Germany" }],
+  majorCompetitions: [{ name: "FEI World Vaulting Championships", frequency: "biennial", founded: 1986, region: "rotating (Switzerland, Germany, Austria, France, USA)" }, { name: "FEI World Equestrian Games — Vaulting", frequency: "quadrennial", founded: 1990, region: "rotating with WEG host" }, { name: "FEI Vaulting World Cup", frequency: "annual", founded: 2011, region: "European tour + Final" }, { name: "European Vaulting Championships", frequency: "biennial (alternating with World)", founded: 1984, region: "rotating Europe" }, { name: "CVI 3-star + 4-star events", frequency: "throughout year", founded: 1990, region: "worldwide FEI-sanctioned" }],
+  countriesPlayed: ["DEU (dominant historic + present)", "SUI (Simone Wiegele legendary)", "AUT", "FRA (growing power)", "USA (~5,000 competitors)", "DNK", "SWE", "NLD", "GBR", "ITA", "AUS", "JPN", "worldwide FEI member federations"],
+  famousAthletes: ["Kai Vorberg (Germany — 6x World Champion 1990s-2000s legend)", "Simone Wiegele (Switzerland — multi-time World Champion + coach)", "Nicolas Andreani (France — 2x World Champion 2008, 2010)", "Kristian Roberts (USA — 2x World Champion)", "Nicola Ströh (Germany — modern women's champion)", "Corinna Knauf (Germany)", "Erik Oese (Germany — 2018 World Champion)", "Jasmin Lindner + Nicolas Andreani (France — Pas de Deux World Champions)"],
+  records: [
+    { title: "Kai Vorberg 6x World Champion 1990s-2000s", holder: "Kai Vorberg (Germany)", value: "Kai Vorberg of Germany won 6 World Vaulting Championships in 1990s-2000s — most in individual event history", year: 2000 },
+    { title: "FEI discipline since 1983", holder: "Fédération Équestre Internationale", value: "Equestrian Vaulting officially added as FEI discipline 1983 — one of newest FEI disciplines alongside jumping/dressage/eventing", year: 1983 },
+    { title: "First World Championships 1986 Bulle Switzerland", holder: "FEI", value: "First FEI World Vaulting Championships held 1986 in Bulle, Switzerland — established modern international competitive tradition", year: 1986 },
+    { title: "Germany dominant nation — most medals + champions", holder: "Deutsche Reiterliche Vereinigung", value: "Germany historically dominant in equestrian vaulting — most World Championship gold medals + individual champions of any nation", year: 2024 },
+  ],
+  variants: ["individual-vaulting-compulsory-plus-freestyle", "pas-de-deux-2-vaulters-freestyle", "squad-team-6-vaulters-choreographed", "nations-cup-country-team-event", "youth-vaulting-modified-difficulty", "para-vaulting-adaptive-competition"],
+  relatedSports: ["dressage-equestrian", "show-jumping-equestrian", "gymnastics-artistic", "cheerleading-competitive", "acrobatic-gymnastics"],
+  skills: ["horse riding fundamentals + rhythm", "gymnastics strength + flexibility", "artistic composition + music sync", "team coordination (squad + pas de deux)"],
+  wikipediaTitle: "Equestrian vaulting",
+  sources: [{ label: "Wikipedia — Equestrian vaulting", url: "https://en.wikipedia.org/wiki/Equestrian_vaulting", publisher: "Wikipedia" }, { label: "FEI Vaulting", url: "https://inside.fei.org/fei/disc/vaulting", publisher: "Fédération Équestre Internationale" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default vaultingEquestrianFei;

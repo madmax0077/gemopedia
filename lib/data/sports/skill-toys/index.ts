@@ -18,6 +18,7 @@ import { kendamaCompetitive } from "./kendama-competitive";
 import { poi } from "./poi";
 import { simon } from "./simon";
 import { spinningTops } from "./spinning-tops";
+import { spinningTopsKoma } from "./spinning-tops-koma";
 import { yoyo } from "./yoyo";
 import { yoyoFreestyle } from "./yoyo-freestyle";
 
@@ -44,6 +45,7 @@ export const SKILL_TOYS_GAMES: Sport[] = [
   poi,
   simon,
   spinningTops,
+  spinningTopsKoma,
   yoyo,
   yoyoFreestyle,
 ];

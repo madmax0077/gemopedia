@@ -27,6 +27,7 @@ import { ringette } from "./ringette";
 import { shortTrackSpeedSkating } from "./short-track-speed-skating";
 import { skeleton } from "./skeleton";
 import { skiCross } from "./ski-cross";
+import { skijoringNordic } from "./skijoring-nordic";
 import { skiJumping } from "./ski-jumping";
 import { skiMountaineering } from "./ski-mountaineering";
 import { skiMountaineeringVertical } from "./ski-mountaineering-vertical";
@@ -75,6 +76,7 @@ export const WINTER_SPORTS: Sport[] = [
   shortTrackSpeedSkating,
   skeleton,
   skiCross,
+  skijoringNordic,
   skiJumping,
   skiMountaineering,
   skiMountaineeringVertical,

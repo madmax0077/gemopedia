@@ -22,6 +22,7 @@ import { blokus } from "./blokus";
 import { bloodRage } from "./blood-rage";
 import { brassBirmingham } from "./brass-birmingham";
 import { brassLancashire } from "./brass-lancashire";
+import { bughouseChess } from "./bughouse-chess";
 import { burgleBros } from "./burgle-bros";
 import { carcassonne } from "./carcassonne";
 import { cascadia } from "./cascadia";
@@ -33,6 +34,7 @@ import { checkersInternational } from "./checkers-international";
 import { clank } from "./clank";
 import { concordia } from "./concordia";
 import { connectFour } from "./connect-four";
+import { crazyhouseChess } from "./crazyhouse-chess";
 import { cthulhuWars } from "./cthulhu-wars";
 import { diplomacy } from "./diplomacy";
 import { duneImperium } from "./dune-imperium";
@@ -147,6 +149,7 @@ export const BOARD_GAMES: Sport[] = [
   bloodRage,
   brassBirmingham,
   brassLancashire,
+  bughouseChess,
   burgleBros,
   carcassonne,
   cascadia,
@@ -158,6 +161,7 @@ export const BOARD_GAMES: Sport[] = [
   clank,
   concordia,
   connectFour,
+  crazyhouseChess,
   cthulhuWars,
   diplomacy,
   duneImperium,

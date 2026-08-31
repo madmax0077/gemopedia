@@ -35,6 +35,7 @@ import { judo } from "./judo";
 import { k1 } from "./k-1";
 import { kajukenbo } from "./kajukenbo";
 import { kalaripayattu } from "./kalaripayattu";
+import { kalaripayattuChampionship } from "./kalaripayattu-championship";
 import { karate } from "./karate";
 import { kbachBoran } from "./kbach-boran";
 import { kendo } from "./kendo";
@@ -66,6 +67,7 @@ import { qwanKiDo } from "./qwan-ki-do";
 import { sambo } from "./sambo";
 import { sanda } from "./sanda";
 import { sanshou } from "./sanshou";
+import { sanshouChinese } from "./sanshou-chinese";
 import { savate } from "./savate";
 import { senegaleseWrestling } from "./senegalese-wrestling";
 import { shootBoxing } from "./shoot-boxing";
@@ -75,6 +77,7 @@ import { shorinjiKempo } from "./shorinji-kempo";
 import { shuaiJiao } from "./shuai-jiao";
 import { sikaran } from "./sikaran";
 import { silambam } from "./silambam";
+import { silambamTamil } from "./silambam-tamil";
 import { sumo } from "./sumo";
 import { systema } from "./systema";
 import { taekwondo } from "./taekwondo";
@@ -131,6 +134,7 @@ export const COMBAT_SPORTS: Sport[] = [
   k1,
   kajukenbo,
   kalaripayattu,
+  kalaripayattuChampionship,
   karate,
   kbachBoran,
   kendo,
@@ -162,6 +166,7 @@ export const COMBAT_SPORTS: Sport[] = [
   sambo,
   sanda,
   sanshou,
+  sanshouChinese,
   savate,
   senegaleseWrestling,
   shootBoxing,
@@ -171,6 +176,7 @@ export const COMBAT_SPORTS: Sport[] = [
   shuaiJiao,
   sikaran,
   silambam,
+  silambamTamil,
   sumo,
   systema,
   taekwondo,

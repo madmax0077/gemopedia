@@ -45,6 +45,7 @@ import { toughMudder } from "./tough-mudder";
 import { trackCycling } from "./track-cycling";
 import { ultraDistanceCycling } from "./ultra-distance-cycling";
 import { viaFerrata } from "./via-ferrata";
+import { wingsuitBaseProximity } from "./wingsuit-base-proximity";
 import { wingsuitFlying } from "./wingsuit-flying";
 
 /**
@@ -97,6 +98,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   trackCycling,
   ultraDistanceCycling,
   viaFerrata,
+  wingsuitBaseProximity,
   wingsuitFlying,
 ];
 

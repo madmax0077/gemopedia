@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { aquaCycling } from "./aqua-cycling";
+import { aquathlonUnderwaterWrestling } from "./aquathlon-underwater-wrestling";
 import { artisticSwimming } from "./artistic-swimming";
 import { bigWaveSurfing } from "./big-wave-surfing";
 import { bodyboarding } from "./bodyboarding";
@@ -14,7 +15,9 @@ import { diving } from "./diving";
 import { dragonBoat500m } from "./dragon-boat-500m";
 import { dragonBoatRacing } from "./dragon-boat-racing";
 import { finSwimming } from "./fin-swimming";
+import { finswimmingChampionship } from "./finswimming-championship";
 import { freediving } from "./freediving";
+import { freedivingNoLimits } from "./freediving-no-limits";
 import { highDiving } from "./high-diving";
 import { iceSwimming } from "./ice-swimming";
 import { jetSkiRacing } from "./jet-ski-racing";
@@ -53,6 +56,7 @@ import { wingFoiling } from "./wing-foiling";
  */
 export const AQUATIC_SPORTS: Sport[] = [
   aquaCycling,
+  aquathlonUnderwaterWrestling,
   artisticSwimming,
   bigWaveSurfing,
   bodyboarding,
@@ -66,7 +70,9 @@ export const AQUATIC_SPORTS: Sport[] = [
   dragonBoat500m,
   dragonBoatRacing,
   finSwimming,
+  finswimmingChampionship,
   freediving,
+  freedivingNoLimits,
   highDiving,
   iceSwimming,
   jetSkiRacing,

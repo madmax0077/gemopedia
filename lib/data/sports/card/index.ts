@@ -73,6 +73,7 @@ import { sevenCardStud } from "./seven-card-stud";
 import { sheepshead } from "./sheepshead";
 import { sixNimmt } from "./six-nimmt";
 import { skat } from "./skat";
+import { skatGerman } from "./skat-german";
 import { skullKing } from "./skull-king";
 import { solitaire } from "./solitaire";
 import { soloWhist } from "./solo-whist";
@@ -178,6 +179,7 @@ export const CARD_GAMES: Sport[] = [
   sheepshead,
   sixNimmt,
   skat,
+  skatGerman,
   skullKing,
   solitaire,
   soloWhist,

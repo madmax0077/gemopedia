@@ -4,6 +4,7 @@ import { alienRpg } from "./alien-rpg";
 import { apocalypseWorld } from "./apocalypse-world";
 import { bladesInTheDark } from "./blades-in-the-dark";
 import { callOfCthulhu } from "./call-of-cthulhu";
+import { callOfCthulhuRpg } from "./call-of-cthulhu-rpg";
 import { cyberpunkRed } from "./cyberpunk-red";
 import { deltaGreen } from "./delta-green";
 import { dungeonsAndDragons } from "./dungeons-and-dragons";
@@ -40,6 +41,7 @@ export const TABLETOP_RPG_GAMES: Sport[] = [
   apocalypseWorld,
   bladesInTheDark,
   callOfCthulhu,
+  callOfCthulhuRpg,
   cyberpunkRed,
   deltaGreen,
   dungeonsAndDragons,

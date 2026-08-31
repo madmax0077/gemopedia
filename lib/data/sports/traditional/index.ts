@@ -4,6 +4,7 @@ import { atyaPatya } from "./atya-patya";
 import { bao } from "./bao";
 import { boTaoshi } from "./bo-taoshi";
 import { buzkashi } from "./buzkashi";
+import { buzkashiAfghan } from "./buzkashi-afghan";
 import { calcioStorico } from "./calcio-storico";
 import { calva } from "./calva";
 import { camelWrestling } from "./camel-wrestling";
@@ -31,6 +32,7 @@ import { kancha } from "./kancha";
 import { khoKho } from "./kho-kho";
 import { khridoli } from "./khridoli";
 import { kokBoru } from "./kok-boru";
+import { kokBoruKyrgyz } from "./kok-boru-kyrgyz";
 import { lacrosse } from "./lacrosse";
 import { lagori } from "./lagori";
 import { lapta } from "./lapta";
@@ -59,6 +61,7 @@ import { sqay } from "./sqay";
 import { ssireum } from "./ssireum";
 import { stoneLifting } from "./stone-lifting";
 import { tejo } from "./tejo";
+import { tejoColombia } from "./tejo-colombia";
 import { tinku } from "./tinku";
 import { tugOfWar } from "./tug-of-war";
 import { tuho } from "./tuho";
@@ -78,6 +81,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   bao,
   boTaoshi,
   buzkashi,
+  buzkashiAfghan,
   calcioStorico,
   calva,
   camelWrestling,
@@ -105,6 +109,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   khoKho,
   khridoli,
   kokBoru,
+  kokBoruKyrgyz,
   lacrosse,
   lagori,
   lapta,
@@ -133,6 +138,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   ssireum,
   stoneLifting,
   tejo,
+  tejoColombia,
   tinku,
   tugOfWar,
   tuho,

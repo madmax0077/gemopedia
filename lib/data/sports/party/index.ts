@@ -10,6 +10,7 @@ import { codenamesDuet } from "./codenames-duet";
 import { concept } from "./concept";
 import { crokinole } from "./crokinole";
 import { decrypto } from "./decrypto";
+import { decryptoTeam } from "./decrypto-team";
 import { explodingKittens } from "./exploding-kittens";
 import { fibbage } from "./fibbage";
 import { guessWho } from "./guess-who";
@@ -20,6 +21,7 @@ import { insider } from "./insider";
 import { jenga } from "./jenga";
 import { justOne } from "./just-one";
 import { mafia } from "./mafia";
+import { mafiaClassicParlor } from "./mafia-classic-parlor";
 import { monikers } from "./monikers";
 import { mouseTrap } from "./mouse-trap";
 import { mysterium } from "./mysterium";
@@ -62,6 +64,7 @@ export const PARTY_GAMES: Sport[] = [
   concept,
   crokinole,
   decrypto,
+  decryptoTeam,
   explodingKittens,
   fibbage,
   guessWho,
@@ -72,6 +75,7 @@ export const PARTY_GAMES: Sport[] = [
   jenga,
   justOne,
   mafia,
+  mafiaClassicParlor,
   monikers,
   mouseTrap,
   mysterium,

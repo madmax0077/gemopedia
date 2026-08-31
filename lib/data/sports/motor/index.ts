@@ -28,6 +28,7 @@ import { nascar } from "./nascar";
 import { pikesPeakHillclimb } from "./pikes-peak-hillclimb";
 import { powerboatRacing } from "./powerboat-racing";
 import { rallycross } from "./rallycross";
+import { rallycrossFiaWorldRx as rallycrossFiaWorldrx } from "./rallycross-fia-worldrx";
 import { rallyRacing } from "./rally-racing";
 import { rallyRaid } from "./rally-raid";
 import { sidecarcross } from "./sidecarcross";
@@ -72,6 +73,7 @@ export const MOTOR_SPORTS: Sport[] = [
   pikesPeakHillclimb,
   powerboatRacing,
   rallycross,
+  rallycrossFiaWorldrx,
   rallyRacing,
   rallyRaid,
   sidecarcross,

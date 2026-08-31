@@ -18,6 +18,7 @@ import { janggi } from "./janggi";
 import { konane } from "./konane";
 import { linesOfAction } from "./lines-of-action";
 import { makruk } from "./makruk";
+import { memoryLeague } from "./memory-league";
 import { memorySport } from "./memory-sport";
 import { morabaraba } from "./morabaraba";
 import { omweso } from "./omweso";
@@ -37,8 +38,8 @@ import { xiangqi } from "./xiangqi";
 import { yote } from "./yote";
 
 /**
- * Mind sports — chess, go, memory sports, mental competitions.
- * Sourced from `lib/data/sports/mind/*.ts`.
+ * mind entries
+ * Auto-generated from lib/data/sports/mind/*.ts
  */
 export const MIND_SPORTS: Sport[] = [
   alquerque,
@@ -59,6 +60,7 @@ export const MIND_SPORTS: Sport[] = [
   konane,
   linesOfAction,
   makruk,
+  memoryLeague,
   memorySport,
   morabaraba,
   omweso,
@@ -77,3 +79,5 @@ export const MIND_SPORTS: Sport[] = [
   xiangqi,
   yote,
 ];
+
+

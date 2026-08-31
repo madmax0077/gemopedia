@@ -26,6 +26,7 @@ import { pathfinderSociety } from "./pathfinder-society";
 import { runequest } from "./runequest";
 import { savageWorlds } from "./savage-worlds";
 import { shadowrun } from "./shadowrun";
+import { starfinderSociety } from "./starfinder-society";
 import { starWarsRpgFfg } from "./star-wars-rpg-ffg";
 import { theOneRing } from "./the-one-ring";
 import { traveller } from "./traveller";
@@ -63,6 +64,7 @@ export const TABLETOP_RPG_GAMES: Sport[] = [
   runequest,
   savageWorlds,
   shadowrun,
+  starfinderSociety,
   starWarsRpgFfg,
   theOneRing,
   traveller,

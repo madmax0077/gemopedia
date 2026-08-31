@@ -9,6 +9,7 @@ import { dodgeball } from "./dodgeball";
 import { doubleDutch } from "./double-dutch";
 import { duckDuckGoose } from "./duck-duck-goose";
 import { fourSquare } from "./four-square";
+import { fourSquareCompetitive } from "./four-square-competitive";
 import { freezeTag } from "./freeze-tag";
 import { handball4SquareWall } from "./handball-4-square-wall";
 import { hideAndSeek } from "./hide-and-seek";
@@ -45,6 +46,7 @@ export const PLAYGROUND_GAMES: Sport[] = [
   doubleDutch,
   duckDuckGoose,
   fourSquare,
+  fourSquareCompetitive,
   freezeTag,
   handball4SquareWall,
   hideAndSeek,

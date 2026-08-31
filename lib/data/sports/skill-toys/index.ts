@@ -17,6 +17,7 @@ import { jugglingCompetitive } from "./juggling-competitive";
 import { kendama } from "./kendama";
 import { kendamaCompetitive } from "./kendama-competitive";
 import { poi } from "./poi";
+import { rubiksCubeSpeedcubing } from "./rubiks-cube-speedcubing";
 import { simon } from "./simon";
 import { spinningTops } from "./spinning-tops";
 import { spinningTopsKoma } from "./spinning-tops-koma";
@@ -45,6 +46,7 @@ export const SKILL_TOYS_GAMES: Sport[] = [
   kendama,
   kendamaCompetitive,
   poi,
+  rubiksCubeSpeedcubing,
   simon,
   spinningTops,
   spinningTopsKoma,

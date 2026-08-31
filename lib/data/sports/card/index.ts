@@ -13,11 +13,13 @@ import { bohnanza } from "./bohnanza";
 import { briscola } from "./briscola";
 import { buraco } from "./buraco";
 import { canasta } from "./canasta";
+import { canastaClassic } from "./canasta-classic";
 import { cassino } from "./cassino";
 import { chinchon } from "./chinchon";
 import { coup } from "./coup";
 import { crazyEights } from "./crazy-eights";
 import { cribbage } from "./cribbage";
+import { cribbageStandard } from "./cribbage-standard";
 import { cuttle } from "./cuttle";
 import { disneyLorcana } from "./disney-lorcana";
 import { dixit } from "./dixit";
@@ -121,11 +123,13 @@ export const CARD_GAMES: Sport[] = [
   briscola,
   buraco,
   canasta,
+  canastaClassic,
   cassino,
   chinchon,
   coup,
   crazyEights,
   cribbage,
+  cribbageStandard,
   cuttle,
   disneyLorcana,
   dixit,

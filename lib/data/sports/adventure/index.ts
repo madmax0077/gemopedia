@@ -8,8 +8,10 @@ import { bmxFreestyle } from "./bmx-freestyle";
 import { bouldering } from "./bouldering";
 import { bungeeJumping } from "./bungee-jumping";
 import { canyoning } from "./canyoning";
+import { canyoningTechnical } from "./canyoning-technical";
 import { caving } from "./caving";
 import { coasteering } from "./coasteering";
+import { coasteeringUk } from "./coasteering-uk";
 import { crankworx } from "./crankworx";
 import { cyclocross } from "./cyclocross";
 import { downhillMountainBiking } from "./downhill-mountain-biking";
@@ -61,8 +63,10 @@ export const ADVENTURE_SPORTS: Sport[] = [
   bouldering,
   bungeeJumping,
   canyoning,
+  canyoningTechnical,
   caving,
   coasteering,
+  coasteeringUk,
   crankworx,
   cyclocross,
   downhillMountainBiking,

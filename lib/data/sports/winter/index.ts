@@ -16,6 +16,7 @@ import { halfpipeSnowboarding } from "./halfpipe-snowboarding";
 import { iceboating } from "./iceboating";
 import { iceClimbing } from "./ice-climbing";
 import { iceCross } from "./ice-cross";
+import { iceCrossRedBullCrashedIce } from "./ice-cross-red-bull-crashed-ice";
 import { kicksled } from "./kicksled";
 import { luge } from "./luge";
 import { lugeNaturalTrack } from "./luge-natural-track";
@@ -66,6 +67,7 @@ export const WINTER_SPORTS: Sport[] = [
   iceboating,
   iceClimbing,
   iceCross,
+  iceCrossRedBullCrashedIce,
   kicksled,
   luge,
   lugeNaturalTrack,

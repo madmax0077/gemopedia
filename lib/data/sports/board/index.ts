@@ -47,10 +47,12 @@ import { frosthaven } from "./frosthaven";
 import { gaiaProject } from "./gaia-project";
 import { gloomhaven } from "./gloomhaven";
 import { gloomhavenJawsOfTheLion } from "./gloomhaven-jaws-of-the-lion";
+import { gomokuStandard } from "./gomoku-standard";
 import { greatWesternTrail } from "./great-western-trail";
 import { hansaTeutonica } from "./hansa-teutonica";
 import { heatPedalToTheMetal } from "./heat-pedal-to-the-metal";
 import { hex } from "./hex";
+import { hex2Player } from "./hex-2-player";
 import { hive } from "./hive";
 import { hnefatafl } from "./hnefatafl";
 import { inis } from "./inis";
@@ -177,10 +179,12 @@ export const BOARD_GAMES: Sport[] = [
   gaiaProject,
   gloomhaven,
   gloomhavenJawsOfTheLion,
+  gomokuStandard,
   greatWesternTrail,
   hansaTeutonica,
   heatPedalToTheMetal,
   hex,
+  hex2Player,
   hive,
   hnefatafl,
   inis,

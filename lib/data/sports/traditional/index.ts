@@ -45,6 +45,7 @@ import { masWrestling } from "./mas-wrestling";
 import { mongolianWrestling } from "./mongolian-wrestling";
 import { musangwe } from "./musangwe";
 import { nagaWrestling } from "./naga-wrestling";
+import { naginataJapanese } from "./naginata-japanese";
 import { nguniStickFighting } from "./nguni-stick-fighting";
 import { nubianWrestling } from "./nubian-wrestling";
 import { oware } from "./oware";
@@ -124,6 +125,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   mongolianWrestling,
   musangwe,
   nagaWrestling,
+  naginataJapanese,
   nguniStickFighting,
   nubianWrestling,
   oware,

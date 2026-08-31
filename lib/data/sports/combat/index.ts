@@ -15,6 +15,7 @@ import { chidaoba } from "./chidaoba";
 import { collarAndElbow } from "./collar-and-elbow";
 import { coreeda } from "./coreeda";
 import { cornishWrestling } from "./cornish-wrestling";
+import { dambeNigerianBoxing } from "./dambe-nigerian-boxing";
 import { defendo } from "./defendo";
 import { dumog } from "./dumog";
 import { escrima } from "./escrima";
@@ -50,6 +51,7 @@ import { kurash } from "./kurash";
 import { kyokushin } from "./kyokushin";
 import { kyudo } from "./kyudo";
 import { lethwei } from "./lethwei";
+import { lethweiBurmeseBareknuckle } from "./lethwei-burmese-bareknuckle";
 import { luchaLibre } from "./lucha-libre";
 import { lutaLivre } from "./luta-livre";
 import { mixedMartialArts } from "./mixed-martial-arts";
@@ -117,6 +119,7 @@ export const COMBAT_SPORTS: Sport[] = [
   collarAndElbow,
   coreeda,
   cornishWrestling,
+  dambeNigerianBoxing,
   defendo,
   dumog,
   escrima,
@@ -152,6 +155,7 @@ export const COMBAT_SPORTS: Sport[] = [
   kyokushin,
   kyudo,
   lethwei,
+  lethweiBurmeseBareknuckle,
   luchaLibre,
   lutaLivre,
   mixedMartialArts,

@@ -22,6 +22,7 @@ import { gateball } from "./gateball";
 import { golf } from "./golf";
 import { horseshoes } from "./horseshoes";
 import { kellyPool } from "./kelly-pool";
+import { knifeThrowingCompetitive } from "./knife-throwing-competitive";
 import { lawnBowls } from "./lawn-bowls";
 import { nineBall } from "./nine-ball";
 import { ninePinBowling } from "./nine-pin-bowling";
@@ -76,6 +77,7 @@ export const PRECISION_SPORTS: Sport[] = [
   golf,
   horseshoes,
   kellyPool,
+  knifeThrowingCompetitive,
   lawnBowls,
   nineBall,
   ninePinBowling,

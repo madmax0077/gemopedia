@@ -23,6 +23,7 @@ import { steeplechaseHorse } from "./steeplechase-horse";
 import { teamPenning } from "./team-penning";
 import { teamRoping } from "./team-roping";
 import { tentPegging } from "./tent-pegging";
+import { tentPeggingCavalry } from "./tent-pegging-cavalry";
 import { vaulting } from "./vaulting";
 
 /**
@@ -53,6 +54,7 @@ export const EQUESTRIAN_SPORTS: Sport[] = [
   teamPenning,
   teamRoping,
   tentPegging,
+  tentPeggingCavalry,
   vaulting,
 ];
 

@@ -28,6 +28,7 @@ import { lifeguardSport } from "./lifeguard-sport";
 import { oceanRowing } from "./ocean-rowing";
 import { openWaterSwimming } from "./open-water-swimming";
 import { outriggerCanoeing } from "./outrigger-canoeing";
+import { riverSurfingStandingWave } from "./river-surfing-standing-wave";
 import { rowing } from "./rowing";
 import { sailing } from "./sailing";
 import { scubaDiving } from "./scuba-diving";
@@ -84,6 +85,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   oceanRowing,
   openWaterSwimming,
   outriggerCanoeing,
+  riverSurfingStandingWave,
   rowing,
   sailing,
   scubaDiving,

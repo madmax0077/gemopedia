@@ -16,6 +16,7 @@ import { formulaE } from "./formula-e";
 import { gtRacing } from "./gt-racing";
 import { hillclimb } from "./hillclimb";
 import { iceRacing } from "./ice-racing";
+import { iceSpeedway } from "./ice-speedway";
 import { indycar } from "./indycar";
 import { karting } from "./karting";
 import { leMansEndurance } from "./le-mans-endurance";
@@ -59,6 +60,7 @@ export const MOTOR_SPORTS: Sport[] = [
   gtRacing,
   hillclimb,
   iceRacing,
+  iceSpeedway,
   indycar,
   karting,
   leMansEndurance,

@@ -37,6 +37,7 @@ import { slopestyleSnowboarding } from "./slopestyle-snowboarding";
 import { snowboardCross } from "./snowboard-cross";
 import { snowboarding } from "./snowboarding";
 import { snowkiting } from "./snowkiting";
+import { snowkitingCompetitive } from "./snowkiting-competitive";
 import { snowmobiling } from "./snowmobiling";
 import { snowscoot } from "./snowscoot";
 import { speedSkating } from "./speed-skating";
@@ -86,6 +87,7 @@ export const WINTER_SPORTS: Sport[] = [
   snowboardCross,
   snowboarding,
   snowkiting,
+  snowkitingCompetitive,
   snowmobiling,
   snowscoot,
   speedSkating,

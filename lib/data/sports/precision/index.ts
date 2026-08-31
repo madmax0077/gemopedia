@@ -28,6 +28,7 @@ import { ninePinBowling } from "./nine-pin-bowling";
 import { oneCushionBilliards } from "./one-cushion-billiards";
 import { onePocket } from "./one-pocket";
 import { paletBreton } from "./palet-breton";
+import { palioHorsebackArchery } from "./palio-horseback-archery";
 import { petanque } from "./petanque";
 import { pool } from "./pool";
 import { poolBilliards } from "./pool-billiards";
@@ -81,6 +82,7 @@ export const PRECISION_SPORTS: Sport[] = [
   oneCushionBilliards,
   onePocket,
   paletBreton,
+  palioHorsebackArchery,
   petanque,
   pool,
   poolBilliards,

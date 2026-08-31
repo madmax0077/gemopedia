@@ -22,6 +22,7 @@ import { eskrima } from "./eskrima";
 import { fencing } from "./fencing";
 import { freestyleWrestling } from "./freestyle-wrestling";
 import { gatka } from "./gatka";
+import { glimaIcelandic } from "./glima-icelandic";
 import { grecoRomanWrestling } from "./greco-roman-wrestling";
 import { haidongGumdo } from "./haidong-gumdo";
 import { hapkido } from "./hapkido";
@@ -60,6 +61,8 @@ import { nihonTaijutsu } from "./nihon-taijutsu";
 import { ninjutsu } from "./ninjutsu";
 import { okichitaw } from "./okichitaw";
 import { pankration } from "./pankration";
+import { pankrationModernMma } from "./pankration-modern-mma";
+import { pehlwaniIndianWrestling } from "./pehlwani-indian-wrestling";
 import { pencakSilat } from "./pencak-silat";
 import { pradalSerey } from "./pradal-serey";
 import { prayingMantisKungFu } from "./praying-mantis-kung-fu";
@@ -121,6 +124,7 @@ export const COMBAT_SPORTS: Sport[] = [
   fencing,
   freestyleWrestling,
   gatka,
+  glimaIcelandic,
   grecoRomanWrestling,
   haidongGumdo,
   hapkido,
@@ -159,6 +163,8 @@ export const COMBAT_SPORTS: Sport[] = [
   ninjutsu,
   okichitaw,
   pankration,
+  pankrationModernMma,
+  pehlwaniIndianWrestling,
   pencakSilat,
   pradalSerey,
   prayingMantisKungFu,

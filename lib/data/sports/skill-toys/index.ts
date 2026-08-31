@@ -13,6 +13,7 @@ import { fingerboarding } from "./fingerboarding";
 import { hackySack } from "./hacky-sack";
 import { hulaHoop } from "./hula-hoop";
 import { juggling } from "./juggling";
+import { jugglingCompetitive } from "./juggling-competitive";
 import { kendama } from "./kendama";
 import { kendamaCompetitive } from "./kendama-competitive";
 import { poi } from "./poi";
@@ -40,6 +41,7 @@ export const SKILL_TOYS_GAMES: Sport[] = [
   hackySack,
   hulaHoop,
   juggling,
+  jugglingCompetitive,
   kendama,
   kendamaCompetitive,
   poi,

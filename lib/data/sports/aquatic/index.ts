@@ -40,6 +40,7 @@ import { swimrun } from "./swimrun";
 import { synchronizedDiving } from "./synchronized-diving";
 import { triathlon } from "./triathlon";
 import { underwaterHockey } from "./underwater-hockey";
+import { underwaterPhotographyCompetition } from "./underwater-photography-competition";
 import { underwaterRugby } from "./underwater-rugby";
 import { wakeboarding } from "./wakeboarding";
 import { wakesurfing } from "./wakesurfing";
@@ -95,6 +96,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   synchronizedDiving,
   triathlon,
   underwaterHockey,
+  underwaterPhotographyCompetition,
   underwaterRugby,
   wakeboarding,
   wakesurfing,

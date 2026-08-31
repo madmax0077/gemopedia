@@ -12,6 +12,7 @@ import { arcs } from "./arcs";
 import { arimaa } from "./arimaa";
 import { arkhamHorror } from "./arkham-horror";
 import { arkNova } from "./ark-nova";
+import { atomicChess } from "./atomic-chess";
 import { axisAndAllies } from "./axis-and-allies";
 import { azul } from "./azul";
 import { barrage } from "./barrage";
@@ -56,6 +57,7 @@ import { inis } from "./inis";
 import { johnCompany } from "./john-company";
 import { kalah } from "./kalah";
 import { kemet } from "./kemet";
+import { kingOfTheHillChess } from "./king-of-the-hill-chess";
 import { kingOfTokyo } from "./king-of-tokyo";
 import { leHavre } from "./le-havre";
 import { lostRuinsOfArnak } from "./lost-ruins-of-arnak";
@@ -110,6 +112,7 @@ import { terraformingMars } from "./terraforming-mars";
 import { terraMystica } from "./terra-mystica";
 import { theGameOfLife } from "./the-game-of-life";
 import { theWhiteCastle } from "./the-white-castle";
+import { threeCheckChess } from "./three-check-chess";
 import { throughTheAges } from "./through-the-ages";
 import { ticketToRide } from "./ticket-to-ride";
 import { twilightImperium } from "./twilight-imperium";
@@ -139,6 +142,7 @@ export const BOARD_GAMES: Sport[] = [
   arimaa,
   arkhamHorror,
   arkNova,
+  atomicChess,
   axisAndAllies,
   azul,
   barrage,
@@ -183,6 +187,7 @@ export const BOARD_GAMES: Sport[] = [
   johnCompany,
   kalah,
   kemet,
+  kingOfTheHillChess,
   kingOfTokyo,
   leHavre,
   lostRuinsOfArnak,
@@ -237,6 +242,7 @@ export const BOARD_GAMES: Sport[] = [
   terraMystica,
   theGameOfLife,
   theWhiteCastle,
+  threeCheckChess,
   throughTheAges,
   ticketToRide,
   twilightImperium,

@@ -34,6 +34,7 @@ import { secretHitler } from "./secret-hitler";
 import { skull } from "./skull";
 import { soClover } from "./so-clover";
 import { spyfall } from "./spyfall";
+import { spyfallParty } from "./spyfall-party";
 import { taboo } from "./taboo";
 import { telephone } from "./telephone";
 import { telestrations } from "./telestrations";
@@ -42,6 +43,7 @@ import { theResistanceAvalon } from "./the-resistance-avalon";
 import { timesUp } from "./times-up";
 import { truthOrDare } from "./truth-or-dare";
 import { twister } from "./twister";
+import { twoRoomsAndABoom } from "./two-rooms-and-a-boom";
 import { twoTruthsAndALie } from "./two-truths-and-a-lie";
 import { unstableUnicorns } from "./unstable-unicorns";
 import { wavelength } from "./wavelength";
@@ -88,6 +90,7 @@ export const PARTY_GAMES: Sport[] = [
   skull,
   soClover,
   spyfall,
+  spyfallParty,
   taboo,
   telephone,
   telestrations,
@@ -96,6 +99,7 @@ export const PARTY_GAMES: Sport[] = [
   timesUp,
   truthOrDare,
   twister,
+  twoRoomsAndABoom,
   twoTruthsAndALie,
   unstableUnicorns,
   wavelength,

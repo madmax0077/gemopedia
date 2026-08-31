@@ -27,6 +27,7 @@ import { doppelkopf } from "./doppelkopf";
 import { douDizhu } from "./dou-dizhu";
 import { durak } from "./durak";
 import { euchre } from "./euchre";
+import { euchreCanadian } from "./euchre-canadian";
 import { fiveCardDraw } from "./five-card-draw";
 import { fiveHundred } from "./five-hundred";
 import { fiveHundredRummy } from "./five-hundred-rummy";
@@ -87,6 +88,7 @@ import { starWarsLcg } from "./star-wars-lcg";
 import { sushiGo } from "./sushi-go";
 import { tarneeb } from "./tarneeb";
 import { tarot } from "./tarot";
+import { tarotFrench } from "./tarot-french";
 import { texasHoldem } from "./texas-holdem";
 import { theCrew } from "./the-crew";
 import { tichu } from "./tichu";
@@ -133,6 +135,7 @@ export const CARD_GAMES: Sport[] = [
   douDizhu,
   durak,
   euchre,
+  euchreCanadian,
   fiveCardDraw,
   fiveHundred,
   fiveHundredRummy,
@@ -193,6 +196,7 @@ export const CARD_GAMES: Sport[] = [
   sushiGo,
   tarneeb,
   tarot,
+  tarotFrench,
   texasHoldem,
   theCrew,
   tichu,

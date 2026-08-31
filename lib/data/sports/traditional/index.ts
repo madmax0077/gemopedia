@@ -17,6 +17,7 @@ import { falconry } from "./falconry";
 import { fierljeppen } from "./fierljeppen";
 import { fingerWrestling } from "./finger-wrestling";
 import { gaelicFootball } from "./gaelic-football";
+import { gaelicHandball } from "./gaelic-handball";
 import { gilliDanda } from "./gilli-danda";
 import { glima } from "./glima";
 import { gorodki } from "./gorodki";
@@ -66,6 +67,7 @@ import { tinku } from "./tinku";
 import { tugOfWar } from "./tug-of-war";
 import { tuho } from "./tuho";
 import { ulama } from "./ulama";
+import { ulamaMesoamerican } from "./ulama-mesoamerican";
 import { varzeshEBastani } from "./varzesh-e-bastani";
 import { wifeCarrying } from "./wife-carrying";
 import { woodchopping } from "./woodchopping";
@@ -94,6 +96,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   fierljeppen,
   fingerWrestling,
   gaelicFootball,
+  gaelicHandball,
   gilliDanda,
   glima,
   gorodki,
@@ -143,6 +146,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   tugOfWar,
   tuho,
   ulama,
+  ulamaMesoamerican,
   varzeshEBastani,
   wifeCarrying,
   woodchopping,

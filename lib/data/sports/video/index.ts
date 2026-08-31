@@ -90,6 +90,7 @@ import { pathOfExile } from "./path-of-exile";
 import { persona3Reload } from "./persona-3-reload";
 import { persona5 } from "./persona-5";
 import { pinball } from "./pinball";
+import { pizzaTower } from "./pizza-tower";
 import { pokemonGo } from "./pokemon-go";
 import { pokemonLegendsArceus } from "./pokemon-legends-arceus";
 import { pokemonScarletViolet } from "./pokemon-scarlet-violet";
@@ -241,6 +242,7 @@ export const VIDEO_GAMES: Sport[] = [
   persona3Reload,
   persona5,
   pinball,
+  pizzaTower,
   pokemonGo,
   pokemonLegendsArceus,
   pokemonScarletViolet,

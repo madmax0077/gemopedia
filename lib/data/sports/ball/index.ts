@@ -35,7 +35,9 @@ import { kinBall } from "./kin-ball";
 import { korfball } from "./korfball";
 import { netball } from "./netball";
 import { prellball } from "./prellball";
+import { quidditchQuadballRealLife } from "./quidditch-quadball-real-life";
 import { rollerDerby } from "./roller-derby";
+import { rollerDerbyFlatTrack } from "./roller-derby-flat-track";
 import { rounders } from "./rounders";
 import { rugbyLeague } from "./rugby-league";
 import { rugbyUnion } from "./rugby-union";
@@ -97,7 +99,9 @@ export const BALL_SPORTS: Sport[] = [
   korfball,
   netball,
   prellball,
+  quidditchQuadballRealLife,
   rollerDerby,
+  rollerDerbyFlatTrack,
   rounders,
   rugbyLeague,
   rugbyUnion,

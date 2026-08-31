@@ -6,6 +6,7 @@ import { biathlon } from "./biathlon";
 import { bigAirSkiing } from "./big-air-skiing";
 import { bobsleigh } from "./bobsleigh";
 import { broomball } from "./broomball";
+import { broomballCanada } from "./broomball-canada";
 import { crossCountrySkiing } from "./cross-country-skiing";
 import { curling } from "./curling";
 import { dogsledRacing } from "./dogsled-racing";
@@ -57,6 +58,7 @@ export const WINTER_SPORTS: Sport[] = [
   bigAirSkiing,
   bobsleigh,
   broomball,
+  broomballCanada,
   crossCountrySkiing,
   curling,
   dogsledRacing,

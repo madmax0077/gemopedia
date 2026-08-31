@@ -3,6 +3,7 @@
 import { atyaPatya } from "./atya-patya";
 import { bao } from "./bao";
 import { boTaoshi } from "./bo-taoshi";
+import { boTaoshiJapanese } from "./bo-taoshi-japanese";
 import { buzkashi } from "./buzkashi";
 import { buzkashiAfghan } from "./buzkashi-afghan";
 import { calcioStorico } from "./calcio-storico";
@@ -26,6 +27,7 @@ import { greyhoundRacing } from "./greyhound-racing";
 import { highlandGames } from "./highland-games";
 import { hornussen } from "./hornussen";
 import { hurling } from "./hurling";
+import { hurlingCamogieWomens } from "./hurling-camogie-womens";
 import { insuknawr } from "./insuknawr";
 import { jianzi } from "./jianzi";
 import { kabaddi } from "./kabaddi";
@@ -83,6 +85,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   atyaPatya,
   bao,
   boTaoshi,
+  boTaoshiJapanese,
   buzkashi,
   buzkashiAfghan,
   calcioStorico,
@@ -106,6 +109,7 @@ export const TRADITIONAL_SPORTS: Sport[] = [
   highlandGames,
   hornussen,
   hurling,
+  hurlingCamogieWomens,
   insuknawr,
   jianzi,
   kabaddi,

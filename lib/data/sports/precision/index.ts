@@ -4,6 +4,7 @@ import { airHockey } from "./air-hockey";
 import { airRifle10m } from "./air-rifle-10m";
 import { archery } from "./archery";
 import { artisticBilliards } from "./artistic-billiards";
+import { axeThrowingWaltl } from "./axe-throwing-waltl";
 import { bocce } from "./bocce";
 import { boccia } from "./boccia";
 import { boulesLyonnaise } from "./boules-lyonnaise";
@@ -59,6 +60,7 @@ export const PRECISION_SPORTS: Sport[] = [
   airRifle10m,
   archery,
   artisticBilliards,
+  axeThrowingWaltl,
   bocce,
   boccia,
   boulesLyonnaise,

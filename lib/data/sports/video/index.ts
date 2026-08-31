@@ -57,6 +57,7 @@ import { guiltyGear } from "./guilty-gear";
 import { guitarHero } from "./guitar-hero";
 import { hades } from "./hades";
 import { hades2 } from "./hades-2";
+import { hadesSupergiant } from "./hades-supergiant";
 import { halfLife } from "./half-life";
 import { halo } from "./halo";
 import { helldivers2 } from "./helldivers-2";
@@ -209,6 +210,7 @@ export const VIDEO_GAMES: Sport[] = [
   guitarHero,
   hades,
   hades2,
+  hadesSupergiant,
   halfLife,
   halo,
   helldivers2,

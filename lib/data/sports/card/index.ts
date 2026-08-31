@@ -41,6 +41,7 @@ import { ginRummy } from "./gin-rummy";
 import { goFish } from "./go-fish";
 import { golfCardGame } from "./golf-card-game";
 import { goStop } from "./go-stop";
+import { hanabiCooperative } from "./hanabi-cooperative";
 import { hanafuda } from "./hanafuda";
 import { handAndFoot } from "./hand-and-foot";
 import { hearts } from "./hearts";
@@ -72,6 +73,7 @@ import { razz } from "./razz";
 import { rookCardGame } from "./rook-card-game";
 import { schnapsen } from "./schnapsen";
 import { scopa } from "./scopa";
+import { scopaItalian } from "./scopa-italian";
 import { sevenCardStud } from "./seven-card-stud";
 import { sheepshead } from "./sheepshead";
 import { sixNimmt } from "./six-nimmt";
@@ -151,6 +153,7 @@ export const CARD_GAMES: Sport[] = [
   goFish,
   golfCardGame,
   goStop,
+  hanabiCooperative,
   hanafuda,
   handAndFoot,
   hearts,
@@ -182,6 +185,7 @@ export const CARD_GAMES: Sport[] = [
   rookCardGame,
   schnapsen,
   scopa,
+  scopaItalian,
   sevenCardStud,
   sheepshead,
   sixNimmt,

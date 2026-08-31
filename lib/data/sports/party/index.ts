@@ -1,6 +1,7 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { balderdash } from "./balderdash";
+import { bloodOnClocktower } from "./blood-on-clocktower";
 import { bloodOnTheClocktower } from "./blood-on-the-clocktower";
 import { cardsAgainstHumanity } from "./cards-against-humanity";
 import { charades } from "./charades";
@@ -57,6 +58,7 @@ import { witsAndWagers } from "./wits-and-wagers";
  */
 export const PARTY_GAMES: Sport[] = [
   balderdash,
+  bloodOnClocktower,
   bloodOnTheClocktower,
   cardsAgainstHumanity,
   charades,

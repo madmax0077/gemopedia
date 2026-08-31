@@ -1,0 +1,55 @@
+import type { Sport } from "@/lib/types";
+
+export const hadesSupergiant: Sport = {
+  id: "hades-supergiant",
+  slug: "hades-supergiant",
+  name: "Hades (Roguelike Action Video Game)",
+  officialName: "Hades — Supergiant Games (2020)",
+  aliases: ["Hades I", "Hades 1"],
+  shortDescription:
+    "Isometric action roguelike by Supergiant Games (2020) starring Zagreus escaping Greek underworld with god-boon upgrades; first ever video game to win Hugo Award (2021); 3x BAFTAs including Best Game; sold 5M+ copies; benchmark for narrative roguelike genre; competitive speedrun scene at Games Done Quick.",
+  longDescription:
+    "Hades is a landmark isometric action roguelike video game by Supergiant Games (Greg Kasavin creative director; Amir Rao studio director; Darren Korb music director), first released in early access 2018, full release September 2020. Players control Zagreus, immortal son of Hades, attempting to escape the Greek underworld through combat encounters with mythological creatures across four regions: Tartarus, Asphodel, Elysium, Styx. Each 'run' (escape attempt) proceeds through ~40-50 randomized rooms with combat + upgrade choices; upon death (inevitable in early runs), Zagreus respawns at Hades' House and can spend accumulated resources on permanent upgrades ('meta-progression') before next attempt. Core innovation: seamless narrative integration with roguelike mechanics — each death advances character relationships + storyline via 20+ voice-acted characters (Hades, Persephone, Achilles, Nyx, Megaera, Thanatos, Zeus, Poseidon, Athena, Aphrodite, Ares, Artemis, Hermes, Demeter, Dionysus, Chaos, Sisyphus, Orpheus, Eurydice, Charon, and more). Signature 'Boon' system — Olympian gods grant randomized ability upgrades each run; over 300+ possible boons with synergies (e.g., Aphrodite's Weak + Ares' Doom = massive damage). 6 primary weapons (Stygian Blade sword, Eternal Spear, Shield of Chaos, Heart-Seeking Bow, Twin Fists of Malphon, Adamant Rail gun) each with 4 additional Aspects (variant forms). Difficulty scaling via 'Heat' system (up to 32 heat = 'Extreme Measures') for post-story challenge. Awards: (1) Hugo Award Best Video Game 2021 (first video game ever to win a Hugo); (2) 3x BAFTAs 2021 (Best Game, Best Design, Best Narrative); (3) Game Awards 2020 Best Action Game + Best Indie; (4) DICE Awards 2021 Game of the Year; (5) Grammy nomination for Darren Korb's soundtrack. Sold 5+ million copies by 2024. Competitive speedrun scene at Games Done Quick (GDQ) with categories: Any% (fastest escape), 100% (all Achievements), 32-heat All Weapons. Sequel Hades II launched early access May 2024 to similar acclaim. Considered defining roguelike of 2020s + benchmark for narrative-first design.",
+  category: "video-games",
+  subCategory: "isometric action roguelike with meta-progression narrative",
+  sportType: "individual", indoorOutdoor: "indoor",
+  isOlympic: false, isParalympic: false, isProfessional: false,
+  season: "year-round", era: "21st-century", popularity: "major",
+  countryOfOrigin: "US",
+  regionOfOrigin: "USA (Supergiant Games — San Francisco Bay Area)",
+  estimatedOrigin: "Early Access release December 2018; full 1.0 release September 17, 2020; ported to Xbox + PlayStation 2021; iOS 2023; sequel early access May 2024",
+  players: { min: 1, max: 1, note: "Single-player game." },
+  equipment: [{ name: "Gaming device (PC/PS4/PS5/Xbox/Switch/iOS)", description: "Playable on Windows PC (Steam/Epic/GOG), macOS, Nintendo Switch, PlayStation 4/5, Xbox One/Series X|S, iOS (Netflix Games)." }, { name: "Controller or keyboard/mouse", description: "Controller strongly preferred for smooth combat feel; keyboard/mouse also fully supported." }],
+  duration: { approximateMinutes: 30, structure: "Single run: 20-50 min depending on skill + boon RNG; full story: ~20-40 hours; 100% completion: 60-100 hours; speedrun any%: <10 min world record." },
+  objective: "Escape Greek underworld from Tartarus to surface world through 4 regions defeating final boss; unlock full narrative through repeated attempts.",
+  matchStructure: "Each 'run' = attempt at escape; upon death, respawn at Hades' House with meta-progression; ~10-30 runs to first escape; ongoing runs unlock narrative + higher difficulty tiers.",
+  basicRules: [
+    { title: "Roguelike death restarts run", body: "Upon death, Zagreus respawns at Hades' House; all in-run boons + coins lost; keeps permanent Darkness (meta-currency) + narrative progression." },
+    { title: "Meta-progression via Mirror of Night + Weapon Aspects", body: "Spend Darkness at Mirror of Night for permanent stat upgrades; spend Titan Blood on weapon Aspects for alternate weapon forms; keys unlock new weapons + upgrades." },
+    { title: "Boon system — gods grant random abilities", body: "Between combat rooms, gods offer randomized boons (300+ possible); choose 1 of 3; stack boons across run for build synergy." },
+    { title: "6 weapons × 4 aspects = 24 total configurations", body: "Stygian Blade (sword), Eternal Spear, Shield of Chaos, Heart-Seeking Bow, Twin Fists of Malphon, Adamant Rail (gun); each unlocks 4 alternate 'Aspects' with unique mechanics." },
+    { title: "Heat system for post-story difficulty (0-32 heat)", body: "After first escape, Pact of Punishment allows modifiers (up to 32 heat = 'Extreme Measures') for higher rewards + challenge." },
+  ],
+  scoring: { summary: "Completion tracked via escape attempts count, deaths total, Heat cleared per weapon, achievements unlocked; speedrun scoring by fastest wall-clock time to escape.", winCondition: "Defeat final boss + escape underworld; canonical 'ending' unlocks after ~10 escapes; true ending requires ~30 escapes + narrative progression." },
+  positions: [{ name: "Zagreus (player character)", role: "Only playable character; equipped with 1 of 6 weapons + 1 keepsake + boons collected in run.", count: 1 }],
+  officiating: { officials: ["Supergiant Games (developer + publisher)", "Speedrun.com moderators (for competitive speedrun leaderboards)"], summary: "No traditional officiating; competitive speedrun community moderated at Speedrun.com." },
+  governingBodies: [{ name: "Supergiant Games (developer/publisher)", founded: 2009, headquarters: "San Francisco, CA, USA" }],
+  majorCompetitions: [{ name: "Games Done Quick (GDQ) — Hades speedrun blocks", frequency: "biannual (SGDQ + AGDQ)", founded: 2020, region: "worldwide streamed marathons" }, { name: "Speedrun.com Hades leaderboards", frequency: "ongoing", founded: 2020, region: "worldwide online" }, { name: "The Game Awards Best Action Game 2020", frequency: "one-time award", founded: 2020, region: "USA — Los Angeles" }, { name: "Hugo Award Best Video Game 2021 (first ever)", frequency: "one-time award", founded: 2021, region: "World Science Fiction Convention" }, { name: "BAFTA Games Awards 2021 (3x wins)", frequency: "one-time award", founded: 2021, region: "UK — London" }],
+  countriesPlayed: ["USA (largest player base)", "JPN", "DEU", "GBR", "FRA", "worldwide via Steam/PSN/Xbox/Switch"],
+  famousAthletes: ["Greg Kasavin (creative director + writer)", "Amir Rao (studio director)", "Darren Korb (composer + audio director; Grammy-nominated)", "Supergiant Games team", "Speedrun record holders: Deathmaraki, Haelian, TheZeroPercent"],
+  records: [
+    { title: "First video game to win Hugo Award (2021)", holder: "Hades / Supergiant Games", value: "Hades became first video game ever to win a Hugo Award (2021 Best Video Game category — inaugural year of category)", year: 2021 },
+    { title: "3x BAFTA wins 2021", holder: "Supergiant Games", value: "Hades won 3 BAFTA Games Awards 2021 including Best Game, Best Design, and Best Narrative", year: 2021 },
+    { title: "5+ million copies sold by 2024", holder: "Supergiant Games", value: "Hades sold 5+ million copies across all platforms by 2024 — Supergiant's best-selling game to date", year: 2024 },
+    { title: "Speedrun WR under 10 minutes (Any% 32 Heat)", holder: "Various speedrunners", value: "Hades Any% speedrun world records under 10 minutes — including 32-heat clears; showcased regularly at Games Done Quick marathons", year: 2024 },
+  ],
+  variants: ["hades-i-standard-2020", "hades-i-god-mode-accessibility-option", "hades-ii-sequel-early-access-2024", "hades-i-hell-mode-difficulty-modifier"],
+  relatedSports: ["dead-cells-roguelike", "returnal-3d-roguelike", "roguelikes-general", "isaac-binding-of-roguelike"],
+  skills: ["combat combos (dash + special + attack)", "boon build planning", "boss pattern recognition (Meg, Bone Hydra, Theseus, Hades)", "resource optimization (meta-currencies)"],
+  wikipediaTitle: "Hades (video game)",
+  sources: [{ label: "Wikipedia — Hades (video game)", url: "https://en.wikipedia.org/wiki/Hades_(video_game)", publisher: "Wikipedia" }, { label: "Supergiant Games", url: "https://www.supergiantgames.com/games/hades/", publisher: "Supergiant Games" }, { label: "Speedrun.com Hades", url: "https://www.speedrun.com/hades", publisher: "Speedrun.com Community" }],
+  lastVerified: "2026-08-31",
+  confidence: "verified",
+};
+
+export default hadesSupergiant;

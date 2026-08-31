@@ -75,6 +75,7 @@ import { sanshou } from "./sanshou";
 import { sanshouChinese } from "./sanshou-chinese";
 import { savate } from "./savate";
 import { senegaleseWrestling } from "./senegalese-wrestling";
+import { senegaleseWrestlingLaamb } from "./senegalese-wrestling-laamb";
 import { shootBoxing } from "./shoot-boxing";
 import { shootfighting } from "./shootfighting";
 import { shooto } from "./shooto";
@@ -92,6 +93,7 @@ import { tangSooDo } from "./tang-soo-do";
 import { thangTa } from "./thang-ta";
 import { valeTudo } from "./vale-tudo";
 import { vovinam } from "./vovinam";
+import { vovinamVietnamese } from "./vovinam-vietnamese";
 import { wingChun } from "./wing-chun";
 import { wushu } from "./wushu";
 import { wushuSanda } from "./wushu-sanda";
@@ -179,6 +181,7 @@ export const COMBAT_SPORTS: Sport[] = [
   sanshouChinese,
   savate,
   senegaleseWrestling,
+  senegaleseWrestlingLaamb,
   shootBoxing,
   shootfighting,
   shooto,
@@ -196,6 +199,7 @@ export const COMBAT_SPORTS: Sport[] = [
   thangTa,
   valeTudo,
   vovinam,
+  vovinamVietnamese,
   wingChun,
   wushu,
   wushuSanda,

@@ -56,6 +56,7 @@ import { hex2Player } from "./hex-2-player";
 import { hive } from "./hive";
 import { hnefatafl } from "./hnefatafl";
 import { inis } from "./inis";
+import { janggiKoreanChess } from "./janggi-korean-chess";
 import { johnCompany } from "./john-company";
 import { kalah } from "./kalah";
 import { kemet } from "./kemet";
@@ -65,6 +66,7 @@ import { leHavre } from "./le-havre";
 import { lostRuinsOfArnak } from "./lost-ruins-of-arnak";
 import { ludo } from "./ludo";
 import { mageKnight } from "./mage-knight";
+import { makrukThaiChess } from "./makruk-thai-chess";
 import { maracaibo } from "./maracaibo";
 import { marvelUnited } from "./marvel-united";
 import { memoir44 } from "./memoir-44";
@@ -188,6 +190,7 @@ export const BOARD_GAMES: Sport[] = [
   hive,
   hnefatafl,
   inis,
+  janggiKoreanChess,
   johnCompany,
   kalah,
   kemet,
@@ -197,6 +200,7 @@ export const BOARD_GAMES: Sport[] = [
   lostRuinsOfArnak,
   ludo,
   mageKnight,
+  makrukThaiChess,
   maracaibo,
   marvelUnited,
   memoir44,

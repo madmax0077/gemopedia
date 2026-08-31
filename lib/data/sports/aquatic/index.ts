@@ -7,6 +7,7 @@ import { bigWaveSurfing } from "./big-wave-surfing";
 import { bodyboarding } from "./bodyboarding";
 import { canoeing } from "./canoeing";
 import { canoeMarathon } from "./canoe-marathon";
+import { canoeMarathonIcf } from "./canoe-marathon-icf";
 import { canoePolo } from "./canoe-polo";
 import { canoeSlalom } from "./canoe-slalom";
 import { canoeSprint } from "./canoe-sprint";
@@ -51,6 +52,7 @@ import { waterSkiing } from "./water-skiing";
 import { whitewaterRafting } from "./whitewater-rafting";
 import { windsurfing } from "./windsurfing";
 import { wingFoiling } from "./wing-foiling";
+import { wingfoilingCompetitive } from "./wingfoiling-competitive";
 
 /**
  * aquatic entries
@@ -64,6 +66,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   bodyboarding,
   canoeing,
   canoeMarathon,
+  canoeMarathonIcf,
   canoePolo,
   canoeSlalom,
   canoeSprint,
@@ -108,6 +111,7 @@ export const AQUATIC_SPORTS: Sport[] = [
   whitewaterRafting,
   windsurfing,
   wingFoiling,
+  wingfoilingCompetitive,
 ];
 
 

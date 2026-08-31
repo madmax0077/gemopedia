@@ -23,6 +23,7 @@ import { handcycling } from "./handcycling";
 import { heliSkiing } from "./heli-skiing";
 import { highliningCompetitive } from "./highlining-competitive";
 import { hydrofoiling } from "./hydrofoiling";
+import { iceClimbingMixedDrytooling } from "./ice-climbing-mixed-drytooling";
 import { kiteBuggy } from "./kite-buggy";
 import { landYachting } from "./land-yachting";
 import { leadClimbing } from "./lead-climbing";
@@ -34,6 +35,7 @@ import { orienteering } from "./orienteering";
 import { packrafting } from "./packrafting";
 import { parkour } from "./parkour";
 import { parkourFreerunningChampionship } from "./parkour-freerunning-championship";
+import { parkourFreerunningFig } from "./parkour-freerunning-fig";
 import { redBullRampage } from "./red-bull-rampage";
 import { roadCycling } from "./road-cycling";
 import { rockClimbing } from "./rock-climbing";
@@ -78,6 +80,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   heliSkiing,
   highliningCompetitive,
   hydrofoiling,
+  iceClimbingMixedDrytooling,
   kiteBuggy,
   landYachting,
   leadClimbing,
@@ -89,6 +92,7 @@ export const ADVENTURE_SPORTS: Sport[] = [
   packrafting,
   parkour,
   parkourFreerunningChampionship,
+  parkourFreerunningFig,
   redBullRampage,
   roadCycling,
   rockClimbing,

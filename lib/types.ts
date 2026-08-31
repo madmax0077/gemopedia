@@ -354,3 +354,37 @@ export interface Sport {
   /* ── Escape hatch for a scalar unique to ONE sport ────────────────────── */
   sportSpecific?: Record<string, unknown>;
 }
+
+/**
+ * Lightweight projection of {@link Sport} — only the fields required to
+ * render a sport card in a listing (SportCard + SportsDirectory + filters).
+ *
+ * WHY: the /sports page ships every sport in the catalog to the client.
+ * With ~1,600+ fully-authored records, serialising the entire Sport shape
+ * (with longDescription, records, basicRules, faq, learningPaths, …)
+ * pushed the ISR payload past Vercel's 19 MB per-page limit
+ * (FALLBACK_BODY_TOO_LARGE). This summary strips the heavy narrative
+ * fields — cards + filters read strictly from these keys — bringing the
+ * per-sport payload down by roughly an order of magnitude.
+ *
+ * Any full `Sport` object is assignable to `SportSummary` (structural
+ * subtype), so callers can pass full records where a summary is expected;
+ * the {@link toSportSummary} helper is the canonical projection when you
+ * want the actual size savings.
+ */
+export type SportSummary = Pick<
+  Sport,
+  | "slug"
+  | "name"
+  | "officialName"
+  | "aliases"
+  | "shortDescription"
+  | "category"
+  | "sportType"
+  | "indoorOutdoor"
+  | "isOlympic"
+  | "popularity"
+  | "countryOfOrigin"
+  | "countriesPlayed"
+  | "players"
+>;

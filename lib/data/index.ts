@@ -1,4 +1,4 @@
-import type { Sport, SportCategory } from "@/lib/types";
+import type { Sport, SportCategory, SportSummary } from "@/lib/types";
 /* ── Per-category authored games (one folder per category slug) ────────── */
 import { ADVENTURE_SPORTS } from "./sports/adventure";
 import { AIR_SPORTS } from "./sports/air";
@@ -151,6 +151,34 @@ const BY_SLUG: Record<string, Sport> = Object.fromEntries(ALL_SPORTS.map((s) => 
 
 export function getAllSports(): Sport[] {
   return [...ALL_SPORTS].sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/**
+ * Project a full {@link Sport} record down to just the fields required by
+ * card + directory rendering. Keeps `/sports` under Vercel's ISR page
+ * budget (see `SportSummary` docs in `lib/types.ts`).
+ */
+export function toSportSummary(s: Sport): SportSummary {
+  return {
+    slug: s.slug,
+    name: s.name,
+    officialName: s.officialName,
+    aliases: s.aliases,
+    shortDescription: s.shortDescription,
+    category: s.category,
+    sportType: s.sportType,
+    indoorOutdoor: s.indoorOutdoor,
+    isOlympic: s.isOlympic,
+    popularity: s.popularity,
+    countryOfOrigin: s.countryOfOrigin,
+    countriesPlayed: s.countriesPlayed,
+    players: s.players,
+  };
+}
+
+/** Same ordering as {@link getAllSports} but with the light payload. */
+export function getAllSportsSummary(): SportSummary[] {
+  return getAllSports().map(toSportSummary);
 }
 
 export function getSport(slug: string): Sport | undefined {

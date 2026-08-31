@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAllSports } from "@/lib/data";
+import { getAllSports, toSportSummary } from "@/lib/data";
 import { fetchHeroImages } from "@/lib/heroImages";
 import { SportsDirectory } from "@/components/SportsDirectory";
 
@@ -16,6 +16,9 @@ export default async function SportsPage() {
   // a real photo. Each fetch is cached by Next for a week, so repeat visits
   // never pay the network cost.
   const heroImages = await fetchHeroImages(sports);
+  // Ship only the fields the directory + cards actually read; keeps this
+  // static page under Vercel's 19 MB ISR budget (see SportSummary docs).
+  const summaries = sports.map(toSportSummary);
   return (
     <div className="container-page pb-20 pt-6 sm:pt-10">
       <header className="mb-6">
@@ -28,7 +31,7 @@ export default async function SportsPage() {
           sport to see its rules, scoring, diagrams and animations.
         </p>
       </header>
-      <SportsDirectory sports={sports} heroImages={heroImages} />
+      <SportsDirectory sports={summaries} heroImages={heroImages} />
     </div>
   );
 }

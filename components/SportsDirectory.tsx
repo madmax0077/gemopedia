@@ -1,13 +1,13 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { Sport } from "@/lib/types";
+import type { SportSummary } from "@/lib/types";
 import type { SportHeroImage } from "@/lib/wikiImage";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { COUNTRIES } from "@/lib/data/countries";
 import { SportCard } from "@/components/SportCard";
 
 type Props = {
-  sports: Sport[];
+  sports: SportSummary[];
   /**
    * Optional pre-fetched Wikipedia hero images keyed by sport slug. Passed
    * down from the server component so every card in the directory can render

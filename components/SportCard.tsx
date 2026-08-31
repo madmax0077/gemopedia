@@ -1,12 +1,12 @@
 import Link from "next/link";
-import type { Sport } from "@/lib/types";
+import type { SportSummary } from "@/lib/types";
 import type { SportHeroImage } from "@/lib/wikiImage";
 import { CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { countryFlag, countryName } from "@/lib/data/countries";
 import { categoryIcon } from "@/lib/icons";
 
 type Props = {
-  sport: Sport;
+  sport: SportSummary;
   showCategory?: boolean;
   /**
    * Optional Wikipedia hero image. When provided, it renders full-bleed

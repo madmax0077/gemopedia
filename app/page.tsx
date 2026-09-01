@@ -8,6 +8,7 @@ import {
   getSportsByCategory,
   getTrendingConcepts,
   getUnusualSports,
+  toSportSummary,
 } from "@/lib/data";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
@@ -51,7 +52,16 @@ export default async function Homepage() {
   const diagramCount = allSports.reduce((n, s) => n + (s.diagrams?.length ?? 0), 0);
   const animationCount = allSports.reduce((n, s) => n + (s.animations?.length ?? 0), 0);
 
-  const marqueeSports = [...allSports, ...allSports];
+  // Sample ~40 names evenly across the catalog, then duplicate for the
+  // seamless CSS scroll loop. Rendering all 1520 sports twice was ~1.5 MB
+  // of decorative markup and ~250 ISR read units per homepage cache miss.
+  const marqueeStep = Math.max(1, Math.ceil(allSports.length / 40));
+  const marqueeSample = allSports
+    .filter((_, i) => i % marqueeStep === 0)
+    .map((s) => ({ slug: s.slug, name: s.name }));
+  const marqueeSports = [...marqueeSample, ...marqueeSample];
+  const featuredCards = featured.map(toSportSummary);
+  const unusualCards = unusual.map(toSportSummary);
 
   return (
     <div className="relative">
@@ -145,7 +155,6 @@ export default async function Homepage() {
                   key={`${s.slug}-${i}`}
                   className="flex items-center gap-2 whitespace-nowrap text-sm font-medium text-ink-600 dark:text-ink-300"
                 >
-                  <span className="text-base">{s.countryOfOrigin ? "" : ""}</span>
                   {s.name}
                   <span className="text-ink-300 dark:text-ink-600">•</span>
                 </span>
@@ -162,7 +171,7 @@ export default async function Homepage() {
         subtitle="Global favourites plus a couple of surprises — each one a full guide with diagrams and animations."
       >
         <div className="cards-grid">
-          {featured.map((s) => (
+          {featuredCards.map((s) => (
             <SportCard key={s.slug} sport={s} heroImage={cardImages[s.slug]} />
           ))}
         </div>
@@ -241,7 +250,7 @@ export default async function Homepage() {
         subtitle="Regional and traditional sports you won't find on the front page of ESPN — and yet millions play them."
       >
         <div className="cards-grid">
-          {unusual.map((s) => (
+          {unusualCards.map((s) => (
             <SportCard key={s.slug} sport={s} heroImage={cardImages[s.slug]} />
           ))}
         </div>

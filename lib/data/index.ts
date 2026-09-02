@@ -1,4 +1,5 @@
 import type { Sport, SportCategory, SportSummary } from "@/lib/types";
+import { COUNTRY_BY_CODE } from "@/lib/data/countries";
 /* ── Per-category authored games (one folder per category slug) ────────── */
 import { ADVENTURE_SPORTS } from "./sports/adventure";
 import { AIR_SPORTS } from "./sports/air";
@@ -158,21 +159,50 @@ export function getAllSports(): Sport[] {
  * card + directory rendering. Keeps `/sports` under Vercel's ISR page
  * budget (see `SportSummary` docs in `lib/types.ts`).
  */
+/**
+ * `SportCard` renders the description inside `line-clamp-2`, so roughly two
+ * lines are all a reader ever sees. Catalog entries average ~350 characters
+ * and run to 1040, which meant ~530 KB of invisible text across a 1500-card
+ * listing — serialised twice (SSR HTML + RSC payload) and billed as Vercel
+ * ISR Reads. Trim to a little more than the clamp can show.
+ */
+const CARD_DESCRIPTION_LIMIT = 180;
+
+function trimForCard(text: string): string {
+  if (text.length <= CARD_DESCRIPTION_LIMIT) return text;
+  const cut = text.slice(0, CARD_DESCRIPTION_LIMIT);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${(lastSpace > 120 ? cut.slice(0, lastSpace) : cut).trimEnd()}…`;
+}
+
 export function toSportSummary(s: Sport): SportSummary {
   return {
     slug: s.slug,
     name: s.name,
     officialName: s.officialName,
     aliases: s.aliases,
-    shortDescription: s.shortDescription,
+    shortDescription: trimForCard(s.shortDescription),
     category: s.category,
     sportType: s.sportType,
     indoorOutdoor: s.indoorOutdoor,
     isOlympic: s.isOlympic,
     popularity: s.popularity,
     countryOfOrigin: s.countryOfOrigin,
-    countriesPlayed: s.countriesPlayed,
-    players: s.players,
+    // The directory's country filter does an exact `includes()` against
+    // 2-letter codes, so free-text entries ("GBR (dominant women's
+    // tradition — …)") could never match it. Keeping only real ISO codes
+    // both fixes the filter and drops dead weight from the payload.
+    countriesPlayed: s.countriesPlayed
+      ?.map((code) => (typeof code === "string" ? code.toUpperCase() : ""))
+      .filter((code) => !!COUNTRY_BY_CODE[code]),
+    // Cards show `perTeam`, or a `min–max` range, or fall back to `note`.
+    // Long prose notes are never fully visible, so cap the fallback.
+    players: s.players
+      ? {
+          ...s.players,
+          note: s.players.note ? trimForCard(s.players.note) : undefined,
+        }
+      : undefined,
   };
 }
 

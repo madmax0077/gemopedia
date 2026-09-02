@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { SportSummary } from "@/lib/types";
-import type { SportHeroImage } from "@/lib/wikiImage";
+import type { CardHeroImage } from "@/lib/heroImages";
 import { CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { countryFlag, countryName } from "@/lib/data/countries";
 import { categoryIcon } from "@/lib/icons";
@@ -14,8 +14,12 @@ type Props = {
    * so text and chips stay readable. When absent (e.g. offline dev or a
    * sport with no Wikipedia photo) the card falls back to the pure
    * gradient design.
+   *
+   * Deliberately narrowed to `{ src }` — the card renders nothing else, and
+   * shipping the full `SportHeroImage` (which includes a Wikipedia
+   * `extract` paragraph) across a large grid cost ~1 MB per listing page.
    */
-  heroImage?: SportHeroImage | null;
+  heroImage?: CardHeroImage | null;
 };
 
 /**

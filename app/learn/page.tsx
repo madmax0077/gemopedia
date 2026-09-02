@@ -15,7 +15,18 @@ export const dynamic = "force-static";
 export const revalidate = false;
 
 export default function LearnHubPage() {
-  const sports = getAllSports().filter((s) => (s.learningPaths?.length ?? 0) > 0);
+  // Project to just the five fields the cards below render. Mapping the full
+  // `Sport` records serialised the entire catalog (rules, records, long
+  // descriptions) into the RSC payload — ~1.6 MB for a page of link tiles.
+  const sports = getAllSports()
+    .filter((s) => (s.learningPaths?.length ?? 0) > 0)
+    .map((s) => ({
+      slug: s.slug,
+      name: s.name,
+      category: s.category,
+      shortDescription: s.shortDescription,
+      levels: (s.learningPaths ?? []).map((p) => p.level).join(" · "),
+    }));
 
   return (
     <div className="container-page pb-20 pt-6 sm:pt-10">
@@ -39,7 +50,7 @@ export default function LearnHubPage() {
               className={`rounded-3xl border border-ink-200/70 bg-gradient-to-br ${cat.hue.from} ${cat.hue.to} p-5 text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md dark:border-ink-700/70`}
             >
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/85">
-                {(s.learningPaths ?? []).map((p) => p.level).join(" · ")}
+                {s.levels}
               </p>
               <h2 className="mt-1 font-display text-xl font-bold">{s.name}</h2>
               <p className="mt-2 text-sm text-white/95 line-clamp-2">{s.shortDescription}</p>

@@ -14,7 +14,7 @@ import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
 import { SportCard } from "@/components/SportCard";
 import { categoryIcon } from "@/lib/icons";
-import { fetchHeroImages } from "@/lib/heroImages";
+import { fetchCardHeroImages } from "@/lib/heroImages";
 
 export const metadata: Metadata = {
   title: "Gemopedia — Every game. Explained.",
@@ -35,7 +35,7 @@ export default async function Homepage() {
 
   // Pull real Wikipedia lead photos for the two card grids in parallel.
   // These are cached by Next.js for a week, so subsequent renders are free.
-  const cardImages = await fetchHeroImages([...featured, ...unusual]);
+  const cardImages = await fetchCardHeroImages([...featured, ...unusual]);
   const totalSports = allSports.length;
   // Only count real countries — several `countriesPlayed` entries in the
   // catalog are free-text notes ("worldwide via clocktower.online",

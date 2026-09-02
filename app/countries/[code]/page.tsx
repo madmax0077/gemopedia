@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
-import { getSportsByCountry } from "@/lib/data";
+import { getSportsByCountry, toSportSummary } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
-import { fetchHeroImages } from "@/lib/heroImages";
+import { fetchCardHeroImages } from "@/lib/heroImages";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
 interface RouteParams { params: { code: string } }
+
+/** Cards rendered per section before deferring to the full directory. */
+const SECTION_LIMIT = 60;
 
 // Fully static SSG — no ISR reads on Vercel.
 export const dynamic = "force-static";
@@ -33,9 +36,18 @@ export default async function CountryPage({ params }: RouteParams) {
   if (!country) return notFound();
 
   const sports = getSportsByCountry(country.code);
-  const originating = sports.filter((s) => s.countryOfOrigin === country.code);
-  const played = sports.filter((s) => s.countryOfOrigin !== country.code);
-  const heroImages = await fetchHeroImages(sports);
+  // Fetch images from the full records (so `wikipediaTitle` overrides still
+  // resolve), then project everything that crosses into the client tree down
+  // to the light shapes. A country like US matches ~700 sports; shipping full
+  // `Sport` records made this page ~8.7 MB of Vercel ISR reads per miss.
+  const heroImages = await fetchCardHeroImages(sports);
+  const allOriginating = sports.filter((s) => s.countryOfOrigin === country.code);
+  const allPlayed = sports.filter((s) => s.countryOfOrigin !== country.code);
+  // Only ship what we actually render. A country like US matches 1100+ sports;
+  // rendering every card produced an ~8.7 MB page. The full list stays one
+  // click away in the directory, and every sport is still in the sitemap.
+  const originating = allOriginating.slice(0, SECTION_LIMIT).map(toSportSummary);
+  const played = allPlayed.slice(0, SECTION_LIMIT).map(toSportSummary);
 
   const jsonLd = breadcrumbJsonLd([
     { label: "Gemopedia", href: "/" },
@@ -74,6 +86,7 @@ export default async function CountryPage({ params }: RouteParams) {
                 <SportCard key={s.slug} sport={s} heroImage={heroImages[s.slug]} />
               ))}
             </div>
+            <MoreLink shown={originating.length} total={allOriginating.length} code={country.code} />
           </section>
         )}
 
@@ -87,6 +100,7 @@ export default async function CountryPage({ params }: RouteParams) {
                 <SportCard key={s.slug} sport={s} heroImage={heroImages[s.slug]} />
               ))}
             </div>
+            <MoreLink shown={played.length} total={allPlayed.length} code={country.code} />
           </section>
         )}
 
@@ -97,5 +111,24 @@ export default async function CountryPage({ params }: RouteParams) {
         )}
       </div>
     </>
+  );
+}
+
+/**
+ * Rendered under a capped grid to point at the rest of the list. Links to the
+ * directory with a hash filter — a hash keeps `/sports` statically rendered,
+ * where a `?query=` would force it dynamic.
+ */
+function MoreLink({ shown, total, code }: { shown: number; total: number; code: string }) {
+  if (total <= shown) return null;
+  return (
+    <div className="mt-5">
+      <Link
+        href={`/sports#country=${code}`}
+        className="inline-flex items-center gap-1.5 rounded-full border border-ink-300 bg-white/70 px-4 py-2 text-xs font-semibold text-ink-800 transition hover:border-brand-400 dark:border-white/10 dark:bg-ink-900/50 dark:text-ink-100"
+      >
+        Showing {shown} of {total} — see all in the directory →
+      </Link>
+    </div>
   );
 }

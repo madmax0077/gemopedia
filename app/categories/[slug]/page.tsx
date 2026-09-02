@@ -39,10 +39,11 @@ export default async function CategoryPage({ params }: RouteParams) {
   const sports = getSportsByCategory(cat.slug);
   // Images resolve off the full records; only light shapes cross into the
   // rendered tree (see the note in lib/heroImages.ts).
-  const heroImages = await fetchCardHeroImages(sports);
   // Cap the rendered grid — large categories (video games, board games) ran
   // to 1.3 MB of cards. The rest is one click away in the directory.
-  const cards = sports.slice(0, CATEGORY_LIMIT).map(toSportSummary);
+  const visible = sports.slice(0, CATEGORY_LIMIT);
+  const heroImages = await fetchCardHeroImages(visible);
+  const cards = visible.map(toSportSummary);
 
   const jsonLd = breadcrumbJsonLd([
     { label: "Gemopedia", href: "/" },

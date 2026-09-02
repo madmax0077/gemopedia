@@ -40,14 +40,18 @@ export default async function CountryPage({ params }: RouteParams) {
   // resolve), then project everything that crosses into the client tree down
   // to the light shapes. A country like US matches ~700 sports; shipping full
   // `Sport` records made this page ~8.7 MB of Vercel ISR reads per miss.
-  const heroImages = await fetchCardHeroImages(sports);
   const allOriginating = sports.filter((s) => s.countryOfOrigin === country.code);
   const allPlayed = sports.filter((s) => s.countryOfOrigin !== country.code);
   // Only ship what we actually render. A country like US matches 1100+ sports;
   // rendering every card produced an ~8.7 MB page. The full list stays one
   // click away in the directory, and every sport is still in the sitemap.
-  const originating = allOriginating.slice(0, SECTION_LIMIT).map(toSportSummary);
-  const played = allPlayed.slice(0, SECTION_LIMIT).map(toSportSummary);
+  const originatingFull = allOriginating.slice(0, SECTION_LIMIT);
+  const playedFull = allPlayed.slice(0, SECTION_LIMIT);
+  // Fetch images for the rendered slice only — resolving them for every sport
+  // in the country both bloated the payload and slowed the build.
+  const heroImages = await fetchCardHeroImages([...originatingFull, ...playedFull]);
+  const originating = originatingFull.map(toSportSummary);
+  const played = playedFull.map(toSportSummary);
 
   const jsonLd = breadcrumbJsonLd([
     { label: "Gemopedia", href: "/" },

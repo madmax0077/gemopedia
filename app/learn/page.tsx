@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllSports } from "@/lib/data";
+import { getAllSports, toSportSummary } from "@/lib/data";
 import { CATEGORY_BY_SLUG } from "@/lib/data/categories";
 
 export const metadata: Metadata = {
@@ -14,19 +14,22 @@ export const metadata: Metadata = {
 export const dynamic = "force-static";
 export const revalidate = false;
 
+/** Tiles rendered before deferring to the directory. */
+const LEARN_LIMIT = 60;
+
 export default function LearnHubPage() {
-  // Project to just the five fields the cards below render. Mapping the full
-  // `Sport` records serialised the entire catalog (rules, records, long
-  // descriptions) into the RSC payload — ~1.6 MB for a page of link tiles.
-  const sports = getAllSports()
-    .filter((s) => (s.learningPaths?.length ?? 0) > 0)
-    .map((s) => ({
-      slug: s.slug,
-      name: s.name,
-      category: s.category,
-      shortDescription: s.shortDescription,
-      levels: (s.learningPaths ?? []).map((p) => p.level).join(" · "),
-    }));
+  const withPaths = getAllSports().filter((s) => (s.learningPaths?.length ?? 0) > 0);
+  // Project to just the four fields the tiles render, cap the list, and trim
+  // the description to what `line-clamp-2` can show. Mapping every full
+  // `Sport` record serialised the whole catalog into the RSC payload — ~1.6 MB
+  // for a page of link tiles.
+  const sports = withPaths.slice(0, LEARN_LIMIT).map((s) => ({
+    slug: s.slug,
+    name: s.name,
+    category: s.category,
+    shortDescription: toSportSummary(s).shortDescription,
+    levels: (s.learningPaths ?? []).map((p) => p.level).join(" · "),
+  }));
 
   return (
     <div className="container-page pb-20 pt-6 sm:pt-10">
@@ -59,6 +62,17 @@ export default function LearnHubPage() {
           );
         })}
       </div>
+
+      {withPaths.length > sports.length && (
+        <div className="mt-8">
+          <Link
+            href="/sports"
+            className="inline-flex items-center gap-1.5 rounded-full border border-ink-300 bg-white/70 px-4 py-2 text-xs font-semibold text-ink-800 transition hover:border-brand-400 dark:border-white/10 dark:bg-ink-900/50 dark:text-ink-100"
+          >
+            Showing {sports.length} of {withPaths.length} guided sports — browse the full directory →
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

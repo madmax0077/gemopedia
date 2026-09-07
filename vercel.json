@@ -1,0 +1,45 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/sports",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/sports/:slug*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/categories",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/categories/:slug*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/countries",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/countries/:code*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/compare",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/compare/:pair*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    },
+    {
+      "source": "/learn",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+    }
+  ]
+}

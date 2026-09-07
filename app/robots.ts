@@ -39,6 +39,12 @@ const BLOCKED_AI_AND_SCRAPERS = [
   "Bytedance",
 ];
 
+// Metadata routes are treated as route handlers, so `output: "export"`
+// requires them to opt into build-time generation explicitly or the build
+// fails with "not configured on route /robots.txt with output: export".
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Sport } from "@/lib/types";
 import { CATEGORY_BY_SLUG } from "@/lib/data/categories";
-import { countryFlag, countryName } from "@/lib/data/countries";
+import { COUNTRY_BY_CODE, countryFlag, countryName } from "@/lib/data/countries";
 import { getSport } from "@/lib/data";
 import { AnimationByKey } from "./animation/registry";
 import { DiagramByKey } from "./animation/DiagramRegistry";
@@ -91,14 +91,19 @@ export function SportPage({
             >
               {cat.name}
             </Link>
-            {sport.countryOfOrigin && (
+            {sport.countryOfOrigin && COUNTRY_BY_CODE[sport.countryOfOrigin.toUpperCase()] && (
               <Link
-                href={`/countries/${sport.countryOfOrigin}`}
+                href={`/countries/${sport.countryOfOrigin.toUpperCase()}`}
                 className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/15 px-3 py-1 backdrop-blur-sm transition hover:bg-white/25"
               >
-                <span className="text-sm leading-none">{countryFlag(sport.countryOfOrigin)}</span>
-                {countryName(sport.countryOfOrigin)}
+                <span className="text-sm leading-none">{countryFlag(sport.countryOfOrigin.toUpperCase())}</span>
+                {countryName(sport.countryOfOrigin.toUpperCase())}
               </Link>
+            )}
+            {sport.countryOfOrigin && !COUNTRY_BY_CODE[sport.countryOfOrigin.toUpperCase()] && (
+              <span className="inline-flex items-center rounded-full border border-white/25 bg-white/15 px-3 py-1 backdrop-blur-sm">
+                {sport.countryOfOrigin}
+              </span>
             )}
             {sport.isOlympic && (
               <span className="inline-flex items-center gap-1 rounded-full border border-white/25 bg-white/15 px-3 py-1 backdrop-blur-sm">
@@ -393,17 +398,32 @@ export function SportPage({
       {/* Countries played */}
       <Section id="countries" title="Where it is played" skip={!sport.countriesPlayed?.length}>
         <ul className="flex flex-wrap gap-2">
-          {(sport.countriesPlayed ?? []).map((code) => (
-            <li key={code}>
-              <Link
-                href={`/countries/${code}`}
-                className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1 text-sm text-ink-800 hover:border-indigo-400 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
-              >
-                <span>{countryFlag(code)}</span>
-                {countryName(code)}
-              </Link>
-            </li>
-          ))}
+          {(sport.countriesPlayed ?? []).map((value) => {
+            const code = value.toUpperCase();
+            const country = COUNTRY_BY_CODE[code];
+            return (
+              <li key={value}>
+                {country ? (
+                  <Link
+                    href={`/countries/${code}`}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1 text-sm text-ink-800 hover:border-indigo-400 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
+                  >
+                    <span>{country.flag}</span>
+                    {country.name}
+                  </Link>
+                ) : (
+                  // Historical data contains alpha-3 codes and descriptive
+                  // prose (for example "USA (largest market)" and
+                  // "worldwide via online"). These are useful to readers but
+                  // are not route keys. Linking every value generated 787
+                  // distinct /countries/* 404s that Google followed.
+                  <span className="inline-flex rounded-full border border-ink-200 bg-white px-3 py-1 text-sm text-ink-800 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100">
+                    {value}
+                  </span>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </Section>
 

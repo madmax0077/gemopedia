@@ -16,12 +16,10 @@ import { blackMythZhongKui } from "./black-myth-zhong-kui";
 import { bloodborne } from "./bloodborne";
 import { bloodborneFromsoftware } from "./bloodborne-fromsoftware";
 import { callOfDuty } from "./call-of-duty";
-import { candyCrush } from "./candy-crush";
 import { candyCrushSaga } from "./candy-crush-saga";
 import { celeste } from "./celeste";
 import { celesteIndie } from "./celeste-indie";
 import { civilization } from "./civilization";
-import { civilizationGame } from "./civilization-game";
 import { crusaderKingsIii } from "./crusader-kings-iii";
 import { cuphead } from "./cuphead";
 import { cyberpunk2077 } from "./cyberpunk-2077";
@@ -33,11 +31,9 @@ import { deathStranding } from "./death-stranding";
 import { deepRockGalactic } from "./deep-rock-galactic";
 import { destiny2 } from "./destiny-2";
 import { diablo } from "./diablo";
-import { diabloGame } from "./diablo-game";
 import { discoElysium } from "./disco-elysium";
 import { donkeyKong } from "./donkey-kong";
 import { doom } from "./doom";
-import { doomGame } from "./doom-game";
 import { dragonQuestXi } from "./dragon-quest-xi";
 import { eaFc } from "./ea-fc";
 import { eaSportsUfc } from "./ea-sports-ufc";
@@ -101,19 +97,16 @@ import { pokemonScarletViolet } from "./pokemon-scarlet-violet";
 import { pokemonVideoGames } from "./pokemon-video-games";
 import { pokkenTournament } from "./pokken-tournament";
 import { portal } from "./portal";
-import { portalGame } from "./portal-game";
 import { redDeadRedemption2 } from "./red-dead-redemption-2";
 import { residentEvil } from "./resident-evil";
 import { returnal } from "./returnal";
 import { riseOfRonin } from "./rise-of-ronin";
 import { riskOfRain2 } from "./risk-of-rain-2";
 import { roblox } from "./roblox";
-import { robloxGame } from "./roblox-game";
 import { shinMegamiTenseiV } from "./shin-megami-tensei-v";
 import { simCity } from "./sim-city";
 import { skyrim } from "./skyrim";
 import { slayTheSpire } from "./slay-the-spire";
-import { sonic } from "./sonic";
 import { sonicTheHedgehog } from "./sonic-the-hedgehog";
 import { soulcalibur } from "./soulcalibur";
 import { spaceInvaders } from "./space-invaders";
@@ -173,14 +166,10 @@ export const VIDEO_GAMES: Sport[] = [
   blackMythZhongKui,
   bloodborne,
   bloodborneFromsoftware,
-  callOfDuty,
-  candyCrush,
-  candyCrushSaga,
+  callOfDuty,  candyCrushSaga,
   celeste,
   celesteIndie,
-  civilization,
-  civilizationGame,
-  crusaderKingsIii,
+  civilization,  crusaderKingsIii,
   cuphead,
   cyberpunk2077,
   danceDanceRevolution,
@@ -190,13 +179,9 @@ export const VIDEO_GAMES: Sport[] = [
   deathStranding,
   deepRockGalactic,
   destiny2,
-  diablo,
-  diabloGame,
-  discoElysium,
+  diablo,  discoElysium,
   donkeyKong,
-  doom,
-  doomGame,
-  dragonQuestXi,
+  doom,  dragonQuestXi,
   eaFc,
   eaSportsUfc,
   eldenRing,
@@ -258,21 +243,15 @@ export const VIDEO_GAMES: Sport[] = [
   pokemonScarletViolet,
   pokemonVideoGames,
   pokkenTournament,
-  portal,
-  portalGame,
-  redDeadRedemption2,
+  portal,  redDeadRedemption2,
   residentEvil,
   returnal,
   riseOfRonin,
   riskOfRain2,
-  roblox,
-  robloxGame,
-  shinMegamiTenseiV,
+  roblox,  shinMegamiTenseiV,
   simCity,
   skyrim,
-  slayTheSpire,
-  sonic,
-  sonicTheHedgehog,
+  slayTheSpire,  sonicTheHedgehog,
   soulcalibur,
   spaceInvaders,
   splitgate,

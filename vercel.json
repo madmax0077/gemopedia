@@ -3,43 +3,260 @@
   "headers": [
     {
       "source": "/",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/sports",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/sports/:slug*",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/categories",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/categories/:slug*",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/countries",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/countries/:code*",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/compare",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/compare/:pair*",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/learn",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/sports/ballooning",
+      "destination": "/sports/hot-air-ballooning",
+      "permanent": true
+    },
+    {
+      "source": "/sports/blood-on-clocktower",
+      "destination": "/sports/blood-on-the-clocktower",
+      "permanent": true
+    },
+    {
+      "source": "/sports/candy-crush",
+      "destination": "/sports/candy-crush-saga",
+      "permanent": true
+    },
+    {
+      "source": "/sports/caribbean-stud-poker",
+      "destination": "/sports/caribbean-stud",
+      "permanent": true
+    },
+    {
+      "source": "/sports/civilization-game",
+      "destination": "/sports/civilization",
+      "permanent": true
+    },
+    {
+      "source": "/sports/decrypto-team",
+      "destination": "/sports/decrypto",
+      "permanent": true
+    },
+    {
+      "source": "/sports/diablo-game",
+      "destination": "/sports/diablo",
+      "permanent": true
+    },
+    {
+      "source": "/sports/doom-game",
+      "destination": "/sports/doom",
+      "permanent": true
+    },
+    {
+      "source": "/sports/ea-sports-fc",
+      "destination": "/sports/ea-fc",
+      "permanent": true
+    },
+    {
+      "source": "/sports/enduro-motorbike",
+      "destination": "/sports/enduro",
+      "permanent": true
+    },
+    {
+      "source": "/sports/klondike",
+      "destination": "/sports/klondike-solitaire",
+      "permanent": true
+    },
+    {
+      "source": "/sports/mexican-train",
+      "destination": "/sports/mexican-train-dominoes",
+      "permanent": true
+    },
+    {
+      "source": "/sports/mobile-legends-bang-bang",
+      "destination": "/sports/mobile-legends",
+      "permanent": true
+    },
+    {
+      "source": "/sports/mothership",
+      "destination": "/sports/mothership-rpg",
+      "permanent": true
+    },
+    {
+      "source": "/sports/portal-game",
+      "destination": "/sports/portal",
+      "permanent": true
+    },
+    {
+      "source": "/sports/president-card-game",
+      "destination": "/sports/president",
+      "permanent": true
+    },
+    {
+      "source": "/sports/roblox-game",
+      "destination": "/sports/roblox",
+      "permanent": true
+    },
+    {
+      "source": "/sports/silambam-tamil",
+      "destination": "/sports/silambam",
+      "permanent": true
+    },
+    {
+      "source": "/sports/sonic",
+      "destination": "/sports/sonic-the-hedgehog",
+      "permanent": true
+    },
+    {
+      "source": "/sports/speed-cubing",
+      "destination": "/sports/speedcubing",
+      "permanent": true
+    },
+    {
+      "source": "/sports/spyfall-party",
+      "destination": "/sports/spyfall",
+      "permanent": true
+    },
+    {
+      "source": "/sports/star-wars-xwing",
+      "destination": "/sports/star-wars-x-wing",
+      "permanent": true
+    },
+    {
+      "source": "/sports/starcraft-2",
+      "destination": "/sports/starcraft-ii",
+      "permanent": true
+    },
+    {
+      "source": "/sports/tarot-game",
+      "destination": "/sports/tarot",
+      "permanent": true
+    },
+    {
+      "source": "/sports/trampolining",
+      "destination": "/sports/trampoline",
+      "permanent": true
+    },
+    {
+      "source": "/sports/triominos",
+      "destination": "/sports/triominoes",
+      "permanent": true
+    },
+    {
+      "source": "/sports/two-truths-lie",
+      "destination": "/sports/two-truths-and-a-lie",
+      "permanent": true
+    },
+    {
+      "source": "/sports/ultimate-texas-hold-em",
+      "destination": "/sports/ultimate-texas-holdem",
+      "permanent": true
+    },
+    {
+      "source": "/sports/ultra-marathon",
+      "destination": "/sports/ultramarathon",
+      "permanent": true
+    },
+    {
+      "source": "/sports/warhammer-40k",
+      "destination": "/sports/warhammer-40000",
+      "permanent": true
+    },
+    {
+      "source": "/sports/warhammer-fantasy-rp",
+      "destination": "/sports/warhammer-fantasy-roleplay",
+      "permanent": true
+    },
+    {
+      "source": "/sports/wavelength-party",
+      "destination": "/sports/wavelength",
+      "permanent": true
+    },
+    {
+      "source": "/sports/yo-yo",
+      "destination": "/sports/yoyo",
+      "permanent": true
     }
   ]
 }

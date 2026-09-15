@@ -7,7 +7,6 @@ import { bingo } from "./bingo";
 import { bingoCompetitive } from "./bingo-competitive";
 import { blackjack } from "./blackjack";
 import { caribbeanStud } from "./caribbean-stud";
-import { caribbeanStudPoker } from "./caribbean-stud-poker";
 import { casinoHoldem } from "./casino-holdem";
 import { casinoWar } from "./casino-war";
 import { chuckALuck } from "./chuck-a-luck";
@@ -36,7 +35,6 @@ import { teenPatti } from "./teen-patti";
 import { threeCardPoker } from "./three-card-poker";
 import { twoUp } from "./two-up";
 import { ultimateTexasHoldem } from "./ultimate-texas-holdem";
-import { ultimateTexasHoldEm } from "./ultimate-texas-hold-em";
 import { videoPoker } from "./video-poker";
 
 /**
@@ -50,9 +48,7 @@ export const CASINO_GAMES: Sport[] = [
   bingo,
   bingoCompetitive,
   blackjack,
-  caribbeanStud,
-  caribbeanStudPoker,
-  casinoHoldem,
+  caribbeanStud,  casinoHoldem,
   casinoWar,
   chuckALuck,
   crazy4Poker,
@@ -79,9 +75,7 @@ export const CASINO_GAMES: Sport[] = [
   teenPatti,
   threeCardPoker,
   twoUp,
-  ultimateTexasHoldem,
-  ultimateTexasHoldEm,
-  videoPoker,
+  ultimateTexasHoldem,  videoPoker,
 ];
 
 

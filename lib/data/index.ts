@@ -1,5 +1,8 @@
 import type { Sport, SportCategory, SportSummary } from "@/lib/types";
 import { COUNTRY_BY_CODE } from "@/lib/data/countries";
+import { RETIRED_SLUGS } from "@/lib/data/retiredSlugs";
+
+export { RETIRED_SLUGS };
 /* ── Per-category authored games (one folder per category slug) ────────── */
 import { ADVENTURE_SPORTS } from "./sports/adventure";
 import { AIR_SPORTS } from "./sports/air";
@@ -146,7 +149,10 @@ function dedupeBySlug(sports: Sport[]): Sport[] {
   return out;
 }
 
-export const ALL_SPORTS: Sport[] = dedupeBySlug([...FULL_SPORTS, ...STUB_SPORTS]);
+// Duplicate pages published under a second slug — see ./retiredSlugs.ts.
+export const ALL_SPORTS: Sport[] = dedupeBySlug([...FULL_SPORTS, ...STUB_SPORTS]).filter(
+  (s) => !RETIRED_SLUGS[s.slug],
+);
 
 const BY_SLUG: Record<string, Sport> = Object.fromEntries(ALL_SPORTS.map((s) => [s.slug, s]));
 

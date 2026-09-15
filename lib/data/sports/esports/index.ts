@@ -12,7 +12,6 @@ import { counterStrike } from "./counter-strike";
 import { deadlock } from "./deadlock";
 import { dota2 } from "./dota-2";
 import { dragonBallFighterZ as dragonBallFighterz } from "./dragon-ball-fighterz";
-import { eaSportsFc } from "./ea-sports-fc";
 import { fifaOnline4 } from "./fifa-online-4";
 import { finalFantasyXIV as finalFantasyXiv } from "./final-fantasy-xiv";
 import { freeFire } from "./free-fire";
@@ -29,7 +28,6 @@ import { magicTheGatheringArena } from "./magic-the-gathering-arena";
 import { marvelRivals } from "./marvel-rivals";
 import { marvelSnap } from "./marvel-snap";
 import { mobileLegends } from "./mobile-legends";
-import { mobileLegendsBangBang } from "./mobile-legends-bang-bang";
 import { multiversus } from "./multiversus";
 import { narakaBladepoint } from "./naraka-bladepoint";
 import { overwatch } from "./overwatch";
@@ -43,7 +41,6 @@ import { rocketLeague } from "./rocket-league";
 import { rocketLeagueRlcs } from "./rocket-league-rlcs";
 import { smite } from "./smite";
 import { splatoon } from "./splatoon";
-import { starcraft2 } from "./starcraft-2";
 import { starcraftII as starcraftIi } from "./starcraft-ii";
 import { teamfightTactics } from "./teamfight-tactics";
 import { theFinals } from "./the-finals";
@@ -71,9 +68,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   counterStrike,
   deadlock,
   dota2,
-  dragonBallFighterz,
-  eaSportsFc,
-  fifaOnline4,
+  dragonBallFighterz,  fifaOnline4,
   finalFantasyXiv,
   freeFire,
   garenaFreeFire,
@@ -88,9 +83,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   magicTheGatheringArena,
   marvelRivals,
   marvelSnap,
-  mobileLegends,
-  mobileLegendsBangBang,
-  multiversus,
+  mobileLegends,  multiversus,
   narakaBladepoint,
   overwatch,
   overwatch2,
@@ -102,9 +95,7 @@ export const ESPORTS_SPORTS: Sport[] = [
   rocketLeague,
   rocketLeagueRlcs,
   smite,
-  splatoon,
-  starcraft2,
-  starcraftIi,
+  splatoon,  starcraftIi,
   teamfightTactics,
   theFinals,
   throneAndLiberty,

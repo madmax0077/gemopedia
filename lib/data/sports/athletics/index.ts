@@ -25,7 +25,6 @@ import { steeplechase } from "./steeplechase";
 import { trailRunning } from "./trail-running";
 import { tripleJump } from "./triple-jump";
 import { ultramarathon } from "./ultramarathon";
-import { ultraMarathon } from "./ultra-marathon";
 
 /**
  * Athletics sports.
@@ -56,7 +55,5 @@ export const ATHLETICS_SPORTS: Sport[] = [
   steeplechase,
   trailRunning,
   tripleJump,
-  ultramarathon,
-  ultraMarathon,
-];
+  ultramarathon,];
 

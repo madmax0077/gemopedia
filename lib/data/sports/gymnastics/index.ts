@@ -14,7 +14,6 @@ import { poleSport } from "./pole-sport";
 import { rhythmicGymnastics } from "./rhythmic-gymnastics";
 import { ropeSkipping } from "./rope-skipping";
 import { trampoline } from "./trampoline";
-import { trampolining } from "./trampolining";
 import { tumbling } from "./tumbling";
 
 /**
@@ -35,9 +34,7 @@ export const GYMNASTICS_SPORTS: Sport[] = [
   poleSport,
   rhythmicGymnastics,
   ropeSkipping,
-  trampoline,
-  trampolining,
-  tumbling,
+  trampoline,  tumbling,
 ];
 
 

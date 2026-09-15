@@ -15,7 +15,6 @@ import { nonogram } from "./nonogram";
 import { picross } from "./picross";
 import { rubiksCube } from "./rubiks-cube";
 import { slitherlink } from "./slitherlink";
-import { speedCubing } from "./speed-cubing";
 import { sudoku } from "./sudoku";
 import { tangram } from "./tangram";
 import { ticTacToe } from "./tic-tac-toe";
@@ -41,9 +40,7 @@ export const PUZZLE_GAMES: Sport[] = [
   nonogram,
   picross,
   rubiksCube,
-  slitherlink,
-  speedCubing,
-  sudoku,
+  slitherlink,  sudoku,
   tangram,
   ticTacToe,
   towerOfHanoi,

@@ -15,7 +15,6 @@ import { ironsworn } from "./ironsworn";
 import { lancerRpg } from "./lancer-rpg";
 import { monsterOfTheWeek } from "./monster-of-the-week";
 import { morkBorg } from "./mork-borg";
-import { mothership } from "./mothership";
 import { mothershipRpg } from "./mothership-rpg";
 import { numenera } from "./numenera";
 import { oldSchoolEssentials } from "./old-school-essentials";
@@ -52,9 +51,7 @@ export const TABLETOP_RPG_GAMES: Sport[] = [
   ironsworn,
   lancerRpg,
   monsterOfTheWeek,
-  morkBorg,
-  mothership,
-  mothershipRpg,
+  morkBorg,  mothershipRpg,
   numenera,
   oldSchoolEssentials,
   paranoia,

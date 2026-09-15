@@ -1,7 +1,6 @@
 ﻿import type { Sport } from "@/lib/types";
 
 import { balderdash } from "./balderdash";
-import { bloodOnClocktower } from "./blood-on-clocktower";
 import { bloodOnTheClocktower } from "./blood-on-the-clocktower";
 import { cardsAgainstHumanity } from "./cards-against-humanity";
 import { charades } from "./charades";
@@ -12,7 +11,6 @@ import { concept } from "./concept";
 import { coupSocialDeduction } from "./coup-social-deduction";
 import { crokinole } from "./crokinole";
 import { decrypto } from "./decrypto";
-import { decryptoTeam } from "./decrypto-team";
 import { explodingKittens } from "./exploding-kittens";
 import { fibbage } from "./fibbage";
 import { guessWho } from "./guess-who";
@@ -36,7 +34,6 @@ import { secretHitler } from "./secret-hitler";
 import { skull } from "./skull";
 import { soClover } from "./so-clover";
 import { spyfall } from "./spyfall";
-import { spyfallParty } from "./spyfall-party";
 import { taboo } from "./taboo";
 import { telephone } from "./telephone";
 import { telestrations } from "./telestrations";
@@ -49,7 +46,6 @@ import { twoRoomsAndABoom } from "./two-rooms-and-a-boom";
 import { twoTruthsAndALie } from "./two-truths-and-a-lie";
 import { unstableUnicorns } from "./unstable-unicorns";
 import { wavelength } from "./wavelength";
-import { wavelengthParty } from "./wavelength-party";
 import { wavelengthSocialGuessing } from "./wavelength-social-guessing";
 import { werewolf } from "./werewolf";
 import { witsAndWagers } from "./wits-and-wagers";
@@ -59,9 +55,7 @@ import { witsAndWagers } from "./wits-and-wagers";
  * Auto-generated from lib/data/sports/party/*.ts
  */
 export const PARTY_GAMES: Sport[] = [
-  balderdash,
-  bloodOnClocktower,
-  bloodOnTheClocktower,
+  balderdash,  bloodOnTheClocktower,
   cardsAgainstHumanity,
   charades,
   cluedo,
@@ -70,9 +64,7 @@ export const PARTY_GAMES: Sport[] = [
   concept,
   coupSocialDeduction,
   crokinole,
-  decrypto,
-  decryptoTeam,
-  explodingKittens,
+  decrypto,  explodingKittens,
   fibbage,
   guessWho,
   hanabi,
@@ -94,9 +86,7 @@ export const PARTY_GAMES: Sport[] = [
   secretHitler,
   skull,
   soClover,
-  spyfall,
-  spyfallParty,
-  taboo,
+  spyfall,  taboo,
   telephone,
   telestrations,
   theMind,
@@ -107,9 +97,7 @@ export const PARTY_GAMES: Sport[] = [
   twoRoomsAndABoom,
   twoTruthsAndALie,
   unstableUnicorns,
-  wavelength,
-  wavelengthParty,
-  wavelengthSocialGuessing,
+  wavelength,  wavelengthSocialGuessing,
   werewolf,
   witsAndWagers,
 ];

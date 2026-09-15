@@ -3,7 +3,10 @@ import type { Sport } from "@/lib/types";
 export const golfCardGame: Sport = {
   id: "golf-card-game",
   slug: "golf-card-game",
-  name: "Golf",
+  // Disambiguated from Golf the precision sport. Both pages previously
+  // rendered the title "Golf", which made Google treat them as duplicates
+  // of each other even though they are unrelated games.
+  name: "Golf (card game)",
   officialName: "Golf (Six Card Golf / Polish Poker)",
   aliases: ["Six Card Golf", "Nine Card Golf", "Polish Poker", "Turtle"],
   shortDescription:

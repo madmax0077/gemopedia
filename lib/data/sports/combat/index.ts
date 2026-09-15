@@ -89,7 +89,6 @@ import { shorinjiKempo } from "./shorinji-kempo";
 import { shuaiJiao } from "./shuai-jiao";
 import { sikaran } from "./sikaran";
 import { silambam } from "./silambam";
-import { silambamTamil } from "./silambam-tamil";
 import { silatMelayuMalay } from "./silat-melayu-malay";
 import { sumo } from "./sumo";
 import { systema } from "./systema";
@@ -203,9 +202,7 @@ export const COMBAT_SPORTS: Sport[] = [
   shorinjiKempo,
   shuaiJiao,
   sikaran,
-  silambam,
-  silambamTamil,
-  silatMelayuMalay,
+  silambam,  silatMelayuMalay,
   sumo,
   systema,
   systemaRussianMilitary,

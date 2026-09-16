@@ -4,6 +4,7 @@ import Link from "next/link";
 import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
 import { getSportsByCountry, toSportSummary } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
+import { SportIndexLinks } from "@/components/SportIndexLinks";
 import { fetchCardHeroImages } from "@/lib/heroImages";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
@@ -108,6 +109,13 @@ export default async function CountryPage({ params }: RouteParams) {
           </section>
         )}
 
+        {/* Keeps every sport played here internally linked despite the
+            60-per-section grid cap — see SportIndexLinks. */}
+        <SportIndexLinks
+          sports={sports.map((s) => ({ slug: s.slug, name: s.name }))}
+          heading={`All sports of ${country.name} A–Z`}
+          description={`Full index of all ${sports.length} sports connected to ${country.name}.`}
+        />
         {sports.length === 0 && (
           <div className="mt-8 rounded-2xl border border-dashed border-ink-300 p-8 text-center text-sm text-ink-500 dark:border-ink-700">
             We haven't documented sports for {country.name} yet — the atlas is growing weekly.

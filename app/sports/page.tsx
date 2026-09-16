@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllSports, toSportSummary } from "@/lib/data";
 import { fetchCardHeroImages } from "@/lib/heroImages";
 import { SportsDirectory } from "@/components/SportsDirectory";
+import { SportIndexLinks } from "@/components/SportIndexLinks";
 
 export const metadata: Metadata = {
   title: "All sports — filter by country, category, format",
@@ -36,6 +37,12 @@ export default async function SportsPage() {
         </p>
       </header>
       <SportsDirectory sports={summaries} heroImages={heroImages} />
+      {/*
+        The directory renders 60 cards at a time, so without this the hub
+        page only linked to 60 of ~1500 sports. Names are already in the
+        payload above, so this adds markup only — see SportIndexLinks.
+      */}
+      <SportIndexLinks sports={summaries.map((s) => ({ slug: s.slug, name: s.name }))} />
     </div>
   );
 }

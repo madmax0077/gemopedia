@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAllSports, toSportSummary } from "@/lib/data";
+import { getAllSports, isSportIndexable, toSportSummary } from "@/lib/data";
 import { fetchCardHeroImages } from "@/lib/heroImages";
 import { SportsDirectory } from "@/components/SportsDirectory";
 import { SportIndexLinks } from "@/components/SportIndexLinks";
@@ -42,7 +42,11 @@ export default async function SportsPage() {
         page only linked to 60 of ~1500 sports. Names are already in the
         payload above, so this adds markup only — see SportIndexLinks.
       */}
-      <SportIndexLinks sports={summaries.map((s) => ({ slug: s.slug, name: s.name }))} />
+      <SportIndexLinks
+        sports={sports
+          .filter(isSportIndexable)
+          .map((s) => ({ slug: s.slug, name: s.name }))}
+      />
     </div>
   );
 }

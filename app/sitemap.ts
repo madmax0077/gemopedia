@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { CATEGORIES } from "@/lib/data/categories";
 import { COUNTRIES } from "@/lib/data/countries";
-import { getAllSports, COMPARISON_PAIRS } from "@/lib/data";
+import { getAllSports, isSportIndexable, COMPARISON_PAIRS } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
 
 // Required for `output: "export"` — without it the build fails with
@@ -23,12 +23,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/learn`, changeFrequency: "monthly", priority: 0.6 },
   ];
 
-  const sports = getAllSports().map<MetadataRoute.Sitemap[number]>((s) => ({
-    url: `${SITE_URL}/sports/${s.slug}`,
-    ...(s.lastVerified ? { lastModified: new Date(s.lastVerified) } : {}),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  }));
+  const sports = getAllSports()
+    .filter(isSportIndexable)
+    .map<MetadataRoute.Sitemap[number]>((s) => ({
+      url: `${SITE_URL}/sports/${s.slug}`,
+      ...(s.lastVerified ? { lastModified: new Date(s.lastVerified) } : {}),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    }));
 
   const categories = CATEGORIES.map<MetadataRoute.Sitemap[number]>((c) => ({
     url: `${SITE_URL}/categories/${c.slug}`,

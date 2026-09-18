@@ -54,11 +54,19 @@ if (!sitemapResponse.ok) {
   throw new Error(`Sitemap returned ${sitemapResponse.status}`);
 }
 const sitemapXml = await sitemapResponse.text();
-const sitemapUrls = [
+const sitemapEntries = [
   ...sitemapXml.matchAll(/<loc>(.*?)<\/loc>/g),
 ].map((match) => decodeXml(match[1]));
+const sitemapUrls = [...new Set(sitemapEntries)];
+const duplicateSitemapUrls = [
+  ...new Set(
+    sitemapEntries.filter((url, index) => sitemapEntries.indexOf(url) !== index),
+  ),
+];
 
-console.log(`Auditing ${sitemapUrls.length} sitemap URLs...`);
+console.log(`Auditing ${sitemapUrls.length} unique sitemap URLs...`);
+console.log(`Duplicate sitemap URLs: ${duplicateSitemapUrls.length}`);
+for (const url of duplicateSitemapUrls) console.log(`  ${url}`);
 
 const routeResults = await mapConcurrent(sitemapUrls, async (url) => {
   const response = await fetchWithTimeout(url);
@@ -91,13 +99,20 @@ const pageResults = await mapConcurrent(htmlUrls, async (url) => {
   const response = await fetchWithTimeout(url);
   if (response.status !== 200) return { url, status: response.status, links: [] };
   const html = await response.text();
+  const title = html.match(/<title>(.*?)<\/title>/i)?.[1]?.trim();
+  const description =
+    html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)/i)?.[1] ??
+    html.match(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']description/i)?.[1];
+  const robots =
+    html.match(/<meta[^>]+name=["']robots["'][^>]+content=["']([^"']*)/i)?.[1] ??
+    html.match(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']robots/i)?.[1];
   const canonical =
     html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)/i)?.[1] ??
     html.match(/<link[^>]+href=["']([^"']+)["'][^>]+rel=["']canonical/i)?.[1];
   const links = [...html.matchAll(/href=["']([^"'#?]+)(?:[?#][^"']*)?["']/gi)]
     .map((match) => match[1])
     .filter((href) => href.startsWith("/") && !href.startsWith("//"));
-  return { url, status: response.status, canonical, links };
+  return { url, status: response.status, title, description, robots, canonical, links };
 });
 
 const canonicalFailures = pageResults.filter((page) => {
@@ -109,6 +124,39 @@ const canonicalFailures = pageResults.filter((page) => {
 console.log(`Canonical mismatches/missing: ${canonicalFailures.length}`);
 for (const page of canonicalFailures) {
   console.log(`  ${page.url} -> ${page.canonical ?? "(missing)"}`);
+}
+
+const metadataFailures = pageResults.filter(
+  (page) =>
+    page.status === 200 &&
+    (!page.title ||
+      !page.description ||
+      page.robots?.toLowerCase().includes("noindex")),
+);
+console.log(`Missing metadata or sitemap URLs marked noindex: ${metadataFailures.length}`);
+for (const page of metadataFailures) {
+  console.log(
+    `  ${page.url}: title=${Boolean(page.title)}, description=${Boolean(page.description)}, robots=${page.robots ?? "(none)"}`,
+  );
+}
+
+function duplicateMetadata(field) {
+  const values = new Map();
+  for (const page of pageResults) {
+    const value = page[field]?.trim().toLowerCase();
+    if (!value) continue;
+    if (!values.has(value)) values.set(value, []);
+    values.get(value).push(page.url);
+  }
+  return [...values.values()].filter((urls) => urls.length > 1);
+}
+
+const duplicateTitles = duplicateMetadata("title");
+const duplicateDescriptions = duplicateMetadata("description");
+console.log(`Duplicate title groups: ${duplicateTitles.length}`);
+console.log(`Duplicate description groups: ${duplicateDescriptions.length}`);
+for (const urls of [...duplicateTitles, ...duplicateDescriptions]) {
+  console.log(`  ${urls.join(", ")}`);
 }
 
 const linkSources = new Map();
@@ -125,8 +173,28 @@ for (const page of pageResults) {
 const internalUrls = [...linkSources.keys()].filter((url) =>
   url.startsWith(ORIGIN),
 );
+
+// Every indexable sitemap page except the homepage must be discoverable from
+// at least one other sitemap page. This catches accidental orphaning when a
+// visual directory is paginated or capped for performance.
+const orphanedUrls = htmlUrls.filter((url) => {
+  const normalized = url.replace(/\/$/, "");
+  if (normalized === ORIGIN.replace(/\/$/, "")) return false;
+  return !linkSources.has(normalized) && !linkSources.has(`${normalized}/`);
+});
+console.log(`Sitemap URLs without an internal link: ${orphanedUrls.length}`);
+for (const url of orphanedUrls) console.log(`  ${url}`);
+
 const linkResults = await mapConcurrent(internalUrls, async (url) => {
-  const response = await fetchWithTimeout(url, { method: "HEAD" });
+  // A few CDNs handle HEAD unreliably even though GET is healthy. Retry with
+  // GET before reporting a broken link so transient HEAD failures do not make
+  // the audit noisy.
+  let response;
+  try {
+    response = await fetchWithTimeout(url, { method: "HEAD" });
+  } catch {
+    response = await fetchWithTimeout(url);
+  }
   return {
     url,
     status: response.status,
@@ -147,7 +215,16 @@ for (const result of brokenLinks) {
   }
 }
 
-if (routeFailures.length || canonicalFailures.length || brokenLinks.length) {
+if (
+  duplicateSitemapUrls.length ||
+  routeFailures.length ||
+  canonicalFailures.length ||
+  metadataFailures.length ||
+  duplicateTitles.length ||
+  duplicateDescriptions.length ||
+  orphanedUrls.length ||
+  brokenLinks.length
+) {
   process.exitCode = 1;
 } else {
   console.log("\nSEO route audit passed.");

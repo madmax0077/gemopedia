@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
-import { getSportsByCategory, toSportSummary } from "@/lib/data";
+import { getSportsByCategory, isSportIndexable, toSportSummary } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
 import { SportIndexLinks } from "@/components/SportIndexLinks";
 import { fetchCardHeroImages } from "@/lib/heroImages";
@@ -92,9 +92,11 @@ export default async function CategoryPage({ params }: RouteParams) {
         {/* Keeps every sport in this category internally linked despite the
             60-card grid cap — see SportIndexLinks. */}
         <SportIndexLinks
-          sports={sports.map((s) => ({ slug: s.slug, name: s.name }))}
+          sports={sports
+            .filter(isSportIndexable)
+            .map((s) => ({ slug: s.slug, name: s.name }))}
           heading={`All ${cat.name} A–Z`}
-          description={`Full index of all ${sports.length} ${cat.name.toLowerCase()} in Gemopedia.`}
+          description={`Full index of detailed ${cat.name.toLowerCase()} in Gemopedia.`}
         />
         {sports.length === 0 && (
           <div className="mt-6 rounded-2xl border border-dashed border-ink-300 p-8 text-center text-sm text-ink-500 dark:border-ink-700">

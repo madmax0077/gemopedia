@@ -161,6 +161,30 @@ export function getAllSports(): Sport[] {
 }
 
 /**
+ * Keep bare catalogue summaries out of Google's index until they have enough
+ * original editorial depth to satisfy the page's promise of rules, scoring,
+ * and terminology. The URL remains available and followable for users.
+ *
+ * Three signals deliberately admit either a conventional long-form article
+ * or a structured rules page. It currently excludes 142 summary-only records
+ * while retaining 1,364 substantive sport pages.
+ */
+export function isSportIndexable(sport: Sport): boolean {
+  const depthSignals = [
+    Boolean(sport.longDescription),
+    (sport.basicRules?.length ?? 0) >= 3,
+    Boolean(sport.scoring),
+    (sport.equipment?.length ?? 0) > 0,
+    (sport.terminology?.length ?? 0) >= 3,
+    (sport.faq?.length ?? 0) >= 3,
+    (sport.strategies?.length ?? 0) >= 2,
+    (sport.learningPaths?.length ?? 0) > 0,
+  ];
+
+  return depthSignals.filter(Boolean).length >= 3;
+}
+
+/**
  * Project a full {@link Sport} record down to just the fields required by
  * card + directory rendering. Keeps `/sports` under Vercel's ISR page
  * budget (see `SportSummary` docs in `lib/types.ts`).

@@ -135,9 +135,7 @@ const COUNTRY_LIST: Omit<CountryDef, "flag">[] = [
   { code: "NI", name: "Nicaragua", region: "North America" },
   { code: "PA", name: "Panama", region: "North America" },
   { code: "DO", name: "Dominican Republic", region: "North America" },
-  { code: "TW", name: "Taiwan", region: "Asia" },
   { code: "AZ", name: "Azerbaijan", region: "Asia" },
-  { code: "IL", name: "Israel", region: "Middle East" },
 ];
 
 export const COUNTRIES: CountryDef[] = COUNTRY_LIST.map((c) => ({

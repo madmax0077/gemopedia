@@ -6,6 +6,17 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.gemoped
 export const SITE_NAME = "Gemopedia";
 export const SITE_TAGLINE = "Every game. Explained.";
 
+/**
+ * Date of the last release that changed published content or site structure.
+ *
+ * Bump this by hand when shipping something a crawler should come back for —
+ * new or rewritten entries, changes to what is indexable, or a rebuild of the
+ * internal link graph. Do NOT replace it with `new Date()`: a build-time
+ * stamp marks all ~1500 URLs as modified on every redeploy, including no-op
+ * ones, and Google responds by ignoring `lastmod` on the whole site.
+ */
+export const SITE_CONTENT_REVISION = "2026-09-19";
+
 export function absoluteUrl(path: string): string {
   if (!path.startsWith("/")) path = `/${path}`;
   return `${SITE_URL}${path}`;

@@ -79,6 +79,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
+        {/* Google AdSense site-verification / ad loader. A plain tag in <head>
+            (not next/script) so Google's crawler sees it in the static HTML. */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="bg-white text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100">
         <div className="flex min-h-screen flex-col">

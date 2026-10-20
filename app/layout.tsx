@@ -5,7 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieNotice } from "@/components/CookieNotice";
-import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
 
@@ -38,15 +38,19 @@ export const metadata: Metadata = {
     title: "Gemopedia — Every game. Explained.",
     description:
       "A visual encyclopedia of the world's sports and games. Free to read. Sourced.",
-    url: SITE_URL,
+    // No `url` here: this block is inherited by every page that doesn't set
+    // its own, so a hard-coded root URL made /sports, /about etc. all claim
+    // the homepage as their og:url.
     siteName: SITE_NAME,
     type: "website",
     locale: "en_IN",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Gemopedia — Every game. Explained.",
     description: "A visual encyclopedia of the world's sports and games.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   category: "reference",
@@ -71,6 +75,17 @@ const orgJsonLd = {
     "Gemopedia is a visual encyclopedia of the world's sports and games — rules, scoring, history, animations and diagrams.",
 };
 
+// Tells Google the site name to show above the title in results. There is no
+// on-site search, so no SearchAction is declared.
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  alternateName: "Gemopedia sports and games encyclopedia",
+  url: SITE_URL,
+  inLanguage: "en",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -78,6 +93,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         {/* Google AdSense site-verification / ad loader. A plain tag in <head>
             (not next/script) so Google's crawler sees it in the static HTML. */}

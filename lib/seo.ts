@@ -29,13 +29,67 @@ export function absoluteUrl(path: string): string {
   return `${SITE_URL}${path}`;
 }
 
+/** Fallback share image (1200x630) — see scripts/gen-og-default.mjs. */
+export const DEFAULT_OG_IMAGE = {
+  url: "/og-default.png",
+  width: 1200,
+  height: 630,
+  alt: "Gemopedia — Every game. Explained.",
+};
+
+/**
+ * The root layout appends " | Gemopedia" (12 characters). Search results cut
+ * titles at roughly 60 characters, so the page-specific part gets 48.
+ */
+const TITLE_BUDGET = 48;
+
+const PLAY_CATEGORIES = new Set(["video-games", "esports", "tabletop-rpg", "wargames"]);
+
+/** Longest descriptive title that still fits; falls back to the bare name. */
+export function sportTitle(sport: Sport): string {
+  const play = PLAY_CATEGORIES.has(sport.category);
+  const candidates = play
+    ? [`${sport.name}: How to Play & Key Rules`, `${sport.name}: How to Play`, `${sport.name} Guide`]
+    : [
+        `${sport.name}: Rules, Scoring & How to Play`,
+        `${sport.name}: Rules & How to Play`,
+        `${sport.name} Rules & Scoring`,
+        `${sport.name} Rules`,
+      ];
+  return candidates.find((t) => t.length <= TITLE_BUDGET) ?? sport.name;
+}
+
+/**
+ * Meta descriptions read best between ~110 and 155 characters. Several
+ * entries have a one-line summary shorter than that, so pad from the start of
+ * the long description rather than leaving a thin snippet.
+ */
+export function sportDescription(sport: Sport): string {
+  const short = sport.shortDescription.trim();
+  let text = short;
+  if (short.length < 110 && sport.longDescription) {
+    const sentences = sport.longDescription.trim().split(/(?<=[.!?])\s+/);
+    for (const sentence of sentences) {
+      if (sentence.length === 0 || short.includes(sentence)) continue;
+      const next = `${text} ${sentence}`;
+      if (next.length > 155) break;
+      text = next;
+      if (text.length >= 110) break;
+    }
+  }
+  return text.length > 155 ? `${text.slice(0, 152).trimEnd()}…` : text;
+}
+
 /** Sport-page metadata factory — everything on the record influences SEO. */
-export function sportMetadata(sport: Sport): Metadata {
-  const title = `${sport.name} — how it works, rules, scoring & terminology`;
-  const description =
-    sport.shortDescription.length > 155
-      ? `${sport.shortDescription.slice(0, 152)}…`
-      : sport.shortDescription;
+export function sportMetadata(
+  sport: Sport,
+  image?: { src: string; width?: number; height?: number } | null,
+): Metadata {
+  const title = sportTitle(sport);
+  const description = sportDescription(sport);
+  const shareImage = image?.src
+    ? { url: image.src, width: image.width, height: image.height, alt: `${sport.name} — Gemopedia` }
+    : DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -49,11 +103,13 @@ export function sportMetadata(sport: Sport): Metadata {
       siteName: SITE_NAME,
       type: "article",
       locale: "en_IN",
+      images: [shareImage],
     },
     twitter: {
       card: "summary_large_image",
       title: `${sport.name} — Gemopedia`,
       description,
+      images: [shareImage.url],
     },
   };
 }
@@ -108,19 +164,26 @@ export function faqJsonLd(items: { question: string; answer: string }[]) {
 }
 
 /** Sport → schema.org "Thing" with sameAs and about links. */
-export function sportJsonLd(sport: Sport) {
+export function sportJsonLd(sport: Sport, image?: { src: string } | null) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    mainEntityOfPage: absoluteUrl(`/sports/${sport.slug}`),
+    mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(`/sports/${sport.slug}`) },
     headline: `${sport.name} — how it works`,
-    description: sport.shortDescription,
+    description: sportDescription(sport),
+    image: [image?.src ?? absoluteUrl(DEFAULT_OG_IMAGE.url)],
     inLanguage: "en",
+    isAccessibleForFree: true,
     articleSection: sport.category,
     datePublished: sport.lastVerified,
     dateModified: sport.lastVerified,
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: absoluteUrl("/icon.svg") },
+    },
     about: {
       "@type": "Thing",
       name: sport.name,

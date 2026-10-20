@@ -49,6 +49,11 @@ export const hollowKnightMetroidvania: Sport = {
   skills: ["precise 2D platforming (pixel-perfect jumping + dashing)", "combat timing (parries, pogo-hop on spikes/enemies)", "boss pattern memorization + reaction timing", "Charm loadout customization + build synergy", "map navigation + interconnected world understanding"],
   wikipediaTitle: "Hollow Knight",
   sources: [{ label: "Wikipedia — Hollow Knight", url: "https://en.wikipedia.org/wiki/Hollow_Knight", publisher: "Wikipedia" }, { label: "Team Cherry — Hollow Knight", url: "https://www.teamcherry.com.au/", publisher: "Team Cherry" }, { label: "speedrun.com — Hollow Knight", url: "https://www.speedrun.com/hollowknight", publisher: "speedrun.com" }],
+  faq: [
+    { question: "How long does Hollow Knight take to finish?", answer: "Many players reach the main ending in roughly 25 to 30 hours on a first playthrough. Finishing everything, including optional bosses, collectibles and the extra content, commonly takes 60 hours or more." },
+    { question: "What are Soul and charms in Hollow Knight?", answer: "Soul is a resource earned by striking enemies. You spend it to heal with Focus or to cast spells. Charms are equippable items that change how the Knight plays, and each one costs notches, so you can only wear a limited set at once." },
+    { question: "Do I need to play Hollow Knight before Silksong?", answer: "No. Hollow Knight: Silksong, released in September 2025, is a standalone follow-up in which you play Hornet in a new kingdom. The first game is not required, but it explains the world and several recurring characters." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

@@ -48,6 +48,11 @@ export const hiveHexAbstract: Sport = {
   skills: ["bug-type strategic combination", "beetle stacking tactics", "One Hive Rule pathfinding", "Queen surrounding + attack setup"],
   wikipediaTitle: "Hive (game)",
   sources: [{ label: "Wikipedia — Hive (game)", url: "https://en.wikipedia.org/wiki/Hive_(game)", publisher: "Wikipedia" }, { label: "Gen42 Games Hive", url: "https://gen42.com/games/hive", publisher: "Gen42 Games" }],
+  faq: [
+    { question: "What is the one-hive rule?", answer: "All tiles in play must stay connected as a single group at all times. You may not move a tile if lifting it would split the hive into two separate pieces, and a tile must always end its move touching the hive." },
+    { question: "When do you have to place your Queen Bee in Hive?", answer: "By your fourth turn at the latest. Until your Queen is placed you may only bring new tiles into play, and you cannot move any tile that is already on the table." },
+    { question: "How does each insect move in Hive?", answer: "The Queen Bee moves one space. The Beetle moves one space and can climb on top of other tiles. The Grasshopper jumps in a straight line over a row of tiles. The Spider walks exactly three spaces around the hive edge. The Soldier Ant slides any number of spaces around the edge of the hive." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

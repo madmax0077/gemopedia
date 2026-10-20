@@ -48,6 +48,11 @@ export const curlingMixedDoubles: Sport = {
   skills: ["precision stone throwing", "5-rock strategy (fewer stones = higher stakes)", "sweeping speed + judgment", "hammer preservation tactics", "power play utilization"],
   wikipediaTitle: "Mixed doubles curling",
   sources: [{ label: "Wikipedia — Mixed doubles curling", url: "https://en.wikipedia.org/wiki/Mixed_doubles_curling", publisher: "Wikipedia" }, { label: "World Curling Federation — Mixed Doubles", url: "https://worldcurling.org/mixeddoubles", publisher: "WCF" }],
+  faq: [
+    { question: "What is the power play in mixed doubles curling?", answer: "Each team may use it once per game, in an end where it has the last stone. The pre-placed stones are shifted to the side of the sheet instead of the centre, which opens up the middle and makes it easier for the team with the last stone to score several points." },
+    { question: "How is mixed doubles different from four-person curling?", answer: "Teams have two players instead of four, the game lasts eight ends instead of ten, and one stone for each side is placed in position before every end starts. One player delivers the first and last stone of an end, and the other delivers the three in between." },
+    { question: "Is mixed doubles curling an Olympic sport?", answer: "Yes. It was added to the Winter Olympic programme at the 2018 Games in PyeongChang and has been contested at every Games since." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

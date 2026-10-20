@@ -47,6 +47,11 @@ export const kubbVikingLawnGame: Sport = {
   skills: ["kastpinn throwing accuracy (end-over-end)", "field kubb clearance planning", "advantage kubb placement strategy", "King shot pressure management"],
   wikipediaTitle: "Kubb",
   sources: [{ label: "Wikipedia — Kubb", url: "https://en.wikipedia.org/wiki/Kubb", publisher: "Wikipedia" }, { label: "US National Kubb Championship", url: "https://usakubbchampionship.com", publisher: "US Kubb" }],
+  faq: [
+    { question: "How do you win a game of Kubb?", answer: "Knock down all of the opposing team's kubbs (the wooden blocks) and then the king in the centre of the pitch, using your throwing batons. Knocking the king over before every kubb is down loses the game immediately." },
+    { question: "What are field kubbs?", answer: "When you knock down kubbs, your opponents throw them back into your half of the pitch. Where each lands it is stood upright and becomes a field kubb, and you must knock those down first before you may aim at the baseline kubbs or the king." },
+    { question: "How big is a Kubb pitch and how are the batons thrown?", answer: "A standard pitch is about 5 metres by 8 metres. Each team has five kubbs, and six wooden batons are thrown underhand, end over end, so the throw must be tumbled low rather than hurled overhand." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

@@ -48,6 +48,11 @@ export const nineMensMorrisMedieval: Sport = {
   skills: ["mill formation planning", "mill machine tactical setup", "opponent mill denial", "endgame flying phase repositioning"],
   wikipediaTitle: "Nine men's morris",
   sources: [{ label: "Wikipedia — Nine men's morris", url: "https://en.wikipedia.org/wiki/Nine_men%27s_morris", publisher: "Wikipedia" }, { label: "Ralph Gasser — Nine Men's Morris Solution", url: "https://link.springer.com/chapter/10.1007/978-1-4612-2588-7_9", publisher: "Springer" }],
+  faq: [
+    { question: "What is a mill in Nine Men's Morris?", answer: "Three of your pieces in a straight line along one of the lines of the board. Each time you form a mill you remove one of your opponent's pieces, preferably one that is not itself part of a mill unless every opposing piece is." },
+    { question: "What is the flying phase?", answer: "When a player is reduced to three pieces they may move any piece to any empty point instead of only to an adjacent one. It gives the player who is behind a real chance to break up a winning position, and the game ends if they are reduced to two." },
+    { question: "Is Nine Men's Morris a solved game?", answer: "Yes. The game was solved by computer in the 1990s and shown to be a draw with perfect play from both sides, which is why it is a lasting favourite for casual play but a limited one for competition." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

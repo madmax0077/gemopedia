@@ -57,6 +57,11 @@ export const cribbageStandard: Sport = {
   skills: ["combination-recognition (15s + pairs + runs)", "crib strategy (dealer vs. non-dealer discarding)", "pegging count management", "starter card probability assessment"],
   wikipediaTitle: "Cribbage",
   sources: [{ label: "Wikipedia — Cribbage", url: "https://en.wikipedia.org/wiki/Cribbage", publisher: "Wikipedia" }, { label: "American Cribbage Congress", url: "https://www.cribbage.org", publisher: "ACC" }],
+  faq: [
+    { question: "How many points do you need to win cribbage?", answer: "121 in the standard game, scored by moving pegs around a cribbage board. A shorter game to 61 points is also common for quick matches." },
+    { question: "What is the crib in cribbage?", answer: "A separate hand built from cards each player discards after the deal. It belongs to the dealer and is counted at the end of the round, so the dealer wants to throw good cards into it and the non-dealer wants to give away as little as possible." },
+    { question: "How does pegging work in cribbage?", answer: "Players take turns laying cards face up and calling the running total, which may not go above 31. You score for making exactly 15 or 31, for pairs, and for runs, and one point is awarded for the last card played if you do not reach 31." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

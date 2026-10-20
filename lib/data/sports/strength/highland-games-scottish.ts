@@ -48,6 +48,11 @@ export const highlandGamesScottish: Sport = {
   skills: ["caber balance + toss timing", "single-throw hammer technique (no spins)", "stone put explosive power", "sheaf toss + weight over bar height technique"],
   wikipediaTitle: "Highland games",
   sources: [{ label: "Wikipedia — Highland games", url: "https://en.wikipedia.org/wiki/Highland_games", publisher: "Wikipedia" }, { label: "International Highland Games Federation", url: "https://www.ihgf.org", publisher: "IHGF" }, { label: "Braemar Gathering", url: "https://www.braemargathering.org", publisher: "Braemar Royal Highland Society" }],
+  faq: [
+    { question: "What are the heavy events at the Highland games?", answer: "The core strength events are the caber toss, the stone put, the hammer throw, the weight throw for distance, the weight over the bar, and the sheaf toss. Athletes who compete across all of them are often called heavy athletes." },
+    { question: "How is the caber toss judged?", answer: "Not by distance. The caber, a tapered pole usually over 5 metres long, must turn end over end and land pointing away from the thrower. Judges score the direction using a clock face, where a perfect throw lands at 12 o'clock straight in line with the thrower." },
+    { question: "What else happens at a Highland games gathering?", answer: "Alongside the heavy events there is usually piping and drumming, Highland dancing, tug of war and hill or track racing. Many gatherings treat the music and dance competitions as seriously as the athletics." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

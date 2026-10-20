@@ -23,7 +23,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: RouteParams): Promise<Metadata> {
   const sport = getSport(params.slug);
   if (!sport) return { title: "Sport not found" };
-  const metadata = sportMetadata(sport);
+  // Same title the page body resolves, and `fetchWikipediaImage` memoizes per
+  // title, so this costs no extra request. The photo doubles as the share image.
+  const heroImage = await fetchWikipediaImage(sport.wikipediaTitle ?? slugToWikiTitle(sport.slug));
+  const metadata = sportMetadata(sport, heroImage);
   if (isSportIndexable(sport)) return metadata;
 
   // Summary-only records remain useful to visitors, but should not compete in
@@ -49,7 +52,7 @@ export default async function Page({ params }: RouteParams) {
   const heroImage = await fetchWikipediaImage(wikiTitle);
 
   const jsonLd = [
-    sportJsonLd(sport),
+    sportJsonLd(sport, heroImage),
     breadcrumbJsonLd([
       { label: "Gemopedia", href: "/" },
       { label: "Sports", href: "/sports" },

@@ -112,8 +112,22 @@ const pageResults = await mapConcurrent(htmlUrls, async (url) => {
   const links = [...html.matchAll(/href=["']([^"'#?]+)(?:[?#][^"']*)?["']/gi)]
     .map((match) => match[1])
     .filter((href) => href.startsWith("/") && !href.startsWith("//"));
-  return { url, status: response.status, title, description, robots, canonical, links };
+  const ogImage = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)/i)?.[1];
+  return { url, status: response.status, title, description, robots, canonical, ogImage, links };
 });
+
+// Search results truncate titles around 60 characters; flag anything that
+// will visibly cut off, and any page that would share a blank social card.
+const longTitles = pageResults.filter(
+  (page) => page.status === 200 && page.title && page.title.length > 65,
+);
+console.log(`Titles longer than 65 characters: ${longTitles.length}`);
+for (const page of longTitles.slice(0, 20)) {
+  console.log(`  ${page.url} (${page.title.length}): ${page.title}`);
+}
+const missingOgImage = pageResults.filter((page) => page.status === 200 && !page.ogImage);
+console.log(`Pages missing og:image: ${missingOgImage.length}`);
+for (const page of missingOgImage.slice(0, 20)) console.log(`  ${page.url}`);
 
 const canonicalFailures = pageResults.filter((page) => {
   if (page.status !== 200) return false;

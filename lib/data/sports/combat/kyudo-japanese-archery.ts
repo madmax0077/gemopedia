@@ -47,6 +47,11 @@ export const kyudoJapaneseArchery: Sport = {
   skills: ["Hassetsu 8-stage form mastery", "thumb-draw technique with kake glove", "mushin (no-mind) mental composure", "zanshin follow-through pose"],
   wikipediaTitle: "Kyūdō",
   sources: [{ label: "Wikipedia — Kyūdō", url: "https://en.wikipedia.org/wiki/Ky%C5%ABd%C5%8D", publisher: "Wikipedia" }, { label: "International Kyudo Federation", url: "https://www.ikyf.org", publisher: "IKYF" }],
+  faq: [
+    { question: "What are the eight stages of shooting in kyudo?", answer: "Called hassetsu, they are: ashibumi (footing), dozukuri (steadying the body), yugamae (readying the bow), uchiokoshi (raising the bow), hikiwake (drawing apart), kai (full draw), hanare (release) and zanshin (the lingering follow-through)." },
+    { question: "What equipment does kyudo use?", answer: "A yumi, an asymmetric bow over two metres long, with the grip placed about a third of the way up from the bottom; bamboo arrows called ya; and a glove, the yugake, to protect the drawing hand. The usual target is a mato about 36 cm across, shot at 28 metres." },
+    { question: "How do beginners start in kyudo?", answer: "Not at the target. Most schools have students practise the form without arrows, then shoot at a straw bundle called a makiwara at very close range, and only later move to the mato once the movement is consistent." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

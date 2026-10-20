@@ -48,6 +48,11 @@ export const molkkyFinnishLawn: Sport = {
   skills: ["underhand throwing accuracy + spin", "single vs multi-pin strategic choice", "endgame precision (exact 50 targeting)", "pin location memorization + planning"],
   wikipediaTitle: "Mölkky",
   sources: [{ label: "Wikipedia — Mölkky", url: "https://en.wikipedia.org/wiki/M%C3%B6lkky", publisher: "Wikipedia" }, { label: "Fédération Internationale de Mölkky", url: "https://molkky.com", publisher: "FIM" }],
+  faq: [
+    { question: "What happens if you go over 50 in Mölkky?", answer: "Your score drops back to 25. You need to land on exactly 50 to win, so players near the end often aim for a single low-numbered pin rather than risk knocking several over." },
+    { question: "How is a throw scored in Mölkky?", answer: "If one pin falls, you score the number printed on it. If two or more fall, you score the number of pins that fell. Pins are then stood up again where they landed, which is why the layout spreads out as the game goes on." },
+    { question: "What happens if you miss three times in a row?", answer: "In the standard rules a player who misses three throws in a row, knocking nothing over each time, is eliminated from the game." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

@@ -48,6 +48,11 @@ export const euchreMidwestAmerican: Sport = {
   skills: ["bower recognition + trump anticipation", "'ordering up' vs passing judgment", "Alone declaration risk assessment", "5-card hand tactical planning"],
   wikipediaTitle: "Euchre",
   sources: [{ label: "Wikipedia — Euchre", url: "https://en.wikipedia.org/wiki/Euchre", publisher: "Wikipedia" }],
+  faq: [
+    { question: "What are the bowers in euchre?", answer: "The two highest trump cards. The right bower is the jack of the trump suit, and the left bower is the other jack of the same colour. The left bower counts as a trump, not as a card of its printed suit, which is the detail beginners most often get wrong." },
+    { question: "What cards are used in euchre?", answer: "A 24-card deck: the nine, ten, jack, queen, king and ace of each suit. Some regional variants add the sevens and eights to make a 32-card deck, so confirm the deck before you start." },
+    { question: "What does going alone mean in euchre?", answer: "A player who is confident in their hand can choose to play without their partner, who lays their cards down. Winning all five tricks alone scores four points, but if the opponents take enough tricks the lone player is euchred and they score two points instead." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

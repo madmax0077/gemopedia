@@ -48,6 +48,11 @@ export const dartsPdcProfessional: Sport = {
   skills: ["throwing consistency (grip + release + follow-through)", "checkout math + finish combinations", "pressure performance (final leg + double)", "board reading + mental subtraction speed"],
   wikipediaTitle: "Darts",
   sources: [{ label: "Wikipedia — Darts", url: "https://en.wikipedia.org/wiki/Darts", publisher: "Wikipedia" }, { label: "PDC Professional Darts Corporation", url: "https://www.pdc.tv", publisher: "PDC" }],
+  faq: [
+    { question: "What is the highest checkout in darts?", answer: "170, finished with two treble 20s and the bullseye (T20, T20, Bull). It is the largest score that can be finished in three darts, because the last dart must land in a double or the bullseye." },
+    { question: "Why do darts players have to finish on a double?", answer: "The double-out rule means the final dart of a leg must hit a double (the thin outer ring) or the bullseye, taking the score to exactly zero. If a player goes below zero or leaves one point, the turn is a bust and the score returns to what it was before the throws." },
+    { question: "What is a nine-dart finish?", answer: "A perfect leg of 501, completed in the minimum nine darts, for example three treble-20 turns of 180, 180 and then a 141 finish. John Lowe hit the first televised nine-darter in 1984, and it remains one of the rarest feats in the sport." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

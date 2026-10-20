@@ -49,6 +49,11 @@ export const onitamaAbstractNinja: Sport = {
   skills: ["card selection strategy (which 2 to play across turns)", "movement pattern memorization + tactical planning", "trade-off analysis (giving good card to opponent)", "positional Chess-like piece placement"],
   wikipediaTitle: "Onitama",
   sources: [{ label: "Wikipedia — Onitama", url: "https://en.wikipedia.org/wiki/Onitama", publisher: "Wikipedia" }, { label: "Onitama — Arcane Wonders", url: "https://arcanewonders.com/games/onitama/", publisher: "Arcane Wonders" }],
+  faq: [
+    { question: "How do the move cards work in Onitama?", answer: "Five move cards are in play: each player holds two and one waits at the side of the board. When you use a card to move a piece, it swaps with the side card and passes to your opponent, so the options available to both players change every turn." },
+    { question: "Do the pieces in Onitama move differently?", answer: "No. Every piece uses the same cards. The only difference is the role: each player has four students and one master, and the master matters because capturing it, or reaching the opposing temple arch with it, ends the game." },
+    { question: "How do you win a game of Onitama?", answer: "There are two ways: capture the opponent's master (the Way of the Stone), or move your own master onto the opponent's temple arch in the centre of their back row (the Way of the Stream). Either ends the game immediately." },
+  ],
   lastVerified: "2026-08-31",
   confidence: "verified",
 };

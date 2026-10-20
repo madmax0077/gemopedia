@@ -1,7 +1,14 @@
 import type { MetadataRoute } from "next";
 import { CATEGORIES } from "@/lib/data/categories";
 import { COUNTRIES } from "@/lib/data/countries";
-import { getAllSports, isSportIndexable, COMPARISON_PAIRS } from "@/lib/data";
+import {
+  getAllSports,
+  isCategoryIndexable,
+  isComparisonIndexable,
+  isCountryIndexable,
+  isSportIndexable,
+  COMPARISON_PAIRS,
+} from "@/lib/data";
 import { SITE_CONTENT_REVISION, SITE_URL } from "@/lib/seo";
 
 // Required for `output: "export"` — without it the build fails with
@@ -46,26 +53,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     }));
 
-  const categories = CATEGORIES.map<MetadataRoute.Sitemap[number]>((c) => ({
+  const categories = CATEGORIES.filter((c) => isCategoryIndexable(c.slug)).map<MetadataRoute.Sitemap[number]>((c) => ({
     url: `${SITE_URL}/categories/${c.slug}`,
     lastModified: REVISED,
     changeFrequency: "monthly",
     priority: 0.6,
   }));
 
-  const countries = COUNTRIES.map<MetadataRoute.Sitemap[number]>((c) => ({
+  const countries = COUNTRIES.filter((c) => isCountryIndexable(c.code)).map<MetadataRoute.Sitemap[number]>((c) => ({
     url: `${SITE_URL}/countries/${c.code}`,
     lastModified: REVISED,
     changeFrequency: "monthly",
     priority: 0.5,
   }));
 
-  const comparisons = COMPARISON_PAIRS.map<MetadataRoute.Sitemap[number]>((p) => ({
+  const comparisons = COMPARISON_PAIRS.filter(isComparisonIndexable).map<MetadataRoute.Sitemap[number]>((p) => ({
     url: `${SITE_URL}/compare/${p.slug}`,
     lastModified: REVISED,
     changeFrequency: "monthly",
     priority: 0.5,
   }));
 
-  return [...base, ...sports, ...categories, ...countries, ...comparisons];
+  const policies = ["/about", "/contact", "/privacy", "/cookies", "/terms", "/advertising"].map<
+    MetadataRoute.Sitemap[number]
+  >((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: REVISED,
+    changeFrequency: "yearly",
+    priority: 0.3,
+  }));
+
+  return [...base, ...sports, ...categories, ...countries, ...comparisons, ...policies];
 }

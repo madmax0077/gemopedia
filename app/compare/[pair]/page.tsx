@@ -1,10 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { COMPARISON_PAIRS, getComparison, getSport } from "@/lib/data";
+import { COMPARISON_PAIRS, getComparison, getSport, isComparisonIndexable } from "@/lib/data";
 import { CATEGORY_BY_SLUG } from "@/lib/data/categories";
 import { countryFlag, countryName } from "@/lib/data/countries";
-import { breadcrumbJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, NOINDEX_FOLLOW } from "@/lib/seo";
 
 interface RouteParams { params: { pair: string } }
 
@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
     title: `${a.name} vs ${b.name} — side by side`,
     description: `${pair.rationale} A field-by-field comparison of ${a.name} and ${b.name}: players, field, scoring, duration, rules and popularity.`,
     alternates: { canonical: `/compare/${pair.slug}` },
+    ...(isComparisonIndexable(pair) ? {} : { robots: NOINDEX_FOLLOW }),
   };
 }
 

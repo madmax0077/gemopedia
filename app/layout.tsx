@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CookieNotice } from "@/components/CookieNotice";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Gemopedia",
   },
   description:
-    "The visual encyclopedia of the world's sports and games. Rules, scoring, diagrams and animations for cricket, football, kabaddi, sumo, chess, F1, hurling, sepak takraw, buzkashi and more — free, ad-free, and made to be understood.",
+    "The visual encyclopedia of the world's sports and games. Rules, scoring, diagrams and animations for cricket, football, kabaddi, sumo, chess, F1, hurling, sepak takraw, buzkashi and more — free to read and made to be understood.",
   applicationName: SITE_NAME,
   keywords: [
     "sports encyclopedia",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gemopedia — Every game. Explained.",
     description:
-      "A visual encyclopedia of the world's sports and games. Free. Ad-free. Sourced.",
+      "A visual encyclopedia of the world's sports and games. Free to read. Sourced.",
     url: SITE_URL,
     siteName: SITE_NAME,
     type: "website",
@@ -86,6 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </div>
         <Analytics />
+        <CookieNotice />
       </body>
       {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
     </html>

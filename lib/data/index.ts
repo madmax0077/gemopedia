@@ -160,28 +160,91 @@ export function getAllSports(): Sport[] {
   return [...ALL_SPORTS].sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function countWords(text?: string): number {
+  if (!text) return 0;
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
+function rulesWords(rules?: { title: string; body: string }[]): number {
+  return (rules ?? []).reduce((total, rule) => total + countWords(rule.title) + countWords(rule.body), 0);
+}
+
+/** Original explanation on the page, excluding navigation and card chrome. */
+export function editorialWordCount(sport: Sport): number {
+  const scoring = sport.scoring;
+  return (
+    countWords(sport.shortDescription) +
+    countWords(sport.longDescription) +
+    countWords(sport.objective) +
+    countWords(sport.matchStructure) +
+    rulesWords(sport.basicRules) +
+    rulesWords(sport.advancedRules) +
+    rulesWords(sport.penalties) +
+    rulesWords(sport.fouls) +
+    rulesWords(sport.strategies) +
+    countWords(scoring?.summary) +
+    countWords(scoring?.winCondition) +
+    (scoring?.breakdown ?? []).reduce(
+      (total, row) => total + countWords(row.action) + countWords(row.points) + countWords(row.note),
+      0,
+    ) +
+    (sport.equipment ?? []).reduce(
+      (total, item) => total + countWords(item.name) + countWords(item.description),
+      0,
+    ) +
+    (sport.terminology ?? []).reduce(
+      (total, term) => total + countWords(term.term) + countWords(term.meaning),
+      0,
+    ) +
+    (sport.faq ?? []).reduce(
+      (total, item) => total + countWords(item.question) + countWords(item.answer),
+      0,
+    ) +
+    (sport.learningPaths ?? []).reduce(
+      (total, path) =>
+        total + path.steps.reduce((steps, step) => steps + countWords(step.title) + countWords(step.body), 0),
+      0,
+    )
+  );
+}
+
 /**
- * Keep bare catalogue summaries out of Google's index until they have enough
- * original editorial depth to satisfy the page's promise of rules, scoring,
- * and terminology. The URL remains available and followable for users.
- *
- * Three signals deliberately admit either a conventional long-form article
- * or a structured rules page. It currently excludes 142 summary-only records
- * while retaining 1,364 substantive sport pages.
+ * A sport page is strong enough to index when it is an article, not a stub:
+ * a real explanation, at least four rules, a scoring summary, 600 or more
+ * words of original editorial text, and a depth section (FAQ, terminology,
+ * strategy, or a learning path). Thinner URLs stay on the site for readers.
  */
 export function isSportIndexable(sport: Sport): boolean {
-  const depthSignals = [
-    Boolean(sport.longDescription),
-    (sport.basicRules?.length ?? 0) >= 3,
-    Boolean(sport.scoring),
-    (sport.equipment?.length ?? 0) > 0,
-    (sport.terminology?.length ?? 0) >= 3,
-    (sport.faq?.length ?? 0) >= 3,
-    (sport.strategies?.length ?? 0) >= 2,
-    (sport.learningPaths?.length ?? 0) > 0,
-  ];
+  const hasDepth =
+    (sport.faq?.length ?? 0) >= 3 ||
+    (sport.terminology?.length ?? 0) >= 5 ||
+    (sport.strategies?.length ?? 0) >= 3 ||
+    (sport.learningPaths?.length ?? 0) >= 1;
 
-  return depthSignals.filter(Boolean).length >= 3;
+  return (
+    countWords(sport.longDescription) >= 60 &&
+    (sport.basicRules?.length ?? 0) >= 4 &&
+    Boolean(sport.scoring?.summary) &&
+    editorialWordCount(sport) >= 600 &&
+    hasDepth
+  );
+}
+
+/** Listing pages need a real catalog of strong articles behind them. */
+const STRONG_LISTING_MINIMUM = 4;
+
+export function isCategoryIndexable(category: Sport["category"]): boolean {
+  return getSportsByCategory(category).filter(isSportIndexable).length >= STRONG_LISTING_MINIMUM;
+}
+
+export function isCountryIndexable(code: string): boolean {
+  return getSportsByCountry(code).filter(isSportIndexable).length >= STRONG_LISTING_MINIMUM;
+}
+
+export function isComparisonIndexable(pair: ComparisonPair): boolean {
+  const a = getSport(pair.aSlug);
+  const b = getSport(pair.bSlug);
+  return Boolean(a && b && isSportIndexable(a) && isSportIndexable(b));
 }
 
 /**

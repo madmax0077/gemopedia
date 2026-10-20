@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CATEGORIES, CATEGORY_BY_SLUG } from "@/lib/data/categories";
-import { getSportsByCategory, isSportIndexable, toSportSummary } from "@/lib/data";
+import { getSportsByCategory, isCategoryIndexable, isSportIndexable, toSportSummary } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
 import { SportIndexLinks } from "@/components/SportIndexLinks";
 import { fetchCardHeroImages } from "@/lib/heroImages";
-import { breadcrumbJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, NOINDEX_FOLLOW } from "@/lib/seo";
 import type { SportCategory } from "@/lib/types";
 
 interface RouteParams { params: { slug: string } }
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
     title: `${cat.name} — every sport, one place`,
     description: cat.description,
     alternates: { canonical: `/categories/${cat.slug}` },
+    ...(isCategoryIndexable(cat.slug) ? {} : { robots: NOINDEX_FOLLOW }),
   };
 }
 

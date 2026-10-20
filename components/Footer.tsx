@@ -21,8 +21,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-600 dark:text-ink-300">
-              A visual encyclopedia of the world's sports and games — free, ad-free, and made to
-              be understood.
+              A visual encyclopedia of the world&apos;s sports and games — free to read, sourced,
+              and supported by advertising.
             </p>
             <p className="mt-4 text-xs text-ink-500 dark:text-ink-400">
               We publish only sourced, editor-verified content. Every sport page links to the
@@ -58,7 +58,15 @@ export function Footer() {
           />
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-ink-200/70 pt-6 text-xs text-ink-500 dark:border-white/10 dark:text-ink-400 sm:flex-row sm:items-center">
+        <nav className="mt-12 flex flex-wrap gap-x-4 gap-y-2 border-t border-ink-200/70 pt-6 text-xs font-semibold text-ink-600 dark:border-white/10 dark:text-ink-300">
+          <Link href="/about" className="hover:text-ink-950 dark:hover:text-white">About</Link>
+          <Link href="/contact" className="hover:text-ink-950 dark:hover:text-white">Contact</Link>
+          <Link href="/privacy" className="hover:text-ink-950 dark:hover:text-white">Privacy</Link>
+          <Link href="/cookies" className="hover:text-ink-950 dark:hover:text-white">Cookies</Link>
+          <Link href="/terms" className="hover:text-ink-950 dark:hover:text-white">Terms</Link>
+          <Link href="/advertising" className="hover:text-ink-950 dark:hover:text-white">Advertising</Link>
+        </nav>
+        <div className="mt-4 flex flex-col items-start justify-between gap-3 text-xs text-ink-500 dark:text-ink-400 sm:flex-row sm:items-center">
           <p>
             © {new Date().getFullYear()} <span className="font-semibold text-ink-700 dark:text-ink-200">Gemopedia</span>
             <span className="mx-2 text-ink-300 dark:text-ink-700">·</span>

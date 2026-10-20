@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { COUNTRIES, COUNTRY_BY_CODE } from "@/lib/data/countries";
-import { getSportsByCountry, isSportIndexable, toSportSummary } from "@/lib/data";
+import { getSportsByCountry, isCountryIndexable, isSportIndexable, toSportSummary } from "@/lib/data";
 import { SportCard } from "@/components/SportCard";
 import { SportIndexLinks } from "@/components/SportIndexLinks";
 import { fetchCardHeroImages } from "@/lib/heroImages";
-import { breadcrumbJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, NOINDEX_FOLLOW } from "@/lib/seo";
 
 interface RouteParams { params: { code: string } }
 
@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
     title: `Sports of ${country.name} — traditional, popular and national`,
     description: `Explore the sports originating from or widely played in ${country.name} — with rules, scoring, diagrams and animations for every entry.`,
     alternates: { canonical: `/countries/${country.code}` },
+    ...(isCountryIndexable(country.code) ? {} : { robots: NOINDEX_FOLLOW }),
   };
 }
 

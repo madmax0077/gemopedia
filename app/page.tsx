@@ -101,7 +101,7 @@ export default async function Homepage() {
             <span className="text-ink-900 dark:text-white">
               rules, scoring, diagrams and animations for every sport on Earth.
             </span>{" "}
-            Free. Ad-free. Sourced.
+            Free to read. Sourced.
           </p>
 
           {/* CTAs */}

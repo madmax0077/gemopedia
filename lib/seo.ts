@@ -15,7 +15,14 @@ export const SITE_TAGLINE = "Every game. Explained.";
  * stamp marks all ~1500 URLs as modified on every redeploy, including no-op
  * ones, and Google responds by ignoring `lastmod` on the whole site.
  */
-export const SITE_CONTENT_REVISION = "2026-09-19";
+export const SITE_CONTENT_REVISION = "2026-10-20";
+
+/** Applied to pages that stay available to readers but are too thin to index. */
+export const NOINDEX_FOLLOW = {
+  index: false,
+  follow: true,
+  googleBot: { index: false, follow: true },
+} as const;
 
 export function absoluteUrl(path: string): string {
   if (!path.startsWith("/")) path = `/${path}`;
